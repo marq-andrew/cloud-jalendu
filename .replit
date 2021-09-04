@@ -7,6 +7,8 @@ nvm install 16
 
 npm install @discordjs/builders @discordjs/rest discord-api-types
 
+npm install node-fetch
+
 node deploy-commands.js
 
 node jalendu.js
