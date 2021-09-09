@@ -7,9 +7,13 @@ const clientId = process.env['clientID'];
 const guildId = process.env['guildID'];
 
 const commands = [
-	new SlashCommandBuilder().setName('ping').setDescription('Replies with pong!'),
-	new SlashCommandBuilder().setName('server').setDescription('Replies with server info!'),
-	new SlashCommandBuilder().setName('user').setDescription('Replies with user info!'),
+	new SlashCommandBuilder()
+  .setName('avatar')
+  .setDescription('Displays an enlarged user avatar')
+  .addStringOption(option =>
+		option.setName('username')
+			.setDescription('The username to show')
+			.setRequired(false)),
 ]
 	.map(command => command.toJSON());
 
