@@ -1,5 +1,5 @@
 
-// Require the necessary discord.js classes
+
 const { Client, Intents, MessageEmbed } = require('discord.js');
 
 const fs = require('fs');
@@ -12,7 +12,6 @@ const querystring = require('querystring');
 
 const token = process.env['TOKEN'];
 
-//const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
 
 const intents = new Intents();
 
@@ -74,8 +73,9 @@ client.once('ready', () => {
   
 });
 
-// Login to Discord with your client's token
+
 client.login(token);
+
 
 client.on('interactionCreate', async interaction => {
 
