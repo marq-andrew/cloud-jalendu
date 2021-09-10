@@ -5,7 +5,7 @@ export NVM_DIR=\"$HOME/.nvm\"
 [ -s \"$NVM_DIR/bash_completion\" ] && \\.\"$NVM_DIR/bash_completion\"
 nvm install 16
 
-npm install @discordjs/builders @discordjs/rest discord-api-types
+#npm install @discordjs/builders @discordjs/rest discord-api-types
 
 #node deploy-commands.js
 

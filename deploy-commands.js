@@ -10,7 +10,7 @@ const commands = [
 	new SlashCommandBuilder()
   .setName('avatar')
   .setDescription('Displays an enlarged user avatar')
-  .addStringOption(option =>
+  .addUserOption(option =>
 		option.setName('username')
 			.setDescription('The username to show')
 			.setRequired(false)),
