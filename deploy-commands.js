@@ -7,13 +7,27 @@ const clientId = process.env['clientID'];
 const guildId = process.env['guildID'];
 
 const commands = [
+  	// new SlashCommandBuilder()
+    // .setName('nothing')
+    // .setDescription('nothing'),
+
 	new SlashCommandBuilder()
-  .setName('avatar')
-  .setDescription('Displays an enlarged user avatar')
-  .addUserOption(option =>
-		option.setName('username')
-			.setDescription('The username to show')
-			.setRequired(false)),
+    .setName('avatar')
+    .setDescription('Displays an enlarged user avatar')
+    .addUserOption(option =>
+      option.setName('username')
+        .setDescription('The username to show')
+        .setRequired(false))
+        .setDefaultPermission(false),
+
+  new SlashCommandBuilder()
+    .setName('verify')
+    .setDescription('Verifies a newcomer')
+    .addUserOption(option =>
+      option.setName('username')
+        .setDescription('The username to verify')
+        .setRequired(true))
+    .setDefaultPermission(false),
 ]
 	.map(command => command.toJSON());
 
