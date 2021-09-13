@@ -222,12 +222,68 @@ async function newcomers() {
       }
     });
   });
+
+  const roles = client.channels.cache.get('828724253938942014');
+
+  await roles.messages.fetch({ limit: 100 }).then(async messages => {
+    messages.forEach(message => {
+      let title = '';
+      if (message.content) {
+        title = message.content.toLowerCase().substring(0, 20);
+      }
+      if (message.embeds[0]) {
+        title = message.embeds[0].title.toLowerCase().substring(0, 20);
+      }
+      //console.log(title);
+      if (message.reactions) {
+        message.reactions.cache.each(async (reaction) => {
+          //console.log(reaction.emoji.name);
+          if (title === 'do you use insight t') {
+            if (reaction.emoji.name !== '⏲️') {
+              reaction.remove();
+            }
+          }
+          else if (title === 'what is your age?') {
+            if (reaction.emoji.name !== '👦'
+              && reaction.emoji.name !== '👨') {
+              reaction.remove();
+            }
+          }
+          else if (title === 'do you identify as g') {
+            if (reaction.emoji.name !== 'gay_flag'
+              && reaction.emoji.name !== 'bi_flag'
+              && reaction.emoji.name !== 'bi_curious_flag') {
+              reaction.remove();
+            }
+          }
+          else if (title === 'memes') {
+            if (reaction.emoji.name !== 'memes') {
+              reaction.remove();
+            }
+          }
+          else if (title === 'practice') {
+            if (reaction.emoji.name !== 'lotus_meditator'
+              && reaction.emoji.name !== 'yoga') {
+              reaction.remove();
+            }
+          }
+        });
+      }
+    });
+  });
 }
 
 
 let bumptime = 0;
 let nextbumptime = 0;
 let currenttime = 0;
+
+global.data = {
+  verify: [],
+  homophobic: [],
+  racist: [],
+  except: [],
+}
 
 client.once('ready', async () => {
   console.log('Ready!');
@@ -291,6 +347,10 @@ client.once('ready', async () => {
   newcomers();
 
   setInterval(newcomers, checkthe_interval);
+
+
+  const fileContent = fs.readFileSync('./data.json');
+  global.data = JSON.parse(fileContent);
 
 });
 
@@ -361,15 +421,15 @@ client.on('messageCreate', async (message) => {
     return;
   }
 
-	console.log(message.channel.name);
+  console.log(message.channel.name);
 
-	if(message.embeds[0]) {
-		console.log(message.author.username + ': ');
-		console.log(message.embeds[0]);
-	}
-	else {
-		console.log(message.author.username + ': ' + message.content);
-	}
+  if (message.embeds[0]) {
+    console.log(message.author.username + ': ');
+    console.log(message.embeds[0]);
+  }
+  else {
+    console.log(message.author.username + ': ' + message.content);
+  }
 
   if (message.channel.name.includes('bot-commands')) {
     if (message.embeds[0] && message.author.id === '302050872383242240') {
@@ -392,6 +452,165 @@ client.on('messageCreate', async (message) => {
       }
     }
   }
+
+
+  if (message.channel.name.includes('landing-zone')) {
+
+    if (!message.member.roles.cache.some(rolen => rolen.name === 'verified')) {
+
+      const mods = client.channels.cache.get('837570108745580574');
+      //const mods = client.channels.cache.get('871628022388764672');
+
+      const marq = client.users.cache.get('679465390841135126');
+
+      const dels = client.channels.cache.get('874900065142046720');
+
+      const msglc = message.content.toLowerCase();
+
+      let rule = '';
+
+      for (let i = 0; i < data.verify.length; i++) {
+
+        if (msglc.includes(data.verify[i])) {
+
+          rule = data.verify[i];
+
+          let role = message.guild.roles.cache.find(rolen => rolen.name === 'verified');
+          message.member.roles.add(role);
+          role = message.guild.roles.cache.find(rolen => rolen.name === 'newcomer');
+          message.member.roles.remove(role);
+
+          message.delete;
+
+          welcomeDM(message.author);
+
+          mods.send(`@${message.author.username} has been verified by rule "${rule}".`);
+          mods.send(`Their message was:\n${message.content}`);
+          marq.send(`@${message.author.username} has been verified by rule "${rule}".`);
+          break;
+        }
+      }
+    }
+  }
+
+
+  if (message.channel.name.includes('landing-zone')) {
+
+    if (!message.member.roles.cache.some(rolen => rolen.name === 'verified')) {
+
+      const mods = client.channels.cache.get('837570108745580574');
+      const mods = client.channels.cache.get('871628022388764672');
+
+      const marq = client.users.cache.get('679465390841135126');
+
+      const dels = client.channels.cache.get('874900065142046720');
+
+      const msglc = message.content.toLowerCase();
+
+      let rule = '';
+      let result = 'false';
+      let type = '';
+
+      for (let i = 0; i < data.homophobic.length; i++) {
+        if (msglc.includes(data.homophobic[i])) {
+
+          rule = data.homophobic[i];
+
+          for (let j = 0; j < data.except.length; j++) {
+            if (rule.includes(data.except[j])) {
+              rule = '';
+              break;
+            }
+          }
+
+          if (rule !== '') {
+            result = 'true';
+            type = 'homophobic language';
+            break;
+          }
+        }
+      }
+
+      if (result === 'false') {
+        for (let i = 0; i < data.racist.length; i++) {
+          if (msglc.includes(data.racist[i])) {
+
+            rule = data.racist[i];
+
+            for (let j = 0; j < data.except.length; j++) {
+              if (rule.includes(data.except[j])) {
+                rule = '';
+                break;
+              }
+            }
+
+            if (rule !== '') {
+              result = 'true';
+              type = 'racist language';
+              break;
+            }
+          }
+        }
+      }
+
+      if (result === 'false') {
+        if (msglc.includes('http://') || msglc.includes('https://')) {
+          rule = 'url';
+          result = 'true';
+          type = 'URL or file links';
+        }
+      }
+
+      const nsrole = message.guild.roles.cache.find(rolen => rolen.name === 'newcomer-spoke');
+      message.member.roles.add(nsrole);
+
+      if (result === 'true') {
+        message.delete()
+          .then(msgx => console.log(`Deleted message from ${msgx.author.username}`))
+          .catch(err => console.log(err));
+
+        message.author.send(`Please refrain from posting ${type} in the Gay Men Meditating ${message.channel.name}.\nYour message was deleted.`).catch(err => console.log(err));
+        mods.send(`@${message.author.username} wrote ${type} in ${message.channel.name} and their message was deleted.`);
+
+        if (type === 'homophobic language' || type === 'racist language') {
+          dels.send(`@${message.author.username}'s message was classified as ${type} by rule "${rule}".`);
+        }
+        else {
+          dels.send(`@${message.author.username}'s message was classified as containing ${type}.`);
+        }
+
+        dels.send(`Message was >>>${message.content}<<<`);
+
+        const scumbag = scumbags.indexOf(message.author.username);
+
+        if (scumbag > -1) {
+          warnings[scumbag] = warnings[scumbag] + 1;
+          if (warnings[scumbag] > 2) {
+
+            const member = message.guild.members.resolve(message.author);
+
+            if (member) {
+
+              const role = message.guild.roles.cache.find(rolen => rolen.name === 'newcomer-muted');
+
+              message.member.roles.add(role).catch(err => console.log(err));
+
+              message.author.send('**You have been muted.**').catch(err => console.log(err));
+              mods.send(`@${message.author.username} has been muted.`).catch(err => console.log(err));
+            }
+          }
+          else {
+            message.author.send('**Final Warning - If you continue you will be muted.**').catch(err => console.log(err));
+          }
+        }
+        else {
+          scumbags.push(message.author.username);
+          warnings.push(1);
+          message.author.send('**First Warning**').catch(err => console.log(err));
+        }
+      }
+    }
+  }
 });
 
 
@@ -410,162 +629,176 @@ client.on('guildMemberAdd', async (member) => {
 });
 
 
-const sessions = new Array();
 
+
+const sessions = new Array();
 
 client.on('voiceStateUpdate', (oldmember, newmember) => {
 
   //console.log(newmember);
 
-	const logs = client.channels.cache.get('880223898413695046');
+  const logs = client.channels.cache.get('880223898413695046');
 
-	const guild = client.guilds.cache.get('827888294100074516');
+  const guild = client.guilds.cache.get('827888294100074516');
 
-	if(oldmember.channelId) {
+  if (oldmember.channelId) {
 
-		const oldchannel = guild.channels.cache.get(oldmember.channelId);
+    const oldchannel = guild.channels.cache.get(oldmember.channelId);
 
-		if(newmember.channelId != oldmember.channelId) {
-			//console.log('session ended');
-			const index = sessions.findIndex(session => (session.channelId === oldmember.channelId && session.userId === oldmember.id));
+    if (newmember.channelId != oldmember.channelId) {
+      //console.log('session ended');
+      const index = sessions.findIndex(session => (session.channelId === oldmember.channelId && session.userId === oldmember.id));
 
-			if(index != -1) {
-				sessions[index].end = new Date();
-				sessions[index].session_duration = sessions[index].end - sessions[index].start;
+      if (index != -1) {
+        sessions[index].end = new Date();
+        sessions[index].session_duration = sessions[index].end - sessions[index].start;
 
-				if(sessions[index].camera_on && !sessions[index].camera_off) {
-					sessions[index].camera_off = new Date();
-					sessions[index].camera_duration = sessions[index].camera_duration + (sessions[index].camera_off - sessions[index].camera_on);
-				}
+        if (sessions[index].camera_on && !sessions[index].camera_off) {
+          sessions[index].camera_off = new Date();
+          sessions[index].camera_duration = sessions[index].camera_duration + (sessions[index].camera_off - sessions[index].camera_on);
+        }
 
-				if(sessions[index].streaming_on && !sessions[index].streaming_off) {
-					sessions[index].streaming_off = new Date();
-					sessions[index].streaming_duration = sessions[index].streaming_duration + (sessions[index].streaming_off - sessions[index].streaming_on);
-				}
-			}
-		}
+        if (sessions[index].streaming_on && !sessions[index].streaming_off) {
+          sessions[index].streaming_off = new Date();
+          sessions[index].streaming_duration = sessions[index].streaming_duration + (sessions[index].streaming_off - sessions[index].streaming_on);
+        }
+      }
+    }
 
-		if(oldchannel.members.size === 0) {
-			let init = true;
-			let title = '';
-			const rows = new Array();
+    if (oldchannel.members.size === 0) {
+      let init = true;
+      let title = '';
+      const rows = new Array();
 
-			for (let index = sessions.length - 1; index >= 0; index--) {
-				if (sessions[index].channelId === oldmember.channelId) {
+      for (let index = sessions.length - 1; index >= 0; index--) {
+        if (sessions[index].channelId === oldmember.channelId) {
 
-					if (init) {
-						title = 'Voice session in ' + sessions[index].channel + ' has ended.\n';
+          if (init) {
+            title = 'Voice session in ' + sessions[index].channel + ' has ended.\n';
 
-						const cols = new Array();
-						cols[0] = 'Member';
-						cols[1] = 'Joined';
-						cols[2] = 'Duration';
-						cols[3] = 'Camera';
-						cols[4] = '%';
+            const cols = new Array();
+            cols[0] = 'Member';
+            cols[1] = 'Joined';
+            cols[2] = 'Duration';
+            cols[3] = 'Camera';
+            cols[4] = '%';
 
-						rows.push(cols);
-						init = false;
-					}
+            rows.push(cols);
+            init = false;
+          }
 
-					const cols = new Array();
-					cols[0] = sessions[index].username;
-					cols[1] = sessions[index].start.toLocaleTimeString('en-US', { hour12: false });
-					cols[2] = format(sessions[index].session_duration);
-					cols[3] = format(sessions[index].camera_duration);
-					cols[4] = (sessions[index].camera_duration / sessions[index].session_duration)
-						.toLocaleString(undefined, { style: 'percent', minimumFractionDigits:2 });
+          const cols = new Array();
+          cols[0] = sessions[index].username;
+          cols[1] = sessions[index].start.toLocaleTimeString('en-US', { hour12: false });
+          cols[2] = format(sessions[index].session_duration);
+          cols[3] = format(sessions[index].camera_duration);
+          cols[4] = (sessions[index].camera_duration / sessions[index].session_duration)
+            .toLocaleString(undefined, { style: 'percent', minimumFractionDigits: 2 });
 
-					rows.push(cols);
-					sessions.splice(index, 1);
-				}
-			}
+          rows.push(cols);
+          sessions.splice(index, 1);
+        }
+      }
 
-			if(!init) {
-				//console.log(rows);
-				const tab = table(rows);
-				logs.send('```' + title + tab + '```');
-			}
-		}
-	}
+      if (!init) {
+        //console.log(rows);
+        const tab = table(rows);
+        logs.send('```' + title + tab + '```');
+      }
+    }
+  }
 
-	if(newmember.channelId) {
+  if (newmember.channelId) {
 
-		const newchannel = guild.channels.cache.get(newmember.channelId);
+    const newchannel = guild.channels.cache.get(newmember.channelId);
 
-		const user = client.users.cache.get(newmember.id);
+    const user = client.users.cache.get(newmember.id);
 
-		let username = 'Unknown';
+    let username = 'Unknown';
 
-		if (user) {
-			username = user.tag;
-		}
+    if (user) {
+      username = user.tag;
+    }
 
-		if(newmember.channelId != oldmember.channelId) {
+    if (newmember.channelId != oldmember.channelId) {
 
       //console.log('session started');
 
-			const session = new Object();
-			session.channelId = newmember.channelId;
-			session.channel = newchannel.name;
-			session.userId = newmember.id;
-			session.username = username;
-			session.start = new Date();
-			session.end = null;
+      const session = new Object();
+      session.channelId = newmember.channelId;
+      session.channel = newchannel.name;
+      session.userId = newmember.id;
+      session.username = username;
+      session.start = new Date();
+      session.end = null;
 
-			if(newmember.selfVideo) {
-				session.camera_on = session.start;
-			}
-			else {
-				session.camera_on = null;
-			}
+      if (newmember.selfVideo) {
+        session.camera_on = session.start;
+      }
+      else {
+        session.camera_on = null;
+      }
 
-			session.camera_off = null;
+      session.camera_off = null;
 
-			if(newmember.streaming) {
-				session.streaming_on = session.start;
-			}
-			else {
-				session.streaming_on = null;
-			}
+      if (newmember.streaming) {
+        session.streaming_on = session.start;
+      }
+      else {
+        session.streaming_on = null;
+      }
 
-			session.streaming_off = null;
+      session.streaming_off = null;
 
-			session.session_duration = 0;
-			session.camera_duration = 0;
-			session.streaming_duration = 0;
+      session.session_duration = 0;
+      session.camera_duration = 0;
+      session.streaming_duration = 0;
 
-			sessions.unshift(session);
-		}
-		else {
-			const index = sessions.findIndex(session => (session.channelId === newmember.channelId && session.userId === newmember.id));
+      sessions.unshift(session);
+    }
+    else {
+      const index = sessions.findIndex(session => (session.channelId === newmember.channelId && session.userId === newmember.id));
 
-			if(index != -1) {
+      if (index != -1) {
 
-				if(newmember.selfVideo && !oldmember.selfVideo) {
-					sessions[index].camera_on = new Date();
-				}
-				else if(oldmember.selfVideo && !newmember.selfVideo) {
-					sessions[index].camera_off = new Date();
-					sessions[index].camera_duration = sessions[index].camera_duration + (sessions[index].camera_off - sessions[index].camera_on);
-				}
+        if (newmember.selfVideo && !oldmember.selfVideo) {
+          sessions[index].camera_on = new Date();
+        }
+        else if (oldmember.selfVideo && !newmember.selfVideo) {
+          sessions[index].camera_off = new Date();
+          sessions[index].camera_duration = sessions[index].camera_duration + (sessions[index].camera_off - sessions[index].camera_on);
+        }
 
-				if(newmember.streaming && !oldmember.streaming) {
-					sessions[index].streaming_on = new Date();
-				}
-				else if(oldmember.streaming && !newmember.streaming) {
-					sessions[index].streaming_off = new Date();
-					sessions[index].streaming_duration = sessions[index].streaming_duration + (sessions[index].streaming_off - sessions[index].streaming_on);
-				}
-			}
-		}
-	}
+        if (newmember.streaming && !oldmember.streaming) {
+          sessions[index].streaming_on = new Date();
+        }
+        else if (oldmember.streaming && !newmember.streaming) {
+          sessions[index].streaming_off = new Date();
+          sessions[index].streaming_duration = sessions[index].streaming_duration + (sessions[index].streaming_off - sessions[index].streaming_on);
+        }
+      }
+    }
+  }
 
-	// fs.writeFile('./sessions.txt', JSON.stringify(sessions, null, 4), { flag: 'a+' }, err => {
-	// 	if (err) {
-	// 		console.error(err);
-	// 		return;
-	// 	}
-	// });
+  // fs.writeFile('./sessions.txt', JSON.stringify(sessions, null, 4), { flag: 'a+' }, err => {
+  // 	if (err) {
+  // 		console.error(err);
+  // 		return;
+  // 	}
+  // });
 
-	//console.log(sessions);
+  //console.log(sessions);
+});
+
+
+const scumbags = [];
+const warnings = [];
+
+client.on('messageCreate', async (message) => {
+
+  if (message.author.bot || message.channel.type !== 'text') {
+    return;
+  }
+
+
 });
