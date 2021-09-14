@@ -1,6 +1,6 @@
 
 
-const { Client, Intents, MessageEmbed } = require('discord.js');
+const { Client, Intents, MessageEmbed, MessageActionRow, MessageSelectMenu } = require('discord.js');
 
 const fs = require('fs');
 
@@ -288,6 +288,11 @@ global.data = {
 client.once('ready', async () => {
   console.log('Ready!');
 
+  client.user.setUsername('Jalendu');
+
+  client.user.setActivity();
+  client.user.setStatus(':rainbow_flag: monitoring');
+
   const botcom = client.channels.cache.get('834013095805452318');
 
   botcom.messages.fetch({ limit: 100 }).then(messages => {
@@ -332,7 +337,7 @@ client.once('ready', async () => {
 
   await commands.forEach(command => {
     console.log(`Setting command permissions on ${command.id} ${command.name}`);
-    if (command.name === 'verify') {
+    if (command.name === 'verify' || command.name === 'moderate') {
       guild.commands.permissions.set({ command: command.id, permissions: [everyone_deny, mod_allow] });
     }
     else {
@@ -383,32 +388,148 @@ client.on('interactionCreate', async interaction => {
         const messageId = await interaction.reply({ embeds: [embed] });
       }
     }
-    else if (interaction.commandName === 'verify') {
+    // else if (interaction.commandName === 'verify') {
+
+    //   if (interaction.member.roles.cache.some(rolen => rolen.name === 'moderator')) {
+
+    //     const username = interaction.options.getUser('username');
+
+    //     const member = interaction.guild.members.cache.get(username.id);
+
+    //     if (!member) {
+    //       interaction.reply({ content: `@${username.username} isn't a member. Maybe they left? :sob:`, ephemeral: true });
+    //     }
+    //     else if (member.roles.cache.some(role => role.name === 'verified')) {
+    //       interaction.reply({ content: `Member @${username.username} is already verified. :confused:`, ephemeral: true });
+    //     }
+    //     else {
+    //       let role = interaction.guild.roles.cache.find(rolen => rolen.name === 'verified');
+    //       member.roles.add(role);
+    //       role = interaction.guild.roles.cache.find(rolen => rolen.name === 'newcomer');
+    //       member.roles.remove(role);
+
+    //       interaction.reply({ content: `Member @${username.username} has been verified. :partying_face:`, ephemeral: true });
+    //       welcomeDM(member);
+    //     }
+    //   }
+    //   else {
+    //     interaction.reply({ content: 'Sorry, only a moderator can verify. :cry:', ephemeral: true });
+    //   }
+    // }
+    else if (interaction.commandName === 'moderate') {
 
       if (interaction.member.roles.cache.some(rolen => rolen.name === 'moderator')) {
 
+        const command = interaction.options.getString('command');
         const username = interaction.options.getUser('username');
 
         const member = interaction.guild.members.cache.get(username.id);
 
-        if (!member) {
-          interaction.reply(`@${username.username} isn't a member. Maybe they left? :sob:`)
-        }
-        else if (member.roles.cache.some(role => role.name === 'verified')) {
-          interaction.reply(`Member @${username.username} is already verified. :confused:`);
+        //let test = 'test_';
+        let test = '';
+
+        if (test === '') {
+          mods = client.channels.cache.get('837570108745580574');
         }
         else {
-          let role = interaction.guild.roles.cache.find(rolen => rolen.name === 'verified');
-          member.roles.add(role);
-          role = interaction.guild.roles.cache.find(rolen => rolen.name === 'newcomer');
-          member.roles.remove(role);
+          mods = client.channels.cache.get('871628022388764672');
+        }
 
-          interaction.reply(`Member @${username.username} has been verified. :partying_face:`);
-          welcomeDM(member);
+        if (!member) {
+          interaction.reply({ content: `@${username.username} isn't a member. Maybe they left? :sob:`, ephemeral: true });
+        }
+        else if (command === 'verify') {
+
+          if (member.roles.cache.some(role => role.name === `${test}verified`)) {
+            interaction.reply({ content: `Member @${username.username} is already verified. :confused:`, ephemeral: true });
+          }
+          else {
+            let role = interaction.guild.roles.cache.find(rolen => rolen.name === `${test}verified`);
+            member.roles.add(role);
+            role = interaction.guild.roles.cache.find(rolen => rolen.name === `${test}newcomer`);
+            member.roles.remove(role);
+
+            interaction.reply({ content: `Member @${username.username} has been verified. :partying_face:`, ephemeral: true });
+
+            mods.send(`Member @${username.username} has been verified by @${interaction.user.username}.`);
+
+            welcomeDM(member);
+          }
+        }
+        else if (command === 'unverify') {
+          let role = interaction.guild.roles.cache.find(rolen => rolen.name === `${test}verified`);
+          member.roles.remove(role);
+          role = interaction.guild.roles.cache.find(rolen => rolen.name === `${test}newcomer`);
+          member.roles.add(role);
+
+          interaction.reply({ content: `Member @${username.username} has been unverified. :unamused:`, ephemeral: true });
+
+          mods.send(`Member @${username.username} has been unverified by @${interaction.user.username}.`);
+        }
+        else if (command === 'mute') {
+          if (!member.roles.cache.some(role => role.name === `${test}newcomer`)) {
+            interaction.reply({ content: `Member @${username.username} is not a newcomer. :confused:`, ephemeral: true });
+          }
+          else {
+            let role = interaction.guild.roles.cache.find(rolen => rolen.name === `${test}newcomer-muted`);
+            member.roles.add(role);
+
+            interaction.reply({ content: `Member @${username.username} has been muted. :zipper_mouth:`, ephemeral: true });
+
+            mods.send(`Member @${username.username} has been muted by @${interaction.user.username}.`);
+          }
+        }
+        else if (command === 'unmute') {
+          if (!member.roles.cache.some(role => role.name === `${test}newcomer`)) {
+            interaction.reply({ content: `Member @${username.username} is not a newcomer. :confused:`, ephemeral: true });
+          }
+          else {
+            let role = interaction.guild.roles.cache.find(rolen => rolen.name === `${test}newcomer-muted`);
+            member.roles.remove(role);
+
+            interaction.reply({ content: `Member @${username.username} has been unmuted. :open_mouth:`, ephemeral: true });
+
+            mods.send(`Member @${username.username} has been unmuted by @${interaction.user.username}.`);
+          }
+        }
+        else if (command === 'kick') {
+          if (!member.kickable) {
+            interaction.reply({ content: `Member @${username.username} is not kickable. :confused:`, ephemeral: true });
+          }
+          else {
+            member.kick()
+              .then(member => {
+                interaction.reply({ content: `Member @${username.username} has been kicked. :dancer:`, ephemeral: true });
+
+                mods.send(`Member @${username.username} has been kicked by @${interaction.user.username}.`);
+              })
+              .catch(err => {
+                interaction.reply({ content: `Failed to kick @${username.username}. :confused:`, ephemeral: true });
+              });
+          }
+        }
+        else if (command === 'ban') {
+          if (!member.bannable) {
+            interaction.reply({ content: `Member @${username.username} is not bannable. :confused:`, ephemeral: true });
+          }
+          else {
+            member.ban({ days: 7 })
+              .then(member => {
+                interaction.reply({ content: `Member @${username.username} has been banned. :no_entry_sign:`, ephemeral: true });
+
+                mods.send(`Member @${username.username} has been banned by @${interaction.user.username}.`);
+              })
+              .catch(err => {
+                interaction.reply({ content: `Failed to ban @${username.username}. :confused:`, ephemeral: true });
+              });
+          }
+        }
+        else {
+          interaction.reply({ content: `${command}: @${username.username} Sorry, not implemented yet - working on it.`, ephemeral: true });
         }
       }
       else {
-        interaction.reply('Sorry, only a moderator can verify. :cry:');
+        interaction.reply({ content: 'Sorry, only a moderators can use moderate commands. :cry:', ephemeral: true });
       }
     }
   }
@@ -453,6 +574,42 @@ client.on('messageCreate', async (message) => {
     }
   }
 
+  if (message.content === '/welcome') {
+
+    const embed = new MessageEmbed()
+      .setTitle('Welcome to Gay Men Meditating!')
+      .setColor('0xBC002D')
+      .addField('\u200B', 'This server contains various channels for discussion and online practice of meditation and yoga.')
+      .addField('\u200B', '\nIn order to gain access, you **MUST** respond, using complete sentences ' +
+        ' (single word answers will not be accepted), to the following:')
+      .addField('\u200B', '**1. Tell us about yourself.' +
+        '\n2. Describe your experience with meditation and/or yoga, if any.' +
+        '\n3. Why do you want to join this group?' +
+        '\n4. Include @moderator in your message so we will be notified of your response.* **')
+      .addField('\u200B', '*You may directly message a moderator with your responses if you prefer. ' +
+        'A moderator will review your responses as soon as possible and determine whether to grant you access.');
+
+    message.channel.send({ embeds: [embed] })
+      .then((msg) => msg.pin())
+      .catch(console.error);
+  }
+  else if (message.content.startsWith('/newcomer')) {
+    message.channel.send(newcomer_report);
+  }
+  else if (message.content.startsWith('/mclear')) {
+    if (message.member.roles.cache.some(rolen => rolen.name === 'moderator')) {
+      let num = 2;
+
+      const args = message.content.split(' ');
+
+      if (args[1]) {
+        num = parseInt(args[1]) + 1;
+      }
+
+      message.channel.bulkDelete(num);
+    }
+  }
+
 
   if (message.channel.name.includes('landing-zone')) {
 
@@ -490,52 +647,15 @@ client.on('messageCreate', async (message) => {
           break;
         }
       }
-    }
-  }
 
+      if (rule === '') {
+        let result = 'false';
+        let type = '';
 
-  if (message.channel.name.includes('landing-zone')) {
+        for (let i = 0; i < data.homophobic.length; i++) {
+          if (msglc.includes(data.homophobic[i])) {
 
-    if (!message.member.roles.cache.some(rolen => rolen.name === 'verified')) {
-
-      const mods = client.channels.cache.get('837570108745580574');
-      const mods = client.channels.cache.get('871628022388764672');
-
-      const marq = client.users.cache.get('679465390841135126');
-
-      const dels = client.channels.cache.get('874900065142046720');
-
-      const msglc = message.content.toLowerCase();
-
-      let rule = '';
-      let result = 'false';
-      let type = '';
-
-      for (let i = 0; i < data.homophobic.length; i++) {
-        if (msglc.includes(data.homophobic[i])) {
-
-          rule = data.homophobic[i];
-
-          for (let j = 0; j < data.except.length; j++) {
-            if (rule.includes(data.except[j])) {
-              rule = '';
-              break;
-            }
-          }
-
-          if (rule !== '') {
-            result = 'true';
-            type = 'homophobic language';
-            break;
-          }
-        }
-      }
-
-      if (result === 'false') {
-        for (let i = 0; i < data.racist.length; i++) {
-          if (msglc.includes(data.racist[i])) {
-
-            rule = data.racist[i];
+            rule = data.homophobic[i];
 
             for (let j = 0; j < data.except.length; j++) {
               if (rule.includes(data.except[j])) {
@@ -546,67 +666,89 @@ client.on('messageCreate', async (message) => {
 
             if (rule !== '') {
               result = 'true';
-              type = 'racist language';
+              type = 'homophobic language';
               break;
             }
           }
         }
-      }
 
-      if (result === 'false') {
-        if (msglc.includes('http://') || msglc.includes('https://')) {
-          rule = 'url';
-          result = 'true';
-          type = 'URL or file links';
-        }
-      }
+        if (result === 'false') {
+          for (let i = 0; i < data.racist.length; i++) {
+            if (msglc.includes(data.racist[i])) {
 
-      const nsrole = message.guild.roles.cache.find(rolen => rolen.name === 'newcomer-spoke');
-      message.member.roles.add(nsrole);
+              rule = data.racist[i];
 
-      if (result === 'true') {
-        message.delete()
-          .then(msgx => console.log(`Deleted message from ${msgx.author.username}`))
-          .catch(err => console.log(err));
+              for (let j = 0; j < data.except.length; j++) {
+                if (rule.includes(data.except[j])) {
+                  rule = '';
+                  break;
+                }
+              }
 
-        message.author.send(`Please refrain from posting ${type} in the Gay Men Meditating ${message.channel.name}.\nYour message was deleted.`).catch(err => console.log(err));
-        mods.send(`@${message.author.username} wrote ${type} in ${message.channel.name} and their message was deleted.`);
-
-        if (type === 'homophobic language' || type === 'racist language') {
-          dels.send(`@${message.author.username}'s message was classified as ${type} by rule "${rule}".`);
-        }
-        else {
-          dels.send(`@${message.author.username}'s message was classified as containing ${type}.`);
+              if (rule !== '') {
+                result = 'true';
+                type = 'racist language';
+                break;
+              }
+            }
+          }
         }
 
-        dels.send(`Message was >>>${message.content}<<<`);
+        if (result === 'false') {
+          if (msglc.includes('http://') || msglc.includes('https://')) {
+            rule = 'url';
+            result = 'true';
+            type = 'URL or file links';
+          }
+        }
 
-        const scumbag = scumbags.indexOf(message.author.username);
+        const nsrole = message.guild.roles.cache.find(rolen => rolen.name === 'newcomer-spoke');
+        message.member.roles.add(nsrole);
 
-        if (scumbag > -1) {
-          warnings[scumbag] = warnings[scumbag] + 1;
-          if (warnings[scumbag] > 2) {
+        if (result === 'true') {
+          message.delete()
+            .then(msgx => console.log(`Deleted message from ${msgx.author.username}`))
+            .catch(err => console.log(err));
 
-            const member = message.guild.members.resolve(message.author);
+          message.author.send(`Please refrain from posting ${type} in the Gay Men Meditating ${message.channel.name}.\nYour message was deleted.`).catch(err => console.log(err));
+          mods.send(`@${message.author.username} wrote ${type} in ${message.channel.name} and their message was deleted.`);
 
-            if (member) {
+          if (type === 'homophobic language' || type === 'racist language') {
+            dels.send(`@${message.author.username}'s message was classified as ${type} by rule "${rule}".`);
+          }
+          else {
+            dels.send(`@${message.author.username}'s message was classified as containing ${type}.`);
+          }
 
-              const role = message.guild.roles.cache.find(rolen => rolen.name === 'newcomer-muted');
+          dels.send(`Message was >>>${message.content}<<<`);
 
-              message.member.roles.add(role).catch(err => console.log(err));
+          const scumbag = scumbags.indexOf(message.author.username);
 
-              message.author.send('**You have been muted.**').catch(err => console.log(err));
-              mods.send(`@${message.author.username} has been muted.`).catch(err => console.log(err));
+          if (scumbag > -1) {
+            warnings[scumbag] = warnings[scumbag] + 1;
+            if (warnings[scumbag] > 2) {
+
+              const member = message.guild.members.resolve(message.author);
+
+              if (member) {
+
+                const role = message.guild.roles.cache.find(rolen => rolen.name === 'newcomer-muted');
+
+                message.member.roles.add(role).catch(err => console.log(err));
+
+                message.author.send('**You have been muted.**').catch(err => console.log(err));
+                mods.send(`@${message.author.username} has been muted.`).catch(err => console.log(err));
+              }
+            }
+            else {
+              message.author.send('**Final Warning - If you continue you will be muted.**').catch(err => console.log(err));
             }
           }
           else {
-            message.author.send('**Final Warning - If you continue you will be muted.**').catch(err => console.log(err));
+            scumbags.push(message.author.username);
+            warnings.push(1);
+            message.author.send('**First Warning**').catch(err => console.log(err));
           }
-        }
-        else {
-          scumbags.push(message.author.username);
-          warnings.push(1);
-          message.author.send('**First Warning**').catch(err => console.log(err));
         }
       }
     }
