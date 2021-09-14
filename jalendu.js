@@ -274,6 +274,41 @@ async function newcomers() {
 }
 
 
+async function channels(role) {
+
+  const guild = client.guilds.cache.get('827888294100074516');
+
+  let categories = await guild.channels.cache.filter(channel => channel.type === 'GUILD_CATEGORY');
+
+  const sections = [];
+
+  await categories.forEach(category => {
+    console.log(`${category.name}`);
+
+    const section = new Object();
+
+    section.title = category.name;
+    section.order = category.rawPosition;
+    section.channels = [];
+
+    let channels = guild.channels.cache.filter(channel => channel.parentId === category.id);
+
+    channels.forEach(channel => {
+      const roleobj = guild.roles.cache.find(rolen => rolen.name === role);
+      const roleview = channel.permissionsFor(roleobj);
+      if (roleview.serialize().VIEW_CHANNEL) {
+        console.log(`${channel.name}`);
+        console.log(channel.topic);
+
+        const item = new Object();
+
+        // item.name = channel.na
+      }
+    });
+  });
+}
+
+
 let bumptime = 0;
 let nextbumptime = 0;
 let currenttime = 0;
@@ -356,6 +391,9 @@ client.once('ready', async () => {
 
   const fileContent = fs.readFileSync('./data.json');
   global.data = JSON.parse(fileContent);
+
+
+  channels('verified');
 
 });
 
