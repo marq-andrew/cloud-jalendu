@@ -274,7 +274,7 @@ async function newcomers() {
 }
 
 
-async function channels(role) {
+async function channels(roleId, outputChannelId) {
 
   const guild = client.guilds.cache.get('827888294100074516');
 
@@ -283,29 +283,102 @@ async function channels(role) {
   const sections = [];
 
   await categories.forEach(category => {
-    console.log(`${category.name}`);
+    // console.log(`${category.name}`);
 
     const section = new Object();
 
-    section.title = category.name;
+    section.title = category.name.toUpperCase();
     section.order = category.rawPosition;
     section.channels = [];
 
     let channels = guild.channels.cache.filter(channel => channel.parentId === category.id);
 
     channels.forEach(channel => {
-      const roleobj = guild.roles.cache.find(rolen => rolen.name === role);
-      const roleview = channel.permissionsFor(roleobj);
-      if (roleview.serialize().VIEW_CHANNEL) {
-        console.log(`${channel.name}`);
-        console.log(channel.topic);
+      const role = guild.roles.cache.get(roleId)
+      const roleperm = channel.permissionsFor(role);
+
+      if (roleperm.serialize().VIEW_CHANNEL) {
 
         const item = new Object();
 
-        // item.name = channel.na
+        if (channel.type === 'GUILD_TEXT') {
+          item.name = '#' + channel.name;
+          item.topic = channel.topic;
+        }
+        else {
+          item.name = channel.name;
+          console.log(vc_channels);
+          console.log(channel.name);
+          item.topic = vc_channels[channel.name];
+          console.log(item.topic);
+        }
+
+        item.order = channel.rawPosition;
+
+
+        if (section.channels.length === 0) {
+          section.channels.push(item);
+        }
+        else {
+          let splice = 0;
+          while (section.channels[splice].order < item.order) {
+            splice = splice + 1
+            if (splice === section.channels.length) {
+              break;
+            }
+          }
+          section.channels.splice(splice, 0, item);
+        }
       }
     });
+
+    if (sections.length === 0) {
+      sections.push(section);
+    }
+    else {
+      let splice = 0;
+      while (sections[splice].order < section.order) {
+        splice = splice + 1
+        if (splice === sections.length) {
+          break;
+        }
+      }
+      sections.splice(splice, 0, section);
+    }
   });
+
+  const output = client.channels.cache.get(outputChannelId);
+
+  const fetched = await output.messages.fetch({ limit: 100 });
+
+  if (fetched.size > 0) {
+    output.bulkDelete(fetched.size);
+  }
+
+  let content = '**Channels Directory**\n\n';
+  let newcontent = '';
+
+  for (let i = 0; i < sections.length; i++) {
+    if (sections[i].channels.length > 0) {
+      newcontent = '**' + sections[i].title + '**\n\n\u200B';
+      if ((content + newcontent).length > 2000) {
+        output.send(content);
+        content = '';
+      }
+      content = content + newcontent;
+    }
+
+    for (let j = 0; j < sections[i].channels.length; j++) {
+      newcontent = sections[i].channels[j].name + ' : ' + sections[i].channels[j].topic + '\n\n\u200B';
+      if ((content + newcontent).length > 2000) {
+        output.send(content);
+        content = '';
+      }
+      content = content + newcontent;
+    }
+  }
+
+  output.send(content);
 }
 
 
@@ -319,6 +392,8 @@ global.data = {
   racist: [],
   except: [],
 }
+
+global.vc_channels = {};
 
 client.once('ready', async () => {
   console.log('Ready!');
@@ -389,12 +464,20 @@ client.once('ready', async () => {
   setInterval(newcomers, checkthe_interval);
 
 
-  const fileContent = fs.readFileSync('./data.json');
+  var fileContent = fs.readFileSync('./data.json');
   global.data = JSON.parse(fileContent);
 
+  fileContent = fs.readFileSync('./vc_channels.json');
+  vc_channels = JSON.parse(fileContent);
 
-  channels('verified');
+  console.log(vc_channels);
 
+});
+
+
+client.on("channelUpdate", function(oldChannel, newChannel) {
+  channels('836590097318019092', '887168812632391740');
+  channels('828732299390353448', '887168976742912001');
 });
 
 
@@ -426,34 +509,6 @@ client.on('interactionCreate', async interaction => {
         const messageId = await interaction.reply({ embeds: [embed] });
       }
     }
-    // else if (interaction.commandName === 'verify') {
-
-    //   if (interaction.member.roles.cache.some(rolen => rolen.name === 'moderator')) {
-
-    //     const username = interaction.options.getUser('username');
-
-    //     const member = interaction.guild.members.cache.get(username.id);
-
-    //     if (!member) {
-    //       interaction.reply({ content: `@${username.username} isn't a member. Maybe they left? :sob:`, ephemeral: true });
-    //     }
-    //     else if (member.roles.cache.some(role => role.name === 'verified')) {
-    //       interaction.reply({ content: `Member @${username.username} is already verified. :confused:`, ephemeral: true });
-    //     }
-    //     else {
-    //       let role = interaction.guild.roles.cache.find(rolen => rolen.name === 'verified');
-    //       member.roles.add(role);
-    //       role = interaction.guild.roles.cache.find(rolen => rolen.name === 'newcomer');
-    //       member.roles.remove(role);
-
-    //       interaction.reply({ content: `Member @${username.username} has been verified. :partying_face:`, ephemeral: true });
-    //       welcomeDM(member);
-    //     }
-    //   }
-    //   else {
-    //     interaction.reply({ content: 'Sorry, only a moderator can verify. :cry:', ephemeral: true });
-    //   }
-    // }
     else if (interaction.commandName === 'moderate') {
 
       if (interaction.member.roles.cache.some(rolen => rolen.name === 'moderator')) {
