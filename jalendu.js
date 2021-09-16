@@ -10,6 +10,8 @@ const format = require('format-duration');
 
 const querystring = require('querystring');
 
+var fetch = require('node-fetch');
+
 const token = process.env['TOKEN'];
 
 
@@ -283,7 +285,6 @@ async function channels(roleId, outputChannelId) {
   const sections = [];
 
   await categories.forEach(category => {
-    // console.log(`${category.name}`);
 
     const section = new Object();
 
@@ -307,10 +308,7 @@ async function channels(roleId, outputChannelId) {
         }
         else {
           item.name = channel.name;
-          console.log(vc_channels);
-          console.log(channel.name);
           item.topic = vc_channels[channel.name];
-          console.log(item.topic);
         }
 
         item.order = channel.rawPosition;
@@ -470,8 +468,6 @@ client.once('ready', async () => {
   fileContent = fs.readFileSync('./vc_channels.json');
   vc_channels = JSON.parse(fileContent);
 
-  console.log(vc_channels);
-
 });
 
 
@@ -625,8 +621,47 @@ client.on('interactionCreate', async interaction => {
         interaction.reply({ content: 'Sorry, only a moderators can use moderate commands. :cry:', ephemeral: true });
       }
     }
+    else if (interaction.commandName === 'joke') {
+
+      term = interaction.options.getString('term');
+
+      const options = {
+        method: 'GET',
+        headers: {
+          'Accept': 'application/json'
+        },
+      };
+
+      var url = `https://icanhazdadjoke.com/`;
+
+      if (term) {
+        const query = querystring.stringify({ term: term });
+        url = `https://icanhazdadjoke.com/search?${query}`;
+      }
+
+      result = await fetch(url, options)
+        .then(response => response.text())
+        .catch((err) => console.log(err));
+
+      const joke = await JSON.parse(result);
+
+      if (joke.joke) {
+        interaction.reply(joke.joke);
+      }
+      else if (joke.results) {
+        const rand = Math.floor(Math.random() * joke.results.length);
+        interaction.reply(joke.results[rand].joke);
+      }
+    }
   }
+
+
+
+
 });
+
+const scumbags = [];
+const warnings = [];
 
 
 client.on('messageCreate', async (message) => {
@@ -1026,14 +1061,5 @@ client.on('voiceStateUpdate', (oldmember, newmember) => {
 });
 
 
-const scumbags = [];
-const warnings = [];
-
-client.on('messageCreate', async (message) => {
-
-  if (message.author.bot || message.channel.type !== 'text') {
-    return;
-  }
 
 
-});

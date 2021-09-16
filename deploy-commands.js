@@ -7,9 +7,6 @@ const clientId = process.env['clientID'];
 const guildId = process.env['guildID'];
 
 const commands = [
-  // new SlashCommandBuilder()
-  // .setName('nothing')
-  // .setDescription('nothing'),
 
   new SlashCommandBuilder()
     .setName('avatar')
@@ -20,14 +17,23 @@ const commands = [
         .setRequired(false))
     .setDefaultPermission(false),
 
-  // new SlashCommandBuilder()
-  //   .setName('verify')
-  //   .setDescription('Verifies a newcomer')
-  //   .addUserOption(option =>
-  //     option.setName('username')
-  //       .setDescription('The username to verify')
-  //       .setRequired(true))
-  //   .setDefaultPermission(false),
+  new SlashCommandBuilder()
+    .setName('joke')
+    .setDescription('Gets a random (dad) joke')
+    .addStringOption(option =>
+      option.setName('term')
+        .setDescription('An optional search term')
+        .setRequired(false))
+    .setDefaultPermission(false),
+
+      new SlashCommandBuilder()
+    .setName('define')
+    .setDescription('Gets the urban dictionary definition')
+    .addStringOption(option =>
+      option.setName('term')
+        .setDescription('The search term')
+        .setRequired(true))
+    .setDefaultPermission(false),
 
   new SlashCommandBuilder()
     .setName('moderate')
