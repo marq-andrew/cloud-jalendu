@@ -26,9 +26,16 @@ const commands = [
         .setRequired(false))
     .setDefaultPermission(false),
 
-      new SlashCommandBuilder()
+  new SlashCommandBuilder()
     .setName('define')
     .setDescription('Gets the urban dictionary definition')
+    .addStringOption(option =>
+      option.setName('result')
+        .setDescription('The result to show')
+        .setRequired(true)
+        .addChoice('first', 'first')
+        .addChoice('all', 'all')
+        .addChoice('random', 'random'))
     .addStringOption(option =>
       option.setName('term')
         .setDescription('The search term')

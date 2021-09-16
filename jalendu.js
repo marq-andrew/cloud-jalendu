@@ -14,7 +14,6 @@ var fetch = require('node-fetch');
 
 const token = process.env['TOKEN'];
 
-
 const intents = new Intents();
 
 intents.add(Intents.FLAGS.GUILDS);
@@ -36,6 +35,8 @@ intents.add(Intents.FLAGS.DIRECT_MESSAGE_REACTIONS);
 const client = new Client({ intents: intents });
 
 client.login(token);
+
+const trim = (str, max) => ((str.length > max) ? `${str.slice(0, max - 3)}...` : str);
 
 function welcomeDM(member) {
   const l1 = 'Welcome to Gay Men Meditating.';
@@ -623,7 +624,7 @@ client.on('interactionCreate', async interaction => {
     }
     else if (interaction.commandName === 'joke') {
 
-      term = interaction.options.getString('term');
+      const term = interaction.options.getString('term');
 
       const options = {
         method: 'GET',
@@ -651,6 +652,53 @@ client.on('interactionCreate', async interaction => {
       else if (joke.results) {
         const rand = Math.floor(Math.random() * joke.results.length);
         interaction.reply(joke.results[rand].joke);
+      }
+    }
+    else if (interaction.commandName === 'define') {
+
+      const term = interaction.options.getString('term');
+      const result_type = interaction.options.getString('result');
+
+      const query = querystring.stringify({ term: term });
+
+      const { list } = await fetch(`https://api.urbandictionary.com/v0/define?${query}`)
+        .then(response => response.json())
+        .catch(err => console.log(err));
+
+      if (!list.length) {
+        return interaction.reply(`No results found for **${term}**.`);
+      }
+      else {
+        let select = 1;
+
+        if (result_type === 'all') {
+          select = 0;
+        }
+        else if (result_type === 'random') {
+          select = Math.floor(Math.random() * list.length);
+        }
+
+        const embeds = [];
+
+        for (let i = 0; i < list.length; i++) {
+
+          if (select === 0 || i === (select - 1)) {
+
+            const embed = new MessageEmbed()
+              .setColor('RANDOM')
+              .setTitle(list[i].word)
+              .setURL(list[i].permalink)
+              .addFields(
+                { name: 'Definition', value: trim(list[i].definition, 1024) },
+                { name: 'Example', value: trim(list[i].example, 1024) },
+                { name: 'Rating', value: `${list[i].thumbs_up} thumbs up. ${list[i].thumbs_down} thumbs down.` },
+              );
+
+            embeds.push(embed);
+          }
+        }
+
+        await interaction.reply({ embeds: embeds }).catch(console.error);
       }
     }
   }
