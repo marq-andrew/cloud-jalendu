@@ -14,7 +14,7 @@ const commands = [
     .addUserOption(option =>
       option.setName('username')
         .setDescription('The username to show')
-        .setRequired(false))
+        .setRequired(true))
     .setDefaultPermission(false),
 
   new SlashCommandBuilder()
@@ -24,7 +24,7 @@ const commands = [
       option.setName('term')
         .setDescription('An optional search term')
         .setRequired(false))
-    .setDefaultPermission(false),
+    .setDefaultPermission(true),
 
   new SlashCommandBuilder()
     .setName('define')
@@ -40,7 +40,7 @@ const commands = [
       option.setName('term')
         .setDescription('The search term')
         .setRequired(true))
-    .setDefaultPermission(false),
+    .setDefaultPermission(true),
 
   new SlashCommandBuilder()
     .setName('moderate')
@@ -68,7 +68,9 @@ const rest = new REST({ version: '9' }).setToken(token);
 (async () => {
   try {
     await rest.put(
-      Routes.applicationGuildCommands(clientId, guildId),
+      //Routes.applicationGuildCommands(clientId, guildId),
+      //{ body: commands },
+      Routes.applicationCommands(clientId),
       { body: commands },
     );
 

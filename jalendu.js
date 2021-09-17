@@ -12,6 +12,10 @@ const querystring = require('querystring');
 
 var fetch = require('node-fetch');
 
+var jalenduDb = require('./jalenduDb.js');
+
+const jalendu = jalenduDb.setup();
+
 const token = process.env['TOKEN'];
 
 const intents = new Intents();
@@ -32,7 +36,7 @@ intents.add(Intents.FLAGS.DIRECT_MESSAGES);
 intents.add(Intents.FLAGS.DIRECT_MESSAGE_REACTIONS);
 //intents.add(Intents.FLAGS.DIRECT_MESSAGE_TYPING);
 
-const client = new Client({ intents: intents });
+const client = new Client({ intents: intents, partials: ["CHANNEL"] });
 
 client.login(token);
 
@@ -68,12 +72,13 @@ async function newcomers() {
 
   await guild.members.fetch().then(members => {
 
-    const mods = client.channels.cache.get('837570108745580574');
+    const mods = client.channels.cache.get('827889605994872863');
 
     const newcomer = guild.roles.cache.find(rolen => rolen.name === 'newcomer');
     const newcomer_muted = guild.roles.cache.find(rolen => rolen.name === 'newcomer-muted');
     const newcomer_reminded = guild.roles.cache.find(rolen => rolen.name === 'newcomer-reminded');
     const newcomer_kicked = guild.roles.cache.find(rolen => rolen.name === 'newcomer-kicked');
+    const member_role = guild.roles.cache.find(rolen => rolen.name === 'member');
 
     for (const member of members) {
 
@@ -97,6 +102,12 @@ async function newcomers() {
             muted = ' +';
           }
 
+          let exmember = '';
+
+          if (member[1].roles.cache.some(rolen => rolen.name === 'member')) {
+            exmember = ' #';
+          }
+
           let joined = member[1].joinedTimestamp;
 
           if (joined < init) {
@@ -107,7 +118,7 @@ async function newcomers() {
           const joinelapsed = new Date(currenttime - joined) / (24 * 60 * 60 * 1000);
 
           if (joinelapsed > 7) {
-            newcomer_report = newcomer_report + '\n' + member[1].user.username + ' --> kicked : ' + joinelapsed.toFixed(1) + ' days.' + spoke + muted;
+            newcomer_report = newcomer_report + '\n' + member[1].user.username + ' --> kicked : ' + joinelapsed.toFixed(1) + ' days.' + spoke + muted + exmember;
             if (!member[1].roles.cache.some(rolen => rolen.name === 'newcomer-kicked')) {
               member[1].roles.add(newcomer_kicked).catch(err => console.log(err));
               mods.send(`@${member[1].user.username} has been removed (7 days after joining).`);
@@ -115,7 +126,7 @@ async function newcomers() {
             member[1].kick('Entry requirements unsatisfied after 7 days').catch(err => console.log(err));
           }
           else if (joinelapsed > 2) {
-            newcomer_report = newcomer_report + '\n' + member[1].user.username + ' --> reminded : ' + joinelapsed.toFixed(1) + ' days.' + spoke + muted;
+            newcomer_report = newcomer_report + '\n' + member[1].user.username + ' --> reminded : ' + joinelapsed.toFixed(1) + ' days.' + spoke + muted + exmember;
             if (!member[1].roles.cache.some(rolen => rolen.name === 'newcomer-reminded')) {
               member[1].roles.add(newcomer_reminded).catch(err => console.log(err));
               member[1].send('__Welcome to the Gay Men Meditating Discord.__\n\n' +
@@ -131,7 +142,7 @@ async function newcomers() {
             }
           }
           else {
-            newcomer_report = newcomer_report + '\n' + member[1].user.username + ' --> waiting : ' + joinelapsed.toFixed(1) + ' days.' + spoke + muted;
+            newcomer_report = newcomer_report + '\n' + member[1].user.username + ' --> waiting : ' + joinelapsed.toFixed(1) + ' days.' + spoke + muted + exmember;
             if (member[1].roles.cache.some(rolen => rolen.name === 'newcomer-reminded')) {
               member[1].roles.remove(newcomer_reminded).catch(err => console.log(err));
             }
@@ -155,6 +166,9 @@ async function newcomers() {
           }
           if (member[1].roles.cache.some(rolen => rolen.name === 'newcomer-spoke')) {
             member[1].roles.remove(newcomer_kicked).catch(err => console.log(err));
+          }
+          if (!member[1].roles.cache.some(rolen => rolen.name === 'member')) {
+            member[1].roles.add(member_role).catch(err => console.log(err));
           }
         }
       }
@@ -446,12 +460,12 @@ client.once('ready', async () => {
 
   await commands.forEach(command => {
     console.log(`Setting command permissions on ${command.id} ${command.name}`);
-    if (command.name === 'verify' || command.name === 'moderate') {
+    if (command.name === 'moderate') {
       guild.commands.permissions.set({ command: command.id, permissions: [everyone_deny, mod_allow] });
     }
-    else {
-      guild.commands.permissions.set({ command: command.id, permissions: [everyone_allow] });
-    }
+    // else {
+    //   guild.commands.permissions.set({ command: command.id, permissions: [everyone_allow] });
+    // }
   });
 
 
@@ -480,8 +494,6 @@ client.on("channelUpdate", function(oldChannel, newChannel) {
 
 
 client.on('interactionCreate', async interaction => {
-
-  //console.log(interaction);
 
   if (interaction.isCommand()) {
 
@@ -519,10 +531,10 @@ client.on('interactionCreate', async interaction => {
         let test = '';
 
         if (test === '') {
-          mods = client.channels.cache.get('837570108745580574');
+          mods = client.channels.cache.get('827889605994872863');
         }
         else {
-          mods = client.channels.cache.get('871628022388764672');
+          mods = client.channels.cache.get('827889605994872863');
         }
 
         if (!member) {
@@ -702,157 +714,141 @@ client.on('interactionCreate', async interaction => {
       }
     }
   }
-
-
-
-
 });
+
 
 const scumbags = [];
 const warnings = [];
 
-
 client.on('messageCreate', async (message) => {
 
-  if (message.channel.type === 'DM') {
-    return;
+  if (message.author.bot) {
+    //return;
   }
 
-  console.log(message.channel.name);
-
-  if (message.embeds[0]) {
-    console.log(message.author.username + ': ');
-    console.log(message.embeds[0]);
+  if (message.channel.type === 'DM') {
+    jalenduDb.message(jalendu, message);
   }
   else {
-    console.log(message.author.username + ': ' + message.content);
-  }
 
-  if (message.channel.name.includes('bot-commands')) {
-    if (message.embeds[0] && message.author.id === '302050872383242240') {
-      if (message.embeds[0].description.includes(':thumbsup:')
-        || message.embeds[0].description.includes('timeout of')) {
-        bumptime = message.createdAt;
-        nextbumptime = new Date(bumptime.getTime() + 120 * 60000);
-        console.log('Detected DISBOARD bump @ ' + bumptime);
+    console.log(message.channel.name);
 
-        const words = message.embeds[0].description.split(' ');
-
-        const emoji = [':heart:', ':heart_exclamation:', ':heart_eyes:',
-          ':smiling_face_with_3_hearts:',
-          ':kissing_heart:', ':kiss_mm:', ':kiss:', ':thumbsup:', ':santa:', ':clap:', ':couple_mm:',
-          ':rose:', ':medal:', ':rainbow:', ':eggplant:'];
-
-        const rand = Math.floor(Math.random() * emoji.length);
-
-        message.channel.send('Thanks ' + words[0] + ' ' + emoji[rand]);
-      }
+    if (message.embeds[0]) {
+      console.log(message.author.username + ': ');
+      console.log(message.embeds[0]);
     }
-  }
-
-  if (message.content === '/welcome') {
-
-    const embed = new MessageEmbed()
-      .setTitle('Welcome to Gay Men Meditating!')
-      .setColor('0xBC002D')
-      .addField('\u200B', 'This server contains various channels for discussion and online practice of meditation and yoga.')
-      .addField('\u200B', '\nIn order to gain access, you **MUST** respond, using complete sentences ' +
-        ' (single word answers will not be accepted), to the following:')
-      .addField('\u200B', '**1. Tell us about yourself.' +
-        '\n2. Describe your experience with meditation and/or yoga, if any.' +
-        '\n3. Why do you want to join this group?' +
-        '\n4. Include @moderator in your message so we will be notified of your response.* **')
-      .addField('\u200B', '*You may directly message a moderator with your responses if you prefer. ' +
-        'A moderator will review your responses as soon as possible and determine whether to grant you access.');
-
-    message.channel.send({ embeds: [embed] })
-      .then((msg) => msg.pin())
-      .catch(console.error);
-  }
-  else if (message.content.startsWith('/newcomer')) {
-    message.channel.send(newcomer_report);
-  }
-  else if (message.content.startsWith('/mclear')) {
-    if (message.member.roles.cache.some(rolen => rolen.name === 'moderator')) {
-      let num = 2;
-
-      const args = message.content.split(' ');
-
-      if (args[1]) {
-        num = parseInt(args[1]) + 1;
-      }
-
-      message.channel.bulkDelete(num);
+    else {
+      console.log(message.author.username + ': ' + message.content);
     }
-  }
 
+    if (message.channel.name.includes('bot-commands')) {
+      if (message.embeds[0] && message.author.id === '302050872383242240') {
+        if (message.embeds[0].description.includes(':thumbsup:')
+          || message.embeds[0].description.includes('timeout of')) {
+          bumptime = message.createdAt;
+          nextbumptime = new Date(bumptime.getTime() + 120 * 60000);
+          console.log('Detected DISBOARD bump @ ' + bumptime);
 
-  if (message.channel.name.includes('landing-zone')) {
+          const words = message.embeds[0].description.split(' ');
 
-    if (!message.member.roles.cache.some(rolen => rolen.name === 'verified')) {
+          const emoji = [':heart:', ':heart_exclamation:', ':heart_eyes:',
+            ':smiling_face_with_3_hearts:',
+            ':kissing_heart:', ':kiss_mm:', ':kiss:', ':thumbsup:', ':santa:', ':clap:', ':couple_mm:',
+            ':rose:', ':medal:', ':rainbow:', ':eggplant:'];
 
-      const mods = client.channels.cache.get('837570108745580574');
-      //const mods = client.channels.cache.get('871628022388764672');
+          const rand = Math.floor(Math.random() * emoji.length);
 
-      const marq = client.users.cache.get('679465390841135126');
-
-      const dels = client.channels.cache.get('874900065142046720');
-
-      const msglc = message.content.toLowerCase();
-
-      let rule = '';
-
-      for (let i = 0; i < data.verify.length; i++) {
-
-        if (msglc.includes(data.verify[i])) {
-
-          rule = data.verify[i];
-
-          let role = message.guild.roles.cache.find(rolen => rolen.name === 'verified');
-          message.member.roles.add(role);
-          role = message.guild.roles.cache.find(rolen => rolen.name === 'newcomer');
-          message.member.roles.remove(role);
-
-          message.delete;
-
-          welcomeDM(message.author);
-
-          mods.send(`@${message.author.username} has been verified by rule "${rule}".`);
-          mods.send(`Their message was:\n${message.content}`);
-          marq.send(`@${message.author.username} has been verified by rule "${rule}".`);
-          break;
+          message.channel.send('Thanks ' + words[0] + ' ' + emoji[rand]);
         }
       }
+    }
 
-      if (rule === '') {
-        let result = 'false';
-        let type = '';
+    if (message.content === '/welcome') {
 
-        for (let i = 0; i < data.homophobic.length; i++) {
-          if (msglc.includes(data.homophobic[i])) {
+      const embed = new MessageEmbed()
+        .setTitle('Welcome to Gay Men Meditating!')
+        .setColor('0xBC002D')
+        .addField('\u200B', 'This server contains various channels for discussion and online practice of meditation and yoga.')
+        .addField('\u200B', '\nIn order to gain access, you **MUST** respond, using complete sentences ' +
+          ' (single word answers will not be accepted), to the following:')
+        .addField('\u200B', '**1. Tell us about yourself.' +
+          '\n2. Describe your experience with meditation and/or yoga, if any.' +
+          '\n3. Why do you want to join this group?' +
+          '\n4. Include @moderator in your message so we will be notified of your response.* **')
+        .addField('\u200B', '*You may directly message a moderator with your responses if you prefer. ' +
+          'A moderator will review your responses as soon as possible and determine whether to grant you access.');
 
-            rule = data.homophobic[i];
+      message.channel.send({ embeds: [embed] })
+        .then((msg) => msg.pin())
+        .catch(console.error);
+    }
+    else if (message.content.startsWith('/newcomer')) {
+      message.channel.send(newcomer_report);
+    }
+    else if (message.content.startsWith('/mclear')) {
+      if (message.member.roles.cache.some(rolen => rolen.name === 'moderator')) {
+        let num = 2;
 
-            for (let j = 0; j < data.except.length; j++) {
-              if (rule.includes(data.except[j])) {
-                rule = '';
-                break;
-              }
-            }
+        const args = message.content.split(' ');
 
-            if (rule !== '') {
-              result = 'true';
-              type = 'homophobic language';
-              break;
-            }
+        if (args[1]) {
+          num = parseInt(args[1]) + 1;
+        }
+
+        message.channel.bulkDelete(num);
+      }
+    }
+    else if (message.content.startsWith('/channel')) {
+      channels('836590097318019092', '887168812632391740');
+      channels('828732299390353448', '887168976742912001');
+    }
+
+    if (message.channel.name.includes('landing-zone')) {
+
+      if (!message.member.roles.cache.some(rolen => rolen.name === 'verified')) {
+
+        const mods = client.channels.cache.get('827889605994872863');
+        //const mods = client.channels.cache.get('871628022388764672');
+
+        // const marq = client.users.cache.get('679465390841135126');
+
+        const dels = client.channels.cache.get('874900065142046720');
+
+        const msglc = message.content.toLowerCase();
+
+        let rule = '';
+
+        for (let i = 0; i < data.verify.length; i++) {
+
+          if (msglc.includes(data.verify[i])) {
+
+            rule = data.verify[i];
+
+            let role = message.guild.roles.cache.find(rolen => rolen.name === 'verified');
+            message.member.roles.add(role);
+            role = message.guild.roles.cache.find(rolen => rolen.name === 'newcomer');
+            message.member.roles.remove(role);
+
+            message.delete;
+
+            welcomeDM(message.author);
+
+            mods.send(`@${message.author.username} has been verified by rule "${rule}".`);
+            mods.send(`Their message was:\n${message.content}`);
+            // marq.send(`@${message.author.username} has been verified by rule "${rule}".`);
+
+            break;
           }
         }
 
-        if (result === 'false') {
-          for (let i = 0; i < data.racist.length; i++) {
-            if (msglc.includes(data.racist[i])) {
+        if (rule === '') {
+          let result = 'false';
+          let type = '';
 
-              rule = data.racist[i];
+          for (let i = 0; i < data.homophobic.length; i++) {
+            if (msglc.includes(data.homophobic[i])) {
+
+              rule = data.homophobic[i];
 
               for (let j = 0; j < data.except.length; j++) {
                 if (rule.includes(data.except[j])) {
@@ -863,67 +859,89 @@ client.on('messageCreate', async (message) => {
 
               if (rule !== '') {
                 result = 'true';
-                type = 'racist language';
+                type = 'homophobic language';
                 break;
               }
             }
           }
-        }
 
-        if (result === 'false') {
-          if (msglc.includes('http://') || msglc.includes('https://')) {
-            rule = 'url';
-            result = 'true';
-            type = 'URL or file links';
-          }
-        }
+          if (result === 'false') {
+            for (let i = 0; i < data.racist.length; i++) {
+              if (msglc.includes(data.racist[i])) {
 
-        const nsrole = message.guild.roles.cache.find(rolen => rolen.name === 'newcomer-spoke');
-        message.member.roles.add(nsrole);
+                rule = data.racist[i];
 
-        if (result === 'true') {
-          message.delete()
-            .then(msgx => console.log(`Deleted message from ${msgx.author.username}`))
-            .catch(err => console.log(err));
+                for (let j = 0; j < data.except.length; j++) {
+                  if (rule.includes(data.except[j])) {
+                    rule = '';
+                    break;
+                  }
+                }
 
-          message.author.send(`Please refrain from posting ${type} in the Gay Men Meditating ${message.channel.name}.\nYour message was deleted.`).catch(err => console.log(err));
-          mods.send(`@${message.author.username} wrote ${type} in ${message.channel.name} and their message was deleted.`);
-
-          if (type === 'homophobic language' || type === 'racist language') {
-            dels.send(`@${message.author.username}'s message was classified as ${type} by rule "${rule}".`);
-          }
-          else {
-            dels.send(`@${message.author.username}'s message was classified as containing ${type}.`);
+                if (rule !== '') {
+                  result = 'true';
+                  type = 'racist language';
+                  break;
+                }
+              }
+            }
           }
 
-          dels.send(`Message was >>>${message.content}<<<`);
+          if (result === 'false') {
+            if (msglc.includes('http://') || msglc.includes('https://')) {
+              rule = 'url';
+              result = 'true';
+              type = 'URL or file links';
+            }
+          }
 
-          const scumbag = scumbags.indexOf(message.author.username);
+          const nsrole = message.guild.roles.cache.find(rolen => rolen.name === 'newcomer-spoke');
+          message.member.roles.add(nsrole);
 
-          if (scumbag > -1) {
-            warnings[scumbag] = warnings[scumbag] + 1;
-            if (warnings[scumbag] > 2) {
+          if (result === 'true') {
+            message.delete()
+              .then(msgx => console.log(`Deleted message from ${msgx.author.username}`))
+              .catch(err => console.log(err));
 
-              const member = message.guild.members.resolve(message.author);
+            message.author.send(`Please refrain from posting ${type} in the Gay Men Meditating ${message.channel.name}.\nYour message was deleted.`).catch(err => console.log(err));
+            mods.send(`@${message.author.username} wrote ${type} in ${message.channel.name} and their message was deleted.`);
 
-              if (member) {
+            if (type === 'homophobic language' || type === 'racist language') {
+              dels.send(`@${message.author.username}'s message was classified as ${type} by rule "${rule}".`);
+            }
+            else {
+              dels.send(`@${message.author.username}'s message was classified as containing ${type}.`);
+            }
 
-                const role = message.guild.roles.cache.find(rolen => rolen.name === 'newcomer-muted');
+            dels.send(`Message was >>>${message.content}<<<`);
 
-                message.member.roles.add(role).catch(err => console.log(err));
+            const scumbag = scumbags.indexOf(message.author.username);
 
-                message.author.send('**You have been muted.**').catch(err => console.log(err));
-                mods.send(`@${message.author.username} has been muted.`).catch(err => console.log(err));
+            if (scumbag > -1) {
+              warnings[scumbag] = warnings[scumbag] + 1;
+              if (warnings[scumbag] > 2) {
+
+                const member = message.guild.members.resolve(message.author);
+
+                if (member) {
+
+                  const role = message.guild.roles.cache.find(rolen => rolen.name === 'newcomer-muted');
+
+                  message.member.roles.add(role).catch(err => console.log(err));
+
+                  message.author.send('**You have been muted.**').catch(err => console.log(err));
+                  mods.send(`@${message.author.username} has been muted.`).catch(err => console.log(err));
+                }
+              }
+              else {
+                message.author.send('**Final Warning - If you continue you will be muted.**').catch(err => console.log(err));
               }
             }
             else {
-              message.author.send('**Final Warning - If you continue you will be muted.**').catch(err => console.log(err));
+              scumbags.push(message.author.username);
+              warnings.push(1);
+              message.author.send('**First Warning**').catch(err => console.log(err));
             }
-          }
-          else {
-            scumbags.push(message.author.username);
-            warnings.push(1);
-            message.author.send('**First Warning**').catch(err => console.log(err));
           }
         }
       }
@@ -933,9 +951,13 @@ client.on('messageCreate', async (message) => {
 
 
 client.on('guildMemberAdd', async (member) => {
-  const mods = client.channels.cache.get('837570108745580574');
+  const mods = client.channels.cache.get('827889605994872863');
 
   mods.send('New member @' + member.user.username + ' ID ' + member.user.id);
+
+  if (member.roles.cache.some(rolen => rolen.name === 'member')) {
+    mods.send('New member @' + member.user.username + ' was previously a verified member.');
+  }
 
   const embed = new MessageEmbed()
     .setTitle(member.user.username)
@@ -947,6 +969,11 @@ client.on('guildMemberAdd', async (member) => {
 });
 
 
+client.on("guildMemberRemove", member => {
+  const mods = client.channels.cache.get('827889605994872863');
+
+  mods.send('Member @' + member.user.username + ' ID ' + member.user.id + ' has left the server.');
+});
 
 
 const sessions = new Array();
@@ -1107,7 +1134,3 @@ client.on('voiceStateUpdate', (oldmember, newmember) => {
 
   //console.log(sessions);
 });
-
-
-
-
