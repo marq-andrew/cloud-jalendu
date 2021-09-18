@@ -16,6 +16,10 @@ var jalenduDb = require('./jalenduDb.js');
 
 const jalendu = jalenduDb.setup();
 
+var jautomod = require('./jautomod.js');
+
+jautomod.setup();
+
 const token = process.env['TOKEN'];
 
 const intents = new Intents();
@@ -41,21 +45,6 @@ const client = new Client({ intents: intents, partials: ["CHANNEL"] });
 client.login(token);
 
 const trim = (str, max) => ((str.length > max) ? `${str.slice(0, max - 3)}...` : str);
-
-function welcomeDM(member) {
-  const l1 = 'Welcome to Gay Men Meditating.';
-  const l2 = 'You have been verified but please go to #roles to set your age band.';
-  const l3 = 'NSFW channels are not visible to you unless you choose the 18+ age role.';
-  const l4 = 'Roles are set by clicking on the appropriate emoji with the number beside it under each question.';
-  const l5 = 'Please also look at the following channels:';
-  const l6 = '1. Welcome: for an overview.';
-  const l7 = '2. Etiquette: to review the rules.';
-  const l8 = '4. Member Introductions: to introduce yourself to the community (optional).';
-  const l9 = '5. Sitting times: to read what times other members sit online so that you can join them.' +
-    '\nTo protect your privacy, the message your wrote to request admission will have been deleted. You can ' +
-    'introduce yourself to the group in member-introductions if you wish';
-  member.send(`${l1}\n\n${l2}\n${l3}\n${l4}\n\n${l5}\n${l6}\n${l7}\n${l8}\n${l9}\n`).catch(err => console.log(err));
-}
 
 
 let newcomer_report = '';
@@ -178,12 +167,13 @@ async function newcomers() {
 
   newcomer_report = newcomer_report + '\n\n* Indicates that the member wrote a message in #landing-zone.';
   newcomer_report = newcomer_report + '\n+ Indicates that the member is muted.';
+  newcomer_report = newcomer_report + '\n# Indicates that the member was previously a verified member.';
 
   console.log(newcomer_report);
 
 
   console.log('\nLanding zone message cleanup.');
-  console.log('----------------------------.');
+  console.log('-----------------------------');
 
   const landing_zone = client.channels.cache.get('851056727419256902');
 
@@ -293,6 +283,9 @@ async function newcomers() {
 
 async function channels(roleId, outputChannelId) {
 
+  fileContent = fs.readFileSync('./vc_channels.json');
+  const vc_channels = JSON.parse(fileContent);
+
   const guild = client.guilds.cache.get('827888294100074516');
 
   let categories = await guild.channels.cache.filter(channel => channel.type === 'GUILD_CATEGORY');
@@ -399,15 +392,6 @@ let bumptime = 0;
 let nextbumptime = 0;
 let currenttime = 0;
 
-global.data = {
-  verify: [],
-  homophobic: [],
-  racist: [],
-  except: [],
-}
-
-global.vc_channels = {};
-
 client.once('ready', async () => {
   console.log('Ready!');
 
@@ -475,13 +459,6 @@ client.once('ready', async () => {
   newcomers();
 
   setInterval(newcomers, checkthe_interval);
-
-
-  var fileContent = fs.readFileSync('./data.json');
-  global.data = JSON.parse(fileContent);
-
-  fileContent = fs.readFileSync('./vc_channels.json');
-  vc_channels = JSON.parse(fileContent);
 
 });
 
@@ -717,9 +694,6 @@ client.on('interactionCreate', async interaction => {
 });
 
 
-const scumbags = [];
-const warnings = [];
-
 client.on('messageCreate', async (message) => {
 
   if (message.author.bot) {
@@ -802,149 +776,13 @@ client.on('messageCreate', async (message) => {
       channels('836590097318019092', '887168812632391740');
       channels('828732299390353448', '887168976742912001');
     }
+    else if (message.content.startsWith('/test')) {
+      result = jautomod.test(jautomod.msglc(message));
+      message.channel.send(`${result.type}: ${result.rule}`);
+    }
 
     if (message.channel.name.includes('landing-zone')) {
-
-      if (!message.member.roles.cache.some(rolen => rolen.name === 'verified')) {
-
-        const mods = client.channels.cache.get('827889605994872863');
-        //const mods = client.channels.cache.get('871628022388764672');
-
-        // const marq = client.users.cache.get('679465390841135126');
-
-        const dels = client.channels.cache.get('874900065142046720');
-
-        const msglc = message.content.toLowerCase();
-
-        let rule = '';
-
-        for (let i = 0; i < data.verify.length; i++) {
-
-          if (msglc.includes(data.verify[i])) {
-
-            rule = data.verify[i];
-
-            let role = message.guild.roles.cache.find(rolen => rolen.name === 'verified');
-            message.member.roles.add(role);
-            role = message.guild.roles.cache.find(rolen => rolen.name === 'newcomer');
-            message.member.roles.remove(role);
-
-            message.delete;
-
-            welcomeDM(message.author);
-
-            mods.send(`@${message.author.username} has been verified by rule "${rule}".`);
-            mods.send(`Their message was:\n${message.content}`);
-            // marq.send(`@${message.author.username} has been verified by rule "${rule}".`);
-
-            break;
-          }
-        }
-
-        if (rule === '') {
-          let result = 'false';
-          let type = '';
-
-          for (let i = 0; i < data.homophobic.length; i++) {
-            if (msglc.includes(data.homophobic[i])) {
-
-              rule = data.homophobic[i];
-
-              for (let j = 0; j < data.except.length; j++) {
-                if (rule.includes(data.except[j])) {
-                  rule = '';
-                  break;
-                }
-              }
-
-              if (rule !== '') {
-                result = 'true';
-                type = 'homophobic language';
-                break;
-              }
-            }
-          }
-
-          if (result === 'false') {
-            for (let i = 0; i < data.racist.length; i++) {
-              if (msglc.includes(data.racist[i])) {
-
-                rule = data.racist[i];
-
-                for (let j = 0; j < data.except.length; j++) {
-                  if (rule.includes(data.except[j])) {
-                    rule = '';
-                    break;
-                  }
-                }
-
-                if (rule !== '') {
-                  result = 'true';
-                  type = 'racist language';
-                  break;
-                }
-              }
-            }
-          }
-
-          if (result === 'false') {
-            if (msglc.includes('http://') || msglc.includes('https://')) {
-              rule = 'url';
-              result = 'true';
-              type = 'URL or file links';
-            }
-          }
-
-          const nsrole = message.guild.roles.cache.find(rolen => rolen.name === 'newcomer-spoke');
-          message.member.roles.add(nsrole);
-
-          if (result === 'true') {
-            message.delete()
-              .then(msgx => console.log(`Deleted message from ${msgx.author.username}`))
-              .catch(err => console.log(err));
-
-            message.author.send(`Please refrain from posting ${type} in the Gay Men Meditating ${message.channel.name}.\nYour message was deleted.`).catch(err => console.log(err));
-            mods.send(`@${message.author.username} wrote ${type} in ${message.channel.name} and their message was deleted.`);
-
-            if (type === 'homophobic language' || type === 'racist language') {
-              dels.send(`@${message.author.username}'s message was classified as ${type} by rule "${rule}".`);
-            }
-            else {
-              dels.send(`@${message.author.username}'s message was classified as containing ${type}.`);
-            }
-
-            dels.send(`Message was >>>${message.content}<<<`);
-
-            const scumbag = scumbags.indexOf(message.author.username);
-
-            if (scumbag > -1) {
-              warnings[scumbag] = warnings[scumbag] + 1;
-              if (warnings[scumbag] > 2) {
-
-                const member = message.guild.members.resolve(message.author);
-
-                if (member) {
-
-                  const role = message.guild.roles.cache.find(rolen => rolen.name === 'newcomer-muted');
-
-                  message.member.roles.add(role).catch(err => console.log(err));
-
-                  message.author.send('**You have been muted.**').catch(err => console.log(err));
-                  mods.send(`@${message.author.username} has been muted.`).catch(err => console.log(err));
-                }
-              }
-              else {
-                message.author.send('**Final Warning - If you continue you will be muted.**').catch(err => console.log(err));
-              }
-            }
-            else {
-              scumbags.push(message.author.username);
-              warnings.push(1);
-              message.author.send('**First Warning**').catch(err => console.log(err));
-            }
-          }
-        }
-      }
+      jautomod.automod(message);
     }
   }
 });
