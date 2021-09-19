@@ -431,7 +431,9 @@ client.once('ready', async () => {
   }, checkthe_interval);
 
 
-  const guild = client.guilds.cache.get('827888294100074516');
+  const guildId = '827888294100074516';
+
+  const guild = client.guilds.cache.get(guildId);
 
   const mod_allow = { id: '836489212625682462', type: 'ROLE', permission: true, };
 
@@ -440,16 +442,24 @@ client.once('ready', async () => {
   const everyone_allow = { id: guild.roles.everyone.id, type: 'ROLE', permission: true, };
 
 
-  let commands = await guild.commands.fetch();
+  commands = await client.application.commands.fetch();
 
   await commands.forEach(command => {
-    console.log(`Setting command permissions on ${command.id} ${command.name}`);
+    console.log(`Setting application command permissions on ${command.id} ${command.name}`);
     if (command.name === 'moderate') {
-      guild.commands.permissions.set({ command: command.id, permissions: [everyone_deny, mod_allow] });
+      command.permissions.set({
+        guild: guildId,
+        command: command.id,
+        permissions: [everyone_deny, mod_allow]
+      });
     }
-    // else {
-    //   guild.commands.permissions.set({ command: command.id, permissions: [everyone_allow] });
-    // }
+    else {
+      command.permissions.set({
+        guild: guildId,
+        command: command.id,
+        permissions: [everyone_allow]
+      });
+    }
   });
 
 
@@ -780,6 +790,24 @@ client.on('messageCreate', async (message) => {
       result = jautomod.test(jautomod.msglc(message));
       message.channel.send(`${result.type}: ${result.rule}`);
     }
+    else if (message.content.startsWith('/setup')) {
+      await jautomod.setup();
+    }
+    else if (message.content.startsWith('/maint')) {
+      const channel = message.client.channels.cache.get('837570108745580574');
+
+      channel.messages.fetch({ limit: 100 }).then(async messages => {
+        messages.forEach(message => {
+          if (message.author.username === 'Jalendu') {
+            message.delete();
+          }
+        });
+      });
+    }
+    else if (message.content.startsWith('/datacheck')) {
+      jautomod.datacheck(message);
+    }
+
 
     if (message.channel.name.includes('landing-zone')) {
       jautomod.automod(message);

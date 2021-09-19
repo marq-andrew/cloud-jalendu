@@ -1,0 +1,13 @@
+Fix application commands permissions - done - sort of works. If moderate is still visible to verified.
+
+Fix and test the datacheck command - done
+
+Change the deleted messages channel to be a complete audit logging channel for landing-zone - medium
+
+A /help command - medium
+
+Further modularise the code - low
+
+Work out how to update to node-fetch v3 - low
+
+

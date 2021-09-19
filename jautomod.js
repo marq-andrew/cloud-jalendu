@@ -14,6 +14,8 @@ module.exports.warnings = [];
 module.exports.setup = function() {
   var fileContent = fs.readFileSync('./data.json');
   data = JSON.parse(fileContent);
+
+  console.log(data);
 }
 
 module.exports.welcomeDM = function(member) {
@@ -94,7 +96,7 @@ module.exports.test = function(string) {
     }
   }
 
-    for (let i = 0; i < data.profane.length; i++) {
+  for (let i = 0; i < data.profane.length; i++) {
     if (string.includes(data.profane[i])) {
       if (!this.except(string, data.profane[i])) {
         result.type = 'profanity';
@@ -123,7 +125,6 @@ module.exports.test = function(string) {
 
 module.exports.automod = function(message) {
 
-
   if (!message.content) {
     return;
   }
@@ -132,7 +133,7 @@ module.exports.automod = function(message) {
   let test = '';
 
   if (!message.member.roles.cache.some(rolen => rolen.name === `${test}verified`)) {
-  console.log('here');
+    console.log('here');
     let dels;
 
     if (test === '') {
@@ -210,6 +211,48 @@ module.exports.automod = function(message) {
     }
 
     console.log(this.scumbags);
-        console.log(this.warnings);
+    console.log(this.warnings);
   }
+}
+
+module.exports.datacheck = function(message) {
+  let result;
+  for (let i = 0; i < data.verify.length; i++) {
+    for (let j = 0; j < data.verify.length; j++) {
+      if (i != j && data.verify[i].includes(data.verify[j])) {
+        result = result + `\n${data.verify[i]} includes ${data.verify[j]}`;
+      }
+    }
+  }
+  message.reply('Verify redundancies:\n' + result);
+
+  result = '';
+  for (let i = 0; i < data.homophobic.length; i++) {
+    for (let j = 0; j < data.homophobic.length; j++) {
+      if (i != j && data.homophobic[i].includes(data.homophobic[j])) {
+        result = result + `\n${data.homophobic[i]} includes ${data.homophobic[j]}`;
+      }
+    }
+  }
+  message.reply('Homophobic language redundancies:\n' + result);
+
+  result = '';
+  for (let i = 0; i < data.racist.length; i++) {
+    for (let j = 0; j < data.racist.length; j++) {
+      if (i != j && data.racist[i].includes(data.racist[j])) {
+        result = result + `\n${data.racist[i]} includes ${data.racist[j]}`;
+      }
+    }
+  }
+  message.reply('Racist language redundancies:\n' + result);
+
+  result = '';
+  for (let i = 0; i < data.profane.length; i++) {
+    for (let j = 0; j < data.profane.length; j++) {
+      if (i != j && data.profane[i].includes(data.profane[j])) {
+        result = result + `\n${data.profane[i]} includes ${data.profane[j]}`;
+      }
+    }
+  }
+  message.reply('Profanity redundancies:\n' + result);
 }

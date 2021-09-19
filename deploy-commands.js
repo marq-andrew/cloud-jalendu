@@ -7,7 +7,6 @@ const clientId = process.env['clientID'];
 const guildId = process.env['guildID'];
 
 const commands = [
-
   new SlashCommandBuilder()
     .setName('avatar')
     .setDescription('Displays an enlarged user avatar')
@@ -15,7 +14,7 @@ const commands = [
       option.setName('username')
         .setDescription('The username to show')
         .setRequired(true))
-    .setDefaultPermission(false),
+    .setDefaultPermission(true),
 
   new SlashCommandBuilder()
     .setName('joke')
@@ -45,7 +44,6 @@ const commands = [
   new SlashCommandBuilder()
     .setName('moderate')
     .setDescription('Select a moderation command')
-    .setDefaultPermission(false)
     .addStringOption(option =>
       option.setName('command')
         .setDescription('The moderation command')
@@ -60,6 +58,7 @@ const commands = [
       option.setName('username')
         .setDescription('The username to apply')
         .setRequired(true))
+    .setDefaultPermission(false)
 ]
   .map(command => command.toJSON());
 
