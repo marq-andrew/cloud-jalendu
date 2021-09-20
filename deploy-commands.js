@@ -13,7 +13,7 @@ const commands = [
     .addUserOption(option =>
       option.setName('username')
         .setDescription('The username to show')
-        .setRequired(true))
+        .setRequired(false))
     .setDefaultPermission(true),
 
   new SlashCommandBuilder()
@@ -58,7 +58,12 @@ const commands = [
       option.setName('username')
         .setDescription('The username to apply')
         .setRequired(true))
-    .setDefaultPermission(false)
+    .setDefaultPermission(false),
+
+  new SlashCommandBuilder()
+    .setName('readme')
+    .setDescription('Sends you a direct message with instructions and information about the Jalendu bot.')
+    .setDefaultPermission(true)
 ]
   .map(command => command.toJSON());
 

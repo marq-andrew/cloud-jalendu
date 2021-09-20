@@ -133,7 +133,8 @@ module.exports.automod = function(message) {
   let test = '';
 
   if (!message.member.roles.cache.some(rolen => rolen.name === `${test}verified`)) {
-    console.log('here');
+
+    let mods;
     let dels;
 
     if (test === '') {
@@ -148,7 +149,12 @@ module.exports.automod = function(message) {
     const nsrole = message.guild.roles.cache.find(rolen => rolen.name === 'newcomer-spoke');
     message.member.roles.add(nsrole);
 
+    dels.send(`**@${message.author.username} wrote:**`);
+    dels.send(`@${message.content}`);
+
     const automod = this.test(this.msglc(message));
+
+    dels.send(`**Jalendu automod classified this as type "${automod.type}" by rule "${automod.rule}"**`);
 
     if (automod.type === 'none') {
       return;
@@ -167,6 +173,8 @@ module.exports.automod = function(message) {
       mods.send(`@${message.author.username} has been verified by rule "${automod.rule}".`);
       mods.send(`Their message was:\n${message.content}`);
 
+      dels.send(`**@${message.author.username} was verified and their message was deleted.**`);
+
       return;
     }
 
@@ -177,10 +185,6 @@ module.exports.automod = function(message) {
     message.author.send(`Please refrain from writing homophobic or racist language, profanity and from including URLs or file links in the Gay Men Meditating ${message.channel.name}.\nYour message containing ${automod.type} was deleted.`).catch(err => console.log(err));
 
     mods.send(`@${message.author.username} wrote ${automod.type} in ${message.channel.name} and their message was deleted.`);
-
-    dels.send(`@${message.author.username} wrote ${automod.type} detected by rule "${automod.rule}".`);
-
-    dels.send(`Their message was >>>${message.content}<<<`);
 
     const scumbag = this.scumbags.indexOf(message.author.username);
 
@@ -198,16 +202,19 @@ module.exports.automod = function(message) {
 
           message.author.send('**You have been muted.**').catch(err => console.log(err));
           mods.send(`@${message.author.username} has been muted.`).catch(err => console.log(err));
+          dels.send(`**@${message.author.username} has been muted and their message was deleted.**`).catch(err => console.log(err));
         }
       }
       else {
         message.author.send('**Final Warning - If you continue you will be muted.**').catch(err => console.log(err));
+        dels.send(`**@${message.author.username} was sent a final warning in DM and their message was deleted.**`).catch(err => console.log(err));
       }
     }
     else {
       this.scumbags.push(message.author.username);
       this.warnings.push(1);
       message.author.send('**First Warning**').catch(err => console.log(err));
+      dels.send(`**@${message.author.username} was sent their first warning in DM and their message was deleted.**`).catch(err => console.log(err));
     }
 
     console.log(this.scumbags);

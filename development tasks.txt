@@ -1,8 +1,14 @@
-Fix application commands permissions - done - sort of works. If moderate is still visible to verified.
+Automod match to a regex - investgate - high
 
-Fix and test the datacheck command - done
+Add microphone on off to the vc logging. Investigate use of the session id property - medium.
 
-Change the deleted messages channel to be a complete audit logging channel for landing-zone - medium
+Is it possible to search for avatar image online for new members - idea - low.
+
+What about searching for chatbot replies online? - idea - low.
+
+Why not delete additional reaction roles to the roles questions as they happen? - medium
+
+Change the /welcome command to delete all messages from landing zone, write the message there and then delete the pin - high.
 
 A /help command - medium
 
@@ -10,4 +16,22 @@ Further modularise the code - low
 
 Work out how to update to node-fetch v3 - low
 
+Complete channel descriptions - low
 
+Disable automatic recompile of the channels ditrectory - high - done.
+
+Put security around the hidden comands where necessary - high - done.
+
+Bug fix, welcomeDM not found - crash! - welcomeDM was moved into the automod module but is referenced by the /moderate verify command. Changed the /moderate verify command to reference the function in the module. Doesn't seem like the ideal solution - done.
+
+Fix application commands permissions - done - sort of works. If moderate is still visible to verified - done-ish.
+
+Fix and test the datacheck command - done
+
+Is it possible to globally stop notifications for some channels for all users? - deleted - the default notifications for the server are @mentions - deleted
+
+Change the deleted messages channel to be a complete audit logging channel for landing-zone - medium - in progress - testing - done.
+
+Rename the see deleted messages role to relate to the landing zone log - high - done
+
+checking that the landing-zone-log channel name doesnt cause a problem - fixed .includes vulnerability - done

@@ -473,10 +473,10 @@ client.once('ready', async () => {
 });
 
 
-client.on("channelUpdate", function(oldChannel, newChannel) {
-  channels('836590097318019092', '887168812632391740');
-  channels('828732299390353448', '887168976742912001');
-});
+// client.on("channelUpdate", function(oldChannel, newChannel) {
+//   channels('836590097318019092', '887168812632391740');
+//   channels('828732299390353448', '887168976742912001');
+// });
 
 
 
@@ -542,7 +542,7 @@ client.on('interactionCreate', async interaction => {
 
             mods.send(`Member @${username.username} has been verified by @${interaction.user.username}.`);
 
-            welcomeDM(member);
+            jautomod.welcomeDM(member);
           }
         }
         else if (command === 'unverify') {
@@ -748,23 +748,24 @@ client.on('messageCreate', async (message) => {
     }
 
     if (message.content === '/welcome') {
+      if (message.member.roles.cache.some(rolen => rolen.name === 'moderator')) {
+        const embed = new MessageEmbed()
+          .setTitle('Welcome to Gay Men Meditating!')
+          .setColor('0xBC002D')
+          .addField('\u200B', 'This server contains various channels for discussion and online practice of meditation and yoga.')
+          .addField('\u200B', '\nIn order to gain access, you **MUST** respond, using complete sentences ' +
+            ' (single word answers will not be accepted), to the following:')
+          .addField('\u200B', '**1. Tell us about yourself.' +
+            '\n2. Describe your experience with meditation and/or yoga, if any.' +
+            '\n3. Why do you want to join this group?' +
+            '\n4. Include @moderator in your message so we will be notified of your response.* **')
+          .addField('\u200B', '*You may directly message a moderator with your responses if you prefer. ' +
+            'A moderator will review your responses as soon as possible and determine whether to grant you access.');
 
-      const embed = new MessageEmbed()
-        .setTitle('Welcome to Gay Men Meditating!')
-        .setColor('0xBC002D')
-        .addField('\u200B', 'This server contains various channels for discussion and online practice of meditation and yoga.')
-        .addField('\u200B', '\nIn order to gain access, you **MUST** respond, using complete sentences ' +
-          ' (single word answers will not be accepted), to the following:')
-        .addField('\u200B', '**1. Tell us about yourself.' +
-          '\n2. Describe your experience with meditation and/or yoga, if any.' +
-          '\n3. Why do you want to join this group?' +
-          '\n4. Include @moderator in your message so we will be notified of your response.* **')
-        .addField('\u200B', '*You may directly message a moderator with your responses if you prefer. ' +
-          'A moderator will review your responses as soon as possible and determine whether to grant you access.');
-
-      message.channel.send({ embeds: [embed] })
-        .then((msg) => msg.pin())
-        .catch(console.error);
+        message.channel.send({ embeds: [embed] })
+          .then((msg) => msg.pin())
+          .catch(console.error);
+      }
     }
     else if (message.content.startsWith('/newcomer')) {
       message.channel.send(newcomer_report);
@@ -794,22 +795,26 @@ client.on('messageCreate', async (message) => {
       await jautomod.setup();
     }
     else if (message.content.startsWith('/maint')) {
-      const channel = message.client.channels.cache.get('837570108745580574');
+      if (message.author.username === 'marq_andrew') {
+        const channel = message.client.channels.cache.get('837570108745580574');
 
-      channel.messages.fetch({ limit: 100 }).then(async messages => {
-        messages.forEach(message => {
-          if (message.author.username === 'Jalendu') {
-            message.delete();
-          }
+        channel.messages.fetch({ limit: 100 }).then(async messages => {
+          messages.forEach(message => {
+            if (message.author.username === 'Jalendu') {
+              message.delete();
+            }
+          });
         });
-      });
+      }
     }
     else if (message.content.startsWith('/datacheck')) {
-      jautomod.datacheck(message);
+      if (message.member.roles.cache.some(rolen => rolen.name === 'moderator')) {
+        jautomod.datacheck(message);
+      }
     }
 
 
-    if (message.channel.name.includes('landing-zone')) {
+    if (message.channel.name === 'landing-zone') {
       jautomod.automod(message);
     }
   }
