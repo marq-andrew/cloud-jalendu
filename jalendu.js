@@ -47,6 +47,8 @@ client.login(token);
 const trim = (str, max) => ((str.length > max) ? `${str.slice(0, max - 3)}...` : str);
 
 
+
+
 let newcomer_report = '';
 
 async function newcomers() {
@@ -171,64 +173,7 @@ async function newcomers() {
 
   console.log(newcomer_report);
 
-
-  console.log('\nLanding zone message cleanup.');
-  console.log('-----------------------------');
-
-  const landing_zone = client.channels.cache.get('851056727419256902');
-
-  landing_zone.messages.fetch({ limit: 100 }).then(async messages => {
-    messages.forEach(message => {
-      if (!message.pinned) {
-
-        currenttime = new Date();
-        const age = new Date(currenttime - message.createdTimestamp) / (24 * 60 * 60 * 1000);
-
-        if (age > 3) {
-          console.log('Message is more than 3 days old - delete message.');
-          message.delete().catch(err => console.log(err));
-        }
-
-        const author = message.author.id;
-        const mention = message.mentions.users.first();
-
-        message.guild.members.fetch(author).then(async member => {
-          if (member.roles.cache.some(rolen => rolen.name === 'moderator')) {
-            console.log('Message is from a moderator - check mentions.');
-            if (mention) {
-              message.guild.members.fetch(mention).then(async mention => {
-                if (mention.roles.cache.some(rolen => rolen.name === 'moderator')) {
-                  console.log('Mention is of a moderator - weird but wait.');
-                }
-                else if (mention.roles.cache.some(rolen => rolen.name === 'verified')) {
-                  console.log('Mention is of a verified member - delete message.');
-                  message.delete().catch(err => console.log(err));
-                }
-                else {
-                  console.log('Mention is of an unverified newcomer - wait.');
-                }
-              })
-                .catch(async err => {
-                  console.log('Mention is not a member - delete message.');
-                  message.delete().catch(err => console.log(err));
-                });
-            }
-          }
-          else if (member.roles.cache.some(rolen => rolen.name === 'verified')) {
-            console.log('Message is from a verified member - delete message.');
-            message.delete().catch(err => console.log(err));
-          }
-          else {
-            console.log('Message is from an unverified newcomer - wait.');
-          }
-        })
-          .catch(async err => {
-            console.log('Author is not a member - delete message.');
-            message.delete().catch(err => console.log(err));
-          });
-      }
-    });
-  });
+  jautomod.message_cleanup(client);
 
   const roles = client.channels.cache.get('828724253938942014');
 
@@ -542,7 +487,9 @@ client.on('interactionCreate', async interaction => {
 
             mods.send(`Member @${username.username} has been verified by @${interaction.user.username}.`);
 
-            jautomod.welcomeDM(member);
+            jautomod.welcomeDM(member, message.client);
+
+            jautomod.message_cleanup(client);
           }
         }
         else if (command === 'unverify') {
@@ -700,6 +647,27 @@ client.on('interactionCreate', async interaction => {
         await interaction.reply({ embeds: embeds }).catch(console.error);
       }
     }
+    else if (interaction.commandName === 'readme') {
+
+      await interaction.reply('Jalendu bot help will be sent to you as a direct message.').catch(console.error);
+
+      readmeraw = fs.readFileSync('./jalendu_readme.txt').toString();
+
+      sections = readmeraw.split('\n');
+
+      split = '';
+
+      for (let i = 0; i < sections.length; i++) {
+        if ((split + sections[i]).length > 2000) {
+          interaction.user.send('\u200B\n' + split);
+          split = sections[i];
+        }
+        else {
+          split = split + '\n' + sections[i];
+        }
+      }
+      interaction.user.send('\u200B\n' + split);
+    }
   }
 });
 
@@ -707,7 +675,10 @@ client.on('interactionCreate', async interaction => {
 client.on('messageCreate', async (message) => {
 
   if (message.author.bot) {
-    //return;
+  }
+
+  if (message.author.bot && message.type === 'CHANNEL_PINNED_MESSAGE') {
+    message.delete();
   }
 
   if (message.channel.type === 'DM') {
@@ -762,8 +733,19 @@ client.on('messageCreate', async (message) => {
           .addField('\u200B', '*You may directly message a moderator with your responses if you prefer. ' +
             'A moderator will review your responses as soon as possible and determine whether to grant you access.');
 
-        message.channel.send({ embeds: [embed] })
-          .then((msg) => msg.pin())
+        const landing_zone = client.channels.cache.get('851056727419256902');
+
+        const fetched = await landing_zone.messages.fetch({ limit: 100 });
+
+        if (fetched.size > 0) {
+          landing_zone.bulkDelete(fetched.size);
+        }
+
+        landing_zone.send({ embeds: [embed] })
+          .then((msg) => {
+            msg.pin();
+
+          })
           .catch(console.error);
       }
     }
@@ -795,17 +777,19 @@ client.on('messageCreate', async (message) => {
       await jautomod.setup();
     }
     else if (message.content.startsWith('/maint')) {
-      if (message.author.username === 'marq_andrew') {
-        const channel = message.client.channels.cache.get('837570108745580574');
+      jautomod.welcomeDM(message.member, message.client);
 
-        channel.messages.fetch({ limit: 100 }).then(async messages => {
-          messages.forEach(message => {
-            if (message.author.username === 'Jalendu') {
-              message.delete();
-            }
-          });
-        });
-      }
+      // if (message.author.username === 'marq_andrew') {
+      //   const channel = message.client.channels.cache.get('837570108745580574');
+
+      //   channel.messages.fetch({ limit: 100 }).then(async messages => {
+      //     messages.forEach(message => {
+      //       if (message.author.username === 'Jalendu') {
+      //         message.delete();
+      //       }
+      //     });
+      //   });
+      // }
     }
     else if (message.content.startsWith('/datacheck')) {
       if (message.member.roles.cache.some(rolen => rolen.name === 'moderator')) {
@@ -844,6 +828,8 @@ client.on("guildMemberRemove", member => {
   const mods = client.channels.cache.get('827889605994872863');
 
   mods.send('Member @' + member.user.username + ' ID ' + member.user.id + ' has left the server.');
+
+  jautomod.message_cleanup(client);
 });
 
 

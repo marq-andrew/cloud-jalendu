@@ -1,4 +1,18 @@
-Automod match to a regex - investgate - high
+Include channels directory in the welcomedm - medium.
+
+Can the verify functions be consolidated into one function? - medium.
+
+Readme doesn't have line spacing at the start of message divisions - medium - done.
+
+Add excessive length and all upper case as automod triggers - high - done.
+
+Message cleanup must delete messages of muted newcomers - high - done
+
+Make the verify commands both manual and automod, send a message to the member introductions channel - high - done.
+
+Split message cleanup into a separate function and then trigger it on specific events such as when a member is verified or leaves the server - high - done.
+
+Stop warning invaders. It only challenges them - high - done
 
 Add microphone on off to the vc logging. Investigate use of the session id property - medium.
 
@@ -8,9 +22,9 @@ What about searching for chatbot replies online? - idea - low.
 
 Why not delete additional reaction roles to the roles questions as they happen? - medium
 
-Change the /welcome command to delete all messages from landing zone, write the message there and then delete the pin - high.
+Change the /welcome command to delete all messages from landing zone, write the message there and then delete the pin - high - done.
 
-A /help command - medium
+A /help command - medium - testing
 
 Further modularise the code - low
 
