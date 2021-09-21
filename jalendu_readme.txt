@@ -56,7 +56,15 @@ __3. Other commands.__
 
 Other commands are also accessed by typing /[command] as a message but they are not implemented as application commands and they are mostly only of use to the server Admins and the bot developers. They are included here for transparency.
 
-**/welcome** re-generates the welcome message for the #landing-zone channel. WARNING: this command will delete all other messages in the landing-znoe channel. It is restricted to only moderators for that reason.
+**/welcome** re-generates the welcome message for the #landing-zone channel. WARNING: this command will delete all other messages in the landing-zone channel. It is restricted to only moderators for that reason.
+
+**/dm** [message id] sends you a direct message that is the direct message Jalendu sends a user when certain events occur:
+
+  *welcomedm* sends you the direct message users are sent when they are verified either by the automod command (see below) or by the /moderate verify application command.
+
+  */reminder* sends you the direct message that is sent to a user who has not satisfied the entry requirements after two days to you.
+
+  */muted** sends you the direct message that is sent to a user who has been muted by the landing-zone automod rules.
 
 **/newcomer** replies with a report on the newcomers waiting in the landing zone channel and their status at the last newcomer check performed by Jalendu. See below in functions. (newcomers are reminded of the entry requirements after two days and kicked after 7 days).
 

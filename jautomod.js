@@ -18,21 +18,20 @@ module.exports.setup = function() {
   console.log(data);
 }
 
-module.exports.welcomeDM = function(member, client) {
-  const l1 = 'Welcome to Gay Men Meditating.';
-  const l2 = 'You have been verified but please go to #roles to set your age band.';
-  const l3 = 'NSFW channels are not visible to you unless you choose the 18+ age role.';
-  const l4 = 'Roles are set by clicking on the appropriate emoji with the number beside it under each question.';
-  const l5 = 'Please also look at the following channels:';
-  const l6 = '1. Welcome: for an overview.';
-  const l7 = '2. Etiquette: to review the rules.';
-  const l8 = '4. Member Introductions: to introduce yourself to the community (optional).';
-  const l9 = '5. Sitting times: to read what times other members sit online so that you can join them.' +
-    '\nTo protect your privacy, the message your wrote to request admission will have been deleted. You can ' +
-    'introduce yourself to the group in member-introductions if you wish';
-  member.send(`${l1}\n\n${l2}\n${l3}\n${l4}\n\n${l5}\n${l6}\n${l7}\n${l8}\n${l9}\n`).catch(err => console.log(err));
+module.exports.welcomeDM = function(member, client, test = false) {
+  var fileContent = fs.readFileSync('./messages.json');
+  messages = JSON.parse(fileContent);
 
-const memberintro = client.channels.cache.get('833559519611060244');
+  member.send(messages.welcomedm.content).catch(err => console.log(err));
+
+  var memberintro;
+
+  if (test) {
+    memberintro = client.channels.cache.get('871627629831290920');
+  }
+  else {
+    memberintro = client.channels.cache.get('833559519611060244');
+  }
 
   memberintro.send(`Please welcome @${member.user.username}.`);
 }

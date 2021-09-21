@@ -1,7 +1,5 @@
 
-rewrite the welcome and welcomdm and reminder as json. include a footnote hinting at what would trigger negative automod in the welcome - medium.
 
-Include channels directory in the welcomedm - medium.
 
 Can the verify functions be consolidated into one function? - medium.
 
@@ -15,9 +13,14 @@ Work out how to update to node-fetch v3 - low
 
 Complete channel descriptions - low
 
-What about searching for chatbot replies online? - idea - low.
-
 Why not delete additional reaction roles to the roles questions as they happen? - medium
+
+
+----- Everything below is done -------
+
+rewrite the dms sent by the bot as json. include a footnote hinting at what would trigger negative automod in the welcome - medium - done.
+
+Include channels directory in the welcomedm - medium - done
 
 Readme doesn't have line spacing at the start of message divisions - medium - done.
 
@@ -30,8 +33,6 @@ Make the verify commands both manual and automod, send a message to the member i
 Split message cleanup into a separate function and then trigger it on specific events such as when a member is verified or leaves the server - high - done.
 
 Stop warning invaders. It only challenges them - high - done
-
-
 
 Change the /welcome command to delete all messages from landing zone, write the message there and then delete the pin - high - done.
 

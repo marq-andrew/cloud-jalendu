@@ -45,7 +45,7 @@ module.exports.setup = function() {
 
 module.exports.message = function(jalendu, message) {
 
-  const msglc = message.content.toLowerCase();
+  var msglc = message.content.toLowerCase().replace(/<[@#!&](.*?)>/g, '');
 
   if (msglc == '' || message.author.bot) {
     return;

@@ -47,8 +47,6 @@ client.login(token);
 const trim = (str, max) => ((str.length > max) ? `${str.slice(0, max - 3)}...` : str);
 
 
-
-
 let newcomer_report = '';
 
 async function newcomers() {
@@ -120,15 +118,11 @@ async function newcomers() {
             newcomer_report = newcomer_report + '\n' + member[1].user.username + ' --> reminded : ' + joinelapsed.toFixed(1) + ' days.' + spoke + muted + exmember;
             if (!member[1].roles.cache.some(rolen => rolen.name === 'newcomer-reminded')) {
               member[1].roles.add(newcomer_reminded).catch(err => console.log(err));
-              member[1].send('__Welcome to the Gay Men Meditating Discord.__\n\n' +
-                'To gain full access, you must send a message mentioning @moderator in the #landing-zone channel ' +
-                'or to a moderator directly. You must include:\n\n' +
-                '**1. Something about yourself** e.g. your age, your country etc..\n' +
-                '**2. Your experience with meditation if any** (none is fine as long as your are interested).\n' +
-                '**3. Why you want to join this group.**\n\n' +
-                'We have strong entry requirements to keep the community safe and comfortable to express themselves ' +
-                'and to exclude people who join casually or simply to abuse. After 7 days from the time you joined, ' +
-                'if you have not satisfied the entry requirements, you will be removed.').catch(err => console.log(err));
+
+              var fileContent = fs.readFileSync('./messages.json');
+              messages = JSON.parse(fileContent);
+
+              member[1].send(messages.reminder.content).catch(err => console.log(err));
               mods.send(`@${member[1].user.username} has been reminded of the entry requirements (2 days after joining).`);
             }
           }
@@ -686,6 +680,14 @@ client.on('messageCreate', async (message) => {
   }
   else {
 
+    if (message.mentions) {
+      if (message.mentions.members.first()) {
+        if (message.mentions.members.first().user.username === 'Jalendu') {
+          jalenduDb.message(jalendu, message);
+        }
+      }
+    }
+
     console.log(message.channel.name);
 
     if (message.embeds[0]) {
@@ -724,14 +726,15 @@ client.on('messageCreate', async (message) => {
           .setTitle('Welcome to Gay Men Meditating!')
           .setColor('0xBC002D')
           .addField('\u200B', 'This server contains various channels for discussion and online practice of meditation and yoga.')
-          .addField('\u200B', '\nIn order to gain access, you **MUST** respond, using complete sentences ' +
-            ' (single word answers will not be accepted), to the following:')
+          .addField('\u200B', '\nIn order to gain access, please respond using complete sentences ' +
+            ' (single word answers will not be accepted), to the following questions:')
           .addField('\u200B', '**1. Tell us about yourself.' +
             '\n2. Describe your experience with meditation and/or yoga, if any.' +
             '\n3. Why do you want to join this group?' +
             '\n4. Include @moderator in your message so we will be notified of your response.* **')
-          .addField('\u200B', '*You may directly message a moderator with your responses if you prefer. ' +
-            'A moderator will review your responses as soon as possible and determine whether to grant you access.');
+          .setFooter('\u200B\n*You may directly message a moderator with your responses if you prefer. ' +
+            'A moderator will review your responses as soon as possible and determine whether to grant you access. ' +
+            '\nCaution: This channel is auto-moderated so keep your answers brief, proper-cased and free of links or any terms of abuse.');
 
         const landing_zone = client.channels.cache.get('851056727419256902');
 
@@ -741,12 +744,32 @@ client.on('messageCreate', async (message) => {
           landing_zone.bulkDelete(fetched.size);
         }
 
+        console.log(embed);
+
         landing_zone.send({ embeds: [embed] })
           .then((msg) => {
             msg.pin();
 
           })
           .catch(console.error);
+      }
+    }
+    else if (message.content.startsWith('/dm')) {
+      let item = message.content.split(' ')[1].toLowerCase();
+      if (item === 'welcomedm') {
+        jautomod.welcomeDM(message.member, message.client, true);
+      }
+      else {
+        var fileContent = fs.readFileSync('./messages.json');
+        messages = JSON.parse(fileContent);
+
+        if (messages[item]) {
+          message.member.send(messages[item].content).catch(err => console.log(err));
+          message.reply(`message item "${item}" sent to you as a direct message.`).catch(err => console.log(err));
+        }
+        else {
+          message.reply(`message item "${item}" doesn't exist.`).catch(err => console.log(err));
+        }
       }
     }
     else if (message.content.startsWith('/newcomer')) {
