@@ -107,15 +107,15 @@ async function newcomers() {
           const joinelapsed = new Date(currenttime - joined) / (24 * 60 * 60 * 1000);
 
           if (joinelapsed > 7) {
-            newcomer_report = newcomer_report + '\n' + member[1].user.username + ' --> kicked : ' + joinelapsed.toFixed(1) + ' days.' + spoke + muted + exmember;
+            newcomer_report = newcomer_report + '\n' + `${member[1].user}` + ' --> kicked : ' + joinelapsed.toFixed(1) + ' days.' + spoke + muted + exmember;
             if (!member[1].roles.cache.some(rolen => rolen.name === 'newcomer-kicked')) {
               member[1].roles.add(newcomer_kicked).catch(err => console.log(err));
-              mods.send(`@${member[1].user.username} has been removed (7 days after joining).`);
+              mods.send(`${member[1].user} has been removed (7 days after joining).`);
             }
             member[1].kick('Entry requirements unsatisfied after 7 days').catch(err => console.log(err));
           }
           else if (joinelapsed > 2) {
-            newcomer_report = newcomer_report + '\n' + member[1].user.username + ' --> reminded : ' + joinelapsed.toFixed(1) + ' days.' + spoke + muted + exmember;
+            newcomer_report = newcomer_report + '\n' + `${member[1].user}` + ' --> reminded : ' + joinelapsed.toFixed(1) + ' days.' + spoke + muted + exmember;
             if (!member[1].roles.cache.some(rolen => rolen.name === 'newcomer-reminded')) {
               member[1].roles.add(newcomer_reminded).catch(err => console.log(err));
 
@@ -123,11 +123,11 @@ async function newcomers() {
               messages = JSON.parse(fileContent);
 
               member[1].send(messages.reminder.content).catch(err => console.log(err));
-              mods.send(`@${member[1].user.username} has been reminded of the entry requirements (2 days after joining).`);
+              mods.send(`${member[1].user} has been reminded of the entry requirements (2 days after joining).`);
             }
           }
           else {
-            newcomer_report = newcomer_report + '\n' + member[1].user.username + ' --> waiting : ' + joinelapsed.toFixed(1) + ' days.' + spoke + muted + exmember;
+            newcomer_report = newcomer_report + '\n' + `${member[1].user}` + ' --> waiting : ' + joinelapsed.toFixed(1) + ' days.' + spoke + muted + exmember;
             if (member[1].roles.cache.some(rolen => rolen.name === 'newcomer-reminded')) {
               member[1].roles.remove(newcomer_reminded).catch(err => console.log(err));
             }
@@ -437,7 +437,7 @@ client.on('interactionCreate', async interaction => {
       }
       else {
         const embed = new MessageEmbed()
-          .setTitle(username.username)
+          .setTitle(`${username}`)
           .setColor(0x00ffff)
           .setImage(username.displayAvatarURL({ format: 'png', size: 2048 }));
 
@@ -464,12 +464,12 @@ client.on('interactionCreate', async interaction => {
         }
 
         if (!member) {
-          interaction.reply({ content: `@${username.username} isn't a member. Maybe they left? :sob:`, ephemeral: true });
+          interaction.reply({ content: `${username} isn't a member. Maybe they left? :sob:`, ephemeral: true });
         }
         else if (command === 'verify') {
 
           if (member.roles.cache.some(role => role.name === `${test}verified`)) {
-            interaction.reply({ content: `Member @${username.username} is already verified. :confused:`, ephemeral: true });
+            interaction.reply({ content: `Member ${username} is already verified. :confused:`, ephemeral: true });
           }
           else {
             let role = interaction.guild.roles.cache.find(rolen => rolen.name === `${test}verified`);
@@ -477,11 +477,11 @@ client.on('interactionCreate', async interaction => {
             role = interaction.guild.roles.cache.find(rolen => rolen.name === `${test}newcomer`);
             member.roles.remove(role);
 
-            interaction.reply({ content: `Member @${username.username} has been verified. :partying_face:`, ephemeral: true });
+            interaction.reply({ content: `Member ${username} has been verified. :partying_face:`, ephemeral: true });
 
-            mods.send(`Member @${username.username} has been verified by @${interaction.user.username}.`);
+            mods.send(`Member ${username} has been verified by ${interaction.user}.`);
 
-            jautomod.welcomeDM(member, message.client);
+            jautomod.welcomeDM(member, client);
 
             jautomod.message_cleanup(client);
           }
@@ -492,70 +492,70 @@ client.on('interactionCreate', async interaction => {
           role = interaction.guild.roles.cache.find(rolen => rolen.name === `${test}newcomer`);
           member.roles.add(role);
 
-          interaction.reply({ content: `Member @${username.username} has been unverified. :unamused:`, ephemeral: true });
+          interaction.reply({ content: `Member ${username} has been unverified. :unamused:`, ephemeral: true });
 
-          mods.send(`Member @${username.username} has been unverified by @${interaction.user.username}.`);
+          mods.send(`Member ${username} has been unverified by ${interaction.user}.`);
         }
         else if (command === 'mute') {
           if (!member.roles.cache.some(role => role.name === `${test}newcomer`)) {
-            interaction.reply({ content: `Member @${username.username} is not a newcomer. :confused:`, ephemeral: true });
+            interaction.reply({ content: `Member ${username} is not a newcomer. :confused:`, ephemeral: true });
           }
           else {
             let role = interaction.guild.roles.cache.find(rolen => rolen.name === `${test}newcomer-muted`);
             member.roles.add(role);
 
-            interaction.reply({ content: `Member @${username.username} has been muted. :zipper_mouth:`, ephemeral: true });
+            interaction.reply({ content: `Member ${username} has been muted. :zipper_mouth:`, ephemeral: true });
 
-            mods.send(`Member @${username.username} has been muted by @${interaction.user.username}.`);
+            mods.send(`Member ${username} has been muted by ${interaction.user}.`);
           }
         }
         else if (command === 'unmute') {
           if (!member.roles.cache.some(role => role.name === `${test}newcomer`)) {
-            interaction.reply({ content: `Member @${username.username} is not a newcomer. :confused:`, ephemeral: true });
+            interaction.reply({ content: `Member ${username} is not a newcomer. :confused:`, ephemeral: true });
           }
           else {
             let role = interaction.guild.roles.cache.find(rolen => rolen.name === `${test}newcomer-muted`);
             member.roles.remove(role);
 
-            interaction.reply({ content: `Member @${username.username} has been unmuted. :open_mouth:`, ephemeral: true });
+            interaction.reply({ content: `Member ${username} has been unmuted. :open_mouth:`, ephemeral: true });
 
-            mods.send(`Member @${username.username} has been unmuted by @${interaction.user.username}.`);
+            mods.send(`Member ${username} has been unmuted by ${interaction.user}.`);
           }
         }
         else if (command === 'kick') {
           if (!member.kickable) {
-            interaction.reply({ content: `Member @${username.username} is not kickable. :confused:`, ephemeral: true });
+            interaction.reply({ content: `Member ${username} is not kickable. :confused:`, ephemeral: true });
           }
           else {
             member.kick()
               .then(member => {
-                interaction.reply({ content: `Member @${username.username} has been kicked. :dancer:`, ephemeral: true });
+                interaction.reply({ content: `Member ${username} has been kicked. :dancer:`, ephemeral: true });
 
-                mods.send(`Member @${username.username} has been kicked by @${interaction.user.username}.`);
+                mods.send(`Member ${username} has been kicked by ${interaction.user}.`);
               })
               .catch(err => {
-                interaction.reply({ content: `Failed to kick @${username.username}. :confused:`, ephemeral: true });
+                interaction.reply({ content: `Failed to kick ${username}. :confused:`, ephemeral: true });
               });
           }
         }
         else if (command === 'ban') {
           if (!member.bannable) {
-            interaction.reply({ content: `Member @${username.username} is not bannable. :confused:`, ephemeral: true });
+            interaction.reply({ content: `Member ${username} is not bannable. :confused:`, ephemeral: true });
           }
           else {
             member.ban({ days: 7 })
               .then(member => {
-                interaction.reply({ content: `Member @${username.username} has been banned. :no_entry_sign:`, ephemeral: true });
+                interaction.reply({ content: `Member ${username} has been banned. :no_entry_sign:`, ephemeral: true });
 
-                mods.send(`Member @${username.username} has been banned by @${interaction.user.username}.`);
+                mods.send(`Member ${username} has been banned by ${interaction.user}.`);
               })
               .catch(err => {
-                interaction.reply({ content: `Failed to ban @${username.username}. :confused:`, ephemeral: true });
+                interaction.reply({ content: `Failed to ban ${username}. :confused:`, ephemeral: true });
               });
           }
         }
         else {
-          interaction.reply({ content: `${command}: @${username.username} Sorry, not implemented yet - working on it.`, ephemeral: true });
+          interaction.reply({ content: `${command}: ${username} Sorry, not implemented yet - working on it.`, ephemeral: true });
         }
       }
       else {
@@ -831,14 +831,14 @@ client.on('messageCreate', async (message) => {
 client.on('guildMemberAdd', async (member) => {
   const mods = client.channels.cache.get('827889605994872863');
 
-  mods.send('New member @' + member.user.username + ' ID ' + member.user.id);
+  mods.send(`New member ${member.user} ID ${member.user.id}`);
 
   if (member.roles.cache.some(rolen => rolen.name === 'member')) {
-    mods.send('New member @' + member.user.username + ' was previously a verified member.');
+    mods.send(`New member ${member.user} was previously a verified member.`);
   }
 
   const embed = new MessageEmbed()
-    .setTitle(member.user.username)
+    .setTitle(`${member.user}`)
     .setColor(0x00ffff)
     .setImage(member.user.displayAvatarURL({ format: 'png', size: 2048 }));
 
@@ -850,7 +850,7 @@ client.on('guildMemberAdd', async (member) => {
 client.on("guildMemberRemove", member => {
   const mods = client.channels.cache.get('827889605994872863');
 
-  mods.send('Member @' + member.user.username + ' ID ' + member.user.id + ' has left the server.');
+  mods.send(`Member ${member.user} ID ${member.user.id} has left the server.`);
 
   jautomod.message_cleanup(client);
 });

@@ -1,4 +1,4 @@
-__Thankyou for you interest in the Jalendu bot.__
+__Thankyou for your interest in the Jalendu bot.__
 
 __Contents__
 1. Overview.
@@ -13,6 +13,8 @@ Jalendu is a bot specifically designed for the Gay Men Meditating Discord. He is
 ```https://github.com/marq-andrew/cloud-jalendu```
 
 In the documentation of commands below, [parameter] means an optional parameter and [[parameter]] means it is not optional. Don't include the square brackets in your actual command.
+
+This image used for the avatar of Jalendu is the Portrait of Paul Lemoyne by Jean-Auguste-Dominique Ingres. The name Jalendu is a Sanskrit male name meaning the reflection of the moon in water and is the name and main character of the novel *Jalendu* by Mark Andrew.
 
 
 __2. Application commands.__

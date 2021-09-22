@@ -1,5 +1,10 @@
+Bot mentions don't resolve ot notify - high!
 
+Use a regex to detect links - see @TheSaviorLegend 's posts - high.
 
+Add an age lock - high
+
+Make a command for adding words to data? - high
 
 Can the verify functions be consolidated into one function? - medium.
 
@@ -14,7 +19,6 @@ Work out how to update to node-fetch v3 - low
 Complete channel descriptions - low
 
 Why not delete additional reaction roles to the roles questions as they happen? - medium
-
 
 ----- Everything below is done -------
 

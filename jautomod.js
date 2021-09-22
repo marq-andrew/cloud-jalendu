@@ -33,7 +33,7 @@ module.exports.welcomeDM = function(member, client, test = false) {
     memberintro = client.channels.cache.get('833559519611060244');
   }
 
-  memberintro.send(`Please welcome @${member.user.username}.`);
+  memberintro.send(`Please welcome ${member.user}.`);
 }
 
 module.exports.msglc = function(message) {
@@ -180,8 +180,8 @@ module.exports.automod = function(message) {
     const nsrole = message.guild.roles.cache.find(rolen => rolen.name === 'newcomer-spoke');
     message.member.roles.add(nsrole);
 
-    dels.send(`**@${message.author.username} wrote:**`);
-    dels.send(`@${message.content}`);
+    dels.send(`**${message.author} wrote:**`);
+    dels.send(`${message.content}`);
 
     const automod = this.test(this.msglc(message));
 
@@ -201,10 +201,10 @@ module.exports.automod = function(message) {
 
       this.welcomeDM(message.author, message.client);
 
-      mods.send(`@${message.author.username} has been verified by rule "${automod.rule}".`);
+      mods.send(`${message.author} has been verified by rule "${automod.rule}".`);
       mods.send(`Their message was:\n${message.content}`);
 
-      dels.send(`**@${message.author.username} was verified and their message was deleted.**`);
+      dels.send(`**${message.author} was verified and their message was deleted.**`);
 
       return;
     }
@@ -215,7 +215,7 @@ module.exports.automod = function(message) {
 
     //message.author.send(`Please refrain from writing homophobic or racist language, profanity and from including URLs or file links in the Gay Men Meditating ${message.channel.name}.\nYour message containing ${automod.type} was deleted.`).catch(err => console.log(err));
 
-    mods.send(`@${message.author.username} wrote ${automod.type} in ${message.channel.name} and their message was deleted.`);
+    mods.send(`${message.author} wrote ${automod.type} in ${message.channel.name} and their message was deleted.`);
 
     const scumbag = this.scumbags.indexOf(message.author.username);
 
@@ -234,27 +234,27 @@ module.exports.automod = function(message) {
           //message.author.send('**You have been muted.**').catch(err => console.log(err));
           message.author.send('Thanks for joining Gay Men Meditating. You have been muted and your messages were deleted because you repeatedly wrote a message that triggered an auto-moderation function in the #landing-zone channel.').catch(err => console.log(err));
 
-          mods.send(`@${message.author.username} has been muted.`).catch(err => console.log(err));
+          mods.send(`${message.author} has been muted.`).catch(err => console.log(err));
 
-          dels.send(`**@${message.author.username} has been muted.**`).catch(err => console.log(err));
+          dels.send(`**${message.author} has been muted.**`).catch(err => console.log(err));
 
           this.message_cleanup(message.client);
         }
       }
       else {
         //message.author.send('**Final Warning - If you continue you will be muted.**').catch(err => console.log(err));
-        //dels.send(`**@${message.author.username} was sent a final warning in DM and their message was deleted.**`).catch(err => console.log(err));
+        //dels.send(`**${message.author} was sent a final warning in DM and their message was deleted.**`).catch(err => console.log(err));
 
-        dels.send(`**@${message.author.username} - second (final) violation.**`).catch(err => console.log(err));
+        dels.send(`**${message.author} - second (final) violation.**`).catch(err => console.log(err));
       }
     }
     else {
       this.scumbags.push(message.author.username);
       this.warnings.push(1);
       //message.author.send('**First Warning**').catch(err => console.log(err));
-      //dels.send(`**@${message.author.username} was sent their first warning in DM and their message was deleted.**`).catch(err => console.log(err));
+      //dels.send(`**${message.author} was sent their first warning in DM and their message was deleted.**`).catch(err => console.log(err));
 
-      dels.send(`**@${message.author.username} - first violation.**`).catch(err => console.log(err));
+      dels.send(`**${message.author} - first violation.**`).catch(err => console.log(err));
     }
 
     console.log(this.scumbags);
