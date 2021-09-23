@@ -40,12 +40,30 @@ intents.add(Intents.FLAGS.DIRECT_MESSAGES);
 intents.add(Intents.FLAGS.DIRECT_MESSAGE_REACTIONS);
 //intents.add(Intents.FLAGS.DIRECT_MESSAGE_TYPING);
 
-const client = new Client({ intents: intents, partials: ["CHANNEL"] });
+const client = new Client({ intents: intents, partials: ['MESSAGE', 'CHANNEL', 'REACTION'] });
 
 client.login(token);
 
 const trim = (str, max) => ((str.length > max) ? `${str.slice(0, max - 3)}...` : str);
 
+
+function lastbumper() {
+  var fileContent = fs.readFileSync('./bumpers.json');
+  bumpers = JSON.parse(fileContent);
+
+  var lastbumptime = '';
+  var lastbumper = '';
+
+  for (const [id, bumper] of Object.entries(bumpers)) {
+    console.log(`${id}: ${bumper.name}`);
+    if (bumper.lasttime > lastbumptime) {
+      lastbumptime = bumper.lasttime;
+      lastbumper = bumper.name;
+    }
+  }
+
+  return lastbumper;
+}
 
 let newcomer_report = '';
 
@@ -463,6 +481,8 @@ client.on('interactionCreate', async interaction => {
           mods = client.channels.cache.get('827889605994872863');
         }
 
+        const marq = client.users.cache.get('679465390841135126');
+
         if (!member) {
           interaction.reply({ content: `${username} isn't a member. Maybe they left? :sob:`, ephemeral: true });
         }
@@ -553,6 +573,57 @@ client.on('interactionCreate', async interaction => {
                 interaction.reply({ content: `Failed to ban ${username}. :confused:`, ephemeral: true });
               });
           }
+        }
+        else if (command === 'agelock') {
+          if (member.roles.cache.some(role => role.name === `moderatorx`)) {
+            interaction.reply({ content: `You can't age lock a moderator. :confused:`, ephemeral: true });
+          }
+          else {
+            var fileContent = fs.readFileSync('./agelock.json');
+            agelock = JSON.parse(fileContent);
+
+            if (!agelock[username.id]) {
+              const newagelock = new Object();
+              newagelock.username = username.tag;
+              newagelock.lockedbyid = interaction.user.id;
+              newagelock.lockedbyname = interaction.user.tag;
+              newagelock.lockdate = new Date();
+              newagelock.months = 12;
+              newagelock.expires = new Date();
+              newagelock.expires.setMonth(newagelock.expires.getMonth() + newagelock.months);
+              newagelock.notified = false;
+              agelock[username.id] = newagelock;
+
+              interaction.reply({ content: `Member ${username} has been age locked until ${agelock[username.id].expires.toISOString().split('T')[0]} :baby_chick:`, ephemeral: true });
+
+              mods.send(`Member ${username} has been age locked by ${interaction.user}.`);
+            }
+            else {
+              interaction.reply({ content: `Member ${username} is already age locked (until ${agelock[username.id].expires.split('T')[0]}) :confused:`, ephemeral: true });
+            }
+
+            let role = interaction.guild.roles.cache.find(rolen => rolen.name === `Age 18 +`);
+            member.roles.remove(role);
+
+            fs.writeFileSync('./agelock.json', JSON.stringify(agelock, null, 2), 'utf-8');
+          }
+        }
+        else if (command === 'ageunlock') {
+          var fileContent = fs.readFileSync('./agelock.json');
+          agelock = JSON.parse(fileContent);
+
+          if (agelock[username.id]) {
+            delete agelock[username.id];
+
+            interaction.reply({ content: `Member ${username} has been age unlocked. :chicken:`, ephemeral: true });
+
+            mods.send(`Member ${username} has been age unlocked by ${interaction.user}.`);
+          }
+          else {
+            interaction.reply({ content: `Member ${username} isn't age locked. :confused:`, ephemeral: true });
+          }
+
+          fs.writeFileSync('./agelock.json', JSON.stringify(agelock, null, 2), 'utf-8');
         }
         else {
           interaction.reply({ content: `${command}: ${username} Sorry, not implemented yet - working on it.`, ephemeral: true });
@@ -699,6 +770,28 @@ client.on('messageCreate', async (message) => {
     }
 
     if (message.channel.name.includes('bot-commands')) {
+
+      if (message.content.toLowerCase() === '!d bump') {
+
+        var fileContent = fs.readFileSync('./bumpers.json');
+        bumpers = JSON.parse(fileContent);
+
+        if (bumpers[message.author.id]) {
+          bumpers[message.author.id].count = bumpers[message.author.id].count + 1;
+          bumpers[message.author.id].lasttime = new Date();
+        }
+        else {
+          const newbumper = new Object();
+
+          newbumper.name = message.author.username; newbumper.count = 1;
+          newbumper.lasttime = new Date();
+
+          bumpers[message.author.id] = newbumper;
+        }
+
+        fs.writeFileSync('./bumpers.json', JSON.stringify(bumpers, null, 2), 'utf-8');
+      }
+
       if (message.embeds[0] && message.author.id === '302050872383242240') {
         if (message.embeds[0].description.includes(':thumbsup:')
           || message.embeds[0].description.includes('timeout of')) {
@@ -715,7 +808,7 @@ client.on('messageCreate', async (message) => {
 
           const rand = Math.floor(Math.random() * emoji.length);
 
-          message.channel.send('Thanks ' + words[0] + ' ' + emoji[rand]);
+          message.channel.send('Thanks ' + lastbumper() + ' ' + emoji[rand]);
         }
       }
     }
@@ -800,26 +893,26 @@ client.on('messageCreate', async (message) => {
       await jautomod.setup();
     }
     else if (message.content.startsWith('/maint')) {
-      jautomod.welcomeDM(message.member, message.client);
 
-      // if (message.author.username === 'marq_andrew') {
-      //   const channel = message.client.channels.cache.get('837570108745580574');
-
-      //   channel.messages.fetch({ limit: 100 }).then(async messages => {
-      //     messages.forEach(message => {
-      //       if (message.author.username === 'Jalendu') {
-      //         message.delete();
-      //       }
-      //     });
-      //   });
-      // }
+      console.log(lastbumper());
     }
     else if (message.content.startsWith('/datacheck')) {
       if (message.member.roles.cache.some(rolen => rolen.name === 'moderator')) {
         jautomod.datacheck(message);
       }
     }
-
+    else if (message.content.startsWith('/bumpers')) {
+      var fileContent = fs.readFileSync('./bumpers.json');
+      bumpers = JSON.parse(fileContent);
+      message.reply(JSON.stringify(bumpers, null, 2) +`\n\nLast bumper is ${lastbumper()}`);
+    }
+    else if (message.content.startsWith('/agelocks')) {
+      if (message.member.roles.cache.some(rolen => rolen.name === 'moderator')) {
+        var fileContent = fs.readFileSync('./agelock.json');
+        agelocks = JSON.parse(fileContent);
+        message.reply(JSON.stringify(agelocks, null, 2));
+      }
+    }
 
     if (message.channel.name === 'landing-zone') {
       jautomod.automod(message);
@@ -1013,4 +1106,110 @@ client.on('voiceStateUpdate', (oldmember, newmember) => {
   // });
 
   //console.log(sessions);
+});
+
+client.on('messageReactionAdd', (reaction, user) => {
+  if (reaction.message.channelId === '828724253938942014') {
+
+    if (reaction.message.id === '834032215662526465') {
+      if (reaction.emoji.name !== '⏲️') {
+        reaction.remove();
+      }
+    }
+    else if (reaction.message.id === '834057552668786699') {
+      if (reaction.emoji.name !== '👦'
+        && reaction.emoji.name !== '👨') {
+        reaction.remove();
+      }
+
+      if (reaction.emoji.name === '👨') {
+
+        var fileContent = fs.readFileSync('./agelock.json');
+        agelock = JSON.parse(fileContent);
+
+        if (agelock[user.id]) {
+          const currenttime = new Date();
+          if (currenttime > agelock[user.id]) {
+            delete agelock[user.id];
+
+            fs.writeFileSync('./agelock.json', JSON.stringify(agelock, null, 2), 'utf-8');
+          }
+          else if (!agelock[user.id].notified) {
+
+            const mods = client.channels.cache.get('827889605994872863');
+            const marq = client.users.cache.get('679465390841135126');
+
+            user.send(`Sorry, you can't select Age 18+ on Gay Men Meditating yet. Please direct message a moderator if your age is 18+.`);
+
+            mods.send(`${user} tried to select the Age 18+ role but they are age locked.`);
+
+            agelock[user.id].notified = true;
+
+            fs.writeFileSync('./agelock.json', JSON.stringify(agelock, null, 2), 'utf-8');
+          }
+        }
+      }
+    }
+    else if (title === '834324950486876192') {
+      if (reaction.emoji.name !== 'gay_flag'
+        && reaction.emoji.name !== 'bi_flag'
+        && reaction.emoji.name !== 'bi_curious_flag') {
+        reaction.remove();
+      }
+    }
+    else if (title === '881690698879995934') {
+      if (reaction.emoji.name !== 'memes') {
+        reaction.remove();
+      }
+    }
+    else if (title === '881816102102003722') {
+      if (reaction.emoji.name !== 'lotus_meditator'
+        && reaction.emoji.name !== 'yoga') {
+        reaction.remove();
+      }
+    }
+  }
+});
+
+
+client.on("guildMemberUpdate", (oldMember, newMember) => {
+
+  if (oldMember.roles.cache.size > newMember.roles.cache.size) {
+
+    oldMember.roles.cache.forEach(role => {
+      if (!newMember.roles.cache.has(role.id)) {
+        console.log(`role ${role} removed from ${newMember}`);
+      }
+    });
+  } else if (oldMember.roles.cache.size < newMember.roles.cache.size) {
+    newMember.roles.cache.forEach(role => {
+      if (!oldMember.roles.cache.has(role.id)) {
+        console.log(`role ${role} added to ${oldMember}`);
+      }
+    });
+  }
+
+  let role = newMember.guild.roles.cache.find(rolen => rolen.name === `Age 18 +`);
+
+  if (!oldMember.roles.cache.has('828732299390353448') && newMember.roles.cache.has('828732299390353448')) {
+
+    var fileContent = fs.readFileSync('./agelock.json');
+    agelock = JSON.parse(fileContent);
+
+    if (agelock[newMember.user.id]) {
+      const currenttime = new Date();
+      if (currenttime > agelock[newMember.user.id]) {
+        delete agelock[newMember.user.id];
+
+        fs.writeFileSync('./agelock.json', JSON.stringify(agelock, null, 2), 'utf-8');
+      }
+      else {
+        const mods = client.channels.cache.get('827889605994872863');
+        const marq = client.users.cache.get('679465390841135126');
+
+        //mods.send(`Assignment of ${role} to ${oldMember} was reversed because of an age lock.`);
+        newMember.roles.remove(role);
+      }
+    }
+  }
 });

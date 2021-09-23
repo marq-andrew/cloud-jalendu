@@ -53,7 +53,9 @@ const commands = [
         .addChoice('mute newcomer', 'mute')
         .addChoice('unmute newcomer', 'unmute')
         .addChoice('kick', 'kick')
-        .addChoice('ban', 'ban'))
+        .addChoice('ban', 'ban')
+        .addChoice('age lock', 'agelock')
+        .addChoice('age unlock', 'ageunlock'))
     .addUserOption(option =>
       option.setName('username')
         .setDescription('The username to apply')

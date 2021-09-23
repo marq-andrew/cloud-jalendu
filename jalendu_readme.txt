@@ -51,6 +51,12 @@ Replies with the urban dictionary definition/s of [[term]]. [[result]] controls 
 
   *ban* bans the [[user]] from the server. Banned members are banned by IP and can no longer join even if they change their IDs.
 
+  *agelock* removes the Age 18+ role from [[user]] if they have it and prevents Age 18+ from being self-assigned in #roles or by being assigned by a moderator. The user isn't notified when they are age locked but if they try to self-assign Age 18+ they will get a direct message indicating that they can't select the role and to direct message a moderator. A message is also logged to #system-messages. The messages to the user and to #system-messages are only sent after the first attempt at self-assignment. If the Age 18+ role is assigned by a moderator to an age locked member, the role is automatically removed and a message sent to #system-messages.
+
+  Age locks automatically expire after 12 months.
+
+  *age unlock* deletes the age lock on a member.
+
 **/readme** sends you a direct message containing the instructions and information about the Jalendu bot that you are reading right now.
 
 
@@ -80,6 +86,10 @@ Other commands are also accessed by typing /[command] as a message but they are 
 
 **/datacheck** checks the auto-moderation trigger words and phrases for duplication and redundancy. These are used to not only check the newcomers messages for words and phrases that trigger auto-verification but also for homophobic and racist language, other forms of abuse or attemps to hack our server. Since to command responds with words and phrases that may be offensive as well as those that can be used to automatically trigger verification, this command is restricted to moderators.
 
+**/bumpers** lists the data used to keep track of the latest bumper since the response from the Disboard bump no longer includes their name.
+
+**/agelocks** lists the data used to maiintain age locks. Since this is sensitive data, it is a moderator only command.
+
 
 __4. Functions.__
 
@@ -105,10 +115,14 @@ This code also cleans up the newcomer roles for verified members if they are sti
 
 **DISBOARD bump reminders.** Jalendu keeps track of bumps to the Disboard bot and reminds users when it is time to bump again. He then sends a thankyou message when they do. (The Disboard bot ignores messages from other bots so Jalendu can't bump himself.) This will be expanded to other bump bots as they are added.
 
+Snice Disboard changed the format of its response to a bump so that it no longer includes the name of the bumper, Jalendu keeps track of who is doing the bumping and who did the most recent bump so he can thank them.
+
 **Application commands permissions.** Jalendu sets permissions on application commands because this needs to be done programmatically. Discord has not yet completed the full functionality of application commands.
 
 **Member join and leave** When a member joins the server, Jalendu sends a message to the #system-messages channel with an enlarged version of their avatar. The avatar can tell moderators a lot about a prospective member. Jalendu also logs a member leaving. Landinf zone message cleanup (see above) runs when a member leaves to delete any messages they may have sent there.
 
 **Voice channel usage logging**. Jalendu DOES NOT record the content of voice channels on the server however he does record who joined what channel, when, how long they were there and the percentage of the time that they had their camera on. I understand that this information is highly sensitive and so server owner @marq_andrew has any access to it and would only be accessed in case there was a complaint about something that happened in a vc room that required investigation by moderators.
+
+**Age lock maintenance**. Jalendu intercepts and reverses attempts to assign the Age 18+ role to a member who is age locked. 
 
 **Jalendu chat bot**. This is some experimentation I am doing with the idea of a chat bot. It only relates to direct messages that users send to Jalendu as a user. The aim of this code is to program Jalendo to respond to your direct messages to him.

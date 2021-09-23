@@ -137,16 +137,19 @@ module.exports.test = function(msglc) {
     }
   }
 
-  if (msglc.string.includes('http://')) {
-    result.type = 'URL or file links';
-    result.rule = 'http://';
-    return result;
-  }
 
-  if (msglc.string.includes('https://')) {
+  let urlrx1 = new RegExp("$(http:\/\/|https:\/\/|ftp:\/\/|email:\/\/|file:\/\/)?([a-z0-9]+\.?)+");
+
+  let urlrx2 = new RegExp("([a-z0-9]+\.)+(com|co|org|edu|gov|biz|info)$");
+
+  let words = msglc.string.split(' ');
+
+  for (let i = 0; i < words.length; i++) {
+    if (urlrx1.test(words[i]) || urlrx2.test(words[i])) {
     result.type = 'URL or file links';
-    result.rule = 'https://';
+    result.rule = 'words[i]';
     return result;
+    }
   }
 
   result.type = 'none';

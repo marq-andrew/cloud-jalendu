@@ -1,8 +1,10 @@
-Bot mentions don't resolve ot notify - high!
+Fix bump thanks because the format has changed - high - done.
 
-Use a regex to detect links - see @TheSaviorLegend 's posts - high.
+Bot mentions don't resolve or notify - high! - testing
 
-Add an age lock - high
+Use a regex to detect links - see @TheSaviorLegend 's posts - high - done.
+
+Add an age lock - high - done
 
 Make a command for adding words to data? - high
 
