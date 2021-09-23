@@ -1,10 +1,11 @@
-Fix bump thanks because the format has changed - high - done.
+Why doesn't moderate verify trigger cleanup ? - bug - this is caused by not considerinig the asynchronicity of js. - Need to review functions that need to be run in a particular order.  high
 
-Bot mentions don't resolve or notify - high! - testing
+Why did the member introductioons messcome message say "please welcome undefined" for Jurgen? - high
 
-Use a regex to detect links - see @TheSaviorLegend 's posts - high - done.
+put the welcome into a json so it can be changed without restarting the server. Also make the welcome sent to member introductions prettier. Look at this https://dev.to/en3sis/advanced-discord-js-custom-embeds-using-attachments-2bpn
+high
 
-Add an age lock - high - done
+Make "hidden" /commands work in DMs - high.
 
 Make a command for adding words to data? - high
 
@@ -20,9 +21,18 @@ Work out how to update to node-fetch v3 - low
 
 Complete channel descriptions - low
 
-Why not delete additional reaction roles to the roles questions as they happen? - medium
 
 ----- Everything below is done -------
+
+Why not delete additional reaction roles to the roles questions as they happen? - medium - done
+
+Fix bump thanks because the format has changed - high - done.
+
+Bot mentions don't resolve or notify - high! - testing - done
+
+Use a regex to detect links - see @TheSaviorLegend 's posts - high - done.
+
+Add an age lock - high - done
 
 rewrite the dms sent by the bot as json. include a footnote hinting at what would trigger negative automod in the welcome - medium - done.
 

@@ -90,6 +90,8 @@ Other commands are also accessed by typing /[command] as a message but they are 
 
 **/agelocks** lists the data used to maiintain age locks. Since this is sensitive data, it is a moderator only command.
 
+**/cleanup** runs the landing zone cleanup code in case for some reason it doesn't run when it should.
+
 
 __4. Functions.__
 

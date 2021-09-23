@@ -1,0 +1,40 @@
+{
+  type: 'rich',
+  title: 'Welcome to Gay+ Men Meditating!',
+  description: null,
+  url: null,
+  color: 12320813,
+  timestamp: null,
+  fields: [
+    {
+      value: 'This server contains various channels for discussion and online practice of meditation and yoga for gay+ (gay, bisexual and bi-curious) men.',
+      name: '​',
+      inline: false
+    },
+    {
+      value: 'In order to gain access, please respond using complete sentences to the following questions:',
+      name: '​',
+      inline: false
+    },
+    {
+      value: '**1. Tell us about yourself.\n' +
+        '2. Describe your experience with meditation and/or yoga, if any.\n' +
+        '3. Why do you want to join this group?\n' +
+        '4. Include @moderator in your message so we will be notified of your response.* **',
+      name: '​',
+      inline: false
+    }
+  ],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: null,
+  provider: null,
+  footer: {
+    text: '​\n' +
+      '*You may directly message a moderator with your responses if you prefer. A moderator will review your responses as soon as possible and determine whether to grant you access. \n' +
+      'Caution: This channel is auto-moderated so please keep your answers brief, proper-cased and free of links or any terms of abuse.',
+    iconURL: undefined,
+    proxyIconURL: undefined
+  }
+}

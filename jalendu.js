@@ -447,7 +447,7 @@ client.on('interactionCreate', async interaction => {
 
       if (!username) {
         const embed = new MessageEmbed()
-          .setTitle(interaction.user.tag)
+          .setTitle(interaction.user.username)
           .setColor(0x00ffff)
           .setImage(interaction.user.displayAvatarURL({ format: 'png', size: 2048 }));
 
@@ -455,7 +455,7 @@ client.on('interactionCreate', async interaction => {
       }
       else {
         const embed = new MessageEmbed()
-          .setTitle(`${username}`)
+          .setTitle(username.username)
           .setColor(0x00ffff)
           .setImage(username.displayAvatarURL({ format: 'png', size: 2048 }));
 
@@ -816,18 +816,18 @@ client.on('messageCreate', async (message) => {
     if (message.content === '/welcome') {
       if (message.member.roles.cache.some(rolen => rolen.name === 'moderator')) {
         const embed = new MessageEmbed()
-          .setTitle('Welcome to Gay Men Meditating!')
+          .setTitle('Welcome to Gay+ Men Meditating!')
           .setColor('0xBC002D')
-          .addField('\u200B', 'This server contains various channels for discussion and online practice of meditation and yoga.')
+          .addField('\u200B', 'This server contains various channels for discussion and online practice of meditation and yoga for gay+ (gay, bisexual and bi-curious) men.')
           .addField('\u200B', '\nIn order to gain access, please respond using complete sentences ' +
-            ' (single word answers will not be accepted), to the following questions:')
+            'to the following questions:')
           .addField('\u200B', '**1. Tell us about yourself.' +
             '\n2. Describe your experience with meditation and/or yoga, if any.' +
             '\n3. Why do you want to join this group?' +
             '\n4. Include @moderator in your message so we will be notified of your response.* **')
           .setFooter('\u200B\n*You may directly message a moderator with your responses if you prefer. ' +
             'A moderator will review your responses as soon as possible and determine whether to grant you access. ' +
-            '\nCaution: This channel is auto-moderated so keep your answers brief, proper-cased and free of links or any terms of abuse.');
+            '\nCaution: This channel is auto-moderated so please keep your answers brief, proper-cased and free of links or any terms of abuse.');
 
         const landing_zone = client.channels.cache.get('851056727419256902');
 
@@ -913,6 +913,9 @@ client.on('messageCreate', async (message) => {
         message.reply(JSON.stringify(agelocks, null, 2));
       }
     }
+    else if (message.content.startsWith('/cleanup')) {
+      jautomod.message_cleanup(message.client);
+    }
 
     if (message.channel.name === 'landing-zone') {
       jautomod.automod(message);
@@ -931,7 +934,7 @@ client.on('guildMemberAdd', async (member) => {
   }
 
   const embed = new MessageEmbed()
-    .setTitle(`${member.user}`)
+    .setTitle(member.user.username)
     .setColor(0x00ffff)
     .setImage(member.user.displayAvatarURL({ format: 'png', size: 2048 }));
 
@@ -1150,19 +1153,19 @@ client.on('messageReactionAdd', (reaction, user) => {
         }
       }
     }
-    else if (title === '834324950486876192') {
+    else if (reaction.message.id === '834324950486876192') {
       if (reaction.emoji.name !== 'gay_flag'
         && reaction.emoji.name !== 'bi_flag'
         && reaction.emoji.name !== 'bi_curious_flag') {
         reaction.remove();
       }
     }
-    else if (title === '881690698879995934') {
+    else if (reaction.message.id === '881690698879995934') {
       if (reaction.emoji.name !== 'memes') {
         reaction.remove();
       }
     }
-    else if (title === '881816102102003722') {
+    else if (reaction.message.id === '881816102102003722') {
       if (reaction.emoji.name !== 'lotus_meditator'
         && reaction.emoji.name !== 'yoga') {
         reaction.remove();
