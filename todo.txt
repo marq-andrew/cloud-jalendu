@@ -5,6 +5,12 @@ Why did the member introductioons messcome message say "please welcome undefined
 put the welcome into a json so it can be changed without restarting the server. Also make the welcome sent to member introductions prettier. Look at this https://dev.to/en3sis/advanced-discord-js-custom-embeds-using-attachments-2bpn
 high
 
+Detect success or failure of disboard bump and record it in bumpers - low.
+
+Consolidate the two pieces of code that do the same #roles channel emoji checking - medium
+
+Make the message cleanup function return results as a message reply if issued as a command - medium.
+
 Make "hidden" /commands work in DMs - high.
 
 Make a command for adding words to data? - high

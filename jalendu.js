@@ -47,23 +47,92 @@ client.login(token);
 const trim = (str, max) => ((str.length > max) ? `${str.slice(0, max - 3)}...` : str);
 
 
-function lastbumper() {
+function hearts(number) {
+  return ":heart:".repeat(number % 5 ** 6 / 5 ** 5) +
+    ":orange_heart:".repeat(number % 5 ** 5 / 5 ** 4) +
+    ":yellow_heart:".repeat(number % 5 ** 4 / 5 ** 3) +
+    ":green_heart:".repeat(number % 5 ** 3 / 5 ** 2) +
+    ":blue_heart:".repeat(number % 5 ** 2 / 5 ** 1) +
+    ":purple_heart:".repeat(number % 5 ** 1 / 5 ** 0);
+}
+
+
+function bumper(bot, message, action) {
   var fileContent = fs.readFileSync('./bumpers.json');
   bumpers = JSON.parse(fileContent);
 
-  var lastbumptime = '';
-  var lastbumper = '';
+  const result = new Object();
 
-  for (const [id, bumper] of Object.entries(bumpers)) {
-    console.log(`${id}: ${bumper.name}`);
-    if (bumper.lasttime > lastbumptime) {
-      lastbumptime = bumper.lasttime;
-      lastbumper = bumper.name;
+  let bumpbot;
+
+  if (action === 'bump') {
+    if (bumpers[bot]) {
+      bumpbot = bumpers[bot];
+    }
+    else {
+      bumpbot = new Object();
+    }
+
+    if (bumpbot[message.author.id]) {
+      bumpbot[message.author.id].tries = bumpbot[message.author.id].tries + 1;
+      bumpbot[message.author.id].lasttime = new Date();
+    }
+    else {
+      const newbumper = new Object();
+
+      newbumper.name = message.author.username;
+      newbumper.tries = 1;
+      newbumper.bumps = 0;
+      newbumper.lasttime = new Date();
+
+      bumpbot[message.author.id] = newbumper;
+    }
+
+    bumpers[bot] = bumpbot;
+
+    fs.writeFileSync('./bumpers.json', JSON.stringify(bumpers, null, 2), 'utf-8');
+
+    result.name = bumpbot[message.author.id].name;
+    result.bumps = bumpbot[message.author.id].bumps;
+
+    return result;
+  }
+  else {
+    if (!bumpers[bot]) {
+      result.name = 'unknown';
+      result.bumps = 0;
+
+      return result;
+    }
+    else {
+      bumpbot = bumpers[bot];
+
+      var lastbumptime = '';
+      var lastbumper = '';
+
+      for (const [id, bumper] of Object.entries(bumpbot)) {
+        if (bumper.lasttime > lastbumptime) {
+          lastbumptime = bumper.lasttime;
+          lastbumper = id;
+        }
+      }
+
+      if (action === 'bumped') {
+        bumpbot[lastbumper].bumps = bumpbot[lastbumper].bumps + 1;
+
+        bumpers[bot] = bumpbot;
+
+        fs.writeFileSync('./bumpers.json', JSON.stringify(bumpers, null, 2), 'utf-8');
+      }
+
+      result.name = bumpbot[lastbumper].name;
+      result.bumps = bumpbot[lastbumper].bumps;
+
+      return result;
     }
   }
-
-  return lastbumper;
 }
+
 
 let newcomer_report = '';
 
@@ -772,24 +841,7 @@ client.on('messageCreate', async (message) => {
     if (message.channel.name.includes('bot-commands')) {
 
       if (message.content.toLowerCase() === '!d bump') {
-
-        var fileContent = fs.readFileSync('./bumpers.json');
-        bumpers = JSON.parse(fileContent);
-
-        if (bumpers[message.author.id]) {
-          bumpers[message.author.id].count = bumpers[message.author.id].count + 1;
-          bumpers[message.author.id].lasttime = new Date();
-        }
-        else {
-          const newbumper = new Object();
-
-          newbumper.name = message.author.username; newbumper.count = 1;
-          newbumper.lasttime = new Date();
-
-          bumpers[message.author.id] = newbumper;
-        }
-
-        fs.writeFileSync('./bumpers.json', JSON.stringify(bumpers, null, 2), 'utf-8');
+        console.log('disboard bump by ' + bumper('disboard', message, 'bump').name);
       }
 
       if (message.embeds[0] && message.author.id === '302050872383242240') {
@@ -799,8 +851,6 @@ client.on('messageCreate', async (message) => {
           nextbumptime = new Date(bumptime.getTime() + 120 * 60000);
           console.log('Detected DISBOARD bump @ ' + bumptime);
 
-          const words = message.embeds[0].description.split(' ');
-
           const emoji = [':heart:', ':heart_exclamation:', ':heart_eyes:',
             ':smiling_face_with_3_hearts:',
             ':kissing_heart:', ':kiss_mm:', ':kiss:', ':thumbsup:', ':santa:', ':clap:', ':couple_mm:',
@@ -808,7 +858,9 @@ client.on('messageCreate', async (message) => {
 
           const rand = Math.floor(Math.random() * emoji.length);
 
-          message.channel.send('Thanks ' + lastbumper() + ' ' + emoji[rand]);
+          lastbump = bumper('disboard', message, 'bumped');
+
+          message.channel.send('Thanks ' + lastbump.name + ' ' + emoji[rand] + '\n' + hearts(lastbump.bumps));
         }
       }
     }
@@ -894,7 +946,7 @@ client.on('messageCreate', async (message) => {
     }
     else if (message.content.startsWith('/maint')) {
 
-      console.log(lastbumper());
+      console.log(bumper('disboard', message, 'bumped'));
     }
     else if (message.content.startsWith('/datacheck')) {
       if (message.member.roles.cache.some(rolen => rolen.name === 'moderator')) {
@@ -904,7 +956,10 @@ client.on('messageCreate', async (message) => {
     else if (message.content.startsWith('/bumpers')) {
       var fileContent = fs.readFileSync('./bumpers.json');
       bumpers = JSON.parse(fileContent);
-      message.reply(JSON.stringify(bumpers, null, 2) +`\n\nLast bumper is ${lastbumper()}`);
+
+      lastbump = bumper('disboard', message, 'list');
+
+      message.reply(JSON.stringify(bumpers, null, 2) + '\n\nLast bumper is ' + lastbump.name + '\n' + lastbump.bumps + '\n' + hearts(lastbump.bumps));
     }
     else if (message.content.startsWith('/agelocks')) {
       if (message.member.roles.cache.some(rolen => rolen.name === 'moderator')) {
