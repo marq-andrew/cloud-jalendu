@@ -1,0 +1,27 @@
+{
+  "302050872383242240": {
+    "name": "DISBOARD",
+    "bump_command": "!d bump",
+    "bump_channel": "871628022388764672",
+    "delay_minutes": 120,
+    "response": {
+      "type": "embed",
+      "embed_index": 0,
+      "embed_field": "description"
+    },
+    "success": [
+      "The DISBOARD API didn't respond in time! :sob:\nPlease try again later.",
+      "Bump done! :thumbsup:",
+      ":thumbsup:"
+    ],
+    "failure": [
+      "Please wait another 120 minutes until the server can be bumped"
+    ],
+    "unknown": [
+      "<@776183146076962856> Please wait another 8 minutes until the server can be bumped"
+    ],
+    "bumptime": "2021-09-26T07:30:36.274Z",
+    "nextbumptime": "2021-09-26T09:30:36.274Z",
+    "reminder_sent": false
+  }
+}

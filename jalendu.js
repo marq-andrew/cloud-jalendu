@@ -20,6 +20,8 @@ var jautomod = require('./jautomod.js');
 
 jautomod.setup();
 
+var bumpbots = require('./bumpbots.js');
+
 const token = process.env['TOKEN'];
 
 const intents = new Intents();
@@ -46,93 +48,37 @@ client.login(token);
 
 const trim = (str, max) => ((str.length > max) ? `${str.slice(0, max - 3)}...` : str);
 
-
-function hearts(number) {
-  return ":heart:".repeat(number % 5 ** 6 / 5 ** 5) +
-    ":orange_heart:".repeat(number % 5 ** 5 / 5 ** 4) +
-    ":yellow_heart:".repeat(number % 5 ** 4 / 5 ** 3) +
-    ":green_heart:".repeat(number % 5 ** 3 / 5 ** 2) +
-    ":blue_heart:".repeat(number % 5 ** 2 / 5 ** 1) +
-    ":purple_heart:".repeat(number % 5 ** 1 / 5 ** 0);
-}
-
-
-function bumper(bot, message, action) {
-  var fileContent = fs.readFileSync('./bumpers.json');
-  bumpers = JSON.parse(fileContent);
-
-  const result = new Object();
-
-  let bumpbot;
-
-  if (action === 'bump') {
-    if (bumpers[bot]) {
-      bumpbot = bumpers[bot];
+function reactions_fix(reaction) {
+  if (reaction.message.id === '834032215662526465') {
+    if (reaction.emoji.name !== '⏲️') {
+      reaction.remove();
     }
-    else {
-      bumpbot = new Object();
-    }
-
-    if (bumpbot[message.author.id]) {
-      bumpbot[message.author.id].tries = bumpbot[message.author.id].tries + 1;
-      bumpbot[message.author.id].lasttime = new Date();
-    }
-    else {
-      const newbumper = new Object();
-
-      newbumper.name = message.author.username;
-      newbumper.tries = 1;
-      newbumper.bumps = 0;
-      newbumper.lasttime = new Date();
-
-      bumpbot[message.author.id] = newbumper;
-    }
-
-    bumpers[bot] = bumpbot;
-
-    fs.writeFileSync('./bumpers.json', JSON.stringify(bumpers, null, 2), 'utf-8');
-
-    result.name = bumpbot[message.author.id].name;
-    result.bumps = bumpbot[message.author.id].bumps;
-
-    return result;
   }
-  else {
-    if (!bumpers[bot]) {
-      result.name = 'unknown';
-      result.bumps = 0;
-
-      return result;
+  else if (reaction.message.id === '834057552668786699') {
+    if (reaction.emoji.name !== '👦'
+      && reaction.emoji.name !== '👨') {
+      reaction.remove();
     }
-    else {
-      bumpbot = bumpers[bot];
-
-      var lastbumptime = '';
-      var lastbumper = '';
-
-      for (const [id, bumper] of Object.entries(bumpbot)) {
-        if (bumper.lasttime > lastbumptime) {
-          lastbumptime = bumper.lasttime;
-          lastbumper = id;
-        }
-      }
-
-      if (action === 'bumped') {
-        bumpbot[lastbumper].bumps = bumpbot[lastbumper].bumps + 1;
-
-        bumpers[bot] = bumpbot;
-
-        fs.writeFileSync('./bumpers.json', JSON.stringify(bumpers, null, 2), 'utf-8');
-      }
-
-      result.name = bumpbot[lastbumper].name;
-      result.bumps = bumpbot[lastbumper].bumps;
-
-      return result;
+  }
+  else if (reaction.message.id === '834324950486876192') {
+    if (reaction.emoji.name !== 'gay_flag'
+      && reaction.emoji.name !== 'bi_flag'
+      && reaction.emoji.name !== 'bi_curious_flag') {
+      reaction.remove();
+    }
+  }
+  else if (reaction.message.id === '881690698879995934') {
+    if (reaction.emoji.name !== 'memes') {
+      reaction.remove();
+    }
+  }
+  else if (reaction.message.id === '881816102102003722') {
+    if (reaction.emoji.name !== 'lotus_meditator'
+      && reaction.emoji.name !== 'yoga') {
+      reaction.remove();
     }
   }
 }
-
 
 let newcomer_report = '';
 
@@ -194,7 +140,7 @@ async function newcomers() {
           const joinelapsed = new Date(currenttime - joined) / (24 * 60 * 60 * 1000);
 
           if (joinelapsed > 7) {
-            newcomer_report = newcomer_report + '\n' + `${member[1].user}` + ' --> kicked : ' + joinelapsed.toFixed(1) + ' days.' + spoke + muted + exmember;
+            newcomer_report = newcomer_report + '\n' + `${member[1].user.username}` + ' --> kicked : ' + joinelapsed.toFixed(1) + ' days.' + spoke + muted + exmember;
             if (!member[1].roles.cache.some(rolen => rolen.name === 'newcomer-kicked')) {
               member[1].roles.add(newcomer_kicked).catch(err => console.log(err));
               mods.send(`${member[1].user} has been removed (7 days after joining).`);
@@ -202,7 +148,7 @@ async function newcomers() {
             member[1].kick('Entry requirements unsatisfied after 7 days').catch(err => console.log(err));
           }
           else if (joinelapsed > 2) {
-            newcomer_report = newcomer_report + '\n' + `${member[1].user}` + ' --> reminded : ' + joinelapsed.toFixed(1) + ' days.' + spoke + muted + exmember;
+            newcomer_report = newcomer_report + '\n' + `${member[1].user.username}` + ' --> reminded : ' + joinelapsed.toFixed(1) + ' days.' + spoke + muted + exmember;
             if (!member[1].roles.cache.some(rolen => rolen.name === 'newcomer-reminded')) {
               member[1].roles.add(newcomer_reminded).catch(err => console.log(err));
 
@@ -214,7 +160,7 @@ async function newcomers() {
             }
           }
           else {
-            newcomer_report = newcomer_report + '\n' + `${member[1].user}` + ' --> waiting : ' + joinelapsed.toFixed(1) + ' days.' + spoke + muted + exmember;
+            newcomer_report = newcomer_report + '\n' + `${member[1].user.username}` + ' --> waiting : ' + joinelapsed.toFixed(1) + ' days.' + spoke + muted + exmember;
             if (member[1].roles.cache.some(rolen => rolen.name === 'newcomer-reminded')) {
               member[1].roles.remove(newcomer_reminded).catch(err => console.log(err));
             }
@@ -256,54 +202,6 @@ async function newcomers() {
 
   jautomod.message_cleanup(client);
 
-  const roles = client.channels.cache.get('828724253938942014');
-
-  await roles.messages.fetch({ limit: 100 }).then(async messages => {
-    messages.forEach(message => {
-      let title = '';
-      if (message.content) {
-        title = message.content.toLowerCase().substring(0, 20);
-      }
-      if (message.embeds[0]) {
-        title = message.embeds[0].title.toLowerCase().substring(0, 20);
-      }
-      //console.log(title);
-      if (message.reactions) {
-        message.reactions.cache.each(async (reaction) => {
-          //console.log(reaction.emoji.name);
-          if (title === 'do you use insight t') {
-            if (reaction.emoji.name !== '⏲️') {
-              reaction.remove();
-            }
-          }
-          else if (title === 'what is your age?') {
-            if (reaction.emoji.name !== '👦'
-              && reaction.emoji.name !== '👨') {
-              reaction.remove();
-            }
-          }
-          else if (title === 'do you identify as g') {
-            if (reaction.emoji.name !== 'gay_flag'
-              && reaction.emoji.name !== 'bi_flag'
-              && reaction.emoji.name !== 'bi_curious_flag') {
-              reaction.remove();
-            }
-          }
-          else if (title === 'memes') {
-            if (reaction.emoji.name !== 'memes') {
-              reaction.remove();
-            }
-          }
-          else if (title === 'practice') {
-            if (reaction.emoji.name !== 'lotus_meditator'
-              && reaction.emoji.name !== 'yoga') {
-              reaction.remove();
-            }
-          }
-        });
-      }
-    });
-  });
 }
 
 
@@ -337,11 +235,11 @@ async function channels(roleId, outputChannelId) {
         const item = new Object();
 
         if (channel.type === 'GUILD_TEXT') {
-          item.name = '#' + channel.name;
+          item.name = `**${channel}**`;
           item.topic = channel.topic;
         }
         else {
-          item.name = channel.name;
+          item.name = `**${channel}**`;
           item.topic = vc_channels[channel.name];
         }
 
@@ -457,6 +355,13 @@ client.once('ready', async () => {
   }, checkthe_interval);
 
 
+  bumpbots.bumpremind(client);
+
+  setInterval(function() {
+    bumpbots.bumpremind(client);
+  }, checkthe_interval);
+
+
   const guildId = '827888294100074516';
 
   const guild = client.guilds.cache.get(guildId);
@@ -496,14 +401,21 @@ client.once('ready', async () => {
 
   setInterval(newcomers, checkthe_interval);
 
+  //remove any extraeneous emojis from the reaction role questions
+
+  const roles = client.channels.cache.get('828724253938942014');
+
+  await roles.messages.fetch({ limit: 100 }).then(async messages => {
+    messages.forEach(message => {
+      if (message.reactions) {
+        message.reactions.cache.each(async (reaction) => {
+          reactions_fix(reaction);
+        });
+      }
+    });
+  });
+
 });
-
-
-// client.on("channelUpdate", function(oldChannel, newChannel) {
-//   channels('836590097318019092', '887168812632391740');
-//   channels('828732299390353448', '887168976742912001');
-// });
-
 
 
 client.on('interactionCreate', async interaction => {
@@ -808,174 +720,204 @@ client.on('interactionCreate', async interaction => {
 
 client.on('messageCreate', async (message) => {
 
-  if (message.author.bot) {
+  console.log(message.channel.type + ' : ' + message.channel.name);
+
+  if (message.embeds[0]) {
+    console.log(message.author.username + ': ');
+    console.log(message.embeds[0]);
+  }
+  else {
+    console.log(message.author.username + ': ' + message.content);
   }
 
   if (message.author.bot && message.type === 'CHANNEL_PINNED_MESSAGE') {
     message.delete();
   }
 
+  let member, moderator, dm, channel_name;
+
   if (message.channel.type === 'DM') {
-    jalenduDb.message(jalendu, message);
+    const guild = client.guilds.cache.get('827888294100074516');
+    member = await guild.members.fetch(message.author.id);
+    dm = true;
+    channel_name = 'dm';
   }
   else {
+    member = message.member;
+    dm = false;
+    channel_name = message.channel.name;
+  }
 
-    if (message.mentions) {
-      if (message.mentions.members.first()) {
-        if (message.mentions.members.first().user.username === 'Jalendu') {
-          jalenduDb.message(jalendu, message);
-        }
+  if(!member){
+    console.log('member undefined!');
+    return;
+  }
+
+  moderator = (member.roles.cache.some(rolen => rolen.name === 'moderator'));
+
+  if (channel_name.includes('bot-commands')) {
+
+    if (message.content.toLowerCase() === '!d bump') {
+      console.log('disboard bump by ' + bumpbots.bumper('disboard', message, 'bump').name);
+    }
+
+    if (bumpbots.bumpbot(message)) {
+      console.log('successfully bumped');
+    }
+
+
+    if (message.embeds[0] && message.author.id === '302050872383242240') {
+      if (message.embeds[0].description.includes(':thumbsup:')
+        || message.embeds[0].description.includes('timeout of')) {
+        bumptime = message.createdAt;
+        nextbumptime = new Date(bumptime.getTime() + 120 * 60000);
+        console.log('Detected DISBOARD bump @ ' + bumptime);
+
+        const emoji = [':heart:', ':heart_exclamation:', ':heart_eyes:',
+          ':smiling_face_with_3_hearts:',
+          ':kissing_heart:', ':kiss_mm:', ':kiss:', ':thumbsup:', ':santa:', ':clap:', ':couple_mm:',
+          ':rose:', ':medal:', ':rainbow:', ':eggplant:'];
+
+        const rand = Math.floor(Math.random() * emoji.length);
+
+        lastbump = bumpbots.bumper('disboard', message, 'bumped');
+
+        message.channel.send('Thanks ' + lastbump.name + ' ' + emoji[rand] + '\n' + bumpbots.hearts(lastbump.bumps));
       }
-    }
-
-    console.log(message.channel.name);
-
-    if (message.embeds[0]) {
-      console.log(message.author.username + ': ');
-      console.log(message.embeds[0]);
-    }
-    else {
-      console.log(message.author.username + ': ' + message.content);
-    }
-
-    if (message.channel.name.includes('bot-commands')) {
-
-      if (message.content.toLowerCase() === '!d bump') {
-        console.log('disboard bump by ' + bumper('disboard', message, 'bump').name);
-      }
-
-      if (message.embeds[0] && message.author.id === '302050872383242240') {
-        if (message.embeds[0].description.includes(':thumbsup:')
-          || message.embeds[0].description.includes('timeout of')) {
-          bumptime = message.createdAt;
-          nextbumptime = new Date(bumptime.getTime() + 120 * 60000);
-          console.log('Detected DISBOARD bump @ ' + bumptime);
-
-          const emoji = [':heart:', ':heart_exclamation:', ':heart_eyes:',
-            ':smiling_face_with_3_hearts:',
-            ':kissing_heart:', ':kiss_mm:', ':kiss:', ':thumbsup:', ':santa:', ':clap:', ':couple_mm:',
-            ':rose:', ':medal:', ':rainbow:', ':eggplant:'];
-
-          const rand = Math.floor(Math.random() * emoji.length);
-
-          lastbump = bumper('disboard', message, 'bumped');
-
-          message.channel.send('Thanks ' + lastbump.name + ' ' + emoji[rand] + '\n' + hearts(lastbump.bumps));
-        }
-      }
-    }
-
-    if (message.content === '/welcome') {
-      if (message.member.roles.cache.some(rolen => rolen.name === 'moderator')) {
-        const embed = new MessageEmbed()
-          .setTitle('Welcome to Gay+ Men Meditating!')
-          .setColor('0xBC002D')
-          .addField('\u200B', 'This server contains various channels for discussion and online practice of meditation and yoga for gay+ (gay, bisexual and bi-curious) men.')
-          .addField('\u200B', '\nIn order to gain access, please respond using complete sentences ' +
-            'to the following questions:')
-          .addField('\u200B', '**1. Tell us about yourself.' +
-            '\n2. Describe your experience with meditation and/or yoga, if any.' +
-            '\n3. Why do you want to join this group?' +
-            '\n4. Include @moderator in your message so we will be notified of your response.* **')
-          .setFooter('\u200B\n*You may directly message a moderator with your responses if you prefer. ' +
-            'A moderator will review your responses as soon as possible and determine whether to grant you access. ' +
-            '\nCaution: This channel is auto-moderated so please keep your answers brief, proper-cased and free of links or any terms of abuse.');
-
-        const landing_zone = client.channels.cache.get('851056727419256902');
-
-        const fetched = await landing_zone.messages.fetch({ limit: 100 });
-
-        if (fetched.size > 0) {
-          landing_zone.bulkDelete(fetched.size);
-        }
-
-        console.log(embed);
-
-        landing_zone.send({ embeds: [embed] })
-          .then((msg) => {
-            msg.pin();
-
-          })
-          .catch(console.error);
-      }
-    }
-    else if (message.content.startsWith('/dm')) {
-      let item = message.content.split(' ')[1].toLowerCase();
-      if (item === 'welcomedm') {
-        jautomod.welcomeDM(message.member, message.client, true);
-      }
-      else {
-        var fileContent = fs.readFileSync('./messages.json');
-        messages = JSON.parse(fileContent);
-
-        if (messages[item]) {
-          message.member.send(messages[item].content).catch(err => console.log(err));
-          message.reply(`message item "${item}" sent to you as a direct message.`).catch(err => console.log(err));
-        }
-        else {
-          message.reply(`message item "${item}" doesn't exist.`).catch(err => console.log(err));
-        }
-      }
-    }
-    else if (message.content.startsWith('/newcomer')) {
-      message.channel.send(newcomer_report);
-    }
-    else if (message.content.startsWith('/mclear')) {
-      if (message.member.roles.cache.some(rolen => rolen.name === 'moderator')) {
-        let num = 2;
-
-        const args = message.content.split(' ');
-
-        if (args[1]) {
-          num = parseInt(args[1]) + 1;
-        }
-
-        message.channel.bulkDelete(num);
-      }
-    }
-    else if (message.content.startsWith('/channel')) {
-      channels('836590097318019092', '887168812632391740');
-      channels('828732299390353448', '887168976742912001');
-    }
-    else if (message.content.startsWith('/test')) {
-      result = jautomod.test(jautomod.msglc(message));
-      message.channel.send(`${result.type}: ${result.rule}`);
-    }
-    else if (message.content.startsWith('/setup')) {
-      await jautomod.setup();
-    }
-    else if (message.content.startsWith('/maint')) {
-
-      console.log(bumper('disboard', message, 'bumped'));
-    }
-    else if (message.content.startsWith('/datacheck')) {
-      if (message.member.roles.cache.some(rolen => rolen.name === 'moderator')) {
-        jautomod.datacheck(message);
-      }
-    }
-    else if (message.content.startsWith('/bumpers')) {
-      var fileContent = fs.readFileSync('./bumpers.json');
-      bumpers = JSON.parse(fileContent);
-
-      lastbump = bumper('disboard', message, 'list');
-
-      message.reply(JSON.stringify(bumpers, null, 2) + '\n\nLast bumper is ' + lastbump.name + '\n' + lastbump.bumps + '\n' + hearts(lastbump.bumps));
-    }
-    else if (message.content.startsWith('/agelocks')) {
-      if (message.member.roles.cache.some(rolen => rolen.name === 'moderator')) {
-        var fileContent = fs.readFileSync('./agelock.json');
-        agelocks = JSON.parse(fileContent);
-        message.reply(JSON.stringify(agelocks, null, 2));
-      }
-    }
-    else if (message.content.startsWith('/cleanup')) {
-      jautomod.message_cleanup(message.client);
-    }
-
-    if (message.channel.name === 'landing-zone') {
-      jautomod.automod(message);
     }
   }
+
+  if (moderator && message.content === '/welcome') {
+    var fileContent = fs.readFileSync('./welcome.json');
+    welcome = JSON.parse(fileContent);
+
+    const landing_zone = client.channels.cache.get('851056727419256902');
+
+    const fetched = await landing_zone.messages.fetch({ limit: 100 });
+
+    if (fetched.size > 0) {
+      landing_zone.bulkDelete(fetched.size);
+    }
+
+    landing_zone.send({ embeds: [welcome] })
+      .then((msg) => {
+        msg.pin();
+
+      })
+      .catch(console.error);
+  }
+  else if (message.content.startsWith('/dm')) {
+    let item = message.content.split(' ')[1].toLowerCase();
+    if (item === 'welcomedm') {
+      jautomod.welcomeDM(message.author, message.client, true);
+    }
+    else {
+      var fileContent = fs.readFileSync('./messages.json');
+      messages = JSON.parse(fileContent);
+
+      if (messages[item]) {
+        message.author.send(messages[item].content).catch(err => console.log(err));
+        message.reply(`message item "${item}" sent to you as a direct message.`).catch(err => console.log(err));
+      }
+      else {
+        message.reply(`message item "${item}" doesn't exist.`).catch(err => console.log(err));
+      }
+    }
+  }
+  else if (message.content.startsWith('/newcomer')) {
+    message.channel.send(newcomer_report);
+  }
+  else if (moderator && !dm && message.content.startsWith('/mclear')) {
+
+    let num = 2;
+
+    const args = message.content.split(' ');
+
+    if (args[1]) {
+      num = parseInt(args[1]) + 1;
+    }
+
+    message.channel.bulkDelete(num);
+  }
+  else if (message.content.startsWith('/channel')) {
+    channels('836590097318019092', '887168812632391740');
+    channels('828732299390353448', '887168976742912001');
+  }
+  else if (message.content.startsWith('/test')) {
+    result = jautomod.test(jautomod.msglc(message));
+    message.reply(`${result.type}: ${result.rule}`);
+  }
+  else if (message.content.startsWith('/setup')) {
+    await jautomod.setup();
+  }
+  else if (message.content.startsWith('/emojis')) {
+    const emojis = client.emojis.cache;
+
+    let reply = '';
+
+    emojis.forEach(emoji => {
+      console.log(emoji);
+      if (reply.length > 1900) {
+        message.channel.send(reply);
+        reply = '';
+      }
+      reply = reply + `\n${emoji} ${emoji.id} :${emoji.name}:`;
+    });
+
+    message.channel.send(reply);
+  }
+  else if (moderator && message.content.startsWith('/maint')) {
+    bumpbots.bumpremind(client);
+  }
+  else if (moderator && message.content.startsWith('/datacheck')) {
+    jautomod.datacheck(message);
+  }
+  else if (message.content.startsWith('/bumpers')) {
+    var fileContent = fs.readFileSync('./bumpers.json');
+    bumpers = JSON.parse(fileContent);
+
+    lastbump = bumpbots.bumper('disboard', message, 'list');
+
+    message.reply(JSON.stringify(bumpers, null, 2) + '\n\nLast bumper is ' + lastbump.name + '\n' + lastbump.bumps + '\n' + bumpbots.hearts(lastbump.bumps));
+  }
+  else if (moderator && message.content.startsWith('/agelocks')) {
+    var fileContent = fs.readFileSync('./agelock.json');
+    agelocks = JSON.parse(fileContent);
+    message.reply(JSON.stringify(agelocks, null, 2));
+  }
+  else if (moderator && message.content.startsWith('/cleanup')) {
+    if (dm) {
+      jautomod.message_cleanup(message.client, message.author);
+    }
+    else {
+      jautomod.message_cleanup(message.client, message.channel);
+    }
+  }
+  else if (message.content.startsWith('/hearts')) {
+    let number = message.content.split(' ')[1];
+    if (isNaN(number)) {
+      message.reply(bumpbots.hearts(Math.random() * 16000));
+    }
+    else {
+      message.reply(bumpbots.hearts(number));
+    }
+  }
+  else if (dm) {
+    jalenduDb.message(jalendu, message);
+  }
+  else if (message.mentions) {
+    if (message.mentions.members.first()) {
+      if (message.mentions.members.first().user.username === 'Jalendu') {
+        jalenduDb.message(jalendu, message);
+      }
+    }
+  }
+
+
+  if (channel_name === 'landing-zone') {
+    jautomod.automod(message);
+  }
+
 });
 
 
@@ -1166,20 +1108,14 @@ client.on('voiceStateUpdate', (oldmember, newmember) => {
   //console.log(sessions);
 });
 
+
+
 client.on('messageReactionAdd', (reaction, user) => {
   if (reaction.message.channelId === '828724253938942014') {
 
-    if (reaction.message.id === '834032215662526465') {
-      if (reaction.emoji.name !== '⏲️') {
-        reaction.remove();
-      }
-    }
-    else if (reaction.message.id === '834057552668786699') {
-      if (reaction.emoji.name !== '👦'
-        && reaction.emoji.name !== '👨') {
-        reaction.remove();
-      }
+    reactions_fix(reaction);
 
+    if (reaction.message.id === '834057552668786699') {
       if (reaction.emoji.name === '👨') {
 
         var fileContent = fs.readFileSync('./agelock.json');
@@ -1206,24 +1142,6 @@ client.on('messageReactionAdd', (reaction, user) => {
             fs.writeFileSync('./agelock.json', JSON.stringify(agelock, null, 2), 'utf-8');
           }
         }
-      }
-    }
-    else if (reaction.message.id === '834324950486876192') {
-      if (reaction.emoji.name !== 'gay_flag'
-        && reaction.emoji.name !== 'bi_flag'
-        && reaction.emoji.name !== 'bi_curious_flag') {
-        reaction.remove();
-      }
-    }
-    else if (reaction.message.id === '881690698879995934') {
-      if (reaction.emoji.name !== 'memes') {
-        reaction.remove();
-      }
-    }
-    else if (reaction.message.id === '881816102102003722') {
-      if (reaction.emoji.name !== 'lotus_meditator'
-        && reaction.emoji.name !== 'yoga') {
-        reaction.remove();
       }
     }
   }

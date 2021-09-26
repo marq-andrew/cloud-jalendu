@@ -64,9 +64,11 @@ __3. Other commands.__
 
 Other commands are also accessed by typing /[command] as a message but they are not implemented as application commands and they are mostly only of use to the server Admins and the bot developers. They are included here for transparency.
 
+Most of these commands can be issued in a direct message session with Jalendu. That is probably preferred because some can reply with a lot of data.
+
 **/welcome** re-generates the welcome message for the #landing-zone channel. WARNING: this command will delete all other messages in the landing-zone channel. It is restricted to only moderators for that reason.
 
-**/dm** [message id] sends you a direct message that is the direct message Jalendu sends a user when certain events occur:
+**/dm** [message id] sends you a direct message that is the direct message Jalendu sends to a user when certain events occur:
 
   *welcomedm* sends you the direct message users are sent when they are verified either by the automod command (see below) or by the /moderate verify application command.
 
@@ -74,15 +76,17 @@ Other commands are also accessed by typing /[command] as a message but they are 
 
   */muted** sends you the direct message that is sent to a user who has been muted by the landing-zone automod rules.
 
-**/newcomer** replies with a report on the newcomers waiting in the landing zone channel and their status at the last newcomer check performed by Jalendu. See below in functions. (newcomers are reminded of the entry requirements after two days and kicked after 7 days).
+**/newcomer** replies with a report on the newcomers waiting in the landing zone channel and their status at the last newcomer check performed by Jalendu. See below in functions. (unverified newcomers are reminded of the entry requirements after two days and kicked after 7 days).
 
-**/mclear** [number] is a moderator only command that deletes the last [number] of messages from the channel.
+**/mclear** [number] is a moderator only command that deletes the last [number] of messages from the channel. This command can't be used in a direct message.
 
 **/channel** regenerates the channel directories.
 
 **/test** [message] tests the [message] in Jalendu's auto-moderation functions (see below) that is applied to the [message]s of unverified members in landing zone. It replies with the auto-moderation function that would be triggered and the first word or phrase in the [message] that would have triggered it.
 
 **/setup** re-reads the JSON containing the auto-moderation trigger words and phrases into memory when they have been changed. It doesn't reply with anything and should only be of interest to Admins.
+
+**/emojis** lists the server emojis with their IDs and names.
 
 **/datacheck** checks the auto-moderation trigger words and phrases for duplication and redundancy. These are used to not only check the newcomers messages for words and phrases that trigger auto-verification but also for homophobic and racist language, other forms of abuse or attemps to hack our server. Since to command responds with words and phrases that may be offensive as well as those that can be used to automatically trigger verification, this command is restricted to moderators.
 
@@ -91,6 +95,8 @@ Other commands are also accessed by typing /[command] as a message but they are 
 **/agelocks** lists the data used to maiintain age locks. Since this is sensitive data, it is a moderator only command.
 
 **/cleanup** runs the landing zone cleanup code in case for some reason it doesn't run when it should.
+
+**/hearts** [number] tests the hearts counter. A representation of [number] as a base 5 number using rainbow coloured hearts emojis. If [number] is omitted a random number 0 - 16000 is used.
 
 
 __4. Functions.__
@@ -127,4 +133,4 @@ Snice Disboard changed the format of its response to a bump so that it no longer
 
 **Age lock maintenance**. Jalendu intercepts and reverses attempts to assign the Age 18+ role to a member who is age locked. 
 
-**Jalendu chat bot**. This is some experimentation I am doing with the idea of a chat bot. It only relates to direct messages that users send to Jalendu as a user. The aim of this code is to program Jalendo to respond to your direct messages to him.
+**Jalendu chat bot**. This is some experimentation I am doing with the idea of a chat bot. It only relates to direct messages that users send to Jalendu as a user or to channel message that mention @Jalendu. The aim of this code is to program Jalendo to respond to your direct messages to him. This code uses a postgres sql database ElephantSQL (in AWS cloud) to store its data. Messages are not linked to a user identity in that database. 

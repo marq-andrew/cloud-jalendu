@@ -1,17 +1,9 @@
-Why doesn't moderate verify trigger cleanup ? - bug - this is caused by not considerinig the asynchronicity of js. - Need to review functions that need to be run in a particular order.  high
+Why doesn't moderate verify trigger cleanup ? - bug - this is caused by not considerinig the asynchronicity of js. - Need to review functions that need to be run in a particular order.  high.
 
-Why did the member introductioons messcome message say "please welcome undefined" for Jurgen? - high
+modularise and abstract the bumpbot code - medium - in progress.
 
-put the welcome into a json so it can be changed without restarting the server. Also make the welcome sent to member introductions prettier. Look at this https://dev.to/en3sis/advanced-discord-js-custom-embeds-using-attachments-2bpn
-high
-
-Detect success or failure of disboard bump and record it in bumpers - low.
-
-Consolidate the two pieces of code that do the same #roles channel emoji checking - medium
-
-Make the message cleanup function return results as a message reply if issued as a command - medium.
-
-Make "hidden" /commands work in DMs - high.
+Also make the welcome sent to member introductions prettier. Look at this https://dev.to/en3sis/advanced-discord-js-custom-embeds-using-attachments-2bpn
+high.
 
 Make a command for adding words to data? - high
 
@@ -25,10 +17,22 @@ Further modularise the code - low
 
 Work out how to update to node-fetch v3 - low
 
-Complete channel descriptions - low
+Complete channel descriptions - low - mostly done - waiting for yoga rooms descriptiuon from yogis.
 
 
 ----- Everything below is done -------
+
+Detect success or failure of disboard bump and record it in bumpers - low - done.
+
+Consolidate the two pieces of code that do the same #roles channel emoji checking - medium - done
+
+Make the message cleanup function return results as a message reply if issued as a command - medium - done
+
+Make "hidden" /commands work in DMs - high - done
+
+Why did the member introductioons welcome message say "please welcome undefined" for Jurgen? - high - can't reproduce - delete - no I reproduced it - done.
+
+put the welcome into a json so it can be changed without restarting the server. - done
 
 Why not delete additional reaction roles to the roles questions as they happen? - medium - done
 

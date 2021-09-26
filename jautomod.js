@@ -14,8 +14,6 @@ module.exports.warnings = [];
 module.exports.setup = function() {
   var fileContent = fs.readFileSync('./data.json');
   data = JSON.parse(fileContent);
-
-  console.log(data);
 }
 
 module.exports.welcomeDM = function(member, client, test = false) {
@@ -33,7 +31,7 @@ module.exports.welcomeDM = function(member, client, test = false) {
     memberintro = client.channels.cache.get('833559519611060244');
   }
 
-  memberintro.send(`Please welcome ${member.user}.`);
+  memberintro.send(`Please welcome ${member}.`);
 }
 
 module.exports.msglc = function(message) {
@@ -146,9 +144,9 @@ module.exports.test = function(msglc) {
 
   for (let i = 0; i < words.length; i++) {
     if (urlrx1.test(words[i]) || urlrx2.test(words[i])) {
-    result.type = 'URL or file links';
-    result.rule = 'words[i]';
-    return result;
+      result.type = 'URL or file links';
+      result.rule = 'words[i]';
+      return result;
     }
   }
 
@@ -308,16 +306,18 @@ module.exports.datacheck = function(message) {
 }
 
 
-module.exports.message_cleanup = function(client) {
+var cleanup_log;
 
-  console.log('\nLanding zone message cleanup.');
-  console.log('-----------------------------');
+module.exports.message_cleanup = function(client, output) {
+
+  cleanup_log = '__Landing zone message cleanup__';
 
   const landing_zone = client.channels.cache.get('851056727419256902');
 
   landing_zone.messages.fetch({ limit: 100 }).then(async messages => {
     messages.forEach(message => {
       if (message.type === 'CHANNEL_PINNED_MESSAGE') {
+        cleanup_log = cleanup_log + 'CHANNEL_PINNED_MESSAGE deleted';
         message.delete();
       }
       else if (!message.pinned) {
@@ -325,8 +325,11 @@ module.exports.message_cleanup = function(client) {
         currenttime = new Date();
         const age = new Date(currenttime - message.createdTimestamp) / (24 * 60 * 60 * 1000);
 
+        cleanup_log = cleanup_log + `\nMessage by ${message.author} "${message.content.substring(0, 19)}"`;
+
         if (age > 3) {
-          console.log('Message is more than 3 days old - delete message.');
+
+          cleanup_log = cleanup_log + '-is more than 3 days old - delete.';
           message.delete().catch(err => console.log(err));
         }
 
@@ -335,43 +338,50 @@ module.exports.message_cleanup = function(client) {
 
         message.guild.members.fetch(author).then(async member => {
           if (member.roles.cache.some(rolen => rolen.name === 'moderator')) {
-            console.log('Message is from a moderator - check mentions.');
+            cleanup_log = cleanup_log + '\n- is from a moderator - check mentions:';
             if (mention) {
               message.guild.members.fetch(mention).then(async mention => {
                 if (mention.roles.cache.some(rolen => rolen.name === 'moderator')) {
-                  console.log('Mention is of a moderator - weird but wait.');
+                  cleanup_log = cleanup_log + '\n- - mentions a moderator - wait.';
                 }
                 else if (mention.roles.cache.some(rolen => rolen.name === 'verified')) {
-                  console.log('Mention is of a verified member - delete message.');
+                  cleanup_log = cleanup_log + '\n- - mentions a verified member - delete.';
                   message.delete().catch(err => console.log(err));
                 }
                 else {
-                  console.log('Mention is of an unverified newcomer - wait.');
+                  cleanup_log = cleanup_log + '\n- - mentions an unverified newcomer - wait.';
                 }
               })
                 .catch(async err => {
-                  console.log('Mention is not a member - delete message.');
+                  cleanup_log = cleanup_log + '\n- - mentions an non-member - delete.';
                   message.delete().catch(err => console.log(err));
                 });
             }
           }
           else if (member.roles.cache.some(rolen => rolen.name === 'verified')) {
-            console.log('Message is from a verified member - delete message.');
+            cleanup_log = cleanup_log + '\n- is from a verified member - delete.';
             message.delete().catch(err => console.log(err));
           }
           else if (member.roles.cache.some(rolen => rolen.name === 'newcomer-muted')) {
-            console.log('Message is from a muted newcomer - delete message.');
+            cleanup_log = cleanup_log + '\n- is from a muted newcomer - delete.';
             message.delete().catch(err => console.log(err));
           }
           else {
-            console.log('Message is from an unverified newcomer - wait.');
+            cleanup_log = cleanup_log + '\n- is from an unverified newcomer - wait.';
           }
         })
           .catch(async err => {
-            console.log('Author is not a member - delete message.');
+            cleanup_log = cleanup_log + '\n- is from a non-member - delete.';
             message.delete().catch(err => console.log(err));
           });
       }
     });
   });
+
+  if(!output){
+    console.log(cleanup_log);
+  }
+  else{
+    output.send(cleanup_log);
+  }
 }
