@@ -1,4 +1,5 @@
 const pg = require('pg');
+const table = require('text-table');
 
 module.exports.setup = function() {
 
@@ -116,7 +117,7 @@ module.exports.message = function(jalendu, message) {
             // }
 
             let reply = results.rows[index].reply;
-            reply = reply.replace('${username}', username);
+            reply = reply.replace('${username}', `${message.author}`);
 
             message.channel.send(reply);
             context_out = results.rows[index].context_out;
@@ -175,3 +176,121 @@ module.exports.message = function(jalendu, message) {
     });
   });
 }
+
+
+const wrap = (s, w) => s.replace(
+  new RegExp(`(?![^\\n]{1,${w}}$)([^\\n]{1,${w}})\\s`, 'g'), '$1\n'
+);
+
+
+var tabulate = function(results) {
+
+  if (results.rows.length > 0) {
+    let rows = [];
+    let cols = [];
+    let lens = [];
+
+    for (j = 0; j < results.fields.length; j++) {
+      cols[j] = results.fields[j].name;
+      lens[j] = results.fields[j].name.length;
+    }
+
+    console.log(lens);
+
+    rows.push(cols);
+
+    let val;
+
+    for (i = 0; i < results.rows.length; i++) {
+      let cols = [];
+      for (j = 0; j < results.fields.length; j++) {
+        val = String(results.rows[i][results.fields[j].name]);
+        if (val.length >= 50) {
+          cols[j] = val.substring(0, 49) + '+';
+        }
+        else {
+          cols[j] = val;
+        }
+        lens[j] = Math.max(lens[j], cols[j].length);
+      }
+      console.log(lens);
+      rows.push(cols);
+    }
+
+    console.log(lens);
+
+    var table = '';
+
+    for (i = 0; i < rows.length; i++) {
+      for (j = 0; j < cols.length; j++) {
+        table = table + String(rows[i][j]).padEnd(lens[j] + 1, ' ');
+      }
+      table = table + '\n';
+    }
+
+
+
+    //const tab = table(rows);
+
+    return '```' + table.substring(0, 1000) + '```';
+  }
+  else {
+    return 'no rows in results';
+  }
+}
+
+module.exports.tabulate = tabulate;
+
+
+
+module.exports.commands = function(jalendu, message) {
+  const args = message.content.toLowerCase().split(' ');
+  let sql = '';
+
+  if (args[1] === 'list') {
+    sql = `select * from ${args[2]};`;
+    jalendu.query(sql, function(error, results) {
+      if (error) {
+        message.reply(error);
+      }
+      else {
+        message.reply(tabulate(results));
+      }
+    });
+  }
+  else if (args[1] === 'tables') {
+    sql = `select tablename from pg_catalog.pg_tables where schemaname = 'public'`;
+    jalendu.query(sql, function(error, results) {
+      if (error) {
+        message.reply(error);
+      }
+      else {
+        //console.log(results);
+        message.reply(tabulate(results));
+      }
+    });
+  }
+  else if (args[1] === 'sql') {
+    sql = args.slice(2).join(' ');
+    jalendu.query(sql, function(error, results) {
+      if (error) {
+        message.reply(error);
+      }
+      else {
+        if (results.command === 'SELECT') {
+          //console.log(results);
+          message.reply(tabulate(results));
+        }
+        else {
+          console.log(results);
+          message.reply(`${results.rowCount} rows affected`);
+        }
+      }
+    });
+  }
+  else {
+    message.reply('[/cb|/chatbot] [list|tables|sql]');
+  }
+}
+
+

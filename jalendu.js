@@ -22,6 +22,9 @@ jautomod.setup();
 
 var bumpbots = require('./bumpbots.js');
 
+// var bla = require('./bla.js');
+// console.log(bla.bar());
+
 const token = process.env['TOKEN'];
 
 const intents = new Intents();
@@ -78,6 +81,17 @@ function reactions_fix(reaction) {
       reaction.remove();
     }
   }
+}
+
+async function tz() {
+  const guild = client.guilds.cache.get('827888294100074516');
+  console.log('hello');
+  await guild.members.fetch().then(members => {
+
+    for (const [id, member] of members) {
+      console.log(`${member.user.username} ${member.joinedTimestamp}`);
+    }
+  });
 }
 
 let newcomer_report = '';
@@ -152,7 +166,7 @@ async function newcomers() {
             if (!member[1].roles.cache.some(rolen => rolen.name === 'newcomer-reminded')) {
               member[1].roles.add(newcomer_reminded).catch(err => console.log(err));
 
-              var fileContent = fs.readFileSync('./messages.json');
+              var fileContent = fs.readFileSync('./data/messages.json');
               messages = JSON.parse(fileContent);
 
               member[1].send(messages.reminder.content).catch(err => console.log(err));
@@ -207,7 +221,7 @@ async function newcomers() {
 
 async function channels(roleId, outputChannelId) {
 
-  fileContent = fs.readFileSync('./vc_channels.json');
+  fileContent = fs.readFileSync('./data/vc_channels.json');
   const vc_channels = JSON.parse(fileContent);
 
   const guild = client.guilds.cache.get('827888294100074516');
@@ -312,9 +326,9 @@ async function channels(roleId, outputChannelId) {
 }
 
 
-let bumptime = 0;
-let nextbumptime = 0;
-let currenttime = 0;
+// let bumptime = 0;
+// let nextbumptime = 0;
+// let currenttime = 0;
 
 client.once('ready', async () => {
   console.log('Ready!');
@@ -324,36 +338,10 @@ client.once('ready', async () => {
   client.user.setActivity();
   client.user.setStatus(':rainbow_flag: monitoring');
 
-  const botcom = client.channels.cache.get('834013095805452318');
-
-  botcom.messages.fetch({ limit: 100 }).then(messages => {
-    messages.forEach(message => {
-      if (message.embeds[0] && message.author.id === '302050872383242240') {
-        if ((message.embeds[0].description.includes(':thumbsup:')
-          || message.embeds[0].description.includes('timeout of'))
-          && bumptime === 0) {
-          bumptime = message.createdAt;
-          nextbumptime = new Date(bumptime.getTime() + 120 * 60000);
-        }
-      }
-    });
-  });
-
   let checkminutes = 10;
   let checkthe_interval = checkminutes * 60 * 1000;
 
-  setInterval(function() {
-    currenttime = new Date();
-    if (nextbumptime > 0) {
-      console.log('DISBOARD reminder active: waiting for ' + nextbumptime);
-      if (currenttime > nextbumptime) {
-        botcom.send('Time to bump DISBOARD (!d bump).');
-        console.log('DISBOARD reminder sent. Waiting for a bump.');
-        nextbumptime = 0;
-      }
-    }
-  }, checkthe_interval);
-
+  bumpbots.init(client);
 
   bumpbots.bumpremind(client);
 
@@ -560,7 +548,7 @@ client.on('interactionCreate', async interaction => {
             interaction.reply({ content: `You can't age lock a moderator. :confused:`, ephemeral: true });
           }
           else {
-            var fileContent = fs.readFileSync('./agelock.json');
+            var fileContent = fs.readFileSync('./data/agelock.json');
             agelock = JSON.parse(fileContent);
 
             if (!agelock[username.id]) {
@@ -586,11 +574,11 @@ client.on('interactionCreate', async interaction => {
             let role = interaction.guild.roles.cache.find(rolen => rolen.name === `Age 18 +`);
             member.roles.remove(role);
 
-            fs.writeFileSync('./agelock.json', JSON.stringify(agelock, null, 2), 'utf-8');
+            fs.writeFileSync('./data/agelock.json', JSON.stringify(agelock, null, 2), 'utf-8');
           }
         }
         else if (command === 'ageunlock') {
-          var fileContent = fs.readFileSync('./agelock.json');
+          var fileContent = fs.readFileSync('./data/agelock.json');
           agelock = JSON.parse(fileContent);
 
           if (agelock[username.id]) {
@@ -604,7 +592,7 @@ client.on('interactionCreate', async interaction => {
             interaction.reply({ content: `Member ${username} isn't age locked. :confused:`, ephemeral: true });
           }
 
-          fs.writeFileSync('./agelock.json', JSON.stringify(agelock, null, 2), 'utf-8');
+          fs.writeFileSync('./data/agelock.json', JSON.stringify(agelock, null, 2), 'utf-8');
         }
         else {
           interaction.reply({ content: `${command}: ${username} Sorry, not implemented yet - working on it.`, ephemeral: true });
@@ -697,7 +685,7 @@ client.on('interactionCreate', async interaction => {
 
       await interaction.reply('Jalendu bot help will be sent to you as a direct message.').catch(console.error);
 
-      readmeraw = fs.readFileSync('./jalendu_readme.txt').toString();
+      readmeraw = fs.readFileSync('./data/jalendu_readme.txt').toString();
 
       sections = readmeraw.split('\n');
 
@@ -734,7 +722,7 @@ client.on('messageCreate', async (message) => {
     message.delete();
   }
 
-  let member, moderator, dm, channel_name;
+  let member, moderator, dm, channel_name, admin;
 
   if (message.channel.type === 'DM') {
     const guild = client.guilds.cache.get('827888294100074516');
@@ -748,14 +736,20 @@ client.on('messageCreate', async (message) => {
     channel_name = message.channel.name;
   }
 
-  if(!member){
+  if (!member) {
     console.log('member undefined!');
     return;
   }
 
   moderator = (member.roles.cache.some(rolen => rolen.name === 'moderator'));
 
+  admin = (member.roles.cache.some(rolen => rolen.name === 'admin'));
+
   if (channel_name.includes('bot-commands')) {
+
+    if (message.content.toLowerCase() === 'ft set') {
+      message.reply('You have to enter ```-ft set``` (including the -');
+    }
 
     if (message.content.toLowerCase() === '!d bump') {
       console.log('disboard bump by ' + bumpbots.bumper('disboard', message, 'bump').name);
@@ -763,143 +757,179 @@ client.on('messageCreate', async (message) => {
 
     if (bumpbots.bumpbot(message)) {
       console.log('successfully bumped');
+
+      const emoji = [':heart:', ':heart_exclamation:', ':heart_eyes:',
+        ':smiling_face_with_3_hearts:',
+        ':kissing_heart:', ':kiss_mm:', ':kiss:', ':thumbsup:', ':santa:', ':clap:', ':couple_mm:',
+        ':rose:', ':medal:', ':rainbow:'];
+
+      const rand = Math.floor(Math.random() * emoji.length);
+
+      lastbump = bumpbots.bumper('disboard', message, 'bumped');
+
+      message.channel.send('Thanks ' + lastbump.name + ' ' + emoji[rand] + '\n' + bumpbots.hearts(lastbump.bumps));
     }
+  }
 
+  if (!message.author.bot && message.content.startsWith('/')) {
+    if (moderator && message.content === '/welcome') {
+      var fileContent = fs.readFileSync('./data/welcome.json');
+      welcome = JSON.parse(fileContent);
 
-    if (message.embeds[0] && message.author.id === '302050872383242240') {
-      if (message.embeds[0].description.includes(':thumbsup:')
-        || message.embeds[0].description.includes('timeout of')) {
-        bumptime = message.createdAt;
-        nextbumptime = new Date(bumptime.getTime() + 120 * 60000);
-        console.log('Detected DISBOARD bump @ ' + bumptime);
+      const landing_zone = client.channels.cache.get('851056727419256902');
 
-        const emoji = [':heart:', ':heart_exclamation:', ':heart_eyes:',
-          ':smiling_face_with_3_hearts:',
-          ':kissing_heart:', ':kiss_mm:', ':kiss:', ':thumbsup:', ':santa:', ':clap:', ':couple_mm:',
-          ':rose:', ':medal:', ':rainbow:', ':eggplant:'];
+      const fetched = await landing_zone.messages.fetch({ limit: 100 });
 
-        const rand = Math.floor(Math.random() * emoji.length);
-
-        lastbump = bumpbots.bumper('disboard', message, 'bumped');
-
-        message.channel.send('Thanks ' + lastbump.name + ' ' + emoji[rand] + '\n' + bumpbots.hearts(lastbump.bumps));
+      if (fetched.size > 0) {
+        landing_zone.bulkDelete(fetched.size);
       }
+
+      landing_zone.send({ embeds: [welcome] })
+        .then((msg) => {
+          msg.pin();
+
+        })
+        .catch(console.error);
     }
-  }
-
-  if (moderator && message.content === '/welcome') {
-    var fileContent = fs.readFileSync('./welcome.json');
-    welcome = JSON.parse(fileContent);
-
-    const landing_zone = client.channels.cache.get('851056727419256902');
-
-    const fetched = await landing_zone.messages.fetch({ limit: 100 });
-
-    if (fetched.size > 0) {
-      landing_zone.bulkDelete(fetched.size);
-    }
-
-    landing_zone.send({ embeds: [welcome] })
-      .then((msg) => {
-        msg.pin();
-
-      })
-      .catch(console.error);
-  }
-  else if (message.content.startsWith('/dm')) {
-    let item = message.content.split(' ')[1].toLowerCase();
-    if (item === 'welcomedm') {
-      jautomod.welcomeDM(message.author, message.client, true);
-    }
-    else {
-      var fileContent = fs.readFileSync('./messages.json');
-      messages = JSON.parse(fileContent);
-
-      if (messages[item]) {
-        message.author.send(messages[item].content).catch(err => console.log(err));
-        message.reply(`message item "${item}" sent to you as a direct message.`).catch(err => console.log(err));
+    else if (message.content.startsWith('/dm')) {
+      let item = message.content.split(' ')[1].toLowerCase();
+      if (item === 'welcomedm') {
+        jautomod.welcomeDM(message.author, message.client, true);
       }
       else {
-        message.reply(`message item "${item}" doesn't exist.`).catch(err => console.log(err));
+        var fileContent = fs.readFileSync('./data/messages.json');
+        messages = JSON.parse(fileContent);
+
+        if (messages[item]) {
+          message.author.send(messages[item].content).catch(err => console.log(err));
+          message.reply(`message item "${item}" sent to you as a direct message.`).catch(err => console.log(err));
+        }
+        else {
+          message.reply(`message item "${item}" doesn't exist.`).catch(err => console.log(err));
+        }
       }
     }
-  }
-  else if (message.content.startsWith('/newcomer')) {
-    message.channel.send(newcomer_report);
-  }
-  else if (moderator && !dm && message.content.startsWith('/mclear')) {
-
-    let num = 2;
-
-    const args = message.content.split(' ');
-
-    if (args[1]) {
-      num = parseInt(args[1]) + 1;
+    else if (message.content.startsWith('/newcomer')) {
+      message.channel.send(newcomer_report);
     }
+    else if (moderator && !dm && message.content.startsWith('/mclear')) {
 
-    message.channel.bulkDelete(num);
-  }
-  else if (message.content.startsWith('/channel')) {
-    channels('836590097318019092', '887168812632391740');
-    channels('828732299390353448', '887168976742912001');
-  }
-  else if (message.content.startsWith('/test')) {
-    result = jautomod.test(jautomod.msglc(message));
-    message.reply(`${result.type}: ${result.rule}`);
-  }
-  else if (message.content.startsWith('/setup')) {
-    await jautomod.setup();
-  }
-  else if (message.content.startsWith('/emojis')) {
-    const emojis = client.emojis.cache;
+      let num = 2;
 
-    let reply = '';
+      const args = message.content.split(' ');
 
-    emojis.forEach(emoji => {
-      console.log(emoji);
-      if (reply.length > 1900) {
-        message.channel.send(reply);
-        reply = '';
+      if (args[1]) {
+        num = parseInt(args[1]) + 1;
       }
-      reply = reply + `\n${emoji} ${emoji.id} :${emoji.name}:`;
-    });
 
-    message.channel.send(reply);
-  }
-  else if (moderator && message.content.startsWith('/maint')) {
-    bumpbots.bumpremind(client);
-  }
-  else if (moderator && message.content.startsWith('/datacheck')) {
-    jautomod.datacheck(message);
-  }
-  else if (message.content.startsWith('/bumpers')) {
-    var fileContent = fs.readFileSync('./bumpers.json');
-    bumpers = JSON.parse(fileContent);
+      message.channel.bulkDelete(num);
+    }
+    else if (message.content.startsWith('/channel')) {
+      channels('836590097318019092', '887168812632391740');
+      channels('828732299390353448', '887168976742912001');
+    }
+    else if (message.content.startsWith('/test')) {
+      result = jautomod.test(jautomod.msglc(message));
+      message.reply(`${result.type}: ${result.rule}`);
+    }
+    else if (message.content.startsWith('/setup')) {
+      await jautomod.setup();
+    }
+    else if (message.content.startsWith('/emojis')) {
+      const emojis = client.emojis.cache;
 
-    lastbump = bumpbots.bumper('disboard', message, 'list');
+      let reply = '';
 
-    message.reply(JSON.stringify(bumpers, null, 2) + '\n\nLast bumper is ' + lastbump.name + '\n' + lastbump.bumps + '\n' + bumpbots.hearts(lastbump.bumps));
-  }
-  else if (moderator && message.content.startsWith('/agelocks')) {
-    var fileContent = fs.readFileSync('./agelock.json');
-    agelocks = JSON.parse(fileContent);
-    message.reply(JSON.stringify(agelocks, null, 2));
-  }
-  else if (moderator && message.content.startsWith('/cleanup')) {
-    if (dm) {
-      jautomod.message_cleanup(message.client, message.author);
+      emojis.forEach(emoji => {
+        console.log(emoji);
+        if (reply.length > 1900) {
+          message.channel.send(reply);
+          reply = '';
+        }
+        reply = reply + `\n${emoji} ${emoji.id} :${emoji.name}:`;
+      });
+
+      message.channel.send(reply);
     }
-    else {
-      jautomod.message_cleanup(message.client, message.channel);
+    else if (moderator && message.content.startsWith('/bumpdata')) {
+      bumpbots.data(message, 'data');
     }
-  }
-  else if (message.content.startsWith('/hearts')) {
-    let number = message.content.split(' ')[1];
-    if (isNaN(number)) {
-      message.reply(bumpbots.hearts(Math.random() * 16000));
+    else if (moderator && message.content.startsWith('/datacheck')) {
+      jautomod.datacheck(message);
     }
-    else {
-      message.reply(bumpbots.hearts(number));
+    else if (message.content.startsWith('/maint')) {
+console.log(message);
+    }
+    else if (message.content.startsWith('/bumpers')) {
+      lastbump = bumpbots.bumper('disboard', message, 'list');
+
+      message.channel.send(JSON.stringify(bumpbots.bumpers, null, 2) + '\n\nLast bumper is ' + lastbump.name + '\n' + lastbump.bumps + '\n' + bumpbots.hearts(lastbump.bumps));
+
+      bumpbots.bumperlist(message);
+    }
+    else if (moderator && message.content.startsWith('/agelocks')) {
+      var fileContent = fs.readFileSync('./data/agelock.json');
+      agelocks = JSON.parse(fileContent);
+      message.reply(JSON.stringify(agelocks, null, 2));
+    }
+    else if (moderator && message.content.startsWith('/bumpbots')) {
+      if (dm) {
+        bumpbots.bumpremind(message.client, message.author);
+      }
+      else {
+        bumpbots.bumpremind(message.client, message.channel);
+      }
+    }
+    else if (moderator && message.content.startsWith('/cleanup')) {
+      if (dm) {
+        jautomod.message_cleanup(message.client, message.author);
+      }
+      else {
+        jautomod.message_cleanup(message.client, message.channel);
+      }
+    }
+    else if (message.content.startsWith('/hearts')) {
+      let number = message.content.split(' ')[1];
+      if (isNaN(number)) {
+        message.reply(bumpbots.hearts(Math.random() * 16000));
+      }
+      else {
+        message.reply(bumpbots.hearts(number));
+      }
+    }
+    else if (message.content.startsWith('/mods')) {
+      var guideraw = fs.readFileSync('./data/mods.txt').toString();
+
+      const modsguide = client.channels.cache.get('893381267364663386');
+
+      const fetched = await modsguide.messages.fetch({ limit: 100 });
+
+      if (fetched.size > 0) {
+        modsguide.bulkDelete(fetched.size);
+      }
+
+      sections = guideraw.split('\n');
+
+      split = '';
+
+      for (let i = 0; i < sections.length; i++) {
+        if ((split + sections[i]).length > 2000) {
+          modsguide.send('\u200B\n' + split);
+          split = sections[i];
+        }
+        else {
+          split = split + '\n' + sections[i];
+        }
+      }
+      if (split) {
+        modsguide.send('\u200B\n' + split);
+      }
+    }
+    else if (moderator && message.content.startsWith('/data')) {
+      jautomod.data(message);
+    }
+    else if (message.content.startsWith('/chatbot') || message.content.startsWith('/cb')) {
+      jalenduDb.commands(jalendu, message);
     }
   }
   else if (dm) {
@@ -917,6 +947,9 @@ client.on('messageCreate', async (message) => {
   if (channel_name === 'landing-zone') {
     jautomod.automod(message);
   }
+  else if (channel_name === 'test_landing-zone') {
+    jautomod.automod(message, true);
+  }
 
 });
 
@@ -929,6 +962,9 @@ client.on('guildMemberAdd', async (member) => {
   if (member.roles.cache.some(rolen => rolen.name === 'member')) {
     mods.send(`New member ${member.user} was previously a verified member.`);
   }
+
+  let role = member.guild.roles.cache.find(rolen => rolen.name === `newcomer`);
+  member.roles.add(role);
 
   const embed = new MessageEmbed()
     .setTitle(member.user.username)
@@ -1118,7 +1154,7 @@ client.on('messageReactionAdd', (reaction, user) => {
     if (reaction.message.id === '834057552668786699') {
       if (reaction.emoji.name === '👨') {
 
-        var fileContent = fs.readFileSync('./agelock.json');
+        var fileContent = fs.readFileSync('./data/agelock.json');
         agelock = JSON.parse(fileContent);
 
         if (agelock[user.id]) {
@@ -1126,7 +1162,7 @@ client.on('messageReactionAdd', (reaction, user) => {
           if (currenttime > agelock[user.id]) {
             delete agelock[user.id];
 
-            fs.writeFileSync('./agelock.json', JSON.stringify(agelock, null, 2), 'utf-8');
+            fs.writeFileSync('./data/agelock.json', JSON.stringify(agelock, null, 2), 'utf-8');
           }
           else if (!agelock[user.id].notified) {
 
@@ -1139,7 +1175,7 @@ client.on('messageReactionAdd', (reaction, user) => {
 
             agelock[user.id].notified = true;
 
-            fs.writeFileSync('./agelock.json', JSON.stringify(agelock, null, 2), 'utf-8');
+            fs.writeFileSync('./data/agelock.json', JSON.stringify(agelock, null, 2), 'utf-8');
           }
         }
       }
@@ -1169,7 +1205,7 @@ client.on("guildMemberUpdate", (oldMember, newMember) => {
 
   if (!oldMember.roles.cache.has('828732299390353448') && newMember.roles.cache.has('828732299390353448')) {
 
-    var fileContent = fs.readFileSync('./agelock.json');
+    var fileContent = fs.readFileSync('./data/agelock.json');
     agelock = JSON.parse(fileContent);
 
     if (agelock[newMember.user.id]) {
@@ -1177,7 +1213,7 @@ client.on("guildMemberUpdate", (oldMember, newMember) => {
       if (currenttime > agelock[newMember.user.id]) {
         delete agelock[newMember.user.id];
 
-        fs.writeFileSync('./agelock.json', JSON.stringify(agelock, null, 2), 'utf-8');
+        fs.writeFileSync('./data/agelock.json', JSON.stringify(agelock, null, 2), 'utf-8');
       }
       else {
         const mods = client.channels.cache.get('827889605994872863');

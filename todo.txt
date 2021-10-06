@@ -1,15 +1,18 @@
-Why doesn't moderate verify trigger cleanup ? - bug - this is caused by not considerinig the asynchronicity of js. - Need to review functions that need to be run in a particular order.  high.
 
-modularise and abstract the bumpbot code - medium - in progress.
+Learn about callbacks - high
+
+Cleanup still doesn't work properly - depends on learning about callbacks - high
+
+Change message to depend on automod violation type - high.
+
+Why doesn't moderate verify trigger cleanup ? - bug - this is caused by not considerinig the synchronicity of js? - Need to review functions that need to be run in a particular order.  high.
 
 Also make the welcome sent to member introductions prettier. Look at this https://dev.to/en3sis/advanced-discord-js-custom-embeds-using-attachments-2bpn
 high.
 
-Make a command for adding words to data? - high
-
 Can the verify functions be consolidated into one function? - medium.
 
-Add microphone on off to the vc logging. Investigate use of the session id property - medium.
+Add microphone on off to the vc logging. Investigate use of the session id property - low.
 
 Is it possible to search for avatar image online for new members - idea - low.
 
@@ -17,10 +20,31 @@ Further modularise the code - low
 
 Work out how to update to node-fetch v3 - low
 
-Complete channel descriptions - low - mostly done - waiting for yoga rooms descriptiuon from yogis.
-
 
 ----- Everything below is done -------
+
+Why is bumpbots buggy? - high - fixed - done
+
+Add a /data function to list and restore from a backup - medium - done
+
+Make the bumpbots bumpremind function accessible. If initiated as a command, return how long to wait or how much time is wasted if waiting - high - done.
+
+test strippinig diacritics in automod:
+const str = "Crème Brulée"
+str.normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+> "Creme Brulee"
+
+or 
+
+str.normalize("NFD").replace(/\p{Diacritic}/gu, "") - high - done
+
+Move all data json files into a data directory - high - done.
+
+modularise and abstract the bumpbot code - medium - in progress - done.
+
+Make a command for adding words to data - high - done.
+
+Complete channel descriptions - low - mostly done - waiting for yoga rooms descriptiuon from yogis - done - no reply.
 
 Detect success or failure of disboard bump and record it in bumpers - low - done.
 

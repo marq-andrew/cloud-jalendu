@@ -9,6 +9,14 @@
   },
   "muted": {
     "type": "normal",
-    "content": "__Thankyou for your interest in Gay+ Men Meditating.__\n\nSadly, because of repeated violation of the automod rules, all of your messages in the #landing-zone channel have been deleted. We recognise the effort you put into composing them and the time wasted in your **limited** and likely **pointless** life, time that you will never get back, and for that we are sincerely *sorry*.\n\nIf you joined merely to **troll** us because we are **gay+** men, we know that it has long been recognised in the field of **psychology** that men confident of **their own sexuality** rarely have a problem with **anyone else's**. I will let you in on a secret: Gay+ men recognise this in people like **you** all the time. We are rarely offended but more likely to feel compassion, pity, disgust or sometimes a perverse attraction (for we know that the difference between a **rabid homophobe** and a **well-lubed power-bottom** is two shots of vodka).\nA **meditation practice** or a visit or two to a **qualified clinical psychologist** may do you some good.\n\nNot only were all of your messages deleted, you have lost permission to post to #landing-zone so there isn't anything left for you to do here. If you wait around for a few days, you might find your permission to post restored. *Thankyou.*"
+    "content": "__Thankyou for your interest in Gay+ Men Meditating.__\n\nSadly, because of repeated violation of the automod rules, all of your messages in the #landing-zone channel have been deleted. We recognise the effort you put into composing them and the time wasted in your **limited** and likely **pointless** life, time that you will never get back, and for that we are sincerely *sorry*."
+  },
+  "homophobic": {
+    "type":"normal",
+    "content": "I (a bot) detected homophobic language in your messages. If you joined merely to **troll** us because we are **gay+** men, we know that it has long been recognised in the field of **psychology** that men confident of **their own sexuality** rarely have a problem with **anyone-else's**. I will let you in on a secret: Gay+ men recognise this in people like **you** all the time. We are rarely offended but are more likely to feel compassion, pity or disgust.\nA **meditation practice** or a visit or two to a **qualified clinical psychologist** may do you some good."
+  },
+  "muted_end": {
+    "type":"normal",
+    "content": "Not only were all of your messages deleted, you have lost permission to post to #landing-zone so there isn't anything left for you to do here. If you wait around for a few days, you might find your permission to post restored. *Thankyou.*"
   }
 }

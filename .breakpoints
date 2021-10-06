@@ -1,19 +1,41 @@
 {
   "files": {
+    "data/mods.json": [
+      {
+        "id": "eb40f7a8-9b31-46cc-9aa7-cd937e1031b6",
+        "line": 10,
+        "version": 421,
+        "index": 7737
+      }
+    ],
     "jalendu.js": [
       {
         "id": "7ce7904d-0cd6-465d-9ffc-65a42c9417e8",
         "line": 21,
-        "version": 20946,
+        "version": 22360,
         "index": 434
+      }
+    ],
+    "jalendu_readme.txt": [
+      {
+        "id": "5200d53b-8792-42c0-b6e1-4381666d79e6",
+        "line": 17,
+        "version": 16460,
+        "index": 824
+      },
+      {
+        "id": "251e30bb-b7aa-41d9-84fe-22b7d7985331",
+        "line": 154,
+        "version": 16460,
+        "index": 14042
       }
     ],
     "jautomod.js": [
       {
         "id": "5cfed59b-2280-42cb-a5e0-a81dc197807b",
-        "line": 15,
-        "version": 4632,
-        "index": 234
+        "line": 17,
+        "version": 8382,
+        "index": 283
       }
     ]
   }
