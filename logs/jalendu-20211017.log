@@ -1,0 +1,2015 @@
+
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+RESTART 20211017-001643
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+
+Ready!
+[ 'bumpbots', 'bumpers', 'qotd_activity', 'qotds', 'qotd_scores' ]
+Setting application command permissions on 888779192592896130 avatar
+Setting application command permissions on 888779192592896131 joke
+Setting application command permissions on 888779192592896132 define
+Setting application command permissions on 888779192592896133 moderate
+Setting application command permissions on 889643708650254346 readme
+qotd countdown days 5.197803553240741
+DISBOARD in sync (0 difference)
+
+__Newcomers reminder and exclusion.__
+
+AbyssSolid --> reminded : 6.3 days.
+Hanno --> reminded : 5.1 days.
+mmmmm --> reminded : 4.5 days.
+Ryft YT --> reminded : 4.9 days.
+robert. --> reminded : 5.8 days.
+TwinkieBoy --> waiting : 1.1 days.
+Hendrick --> reminded : 2.5 days.
+
+* Indicates that the member wrote a message in #landing-zone.
++ Indicates that the member is muted.
+# Indicates that the member was previously a verified member.
+cleanup: no messages found
+GUILD_TEXT : test_landing-zone
+marq_andrew: /qo help
+GUILD_TEXT : test_landing-zone
+Jalendu: __These are the instructions for adding questions for regular discussion on G+MM__
+
+* It is best to add your question in a direct message with @Jalendu. Direct message Jalendu as you would any real user.
+
+* Every request or instruction to the questions system starts with "/qo". This tells Jalendu (a program) that you are referring to the questions system.
+
+* Questions are asked in the channel anonymously and in random order but your user name is recorded with each question so that only you (or a mod) can edit the questions that you have added.
+
+* Questions can be as long or short as you like but try to make it something that invites discussion. You can add photos to your question. Questions can be controversial and push boundaries but keep in mind that they will be displayed in a sfw channel to invite maximum participation.
+GUILD_TEXT : test_landing-zone
+Jalendu: ​
+__Adding a question__
+
+To add a question, enter ```/qo add [your question]``` as a message.
+
+You can attach a photo to your question if you want to. You can do this later with the attach command (see below) or at the same time as you add the question by clicking on the + to the left of the message field, selecting "Upload a file", choose your photo (or etc.) and press Open, enter ```/qo add [your question]``` in the ADD A COMMENT field and then press Upload.
+
+Jalendu will reply with # plus the id of your question and the question itself. You will need the id number if you want to change the question you added.
+
+__Listing your questions__
+
+To list the questions that you have previously added, enter ```/qo list [id]``` [id] refers to the question id number you saw after the question was added. If you leave it out, all of your questions will be listed but not any images attached to them. You only get the image if you list them one at a time but you have to list all questions to see the question status (submitted/approved/rejected/deleted)
+
+__Finding a question__
+
+To find only the questions that you have previously added that contain certain words, enter ```/qo find [words]```
+GUILD_TEXT : test_landing-zone
+Jalendu: ​
+__Editing a question__
+
+To edit the text of a previously entered question, enter ```/qo edit [id] [your revised question]```This will only change the question. If you attached a photo to your question, it will be unchanged.
+
+__Attaching a photo to a question__
+
+To attach photo (or file) to a previously entered question, press the + on the left of the  message field, select "Upload a file", choose your photo (or etc.) then press Open, enter ```/qo attach [id]``` in the ADD A COMMENT field and then press Upload. This will only change the photo attached to the question, not the text of the question.
+
+__Detaching a photo from a question__
+
+To remove the photo from a question while leaving the question itself intact, enter ```/qo detach [id]```
+
+__Deleting a question__
+
+To delete your question, enter ```/qo delete [id]```
+
+__Undeleting a question__
+
+It is possible to undelete a question if not too much time has passed since you deleted it. To get a list of deleted questions that are still recoverable, enter ```/qo deleted```To undelete your question, enter ```/qo undelete [id]```
+
+__Bumping a question__
+
+Questions are inserted into the list in random order. To lower the order of a question so that it will come up sooner, enter ```/qo bump [id]```
+
+__System status__
+
+To get information about the questions system including the number of questions left and the time of the next question, enter ```/qo status```
+GUILD_TEXT : test_landing-zone
+Jalendu: ​
+
+
+**__Moderator Only Commands__**
+
+All of the commands available to general users (above) work for moderators but moderators can see and edit all questions, not just their own. Editing a user's question doesn't change their ownership of it so they can still edit it. Similarly deleting a user's question doesn't stop them undeleting it until a hard delete is done.
+
+__Reviewing Questions__
+
+When a question is added or edited, it goes into "submitted" status and is not yet available to be asked. They need to be approved before they can be asked. To read all of the questions needing approval enter ```/qo review```
+
+__Approval__
+
+Enter ```/qo approve [id|all]``` to approve the question with id, or 'all' to approve all submitted questions.
+GUILD_TEXT : test_landing-zone
+Jalendu: ​
+GUILD_TEXT : test_landing-zone
+Jalendu: ​
+(This it the bottom of the instructions. Scroll up to read from the top.)
+GUILD_TEXT : test_landing-zone
+marq_andrew: /qo help
+GUILD_TEXT : test_landing-zone
+Jalendu: __These are the instructions for adding questions for regular discussion on G+MM__
+
+* It is best to add your question in a direct message with @Jalendu. Direct message Jalendu as you would any real user.
+
+* Every request or instruction to the questions system starts with "/qo". This tells Jalendu (a program) that you are referring to the questions system.
+
+* Questions are asked in the channel anonymously and in random order but your user name is recorded with each question so that only you (or a mod) can edit the questions that you have added.
+
+* Questions can be as long or short as you like but try to make it something that invites discussion. You can add photos to your question. Questions can be controversial and push boundaries but keep in mind that they will be displayed in a sfw channel to invite maximum participation.
+GUILD_TEXT : test_landing-zone
+Jalendu: ​
+__Adding a question__
+
+To add a question, enter ```/qo add [your question]``` as a message.
+
+You can attach a photo to your question if you want to. You can do this later with the attach command (see below) or at the same time as you add the question by clicking on the + to the left of the message field, selecting "Upload a file", choose your photo (or etc.) and press Open, enter ```/qo add [your question]``` in the ADD A COMMENT field and then press Upload.
+
+Jalendu will reply with # plus the id of your question and the question itself. You will need the id number if you want to change the question you added.
+
+__Listing your questions__
+
+To list the questions that you have previously added, enter ```/qo list [id]``` [id] refers to the question id number you saw after the question was added. If you leave it out, all of your questions will be listed as well as the question status the question status (submitted/approved/rejected/deleted) but not any images attached to them.
+You only get the image if you list them one at a time which shows the question in the format in which it will be asked. 
+
+__Finding a question__
+
+To find only the questions that you have previously added that contain certain words, enter ```/qo find [words]```
+GUILD_TEXT : test_landing-zone
+Jalendu: ​
+__Editing a question__
+
+To edit the text of a previously entered question, enter ```/qo edit [id] [your revised question]```This will only change the question. If you attached a photo to your question, it will be unchanged.
+
+__Attaching a photo to a question__
+
+To attach photo (or file) to a previously entered question, press the + on the left of the  message field, select "Upload a file", choose your photo (or etc.) then press Open, enter ```/qo attach [id]``` in the ADD A COMMENT field and then press Upload. This will only change the photo attached to the question, not the text of the question.
+
+__Detaching a photo from a question__
+
+To remove the photo from a question while leaving the question itself intact, enter ```/qo detach [id]```
+
+__Deleting a question__
+
+To delete your question, enter ```/qo delete [id]```
+
+__Undeleting a question__
+
+It is possible to undelete a question if not too much time has passed since you deleted it. To get a list of deleted questions that are still recoverable, enter ```/qo deleted```To undelete your question, enter ```/qo undelete [id]```
+
+__Bumping a question__
+
+Questions are inserted into the list in random order. To lower the order of a question so that it will come up sooner, enter ```/qo bump [id]```
+
+__System status__
+
+To get information about the questions system including the number of questions left and the time of the next question, enter ```/qo status```
+GUILD_TEXT : test_landing-zone
+Jalendu: ​
+
+
+**__Moderator Only Commands__**
+
+All of the commands available to general users (above) work for moderators but moderators can see and edit all questions, not just their own. Editing a user's question doesn't change their ownership of it so they can still edit it. Similarly deleting a user's question doesn't stop them undeleting it until a hard delete is done.
+
+__Reviewing Questions__
+
+When a question is added or edited, it goes into "submitted" status and is not yet available to be asked. They need to be approved before they can be asked. To read all of the questions needing approval enter ```/qo review```
+
+__Approval and rejection__
+
+Enter ```/qo approve [id|all]``` to approve the question with id, or 'all' to approve all submitted questions.
+To reject a question, enter ```/qo reject [id]``` There is no 'all' option for reject.
+GUILD_TEXT : test_landing-zone
+Jalendu: ​
+GUILD_TEXT : test_landing-zone
+Jalendu: ​
+(This it the bottom of the instructions. Scroll up to read from the top.)
+Please bump DISBOARD (!d bump). I've been waiting for the bump for 50 minutes :pleading_face:
+Please bump DISBOARD (!d bump). I've been waiting for the bump for 60 minutes :pleading_face:
+Please bump DISBOARD (!d bump). I've been waiting for the bump for 70 minutes :pleading_face:
+qotd countdown days 5.176970219907408
+Please bump DISBOARD (!d bump). I've been waiting for the bump for 80 minutes :pleading_face:
+Please bump DISBOARD (!d bump). I've been waiting for the bump for 90 minutes :pleading_face:
+Please bump DISBOARD (!d bump). I've been waiting for the bump for 100 minutes :pleading_face:
+qotd countdown days 5.156136886574074
+Please bump DISBOARD (!d bump). I've been waiting for the bump for 110 minutes :pleading_face:
+Please bump DISBOARD (!d bump). I've been waiting for the bump for 120 minutes :pleading_face:
+GUILD_TEXT : bot-commands
+marq_andrew: !d bump
+disboard bump by marq_andrew
+GUILD_TEXT : bot-commands
+DISBOARD: 
+MessageEmbed {
+  type: 'rich',
+  title: 'DISBOARD: The Public Server List',
+  description: '<@679465390841135126> Bump done! :thumbsup:\n' +
+    'Check it out [on DISBOARD](https://disboard.org/server/827888294100074516).',
+  url: 'https://disboard.org/',
+  color: 2406327,
+  timestamp: null,
+  fields: [],
+  thumbnail: null,
+  image: {
+    url: 'https://disboard.org/images/bot-command-image-bump.png',
+    proxyURL: 'https://images-ext-1.discordapp.net/external/tAuRcs-FCy2M8OaTS9Ims62J1vrFiviahjBDtpZrrBs/https/disboard.org/images/bot-command-image-bump.png',
+    height: 200,
+    width: 800
+  },
+  video: null,
+  author: null,
+  provider: null,
+  footer: null
+}
+Bump done! :thumbsup: success
+successfully bumped
+GUILD_TEXT : bot-commands
+Jalendu: Thanks marq_andrew :heart:
+:green_heart::green_heart::green_heart::blue_heart::purple_heart:
+GUILD_TEXT : system-messages
+Turtles R yummy: 
+role <@&851071523543973928> added to <@669669298410618880>
+GUILD_TEXT : system-messages
+Jalendu: 
+MessageEmbed {
+  type: 'rich',
+  title: 'Turtles R yummy',
+  description: null,
+  url: null,
+  color: 65535,
+  timestamp: null,
+  fields: [],
+  thumbnail: null,
+  image: {
+    url: 'https://cdn.discordapp.com/avatars/669669298410618880/34af8a27459aab52f89e40d901e3c1de.png?size=2048',
+    proxyURL: 'https://images-ext-1.discordapp.net/external/3L4PD1PQ5Fj4oOfgFVIjp6RpQFaLFwmHUiZ5wEIHbVU/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/669669298410618880/34af8a27459aab52f89e40d901e3c1de.png',
+    height: 0,
+    width: 0
+  },
+  video: null,
+  author: null,
+  provider: null,
+  footer: null
+}
+GUILD_TEXT : system-messages
+Carl-bot Logging: 
+MessageEmbed {
+  type: 'rich',
+  title: 'Member joined',
+  description: '<@669669298410618880> 152nd to join\n' +
+    'created 1 year, 8 months and 24 days ago',
+  url: null,
+  color: 5496236,
+  timestamp: 1634434704886,
+  fields: [],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: {
+    name: 'Turtles R yummy#1797',
+    url: undefined,
+    iconURL: 'https://cdn.discordapp.com/avatars/669669298410618880/34af8a27459aab52f89e40d901e3c1de.webp?size=1024',
+    proxyIconURL: 'https://images-ext-2.discordapp.net/external/OR67gzVNvdkF1YpOl3v2YWH2n7ySD3lg5jxuauiX0ug/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/669669298410618880/34af8a27459aab52f89e40d901e3c1de.webp'
+  },
+  provider: null,
+  footer: {
+    text: 'ID: 669669298410618880',
+    iconURL: undefined,
+    proxyIconURL: undefined
+  }
+}
+member undefined!
+cleanup: no messages found
+GUILD_TEXT : system-messages
+Carl-bot Logging: 
+MessageEmbed {
+  type: 'rich',
+  title: 'Member left',
+  description: '<@669669298410618880> joined 21 seconds ago\n' +
+    '**Roles:** <@&851071523543973928>',
+  url: null,
+  color: 16774575,
+  timestamp: 1634434725214,
+  fields: [],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: {
+    name: 'Turtles R yummy#1797',
+    url: undefined,
+    iconURL: 'https://cdn.discordapp.com/avatars/669669298410618880/34af8a27459aab52f89e40d901e3c1de.webp?size=1024',
+    proxyIconURL: 'https://images-ext-2.discordapp.net/external/OR67gzVNvdkF1YpOl3v2YWH2n7ySD3lg5jxuauiX0ug/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/669669298410618880/34af8a27459aab52f89e40d901e3c1de.webp'
+  },
+  provider: null,
+  footer: {
+    text: 'ID: 669669298410618880',
+    iconURL: undefined,
+    proxyIconURL: undefined
+  }
+}
+member undefined!
+Please wait another 131 minutes to bump DISBOARD :drool:
+qotd countdown days 5.135303553240741
+GUILD_TEXT : system-messages
+juandiego: 
+role <@&851071523543973928> added to <@612141668132585493>
+GUILD_TEXT : system-messages
+Jalendu: 
+MessageEmbed {
+  type: 'rich',
+  title: 'juandiego',
+  description: null,
+  url: null,
+  color: 65535,
+  timestamp: null,
+  fields: [],
+  thumbnail: null,
+  image: {
+    url: 'https://cdn.discordapp.com/avatars/612141668132585493/9c00ad953cf27ab21ebf17ff28711c25.png?size=2048',
+    proxyURL: 'https://images-ext-1.discordapp.net/external/hI5uXxEVHlgOxJEJCkpCmjMo7Jm2lwdagzr1W7cgskw/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/612141668132585493/9c00ad953cf27ab21ebf17ff28711c25.png',
+    height: 256,
+    width: 256
+  },
+  video: null,
+  author: null,
+  provider: null,
+  footer: null
+}
+GUILD_TEXT : system-messages
+Carl-bot Logging: 
+MessageEmbed {
+  type: 'rich',
+  title: 'Member joined',
+  description: '<@612141668132585493> 152nd to join\n' +
+    'created 2 years, 1 month and 29 days ago',
+  url: null,
+  color: 5496236,
+  timestamp: 1634435604797,
+  fields: [],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: {
+    name: 'juandiego#0544',
+    url: undefined,
+    iconURL: 'https://cdn.discordapp.com/avatars/612141668132585493/9c00ad953cf27ab21ebf17ff28711c25.webp?size=1024',
+    proxyIconURL: 'https://images-ext-1.discordapp.net/external/_qXNU6qk3kM3p_HarPg7ODDepjN3UUof9OCcL7C3AG4/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/612141668132585493/9c00ad953cf27ab21ebf17ff28711c25.webp'
+  },
+  provider: null,
+  footer: {
+    text: 'ID: 612141668132585493',
+    iconURL: undefined,
+    proxyIconURL: undefined
+  }
+}
+member undefined!
+role <@&836590097318019092> added to <@612141668132585493>
+GUILD_TEXT : member-introductions
+Jalendu: 
+MessageEmbed {
+  type: 'rich',
+  title: null,
+  description: null,
+  url: null,
+  color: 65535,
+  timestamp: null,
+  fields: [
+    {
+      value: 'Please welcome <@612141668132585493>.',
+      name: '​',
+      inline: true
+    }
+  ],
+  thumbnail: {
+    url: 'https://cdn.discordapp.com/avatars/612141668132585493/9c00ad953cf27ab21ebf17ff28711c25.png',
+    proxyURL: 'https://images-ext-2.discordapp.net/external/anu-tUXv1lzCQHue1zeDfz4OCjwRbu98yW4EFqrIwPk/https/cdn.discordapp.com/avatars/612141668132585493/9c00ad953cf27ab21ebf17ff28711c25.png',
+    height: 0,
+    width: 0
+  },
+  image: null,
+  video: null,
+  author: null,
+  provider: null,
+  footer: null
+}
+GUILD_TEXT : system-messages
+Jalendu: Member <@612141668132585493> has been verified by <@679465390841135126>.
+GUILD_TEXT : system-messages
+Jalendu: Member <@612141668132585493> has been verified. :partying_face:
+role <@&851071523543973928> removed from <@612141668132585493>
+cleanup: no messages found
+DM : undefined
+Jalendu: __Welcome to Gay+ Men Meditating.__
+
+You have been verified but please go to #roles to set your age band.
+NSFW channels are not visible to you unless you choose the 18+ age role.
+Roles are set by clicking on the appropriate emoji with the number beside it under each question.
+
+Please also look at the following channels:
+
+1. Welcome: for an overview.
+2. Channels-directory: for a guide to the channels.
+3. Etiquette: to review the rules.
+4. Member Introductions: to introduce yourself to the community (optional).
+5. Sitting times: to read what times other members sit online so that you can join them.
+6.Apollo-events also lists scheduled events.
+
+To protect your privacy, the message your wrote to request admission will have been deleted. You can introduce yourself to the group in member-introductions if you wish.
+GUILD_TEXT : system-messages
+Carl-bot Logging: 
+MessageEmbed {
+  type: 'rich',
+  title: 'Role added',
+  description: '<@&836590097318019092>',
+  url: null,
+  color: 4359924,
+  timestamp: 1634435631954,
+  fields: [],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: {
+    name: 'juandiego#0544',
+    url: undefined,
+    iconURL: 'https://cdn.discordapp.com/avatars/612141668132585493/9c00ad953cf27ab21ebf17ff28711c25.webp?size=1024',
+    proxyIconURL: 'https://images-ext-1.discordapp.net/external/_qXNU6qk3kM3p_HarPg7ODDepjN3UUof9OCcL7C3AG4/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/612141668132585493/9c00ad953cf27ab21ebf17ff28711c25.webp'
+  },
+  provider: null,
+  footer: {
+    text: 'ID: 612141668132585493',
+    iconURL: undefined,
+    proxyIconURL: undefined
+  }
+}
+member undefined!
+Please wait another 121 minutes to bump DISBOARD :drool:
+GUILD_TEXT : support-and-healing
+Egidio: Ron, this is so timely. For 65 years of my life, I'd been a voracious meat eater. On July 22 this year, I was diagnosed with fatty liver. In brief that is a condition that if left untreated can lead to cirrhosis and cause death. I don't drink. So, in my case, that would be called non-alcoholic fatty liver disease (NAFLD). Back to my story, on July 22, my doctor said I'd have to switch to a 90% plant-based diet. The list of what I can and cannot eat was 3 pages long. I figured the easiest way would be to become a vegan since dairy and eggs were in the no-list of foods. Even though I was allowed to have eggs 1-2 times a week and chicken 1-2 a week and no more than 4 oz each time, I found that going vegan would be the easiest -- and most radical! Well, two and half months later, my liver is pretty much back to normal. However, the most remarkable things were the beneficial side effects of the food switch. First off, I lost 12 pounds by simply eating a healthier diet. I also lowered my blood pressure and had to eliminate one of my high blood pressure medications. I was never a fat person, but losing the weight was a blessing and something I wanted. I have plenty of energy and feel very satisfied with the food I eat. Furthermore, there are tons of plant-based "meats" out there nowadays, from bacon to Italian sausage and ground beef. So, if I have cravings for those, I can easily find them in our grocery stores. Austin is such an easy city to live and eat well. Even vegan barbecue sandwiches are available in food trucks and restaurants.
+Please wait another 111 minutes to bump DISBOARD :drool:
+qotd countdown days 5.1144702083333335
+Please wait another 101 minutes to bump DISBOARD :drool:
+
+__Newcomers reminder and exclusion.__
+
+AbyssSolid --> reminded : 6.4 days.
+Hanno --> reminded : 5.2 days.
+mmmmm --> reminded : 4.6 days.
+Ryft YT --> reminded : 5.0 days.
+robert. --> reminded : 5.9 days.
+TwinkieBoy --> waiting : 1.2 days.
+Hendrick --> reminded : 2.6 days.
+
+* Indicates that the member wrote a message in #landing-zone.
++ Indicates that the member is muted.
+# Indicates that the member was previously a verified member.
+cleanup: no messages found
+role <@&888303776451149844> added to <@612141668132585493>
+GUILD_TEXT : system-messages
+Carl-bot Logging: 
+MessageEmbed {
+  type: 'rich',
+  title: 'Role added',
+  description: '<@&888303776451149844>',
+  url: null,
+  color: 4359924,
+  timestamp: 1634437005150,
+  fields: [],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: {
+    name: 'juandiego#0544',
+    url: undefined,
+    iconURL: 'https://cdn.discordapp.com/avatars/612141668132585493/9c00ad953cf27ab21ebf17ff28711c25.webp?size=1024',
+    proxyIconURL: 'https://images-ext-1.discordapp.net/external/_qXNU6qk3kM3p_HarPg7ODDepjN3UUof9OCcL7C3AG4/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/612141668132585493/9c00ad953cf27ab21ebf17ff28711c25.webp'
+  },
+  provider: null,
+  footer: {
+    text: 'ID: 612141668132585493',
+    iconURL: undefined,
+    proxyIconURL: undefined
+  }
+}
+member undefined!
+GUILD_TEXT : test_landing-zone
+marq_andrew: /qo help
+GUILD_TEXT : test_landing-zone
+Jalendu: __These are the instructions for adding questions for regular discussion on G+MM__
+
+* It is best to add your question in a direct message with @Jalendu. Direct message Jalendu as you would any real user.
+
+* Every request or instruction to the questions system starts with "/qo". This tells Jalendu (a program) that you are referring to the questions system.
+
+* Questions are asked in the channel anonymously and in random order but your user name is recorded with each question so that only you (or a mod) can edit the questions that you have added.
+
+* Questions can be as long or short as you like but try to make it something that invites discussion. You can add photos to your question. Questions can be controversial and push boundaries but keep in mind that they will be displayed in a sfw channel to invite maximum participation.
+GUILD_TEXT : test_landing-zone
+Jalendu: ​
+__Adding a question__
+
+To add a question, enter ```/qo add [your question]``` as a message.
+
+You can attach a photo to your question if you want to. You can do this later with the attach command (see below) or at the same time as you add the question by clicking on the + to the left of the message field, selecting "Upload a file", choose your photo (or etc.) and press Open, enter ```/qo add [your question]``` in the ADD A COMMENT field and then press Upload.
+
+Jalendu will reply with # plus the id of your question and the question itself. You will need the id number if you want to change the question you added.
+
+__Listing your questions__
+
+To list the questions that you have previously added, enter ```/qo list [id]``` [id] refers to the question id number you saw after the question was added. If you leave it out, all of your questions will be listed as well as the question status the question status (submitted/approved/rejected/deleted) but not any images attached to them.
+You only get the image if you list them one at a time which shows the question in the format in which it will be asked. 
+
+__Finding a question__
+
+To find only the questions that you have previously added that contain certain words, enter ```/qo find [words]```
+GUILD_TEXT : test_landing-zone
+Jalendu: ​
+__Editing a question__
+
+To edit the text of a previously entered question, enter ```/qo edit [id] [your revised question]```This will only change the question. If you attached a photo to your question, it will be unchanged.
+
+__Attaching a photo to a question__
+
+To attach photo (or file) to a previously entered question, press the + on the left of the  message field, select "Upload a file", choose your photo (or etc.) then press Open, enter ```/qo attach [id]``` in the ADD A COMMENT field and then press Upload. This will only change the photo attached to the question, not the text of the question.
+
+__Detaching a photo from a question__
+
+To remove the photo from a question while leaving the question itself intact, enter ```/qo detach [id]```
+
+__Deleting a question__
+
+To delete your question, enter ```/qo delete [id]```
+
+__Undeleting a question__
+
+It is possible to undelete a question if not too much time has passed since you deleted it. To get a list of deleted questions that are still recoverable, enter ```/qo deleted```To undelete your question, enter ```/qo undelete [id]```
+
+__Bumping a question__
+
+Questions are inserted into the list in random order. To lower the order of a question so that it will come up sooner, enter ```/qo bump [id]```
+
+__System status__
+
+To get information about the questions system including the number of questions left and the time of the next question, enter ```/qo status```
+
+__Help__
+
+To get help about the questions system commands (that you are reading right now), enter ```/qo help```
+GUILD_TEXT : test_landing-zone
+Jalendu: ​
+
+
+**__Moderator Only Commands__**
+
+All of the commands available to general users (above) work for moderators but moderators can see and edit all questions, not just their own. Editing a user's question doesn't change their ownership of it so they can still edit it. Similarly deleting a user's question doesn't stop them undeleting it until a hard delete is done.
+
+__Reviewing Questions__
+
+When a question is added or edited, it goes into "submitted" status and is not yet available to be asked. They need to be approved before they can be asked. To read all of the questions needing approval enter ```/qo review```
+
+__Approval and rejection__
+
+Enter ```/qo approve [id|all]``` to approve the question with id, or 'all' to approve all submitted questions.
+To reject a question, enter ```/qo reject [id]``` There is no 'all' option for reject.
+
+__Starting and stopping the questions system__
+
+Enter```/qo start [n]```To start the questions system in the current channel in [n] hours time. Leave out n to start immediately.
+GUILD_TEXT : test_landing-zone
+Jalendu: ​
+GUILD_TEXT : test_landing-zone
+Jalendu: ​
+(This it the bottom of the instructions. Scroll up to read from the top.)
+GUILD_TEXT : test_landing-zone
+marq_andrew: /qo help
+GUILD_TEXT : test_landing-zone
+Jalendu: __These are the instructions for adding questions for regular discussion on G+MM__
+
+* It is best to add your question in a direct message with @Jalendu. Direct message Jalendu as you would any real user.
+
+* Every request or instruction to the questions system starts with "/qo". This tells Jalendu (a program) that you are referring to the questions system.
+
+* Questions are asked in the channel anonymously and in random order but your user name is recorded with each question so that only you (or a mod) can edit the questions that you have added.
+
+* Questions can be as long or short as you like but try to make it something that invites discussion. You can add photos to your question. Questions can be controversial and push boundaries but keep in mind that they will be displayed in a sfw channel to invite maximum participation.
+GUILD_TEXT : test_landing-zone
+Jalendu: ​
+__Adding a question__
+
+To add a question, enter ```/qo add [your question]``` as a message.
+
+You can attach a photo to your question if you want to. You can do this later with the attach command (see below) or at the same time as you add the question by clicking on the + to the left of the message field, selecting "Upload a file", choose your photo (or etc.) and press Open, enter ```/qo add [your question]``` in the ADD A COMMENT field and then press Upload.
+
+Jalendu will reply with # plus the id of your question and the question itself. You will need the id number if you want to change the question you added.
+
+__Listing your questions__
+
+To list the questions that you have previously added, enter ```/qo list [id]``` [id] refers to the question id number you saw after the question was added. If you leave it out, all of your questions will be listed as well as the question status the question status (submitted/approved/rejected/deleted) but not any images attached to them.
+You only get the image if you list them one at a time which shows the question in the format in which it will be asked. 
+
+__Finding a question__
+
+To find only the questions that you have previously added that contain certain words, enter ```/qo find [words]```
+GUILD_TEXT : test_landing-zone
+Jalendu: ​
+__Editing a question__
+
+To edit the text of a previously entered question, enter ```/qo edit [id] [your revised question]```This will only change the question. If you attached a photo to your question, it will be unchanged.
+
+__Attaching a photo to a question__
+
+To attach photo (or file) to a previously entered question, press the + on the left of the  message field, select "Upload a file", choose your photo (or etc.) then press Open, enter ```/qo attach [id]``` in the ADD A COMMENT field and then press Upload. This will only change the photo attached to the question, not the text of the question.
+
+__Detaching a photo from a question__
+
+To remove the photo from a question while leaving the question itself intact, enter ```/qo detach [id]```
+__Deleting a question__
+
+To delete your question, enter ```/qo delete [id]```
+__Undeleting a question__
+
+It is possible to undelete a question if not too much time has passed since you deleted it. To get a list of deleted questions that are still recoverable, enter ```/qo deleted```To undelete your question, enter ```/qo undelete [id]```
+__Bumping a question__
+
+Questions are inserted into the list in random order. To lower the order of a question so that it will come up sooner, enter ```/qo bump [id]```
+__System status__
+
+To get information about the questions system including the number of questions left and the time of the next question, enter ```/qo status```
+__Help__
+
+To get help about the questions system commands (that you are reading right now), enter ```/qo help```
+GUILD_TEXT : test_landing-zone
+Jalendu: ​
+
+
+**__Moderator Only Commands__**
+
+All of the commands available to general users (above) work for moderators but moderators can see and edit all questions, not just their own. Editing a user's question doesn't change their ownership of it so they can still edit it. Similarly deleting a user's question doesn't stop them undeleting it until a hard delete is done.
+
+__Reviewing Questions__
+
+When a question is added or edited, it goes into "submitted" status and is not yet available to be asked. They need to be approved before they can be asked. To read all of the questions needing approval enter ```/qo review```
+
+__Approval and rejection__
+
+Enter ```/qo approve [id|all]``` to approve the question with id, or 'all' to approve all submitted questions.
+To reject a question, enter ```/qo reject [id]``` There is no 'all' option for reject.
+
+__Starting and stopping the questions system__
+
+Enter```/qo start [n]```To start the questions system in the current channel in [n] hours time. Leave out n to start immediately.
+GUILD_TEXT : test_landing-zone
+Jalendu: ​
+GUILD_TEXT : test_landing-zone
+Jalendu: ​
+(This it the bottom of the instructions. Scroll up to read from the top.)
+Please wait another 91 minutes to bump DISBOARD :drool:
+GUILD_TEXT : test_landing-zone
+marq_andrew: /qo help
+GUILD_TEXT : test_landing-zone
+Jalendu: __These are the instructions for adding questions for regular discussion on G+MM__
+
+* It is best to add your question in a direct message with @Jalendu. Direct message Jalendu as you would any real user.
+
+* Every request or instruction to the questions system starts with "/qo". This tells Jalendu (a program) that you are referring to the questions system.
+
+* Questions are asked in the channel anonymously and in random order but your user name is recorded with each question so that only you (or a mod) can edit the questions that you have added.
+
+* Questions can be as long or short as you like but try to make it something that invites discussion. You can add photos to your question. Questions can be controversial and push boundaries but keep in mind that they will be displayed in a sfw channel to invite maximum participation.
+GUILD_TEXT : test_landing-zone
+Jalendu: ​
+__Adding a question__
+
+To add a question, enter ```/qo add [your question]``` as a message.
+
+You can attach a photo to your question if you want to. You can do this later with the attach command (see below) or at the same time as you add the question by clicking on the + to the left of the message field, selecting "Upload a file", choose your photo (or etc.) and press Open, enter ```/qo add [your question]``` in the ADD A COMMENT field and then press Upload.
+
+Jalendu will reply with # plus the id of your question and the question itself. You will need the id number if you want to change the question you added.
+
+__Listing your questions__
+
+To list the questions that you have previously added, enter ```/qo list [id]``` [id] refers to the question id number you saw after the question was added. If you leave it out, all of your questions will be listed as well as the question status the question status (submitted/approved/rejected/deleted) but not any images attached to them.
+You only get the image if you list them one at a time which shows the question in the format in which it will be asked. 
+
+__Finding a question__
+
+To find only the questions that you have previously added that contain certain words, enter ```/qo find [words]```
+GUILD_TEXT : test_landing-zone
+Jalendu: ​
+__Editing a question__
+
+To edit the text of a previously entered question, enter ```/qo edit [id] [your revised question]```This will only change the question. If you attached a photo to your question, it will be unchanged.
+
+__Attaching a photo to a question__
+
+To attach photo (or file) to a previously entered question, press the + on the left of the  message field, select "Upload a file", choose your photo (or etc.) then press Open, enter ```/qo attach [id]``` in the ADD A COMMENT field and then press Upload. This will only change the photo attached to the question, not the text of the question.
+
+__Detaching a photo from a question__
+
+To remove the photo from a question while leaving the question itself intact, enter ```/qo detach [id]```
+__Deleting a question__
+
+To delete your question, enter ```/qo delete [id]```
+__Undeleting a question__
+
+It is possible to undelete a question if not too much time has passed since you deleted it. To get a list of deleted questions that are still recoverable, enter ```/qo deleted```To undelete your question, enter ```/qo undelete [id]```
+__Bumping a question__
+
+Questions are inserted into the list in random order. To lower the order of a question so that it will come up sooner, enter ```/qo bump [id]```
+__System status__
+
+To get information about the questions system including the number of questions left and the time of the next question, enter ```/qo status```
+__Help__
+
+To get help about the questions system commands (that you are reading right now), enter ```/qo help```
+GUILD_TEXT : test_landing-zone
+Jalendu: ​
+
+
+**__Moderator Only Commands__**
+
+All of the commands available to general users (above) work for moderators but moderators can see and edit all questions, not just their own. Editing a user's question doesn't change their ownership of it so they can still edit it. Similarly deleting a user's question doesn't stop them undeleting it until a hard delete is done.
+
+__Reviewing Questions__
+
+When a question is added or edited, it goes into "submitted" status and is not yet available to be asked. They need to be approved before they can be asked. To read all of the questions needing approval enter ```/qo review```
+__Approval and rejection__
+
+Enter ```/qo approve [id|all]``` to approve the question with id, or 'all' to approve all submitted questions.
+To reject a question, enter ```/qo reject [id]``` There is no 'all' option for reject.
+
+__Starting and stopping the questions system__
+
+Enter```/qo start [n]```To start the questions system in the current channel in [n] hours time. Leave out n to start immediately.
+To stop the system, enter```/qo stop```.
+__Questions Reset__
+
+Too make all questions available to be asked again, enter```/qo reset```.
+GUILD_TEXT : test_landing-zone
+Jalendu: ​
+(This it the bottom of the instructions. Scroll up to read from the top.)
+GUILD_TEXT : test_landing-zone
+marq_andrew: /qo help
+GUILD_TEXT : test_landing-zone
+Jalendu: __These are the instructions for adding questions for regular discussion on G+MM__
+
+* It is best to add your question in a direct message with @Jalendu. Direct message Jalendu as you would any real user.
+
+* Every request or instruction to the questions system starts with "/qo". This tells Jalendu (a program) that you are referring to the questions system.
+
+* Questions are asked in the channel anonymously and in random order but your user name is recorded with each question so that only you (or a mod) can edit the questions that you have added.
+
+* Questions can be as long or short as you like but try to make it something that invites discussion. You can add photos to your question. Questions can be controversial and push boundaries but keep in mind that they will be displayed in a sfw channel to invite maximum participation.
+GUILD_TEXT : test_landing-zone
+Jalendu: ​
+__Adding a question__
+
+To add a question, enter ```/qo add [your question]``` as a message.
+
+You can attach a photo to your question if you want to. You can do this later with the attach command (see below) or at the same time as you add the question by clicking on the + to the left of the message field, selecting "Upload a file", choose your photo (or etc.) and press Open, enter ```/qo add [your question]``` in the ADD A COMMENT field and then press Upload.
+
+Jalendu will reply with # plus the id of your question and the question itself. You will need the id number if you want to change the question you added.
+
+__Listing your questions__
+
+To list the questions that you have previously added, enter ```/qo list [id]``` [id] refers to the question id number you saw after the question was added. If you leave it out, all of your questions will be listed as well as the question status the question status (submitted/approved/rejected/deleted) but not any images attached to them.
+You only get the image if you list them one at a time which shows the question in the format in which it will be asked. 
+
+__Finding a question__
+
+To find only the questions that you have previously added that contain certain words, enter ```/qo find [words]```
+GUILD_TEXT : test_landing-zone
+Jalendu: ​
+__Editing a question__
+
+To edit the text of a previously entered question, enter ```/qo edit [id] [your revised question]```This will only change the question. If you attached a photo to your question, it will be unchanged.
+
+__Attaching a photo to a question__
+
+To attach photo (or file) to a previously entered question, press the + on the left of the  message field, select "Upload a file", choose your photo (or etc.) then press Open, enter ```/qo attach [id]``` in the ADD A COMMENT field and then press Upload. This will only change the photo attached to the question, not the text of the question.
+
+__Detaching a photo from a question__
+
+To remove the photo from a question while leaving the question itself intact, enter ```/qo detach [id]```
+__Deleting a question__
+
+To delete your question, enter ```/qo delete [id]```
+__Undeleting a question__
+
+It is possible to undelete a question if not too much time has passed since you deleted it. To get a list of deleted questions that are still recoverable, enter ```/qo deleted```To undelete your question, enter ```/qo undelete [id]```
+__Bumping a question__
+
+Questions are inserted into the list in random order. To lower the order of a question so that it will come up sooner, enter ```/qo bump [id]```
+__System status__
+
+To get information about the questions system including the number of questions left and the time of the next question, enter ```/qo status```
+__Help__
+
+To get help about the questions system commands (that you are reading right now), enter ```/qo help```
+GUILD_TEXT : test_landing-zone
+Jalendu: ​
+
+
+**__Moderator Only Commands__**
+
+All of the commands available to general users (above) work for moderators but moderators can see and edit all questions, not just their own. Editing a user's question doesn't change their ownership of it so they can still edit it. Similarly deleting a user's question doesn't stop them undeleting it until a hard delete is done.
+
+__Reviewing Questions__
+
+When a question is added or edited, it goes into "submitted" status and is not yet available to be asked. They need to be approved before they can be asked. To read all of the questions needing approval enter ```/qo review```
+__Approval and rejection__
+
+Enter ```/qo approve [id|all]``` to approve the question with id, or 'all' to approve all submitted questions.
+To reject a question, enter ```/qo reject [id]``` There is no 'all' option for reject.
+
+__Starting and stopping the questions system__
+
+Enter```/qo start [n]```To start the questions system in the current channel in [n] hours time. Leave out n to start immediately.
+To stop the system, enter```/qo stop```
+__Questions Reset__
+
+Too make all questions available to be asked again, enter```/qo reset```
+GUILD_TEXT : test_landing-zone
+Jalendu: ​
+GUILD_TEXT : test_landing-zone
+Jalendu: ​
+(This it the bottom of the instructions. Scroll up to read from the top.)
+Please wait another 81 minutes to bump DISBOARD :drool:
+GUILD_TEXT : system-messages
+RUWithMeNow: 
+role <@&851071523543973928> added to <@721428311829512262>
+GUILD_TEXT : system-messages
+Jalendu: 
+MessageEmbed {
+  type: 'rich',
+  title: 'RUWithMeNow',
+  description: null,
+  url: null,
+  color: 65535,
+  timestamp: null,
+  fields: [],
+  thumbnail: null,
+  image: {
+    url: 'https://cdn.discordapp.com/embed/avatars/1.png',
+    proxyURL: 'https://images-ext-2.discordapp.net/external/GyQicPLz_zQO15bOMtiGTtC4Kud7JjQbs1Ecuz7RrtU/https/cdn.discordapp.com/embed/avatars/1.png',
+    height: 256,
+    width: 256
+  },
+  video: null,
+  author: null,
+  provider: null,
+  footer: null
+}
+GUILD_TEXT : system-messages
+Carl-bot Logging: 
+MessageEmbed {
+  type: 'rich',
+  title: 'Member joined',
+  description: '<@721428311829512262> 153rd to join\n' +
+    'created 1 year, 4 months and 3 days ago',
+  url: null,
+  color: 5496236,
+  timestamp: 1634438350580,
+  fields: [],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: {
+    name: 'RUWithMeNow#1626',
+    url: undefined,
+    iconURL: 'https://cdn.discordapp.com/embed/avatars/1.png',
+    proxyIconURL: 'https://images-ext-2.discordapp.net/external/GyQicPLz_zQO15bOMtiGTtC4Kud7JjQbs1Ecuz7RrtU/https/cdn.discordapp.com/embed/avatars/1.png'
+  },
+  provider: null,
+  footer: {
+    text: 'ID: 721428311829512262',
+    iconURL: undefined,
+    proxyIconURL: undefined
+  }
+}
+member undefined!
+role <@&836590097318019092> added to <@721428311829512262>
+cleanup: no messages found
+GUILD_TEXT : member-introductions
+Jalendu: 
+MessageEmbed {
+  type: 'rich',
+  title: null,
+  description: null,
+  url: null,
+  color: 65535,
+  timestamp: null,
+  fields: [
+    {
+      value: 'Please welcome <@721428311829512262>.',
+      name: '​',
+      inline: true
+    }
+  ],
+  thumbnail: {
+    url: 'https://cdn.discordapp.com/embed/avatars/1.png',
+    proxyURL: 'https://images-ext-2.discordapp.net/external/GyQicPLz_zQO15bOMtiGTtC4Kud7JjQbs1Ecuz7RrtU/https/cdn.discordapp.com/embed/avatars/1.png',
+    height: 256,
+    width: 256
+  },
+  image: null,
+  video: null,
+  author: null,
+  provider: null,
+  footer: null
+}
+GUILD_TEXT : system-messages
+Jalendu: Member <@721428311829512262> has been verified. :partying_face:
+GUILD_TEXT : system-messages
+Jalendu: Member <@721428311829512262> has been verified by <@679465390841135126>.
+role <@&851071523543973928> removed from <@721428311829512262>
+DiscordAPIError: Cannot send messages to this user
+    at RequestHandler.execute (/home/runner/jalendu/node_modules/discord.js/src/rest/RequestHandler.js:298:13)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async RequestHandler.push (/home/runner/jalendu/node_modules/discord.js/src/rest/RequestHandler.js:50:14)
+    at async DMChannel.send (/home/runner/jalendu/node_modules/discord.js/src/structures/interfaces/TextBasedChannel.js:171:15) {
+  method: 'post',
+  path: '/channels/899124459649265715/messages',
+  code: 50007,
+  httpStatus: 403,
+  requestData: {
+    json: {
+      content: '__Welcome to Gay+ Men Meditating.__\n' +
+        '\n' +
+        'You have been verified but please go to #roles to set your age band.\n' +
+        'NSFW channels are not visible to you unless you choose the 18+ age role.\n' +
+        'Roles are set by clicking on the appropriate emoji with the number beside it under each question.\n' +
+        '\n' +
+        'Please also look at the following channels:\n' +
+        '\n' +
+        '1. Welcome: for an overview.\n' +
+        '2. Channels-directory: for a guide to the channels.\n' +
+        '3. Etiquette: to review the rules.\n' +
+        '4. Member Introductions: to introduce yourself to the community (optional).\n' +
+        '5. Sitting times: to read what times other members sit online so that you can join them.\n' +
+        '6.Apollo-events also lists scheduled events.\n' +
+        '\n' +
+        'To protect your privacy, the message your wrote to request admission will have been deleted. You can introduce yourself to the group in member-introductions if you wish.',
+      tts: false,
+      nonce: undefined,
+      embeds: undefined,
+      components: undefined,
+      username: undefined,
+      avatar_url: undefined,
+      allowed_mentions: undefined,
+      flags: undefined,
+      message_reference: undefined,
+      attachments: undefined,
+      sticker_ids: undefined
+    },
+    files: []
+  }
+}
+GUILD_TEXT : system-messages
+Carl-bot Logging: 
+MessageEmbed {
+  type: 'rich',
+  title: 'Role added',
+  description: '<@&836590097318019092>',
+  url: null,
+  color: 4359924,
+  timestamp: 1634438376263,
+  fields: [],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: {
+    name: 'RUWithMeNow#1626',
+    url: undefined,
+    iconURL: 'https://cdn.discordapp.com/embed/avatars/1.png',
+    proxyIconURL: 'https://images-ext-2.discordapp.net/external/GyQicPLz_zQO15bOMtiGTtC4Kud7JjQbs1Ecuz7RrtU/https/cdn.discordapp.com/embed/avatars/1.png'
+  },
+  provider: null,
+  footer: {
+    text: 'ID: 721428311829512262',
+    iconURL: undefined,
+    proxyIconURL: undefined
+  }
+}
+member undefined!
+GUILD_TEXT : nsfw-off-topic
+marq_andrew: I suppose that is a little lewd.
+qotd countdown days 5.093636828703704
+Please wait another 71 minutes to bump DISBOARD :drool:
+Please wait another 61 minutes to bump DISBOARD :drool:
+role <@&881813802268655686> added to <@721428311829512262>
+GUILD_TEXT : system-messages
+Carl-bot Logging: 
+MessageEmbed {
+  type: 'rich',
+  title: 'Role added',
+  description: '<@&881813802268655686>',
+  url: null,
+  color: 4359924,
+  timestamp: 1634439472507,
+  fields: [],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: {
+    name: 'RUWithMeNow#1626',
+    url: undefined,
+    iconURL: 'https://cdn.discordapp.com/embed/avatars/1.png',
+    proxyIconURL: 'https://images-ext-2.discordapp.net/external/GyQicPLz_zQO15bOMtiGTtC4Kud7JjQbs1Ecuz7RrtU/https/cdn.discordapp.com/embed/avatars/1.png'
+  },
+  provider: null,
+  footer: {
+    text: 'ID: 721428311829512262',
+    iconURL: undefined,
+    proxyIconURL: undefined
+  }
+}
+member undefined!
+role <@&881682467545833543> added to <@721428311829512262>
+GUILD_TEXT : system-messages
+Carl-bot Logging: 
+MessageEmbed {
+  type: 'rich',
+  title: 'Role added',
+  description: '<@&881682467545833543>',
+  url: null,
+  color: 4359924,
+  timestamp: 1634439478912,
+  fields: [],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: {
+    name: 'RUWithMeNow#1626',
+    url: undefined,
+    iconURL: 'https://cdn.discordapp.com/embed/avatars/1.png',
+    proxyIconURL: 'https://images-ext-2.discordapp.net/external/GyQicPLz_zQO15bOMtiGTtC4Kud7JjQbs1Ecuz7RrtU/https/cdn.discordapp.com/embed/avatars/1.png'
+  },
+  provider: null,
+  footer: {
+    text: 'ID: 721428311829512262',
+    iconURL: undefined,
+    proxyIconURL: undefined
+  }
+}
+member undefined!
+role <@&834323445008564234> added to <@721428311829512262>
+GUILD_TEXT : system-messages
+Carl-bot Logging: 
+MessageEmbed {
+  type: 'rich',
+  title: 'Role added',
+  description: '<@&834323445008564234>',
+  url: null,
+  color: 4359924,
+  timestamp: 1634439488721,
+  fields: [],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: {
+    name: 'RUWithMeNow#1626',
+    url: undefined,
+    iconURL: 'https://cdn.discordapp.com/embed/avatars/1.png',
+    proxyIconURL: 'https://images-ext-2.discordapp.net/external/GyQicPLz_zQO15bOMtiGTtC4Kud7JjQbs1Ecuz7RrtU/https/cdn.discordapp.com/embed/avatars/1.png'
+  },
+  provider: null,
+  footer: {
+    text: 'ID: 721428311829512262',
+    iconURL: undefined,
+    proxyIconURL: undefined
+  }
+}
+member undefined!
+role <@&828732299390353448> added to <@721428311829512262>
+GUILD_TEXT : system-messages
+Carl-bot Logging: 
+MessageEmbed {
+  type: 'rich',
+  title: 'Role added',
+  description: '<@&828732299390353448>',
+  url: null,
+  color: 4359924,
+  timestamp: 1634439494065,
+  fields: [],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: {
+    name: 'RUWithMeNow#1626',
+    url: undefined,
+    iconURL: 'https://cdn.discordapp.com/embed/avatars/1.png',
+    proxyIconURL: 'https://images-ext-2.discordapp.net/external/GyQicPLz_zQO15bOMtiGTtC4Kud7JjQbs1Ecuz7RrtU/https/cdn.discordapp.com/embed/avatars/1.png'
+  },
+  provider: null,
+  footer: {
+    text: 'ID: 721428311829512262',
+    iconURL: undefined,
+    proxyIconURL: undefined
+  }
+}
+member undefined!
+GUILD_TEXT : support-and-healing
+RGfinpsy: Yess ❤️❤️❤️ im glad to hear this sir.
+GUILD_TEXT : nsfw-off-topic
+RGfinpsy: 😂😂😂😂😂👌👌👌👌
+Please wait another 51 minutes to bump DISBOARD :drool:
+qotd countdown days 5.07280349537037
+Please wait another 41 minutes to bump DISBOARD :drool:
+GUILD_TEXT : video-channel-logging
+Jalendu: ```Voice session in nsfw-nude-meditation-room has ended.
+Member        Joined    Duration  Camera  %
+br47130#4638  03:12:00  14:35     14:32   99.69%```
+Please wait another 31 minutes to bump DISBOARD :drool:
+Please wait another 21 minutes to bump DISBOARD :drool:
+qotd countdown days 5.051969780092593
+Please wait another 11 minutes to bump DISBOARD :drool:
+Please wait another 1 minutes to bump DISBOARD :drool:
+Time to bump DISBOARD (!d bump) :scream:
+GUILD_TEXT : bot-commands
+Jalendu: Time to bump DISBOARD (!d bump) :scream:
+qotd countdown days 5.031136435185185
+
+__Newcomers reminder and exclusion.__
+
+AbyssSolid --> reminded : 6.5 days.
+Hanno --> reminded : 5.3 days.
+mmmmm --> reminded : 4.7 days.
+Ryft YT --> reminded : 5.1 days.
+robert. --> reminded : 6.0 days.
+TwinkieBoy --> waiting : 1.3 days.
+Hendrick --> reminded : 2.7 days.
+
+* Indicates that the member wrote a message in #landing-zone.
++ Indicates that the member is muted.
+# Indicates that the member was previously a verified member.
+Please bump DISBOARD (!d bump). I've been waiting for the bump for 19 minutes :pleading_face:
+cleanup: no messages found
+role <@&888303776451149844> added to <@721428311829512262>
+GUILD_TEXT : system-messages
+Carl-bot Logging: 
+MessageEmbed {
+  type: 'rich',
+  title: 'Role added',
+  description: '<@&888303776451149844>',
+  url: null,
+  color: 4359924,
+  timestamp: 1634444205483,
+  fields: [],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: {
+    name: 'RUWithMeNow#1626',
+    url: undefined,
+    iconURL: 'https://cdn.discordapp.com/embed/avatars/1.png',
+    proxyIconURL: 'https://images-ext-2.discordapp.net/external/GyQicPLz_zQO15bOMtiGTtC4Kud7JjQbs1Ecuz7RrtU/https/cdn.discordapp.com/embed/avatars/1.png'
+  },
+  provider: null,
+  footer: {
+    text: 'ID: 721428311829512262',
+    iconURL: undefined,
+    proxyIconURL: undefined
+  }
+}
+member undefined!
+GUILD_TEXT : bot-commands
+marq_andrew: !d bump
+disboard bump by marq_andrew
+GUILD_TEXT : bot-commands
+DISBOARD: 
+MessageEmbed {
+  type: 'rich',
+  title: 'DISBOARD: The Public Server List',
+  description: '<@679465390841135126> Bump done! :thumbsup:\n' +
+    'Check it out [on DISBOARD](https://disboard.org/server/827888294100074516).',
+  url: 'https://disboard.org/',
+  color: 2406327,
+  timestamp: null,
+  fields: [],
+  thumbnail: null,
+  image: {
+    url: 'https://disboard.org/images/bot-command-image-bump.png',
+    proxyURL: 'https://images-ext-1.discordapp.net/external/tAuRcs-FCy2M8OaTS9Ims62J1vrFiviahjBDtpZrrBs/https/disboard.org/images/bot-command-image-bump.png',
+    height: 200,
+    width: 800
+  },
+  video: null,
+  author: null,
+  provider: null,
+  footer: null
+}
+Bump done! :thumbsup: success
+successfully bumped
+GUILD_TEXT : bot-commands
+Jalendu: Thanks marq_andrew :medal:
+:green_heart::green_heart::green_heart::blue_heart::purple_heart::purple_heart:
+Please wait another 116 minutes to bump DISBOARD :drool:
+Please wait another 106 minutes to bump DISBOARD :drool:
+qotd countdown days 5.010303101851852
+Please wait another 96 minutes to bump DISBOARD :drool:
+Please wait another 86 minutes to bump DISBOARD :drool:
+GUILD_TEXT : member-introductions
+RGfinpsy: Welcome <@612141668132585493> <@721428311829512262> <:heart_rainbow:880767130474262568>
+Please wait another 76 minutes to bump DISBOARD :drool:
+GUILD_TEXT : test_landing-zone
+marq_andrew: /qo help
+GUILD_TEXT : test_landing-zone
+Jalendu: __These are the instructions for adding questions for regular discussion on G+MM__
+
+* It is best to add your question in a direct message with @Jalendu. Direct message Jalendu as you would any real user.
+
+* Every request or instruction to the questions system starts with "/qo". This tells Jalendu (a program) that you are referring to the questions system.
+
+* Questions are asked in the channel anonymously and in random order but your user name is recorded with each question so that only you (or a mod) can edit the questions that you have added.
+
+* Questions can be as long or short as you like but try to make it something that invites discussion. You can add photos to your question. Questions can be controversial and push boundaries but keep in mind that they will be displayed in a sfw channel to invite maximum participation.
+GUILD_TEXT : test_landing-zone
+Jalendu: ​
+__Adding a question__
+
+To add a question, enter ```/qo add [your question]``` as a message.
+
+You can attach a photo to your question if you want to. You can do this later with the attach command (see below) or at the same time as you add the question by clicking on the + to the left of the message field, selecting "Upload a file", choose your photo (or etc.) and press Open, enter ```/qo add [your question]``` in the ADD A COMMENT field and then press Upload.
+
+Jalendu will reply with # plus the id of your question and the question itself. You will need the id number if you want to change the question you added.
+
+__Listing your questions__
+
+To list the questions that you have previously added, enter ```/qo list [id]``` [id] refers to the question id number you saw after the question was added. If you leave it out, all of your questions will be listed as well as the question status the question status (submitted/approved/rejected/deleted) but not any images attached to them.
+You only get the image if you list them one at a time which shows the question in the format in which it will be asked. 
+
+__Finding a question__
+
+To find only the questions that you have previously added that contain certain words, enter ```/qo find [words]```
+GUILD_TEXT : test_landing-zone
+Jalendu: ​
+__Editing a question__
+
+To edit the text of a previously entered question, enter ```/qo edit [id] [your revised question]```This will only change the question. If you attached a photo to your question, it will be unchanged.
+
+__Attaching a photo to a question__
+
+To attach photo (or file) to a previously entered question, press the + on the left of the  message field, select "Upload a file", choose your photo (or etc.) then press Open, enter ```/qo attach [id]``` in the ADD A COMMENT field and then press Upload. This will only change the photo attached to the question, not the text of the question.
+
+__Detaching a photo from a question__
+
+To remove the photo from a question while leaving the question itself intact, enter ```/qo detach [id]```
+__Deleting a question__
+
+To delete your question, enter ```/qo delete [id]```
+__Undeleting a question__
+
+It is possible to undelete a question if not too much time has passed since you deleted it. To get a list of deleted questions that are still recoverable, enter ```/qo deleted```To undelete your question, enter ```/qo undelete [id]```
+__Bumping a question__
+
+Questions are inserted into the list in random order. To lower the order of a question so that it will come up sooner, enter ```/qo bump [id]```
+__System status__
+
+To get information about the questions system including the number of questions left and the time of the next question, enter ```/qo status```
+__Help__
+
+To get help about the questions system commands (that you are reading right now), enter ```/qo help```
+GUILD_TEXT : test_landing-zone
+Jalendu: ​
+
+
+**__Moderator only commands__**
+
+All of the commands available to general users (above) work for moderators but moderators can see and edit all questions, not just their own. Editing a user's question doesn't change their ownership of it so they can still edit it. Similarly deleting a user's question doesn't stop them undeleting it until a hard delete is done.
+
+__Reviewing Questions__
+
+When a question is added or edited, it goes into "submitted" status and is not yet available to be asked. They need to be approved before they can be asked. To read all of the questions needing approval enter ```/qo review```
+__Approval and rejection__
+
+Enter ```/qo approve [id|all]``` to approve the question with id, or 'all' to approve all submitted questions.
+To reject a question, enter ```/qo reject [id]``` There is no 'all' option for reject.
+
+__Starting and stopping the questions system__
+
+Enter```/qo start [n]```To start the questions system in the current channel in [n] hours time. Leave out n to start immediately.
+To stop the system, enter```/qo stop```
+__Questions Reset__
+
+Too make all questions available to be asked again, enter```/qo reset```
+__Shuffle Questions__
+
+To resort the questions in random order, enter```/qo randomise [clear]``` The 'clear' option will zero all bumps.
+GUILD_TEXT : test_landing-zone
+Jalendu: ​
+
+
+**__Admin only commands__**Admin only commands should only be of interest to the bot developers:
+
+*init* is called when the bot starts. I reads
+GUILD_TEXT : test_landing-zone
+Jalendu: ​
+(This it the bottom of the instructions. Scroll up to read from the top.)
+qotd countdown days 4.989469768518519
+Please wait another 66 minutes to bump DISBOARD :drool:
+GUILD_TEXT : video-channel-logging
+Jalendu: ```Voice session in nsfw-other-room has ended.
+Member       Joined    Duration  Camera  %
+nonmas#2648  05:08:38  12:31     12:29   99.80%```
+GUILD_TEXT : test_landing-zone
+marq_andrew: /qo help
+GUILD_TEXT : test_landing-zone
+Jalendu: __These are the instructions for adding questions for regular discussion on G+MM__
+
+* It is best to add your question in a direct message with @Jalendu. Direct message Jalendu as you would any real user.
+
+* Every request or instruction to the questions system starts with "/qo". This tells Jalendu (a program) that you are referring to the questions system.
+
+* Questions are asked in the channel anonymously and in random order but your user name is recorded with each question so that only you (or a mod) can edit the questions that you have added.
+
+* Questions can be as long or short as you like but try to make it something that invites discussion. You can add photos to your question. Questions can be controversial and push boundaries but keep in mind that they will be displayed in a sfw channel to invite maximum participation.
+GUILD_TEXT : test_landing-zone
+Jalendu: ​
+__Adding a question__
+
+To add a question, enter ```/qo add [your question]``` as a message.
+
+You can attach a photo to your question if you want to. You can do this later with the attach command (see below) or at the same time as you add the question by clicking on the + to the left of the message field, selecting "Upload a file", choose your photo (or etc.) and press Open, enter ```/qo add [your question]``` in the ADD A COMMENT field and then press Upload.
+
+Jalendu will reply with # plus the id of your question and the question itself. You will need the id number if you want to change the question you added.
+
+__Listing your questions__
+
+To list the questions that you have previously added, enter ```/qo list [id]``` [id] refers to the question id number you saw after the question was added. If you leave it out, all of your questions will be listed as well as the question status the question status (submitted/approved/rejected/deleted) but not any images attached to them.
+You only get the image if you list them one at a time which shows the question in the format in which it will be asked. 
+
+__Finding a question__
+
+To find only the questions that you have previously added that contain certain words, enter ```/qo find [words]```
+GUILD_TEXT : test_landing-zone
+Jalendu: ​
+__Editing a question__
+
+To edit the text of a previously entered question, enter ```/qo edit [id] [your revised question]```This will only change the question. If you attached a photo to your question, it will be unchanged.
+
+__Attaching a photo to a question__
+
+To attach photo (or file) to a previously entered question, press the + on the left of the  message field, select "Upload a file", choose your photo (or etc.) then press Open, enter ```/qo attach [id]``` in the ADD A COMMENT field and then press Upload. This will only change the photo attached to the question, not the text of the question.
+
+__Detaching a photo from a question__
+
+To remove the photo from a question while leaving the question itself intact, enter ```/qo detach [id]```
+__Deleting a question__
+
+To delete your question, enter ```/qo delete [id]```
+__Undeleting a question__
+
+It is possible to undelete a question if not too much time has passed since you deleted it. To get a list of deleted questions that are still recoverable, enter ```/qo deleted```To undelete your question, enter ```/qo undelete [id]```
+__Bumping a question__
+
+Questions are inserted into the list in random order. To lower the order of a question so that it will come up sooner, enter ```/qo bump [id]```
+__System status__
+
+To get information about the questions system including the number of questions left and the time of the next question, enter ```/qo status```
+__Help__
+
+To get help about the questions system commands (that you are reading right now), enter ```/qo help```
+GUILD_TEXT : test_landing-zone
+Jalendu: ​
+
+
+**__Moderator only commands__**
+
+All of the commands available to general users (above) work for moderators but moderators can see and edit all questions, not just their own. Editing a user's question doesn't change their ownership of it so they can still edit it. Similarly deleting a user's question doesn't stop them undeleting it until a hard delete is done.
+
+__Reviewing Questions__
+
+When a question is added or edited, it goes into "submitted" status and is not yet available to be asked. They need to be approved before they can be asked. To read all of the questions needing approval enter ```/qo review```
+__Approval and rejection__
+
+Enter ```/qo approve [id|all]``` to approve the question with id, or 'all' to approve all submitted questions.
+To reject a question, enter ```/qo reject [id]``` There is no 'all' option for reject.
+
+__Starting and stopping the questions system__
+
+Enter```/qo start [n]```To start the questions system in the current channel in [n] hours time. Leave out n to start immediately.
+To stop the system, enter```/qo stop```
+__Questions Reset__
+
+Too make all questions available to be asked again, enter```/qo reset```
+__Shuffle Questions__
+
+To resort the questions in random order, enter```/qo randomise [clear]``` The 'clear' option will zero all bumps.
+GUILD_TEXT : test_landing-zone
+Jalendu: ​
+
+
+**__Admin only commands__**
+
+Admin only commands should only be of interest to the bot developers:
+
+*init* is called when the bot starts. I reads objects from the replit database into memory. There should be no reason to call it manually.
+Similarly *save* copies the in memory objects (actually only qotds) into the database.
+*fromjsonxxx*
+*tojson*
+*resetxxx*
+*deletexxx*
+GUILD_TEXT : test_landing-zone
+Jalendu: ​
+(This it the bottom of the instructions. Scroll up to read from the top.)
+Please wait another 56 minutes to bump DISBOARD :drool:
+Please wait another 46 minutes to bump DISBOARD :drool:
+qotd countdown days 4.968636331018518
+Please wait another 36 minutes to bump DISBOARD :drool:
+Please wait another 26 minutes to bump DISBOARD :drool:
+Please wait another 16 minutes to bump DISBOARD :drool:
+GUILD_TEXT : member-introductions
+juandiego: Ty 🙂
+
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+RESTART 20211017-103749
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+
+Ready!
+[ 'bumpbots', 'bumpers', 'qotd_activity', 'qotds', 'qotd_scores' ]
+Setting application command permissions on 888779192592896130 avatar
+Setting application command permissions on 888779192592896131 joke
+Setting application command permissions on 888779192592896132 define
+Setting application command permissions on 888779192592896133 moderate
+Setting application command permissions on 889643708650254346 readme
+qotd countdown days 4.766484826388889
+DISBOARD in sync (0 difference)
+
+__Newcomers reminder and exclusion.__
+
+AbyssSolid --> reminded : 6.8 days.
+Hanno --> reminded : 5.6 days.
+mmmmm --> reminded : 5.0 days.
+Ryft YT --> reminded : 5.4 days.
+robert. --> reminded : 6.2 days.
+TwinkieBoy --> waiting : 1.5 days.
+Hendrick --> reminded : 3.0 days.
+
+* Indicates that the member wrote a message in #landing-zone.
++ Indicates that the member is muted.
+# Indicates that the member was previously a verified member.
+cleanup: no messages found
+Please wait another 42 minutes to bump DISBOARD :drool:
+Please wait another 32 minutes to bump DISBOARD :drool:
+GUILD_TEXT : memes-off-topic
+Cuddlemonster: 
+Please wait another 22 minutes to bump DISBOARD :drool:
+qotd countdown days 4.745651481481482
+Please wait another 12 minutes to bump DISBOARD :drool:
+GUILD_TEXT : apollo-events
+Apollo: 
+MessageEmbed {
+  type: 'rich',
+  title: 'Silent Meditation in the Open Room',
+  description: null,
+  url: null,
+  color: 15844367,
+  timestamp: null,
+  fields: [
+    {
+      value: '<t:1634553600:F> - <t:1634556000:t>\n' +
+        '<:countdown:878391707727716413> <t:1634553600:R>',
+      name: 'Time',
+      inline: false
+    },
+    {
+      value: '[Add to Google Calendar](http://www.google.com/calendar/event?action=TEMPLATE&text=Silent+Meditation+in+the+Open+Room&details=&location=&dates=20211018T104000Z/20211018T112000Z)',
+      name: 'Links',
+      inline: false
+    },
+    {
+      value: '-',
+      name: '<:accepted:713124484436983971> Accepted',
+      inline: true
+    },
+    {
+      value: '-',
+      name: '<:declined:713124484688642068> Declined',
+      inline: true
+    },
+    {
+      value: '-',
+      name: '<:tentative:713214962641666109> Tentative',
+      inline: true
+    }
+  ],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: null,
+  provider: null,
+  footer: {
+    text: 'Created by marq_andrew • Repeats daily',
+    iconURL: undefined,
+    proxyIconURL: undefined
+  }
+}
+GUILD_TEXT : video-channel-logging
+Jalendu: ```Voice session in nsfw-nude-meditation-room has ended.
+Member           Joined    Duration  Camera  %
+whatsup777#4419  11:22:01  0:04      0:00    0.00%```
+Please wait another 2 minutes to bump DISBOARD :drool:
+Time to bump DISBOARD (!d bump) :scream:
+qotd countdown days 4.724818148148148
+GUILD_TEXT : bot-commands
+Jalendu: Time to bump DISBOARD (!d bump) :scream:
+GUILD_TEXT : video-channel-logging
+Jalendu: ```Voice session in nsfw-nude-meditation-room has ended.
+Member            Joined    Duration  Camera  %
+marq_andrew#2607  11:30:45  11:19     11:17   99.60%```
+GUILD_TEXT : bot-commands
+marq_andrew: !d bump
+disboard bump by marq_andrew
+GUILD_TEXT : bot-commands
+DISBOARD: 
+MessageEmbed {
+  type: 'rich',
+  title: 'DISBOARD: The Public Server List',
+  description: '<@679465390841135126> Bump done! :thumbsup:\n' +
+    'Check it out [on DISBOARD](https://disboard.org/server/827888294100074516).',
+  url: 'https://disboard.org/',
+  color: 2406327,
+  timestamp: null,
+  fields: [],
+  thumbnail: null,
+  image: {
+    url: 'https://disboard.org/images/bot-command-image-bump.png',
+    proxyURL: 'https://images-ext-1.discordapp.net/external/tAuRcs-FCy2M8OaTS9Ims62J1vrFiviahjBDtpZrrBs/https/disboard.org/images/bot-command-image-bump.png',
+    height: 200,
+    width: 800
+  },
+  video: null,
+  author: null,
+  provider: null,
+  footer: null
+}
+Bump done! :thumbsup: success
+successfully bumped
+GUILD_TEXT : bot-commands
+Jalendu: Thanks marq_andrew :thumbsup:
+:green_heart::green_heart::green_heart::blue_heart::purple_heart::purple_heart::purple_heart::purple_heart:
+GUILD_TEXT : test_landing-zone
+marq_andrew: /qo status
+GUILD_TEXT : test_landing-zone
+Jalendu: ```status of questions system
+--------------------------
+
+total questions     :    36
+approved            :    36
+
+asked               :     1 2.8%
+
+current UTC time    : Sun, 17 Oct 2021 11:46:52 GMT
+start time          : Thu, 14 Oct 2021 22:52:24 GMT
+last time asked     : Fri, 15 Oct 2021 05:01:34 GMT
+next question       : Fri, 22 Oct 2021 05:01:34 GMT
+days to go          : 4.71854244212963```
+GUILD_TEXT : test_landing-zone
+marq_andrew: /qo list
+GUILD_TEXT : test_landing-zone
+Jalendu: #10 ```Have you ever experenced lucid dreaming? Do you have or know a practice that can cause lucid dreaming? If you could lucid dream, what would you do in your dream?```(**$(this.qotds.questions[i].status)**)
+
+#38 ```How would you describe meditation to someone who doesn’t know anything about it?```(**$(this.qotds.questions[i].status)**)
+
+#31 ```It has been said that religion gives people a moral compass and that people who are atheist or irreligious are therefor less moral. What do you think?```(**$(this.qotds.questions[i].status)**)
+
+#23 ```Henry Scott Tuke (1858-1929) was an English painter. He had no known relationships with women other than his sister. He was friends with Oscar Wilde and other "Uranians" and wrote poetry that idealised the love of Ancient Greece. Since the 1970's he has become " something of a cult figure in gay cultural circles" and Elton John has a large collection of his works (-for some reason-). There is however no direct evidence that he was gay and a small number of Tuke curators push back at any suggestion that he was or that his art is homoerotic.
+What do you feel about “gay erasure” of historical figures? Is it important to oppose it or do gay people make too much fuss about it?```+ image. (**$(this.qotds.questions[i].status)**)
+
+#16 ```You often hear the phrase “body and soul” but gay poet Walt Whitman in his poem “I Sing the Body Electric” defined the soul as the body. What do you think about terms like ”body” versus “soul” and “spirit”? How does the body and the individual aspects of our embodiment; our race, gender, sexuality, age, personality, health, intelligence, ability etc. relate to spirituality? Is spirituality even an appropriate word?```(**$(this.qotds.questions[i].status)**)
+GUILD_TEXT : test_landing-zone
+Jalendu: ​
+#9 ```The Discord Community Guidelines prohibit the "sexualisation of minors (age 13-17) in any way." It has been suggested that a Discord group focussed on minority sexualities (such as this one) sexualises minors just by them being allowed to join. Given that young teenagers are sexual well before their 18th birthday, what does the term "sexualisation of minors" mean? Can a gay+ adult engage with a gay+ teen who has questions about sex and sexuality in a positive, constructive way or is any engagement at all online simply taboo?```(**$(this.qotds.questions[i].status)**)
+
+#29 ```Antinous was the lover of the Roman Emperor Hadrian. He tragically drowned in the Nile when not yet 20. He was praised for his beauty and numerous statues and even temples where built to him. It seems that in the Roman world, men were praised for their beauty more than women.
+Why do you think this changed? Do you feel comfortable calling a man "beautiful"? Do you think that men are in fact generally more beautiful than women and that it has nothing to do with your sexuality? Is the fact that in many species of animal, the males are more attractive than the females relevant?```+ image. (**$(this.qotds.questions[i].status)**)
+
+#34 ```Do you use music, guided meditations, white noise or things like that to help you?```(**$(this.qotds.questions[i].status)**)
+
+#37 ```Do you practice meditation or yoga outdoors? Would you like to? What is your favourite place to practice or where would you most like to practice? Does the place where you practice make any difference?```(**$(this.qotds.questions[i].status)**)
+
+#11 ```How do you feel about nude yoga or meditation? Do you or would you practice nude alone, with others or online on camera?```(**$(this.qotds.questions[i].status)**)
+GUILD_TEXT : test_landing-zone
+Jalendu: ​
+#39 ```I’ve heard of Tantric sex but I don’t know much about it. Is it mindful masturbation or sex? Edging? Sex without ejaculating? Having multiple orgasms? What exactly is it about?```(**$(this.qotds.questions[i].status)**)
+
+#35 ```In many places there has been a decline in the number of venues like pubs, clubs and gyms exclusively for gay and lesbian people, often replaced by venues that are explicitly gay friendly but open to everyone. On the other hand, more and more groups exclusively for lgbt people are appearing on Discord. Is it good or bad?```(**$(this.qotds.questions[i].status)**)
+
+#14 ```How do you cope with meditation or yoga in a noisy place?```(**$(this.qotds.questions[i].status)**)
+
+#12 ```How does being gay+ (gay, bisexual, pansexual or bi-curious) influence your meditation or yoga practice? Did it influence your decision to start?```(**$(this.qotds.questions[i].status)**)
+
+#22 ```The word "homosexual" first appeared in print in 1869 and then only became well known after 1886; a product of contemporary psychological theories of the subconscious mind. Oscar Wilde and his circle referred to themselves as "Uranians", men inhabited by female spirits. How then do we see the word "homosexual" printed in modern English translations of the Bible?```(**$(this.qotds.questions[i].status)**)
+
+#43 ```Do you believe in Karma? That is, your intentional actions rebound to you either in this life or a future life?```(**$(this.qotds.questions[i].status)**)
+
+#7 ```Can meditation give you magical, paranormal or supernatural abilities?```(**$(this.qotds.questions[i].status)**)
+
+#27 ```You often hear people say that everyone has a right to their opinions. Is it true? Some opinions, like that the earth is flat or that the moon is made of cheese are wrong. Do people have a right to hold opinions that have been proven to be wrong?```+ image. (**$(this.qotds.questions[i].status)**)
+GUILD_TEXT : test_landing-zone
+Jalendu: ​
+#26 ```“The customer rang and said that they’re coming in this afternoon to pick up their order. I thanked them for their patience.”
+Using the pronouns they, their and them for a single person is common and correct English usage, usually when you don’t know their gender. Why is it then that when a person says that they’d prefer others to refer to them using those pronouns (they/their/them), some people object on the grounds that it doesn’t seem to be correct grammar to refer to a single person using them?
+If you speak another language, what pronouns do you use for a person when you don’t know their gender?```(**$(this.qotds.questions[i].status)**)
+
+#42 ```Many famous teachers of Meditation, Yoga, Buddhism etc. have been found to be having sex with their students and it has caused a huge scandal. Should it matter?```(**$(this.qotds.questions[i].status)**)
+
+#2 ```Do you perform any ritual before or after you practice meditation or yoga?```(**$(this.qotds.questions[i].status)**)
+
+#28 ```“I can meditate for a long time even though I am very tired as long as my mind is clear of thoughts. As soon as I start thinking about something, I fall asleep.”
+Do you experience this? How do you explain it? Isn’t it the opposite of what you might expect?```(**$(this.qotds.questions[i].status)**)
+
+#8 ```Do you practice yoga as a form of physical excercise, a spiritual practice or both? Is there a difference?```(**$(this.qotds.questions[i].status)**)
+
+#24 ```Do you ever experience sexual arousal during meditation or yoga even though you are not seeing or thinking anything sexual? Do you find it distracting? To what do you attribute it?```(**$(this.qotds.questions[i].status)**)
+
+#33 ```What kind of teachers/rolemodels did you meet on your meditation journey and would you recommend them?```(**$(this.qotds.questions[i].status)**)
+
+#41 ```Has any book or movie profoundly affected your life?```(**$(this.qotds.questions[i].status)**)
+GUILD_TEXT : test_landing-zone
+Jalendu: ​
+#21 ```"Beliefs are a choice. If you find you are being discriminated against because of your beliefs, change them. The same can’t be said for race, gender, age and sexuality. It’s time to end the false equivalency." 
+Do you agree? Is it ok to discriminate against a person because of their religious beliefs? On the other hand, is it rational to allow someone an exemption from the law on the basis of what they choose to believe?```(**$(this.qotds.questions[i].status)**)
+
+#15 ```It has been said that the term "bisexual" is insensitive because it implies that "there are only two genders". With more and more people exploring their gender identities and concluding that they don't fit into either male or female, it is said that the term "pansexual" is preferred for people sexually attracted to "all" (previously "both") genders. What are your thoughts?```(**$(this.qotds.questions[i].status)**)
+
+#1 ```Do you think meditation is good for health? What about mental health?```(**$(this.qotds.questions[i].status)**)
+
+#30 ```Do you believe in God, gods or any supernatural beings? How does your belief or lack of it affect your life?```(**$(this.qotds.questions[i].status)**)
+
+#40 ```Have you heard of "stealthing"? That is when two people agree to have sex using a condom but then the guy wearing the condom takes it off without his partner knowing. It is summarised as "non-consensual condom removal." Do you think it should be treated in the same way as rape?```(**$(this.qotds.questions[i].status)**)
+
+#36 ```Are you superstitious? If so in what ways? Do you observe any superstitions even though you don’t believe in them like saying “bless you” when someone sneezes?```(**$(this.qotds.questions[i].status)**)
+
+#6 ```Do you think meditation improves your sex life? In what ways?```(**$(this.qotds.questions[i].status)**)
+GUILD_TEXT : test_landing-zone
+Jalendu: ​
+#25 ```What do you think about social media algorithms on platforms like Facebook and Twitter that suggest connections with “like-minded” people (with the same opinions, political views, interests) and allow people they disagree with to be blocked?```(**$(this.qotds.questions[i].status)**)
+
+#32 ```What was your first contact with meditation? How old were you when you first meditated?```(**$(this.qotds.questions[i].status)**)
+
+#13 ```Some people separate the spiritual and sexual aspects of their lives. For others, sex and sexuality are integral to their spirituality. Where are you on this spectrum?```(**$(this.qotds.questions[i].status)**)
+Please wait another 119 minutes to bump DISBOARD :drool:
+
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+RESTART 20211017-115040
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+
+Ready!
+[ 'bumpbots', 'bumpers', 'qotd_activity', 'qotds', 'qotd_scores' ]
+Setting application command permissions on 888779192592896130 avatar
+Setting application command permissions on 888779192592896131 joke
+Setting application command permissions on 888779192592896132 define
+Setting application command permissions on 888779192592896133 moderate
+Setting application command permissions on 889643708650254346 readme
+qotd countdown days 4.7158967361111115
+DISBOARD in sync (0 difference)
+
+__Newcomers reminder and exclusion.__
+
+AbyssSolid --> reminded : 6.8 days.
+Hanno --> reminded : 5.6 days.
+mmmmm --> reminded : 5.0 days.
+Ryft YT --> reminded : 5.4 days.
+robert. --> reminded : 6.3 days.
+TwinkieBoy --> waiting : 1.6 days.
+Hendrick --> reminded : 3.0 days.
+
+* Indicates that the member wrote a message in #landing-zone.
++ Indicates that the member is muted.
+# Indicates that the member was previously a verified member.
+cleanup: no messages found
+GUILD_TEXT : test_landing-zone
+marq_andrew: /qo list
+GUILD_TEXT : test_landing-zone
+Jalendu: #10 ```Have you ever experenced lucid dreaming? Do you have or know a practice that can cause lucid dreaming? If you could lucid dream, what would you do in your dream?```(**approved**)
+
+#38 ```How would you describe meditation to someone who doesn’t know anything about it?```(**approved**)
+
+#31 ```It has been said that religion gives people a moral compass and that people who are atheist or irreligious are therefor less moral. What do you think?```(**approved**)
+
+#23 ```Henry Scott Tuke (1858-1929) was an English painter. He had no known relationships with women other than his sister. He was friends with Oscar Wilde and other "Uranians" and wrote poetry that idealised the love of Ancient Greece. Since the 1970's he has become " something of a cult figure in gay cultural circles" and Elton John has a large collection of his works (-for some reason-). There is however no direct evidence that he was gay and a small number of Tuke curators push back at any suggestion that he was or that his art is homoerotic.
+What do you feel about “gay erasure” of historical figures? Is it important to oppose it or do gay people make too much fuss about it?```+ image. (**approved**)
+
+#16 ```You often hear the phrase “body and soul” but gay poet Walt Whitman in his poem “I Sing the Body Electric” defined the soul as the body. What do you think about terms like ”body” versus “soul” and “spirit”? How does the body and the individual aspects of our embodiment; our race, gender, sexuality, age, personality, health, intelligence, ability etc. relate to spirituality? Is spirituality even an appropriate word?```(**approved**)
+GUILD_TEXT : test_landing-zone
+Jalendu: ​
+#9 ```The Discord Community Guidelines prohibit the "sexualisation of minors (age 13-17) in any way." It has been suggested that a Discord group focussed on minority sexualities (such as this one) sexualises minors just by them being allowed to join. Given that young teenagers are sexual well before their 18th birthday, what does the term "sexualisation of minors" mean? Can a gay+ adult engage with a gay+ teen who has questions about sex and sexuality in a positive, constructive way or is any engagement at all online simply taboo?```(**approved**)
+
+#29 ```Antinous was the lover of the Roman Emperor Hadrian. He tragically drowned in the Nile when not yet 20. He was praised for his beauty and numerous statues and even temples where built to him. It seems that in the Roman world, men were praised for their beauty more than women.
+Why do you think this changed? Do you feel comfortable calling a man "beautiful"? Do you think that men are in fact generally more beautiful than women and that it has nothing to do with your sexuality? Is the fact that in many species of animal, the males are more attractive than the females relevant?```+ image. (**approved**)
+
+#34 ```Do you use music, guided meditations, white noise or things like that to help you?```(**approved**)
+
+#37 ```Do you practice meditation or yoga outdoors? Would you like to? What is your favourite place to practice or where would you most like to practice? Does the place where you practice make any difference?```(**approved**)
+
+#11 ```How do you feel about nude yoga or meditation? Do you or would you practice nude alone, with others or online on camera?```(**approved**)
+
+#39 ```I’ve heard of Tantric sex but I don’t know much about it. Is it mindful masturbation or sex? Edging? Sex without ejaculating? Having multiple orgasms? What exactly is it about?```(**approved**)
+GUILD_TEXT : test_landing-zone
+Jalendu: ​
+#35 ```In many places there has been a decline in the number of venues like pubs, clubs and gyms exclusively for gay and lesbian people, often replaced by venues that are explicitly gay friendly but open to everyone. On the other hand, more and more groups exclusively for lgbt people are appearing on Discord. Is it good or bad?```(**approved**)
+
+#14 ```How do you cope with meditation or yoga in a noisy place?```(**approved**)
+
+#12 ```How does being gay+ (gay, bisexual, pansexual or bi-curious) influence your meditation or yoga practice? Did it influence your decision to start?```(**approved**)
+
+#22 ```The word "homosexual" first appeared in print in 1869 and then only became well known after 1886; a product of contemporary psychological theories of the subconscious mind. Oscar Wilde and his circle referred to themselves as "Uranians", men inhabited by female spirits. How then do we see the word "homosexual" printed in modern English translations of the Bible?```(**approved**)
+
+#43 ```Do you believe in Karma? That is, your intentional actions rebound to you either in this life or a future life?```(**approved**)
+
+#7 ```Can meditation give you magical, paranormal or supernatural abilities?```(**approved**)
+
+#27 ```You often hear people say that everyone has a right to their opinions. Is it true? Some opinions, like that the earth is flat or that the moon is made of cheese are wrong. Do people have a right to hold opinions that have been proven to be wrong?```+ image. (**approved**)
+GUILD_TEXT : test_landing-zone
+Jalendu: ​
+#26 ```“The customer rang and said that they’re coming in this afternoon to pick up their order. I thanked them for their patience.”
+Using the pronouns they, their and them for a single person is common and correct English usage, usually when you don’t know their gender. Why is it then that when a person says that they’d prefer others to refer to them using those pronouns (they/their/them), some people object on the grounds that it doesn’t seem to be correct grammar to refer to a single person using them?
+If you speak another language, what pronouns do you use for a person when you don’t know their gender?```(**approved**)
+
+#42 ```Many famous teachers of Meditation, Yoga, Buddhism etc. have been found to be having sex with their students and it has caused a huge scandal. Should it matter?```(**approved**)
+
+#2 ```Do you perform any ritual before or after you practice meditation or yoga?```(**approved**)
+
+#28 ```“I can meditate for a long time even though I am very tired as long as my mind is clear of thoughts. As soon as I start thinking about something, I fall asleep.”
+Do you experience this? How do you explain it? Isn’t it the opposite of what you might expect?```(**approved**)
+
+#8 ```Do you practice yoga as a form of physical excercise, a spiritual practice or both? Is there a difference?```(**approved**)
+
+#24 ```Do you ever experience sexual arousal during meditation or yoga even though you are not seeing or thinking anything sexual? Do you find it distracting? To what do you attribute it?```(**approved**)
+
+#33 ```What kind of teachers/rolemodels did you meet on your meditation journey and would you recommend them?```(**approved**)
+
+#41 ```Has any book or movie profoundly affected your life?```(**approved**)
+GUILD_TEXT : test_landing-zone
+Jalendu: ​
+#21 ```"Beliefs are a choice. If you find you are being discriminated against because of your beliefs, change them. The same can’t be said for race, gender, age and sexuality. It’s time to end the false equivalency." 
+Do you agree? Is it ok to discriminate against a person because of their religious beliefs? On the other hand, is it rational to allow someone an exemption from the law on the basis of what they choose to believe?```(**approved**)
+
+#15 ```It has been said that the term "bisexual" is insensitive because it implies that "there are only two genders". With more and more people exploring their gender identities and concluding that they don't fit into either male or female, it is said that the term "pansexual" is preferred for people sexually attracted to "all" (previously "both") genders. What are your thoughts?```(**approved**)
+
+#1 ```Do you think meditation is good for health? What about mental health?```(**approved**)
+
+#30 ```Do you believe in God, gods or any supernatural beings? How does your belief or lack of it affect your life?```(**approved**)
+
+#40 ```Have you heard of "stealthing"? That is when two people agree to have sex using a condom but then the guy wearing the condom takes it off without his partner knowing. It is summarised as "non-consensual condom removal." Do you think it should be treated in the same way as rape?```(**approved**)
+
+#36 ```Are you superstitious? If so in what ways? Do you observe any superstitions even though you don’t believe in them like saying “bless you” when someone sneezes?```(**approved**)
+
+#6 ```Do you think meditation improves your sex life? In what ways?```(**approved**)
+
+#25 ```What do you think about social media algorithms on platforms like Facebook and Twitter that suggest connections with “like-minded” people (with the same opinions, political views, interests) and allow people they disagree with to be blocked?```(**approved**)
+GUILD_TEXT : test_landing-zone
+Jalendu: ​
+#32 ```What was your first contact with meditation? How old were you when you first meditated?```(**approved**)
+
+#13 ```Some people separate the spiritual and sexual aspects of their lives. For others, sex and sexuality are integral to their spirituality. Where are you on this spectrum?```(**approved**)
+GUILD_TEXT : test_landing-zone
+marq_andrew: /qo list 23
+GUILD_TEXT : test_landing-zone
+Jalendu: 
+MessageEmbed {
+  type: 'rich',
+  title: '#23',
+  description: null,
+  url: null,
+  color: 395288,
+  timestamp: null,
+  fields: [
+    {
+      value: '```Henry Scott Tuke (1858-1929) was an English painter. He had no known relationships with women other than his sister. He was friends with Oscar Wilde and other "Uranians" and wrote poetry that idealised the love of Ancient Greece. Since the 1970\'s he has become " something of a cult figure in gay cultural circles" and Elton John has a large collection of his works (-for some reason-). There is however no direct evidence that he was gay and a small number of Tuke curators push back at any suggestion that he was or that his art is homoerotic.\n' +
+        'What do you feel about “gay erasure” of historical figures? Is it important to oppose it or do gay people make too much fuss about it?```',
+      name: '​',
+      inline: false
+    }
+  ],
+  thumbnail: null,
+  image: {
+    url: 'https://cdn.discordapp.com/attachments/886468028320055326/896621411068690432/398A160B-8B44-4D21-B25A-8B78167815E6_4_5005_c.jpeg',
+    proxyURL: 'https://media.discordapp.net/attachments/886468028320055326/896621411068690432/398A160B-8B44-4D21-B25A-8B78167815E6_4_5005_c.jpeg',
+    height: 0,
+    width: 0
+  },
+  video: null,
+  author: null,
+  provider: null,
+  footer: null
+}
+Please wait another 106 minutes to bump DISBOARD :drool:
+Please wait another 96 minutes to bump DISBOARD :drool:
+Please wait another 86 minutes to bump DISBOARD :drool:
+qotd countdown days 4.695063391203703
+Please wait another 76 minutes to bump DISBOARD :drool:
+
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+RESTART 20211017-142411
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+
+Ready!
+[ 'bumpbots', 'bumpers', 'qotd_activity', 'qotds', 'qotd_scores' ]
+Setting application command permissions on 888779192592896130 avatar
+Setting application command permissions on 888779192592896131 joke
+Setting application command permissions on 888779192592896132 define
+Setting application command permissions on 888779192592896133 moderate
+Setting application command permissions on 889643708650254346 readme
+qotd countdown days 4.609280543981481
+DISBOARD in sync (0 difference)
+
+__Newcomers reminder and exclusion.__
+
+AbyssSolid --> reminded : 6.9 days.
+Hanno --> reminded : 5.7 days.
+mmmmm --> reminded : 5.1 days.
+Ryft YT --> reminded : 5.5 days.
+robert. --> reminded : 6.4 days.
+TwinkieBoy --> waiting : 1.7 days.
+Hendrick --> reminded : 3.1 days.
+
+* Indicates that the member wrote a message in #landing-zone.
++ Indicates that the member is muted.
+# Indicates that the member was previously a verified member.
+cleanup: no messages found
+Please wait another 107 minutes to bump DISBOARD :drool:
+Please wait another 97 minutes to bump DISBOARD :drool:
+Please wait another 87 minutes to bump DISBOARD :drool:
+qotd countdown days 4.588447210648148
+Please wait another 77 minutes to bump DISBOARD :drool:
+Please wait another 67 minutes to bump DISBOARD :drool:
+Please wait another 57 minutes to bump DISBOARD :drool:
+qotd countdown days 4.567613877314815
+GUILD_TEXT : nsfw-self-expression
+emrys888: 
+GUILD_TEXT : nsfw-off-topic
+JCinNYC2021: And I thank you for that
+Please wait another 47 minutes to bump DISBOARD :drool:
+Please wait another 37 minutes to bump DISBOARD :drool:
+Please wait another 27 minutes to bump DISBOARD :drool:
+qotd countdown days 4.546780532407407
+Please wait another 17 minutes to bump DISBOARD :drool:
+Please wait another 7 minutes to bump DISBOARD :drool:
+Time to bump DISBOARD (!d bump) :scream:
+qotd countdown days 4.525947199074074
+
+__Newcomers reminder and exclusion.__
+
+AbyssSolid --> kicked : 7.0 days.
+Hanno --> reminded : 5.8 days.
+mmmmm --> reminded : 5.2 days.
+Ryft YT --> reminded : 5.6 days.
+robert. --> reminded : 6.5 days.
+TwinkieBoy --> waiting : 1.8 days.
+Hendrick --> reminded : 3.2 days.
+
+* Indicates that the member wrote a message in #landing-zone.
++ Indicates that the member is muted.
+# Indicates that the member was previously a verified member.
+GUILD_TEXT : bot-commands
+Jalendu: Time to bump DISBOARD (!d bump) :scream:
+cleanup: no messages found
+GUILD_TEXT : system-messages
+Jalendu: <@886348663406862376> has been removed (7 days after joining).
+cleanup: no messages found
+DiscordAPIError: Unknown Member
+    at RequestHandler.execute (/home/runner/jalendu/node_modules/discord.js/src/rest/RequestHandler.js:298:13)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async RequestHandler.push (/home/runner/jalendu/node_modules/discord.js/src/rest/RequestHandler.js:50:14)
+    at async GuildMemberRoleManager.add (/home/runner/jalendu/node_modules/discord.js/src/managers/GuildMemberRoleManager.js:113:7) {
+  method: 'put',
+  path: '/guilds/827888294100074516/members/886348663406862376/roles/877790440106123315',
+  code: 10007,
+  httpStatus: 404,
+  requestData: { json: undefined, files: [] }
+}
+Please bump DISBOARD (!d bump). I've been waiting for the bump for 13 minutes :pleading_face:
+GUILD_TEXT : bot-commands
+RGfinpsy: !d bump
+disboard bump by RGfinpsy
+GUILD_TEXT : bot-commands
+DISBOARD: 
+MessageEmbed {
+  type: 'rich',
+  title: 'DISBOARD: The Public Server List',
+  description: '<@523463175216300042> Bump done! :thumbsup:\n' +
+    'Check it out [on DISBOARD](https://disboard.org/server/827888294100074516).',
+  url: 'https://disboard.org/',
+  color: 2406327,
+  timestamp: null,
+  fields: [],
+  thumbnail: null,
+  image: {
+    url: 'https://disboard.org/images/bot-command-image-bump.png',
+    proxyURL: 'https://images-ext-1.discordapp.net/external/tAuRcs-FCy2M8OaTS9Ims62J1vrFiviahjBDtpZrrBs/https/disboard.org/images/bot-command-image-bump.png',
+    height: 200,
+    width: 800
+  },
+  video: null,
+  author: null,
+  provider: null,
+  footer: null
+}
+Bump done! :thumbsup: success
+successfully bumped
+GUILD_TEXT : bot-commands
+Jalendu: Thanks RGfinpsy :couple_mm:
+:green_heart::green_heart::green_heart::blue_heart::blue_heart::blue_heart::purple_heart::purple_heart::purple_heart::purple_heart:
+Please wait another 119 minutes to bump DISBOARD :drool:
+GUILD_TEXT : system-messages
+MarchedWinner3: 
+role <@&851071523543973928> added to <@749123492708089988>
+GUILD_TEXT : system-messages
+Jalendu: 
+MessageEmbed {
+  type: 'rich',
+  title: 'MarchedWinner3',
+  description: null,
+  url: null,
+  color: 65535,
+  timestamp: null,
+  fields: [],
+  thumbnail: null,
+  image: {
+    url: 'https://cdn.discordapp.com/avatars/749123492708089988/379e7fcadf13ed062e60f91dfa48b162.png?size=2048',
+    proxyURL: 'https://images-ext-2.discordapp.net/external/7xO5ToxHYI1m3aAKA_kVecjYTAjBla_S8CuHtRlpGUs/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/749123492708089988/379e7fcadf13ed062e60f91dfa48b162.png',
+    height: 0,
+    width: 0
+  },
+  video: null,
+  author: null,
+  provider: null,
+  footer: null
+}
+GUILD_TEXT : system-messages
+Carl-bot Logging: 
+MessageEmbed {
+  type: 'rich',
+  title: 'Member joined',
+  description: '<@749123492708089988> 153rd to join\n' +
+    'created 1 year, 1 month and 18 days ago',
+  url: null,
+  color: 5496236,
+  timestamp: 1634489068768,
+  fields: [],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: {
+    name: 'MarchedWinner3#3405',
+    url: undefined,
+    iconURL: 'https://cdn.discordapp.com/avatars/749123492708089988/379e7fcadf13ed062e60f91dfa48b162.webp?size=1024',
+    proxyIconURL: 'https://images-ext-2.discordapp.net/external/1W7ws09cbFGTy-85xthoyK1N34rcdMlbjVT_bjyPOSI/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/749123492708089988/379e7fcadf13ed062e60f91dfa48b162.webp'
+  },
+  provider: null,
+  footer: {
+    text: 'ID: 749123492708089988',
+    iconURL: undefined,
+    proxyIconURL: undefined
+  }
+}
+member undefined!
+Please wait another 109 minutes to bump DISBOARD :drool:
+qotd countdown days 4.505113854166667
+GUILD_TEXT : bot-commands
+marq_andrew: !d bump
+disboard bump by marq_andrew
+GUILD_TEXT : bot-commands
+DISBOARD: 
+MessageEmbed {
+  type: 'rich',
+  title: 'DISBOARD: The Public Server List',
+  description: '<@679465390841135126> Please wait another 102 minutes until the server can be bumped',
+  url: 'https://disboard.org/',
+  color: 15420513,
+  timestamp: null,
+  fields: [],
+  thumbnail: {
+    url: 'https://disboard.org/images/bot-command-image-thumbnail-error.png',
+    proxyURL: 'https://images-ext-1.discordapp.net/external/-N8TZVFTnkSYClu_Kbvb8KXNn2TvUgyUwLyBYkC7VGg/https/disboard.org/images/bot-command-image-thumbnail-error.png',
+    height: 300,
+    width: 300
+  },
+  image: null,
+  video: null,
+  author: null,
+  provider: null,
+  footer: null
+}
+Please wait another failure
+18.137983333333334
+Please wait another 99 minutes to bump DISBOARD :drool:

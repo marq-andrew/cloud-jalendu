@@ -1,0 +1,5476 @@
+
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+RESTART 20211018-054854
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+
+Ready!
+[ 'bumpbots', 'bumpers', 'qotd_activity', 'qotds', 'qotd_scores' ]
+Setting application command permissions on 888779192592896130 avatar
+Setting application command permissions on 888779192592896131 joke
+Setting application command permissions on 888779192592896132 define
+Setting application command permissions on 888779192592896133 moderate
+Setting application command permissions on 889643708650254346 readme
+qotd countdown days 3.967118240740741
+DISBOARD in sync (0 difference)
+
+__Newcomers reminder and exclusion.__
+
+Hanno --> reminded : 6.4 days.
+mmmmm --> reminded : 5.8 days.
+Ryft YT --> reminded : 6.2 days.
+robert. --> kicked : 7.0 days.
+moonman5 --> waiting : 0.0 days.
+TwinkieBoy --> reminded : 2.3 days.
+Hendrick --> reminded : 3.8 days.
+
+* Indicates that the member wrote a message in #landing-zone.
++ Indicates that the member is muted.
+# Indicates that the member was previously a verified member.
+GUILD_TEXT : system-messages
+Jalendu: <@896896798780706846> has been removed (7 days after joining).
+cleanup: no messages found
+cleanup: no messages found
+GUILD_TEXT : system-messages
+Carl-bot Logging: 
+MessageEmbed {
+  type: 'rich',
+  title: 'Member left',
+  description: '<@896896798780706846> joined 7 days, 35 minutes and 46 seconds ago\n' +
+    '**Roles:** <@&851071523543973928> <@&877784942107578438>',
+  url: null,
+  color: 16774575,
+  timestamp: 1634536135945,
+  fields: [],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: {
+    name: 'robert.#1494',
+    url: undefined,
+    iconURL: 'https://cdn.discordapp.com/avatars/896896798780706846/3f2599e55a54c0bfcb7c3bfd5f0dec97.webp?size=1024',
+    proxyIconURL: 'https://images-ext-2.discordapp.net/external/4r1pcfjZ8oAuqKDHbsFRBTJHyG3haACz9rFboBwWy6g/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/896896798780706846/3f2599e55a54c0bfcb7c3bfd5f0dec97.webp'
+  },
+  provider: null,
+  footer: {
+    text: 'ID: 896896798780706846',
+    iconURL: undefined,
+    proxyIconURL: undefined
+  }
+}
+member undefined!
+DiscordAPIError: Unknown Member
+    at RequestHandler.execute (/home/runner/jalendu/node_modules/discord.js/src/rest/RequestHandler.js:298:13)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async RequestHandler.push (/home/runner/jalendu/node_modules/discord.js/src/rest/RequestHandler.js:50:14)
+    at async GuildMemberRoleManager.add (/home/runner/jalendu/node_modules/discord.js/src/managers/GuildMemberRoleManager.js:113:7) {
+  method: 'put',
+  path: '/guilds/827888294100074516/members/896896798780706846/roles/877790440106123315',
+  code: 10007,
+  httpStatus: 404,
+  requestData: { json: undefined, files: [] }
+}
+Please wait another 39 minutes to bump DISBOARD :drool:
+Please wait another 29 minutes to bump DISBOARD :drool:
+Please wait another 19 minutes to bump DISBOARD :drool:
+qotd countdown days 3.946284895833333
+Please wait another 9 minutes to bump DISBOARD :drool:
+Time to bump DISBOARD (!d bump) :scream:
+GUILD_TEXT : bot-commands
+Jalendu: Time to bump DISBOARD (!d bump) :scream:
+Please bump DISBOARD (!d bump). I've been waiting for the bump for 11 minutes :pleading_face:
+qotd countdown days 3.925451574074074
+Please bump DISBOARD (!d bump). I've been waiting for the bump for 21 minutes :pleading_face:
+Please bump DISBOARD (!d bump). I've been waiting for the bump for 31 minutes :pleading_face:
+GUILD_TEXT : bot-commands
+RGfinpsy: !d bump
+disboard bump by RGfinpsy
+GUILD_TEXT : bot-commands
+DISBOARD: 
+MessageEmbed {
+  type: 'rich',
+  title: 'DISBOARD: The Public Server List',
+  description: '<@523463175216300042> Bump done! :thumbsup:\n' +
+    'Check it out [on DISBOARD](https://disboard.org/server/827888294100074516).',
+  url: 'https://disboard.org/',
+  color: 2406327,
+  timestamp: null,
+  fields: [],
+  thumbnail: null,
+  image: {
+    url: 'https://disboard.org/images/bot-command-image-bump.png',
+    proxyURL: 'https://images-ext-1.discordapp.net/external/tAuRcs-FCy2M8OaTS9Ims62J1vrFiviahjBDtpZrrBs/https/disboard.org/images/bot-command-image-bump.png',
+    height: 200,
+    width: 800
+  },
+  video: null,
+  author: null,
+  provider: null,
+  footer: null
+}
+Bump done! :thumbsup: success
+successfully bumped
+GUILD_TEXT : bot-commands
+Jalendu: Thanks RGfinpsy :santa:
+:green_heart::green_heart::green_heart::blue_heart::blue_heart::blue_heart::blue_heart::purple_heart::purple_heart::purple_heart:
+Please wait another 117 minutes to bump DISBOARD :drool:
+qotd countdown days 3.904618240740741
+Please wait another 107 minutes to bump DISBOARD :drool:
+GUILD_TEXT : system-messages
+YourSenseii: 
+GUILD_TEXT : system-messages
+Jalendu: 
+MessageEmbed {
+  type: 'rich',
+  title: 'YourSenseii',
+  description: null,
+  url: null,
+  color: 65535,
+  timestamp: null,
+  fields: [],
+  thumbnail: null,
+  image: {
+    url: 'https://cdn.discordapp.com/avatars/744567683655270432/cf5d936f4cce61da0290600b1fcc3207.png?size=2048',
+    proxyURL: 'https://images-ext-1.discordapp.net/external/-SOjtSn-fjpnKKCuFGyboFBtVEVQorOWgcM8BA-PeV8/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/744567683655270432/cf5d936f4cce61da0290600b1fcc3207.png',
+    height: 0,
+    width: 0
+  },
+  video: null,
+  author: null,
+  provider: null,
+  footer: null
+}
+role <@&851071523543973928> added to <@744567683655270432>
+GUILD_TEXT : system-messages
+Carl-bot Logging: 
+MessageEmbed {
+  type: 'rich',
+  title: 'Member joined',
+  description: '<@744567683655270432> 155th to join\ncreated 1 year, 2 months and 1 day ago',
+  url: null,
+  color: 5496236,
+  timestamp: 1634542626493,
+  fields: [],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: {
+    name: 'YourSenseii#0708',
+    url: undefined,
+    iconURL: 'https://cdn.discordapp.com/avatars/744567683655270432/cf5d936f4cce61da0290600b1fcc3207.webp?size=1024',
+    proxyIconURL: 'https://images-ext-1.discordapp.net/external/NjkP7u2NsjVy1WfhkDItRUrXI7govz5oAM418g4m09g/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/744567683655270432/cf5d936f4cce61da0290600b1fcc3207.webp'
+  },
+  provider: null,
+  footer: {
+    text: 'ID: 744567683655270432',
+    iconURL: undefined,
+    proxyIconURL: undefined
+  }
+}
+member undefined!
+GUILD_TEXT : system-messages
+jayla: 
+role <@&851071523543973928> added to <@806620400552771604>
+GUILD_TEXT : system-messages
+Jalendu: 
+MessageEmbed {
+  type: 'rich',
+  title: 'jayla',
+  description: null,
+  url: null,
+  color: 65535,
+  timestamp: null,
+  fields: [],
+  thumbnail: null,
+  image: {
+    url: 'https://cdn.discordapp.com/avatars/806620400552771604/1ddad76edd687e671bdbc3cb09267f8d.png?size=2048',
+    proxyURL: 'https://images-ext-2.discordapp.net/external/E_OOScH0cYMALGEufruSmo0zIK7ZF6VjHQ3OnWRmQ2g/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/806620400552771604/1ddad76edd687e671bdbc3cb09267f8d.png',
+    height: 0,
+    width: 0
+  },
+  video: null,
+  author: null,
+  provider: null,
+  footer: null
+}
+GUILD_TEXT : system-messages
+Carl-bot Logging: 
+MessageEmbed {
+  type: 'rich',
+  title: 'Member joined',
+  description: '<@806620400552771604> 156th to join\n' +
+    'created 8 months, 14 days and 11 hours ago',
+  url: null,
+  color: 5496236,
+  timestamp: 1634542644425,
+  fields: [],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: {
+    name: 'jayla#2521',
+    url: undefined,
+    iconURL: 'https://cdn.discordapp.com/avatars/806620400552771604/1ddad76edd687e671bdbc3cb09267f8d.webp?size=1024',
+    proxyIconURL: 'https://images-ext-1.discordapp.net/external/u77m_zYXeNBTSnX4QAaivlJs6U_wHROUzNFdfnZU1Co/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/806620400552771604/1ddad76edd687e671bdbc3cb09267f8d.webp'
+  },
+  provider: null,
+  footer: {
+    text: 'ID: 806620400552771604',
+    iconURL: undefined,
+    proxyIconURL: undefined
+  }
+}
+member undefined!
+cleanup: no messages found
+GUILD_TEXT : system-messages
+Carl-bot Logging: 
+MessageEmbed {
+  type: 'rich',
+  title: 'Member left',
+  description: '<@744567683655270432> joined 1 minute and 29 seconds ago\n' +
+    '**Roles:** <@&851071523543973928>',
+  url: null,
+  color: 16774575,
+  timestamp: 1634542715258,
+  fields: [],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: {
+    name: 'YourSenseii#0708',
+    url: undefined,
+    iconURL: 'https://cdn.discordapp.com/avatars/744567683655270432/cf5d936f4cce61da0290600b1fcc3207.webp?size=1024',
+    proxyIconURL: 'https://images-ext-1.discordapp.net/external/NjkP7u2NsjVy1WfhkDItRUrXI7govz5oAM418g4m09g/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/744567683655270432/cf5d936f4cce61da0290600b1fcc3207.webp'
+  },
+  provider: null,
+  footer: {
+    text: 'ID: 744567683655270432',
+    iconURL: undefined,
+    proxyIconURL: undefined
+  }
+}
+member undefined!
+Please wait another 97 minutes to bump DISBOARD :drool:
+GUILD_TEXT : landing-zone
+jayla: <@&836489212625682462> hii nice to meet you, you can call me jayla, i’m very new to discord and looking it make friends, i like to think i am a spiritual person, i do yoga by myself a lot and hope to enjoy it with others, i am 18 and i think i am pansexual, hope you are having a lovely day and that i am doing this right :))
+GUILD_TEXT : landing-zone-log
+Jalendu: **<@806620400552771604> wrote:**
+role <@&879317175167492156> added to <@806620400552771604>
+GUILD_TEXT : landing-zone-log
+Jalendu: <@&836489212625682462> hii nice to meet you, you can call me jayla, i’m very new to discord and looking it make friends, i like to think i am a spiritual person, i do yoga by myself a lot and hope to enjoy it with others, i am 18 and i think i am pansexual, hope you are having a lovely day and that i am doing this right :))
+GUILD_TEXT : landing-zone-log
+Jalendu: **Jalendu automod classified this as type "none" by rule "none"**
+GUILD_TEXT : system-messages
+Carl-bot Logging: 
+MessageEmbed {
+  type: 'rich',
+  title: 'Role added',
+  description: '<@&879317175167492156>',
+  url: null,
+  color: 4359924,
+  timestamp: 1634542843253,
+  fields: [],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: {
+    name: 'jayla#2521',
+    url: undefined,
+    iconURL: 'https://cdn.discordapp.com/avatars/806620400552771604/1ddad76edd687e671bdbc3cb09267f8d.webp?size=1024',
+    proxyIconURL: 'https://images-ext-1.discordapp.net/external/u77m_zYXeNBTSnX4QAaivlJs6U_wHROUzNFdfnZU1Co/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/806620400552771604/1ddad76edd687e671bdbc3cb09267f8d.webp'
+  },
+  provider: null,
+  footer: {
+    text: 'ID: 806620400552771604',
+    iconURL: undefined,
+    proxyIconURL: undefined
+  }
+}
+member undefined!
+GUILD_TEXT : landing-zone
+RGfinpsy: Yes perfect <@806620400552771604>
+role <@&836590097318019092> added to <@806620400552771604>
+__Landing zone message cleanup__
+Message by <@523463175216300042> "Yes perfect <@806620400552771604>"
+Message by <@806620400552771604> "<@&836489212625682462> hii nice to meet you, you c"
+- is from a moderator - check mentions:
+- is from a verified member - delete.
+GUILD_TEXT : system-messages
+Jalendu: Member <@806620400552771604> has been verified by <@523463175216300042>.
+role <@&851071523543973928> removed from <@806620400552771604>
+GUILD_TEXT : member-introductions
+Jalendu: 
+MessageEmbed {
+  type: 'rich',
+  title: null,
+  description: null,
+  url: null,
+  color: 65535,
+  timestamp: null,
+  fields: [
+    {
+      value: 'Please welcome <@806620400552771604>.',
+      name: '​',
+      inline: true
+    }
+  ],
+  thumbnail: {
+    url: 'https://cdn.discordapp.com/avatars/806620400552771604/1ddad76edd687e671bdbc3cb09267f8d.png',
+    proxyURL: 'https://images-ext-2.discordapp.net/external/-th624DnX20Eo9i1wBR8v8g3PslcuUstA8uqV9XLg8w/https/cdn.discordapp.com/avatars/806620400552771604/1ddad76edd687e671bdbc3cb09267f8d.png',
+    height: 0,
+    width: 0
+  },
+  image: null,
+  video: null,
+  author: null,
+  provider: null,
+  footer: null
+}
+GUILD_TEXT : landing-zone
+Jalendu: Member <@806620400552771604> has been verified. :partying_face:
+DM : undefined
+Jalendu: __Welcome to Gay+ Men Meditating.__
+
+You have been verified but please go to #roles to set your age band.
+NSFW channels are not visible to you unless you choose the 18+ age role.
+Roles are set by clicking on the appropriate emoji with the number beside it under each question.
+
+Please also look at the following channels:
+
+1. Welcome: for an overview.
+2. Channels-directory: for a guide to the channels.
+3. Etiquette: to review the rules.
+4. Member Introductions: to introduce yourself to the community (optional).
+5. Sitting times: to read what times other members sit online so that you can join them.
+6.Apollo-events also lists scheduled events.
+
+To protect your privacy, the message your wrote to request admission will have been deleted. You can introduce yourself to the group in member-introductions if you wish.
+GUILD_TEXT : system-messages
+Carl-bot Logging: 
+MessageEmbed {
+  type: 'rich',
+  title: 'Role added',
+  description: '<@&836590097318019092>',
+  url: null,
+  color: 4359924,
+  timestamp: 1634543236620,
+  fields: [],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: {
+    name: 'jayla#2521',
+    url: undefined,
+    iconURL: 'https://cdn.discordapp.com/avatars/806620400552771604/1ddad76edd687e671bdbc3cb09267f8d.webp?size=1024',
+    proxyIconURL: 'https://images-ext-1.discordapp.net/external/u77m_zYXeNBTSnX4QAaivlJs6U_wHROUzNFdfnZU1Co/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/806620400552771604/1ddad76edd687e671bdbc3cb09267f8d.webp'
+  },
+  provider: null,
+  footer: {
+    text: 'ID: 806620400552771604',
+    iconURL: undefined,
+    proxyIconURL: undefined
+  }
+}
+member undefined!
+GUILD_TEXT : member-introductions
+RGfinpsy: Welcome <@806620400552771604> 🤗
+GUILD_TEXT : member-introductions
+jayla: hiii thank you :))
+GUILD_TEXT : member-introductions
+jayla: nice to meeet you
+GUILD_TEXT : member-introductions
+RGfinpsy: Likewise 🙂
+role <@&828732299390353448> added to <@806620400552771604>
+GUILD_TEXT : system-messages
+Carl-bot Logging: 
+MessageEmbed {
+  type: 'rich',
+  title: 'Role added',
+  description: '<@&828732299390353448>',
+  url: null,
+  color: 4359924,
+  timestamp: 1634543285723,
+  fields: [],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: {
+    name: 'jayla#2521',
+    url: undefined,
+    iconURL: 'https://cdn.discordapp.com/avatars/806620400552771604/1ddad76edd687e671bdbc3cb09267f8d.webp?size=1024',
+    proxyIconURL: 'https://images-ext-1.discordapp.net/external/u77m_zYXeNBTSnX4QAaivlJs6U_wHROUzNFdfnZU1Co/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/806620400552771604/1ddad76edd687e671bdbc3cb09267f8d.webp'
+  },
+  provider: null,
+  footer: {
+    text: 'ID: 806620400552771604',
+    iconURL: undefined,
+    proxyIconURL: undefined
+  }
+}
+member undefined!
+GUILD_TEXT : member-introductions
+RGfinpsy: What type of yoga/meditation are you into
+role <@&834323701466005564> added to <@806620400552771604>
+GUILD_TEXT : system-messages
+Carl-bot Logging: 
+MessageEmbed {
+  type: 'rich',
+  title: 'Role added',
+  description: '<@&834323701466005564>',
+  url: null,
+  color: 4359924,
+  timestamp: 1634543292941,
+  fields: [],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: {
+    name: 'jayla#2521',
+    url: undefined,
+    iconURL: 'https://cdn.discordapp.com/avatars/806620400552771604/1ddad76edd687e671bdbc3cb09267f8d.webp?size=1024',
+    proxyIconURL: 'https://images-ext-1.discordapp.net/external/u77m_zYXeNBTSnX4QAaivlJs6U_wHROUzNFdfnZU1Co/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/806620400552771604/1ddad76edd687e671bdbc3cb09267f8d.webp'
+  },
+  provider: null,
+  footer: {
+    text: 'ID: 806620400552771604',
+    iconURL: undefined,
+    proxyIconURL: undefined
+  }
+}
+member undefined!
+role <@&881813694420500520> added to <@806620400552771604>
+role <@&881813802268655686> added to <@806620400552771604>
+GUILD_TEXT : system-messages
+Carl-bot Logging: 
+MessageEmbed {
+  type: 'rich',
+  title: 'Role added',
+  description: '<@&881813694420500520>',
+  url: null,
+  color: 4359924,
+  timestamp: 1634543301685,
+  fields: [],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: {
+    name: 'jayla#2521',
+    url: undefined,
+    iconURL: 'https://cdn.discordapp.com/avatars/806620400552771604/1ddad76edd687e671bdbc3cb09267f8d.webp?size=1024',
+    proxyIconURL: 'https://images-ext-1.discordapp.net/external/u77m_zYXeNBTSnX4QAaivlJs6U_wHROUzNFdfnZU1Co/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/806620400552771604/1ddad76edd687e671bdbc3cb09267f8d.webp'
+  },
+  provider: null,
+  footer: {
+    text: 'ID: 806620400552771604',
+    iconURL: undefined,
+    proxyIconURL: undefined
+  }
+}
+member undefined!
+role <@&897259252031291464> added to <@806620400552771604>
+GUILD_TEXT : system-messages
+Carl-bot Logging: 
+MessageEmbed {
+  type: 'rich',
+  title: 'Role added',
+  description: '<@&897259252031291464>',
+  url: null,
+  color: 4359924,
+  timestamp: 1634543329402,
+  fields: [],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: {
+    name: 'jayla#2521',
+    url: undefined,
+    iconURL: 'https://cdn.discordapp.com/avatars/806620400552771604/1ddad76edd687e671bdbc3cb09267f8d.webp?size=1024',
+    proxyIconURL: 'https://images-ext-1.discordapp.net/external/u77m_zYXeNBTSnX4QAaivlJs6U_wHROUzNFdfnZU1Co/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/806620400552771604/1ddad76edd687e671bdbc3cb09267f8d.webp'
+  },
+  provider: null,
+  footer: {
+    text: 'ID: 806620400552771604',
+    iconURL: undefined,
+    proxyIconURL: undefined
+  }
+}
+member undefined!
+qotd countdown days 3.8837849074074073
+Please wait another 87 minutes to bump DISBOARD :drool:
+
+__Newcomers reminder and exclusion.__
+
+Hanno --> reminded : 6.4 days.
+mmmmm --> reminded : 5.9 days.
+Ryft YT --> reminded : 6.2 days.
+moonman5 --> waiting : 0.1 days.
+TwinkieBoy --> reminded : 2.4 days.
+Hendrick --> reminded : 3.9 days.
+
+* Indicates that the member wrote a message in #landing-zone.
++ Indicates that the member is muted.
+# Indicates that the member was previously a verified member.
+cleanup: no messages found
+GUILD_TEXT : member-introductions
+jayla: most sorts really, i like well-being and stuff like that, i try to do 20 mins of either each day
+GUILD_TEXT : member-introductions
+jayla: yourself?
+role <@&888303776451149844> added to <@806620400552771604>
+GUILD_TEXT : system-messages
+Carl-bot Logging: 
+MessageEmbed {
+  type: 'rich',
+  title: 'Role added',
+  description: '<@&888303776451149844>',
+  url: null,
+  color: 4359924,
+  timestamp: 1634543367725,
+  fields: [],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: {
+    name: 'jayla#2521',
+    url: undefined,
+    iconURL: 'https://cdn.discordapp.com/avatars/806620400552771604/1ddad76edd687e671bdbc3cb09267f8d.webp?size=1024',
+    proxyIconURL: 'https://images-ext-1.discordapp.net/external/u77m_zYXeNBTSnX4QAaivlJs6U_wHROUzNFdfnZU1Co/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/806620400552771604/1ddad76edd687e671bdbc3cb09267f8d.webp'
+  },
+  provider: null,
+  footer: {
+    text: 'ID: 806620400552771604',
+    iconURL: undefined,
+    proxyIconURL: undefined
+  }
+}
+member undefined!
+GUILD_TEXT : member-introductions
+RGfinpsy: Very good. I do about 45 mins of meditation, every evening after some workout or cardio
+GUILD_TEXT : member-introductions
+jayla: oh wow that is impressive well done ✌️
+GUILD_TEXT : member-introductions
+jayla: also i am new to discord so apologies if i mess stuff up took me an hour to change my profile picture
+GUILD_TEXT : member-introductions
+RGfinpsy: 😂 dw its a little complex for everyone in the beginning.
+GUILD_TEXT : member-introductions
+jayla: it’s so overwhelming i will be honest
+GUILD_TEXT : member-introductions
+RGfinpsy: True 😄 you will eventually understand it and love it
+GUILD_TEXT : member-introductions
+jayla: here is hoping 😂😂
+GUILD_TEXT : member-introductions
+RGfinpsy: This server is relatively small so you can explore stuff here. We don't mind. If you have any questions ask me or <@679465390841135126>
+GUILD_TEXT : member-introductions
+jayla: ohh thank you very much, if i do i will msg right away :))
+GUILD_TEXT : member-introductions
+RGfinpsy: Awesome 😊
+Please wait another 77 minutes to bump DISBOARD :drool:
+Please wait another 67 minutes to bump DISBOARD :drool:
+qotd countdown days 3.862951400462963
+Please wait another 57 minutes to bump DISBOARD :drool:
+Please wait another 47 minutes to bump DISBOARD :drool:
+Please wait another 37 minutes to bump DISBOARD :drool:
+qotd countdown days 3.8421180555555554
+Please wait another 27 minutes to bump DISBOARD :drool:
+Please wait another 17 minutes to bump DISBOARD :drool:
+Please wait another 7 minutes to bump DISBOARD :drool:
+qotd countdown days 3.8212846643518517
+Time to bump DISBOARD (!d bump) :scream:
+GUILD_TEXT : bot-commands
+Jalendu: Time to bump DISBOARD (!d bump) :scream:
+GUILD_TEXT : bot-commands
+RGfinpsy: !d bump
+disboard bump by RGfinpsy
+GUILD_TEXT : bot-commands
+DISBOARD: 
+MessageEmbed {
+  type: 'rich',
+  title: 'DISBOARD: The Public Server List',
+  description: '<@523463175216300042> Bump done! :thumbsup:\n' +
+    'Check it out [on DISBOARD](https://disboard.org/server/827888294100074516).',
+  url: 'https://disboard.org/',
+  color: 2406327,
+  timestamp: null,
+  fields: [],
+  thumbnail: null,
+  image: {
+    url: 'https://disboard.org/images/bot-command-image-bump.png',
+    proxyURL: 'https://images-ext-1.discordapp.net/external/tAuRcs-FCy2M8OaTS9Ims62J1vrFiviahjBDtpZrrBs/https/disboard.org/images/bot-command-image-bump.png',
+    height: 200,
+    width: 800
+  },
+  video: null,
+  author: null,
+  provider: null,
+  footer: null
+}
+Bump done! :thumbsup: success
+successfully bumped
+GUILD_TEXT : bot-commands
+Jalendu: Thanks RGfinpsy :heart:
+:green_heart::green_heart::green_heart::blue_heart::blue_heart::blue_heart::blue_heart::purple_heart::purple_heart::purple_heart::purple_heart:
+Please wait another 113 minutes to bump DISBOARD :drool:
+Please wait another 103 minutes to bump DISBOARD :drool:
+GUILD_TEXT : support-and-healing
+Thoron: Maybe I could share an experience.
+My brother and I are on good terms not really close but we also live half the state away from each other. He is the type of son every family wants, driven, great job, huge corporate car, owns a big house (lots of status symbols) and knows important people, works with millions, lots of responsibility, lots of rewards. Smoker, drinker, good eater, but he could afford it and everyone praised him for his accomplishments.
+In a way I always envied him, for having such a clear path in life, where I stumbled.
+I am on the other hand the black sheep, so to say, the son nobody likes to talk about with acquaintances and peers (Have been told that to my face a lot of times).
+I went to study a subject that I liked, but would never land me a good paying job, I quit a secure livelong position with the state, when my health showed me it was not right, went freelancer. I was poor for over a decade, barely scraping by needing again and again benefits just to pay for my living. But I had a few meaningful friendships. A great SO, with whom I can go through hell and back and it would still be the best time of our lives, because we are together and nothing else is of any relevance. I grew a lot spiritually, imo. Taught meditation techniques and wrote guided meditations and imaginary journeys, worked through trauma ||(assault and sexual assault)|| I am nowhere done or have arrived anywhere, but the journey is satisfying.
+GUILD_TEXT : support-and-healing
+Thoron: A year ago my brother got diagnosed with a progressive lung disease, that does not react to any of the experimental treatments and will kill him in a few years, suffocating him.
+We had a long talk a few weeks ago and he told me how much he always had envied me, that I was able to withstand the pressure from society to go against the expectations and follow my heart and my desires. I never knew and never thought he would see me like that, when the bigger consensus was, that I am a failure.
+He had always wished he had the strength he saw in me for making my own path.
+
+tl,dr: societies expectations and peer pressure are not guidelines but sirens, beware!
+qotd countdown days 3.8004513194444445
+
+__Newcomers reminder and exclusion.__
+
+Hanno --> reminded : 6.5 days.
+mmmmm --> reminded : 5.9 days.
+Ryft YT --> reminded : 6.3 days.
+moonman5 --> waiting : 0.2 days.
+TwinkieBoy --> reminded : 2.5 days.
+Hendrick --> reminded : 3.9 days.
+
+* Indicates that the member wrote a message in #landing-zone.
++ Indicates that the member is muted.
+# Indicates that the member was previously a verified member.
+Please wait another 93 minutes to bump DISBOARD :drool:
+cleanup: no messages found
+Please wait another 83 minutes to bump DISBOARD :drool:
+Please wait another 73 minutes to bump DISBOARD :drool:
+qotd countdown days 3.7796176041666665
+Please wait another 63 minutes to bump DISBOARD :drool:
+Please wait another 53 minutes to bump DISBOARD :drool:
+Please wait another 43 minutes to bump DISBOARD :drool:
+GUILD_TEXT : system-messages
+violetsaregae: 
+role <@&851071523543973928> added to <@704756164910645289>
+GUILD_TEXT : system-messages
+Jalendu: 
+MessageEmbed {
+  type: 'rich',
+  title: 'violetsaregae',
+  description: null,
+  url: null,
+  color: 65535,
+  timestamp: null,
+  fields: [],
+  thumbnail: null,
+  image: {
+    url: 'https://cdn.discordapp.com/avatars/704756164910645289/251c9a335731c82b7673ea8fb80cb96e.png?size=2048',
+    proxyURL: 'https://images-ext-1.discordapp.net/external/pUUyxPY1zj9CFM6y6Xd-0UmtiKnumnELK3OYIj-KogE/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/704756164910645289/251c9a335731c82b7673ea8fb80cb96e.png',
+    height: 0,
+    width: 0
+  },
+  video: null,
+  author: null,
+  provider: null,
+  footer: null
+}
+GUILD_TEXT : system-messages
+Carl-bot Logging: 
+MessageEmbed {
+  type: 'rich',
+  title: 'Member joined',
+  description: '<@704756164910645289> 156th to join\n' +
+    'created 1 year, 5 months and 19 days ago',
+  url: null,
+  color: 5496236,
+  timestamp: 1634553868922,
+  fields: [],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: {
+    name: 'violetsaregae#5446',
+    url: undefined,
+    iconURL: 'https://cdn.discordapp.com/avatars/704756164910645289/251c9a335731c82b7673ea8fb80cb96e.webp?size=1024',
+    proxyIconURL: 'https://images-ext-1.discordapp.net/external/8Ndqp9kNiggHlLXsj8-ukH-pClzEFsz_L3ESRs05Rxs/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/704756164910645289/251c9a335731c82b7673ea8fb80cb96e.webp'
+  },
+  provider: null,
+  footer: {
+    text: 'ID: 704756164910645289',
+    iconURL: undefined,
+    proxyIconURL: undefined
+  }
+}
+member undefined!
+GUILD_TEXT : landing-zone
+violetsaregae: <@&836489212625682462>
+role <@&879317175167492156> added to <@704756164910645289>
+GUILD_TEXT : landing-zone-log
+Jalendu: **<@704756164910645289> wrote:**
+GUILD_TEXT : landing-zone-log
+Jalendu: <@&836489212625682462>
+GUILD_TEXT : landing-zone-log
+Jalendu: **Jalendu automod classified this as type "none" by rule "none"**
+GUILD_TEXT : system-messages
+Carl-bot Logging: 
+MessageEmbed {
+  type: 'rich',
+  title: 'Role added',
+  description: '<@&879317175167492156>',
+  url: null,
+  color: 4359924,
+  timestamp: 1634553976964,
+  fields: [],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: {
+    name: 'violetsaregae#5446',
+    url: undefined,
+    iconURL: 'https://cdn.discordapp.com/avatars/704756164910645289/251c9a335731c82b7673ea8fb80cb96e.webp?size=1024',
+    proxyIconURL: 'https://images-ext-1.discordapp.net/external/8Ndqp9kNiggHlLXsj8-ukH-pClzEFsz_L3ESRs05Rxs/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/704756164910645289/251c9a335731c82b7673ea8fb80cb96e.webp'
+  },
+  provider: null,
+  footer: {
+    text: 'ID: 704756164910645289',
+    iconURL: undefined,
+    proxyIconURL: undefined
+  }
+}
+member undefined!
+qotd countdown days 3.7587842592592593
+Please wait another 33 minutes to bump DISBOARD :drool:
+GUILD_TEXT : landing-zone
+violetsaregae: 1) iam gay 18 studying at DU
+2) I practice meditation almost everyday
+3) to know more about yoga
+GUILD_TEXT : system-messages
+Jalendu: <@704756164910645289> has been verified by rule "practice meditation".
+GUILD_TEXT : member-introductions
+Jalendu: 
+MessageEmbed {
+  type: 'rich',
+  title: null,
+  description: null,
+  url: null,
+  color: 65535,
+  timestamp: null,
+  fields: [
+    {
+      value: 'Please welcome <@704756164910645289>.',
+      name: '​',
+      inline: true
+    }
+  ],
+  thumbnail: {
+    url: 'https://cdn.discordapp.com/avatars/704756164910645289/251c9a335731c82b7673ea8fb80cb96e.png',
+    proxyURL: 'https://images-ext-1.discordapp.net/external/zeJXD7Ua33UJiWifDNicGlB1GbkCYvTpEG1j0EJQa4s/https/cdn.discordapp.com/avatars/704756164910645289/251c9a335731c82b7673ea8fb80cb96e.png',
+    height: 0,
+    width: 0
+  },
+  image: null,
+  video: null,
+  author: null,
+  provider: null,
+  footer: null
+}
+GUILD_TEXT : landing-zone-log
+Jalendu: **<@704756164910645289> wrote:**
+role <@&836590097318019092> added to <@704756164910645289>
+role <@&851071523543973928> removed from <@704756164910645289>
+GUILD_TEXT : system-messages
+Jalendu: Their message was:
+1) iam gay 18 studying at DU
+2) I practice meditation almost everyday
+3) to know more about yoga
+GUILD_TEXT : landing-zone-log
+Jalendu: 1) iam gay 18 studying at DU
+2) I practice meditation almost everyday
+3) to know more about yoga
+DM : undefined
+Jalendu: __Welcome to Gay+ Men Meditating.__
+
+You have been verified but please go to #roles to set your age band.
+NSFW channels are not visible to you unless you choose the 18+ age role.
+Roles are set by clicking on the appropriate emoji with the number beside it under each question.
+
+Please also look at the following channels:
+
+1. Welcome: for an overview.
+2. Channels-directory: for a guide to the channels.
+3. Etiquette: to review the rules.
+4. Member Introductions: to introduce yourself to the community (optional).
+5. Sitting times: to read what times other members sit online so that you can join them.
+6.Apollo-events also lists scheduled events.
+
+To protect your privacy, the message your wrote to request admission will have been deleted. You can introduce yourself to the group in member-introductions if you wish.
+GUILD_TEXT : landing-zone-log
+Jalendu: **Jalendu automod classified this as type "verify" by rule "practice meditation"**
+GUILD_TEXT : landing-zone-log
+Jalendu: **<@704756164910645289> was verified and their message was deleted.**
+GUILD_TEXT : system-messages
+Carl-bot Logging: 
+MessageEmbed {
+  type: 'rich',
+  title: 'Role added',
+  description: '<@&836590097318019092>',
+  url: null,
+  color: 4359924,
+  timestamp: 1634554138902,
+  fields: [],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: {
+    name: 'violetsaregae#5446',
+    url: undefined,
+    iconURL: 'https://cdn.discordapp.com/avatars/704756164910645289/251c9a335731c82b7673ea8fb80cb96e.webp?size=1024',
+    proxyIconURL: 'https://images-ext-1.discordapp.net/external/8Ndqp9kNiggHlLXsj8-ukH-pClzEFsz_L3ESRs05Rxs/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/704756164910645289/251c9a335731c82b7673ea8fb80cb96e.webp'
+  },
+  provider: null,
+  footer: {
+    text: 'ID: 704756164910645289',
+    iconURL: undefined,
+    proxyIconURL: undefined
+  }
+}
+member undefined!
+role <@&828732299390353448> added to <@704756164910645289>
+GUILD_TEXT : system-messages
+Carl-bot Logging: 
+MessageEmbed {
+  type: 'rich',
+  title: 'Role added',
+  description: '<@&828732299390353448>',
+  url: null,
+  color: 4359924,
+  timestamp: 1634554542605,
+  fields: [],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: {
+    name: 'violetsaregae#5446',
+    url: undefined,
+    iconURL: 'https://cdn.discordapp.com/avatars/704756164910645289/251c9a335731c82b7673ea8fb80cb96e.webp?size=1024',
+    proxyIconURL: 'https://images-ext-1.discordapp.net/external/8Ndqp9kNiggHlLXsj8-ukH-pClzEFsz_L3ESRs05Rxs/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/704756164910645289/251c9a335731c82b7673ea8fb80cb96e.webp'
+  },
+  provider: null,
+  footer: {
+    text: 'ID: 704756164910645289',
+    iconURL: undefined,
+    proxyIconURL: undefined
+  }
+}
+member undefined!
+role <@&828732070280953896> removed from <@704756164910645289>
+GUILD_TEXT : system-messages
+Carl-bot Logging: 
+MessageEmbed {
+  type: 'rich',
+  title: 'Roles updated',
+  description: '**Added:** <@&828732299390353448>\n**Removed:** <@&828732070280953896>',
+  url: null,
+  color: 4359924,
+  timestamp: 1634554547535,
+  fields: [],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: {
+    name: 'violetsaregae#5446',
+    url: undefined,
+    iconURL: 'https://cdn.discordapp.com/avatars/704756164910645289/251c9a335731c82b7673ea8fb80cb96e.webp?size=1024',
+    proxyIconURL: 'https://images-ext-1.discordapp.net/external/8Ndqp9kNiggHlLXsj8-ukH-pClzEFsz_L3ESRs05Rxs/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/704756164910645289/251c9a335731c82b7673ea8fb80cb96e.webp'
+  },
+  provider: null,
+  footer: {
+    text: 'ID: 704756164910645289',
+    iconURL: undefined,
+    proxyIconURL: undefined
+  }
+}
+member undefined!
+role <@&828732299390353448> added to <@704756164910645289>
+GUILD_TEXT : system-messages
+Carl-bot Logging: 
+MessageEmbed {
+  type: 'rich',
+  title: 'Role added',
+  description: '<@&828732299390353448>',
+  url: null,
+  color: 4359924,
+  timestamp: 1634554552408,
+  fields: [],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: {
+    name: 'violetsaregae#5446',
+    url: undefined,
+    iconURL: 'https://cdn.discordapp.com/avatars/704756164910645289/251c9a335731c82b7673ea8fb80cb96e.webp?size=1024',
+    proxyIconURL: 'https://images-ext-1.discordapp.net/external/8Ndqp9kNiggHlLXsj8-ukH-pClzEFsz_L3ESRs05Rxs/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/704756164910645289/251c9a335731c82b7673ea8fb80cb96e.webp'
+  },
+  provider: null,
+  footer: {
+    text: 'ID: 704756164910645289',
+    iconURL: undefined,
+    proxyIconURL: undefined
+  }
+}
+member undefined!
+role <@&834323445008564234> added to <@704756164910645289>
+GUILD_TEXT : system-messages
+Carl-bot Logging: 
+MessageEmbed {
+  type: 'rich',
+  title: 'Role added',
+  description: '<@&834323445008564234>',
+  url: null,
+  color: 4359924,
+  timestamp: 1634554560318,
+  fields: [],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: {
+    name: 'violetsaregae#5446',
+    url: undefined,
+    iconURL: 'https://cdn.discordapp.com/avatars/704756164910645289/251c9a335731c82b7673ea8fb80cb96e.webp?size=1024',
+    proxyIconURL: 'https://images-ext-1.discordapp.net/external/8Ndqp9kNiggHlLXsj8-ukH-pClzEFsz_L3ESRs05Rxs/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/704756164910645289/251c9a335731c82b7673ea8fb80cb96e.webp'
+  },
+  provider: null,
+  footer: {
+    text: 'ID: 704756164910645289',
+    iconURL: undefined,
+    proxyIconURL: undefined
+  }
+}
+member undefined!
+role <@&881682467545833543> added to <@704756164910645289>
+GUILD_TEXT : system-messages
+Carl-bot Logging: 
+MessageEmbed {
+  type: 'rich',
+  title: 'Role added',
+  description: '<@&881682467545833543>',
+  url: null,
+  color: 4359924,
+  timestamp: 1634554565755,
+  fields: [],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: {
+    name: 'violetsaregae#5446',
+    url: undefined,
+    iconURL: 'https://cdn.discordapp.com/avatars/704756164910645289/251c9a335731c82b7673ea8fb80cb96e.webp?size=1024',
+    proxyIconURL: 'https://images-ext-1.discordapp.net/external/8Ndqp9kNiggHlLXsj8-ukH-pClzEFsz_L3ESRs05Rxs/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/704756164910645289/251c9a335731c82b7673ea8fb80cb96e.webp'
+  },
+  provider: null,
+  footer: {
+    text: 'ID: 704756164910645289',
+    iconURL: undefined,
+    proxyIconURL: undefined
+  }
+}
+member undefined!
+role <@&881813694420500520> added to <@704756164910645289>
+role <@&881813802268655686> added to <@704756164910645289>
+GUILD_TEXT : system-messages
+Carl-bot Logging: 
+MessageEmbed {
+  type: 'rich',
+  title: 'Role added',
+  description: '<@&881813694420500520>',
+  url: null,
+  color: 4359924,
+  timestamp: 1634554571745,
+  fields: [],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: {
+    name: 'violetsaregae#5446',
+    url: undefined,
+    iconURL: 'https://cdn.discordapp.com/avatars/704756164910645289/251c9a335731c82b7673ea8fb80cb96e.webp?size=1024',
+    proxyIconURL: 'https://images-ext-1.discordapp.net/external/8Ndqp9kNiggHlLXsj8-ukH-pClzEFsz_L3ESRs05Rxs/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/704756164910645289/251c9a335731c82b7673ea8fb80cb96e.webp'
+  },
+  provider: null,
+  footer: {
+    text: 'ID: 704756164910645289',
+    iconURL: undefined,
+    proxyIconURL: undefined
+  }
+}
+member undefined!
+Please wait another 23 minutes to bump DISBOARD :drool:
+Please wait another 13 minutes to bump DISBOARD :drool:
+qotd countdown days 3.7379506944444443
+Please wait another 3 minutes to bump DISBOARD :drool:
+GUILD_TEXT : apollo-events
+Apollo: 
+MessageEmbed {
+  type: 'rich',
+  title: 'Silent Meditation in the Open Room',
+  description: null,
+  url: null,
+  color: 15844367,
+  timestamp: null,
+  fields: [
+    {
+      value: '<t:1634640000:F> - <t:1634642400:t>\n' +
+        '<:countdown:878391707727716413> <t:1634640000:R>',
+      name: 'Time',
+      inline: false
+    },
+    {
+      value: '[Add to Google Calendar](http://www.google.com/calendar/event?action=TEMPLATE&text=Silent+Meditation+in+the+Open+Room&details=&location=&dates=20211019T104000Z/20211019T112000Z)',
+      name: 'Links',
+      inline: false
+    },
+    {
+      value: '-',
+      name: '<:accepted:713124484436983971> Accepted',
+      inline: true
+    },
+    {
+      value: '-',
+      name: '<:declined:713124484688642068> Declined',
+      inline: true
+    },
+    {
+      value: '-',
+      name: '<:tentative:713214962641666109> Tentative',
+      inline: true
+    }
+  ],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: null,
+  provider: null,
+  footer: {
+    text: 'Created by marq_andrew • Repeats daily',
+    iconURL: undefined,
+    proxyIconURL: undefined
+  }
+}
+GUILD_TEXT : member-introductions
+RGfinpsy: Welcome <@704756164910645289> 🤗
+GUILD_TEXT : member-introductions
+violetsaregae: Hii @everyone thank you!
+Time to bump DISBOARD (!d bump) :scream:
+GUILD_TEXT : bot-commands
+Jalendu: Time to bump DISBOARD (!d bump) :scream:
+Please bump DISBOARD (!d bump). I've been waiting for the bump for 17 minutes :pleading_face:
+GUILD_TEXT : bot-commands
+Thoron: !d bump
+disboard bump by Thoron
+GUILD_TEXT : bot-commands
+DISBOARD: 
+MessageEmbed {
+  type: 'rich',
+  title: 'DISBOARD: The Public Server List',
+  description: '<@392939068536782848> Bump done! :thumbsup:\n' +
+    'Check it out [on DISBOARD](https://disboard.org/server/827888294100074516).',
+  url: 'https://disboard.org/',
+  color: 2406327,
+  timestamp: null,
+  fields: [],
+  thumbnail: null,
+  image: {
+    url: 'https://disboard.org/images/bot-command-image-bump.png',
+    proxyURL: 'https://images-ext-1.discordapp.net/external/tAuRcs-FCy2M8OaTS9Ims62J1vrFiviahjBDtpZrrBs/https/disboard.org/images/bot-command-image-bump.png',
+    height: 200,
+    width: 800
+  },
+  video: null,
+  author: null,
+  provider: null,
+  footer: null
+}
+Bump done! :thumbsup: success
+successfully bumped
+GUILD_TEXT : bot-commands
+Jalendu: Thanks Thoron :kiss_mm:
+:purple_heart:
+
+__Newcomers reminder and exclusion.__
+
+Hanno --> reminded : 6.6 days.
+mmmmm --> reminded : 6.0 days.
+Ryft YT --> reminded : 6.4 days.
+moonman5 --> waiting : 0.3 days.
+TwinkieBoy --> reminded : 2.6 days.
+Hendrick --> reminded : 4.0 days.
+
+* Indicates that the member wrote a message in #landing-zone.
++ Indicates that the member is muted.
+# Indicates that the member was previously a verified member.
+qotd countdown days 3.7171171643518517
+Please wait another 118 minutes to bump DISBOARD :drool:
+__Landing zone message cleanup__
+Message by <@704756164910645289> "1) iam gay 18 studying at DU
+2) I practice meditat"
+Message by <@704756164910645289> "<@&836489212625682462>"
+- is from a verified member - delete.
+- is from a verified member - delete.
+GUILD_TEXT : support-and-healing
+RGfinpsy: sorry about your brother. I hope they find some treatment for him. 
+
+Thankyou for replying 💞
+role <@&888303776451149844> added to <@704756164910645289>
+GUILD_TEXT : system-messages
+Carl-bot Logging: 
+MessageEmbed {
+  type: 'rich',
+  title: 'Role added',
+  description: '<@&888303776451149844>',
+  url: null,
+  color: 4359924,
+  timestamp: 1634557746991,
+  fields: [],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: {
+    name: 'violetsaregae#5446',
+    url: undefined,
+    iconURL: 'https://cdn.discordapp.com/avatars/704756164910645289/251c9a335731c82b7673ea8fb80cb96e.webp?size=1024',
+    proxyIconURL: 'https://images-ext-1.discordapp.net/external/8Ndqp9kNiggHlLXsj8-ukH-pClzEFsz_L3ESRs05Rxs/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/704756164910645289/251c9a335731c82b7673ea8fb80cb96e.webp'
+  },
+  provider: null,
+  footer: {
+    text: 'ID: 704756164910645289',
+    iconURL: undefined,
+    proxyIconURL: undefined
+  }
+}
+member undefined!
+GUILD_TEXT : member-introductions
+RGfinpsy: Where in DU ? <@704756164910645289>
+GUILD_TEXT : member-introductions
+violetsaregae: Dm
+Please wait another 108 minutes to bump DISBOARD :drool:
+Please wait another 98 minutes to bump DISBOARD :drool:
+qotd countdown days 3.69628369212963
+Please wait another 88 minutes to bump DISBOARD :drool:
+GUILD_TEXT : video-channel-logging
+Jalendu: ```Voice session in nsfw-nude-meditation-room has ended.
+Member          Joined    Duration  Camera  %
+davidlynn#6918  12:03:21  15:34     15:34   100.00%```
+Please wait another 78 minutes to bump DISBOARD :drool:
+GUILD_TEXT : support-and-healing
+violetsaregae: That was sad and inspiring at the same time. Thanks for sharing this.
+Please wait another 68 minutes to bump DISBOARD :drool:
+qotd countdown days 3.6754503587962963
+Please wait another 58 minutes to bump DISBOARD :drool:
+GUILD_TEXT : chat-general
+RGfinpsy: <@&897259252031291464> ^^^ if anyone wants to contribute to this question of the week, please go ahead.
+Please wait another 48 minutes to bump DISBOARD :drool:
+Please wait another 38 minutes to bump DISBOARD :drool:
+qotd countdown days 3.654616898148148
+Please wait another 28 minutes to bump DISBOARD :drool:
+Please wait another 18 minutes to bump DISBOARD :drool:
+GUILD_TEXT : apollo-events
+Apollo: 
+MessageEmbed {
+  type: 'rich',
+  title: 'Nightly meditation in the nsfw-nude-meditation-room',
+  description: null,
+  url: null,
+  color: 15844367,
+  timestamp: null,
+  fields: [
+    {
+      value: '<t:1634641200:F> - <t:1634643000:t>\n' +
+        '<:countdown:878391707727716413> <t:1634641200:R>',
+      name: 'Time',
+      inline: false
+    },
+    {
+      value: '[Add to Google Calendar](http://www.google.com/calendar/event?action=TEMPLATE&text=Nightly+meditation+in+the+nsfw-nude-meditation-room&details=&location=&dates=20211019T110000Z/20211019T113000Z)',
+      name: 'Links',
+      inline: false
+    },
+    {
+      value: '-',
+      name: '<:accepted:713124484436983971> Accepted',
+      inline: true
+    },
+    {
+      value: '-',
+      name: '<:declined:713124484688642068> Declined',
+      inline: true
+    },
+    {
+      value: '-',
+      name: '<:tentative:713214962641666109> Tentative',
+      inline: true
+    }
+  ],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: null,
+  provider: null,
+  footer: {
+    text: 'Created by marq_andrew • Repeats daily',
+    iconURL: undefined,
+    proxyIconURL: undefined
+  }
+}
+Please wait another 8 minutes to bump DISBOARD :drool:
+
+__Newcomers reminder and exclusion.__
+
+Hanno --> reminded : 6.7 days.
+mmmmm --> reminded : 6.1 days.
+Ryft YT --> reminded : 6.5 days.
+moonman5 --> waiting : 0.4 days.
+TwinkieBoy --> reminded : 2.7 days.
+Hendrick --> reminded : 4.1 days.
+
+* Indicates that the member wrote a message in #landing-zone.
++ Indicates that the member is muted.
+# Indicates that the member was previously a verified member.
+qotd countdown days 3.633783576388889
+cleanup: no messages found
+Time to bump DISBOARD (!d bump) :scream:
+GUILD_TEXT : bot-commands
+Jalendu: Time to bump DISBOARD (!d bump) :scream:
+GUILD_TEXT : bot-commands
+RGfinpsy: !d bump
+disboard bump by RGfinpsy
+GUILD_TEXT : bot-commands
+DISBOARD: 
+MessageEmbed {
+  type: 'rich',
+  title: 'DISBOARD: The Public Server List',
+  description: '<@523463175216300042> Bump done! :thumbsup:\n' +
+    'Check it out [on DISBOARD](https://disboard.org/server/827888294100074516).',
+  url: 'https://disboard.org/',
+  color: 2406327,
+  timestamp: null,
+  fields: [],
+  thumbnail: null,
+  image: {
+    url: 'https://disboard.org/images/bot-command-image-bump.png',
+    proxyURL: 'https://images-ext-1.discordapp.net/external/tAuRcs-FCy2M8OaTS9Ims62J1vrFiviahjBDtpZrrBs/https/disboard.org/images/bot-command-image-bump.png',
+    height: 200,
+    width: 800
+  },
+  video: null,
+  author: null,
+  provider: null,
+  footer: null
+}
+Bump done! :thumbsup: success
+successfully bumped
+GUILD_TEXT : bot-commands
+Jalendu: Thanks RGfinpsy :rose:
+:green_heart::green_heart::green_heart::green_heart:
+Please wait another 114 minutes to bump DISBOARD :drool:
+Please wait another 104 minutes to bump DISBOARD :drool:
+qotd countdown days 3.612950150462963
+Please wait another 94 minutes to bump DISBOARD :drool:
+Please wait another 84 minutes to bump DISBOARD :drool:
+Please wait another 74 minutes to bump DISBOARD :drool:
+GUILD_TEXT : video-channel-logging
+Jalendu: ```Voice session in nsfw-nude-meditation-room has ended.
+Member          Joined    Duration  Camera  %
+davidlynn#6918  14:27:20  15:45     15:45   100.00%```
+qotd countdown days 3.5921168171296296
+Please wait another 64 minutes to bump DISBOARD :drool:
+Please wait another 54 minutes to bump DISBOARD :drool:
+Please wait another 44 minutes to bump DISBOARD :drool:
+qotd countdown days 3.5712833101851853
+Please wait another 34 minutes to bump DISBOARD :drool:
+Please wait another 24 minutes to bump DISBOARD :drool:
+Please wait another 14 minutes to bump DISBOARD :drool:
+
+__Newcomers reminder and exclusion.__
+
+Hanno --> reminded : 6.8 days.
+mmmmm --> reminded : 6.2 days.
+Ryft YT --> reminded : 6.6 days.
+moonman5 --> waiting : 0.5 days.
+TwinkieBoy --> reminded : 2.7 days.
+Hendrick --> reminded : 4.2 days.
+
+* Indicates that the member wrote a message in #landing-zone.
++ Indicates that the member is muted.
+# Indicates that the member was previously a verified member.
+qotd countdown days 3.550449976851852
+cleanup: no messages found
+Please wait another 4 minutes to bump DISBOARD :drool:
+Time to bump DISBOARD (!d bump) :scream:
+GUILD_TEXT : bot-commands
+Jalendu: Time to bump DISBOARD (!d bump) :scream:
+Please bump DISBOARD (!d bump). I've been waiting for the bump for 16 minutes :pleading_face:
+qotd countdown days 3.5296165162037036
+Please bump DISBOARD (!d bump). I've been waiting for the bump for 26 minutes :pleading_face:
+GUILD_TEXT : video-channel-logging
+Jalendu: ```Voice session in nsfw-nude-meditation-room has ended.
+Member          Joined    Duration  Camera  %
+Carlos RH#6066  16:20:24  7:16      7:16    100.00%```
+GUILD_TEXT : selfies
+Carlos RH: 
+Please bump DISBOARD (!d bump). I've been waiting for the bump for 36 minutes :pleading_face:
+GUILD_TEXT : selfies
+Carlos RH: The studious meditator. Happy Monday❣
+GUILD_TEXT : chat-general
+nonmas: Missing Rishikesh and Haridwar here...
+And Uttrakhand in general.
+GUILD_TEXT : chat-general
+nonmas: Ardh Kumbh Mela in Haridwar, April 2016
+Please bump DISBOARD (!d bump). I've been waiting for the bump for 46 minutes :pleading_face:
+qotd countdown days 3.50878318287037
+Please bump DISBOARD (!d bump). I've been waiting for the bump for 56 minutes :pleading_face:
+Please bump DISBOARD (!d bump). I've been waiting for the bump for 66 minutes :pleading_face:
+GUILD_TEXT : bot-commands
+marq_andrew: !d bump
+disboard bump by marq_andrew
+GUILD_TEXT : bot-commands
+DISBOARD: 
+MessageEmbed {
+  type: 'rich',
+  title: 'DISBOARD: The Public Server List',
+  description: '<@679465390841135126> Bump done! :thumbsup:\n' +
+    'Check it out [on DISBOARD](https://disboard.org/server/827888294100074516).',
+  url: 'https://disboard.org/',
+  color: 2406327,
+  timestamp: null,
+  fields: [],
+  thumbnail: null,
+  image: {
+    url: 'https://disboard.org/images/bot-command-image-bump.png',
+    proxyURL: 'https://images-ext-1.discordapp.net/external/tAuRcs-FCy2M8OaTS9Ims62J1vrFiviahjBDtpZrrBs/https/disboard.org/images/bot-command-image-bump.png',
+    height: 200,
+    width: 800
+  },
+  video: null,
+  author: null,
+  provider: null,
+  footer: null
+}
+Bump done! :thumbsup: success
+successfully bumped
+GUILD_TEXT : bot-commands
+Jalendu: Thanks marq_andrew :heart_exclamation:
+:green_heart::green_heart::green_heart::blue_heart::blue_heart::purple_heart::purple_heart:
+Please wait another 115 minutes to bump DISBOARD :drool:
+qotd countdown days 3.4879496875
+Please wait another 105 minutes to bump DISBOARD :drool:
+Please wait another 95 minutes to bump DISBOARD :drool:
+Please wait another 85 minutes to bump DISBOARD :drool:
+
+__Newcomers reminder and exclusion.__
+
+Hanno --> reminded : 6.9 days.
+mmmmm --> reminded : 6.3 days.
+Ryft YT --> reminded : 6.7 days.
+moonman5 --> waiting : 0.5 days.
+TwinkieBoy --> reminded : 2.8 days.
+Hendrick --> reminded : 4.3 days.
+
+* Indicates that the member wrote a message in #landing-zone.
++ Indicates that the member is muted.
+# Indicates that the member was previously a verified member.
+qotd countdown days 3.4671163541666665
+cleanup: no messages found
+Please wait another 75 minutes to bump DISBOARD :drool:
+Please wait another 65 minutes to bump DISBOARD :drool:
+GUILD_TEXT : video-channel-logging
+Jalendu: ```Voice session in open-meditation-room has ended.
+Member            Joined    Duration  Camera  %
+marq_andrew#2607  17:20:35  40:23     40:19   99.83%
+Bryan_21#9933     17:25:15  24:13     24:09   99.73%```
+GUILD_TEXT : landing-zone-log
+marq_andrew: /data add verify i am a spiritual person
+GUILD_TEXT : landing-zone-log
+Jalendu: 66: i am a spiritual person
+GUILD_TEXT : landing-zone-log
+Jalendu: <@679465390841135126> added i am a spiritual person to verify
+GUILD_TEXT : landing-zone-log
+marq_andrew: /data add verify i do yoga by myself
+GUILD_TEXT : landing-zone-log
+Jalendu: 67: i do yoga by myself
+GUILD_TEXT : landing-zone-log
+Jalendu: <@679465390841135126> added i do yoga by myself to verify
+GUILD_TEXT : test_landing-zone
+marq_andrew: /datacheck
+GUILD_TEXT : test_landing-zone
+Jalendu: verify redundancies:
+
+gay buddhist includes buddhist
+gay meditation group includes meditation group
+zen buddhist includes buddhist
+GUILD_TEXT : test_landing-zone
+Jalendu: homophobic redundancies:
+
+fag bomb includes fag
+fag lord includes fag
+faggat includes fag
+fagget includes fag
+faggot includes fag
+fags includes fag
+GUILD_TEXT : test_landing-zone
+Jalendu: racist redundancies:
+GUILD_TEXT : test_landing-zone
+Jalendu: profane redundancies:
+GUILD_TEXT : test_landing-zone
+marq_andrew: /data save
+GUILD_TEXT : landing-zone-log
+Jalendu: <@679465390841135126> saved changes permanently
+GUILD_TEXT : test_landing-zone
+Jalendu: data backed-up to data_bu_2021-10-18.json.
+data saved to data.json
+Please wait another 55 minutes to bump DISBOARD :drool:
+GUILD_TEXT : landing-zone-log
+marq_andrew: /qo list
+GUILD_TEXT : landing-zone-log
+Jalendu: #10 ```Have you ever experenced lucid dreaming? Do you have or know a practice that can cause lucid dreaming? If you could lucid dream, what would you do in your dream?```(**approved**)
+
+#38 ```How would you describe meditation to someone who doesn’t know anything about it?```(**approved**)
+
+#31 ```It has been said that religion gives people a moral compass and that people who are atheist or irreligious are therefor less moral. What do you think?```(**approved**)
+
+#23 ```Henry Scott Tuke (1858-1929) was an English painter. He had no known relationships with women other than his sister. He was friends with Oscar Wilde and other "Uranians" and wrote poetry that idealised the love of Ancient Greece. Since the 1970's he has become " something of a cult figure in gay cultural circles" and Elton John has a large collection of his works (-for some reason-). There is however no direct evidence that he was gay and a small number of Tuke curators push back at any suggestion that he was or that his art is homoerotic.
+What do you feel about “gay erasure” of historical figures? Is it important to oppose it or do gay people make too much fuss about it?```+ image. (**approved**)
+
+#16 ```You often hear the phrase “body and soul” but gay poet Walt Whitman in his poem “I Sing the Body Electric” defined the soul as the body. What do you think about terms like ”body” versus “soul” and “spirit”? How does the body and the individual aspects of our embodiment; our race, gender, sexuality, age, personality, health, intelligence, ability etc. relate to spirituality? Is spirituality even an appropriate word?```(**approved**)
+GUILD_TEXT : landing-zone-log
+Jalendu: ​
+#9 ```The Discord Community Guidelines prohibit the "sexualisation of minors (age 13-17) in any way." It has been suggested that a Discord group focussed on minority sexualities (such as this one) sexualises minors just by them being allowed to join. Given that young teenagers are sexual well before their 18th birthday, what does the term "sexualisation of minors" mean? Can a gay+ adult engage with a gay+ teen who has questions about sex and sexuality in a positive, constructive way or is any engagement at all online simply taboo?```(**approved**)
+
+#29 ```Antinous was the lover of the Roman Emperor Hadrian. He tragically drowned in the Nile when not yet 20. He was praised for his beauty and numerous statues and even temples where built to him. It seems that in the Roman world, men were praised for their beauty more than women.
+Why do you think this changed? Do you feel comfortable calling a man "beautiful"? Do you think that men are in fact generally more beautiful than women and that it has nothing to do with your sexuality? Is the fact that in many species of animal, the males are more attractive than the females relevant?```+ image. (**approved**)
+
+#34 ```Do you use music, guided meditations, white noise or things like that to help you?```(**approved**)
+
+#37 ```Do you practice meditation or yoga outdoors? Would you like to? What is your favourite place to practice or where would you most like to practice? Does the place where you practice make any difference?```(**approved**)
+
+#11 ```How do you feel about nude yoga or meditation? Do you or would you practice nude alone, with others or online on camera?```(**approved**)
+
+#39 ```I’ve heard of Tantric sex but I don’t know much about it. Is it mindful masturbation or sex? Edging? Sex without ejaculating? Having multiple orgasms? What exactly is it about?```(**approved**)
+GUILD_TEXT : landing-zone-log
+Jalendu: ​
+#35 ```In many places there has been a decline in the number of venues like pubs, clubs and gyms exclusively for gay and lesbian people, often replaced by venues that are explicitly gay friendly but open to everyone. On the other hand, more and more groups exclusively for lgbt people are appearing on Discord. Is it good or bad?```(**approved**)
+
+#14 ```How do you cope with meditation or yoga in a noisy place?```(**approved**)
+
+#12 ```How does being gay+ (gay, bisexual, pansexual or bi-curious) influence your meditation or yoga practice? Did it influence your decision to start?```(**approved**)
+
+#22 ```The word "homosexual" first appeared in print in 1869 and then only became well known after 1886; a product of contemporary psychological theories of the subconscious mind. Oscar Wilde and his circle referred to themselves as "Uranians", men inhabited by female spirits. How then do we see the word "homosexual" printed in modern English translations of the Bible?```(**approved**)
+
+#43 ```Do you believe in Karma? That is, your intentional actions rebound to you either in this life or a future life?```(**approved**)
+
+#7 ```Can meditation give you magical, paranormal or supernatural abilities?```(**approved**)
+
+#27 ```You often hear people say that everyone has a right to their opinions. Is it true? Some opinions, like that the earth is flat or that the moon is made of cheese are wrong. Do people have a right to hold opinions that have been proven to be wrong?```+ image. (**approved**)
+GUILD_TEXT : landing-zone-log
+Jalendu: ​
+#26 ```“The customer rang and said that they’re coming in this afternoon to pick up their order. I thanked them for their patience.”
+Using the pronouns they, their and them for a single person is common and correct English usage, usually when you don’t know their gender. Why is it then that when a person says that they’d prefer others to refer to them using those pronouns (they/their/them), some people object on the grounds that it doesn’t seem to be correct grammar to refer to a single person using them?
+If you speak another language, what pronouns do you use for a person when you don’t know their gender?```(**approved**)
+
+#42 ```Many famous teachers of Meditation, Yoga, Buddhism etc. have been found to be having sex with their students and it has caused a huge scandal. Should it matter?```(**approved**)
+
+#2 ```Do you perform any ritual before or after you practice meditation or yoga?```(**approved**)
+
+#28 ```“I can meditate for a long time even though I am very tired as long as my mind is clear of thoughts. As soon as I start thinking about something, I fall asleep.”
+Do you experience this? How do you explain it? Isn’t it the opposite of what you might expect?```(**approved**)
+
+#8 ```Do you practice yoga as a form of physical excercise, a spiritual practice or both? Is there a difference?```(**approved**)
+
+#24 ```Do you ever experience sexual arousal during meditation or yoga even though you are not seeing or thinking anything sexual? Do you find it distracting? To what do you attribute it?```(**approved**)
+
+#33 ```What kind of teachers/rolemodels did you meet on your meditation journey and would you recommend them?```(**approved**)
+
+#41 ```Has any book or movie profoundly affected your life?```(**approved**)
+GUILD_TEXT : landing-zone-log
+Jalendu: ​
+#21 ```"Beliefs are a choice. If you find you are being discriminated against because of your beliefs, change them. The same can’t be said for race, gender, age and sexuality. It’s time to end the false equivalency." 
+Do you agree? Is it ok to discriminate against a person because of their religious beliefs? On the other hand, is it rational to allow someone an exemption from the law on the basis of what they choose to believe?```(**approved**)
+
+#15 ```It has been said that the term "bisexual" is insensitive because it implies that "there are only two genders". With more and more people exploring their gender identities and concluding that they don't fit into either male or female, it is said that the term "pansexual" is preferred for people sexually attracted to "all" (previously "both") genders. What are your thoughts?```(**approved**)
+
+#1 ```Do you think meditation is good for health? What about mental health?```(**approved**)
+
+#30 ```Do you believe in God, gods or any supernatural beings? How does your belief or lack of it affect your life?```(**approved**)
+
+#40 ```Have you heard of "stealthing"? That is when two people agree to have sex using a condom but then the guy wearing the condom takes it off without his partner knowing. It is summarised as "non-consensual condom removal." Do you think it should be treated in the same way as rape?```(**approved**)
+
+#36 ```Are you superstitious? If so in what ways? Do you observe any superstitions even though you don’t believe in them like saying “bless you” when someone sneezes?```(**approved**)
+
+#6 ```Do you think meditation improves your sex life? In what ways?```(**approved**)
+
+#25 ```What do you think about social media algorithms on platforms like Facebook and Twitter that suggest connections with “like-minded” people (with the same opinions, political views, interests) and allow people they disagree with to be blocked?```(**approved**)
+GUILD_TEXT : landing-zone-log
+Jalendu: ​
+#32 ```What was your first contact with meditation? How old were you when you first meditated?```(**approved**)
+
+#13 ```Some people separate the spiritual and sexual aspects of their lives. For others, sex and sexuality are integral to their spirituality. Where are you on this spectrum?```(**approved**)
+GUILD_TEXT : landing-zone-log
+marq_andrew: /qo status
+GUILD_TEXT : landing-zone-log
+Jalendu: ```status of questions system
+--------------------------
+
+total questions     :    36
+approved            :    36
+
+asked               :     1 2.8%
+
+current UTC time    : Mon, 18 Oct 2021 18:10:22 GMT
+start time          : Thu, 14 Oct 2021 22:52:24 GMT
+last time asked     : Fri, 15 Oct 2021 05:01:34 GMT
+next question       : Fri, 22 Oct 2021 05:01:34 GMT
+days to go          : 3.4522238541666668```
+GUILD_TEXT : landing-zone-log
+marq_andrew: /qo find stealth
+GUILD_TEXT : landing-zone-log
+Jalendu: 
+MessageEmbed {
+  type: 'rich',
+  title: '#40',
+  description: null,
+  url: null,
+  color: 9852140,
+  timestamp: null,
+  fields: [
+    {
+      value: '```Have you heard of "stealthing"? That is when two people agree to have sex using a condom but then the guy wearing the condom takes it off without his partner knowing. It is summarised as "non-consensual condom removal." Do you think it should be treated in the same way as rape?```',
+      name: '​',
+      inline: false
+    }
+  ],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: null,
+  provider: null,
+  footer: null
+}
+GUILD_TEXT : landing-zone-log
+marq_andrew: /qo reject 40
+GUILD_TEXT : landing-zone-log
+Jalendu: Question 40 rejected.
+GUILD_TEXT : landing-zone-log
+marq_andrew: /qo status
+GUILD_TEXT : landing-zone-log
+Jalendu: ```status of questions system
+--------------------------
+
+total questions     :    36
+approved            :    35
+rejected            :     1
+
+asked               :     1 2.9%
+
+current UTC time    : Mon, 18 Oct 2021 18:11:40 GMT
+start time          : Thu, 14 Oct 2021 22:52:24 GMT
+last time asked     : Fri, 15 Oct 2021 05:01:34 GMT
+next question       : Fri, 22 Oct 2021 05:01:34 GMT
+days to go          : 3.4513210416666666```
+GUILD_TEXT : landing-zone-log
+marq_andrew: /qo add Can you have wealth, status, fame and still be happy?
+GUILD_TEXT : landing-zone-log
+Jalendu: 
+MessageEmbed {
+  type: 'rich',
+  title: '#44',
+  description: null,
+  url: null,
+  color: 620587,
+  timestamp: null,
+  fields: [
+    {
+      value: '```Can you have wealth, status, fame and still be happy?```',
+      name: '​',
+      inline: false
+    }
+  ],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: null,
+  provider: null,
+  footer: null
+}
+GUILD_TEXT : landing-zone-log
+Jalendu: Thanks for adding a question. Enter /qo help for instructions on how to edit your question.
+qotd countdown days 3.4462828472222222
+Please wait another 45 minutes to bump DISBOARD :drool:
+GUILD_TEXT : chat-general
+RGfinpsy: Oh wow you attended the Kumbh Mela 😄
+GUILD_TEXT : chat-general
+nonmas: Yes. It was a great experience
+GUILD_TEXT : landing-zone-log
+RGfinpsy: Wow awesome set of questions
+GUILD_TEXT : system-messages
+Dronza: 
+role <@&851071523543973928> added to <@750478972449456149>
+GUILD_TEXT : system-messages
+Jalendu: 
+MessageEmbed {
+  type: 'rich',
+  title: 'Dronza',
+  description: null,
+  url: null,
+  color: 65535,
+  timestamp: null,
+  fields: [],
+  thumbnail: null,
+  image: {
+    url: 'https://cdn.discordapp.com/avatars/750478972449456149/d06c352d6244902c5b5928cc2195ab16.png?size=2048',
+    proxyURL: 'https://images-ext-1.discordapp.net/external/dSIHQY1MyQETJEKY24GYdAxkTM4ajqQSjr8Px37raWc/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/750478972449456149/d06c352d6244902c5b5928cc2195ab16.png',
+    height: 0,
+    width: 0
+  },
+  video: null,
+  author: null,
+  provider: null,
+  footer: null
+}
+GUILD_TEXT : system-messages
+Carl-bot Logging: 
+MessageEmbed {
+  type: 'rich',
+  title: 'Member joined',
+  description: '<@750478972449456149> 157th to join\n' +
+    'created 1 year, 1 month and 16 days ago',
+  url: null,
+  color: 5496236,
+  timestamp: 1634581485185,
+  fields: [],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: {
+    name: 'Dronza#6702',
+    url: undefined,
+    iconURL: 'https://cdn.discordapp.com/avatars/750478972449456149/d06c352d6244902c5b5928cc2195ab16.webp?size=1024',
+    proxyIconURL: 'https://images-ext-2.discordapp.net/external/6khQXJJfdCb2xck9QpAuNKMowWu25kNU5gERfPMOFLI/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/750478972449456149/d06c352d6244902c5b5928cc2195ab16.webp'
+  },
+  provider: null,
+  footer: {
+    text: 'ID: 750478972449456149',
+    iconURL: undefined,
+    proxyIconURL: undefined
+  }
+}
+member undefined!
+GUILD_TEXT : chat-general
+RGfinpsy: One kumbh Mela in Haridwar also happened this year in April. But due to covid it was very low key simple and restricted.
+cleanup: no messages found
+GUILD_TEXT : system-messages
+Carl-bot Logging: 
+MessageEmbed {
+  type: 'rich',
+  title: 'Member left',
+  description: '<@750478972449456149> joined 1 minute and 39 seconds ago\n' +
+    '**Roles:** <@&851071523543973928>',
+  url: null,
+  color: 16774575,
+  timestamp: 1634581583251,
+  fields: [],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: {
+    name: 'Dronza#6702',
+    url: undefined,
+    iconURL: 'https://cdn.discordapp.com/avatars/750478972449456149/d06c352d6244902c5b5928cc2195ab16.webp?size=1024',
+    proxyIconURL: 'https://images-ext-2.discordapp.net/external/6khQXJJfdCb2xck9QpAuNKMowWu25kNU5gERfPMOFLI/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/750478972449456149/d06c352d6244902c5b5928cc2195ab16.webp'
+  },
+  provider: null,
+  footer: {
+    text: 'ID: 750478972449456149',
+    iconURL: undefined,
+    proxyIconURL: undefined
+  }
+}
+member undefined!
+Please wait another 35 minutes to bump DISBOARD :drool:
+Please wait another 25 minutes to bump DISBOARD :drool:
+qotd countdown days 3.4254495023148146
+Please wait another 15 minutes to bump DISBOARD :drool:
+GUILD_TEXT : apollo-events
+Apollo: 
+MessageEmbed {
+  type: 'rich',
+  title: 'Open meditation (Sydney 4:15 am)',
+  description: 'Early morning (Sydney time) silent meditation in the open meditation room. Everyone is welcome to join. Please make sure your microphone is off.',
+  url: null,
+  color: 15844367,
+  timestamp: null,
+  fields: [
+    {
+      value: '<t:1634663700:F> - <t:1634666100:t>\n' +
+        '<:countdown:878391707727716413> <t:1634663700:R>',
+      name: 'Time',
+      inline: false
+    },
+    {
+      value: '[Add to Google Calendar](http://www.google.com/calendar/event?action=TEMPLATE&text=Open+meditation+%28Sydney+4%3A15+am%29&details=&location=&dates=20211019T171500Z/20211019T175500Z)',
+      name: 'Links',
+      inline: false
+    },
+    {
+      value: '-',
+      name: '<:accepted:713124484436983971> Accepted',
+      inline: true
+    },
+    {
+      value: '-',
+      name: '<:declined:713124484688642068> Declined',
+      inline: true
+    },
+    {
+      value: '-',
+      name: '<:tentative:713214962641666109> Tentative',
+      inline: true
+    }
+  ],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: null,
+  provider: null,
+  footer: {
+    text: 'Created by marq_andrew • Repeats daily',
+    iconURL: undefined,
+    proxyIconURL: undefined
+  }
+}
+Please wait another 5 minutes to bump DISBOARD :drool:
+Time to bump DISBOARD (!d bump) :scream:
+GUILD_TEXT : bot-commands
+Jalendu: Time to bump DISBOARD (!d bump) :scream:
+qotd countdown days 3.4046161574074074
+Please bump DISBOARD (!d bump). I've been waiting for the bump for 15 minutes :pleading_face:
+Please bump DISBOARD (!d bump). I've been waiting for the bump for 25 minutes :pleading_face:
+Please bump DISBOARD (!d bump). I've been waiting for the bump for 35 minutes :pleading_face:
+GUILD_TEXT : landing-zone-log
+marq_andrew: oops I didn't mean to list them here.
+GUILD_TEXT : bot-commands
+marq_andrew: !d bump
+disboard bump by marq_andrew
+GUILD_TEXT : bot-commands
+DISBOARD: 
+MessageEmbed {
+  type: 'rich',
+  title: 'DISBOARD: The Public Server List',
+  description: '<@679465390841135126> Bump done! :thumbsup:\n' +
+    'Check it out [on DISBOARD](https://disboard.org/server/827888294100074516).',
+  url: 'https://disboard.org/',
+  color: 2406327,
+  timestamp: null,
+  fields: [],
+  thumbnail: null,
+  image: {
+    url: 'https://disboard.org/images/bot-command-image-bump.png',
+    proxyURL: 'https://images-ext-1.discordapp.net/external/tAuRcs-FCy2M8OaTS9Ims62J1vrFiviahjBDtpZrrBs/https/disboard.org/images/bot-command-image-bump.png',
+    height: 200,
+    width: 800
+  },
+  video: null,
+  author: null,
+  provider: null,
+  footer: null
+}
+Bump done! :thumbsup: success
+successfully bumped
+GUILD_TEXT : bot-commands
+Jalendu: Thanks marq_andrew :medal:
+:green_heart::green_heart::green_heart::blue_heart::blue_heart::purple_heart::purple_heart::purple_heart:
+
+__Newcomers reminder and exclusion.__
+
+Hanno --> reminded : 6.9 days.
+mmmmm --> reminded : 6.4 days.
+Ryft YT --> reminded : 6.7 days.
+moonman5 --> waiting : 0.6 days.
+TwinkieBoy --> reminded : 2.9 days.
+Hendrick --> reminded : 4.4 days.
+
+* Indicates that the member wrote a message in #landing-zone.
++ Indicates that the member is muted.
+# Indicates that the member was previously a verified member.
+qotd countdown days 3.3837828125
+cleanup: no messages found
+Please wait another 117 minutes to bump DISBOARD :drool:
+Please wait another 107 minutes to bump DISBOARD :drool:
+Please wait another 97 minutes to bump DISBOARD :drool:
+qotd countdown days 3.3629493634259258
+Please wait another 87 minutes to bump DISBOARD :drool:
+GUILD_TEXT : system-messages
+Arilyn Bot Support #⭐-bot-updates: 
+MessageEmbed {
+  type: 'image',
+  title: null,
+  description: null,
+  url: 'https://imgur.com/GQRCJp5',
+  color: null,
+  timestamp: null,
+  fields: [],
+  thumbnail: {
+    url: 'https://i.imgur.com/GQRCJp5.png',
+    proxyURL: 'https://images-ext-2.discordapp.net/external/pcopl7NK1cp9tu33x1zD6tg_ABM9bHi80BfyWPTPlm4/https/i.imgur.com/GQRCJp5.png',
+    height: 479,
+    width: 405
+  },
+  image: null,
+  video: null,
+  author: null,
+  provider: { name: 'Imgur', url: 'Imgur' },
+  footer: null
+}
+member undefined!
+Please wait another 77 minutes to bump DISBOARD :drool:
+GUILD_TEXT : landing-zone-log
+marq_andrew: Do you think the question on stealthing is appropriate?
+GUILD_TEXT : landing-zone-log
+marq_andrew: /qo list 40
+GUILD_TEXT : landing-zone-log
+Jalendu: 
+MessageEmbed {
+  type: 'rich',
+  title: '#40',
+  description: null,
+  url: null,
+  color: 9836460,
+  timestamp: null,
+  fields: [
+    {
+      value: '```Have you heard of "stealthing"? That is when two people agree to have sex using a condom but then the guy wearing the condom takes it off without his partner knowing. It is summarised as "non-consensual condom removal." Do you think it should be treated in the same way as rape?```',
+      name: '​',
+      inline: false
+    }
+  ],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: null,
+  provider: null,
+  footer: null
+}
+DM : undefined
+marq_andrew: /qo status
+DM : undefined
+Jalendu: ```status of questions system
+--------------------------
+
+total questions     :    37
+approved            :    35
+submitted           :     1
+rejected            :     1
+
+asked               :     1 2.9%
+
+current UTC time    : Mon, 18 Oct 2021 20:37:59 GMT
+start time          : Thu, 14 Oct 2021 22:52:24 GMT
+last time asked     : Fri, 15 Oct 2021 05:01:34 GMT
+next question       : Fri, 22 Oct 2021 05:01:34 GMT
+days to go          : 3.349709097222222```
+Please wait another 67 minutes to bump DISBOARD :drool:
+qotd countdown days 3.3421160185185186
+Please wait another 57 minutes to bump DISBOARD :drool:
+Please wait another 47 minutes to bump DISBOARD :drool:
+Please wait another 37 minutes to bump DISBOARD :drool:
+GUILD_TEXT : system-messages
+marq_andrew: /mclear
+qotd countdown days 3.321282638888889
+Please wait another 27 minutes to bump DISBOARD :drool:
+Please wait another 17 minutes to bump DISBOARD :drool:
+GUILD_TEXT : system-messages
+dands: 
+role <@&851071523543973928> added to <@873723867544289300>
+GUILD_TEXT : system-messages
+Jalendu: 
+MessageEmbed {
+  type: 'rich',
+  title: 'dands',
+  description: null,
+  url: null,
+  color: 65535,
+  timestamp: null,
+  fields: [],
+  thumbnail: null,
+  image: {
+    url: 'https://cdn.discordapp.com/embed/avatars/3.png',
+    proxyURL: 'https://images-ext-2.discordapp.net/external/7kG8GvaAyFTW94FQsZCs8yiC3GDDqorEamYmQhePvI4/https/cdn.discordapp.com/embed/avatars/3.png',
+    height: 256,
+    width: 256
+  },
+  video: null,
+  author: null,
+  provider: null,
+  footer: null
+}
+GUILD_TEXT : system-messages
+Carl-bot Logging: 
+MessageEmbed {
+  type: 'rich',
+  title: 'Member joined',
+  description: '<@873723867544289300> 157th to join\n' +
+    'created 2 months, 10 days and 21 hours ago',
+  url: null,
+  color: 5496236,
+  timestamp: 1634592674587,
+  fields: [],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: {
+    name: 'dands#0058',
+    url: undefined,
+    iconURL: 'https://cdn.discordapp.com/embed/avatars/3.png',
+    proxyIconURL: 'https://images-ext-2.discordapp.net/external/7kG8GvaAyFTW94FQsZCs8yiC3GDDqorEamYmQhePvI4/https/cdn.discordapp.com/embed/avatars/3.png'
+  },
+  provider: null,
+  footer: {
+    text: 'ID: 873723867544289300',
+    iconURL: undefined,
+    proxyIconURL: undefined
+  }
+}
+member undefined!
+cleanup: no messages found
+GUILD_TEXT : system-messages
+Carl-bot Logging: 
+MessageEmbed {
+  type: 'rich',
+  title: 'Member left',
+  description: '<@873723867544289300> joined 3 minutes and 5 seconds ago\n' +
+    '**Roles:** <@&851071523543973928>',
+  url: null,
+  color: 16774575,
+  timestamp: 1634592858561,
+  fields: [],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: {
+    name: 'dands#0058',
+    url: undefined,
+    iconURL: 'https://cdn.discordapp.com/embed/avatars/3.png',
+    proxyIconURL: 'https://images-ext-2.discordapp.net/external/7kG8GvaAyFTW94FQsZCs8yiC3GDDqorEamYmQhePvI4/https/cdn.discordapp.com/embed/avatars/3.png'
+  },
+  provider: null,
+  footer: {
+    text: 'ID: 873723867544289300',
+    iconURL: undefined,
+    proxyIconURL: undefined
+  }
+}
+member undefined!
+GUILD_TEXT : landing-zone
+marq_andrew: /welcome
+/home/runner/jalendu/node_modules/discord.js/src/rest/RequestHandler.js:298
+      throw new DiscordAPIError(data, res.status, request);
+            ^
+
+DiscordAPIError: You can only bulk delete messages that are under 14 days old.
+    at RequestHandler.execute (/home/runner/jalendu/node_modules/discord.js/src/rest/RequestHandler.js:298:13)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async RequestHandler.push (/home/runner/jalendu/node_modules/discord.js/src/rest/RequestHandler.js:50:14)
+    at async TextChannel.bulkDelete (/home/runner/jalendu/node_modules/discord.js/src/structures/interfaces/TextBasedChannel.js:312:7) {
+  method: 'post',
+  path: '/channels/851056727419256902/messages/bulk-delete',
+  code: 50034,
+  httpStatus: 400,
+  requestData: {
+    json: { messages: [ '899773201767350293', '893739507160059964' ] },
+    files: []
+  }
+}
+
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+RESTART 20211018-213859
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+
+Ready!
+[ 'bumpbots', 'bumpers', 'qotd_activity', 'qotds', 'qotd_scores' ]
+Setting application command permissions on 888779192592896130 avatar
+Setting application command permissions on 888779192592896131 joke
+Setting application command permissions on 888779192592896132 define
+Setting application command permissions on 888779192592896133 moderate
+Setting application command permissions on 889643708650254346 readme
+qotd countdown days 3.307342048611111
+
+__Newcomers reminder and exclusion.__
+
+Hanno --> kicked : 7.0 days.
+mmmmm --> reminded : 6.4 days.
+Ryft YT --> reminded : 6.8 days.
+moonman5 --> waiting : 0.7 days.
+TwinkieBoy --> reminded : 3.0 days.
+Hendrick --> reminded : 4.4 days.
+
+* Indicates that the member wrote a message in #landing-zone.
++ Indicates that the member is muted.
+# Indicates that the member was previously a verified member.
+DISBOARD in sync (0 difference)
+__Landing zone message cleanup__
+Message by <@679465390841135126> "/welcome"
+Message by <@882824571143721040> ""
+Message by <@679465390841135126> "/welcome"
+- is from a moderator - check mentions:
+- is from a moderator - check mentions:
+- is from a moderator - check mentions:
+GUILD_TEXT : system-messages
+Jalendu: <@324927475945570305> has been removed (7 days after joining).
+__Landing zone message cleanup__
+Message by <@679465390841135126> "/welcome"
+Message by <@882824571143721040> ""
+Message by <@679465390841135126> "/welcome"
+- is from a moderator - check mentions:
+- is from a moderator - check mentions:
+- is from a moderator - check mentions:
+DiscordAPIError: Unknown Member
+    at RequestHandler.execute (/home/runner/jalendu/node_modules/discord.js/src/rest/RequestHandler.js:298:13)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async RequestHandler.push (/home/runner/jalendu/node_modules/discord.js/src/rest/RequestHandler.js:50:14)
+    at async GuildMemberRoleManager.add (/home/runner/jalendu/node_modules/discord.js/src/managers/GuildMemberRoleManager.js:113:7) {
+  method: 'put',
+  path: '/guilds/827888294100074516/members/324927475945570305/roles/877790440106123315',
+  code: 10007,
+  httpStatus: 404,
+  requestData: { json: undefined, files: [] }
+}
+GUILD_TEXT : system-messages
+Carl-bot Logging: 
+MessageEmbed {
+  type: 'rich',
+  title: 'Member left',
+  description: '<@324927475945570305> joined 7 days, 16 minutes and 48 seconds ago\n' +
+    '**Roles:** <@&851071523543973928> <@&877784942107578438>',
+  url: null,
+  color: 16774575,
+  timestamp: 1634593140653,
+  fields: [],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: {
+    name: 'Hanno#7450',
+    url: undefined,
+    iconURL: 'https://cdn.discordapp.com/avatars/324927475945570305/79c9252878e519e7664ba007a5d5d76c.webp?size=1024',
+    proxyIconURL: 'https://images-ext-2.discordapp.net/external/BDK6OUZAc0hjxvEYB9eUDr-Fl9eaPYIgYTmdNxfGBgE/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/324927475945570305/79c9252878e519e7664ba007a5d5d76c.webp'
+  },
+  provider: null,
+  footer: {
+    text: 'ID: 324927475945570305',
+    iconURL: undefined,
+    proxyIconURL: undefined
+  }
+}
+member undefined!
+GUILD_TEXT : landing-zone
+marq_andrew: /welcome
+GUILD_TEXT : landing-zone
+Jalendu: 
+MessageEmbed {
+  type: 'rich',
+  title: '**Welcome to Gay+ Men Meditating!**  <:yoga:880724849889259570>',
+  description: 'We are a safe and friendly group of gay+ guys who practice or who are interested in practicing meditation or yoga. To join, you have to properly answer these questions:',
+  url: null,
+  color: 12320813,
+  timestamp: null,
+  fields: [
+    {
+      value: '**1**. Tell us something about yourself.\n' +
+        '**2**. Describe your experience with meditation and/or yoga or why you are interested in it.\n' +
+        '**3**. Tell us why you want to join this group?\n' +
+        '\n' +
+        'Include @moderator in your message so we will be notified of your answers.*',
+      name: '​',
+      inline: false
+    }
+  ],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: null,
+  provider: null,
+  footer: {
+    text: '​\n' +
+      '*You can directly message a moderator if you prefer. We will review your answers as soon as possible. #landing-zone is auto-moderated, so please keep your answers brief, proper-cased and free of links or any terms of abuse.',
+    iconURL: undefined,
+    proxyIconURL: undefined
+  }
+}
+GUILD_TEXT : landing-zone
+Jalendu: 
+GUILD_TEXT : landing-zone
+marq_andrew: /welcome
+GUILD_TEXT : landing-zone
+Jalendu: 
+MessageEmbed {
+  type: 'rich',
+  title: '**Welcome to Gay+ Men Meditating!**  <:yoga:880724849889259570>',
+  description: 'We are a safe and friendly group of gay+ guys interested in practicing meditation or yoga. To join, you have to properly answer these questions:',
+  url: null,
+  color: 12320813,
+  timestamp: null,
+  fields: [
+    {
+      value: '**1**. Tell us something about yourself.\n' +
+        '**2**. Describe your experience with meditation or yoga or why you are interested in it.\n' +
+        '**3**. Tell us why you want to join this group.\n' +
+        '\n' +
+        'Include @moderator in your message so we will be notified of your answers.*',
+      name: '​',
+      inline: false
+    }
+  ],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: null,
+  provider: null,
+  footer: {
+    text: '​\n' +
+      '*You can directly message a moderator if you prefer. We will review your answers as soon as possible. #landing-zone is auto-moderated, so please keep your answers brief, proper-cased and free of links or any terms of abuse.',
+    iconURL: undefined,
+    proxyIconURL: undefined
+  }
+}
+GUILD_TEXT : landing-zone
+Jalendu: 
+GUILD_TEXT : test_landing-zone
+marq_andrew: /emojis
+GuildEmoji {
+  animated: false,
+  name: 'bisexualflag',
+  id: '834050052950327306',
+  deleted: false,
+  guild: <ref *1> Guild {
+    id: '827888294100074516',
+    name: 'Gay+ Men Meditating',
+    icon: '551372728aa98b6ccebf16af2856a4a7',
+    features: [],
+    commands: GuildApplicationCommandManager {
+      permissions: [ApplicationCommandPermissionsManager],
+      guild: [Circular *1]
+    },
+    members: GuildMemberManager { guild: [Circular *1] },
+    channels: GuildChannelManager { guild: [Circular *1] },
+    bans: GuildBanManager { guild: [Circular *1] },
+    roles: RoleManager { guild: [Circular *1] },
+    presences: PresenceManager {},
+    voiceStates: VoiceStateManager { guild: [Circular *1] },
+    stageInstances: StageInstanceManager { guild: [Circular *1] },
+    invites: GuildInviteManager { guild: [Circular *1] },
+    deleted: false,
+    available: true,
+    shardId: 0,
+    splash: null,
+    banner: null,
+    description: null,
+    verificationLevel: 'MEDIUM',
+    vanityURLCode: null,
+    nsfwLevel: 'DEFAULT',
+    discoverySplash: null,
+    memberCount: 155,
+    large: true,
+    applicationId: null,
+    afkTimeout: 300,
+    afkChannelId: null,
+    systemChannelId: '827889605994872863',
+    premiumTier: 'NONE',
+    premiumSubscriptionCount: 0,
+    explicitContentFilter: 'MEMBERS_WITHOUT_ROLES',
+    mfaLevel: 'NONE',
+    joinedTimestamp: 1631170526608,
+    defaultMessageNotifications: 'ONLY_MENTIONS',
+    systemChannelFlags: SystemChannelFlags { bitfield: 4 },
+    maximumMembers: 250000,
+    maximumPresences: null,
+    approximateMemberCount: null,
+    approximatePresenceCount: null,
+    vanityURLUses: null,
+    rulesChannelId: null,
+    publicUpdatesChannelId: null,
+    preferredLocale: 'en-US',
+    ownerId: '679465390841135126',
+    emojis: GuildEmojiManager { guild: [Circular *1] },
+    stickers: GuildStickerManager { guild: [Circular *1] }
+  },
+  requiresColons: true,
+  managed: false,
+  available: true,
+  _roles: [],
+  author: null
+}
+GuildEmoji {
+  animated: false,
+  name: 'prideflag',
+  id: '834050054646005800',
+  deleted: false,
+  guild: <ref *1> Guild {
+    id: '827888294100074516',
+    name: 'Gay+ Men Meditating',
+    icon: '551372728aa98b6ccebf16af2856a4a7',
+    features: [],
+    commands: GuildApplicationCommandManager {
+      permissions: [ApplicationCommandPermissionsManager],
+      guild: [Circular *1]
+    },
+    members: GuildMemberManager { guild: [Circular *1] },
+    channels: GuildChannelManager { guild: [Circular *1] },
+    bans: GuildBanManager { guild: [Circular *1] },
+    roles: RoleManager { guild: [Circular *1] },
+    presences: PresenceManager {},
+    voiceStates: VoiceStateManager { guild: [Circular *1] },
+    stageInstances: StageInstanceManager { guild: [Circular *1] },
+    invites: GuildInviteManager { guild: [Circular *1] },
+    deleted: false,
+    available: true,
+    shardId: 0,
+    splash: null,
+    banner: null,
+    description: null,
+    verificationLevel: 'MEDIUM',
+    vanityURLCode: null,
+    nsfwLevel: 'DEFAULT',
+    discoverySplash: null,
+    memberCount: 155,
+    large: true,
+    applicationId: null,
+    afkTimeout: 300,
+    afkChannelId: null,
+    systemChannelId: '827889605994872863',
+    premiumTier: 'NONE',
+    premiumSubscriptionCount: 0,
+    explicitContentFilter: 'MEMBERS_WITHOUT_ROLES',
+    mfaLevel: 'NONE',
+    joinedTimestamp: 1631170526608,
+    defaultMessageNotifications: 'ONLY_MENTIONS',
+    systemChannelFlags: SystemChannelFlags { bitfield: 4 },
+    maximumMembers: 250000,
+    maximumPresences: null,
+    approximateMemberCount: null,
+    approximatePresenceCount: null,
+    vanityURLUses: null,
+    rulesChannelId: null,
+    publicUpdatesChannelId: null,
+    preferredLocale: 'en-US',
+    ownerId: '679465390841135126',
+    emojis: GuildEmojiManager { guild: [Circular *1] },
+    stickers: GuildStickerManager { guild: [Circular *1] }
+  },
+  requiresColons: true,
+  managed: false,
+  available: true,
+  _roles: [],
+  author: null
+}
+GuildEmoji {
+  animated: false,
+  name: 'philadelphiaprideflag',
+  id: '834050054808535080',
+  deleted: false,
+  guild: <ref *1> Guild {
+    id: '827888294100074516',
+    name: 'Gay+ Men Meditating',
+    icon: '551372728aa98b6ccebf16af2856a4a7',
+    features: [],
+    commands: GuildApplicationCommandManager {
+      permissions: [ApplicationCommandPermissionsManager],
+      guild: [Circular *1]
+    },
+    members: GuildMemberManager { guild: [Circular *1] },
+    channels: GuildChannelManager { guild: [Circular *1] },
+    bans: GuildBanManager { guild: [Circular *1] },
+    roles: RoleManager { guild: [Circular *1] },
+    presences: PresenceManager {},
+    voiceStates: VoiceStateManager { guild: [Circular *1] },
+    stageInstances: StageInstanceManager { guild: [Circular *1] },
+    invites: GuildInviteManager { guild: [Circular *1] },
+    deleted: false,
+    available: true,
+    shardId: 0,
+    splash: null,
+    banner: null,
+    description: null,
+    verificationLevel: 'MEDIUM',
+    vanityURLCode: null,
+    nsfwLevel: 'DEFAULT',
+    discoverySplash: null,
+    memberCount: 155,
+    large: true,
+    applicationId: null,
+    afkTimeout: 300,
+    afkChannelId: null,
+    systemChannelId: '827889605994872863',
+    premiumTier: 'NONE',
+    premiumSubscriptionCount: 0,
+    explicitContentFilter: 'MEMBERS_WITHOUT_ROLES',
+    mfaLevel: 'NONE',
+    joinedTimestamp: 1631170526608,
+    defaultMessageNotifications: 'ONLY_MENTIONS',
+    systemChannelFlags: SystemChannelFlags { bitfield: 4 },
+    maximumMembers: 250000,
+    maximumPresences: null,
+    approximateMemberCount: null,
+    approximatePresenceCount: null,
+    vanityURLUses: null,
+    rulesChannelId: null,
+    publicUpdatesChannelId: null,
+    preferredLocale: 'en-US',
+    ownerId: '679465390841135126',
+    emojis: GuildEmojiManager { guild: [Circular *1] },
+    stickers: GuildStickerManager { guild: [Circular *1] }
+  },
+  requiresColons: true,
+  managed: false,
+  available: true,
+  _roles: [],
+  author: null
+}
+GuildEmoji {
+  animated: false,
+  name: 'bi_curious_flag',
+  id: '834316271897542687',
+  deleted: false,
+  guild: <ref *1> Guild {
+    id: '827888294100074516',
+    name: 'Gay+ Men Meditating',
+    icon: '551372728aa98b6ccebf16af2856a4a7',
+    features: [],
+    commands: GuildApplicationCommandManager {
+      permissions: [ApplicationCommandPermissionsManager],
+      guild: [Circular *1]
+    },
+    members: GuildMemberManager { guild: [Circular *1] },
+    channels: GuildChannelManager { guild: [Circular *1] },
+    bans: GuildBanManager { guild: [Circular *1] },
+    roles: RoleManager { guild: [Circular *1] },
+    presences: PresenceManager {},
+    voiceStates: VoiceStateManager { guild: [Circular *1] },
+    stageInstances: StageInstanceManager { guild: [Circular *1] },
+    invites: GuildInviteManager { guild: [Circular *1] },
+    deleted: false,
+    available: true,
+    shardId: 0,
+    splash: null,
+    banner: null,
+    description: null,
+    verificationLevel: 'MEDIUM',
+    vanityURLCode: null,
+    nsfwLevel: 'DEFAULT',
+    discoverySplash: null,
+    memberCount: 155,
+    large: true,
+    applicationId: null,
+    afkTimeout: 300,
+    afkChannelId: null,
+    systemChannelId: '827889605994872863',
+    premiumTier: 'NONE',
+    premiumSubscriptionCount: 0,
+    explicitContentFilter: 'MEMBERS_WITHOUT_ROLES',
+    mfaLevel: 'NONE',
+    joinedTimestamp: 1631170526608,
+    defaultMessageNotifications: 'ONLY_MENTIONS',
+    systemChannelFlags: SystemChannelFlags { bitfield: 4 },
+    maximumMembers: 250000,
+    maximumPresences: null,
+    approximateMemberCount: null,
+    approximatePresenceCount: null,
+    vanityURLUses: null,
+    rulesChannelId: null,
+    publicUpdatesChannelId: null,
+    preferredLocale: 'en-US',
+    ownerId: '679465390841135126',
+    emojis: GuildEmojiManager { guild: [Circular *1] },
+    stickers: GuildStickerManager { guild: [Circular *1] }
+  },
+  requiresColons: true,
+  managed: false,
+  available: true,
+  _roles: [],
+  author: null
+}
+GuildEmoji {
+  animated: false,
+  name: 'bi_flag',
+  id: '834316993582596096',
+  deleted: false,
+  guild: <ref *1> Guild {
+    id: '827888294100074516',
+    name: 'Gay+ Men Meditating',
+    icon: '551372728aa98b6ccebf16af2856a4a7',
+    features: [],
+    commands: GuildApplicationCommandManager {
+      permissions: [ApplicationCommandPermissionsManager],
+      guild: [Circular *1]
+    },
+    members: GuildMemberManager { guild: [Circular *1] },
+    channels: GuildChannelManager { guild: [Circular *1] },
+    bans: GuildBanManager { guild: [Circular *1] },
+    roles: RoleManager { guild: [Circular *1] },
+    presences: PresenceManager {},
+    voiceStates: VoiceStateManager { guild: [Circular *1] },
+    stageInstances: StageInstanceManager { guild: [Circular *1] },
+    invites: GuildInviteManager { guild: [Circular *1] },
+    deleted: false,
+    available: true,
+    shardId: 0,
+    splash: null,
+    banner: null,
+    description: null,
+    verificationLevel: 'MEDIUM',
+    vanityURLCode: null,
+    nsfwLevel: 'DEFAULT',
+    discoverySplash: null,
+    memberCount: 155,
+    large: true,
+    applicationId: null,
+    afkTimeout: 300,
+    afkChannelId: null,
+    systemChannelId: '827889605994872863',
+    premiumTier: 'NONE',
+    premiumSubscriptionCount: 0,
+    explicitContentFilter: 'MEMBERS_WITHOUT_ROLES',
+    mfaLevel: 'NONE',
+    joinedTimestamp: 1631170526608,
+    defaultMessageNotifications: 'ONLY_MENTIONS',
+    systemChannelFlags: SystemChannelFlags { bitfield: 4 },
+    maximumMembers: 250000,
+    maximumPresences: null,
+    approximateMemberCount: null,
+    approximatePresenceCount: null,
+    vanityURLUses: null,
+    rulesChannelId: null,
+    publicUpdatesChannelId: null,
+    preferredLocale: 'en-US',
+    ownerId: '679465390841135126',
+    emojis: GuildEmojiManager { guild: [Circular *1] },
+    stickers: GuildStickerManager { guild: [Circular *1] }
+  },
+  requiresColons: true,
+  managed: false,
+  available: true,
+  _roles: [],
+  author: null
+}
+GuildEmoji {
+  animated: false,
+  name: 'gay_flag',
+  id: '834317028507910204',
+  deleted: false,
+  guild: <ref *1> Guild {
+    id: '827888294100074516',
+    name: 'Gay+ Men Meditating',
+    icon: '551372728aa98b6ccebf16af2856a4a7',
+    features: [],
+    commands: GuildApplicationCommandManager {
+      permissions: [ApplicationCommandPermissionsManager],
+      guild: [Circular *1]
+    },
+    members: GuildMemberManager { guild: [Circular *1] },
+    channels: GuildChannelManager { guild: [Circular *1] },
+    bans: GuildBanManager { guild: [Circular *1] },
+    roles: RoleManager { guild: [Circular *1] },
+    presences: PresenceManager {},
+    voiceStates: VoiceStateManager { guild: [Circular *1] },
+    stageInstances: StageInstanceManager { guild: [Circular *1] },
+    invites: GuildInviteManager { guild: [Circular *1] },
+    deleted: false,
+    available: true,
+    shardId: 0,
+    splash: null,
+    banner: null,
+    description: null,
+    verificationLevel: 'MEDIUM',
+    vanityURLCode: null,
+    nsfwLevel: 'DEFAULT',
+    discoverySplash: null,
+    memberCount: 155,
+    large: true,
+    applicationId: null,
+    afkTimeout: 300,
+    afkChannelId: null,
+    systemChannelId: '827889605994872863',
+    premiumTier: 'NONE',
+    premiumSubscriptionCount: 0,
+    explicitContentFilter: 'MEMBERS_WITHOUT_ROLES',
+    mfaLevel: 'NONE',
+    joinedTimestamp: 1631170526608,
+    defaultMessageNotifications: 'ONLY_MENTIONS',
+    systemChannelFlags: SystemChannelFlags { bitfield: 4 },
+    maximumMembers: 250000,
+    maximumPresences: null,
+    approximateMemberCount: null,
+    approximatePresenceCount: null,
+    vanityURLUses: null,
+    rulesChannelId: null,
+    publicUpdatesChannelId: null,
+    preferredLocale: 'en-US',
+    ownerId: '679465390841135126',
+    emojis: GuildEmojiManager { guild: [Circular *1] },
+    stickers: GuildStickerManager { guild: [Circular *1] }
+  },
+  requiresColons: true,
+  managed: false,
+  available: true,
+  _roles: [],
+  author: null
+}
+GuildEmoji {
+  animated: false,
+  name: 'chakras',
+  id: '880720851396341800',
+  deleted: false,
+  guild: <ref *1> Guild {
+    id: '827888294100074516',
+    name: 'Gay+ Men Meditating',
+    icon: '551372728aa98b6ccebf16af2856a4a7',
+    features: [],
+    commands: GuildApplicationCommandManager {
+      permissions: [ApplicationCommandPermissionsManager],
+      guild: [Circular *1]
+    },
+    members: GuildMemberManager { guild: [Circular *1] },
+    channels: GuildChannelManager { guild: [Circular *1] },
+    bans: GuildBanManager { guild: [Circular *1] },
+    roles: RoleManager { guild: [Circular *1] },
+    presences: PresenceManager {},
+    voiceStates: VoiceStateManager { guild: [Circular *1] },
+    stageInstances: StageInstanceManager { guild: [Circular *1] },
+    invites: GuildInviteManager { guild: [Circular *1] },
+    deleted: false,
+    available: true,
+    shardId: 0,
+    splash: null,
+    banner: null,
+    description: null,
+    verificationLevel: 'MEDIUM',
+    vanityURLCode: null,
+    nsfwLevel: 'DEFAULT',
+    discoverySplash: null,
+    memberCount: 155,
+    large: true,
+    applicationId: null,
+    afkTimeout: 300,
+    afkChannelId: null,
+    systemChannelId: '827889605994872863',
+    premiumTier: 'NONE',
+    premiumSubscriptionCount: 0,
+    explicitContentFilter: 'MEMBERS_WITHOUT_ROLES',
+    mfaLevel: 'NONE',
+    joinedTimestamp: 1631170526608,
+    defaultMessageNotifications: 'ONLY_MENTIONS',
+    systemChannelFlags: SystemChannelFlags { bitfield: 4 },
+    maximumMembers: 250000,
+    maximumPresences: null,
+    approximateMemberCount: null,
+    approximatePresenceCount: null,
+    vanityURLUses: null,
+    rulesChannelId: null,
+    publicUpdatesChannelId: null,
+    preferredLocale: 'en-US',
+    ownerId: '679465390841135126',
+    emojis: GuildEmojiManager { guild: [Circular *1] },
+    stickers: GuildStickerManager { guild: [Circular *1] }
+  },
+  requiresColons: true,
+  managed: false,
+  available: true,
+  _roles: [],
+  author: null
+}
+GuildEmoji {
+  animated: false,
+  name: 'auras',
+  id: '880724214162817025',
+  deleted: false,
+  guild: <ref *1> Guild {
+    id: '827888294100074516',
+    name: 'Gay+ Men Meditating',
+    icon: '551372728aa98b6ccebf16af2856a4a7',
+    features: [],
+    commands: GuildApplicationCommandManager {
+      permissions: [ApplicationCommandPermissionsManager],
+      guild: [Circular *1]
+    },
+    members: GuildMemberManager { guild: [Circular *1] },
+    channels: GuildChannelManager { guild: [Circular *1] },
+    bans: GuildBanManager { guild: [Circular *1] },
+    roles: RoleManager { guild: [Circular *1] },
+    presences: PresenceManager {},
+    voiceStates: VoiceStateManager { guild: [Circular *1] },
+    stageInstances: StageInstanceManager { guild: [Circular *1] },
+    invites: GuildInviteManager { guild: [Circular *1] },
+    deleted: false,
+    available: true,
+    shardId: 0,
+    splash: null,
+    banner: null,
+    description: null,
+    verificationLevel: 'MEDIUM',
+    vanityURLCode: null,
+    nsfwLevel: 'DEFAULT',
+    discoverySplash: null,
+    memberCount: 155,
+    large: true,
+    applicationId: null,
+    afkTimeout: 300,
+    afkChannelId: null,
+    systemChannelId: '827889605994872863',
+    premiumTier: 'NONE',
+    premiumSubscriptionCount: 0,
+    explicitContentFilter: 'MEMBERS_WITHOUT_ROLES',
+    mfaLevel: 'NONE',
+    joinedTimestamp: 1631170526608,
+    defaultMessageNotifications: 'ONLY_MENTIONS',
+    systemChannelFlags: SystemChannelFlags { bitfield: 4 },
+    maximumMembers: 250000,
+    maximumPresences: null,
+    approximateMemberCount: null,
+    approximatePresenceCount: null,
+    vanityURLUses: null,
+    rulesChannelId: null,
+    publicUpdatesChannelId: null,
+    preferredLocale: 'en-US',
+    ownerId: '679465390841135126',
+    emojis: GuildEmojiManager { guild: [Circular *1] },
+    stickers: GuildStickerManager { guild: [Circular *1] }
+  },
+  requiresColons: true,
+  managed: false,
+  available: true,
+  _roles: [],
+  author: null
+}
+GuildEmoji {
+  animated: false,
+  name: 'lotus_meditator',
+  id: '880724332488323104',
+  deleted: false,
+  guild: <ref *1> Guild {
+    id: '827888294100074516',
+    name: 'Gay+ Men Meditating',
+    icon: '551372728aa98b6ccebf16af2856a4a7',
+    features: [],
+    commands: GuildApplicationCommandManager {
+      permissions: [ApplicationCommandPermissionsManager],
+      guild: [Circular *1]
+    },
+    members: GuildMemberManager { guild: [Circular *1] },
+    channels: GuildChannelManager { guild: [Circular *1] },
+    bans: GuildBanManager { guild: [Circular *1] },
+    roles: RoleManager { guild: [Circular *1] },
+    presences: PresenceManager {},
+    voiceStates: VoiceStateManager { guild: [Circular *1] },
+    stageInstances: StageInstanceManager { guild: [Circular *1] },
+    invites: GuildInviteManager { guild: [Circular *1] },
+    deleted: false,
+    available: true,
+    shardId: 0,
+    splash: null,
+    banner: null,
+    description: null,
+    verificationLevel: 'MEDIUM',
+    vanityURLCode: null,
+    nsfwLevel: 'DEFAULT',
+    discoverySplash: null,
+    memberCount: 155,
+    large: true,
+    applicationId: null,
+    afkTimeout: 300,
+    afkChannelId: null,
+    systemChannelId: '827889605994872863',
+    premiumTier: 'NONE',
+    premiumSubscriptionCount: 0,
+    explicitContentFilter: 'MEMBERS_WITHOUT_ROLES',
+    mfaLevel: 'NONE',
+    joinedTimestamp: 1631170526608,
+    defaultMessageNotifications: 'ONLY_MENTIONS',
+    systemChannelFlags: SystemChannelFlags { bitfield: 4 },
+    maximumMembers: 250000,
+    maximumPresences: null,
+    approximateMemberCount: null,
+    approximatePresenceCount: null,
+    vanityURLUses: null,
+    rulesChannelId: null,
+    publicUpdatesChannelId: null,
+    preferredLocale: 'en-US',
+    ownerId: '679465390841135126',
+    emojis: GuildEmojiManager { guild: [Circular *1] },
+    stickers: GuildStickerManager { guild: [Circular *1] }
+  },
+  requiresColons: true,
+  managed: false,
+  available: true,
+  _roles: [],
+  author: null
+}
+GuildEmoji {
+  animated: false,
+  name: 'peace_dove',
+  id: '880724430760837150',
+  deleted: false,
+  guild: <ref *1> Guild {
+    id: '827888294100074516',
+    name: 'Gay+ Men Meditating',
+    icon: '551372728aa98b6ccebf16af2856a4a7',
+    features: [],
+    commands: GuildApplicationCommandManager {
+      permissions: [ApplicationCommandPermissionsManager],
+      guild: [Circular *1]
+    },
+    members: GuildMemberManager { guild: [Circular *1] },
+    channels: GuildChannelManager { guild: [Circular *1] },
+    bans: GuildBanManager { guild: [Circular *1] },
+    roles: RoleManager { guild: [Circular *1] },
+    presences: PresenceManager {},
+    voiceStates: VoiceStateManager { guild: [Circular *1] },
+    stageInstances: StageInstanceManager { guild: [Circular *1] },
+    invites: GuildInviteManager { guild: [Circular *1] },
+    deleted: false,
+    available: true,
+    shardId: 0,
+    splash: null,
+    banner: null,
+    description: null,
+    verificationLevel: 'MEDIUM',
+    vanityURLCode: null,
+    nsfwLevel: 'DEFAULT',
+    discoverySplash: null,
+    memberCount: 155,
+    large: true,
+    applicationId: null,
+    afkTimeout: 300,
+    afkChannelId: null,
+    systemChannelId: '827889605994872863',
+    premiumTier: 'NONE',
+    premiumSubscriptionCount: 0,
+    explicitContentFilter: 'MEMBERS_WITHOUT_ROLES',
+    mfaLevel: 'NONE',
+    joinedTimestamp: 1631170526608,
+    defaultMessageNotifications: 'ONLY_MENTIONS',
+    systemChannelFlags: SystemChannelFlags { bitfield: 4 },
+    maximumMembers: 250000,
+    maximumPresences: null,
+    approximateMemberCount: null,
+    approximatePresenceCount: null,
+    vanityURLUses: null,
+    rulesChannelId: null,
+    publicUpdatesChannelId: null,
+    preferredLocale: 'en-US',
+    ownerId: '679465390841135126',
+    emojis: GuildEmojiManager { guild: [Circular *1] },
+    stickers: GuildStickerManager { guild: [Circular *1] }
+  },
+  requiresColons: true,
+  managed: false,
+  available: true,
+  _roles: [],
+  author: null
+}
+GuildEmoji {
+  animated: false,
+  name: 'yoga',
+  id: '880724849889259570',
+  deleted: false,
+  guild: <ref *1> Guild {
+    id: '827888294100074516',
+    name: 'Gay+ Men Meditating',
+    icon: '551372728aa98b6ccebf16af2856a4a7',
+    features: [],
+    commands: GuildApplicationCommandManager {
+      permissions: [ApplicationCommandPermissionsManager],
+      guild: [Circular *1]
+    },
+    members: GuildMemberManager { guild: [Circular *1] },
+    channels: GuildChannelManager { guild: [Circular *1] },
+    bans: GuildBanManager { guild: [Circular *1] },
+    roles: RoleManager { guild: [Circular *1] },
+    presences: PresenceManager {},
+    voiceStates: VoiceStateManager { guild: [Circular *1] },
+    stageInstances: StageInstanceManager { guild: [Circular *1] },
+    invites: GuildInviteManager { guild: [Circular *1] },
+    deleted: false,
+    available: true,
+    shardId: 0,
+    splash: null,
+    banner: null,
+    description: null,
+    verificationLevel: 'MEDIUM',
+    vanityURLCode: null,
+    nsfwLevel: 'DEFAULT',
+    discoverySplash: null,
+    memberCount: 155,
+    large: true,
+    applicationId: null,
+    afkTimeout: 300,
+    afkChannelId: null,
+    systemChannelId: '827889605994872863',
+    premiumTier: 'NONE',
+    premiumSubscriptionCount: 0,
+    explicitContentFilter: 'MEMBERS_WITHOUT_ROLES',
+    mfaLevel: 'NONE',
+    joinedTimestamp: 1631170526608,
+    defaultMessageNotifications: 'ONLY_MENTIONS',
+    systemChannelFlags: SystemChannelFlags { bitfield: 4 },
+    maximumMembers: 250000,
+    maximumPresences: null,
+    approximateMemberCount: null,
+    approximatePresenceCount: null,
+    vanityURLUses: null,
+    rulesChannelId: null,
+    publicUpdatesChannelId: null,
+    preferredLocale: 'en-US',
+    ownerId: '679465390841135126',
+    emojis: GuildEmojiManager { guild: [Circular *1] },
+    stickers: GuildStickerManager { guild: [Circular *1] }
+  },
+  requiresColons: true,
+  managed: false,
+  available: true,
+  _roles: [],
+  author: null
+}
+GuildEmoji {
+  animated: false,
+  name: 'rainbow_om',
+  id: '880762346518216734',
+  deleted: false,
+  guild: <ref *1> Guild {
+    id: '827888294100074516',
+    name: 'Gay+ Men Meditating',
+    icon: '551372728aa98b6ccebf16af2856a4a7',
+    features: [],
+    commands: GuildApplicationCommandManager {
+      permissions: [ApplicationCommandPermissionsManager],
+      guild: [Circular *1]
+    },
+    members: GuildMemberManager { guild: [Circular *1] },
+    channels: GuildChannelManager { guild: [Circular *1] },
+    bans: GuildBanManager { guild: [Circular *1] },
+    roles: RoleManager { guild: [Circular *1] },
+    presences: PresenceManager {},
+    voiceStates: VoiceStateManager { guild: [Circular *1] },
+    stageInstances: StageInstanceManager { guild: [Circular *1] },
+    invites: GuildInviteManager { guild: [Circular *1] },
+    deleted: false,
+    available: true,
+    shardId: 0,
+    splash: null,
+    banner: null,
+    description: null,
+    verificationLevel: 'MEDIUM',
+    vanityURLCode: null,
+    nsfwLevel: 'DEFAULT',
+    discoverySplash: null,
+    memberCount: 155,
+    large: true,
+    applicationId: null,
+    afkTimeout: 300,
+    afkChannelId: null,
+    systemChannelId: '827889605994872863',
+    premiumTier: 'NONE',
+    premiumSubscriptionCount: 0,
+    explicitContentFilter: 'MEMBERS_WITHOUT_ROLES',
+    mfaLevel: 'NONE',
+    joinedTimestamp: 1631170526608,
+    defaultMessageNotifications: 'ONLY_MENTIONS',
+    systemChannelFlags: SystemChannelFlags { bitfield: 4 },
+    maximumMembers: 250000,
+    maximumPresences: null,
+    approximateMemberCount: null,
+    approximatePresenceCount: null,
+    vanityURLUses: null,
+    rulesChannelId: null,
+    publicUpdatesChannelId: null,
+    preferredLocale: 'en-US',
+    ownerId: '679465390841135126',
+    emojis: GuildEmojiManager { guild: [Circular *1] },
+    stickers: GuildStickerManager { guild: [Circular *1] }
+  },
+  requiresColons: true,
+  managed: false,
+  available: true,
+  _roles: [],
+  author: null
+}
+GuildEmoji {
+  animated: false,
+  name: 'buddhist_meditator',
+  id: '880764277324132352',
+  deleted: false,
+  guild: <ref *1> Guild {
+    id: '827888294100074516',
+    name: 'Gay+ Men Meditating',
+    icon: '551372728aa98b6ccebf16af2856a4a7',
+    features: [],
+    commands: GuildApplicationCommandManager {
+      permissions: [ApplicationCommandPermissionsManager],
+      guild: [Circular *1]
+    },
+    members: GuildMemberManager { guild: [Circular *1] },
+    channels: GuildChannelManager { guild: [Circular *1] },
+    bans: GuildBanManager { guild: [Circular *1] },
+    roles: RoleManager { guild: [Circular *1] },
+    presences: PresenceManager {},
+    voiceStates: VoiceStateManager { guild: [Circular *1] },
+    stageInstances: StageInstanceManager { guild: [Circular *1] },
+    invites: GuildInviteManager { guild: [Circular *1] },
+    deleted: false,
+    available: true,
+    shardId: 0,
+    splash: null,
+    banner: null,
+    description: null,
+    verificationLevel: 'MEDIUM',
+    vanityURLCode: null,
+    nsfwLevel: 'DEFAULT',
+    discoverySplash: null,
+    memberCount: 155,
+    large: true,
+    applicationId: null,
+    afkTimeout: 300,
+    afkChannelId: null,
+    systemChannelId: '827889605994872863',
+    premiumTier: 'NONE',
+    premiumSubscriptionCount: 0,
+    explicitContentFilter: 'MEMBERS_WITHOUT_ROLES',
+    mfaLevel: 'NONE',
+    joinedTimestamp: 1631170526608,
+    defaultMessageNotifications: 'ONLY_MENTIONS',
+    systemChannelFlags: SystemChannelFlags { bitfield: 4 },
+    maximumMembers: 250000,
+    maximumPresences: null,
+    approximateMemberCount: null,
+    approximatePresenceCount: null,
+    vanityURLUses: null,
+    rulesChannelId: null,
+    publicUpdatesChannelId: null,
+    preferredLocale: 'en-US',
+    ownerId: '679465390841135126',
+    emojis: GuildEmojiManager { guild: [Circular *1] },
+    stickers: GuildStickerManager { guild: [Circular *1] }
+  },
+  requiresColons: true,
+  managed: false,
+  available: true,
+  _roles: [],
+  author: null
+}
+GuildEmoji {
+  animated: false,
+  name: 'skeleton_yogi',
+  id: '880764856813363220',
+  deleted: false,
+  guild: <ref *1> Guild {
+    id: '827888294100074516',
+    name: 'Gay+ Men Meditating',
+    icon: '551372728aa98b6ccebf16af2856a4a7',
+    features: [],
+    commands: GuildApplicationCommandManager {
+      permissions: [ApplicationCommandPermissionsManager],
+      guild: [Circular *1]
+    },
+    members: GuildMemberManager { guild: [Circular *1] },
+    channels: GuildChannelManager { guild: [Circular *1] },
+    bans: GuildBanManager { guild: [Circular *1] },
+    roles: RoleManager { guild: [Circular *1] },
+    presences: PresenceManager {},
+    voiceStates: VoiceStateManager { guild: [Circular *1] },
+    stageInstances: StageInstanceManager { guild: [Circular *1] },
+    invites: GuildInviteManager { guild: [Circular *1] },
+    deleted: false,
+    available: true,
+    shardId: 0,
+    splash: null,
+    banner: null,
+    description: null,
+    verificationLevel: 'MEDIUM',
+    vanityURLCode: null,
+    nsfwLevel: 'DEFAULT',
+    discoverySplash: null,
+    memberCount: 155,
+    large: true,
+    applicationId: null,
+    afkTimeout: 300,
+    afkChannelId: null,
+    systemChannelId: '827889605994872863',
+    premiumTier: 'NONE',
+    premiumSubscriptionCount: 0,
+    explicitContentFilter: 'MEMBERS_WITHOUT_ROLES',
+    mfaLevel: 'NONE',
+    joinedTimestamp: 1631170526608,
+    defaultMessageNotifications: 'ONLY_MENTIONS',
+    systemChannelFlags: SystemChannelFlags { bitfield: 4 },
+    maximumMembers: 250000,
+    maximumPresences: null,
+    approximateMemberCount: null,
+    approximatePresenceCount: null,
+    vanityURLUses: null,
+    rulesChannelId: null,
+    publicUpdatesChannelId: null,
+    preferredLocale: 'en-US',
+    ownerId: '679465390841135126',
+    emojis: GuildEmojiManager { guild: [Circular *1] },
+    stickers: GuildStickerManager { guild: [Circular *1] }
+  },
+  requiresColons: true,
+  managed: false,
+  available: true,
+  _roles: [],
+  author: null
+}
+GuildEmoji {
+  animated: false,
+  name: 'moon_rainbow',
+  id: '880765855506509824',
+  deleted: false,
+  guild: <ref *1> Guild {
+    id: '827888294100074516',
+    name: 'Gay+ Men Meditating',
+    icon: '551372728aa98b6ccebf16af2856a4a7',
+    features: [],
+    commands: GuildApplicationCommandManager {
+      permissions: [ApplicationCommandPermissionsManager],
+      guild: [Circular *1]
+    },
+    members: GuildMemberManager { guild: [Circular *1] },
+    channels: GuildChannelManager { guild: [Circular *1] },
+    bans: GuildBanManager { guild: [Circular *1] },
+    roles: RoleManager { guild: [Circular *1] },
+    presences: PresenceManager {},
+    voiceStates: VoiceStateManager { guild: [Circular *1] },
+    stageInstances: StageInstanceManager { guild: [Circular *1] },
+    invites: GuildInviteManager { guild: [Circular *1] },
+    deleted: false,
+    available: true,
+    shardId: 0,
+    splash: null,
+    banner: null,
+    description: null,
+    verificationLevel: 'MEDIUM',
+    vanityURLCode: null,
+    nsfwLevel: 'DEFAULT',
+    discoverySplash: null,
+    memberCount: 155,
+    large: true,
+    applicationId: null,
+    afkTimeout: 300,
+    afkChannelId: null,
+    systemChannelId: '827889605994872863',
+    premiumTier: 'NONE',
+    premiumSubscriptionCount: 0,
+    explicitContentFilter: 'MEMBERS_WITHOUT_ROLES',
+    mfaLevel: 'NONE',
+    joinedTimestamp: 1631170526608,
+    defaultMessageNotifications: 'ONLY_MENTIONS',
+    systemChannelFlags: SystemChannelFlags { bitfield: 4 },
+    maximumMembers: 250000,
+    maximumPresences: null,
+    approximateMemberCount: null,
+    approximatePresenceCount: null,
+    vanityURLUses: null,
+    rulesChannelId: null,
+    publicUpdatesChannelId: null,
+    preferredLocale: 'en-US',
+    ownerId: '679465390841135126',
+    emojis: GuildEmojiManager { guild: [Circular *1] },
+    stickers: GuildStickerManager { guild: [Circular *1] }
+  },
+  requiresColons: true,
+  managed: false,
+  available: true,
+  _roles: [],
+  author: null
+}
+GuildEmoji {
+  animated: false,
+  name: 'heart_rainbow',
+  id: '880767130474262568',
+  deleted: false,
+  guild: <ref *1> Guild {
+    id: '827888294100074516',
+    name: 'Gay+ Men Meditating',
+    icon: '551372728aa98b6ccebf16af2856a4a7',
+    features: [],
+    commands: GuildApplicationCommandManager {
+      permissions: [ApplicationCommandPermissionsManager],
+      guild: [Circular *1]
+    },
+    members: GuildMemberManager { guild: [Circular *1] },
+    channels: GuildChannelManager { guild: [Circular *1] },
+    bans: GuildBanManager { guild: [Circular *1] },
+    roles: RoleManager { guild: [Circular *1] },
+    presences: PresenceManager {},
+    voiceStates: VoiceStateManager { guild: [Circular *1] },
+    stageInstances: StageInstanceManager { guild: [Circular *1] },
+    invites: GuildInviteManager { guild: [Circular *1] },
+    deleted: false,
+    available: true,
+    shardId: 0,
+    splash: null,
+    banner: null,
+    description: null,
+    verificationLevel: 'MEDIUM',
+    vanityURLCode: null,
+    nsfwLevel: 'DEFAULT',
+    discoverySplash: null,
+    memberCount: 155,
+    large: true,
+    applicationId: null,
+    afkTimeout: 300,
+    afkChannelId: null,
+    systemChannelId: '827889605994872863',
+    premiumTier: 'NONE',
+    premiumSubscriptionCount: 0,
+    explicitContentFilter: 'MEMBERS_WITHOUT_ROLES',
+    mfaLevel: 'NONE',
+    joinedTimestamp: 1631170526608,
+    defaultMessageNotifications: 'ONLY_MENTIONS',
+    systemChannelFlags: SystemChannelFlags { bitfield: 4 },
+    maximumMembers: 250000,
+    maximumPresences: null,
+    approximateMemberCount: null,
+    approximatePresenceCount: null,
+    vanityURLUses: null,
+    rulesChannelId: null,
+    publicUpdatesChannelId: null,
+    preferredLocale: 'en-US',
+    ownerId: '679465390841135126',
+    emojis: GuildEmojiManager { guild: [Circular *1] },
+    stickers: GuildStickerManager { guild: [Circular *1] }
+  },
+  requiresColons: true,
+  managed: false,
+  available: true,
+  _roles: [],
+  author: null
+}
+GuildEmoji {
+  animated: false,
+  name: 'heart_rainbow_flag',
+  id: '880767689017155635',
+  deleted: false,
+  guild: <ref *1> Guild {
+    id: '827888294100074516',
+    name: 'Gay+ Men Meditating',
+    icon: '551372728aa98b6ccebf16af2856a4a7',
+    features: [],
+    commands: GuildApplicationCommandManager {
+      permissions: [ApplicationCommandPermissionsManager],
+      guild: [Circular *1]
+    },
+    members: GuildMemberManager { guild: [Circular *1] },
+    channels: GuildChannelManager { guild: [Circular *1] },
+    bans: GuildBanManager { guild: [Circular *1] },
+    roles: RoleManager { guild: [Circular *1] },
+    presences: PresenceManager {},
+    voiceStates: VoiceStateManager { guild: [Circular *1] },
+    stageInstances: StageInstanceManager { guild: [Circular *1] },
+    invites: GuildInviteManager { guild: [Circular *1] },
+    deleted: false,
+    available: true,
+    shardId: 0,
+    splash: null,
+    banner: null,
+    description: null,
+    verificationLevel: 'MEDIUM',
+    vanityURLCode: null,
+    nsfwLevel: 'DEFAULT',
+    discoverySplash: null,
+    memberCount: 155,
+    large: true,
+    applicationId: null,
+    afkTimeout: 300,
+    afkChannelId: null,
+    systemChannelId: '827889605994872863',
+    premiumTier: 'NONE',
+    premiumSubscriptionCount: 0,
+    explicitContentFilter: 'MEMBERS_WITHOUT_ROLES',
+    mfaLevel: 'NONE',
+    joinedTimestamp: 1631170526608,
+    defaultMessageNotifications: 'ONLY_MENTIONS',
+    systemChannelFlags: SystemChannelFlags { bitfield: 4 },
+    maximumMembers: 250000,
+    maximumPresences: null,
+    approximateMemberCount: null,
+    approximatePresenceCount: null,
+    vanityURLUses: null,
+    rulesChannelId: null,
+    publicUpdatesChannelId: null,
+    preferredLocale: 'en-US',
+    ownerId: '679465390841135126',
+    emojis: GuildEmojiManager { guild: [Circular *1] },
+    stickers: GuildStickerManager { guild: [Circular *1] }
+  },
+  requiresColons: true,
+  managed: false,
+  available: true,
+  _roles: [],
+  author: null
+}
+GuildEmoji {
+  animated: false,
+  name: 'india_heart',
+  id: '880769545223163945',
+  deleted: false,
+  guild: <ref *1> Guild {
+    id: '827888294100074516',
+    name: 'Gay+ Men Meditating',
+    icon: '551372728aa98b6ccebf16af2856a4a7',
+    features: [],
+    commands: GuildApplicationCommandManager {
+      permissions: [ApplicationCommandPermissionsManager],
+      guild: [Circular *1]
+    },
+    members: GuildMemberManager { guild: [Circular *1] },
+    channels: GuildChannelManager { guild: [Circular *1] },
+    bans: GuildBanManager { guild: [Circular *1] },
+    roles: RoleManager { guild: [Circular *1] },
+    presences: PresenceManager {},
+    voiceStates: VoiceStateManager { guild: [Circular *1] },
+    stageInstances: StageInstanceManager { guild: [Circular *1] },
+    invites: GuildInviteManager { guild: [Circular *1] },
+    deleted: false,
+    available: true,
+    shardId: 0,
+    splash: null,
+    banner: null,
+    description: null,
+    verificationLevel: 'MEDIUM',
+    vanityURLCode: null,
+    nsfwLevel: 'DEFAULT',
+    discoverySplash: null,
+    memberCount: 155,
+    large: true,
+    applicationId: null,
+    afkTimeout: 300,
+    afkChannelId: null,
+    systemChannelId: '827889605994872863',
+    premiumTier: 'NONE',
+    premiumSubscriptionCount: 0,
+    explicitContentFilter: 'MEMBERS_WITHOUT_ROLES',
+    mfaLevel: 'NONE',
+    joinedTimestamp: 1631170526608,
+    defaultMessageNotifications: 'ONLY_MENTIONS',
+    systemChannelFlags: SystemChannelFlags { bitfield: 4 },
+    maximumMembers: 250000,
+    maximumPresences: null,
+    approximateMemberCount: null,
+    approximatePresenceCount: null,
+    vanityURLUses: null,
+    rulesChannelId: null,
+    publicUpdatesChannelId: null,
+    preferredLocale: 'en-US',
+    ownerId: '679465390841135126',
+    emojis: GuildEmojiManager { guild: [Circular *1] },
+    stickers: GuildStickerManager { guild: [Circular *1] }
+  },
+  requiresColons: true,
+  managed: false,
+  available: true,
+  _roles: [],
+  author: null
+}
+GuildEmoji {
+  animated: false,
+  name: 'logo',
+  id: '880770120757153814',
+  deleted: false,
+  guild: <ref *1> Guild {
+    id: '827888294100074516',
+    name: 'Gay+ Men Meditating',
+    icon: '551372728aa98b6ccebf16af2856a4a7',
+    features: [],
+    commands: GuildApplicationCommandManager {
+      permissions: [ApplicationCommandPermissionsManager],
+      guild: [Circular *1]
+    },
+    members: GuildMemberManager { guild: [Circular *1] },
+    channels: GuildChannelManager { guild: [Circular *1] },
+    bans: GuildBanManager { guild: [Circular *1] },
+    roles: RoleManager { guild: [Circular *1] },
+    presences: PresenceManager {},
+    voiceStates: VoiceStateManager { guild: [Circular *1] },
+    stageInstances: StageInstanceManager { guild: [Circular *1] },
+    invites: GuildInviteManager { guild: [Circular *1] },
+    deleted: false,
+    available: true,
+    shardId: 0,
+    splash: null,
+    banner: null,
+    description: null,
+    verificationLevel: 'MEDIUM',
+    vanityURLCode: null,
+    nsfwLevel: 'DEFAULT',
+    discoverySplash: null,
+    memberCount: 155,
+    large: true,
+    applicationId: null,
+    afkTimeout: 300,
+    afkChannelId: null,
+    systemChannelId: '827889605994872863',
+    premiumTier: 'NONE',
+    premiumSubscriptionCount: 0,
+    explicitContentFilter: 'MEMBERS_WITHOUT_ROLES',
+    mfaLevel: 'NONE',
+    joinedTimestamp: 1631170526608,
+    defaultMessageNotifications: 'ONLY_MENTIONS',
+    systemChannelFlags: SystemChannelFlags { bitfield: 4 },
+    maximumMembers: 250000,
+    maximumPresences: null,
+    approximateMemberCount: null,
+    approximatePresenceCount: null,
+    vanityURLUses: null,
+    rulesChannelId: null,
+    publicUpdatesChannelId: null,
+    preferredLocale: 'en-US',
+    ownerId: '679465390841135126',
+    emojis: GuildEmojiManager { guild: [Circular *1] },
+    stickers: GuildStickerManager { guild: [Circular *1] }
+  },
+  requiresColons: true,
+  managed: false,
+  available: true,
+  _roles: [],
+  author: null
+}
+GuildEmoji {
+  animated: false,
+  name: 'grey_cat',
+  id: '880772302353080381',
+  deleted: false,
+  guild: <ref *1> Guild {
+    id: '827888294100074516',
+    name: 'Gay+ Men Meditating',
+    icon: '551372728aa98b6ccebf16af2856a4a7',
+    features: [],
+    commands: GuildApplicationCommandManager {
+      permissions: [ApplicationCommandPermissionsManager],
+      guild: [Circular *1]
+    },
+    members: GuildMemberManager { guild: [Circular *1] },
+    channels: GuildChannelManager { guild: [Circular *1] },
+    bans: GuildBanManager { guild: [Circular *1] },
+    roles: RoleManager { guild: [Circular *1] },
+    presences: PresenceManager {},
+    voiceStates: VoiceStateManager { guild: [Circular *1] },
+    stageInstances: StageInstanceManager { guild: [Circular *1] },
+    invites: GuildInviteManager { guild: [Circular *1] },
+    deleted: false,
+    available: true,
+    shardId: 0,
+    splash: null,
+    banner: null,
+    description: null,
+    verificationLevel: 'MEDIUM',
+    vanityURLCode: null,
+    nsfwLevel: 'DEFAULT',
+    discoverySplash: null,
+    memberCount: 155,
+    large: true,
+    applicationId: null,
+    afkTimeout: 300,
+    afkChannelId: null,
+    systemChannelId: '827889605994872863',
+    premiumTier: 'NONE',
+    premiumSubscriptionCount: 0,
+    explicitContentFilter: 'MEMBERS_WITHOUT_ROLES',
+    mfaLevel: 'NONE',
+    joinedTimestamp: 1631170526608,
+    defaultMessageNotifications: 'ONLY_MENTIONS',
+    systemChannelFlags: SystemChannelFlags { bitfield: 4 },
+    maximumMembers: 250000,
+    maximumPresences: null,
+    approximateMemberCount: null,
+    approximatePresenceCount: null,
+    vanityURLUses: null,
+    rulesChannelId: null,
+    publicUpdatesChannelId: null,
+    preferredLocale: 'en-US',
+    ownerId: '679465390841135126',
+    emojis: GuildEmojiManager { guild: [Circular *1] },
+    stickers: GuildStickerManager { guild: [Circular *1] }
+  },
+  requiresColons: true,
+  managed: false,
+  available: true,
+  _roles: [],
+  author: null
+}
+GuildEmoji {
+  animated: false,
+  name: 'flag_tibet',
+  id: '881085064014876692',
+  deleted: false,
+  guild: <ref *1> Guild {
+    id: '827888294100074516',
+    name: 'Gay+ Men Meditating',
+    icon: '551372728aa98b6ccebf16af2856a4a7',
+    features: [],
+    commands: GuildApplicationCommandManager {
+      permissions: [ApplicationCommandPermissionsManager],
+      guild: [Circular *1]
+    },
+    members: GuildMemberManager { guild: [Circular *1] },
+    channels: GuildChannelManager { guild: [Circular *1] },
+    bans: GuildBanManager { guild: [Circular *1] },
+    roles: RoleManager { guild: [Circular *1] },
+    presences: PresenceManager {},
+    voiceStates: VoiceStateManager { guild: [Circular *1] },
+    stageInstances: StageInstanceManager { guild: [Circular *1] },
+    invites: GuildInviteManager { guild: [Circular *1] },
+    deleted: false,
+    available: true,
+    shardId: 0,
+    splash: null,
+    banner: null,
+    description: null,
+    verificationLevel: 'MEDIUM',
+    vanityURLCode: null,
+    nsfwLevel: 'DEFAULT',
+    discoverySplash: null,
+    memberCount: 155,
+    large: true,
+    applicationId: null,
+    afkTimeout: 300,
+    afkChannelId: null,
+    systemChannelId: '827889605994872863',
+    premiumTier: 'NONE',
+    premiumSubscriptionCount: 0,
+    explicitContentFilter: 'MEMBERS_WITHOUT_ROLES',
+    mfaLevel: 'NONE',
+    joinedTimestamp: 1631170526608,
+    defaultMessageNotifications: 'ONLY_MENTIONS',
+    systemChannelFlags: SystemChannelFlags { bitfield: 4 },
+    maximumMembers: 250000,
+    maximumPresences: null,
+    approximateMemberCount: null,
+    approximatePresenceCount: null,
+    vanityURLUses: null,
+    rulesChannelId: null,
+    publicUpdatesChannelId: null,
+    preferredLocale: 'en-US',
+    ownerId: '679465390841135126',
+    emojis: GuildEmojiManager { guild: [Circular *1] },
+    stickers: GuildStickerManager { guild: [Circular *1] }
+  },
+  requiresColons: true,
+  managed: false,
+  available: true,
+  _roles: [],
+  author: null
+}
+GuildEmoji {
+  animated: false,
+  name: 'flag_buddhism',
+  id: '881085979107155990',
+  deleted: false,
+  guild: <ref *1> Guild {
+    id: '827888294100074516',
+    name: 'Gay+ Men Meditating',
+    icon: '551372728aa98b6ccebf16af2856a4a7',
+    features: [],
+    commands: GuildApplicationCommandManager {
+      permissions: [ApplicationCommandPermissionsManager],
+      guild: [Circular *1]
+    },
+    members: GuildMemberManager { guild: [Circular *1] },
+    channels: GuildChannelManager { guild: [Circular *1] },
+    bans: GuildBanManager { guild: [Circular *1] },
+    roles: RoleManager { guild: [Circular *1] },
+    presences: PresenceManager {},
+    voiceStates: VoiceStateManager { guild: [Circular *1] },
+    stageInstances: StageInstanceManager { guild: [Circular *1] },
+    invites: GuildInviteManager { guild: [Circular *1] },
+    deleted: false,
+    available: true,
+    shardId: 0,
+    splash: null,
+    banner: null,
+    description: null,
+    verificationLevel: 'MEDIUM',
+    vanityURLCode: null,
+    nsfwLevel: 'DEFAULT',
+    discoverySplash: null,
+    memberCount: 155,
+    large: true,
+    applicationId: null,
+    afkTimeout: 300,
+    afkChannelId: null,
+    systemChannelId: '827889605994872863',
+    premiumTier: 'NONE',
+    premiumSubscriptionCount: 0,
+    explicitContentFilter: 'MEMBERS_WITHOUT_ROLES',
+    mfaLevel: 'NONE',
+    joinedTimestamp: 1631170526608,
+    defaultMessageNotifications: 'ONLY_MENTIONS',
+    systemChannelFlags: SystemChannelFlags { bitfield: 4 },
+    maximumMembers: 250000,
+    maximumPresences: null,
+    approximateMemberCount: null,
+    approximatePresenceCount: null,
+    vanityURLUses: null,
+    rulesChannelId: null,
+    publicUpdatesChannelId: null,
+    preferredLocale: 'en-US',
+    ownerId: '679465390841135126',
+    emojis: GuildEmojiManager { guild: [Circular *1] },
+    stickers: GuildStickerManager { guild: [Circular *1] }
+  },
+  requiresColons: true,
+  managed: false,
+  available: true,
+  _roles: [],
+  author: null
+}
+GuildEmoji {
+  animated: false,
+  name: 'manekineko',
+  id: '881087236479807498',
+  deleted: false,
+  guild: <ref *1> Guild {
+    id: '827888294100074516',
+    name: 'Gay+ Men Meditating',
+    icon: '551372728aa98b6ccebf16af2856a4a7',
+    features: [],
+    commands: GuildApplicationCommandManager {
+      permissions: [ApplicationCommandPermissionsManager],
+      guild: [Circular *1]
+    },
+    members: GuildMemberManager { guild: [Circular *1] },
+    channels: GuildChannelManager { guild: [Circular *1] },
+    bans: GuildBanManager { guild: [Circular *1] },
+    roles: RoleManager { guild: [Circular *1] },
+    presences: PresenceManager {},
+    voiceStates: VoiceStateManager { guild: [Circular *1] },
+    stageInstances: StageInstanceManager { guild: [Circular *1] },
+    invites: GuildInviteManager { guild: [Circular *1] },
+    deleted: false,
+    available: true,
+    shardId: 0,
+    splash: null,
+    banner: null,
+    description: null,
+    verificationLevel: 'MEDIUM',
+    vanityURLCode: null,
+    nsfwLevel: 'DEFAULT',
+    discoverySplash: null,
+    memberCount: 155,
+    large: true,
+    applicationId: null,
+    afkTimeout: 300,
+    afkChannelId: null,
+    systemChannelId: '827889605994872863',
+    premiumTier: 'NONE',
+    premiumSubscriptionCount: 0,
+    explicitContentFilter: 'MEMBERS_WITHOUT_ROLES',
+    mfaLevel: 'NONE',
+    joinedTimestamp: 1631170526608,
+    defaultMessageNotifications: 'ONLY_MENTIONS',
+    systemChannelFlags: SystemChannelFlags { bitfield: 4 },
+    maximumMembers: 250000,
+    maximumPresences: null,
+    approximateMemberCount: null,
+    approximatePresenceCount: null,
+    vanityURLUses: null,
+    rulesChannelId: null,
+    publicUpdatesChannelId: null,
+    preferredLocale: 'en-US',
+    ownerId: '679465390841135126',
+    emojis: GuildEmojiManager { guild: [Circular *1] },
+    stickers: GuildStickerManager { guild: [Circular *1] }
+  },
+  requiresColons: true,
+  managed: false,
+  available: true,
+  _roles: [],
+  author: null
+}
+GuildEmoji {
+  animated: false,
+  name: 'memes',
+  id: '881684109271904266',
+  deleted: false,
+  guild: <ref *1> Guild {
+    id: '827888294100074516',
+    name: 'Gay+ Men Meditating',
+    icon: '551372728aa98b6ccebf16af2856a4a7',
+    features: [],
+    commands: GuildApplicationCommandManager {
+      permissions: [ApplicationCommandPermissionsManager],
+      guild: [Circular *1]
+    },
+    members: GuildMemberManager { guild: [Circular *1] },
+    channels: GuildChannelManager { guild: [Circular *1] },
+    bans: GuildBanManager { guild: [Circular *1] },
+    roles: RoleManager { guild: [Circular *1] },
+    presences: PresenceManager {},
+    voiceStates: VoiceStateManager { guild: [Circular *1] },
+    stageInstances: StageInstanceManager { guild: [Circular *1] },
+    invites: GuildInviteManager { guild: [Circular *1] },
+    deleted: false,
+    available: true,
+    shardId: 0,
+    splash: null,
+    banner: null,
+    description: null,
+    verificationLevel: 'MEDIUM',
+    vanityURLCode: null,
+    nsfwLevel: 'DEFAULT',
+    discoverySplash: null,
+    memberCount: 155,
+    large: true,
+    applicationId: null,
+    afkTimeout: 300,
+    afkChannelId: null,
+    systemChannelId: '827889605994872863',
+    premiumTier: 'NONE',
+    premiumSubscriptionCount: 0,
+    explicitContentFilter: 'MEMBERS_WITHOUT_ROLES',
+    mfaLevel: 'NONE',
+    joinedTimestamp: 1631170526608,
+    defaultMessageNotifications: 'ONLY_MENTIONS',
+    systemChannelFlags: SystemChannelFlags { bitfield: 4 },
+    maximumMembers: 250000,
+    maximumPresences: null,
+    approximateMemberCount: null,
+    approximatePresenceCount: null,
+    vanityURLUses: null,
+    rulesChannelId: null,
+    publicUpdatesChannelId: null,
+    preferredLocale: 'en-US',
+    ownerId: '679465390841135126',
+    emojis: GuildEmojiManager { guild: [Circular *1] },
+    stickers: GuildStickerManager { guild: [Circular *1] }
+  },
+  requiresColons: true,
+  managed: false,
+  available: true,
+  _roles: [],
+  author: null
+}
+GuildEmoji {
+  animated: false,
+  name: 'buddha',
+  id: '881891808706166835',
+  deleted: false,
+  guild: <ref *1> Guild {
+    id: '827888294100074516',
+    name: 'Gay+ Men Meditating',
+    icon: '551372728aa98b6ccebf16af2856a4a7',
+    features: [],
+    commands: GuildApplicationCommandManager {
+      permissions: [ApplicationCommandPermissionsManager],
+      guild: [Circular *1]
+    },
+    members: GuildMemberManager { guild: [Circular *1] },
+    channels: GuildChannelManager { guild: [Circular *1] },
+    bans: GuildBanManager { guild: [Circular *1] },
+    roles: RoleManager { guild: [Circular *1] },
+    presences: PresenceManager {},
+    voiceStates: VoiceStateManager { guild: [Circular *1] },
+    stageInstances: StageInstanceManager { guild: [Circular *1] },
+    invites: GuildInviteManager { guild: [Circular *1] },
+    deleted: false,
+    available: true,
+    shardId: 0,
+    splash: null,
+    banner: null,
+    description: null,
+    verificationLevel: 'MEDIUM',
+    vanityURLCode: null,
+    nsfwLevel: 'DEFAULT',
+    discoverySplash: null,
+    memberCount: 155,
+    large: true,
+    applicationId: null,
+    afkTimeout: 300,
+    afkChannelId: null,
+    systemChannelId: '827889605994872863',
+    premiumTier: 'NONE',
+    premiumSubscriptionCount: 0,
+    explicitContentFilter: 'MEMBERS_WITHOUT_ROLES',
+    mfaLevel: 'NONE',
+    joinedTimestamp: 1631170526608,
+    defaultMessageNotifications: 'ONLY_MENTIONS',
+    systemChannelFlags: SystemChannelFlags { bitfield: 4 },
+    maximumMembers: 250000,
+    maximumPresences: null,
+    approximateMemberCount: null,
+    approximatePresenceCount: null,
+    vanityURLUses: null,
+    rulesChannelId: null,
+    publicUpdatesChannelId: null,
+    preferredLocale: 'en-US',
+    ownerId: '679465390841135126',
+    emojis: GuildEmojiManager { guild: [Circular *1] },
+    stickers: GuildStickerManager { guild: [Circular *1] }
+  },
+  requiresColons: true,
+  managed: false,
+  available: true,
+  _roles: [],
+  author: null
+}
+GuildEmoji {
+  animated: false,
+  name: 'jaganath',
+  id: '881894545070100510',
+  deleted: false,
+  guild: <ref *1> Guild {
+    id: '827888294100074516',
+    name: 'Gay+ Men Meditating',
+    icon: '551372728aa98b6ccebf16af2856a4a7',
+    features: [],
+    commands: GuildApplicationCommandManager {
+      permissions: [ApplicationCommandPermissionsManager],
+      guild: [Circular *1]
+    },
+    members: GuildMemberManager { guild: [Circular *1] },
+    channels: GuildChannelManager { guild: [Circular *1] },
+    bans: GuildBanManager { guild: [Circular *1] },
+    roles: RoleManager { guild: [Circular *1] },
+    presences: PresenceManager {},
+    voiceStates: VoiceStateManager { guild: [Circular *1] },
+    stageInstances: StageInstanceManager { guild: [Circular *1] },
+    invites: GuildInviteManager { guild: [Circular *1] },
+    deleted: false,
+    available: true,
+    shardId: 0,
+    splash: null,
+    banner: null,
+    description: null,
+    verificationLevel: 'MEDIUM',
+    vanityURLCode: null,
+    nsfwLevel: 'DEFAULT',
+    discoverySplash: null,
+    memberCount: 155,
+    large: true,
+    applicationId: null,
+    afkTimeout: 300,
+    afkChannelId: null,
+    systemChannelId: '827889605994872863',
+    premiumTier: 'NONE',
+    premiumSubscriptionCount: 0,
+    explicitContentFilter: 'MEMBERS_WITHOUT_ROLES',
+    mfaLevel: 'NONE',
+    joinedTimestamp: 1631170526608,
+    defaultMessageNotifications: 'ONLY_MENTIONS',
+    systemChannelFlags: SystemChannelFlags { bitfield: 4 },
+    maximumMembers: 250000,
+    maximumPresences: null,
+    approximateMemberCount: null,
+    approximatePresenceCount: null,
+    vanityURLUses: null,
+    rulesChannelId: null,
+    publicUpdatesChannelId: null,
+    preferredLocale: 'en-US',
+    ownerId: '679465390841135126',
+    emojis: GuildEmojiManager { guild: [Circular *1] },
+    stickers: GuildStickerManager { guild: [Circular *1] }
+  },
+  requiresColons: true,
+  managed: false,
+  available: true,
+  _roles: [],
+  author: null
+}
+GuildEmoji {
+  animated: false,
+  name: 'rainbow_star',
+  id: '882077352799133696',
+  deleted: false,
+  guild: <ref *1> Guild {
+    id: '827888294100074516',
+    name: 'Gay+ Men Meditating',
+    icon: '551372728aa98b6ccebf16af2856a4a7',
+    features: [],
+    commands: GuildApplicationCommandManager {
+      permissions: [ApplicationCommandPermissionsManager],
+      guild: [Circular *1]
+    },
+    members: GuildMemberManager { guild: [Circular *1] },
+    channels: GuildChannelManager { guild: [Circular *1] },
+    bans: GuildBanManager { guild: [Circular *1] },
+    roles: RoleManager { guild: [Circular *1] },
+    presences: PresenceManager {},
+    voiceStates: VoiceStateManager { guild: [Circular *1] },
+    stageInstances: StageInstanceManager { guild: [Circular *1] },
+    invites: GuildInviteManager { guild: [Circular *1] },
+    deleted: false,
+    available: true,
+    shardId: 0,
+    splash: null,
+    banner: null,
+    description: null,
+    verificationLevel: 'MEDIUM',
+    vanityURLCode: null,
+    nsfwLevel: 'DEFAULT',
+    discoverySplash: null,
+    memberCount: 155,
+    large: true,
+    applicationId: null,
+    afkTimeout: 300,
+    afkChannelId: null,
+    systemChannelId: '827889605994872863',
+    premiumTier: 'NONE',
+    premiumSubscriptionCount: 0,
+    explicitContentFilter: 'MEMBERS_WITHOUT_ROLES',
+    mfaLevel: 'NONE',
+    joinedTimestamp: 1631170526608,
+    defaultMessageNotifications: 'ONLY_MENTIONS',
+    systemChannelFlags: SystemChannelFlags { bitfield: 4 },
+    maximumMembers: 250000,
+    maximumPresences: null,
+    approximateMemberCount: null,
+    approximatePresenceCount: null,
+    vanityURLUses: null,
+    rulesChannelId: null,
+    publicUpdatesChannelId: null,
+    preferredLocale: 'en-US',
+    ownerId: '679465390841135126',
+    emojis: GuildEmojiManager { guild: [Circular *1] },
+    stickers: GuildStickerManager { guild: [Circular *1] }
+  },
+  requiresColons: true,
+  managed: false,
+  available: true,
+  _roles: [],
+  author: null
+}
+GuildEmoji {
+  animated: false,
+  name: 'mirrorball',
+  id: '882139765217050624',
+  deleted: false,
+  guild: <ref *1> Guild {
+    id: '827888294100074516',
+    name: 'Gay+ Men Meditating',
+    icon: '551372728aa98b6ccebf16af2856a4a7',
+    features: [],
+    commands: GuildApplicationCommandManager {
+      permissions: [ApplicationCommandPermissionsManager],
+      guild: [Circular *1]
+    },
+    members: GuildMemberManager { guild: [Circular *1] },
+    channels: GuildChannelManager { guild: [Circular *1] },
+    bans: GuildBanManager { guild: [Circular *1] },
+    roles: RoleManager { guild: [Circular *1] },
+    presences: PresenceManager {},
+    voiceStates: VoiceStateManager { guild: [Circular *1] },
+    stageInstances: StageInstanceManager { guild: [Circular *1] },
+    invites: GuildInviteManager { guild: [Circular *1] },
+    deleted: false,
+    available: true,
+    shardId: 0,
+    splash: null,
+    banner: null,
+    description: null,
+    verificationLevel: 'MEDIUM',
+    vanityURLCode: null,
+    nsfwLevel: 'DEFAULT',
+    discoverySplash: null,
+    memberCount: 155,
+    large: true,
+    applicationId: null,
+    afkTimeout: 300,
+    afkChannelId: null,
+    systemChannelId: '827889605994872863',
+    premiumTier: 'NONE',
+    premiumSubscriptionCount: 0,
+    explicitContentFilter: 'MEMBERS_WITHOUT_ROLES',
+    mfaLevel: 'NONE',
+    joinedTimestamp: 1631170526608,
+    defaultMessageNotifications: 'ONLY_MENTIONS',
+    systemChannelFlags: SystemChannelFlags { bitfield: 4 },
+    maximumMembers: 250000,
+    maximumPresences: null,
+    approximateMemberCount: null,
+    approximatePresenceCount: null,
+    vanityURLUses: null,
+    rulesChannelId: null,
+    publicUpdatesChannelId: null,
+    preferredLocale: 'en-US',
+    ownerId: '679465390841135126',
+    emojis: GuildEmojiManager { guild: [Circular *1] },
+    stickers: GuildStickerManager { guild: [Circular *1] }
+  },
+  requiresColons: true,
+  managed: false,
+  available: true,
+  _roles: [],
+  author: null
+}
+GuildEmoji {
+  animated: false,
+  name: 'sauna',
+  id: '882140417120944138',
+  deleted: false,
+  guild: <ref *1> Guild {
+    id: '827888294100074516',
+    name: 'Gay+ Men Meditating',
+    icon: '551372728aa98b6ccebf16af2856a4a7',
+    features: [],
+    commands: GuildApplicationCommandManager {
+      permissions: [ApplicationCommandPermissionsManager],
+      guild: [Circular *1]
+    },
+    members: GuildMemberManager { guild: [Circular *1] },
+    channels: GuildChannelManager { guild: [Circular *1] },
+    bans: GuildBanManager { guild: [Circular *1] },
+    roles: RoleManager { guild: [Circular *1] },
+    presences: PresenceManager {},
+    voiceStates: VoiceStateManager { guild: [Circular *1] },
+    stageInstances: StageInstanceManager { guild: [Circular *1] },
+    invites: GuildInviteManager { guild: [Circular *1] },
+    deleted: false,
+    available: true,
+    shardId: 0,
+    splash: null,
+    banner: null,
+    description: null,
+    verificationLevel: 'MEDIUM',
+    vanityURLCode: null,
+    nsfwLevel: 'DEFAULT',
+    discoverySplash: null,
+    memberCount: 155,
+    large: true,
+    applicationId: null,
+    afkTimeout: 300,
+    afkChannelId: null,
+    systemChannelId: '827889605994872863',
+    premiumTier: 'NONE',
+    premiumSubscriptionCount: 0,
+    explicitContentFilter: 'MEMBERS_WITHOUT_ROLES',
+    mfaLevel: 'NONE',
+    joinedTimestamp: 1631170526608,
+    defaultMessageNotifications: 'ONLY_MENTIONS',
+    systemChannelFlags: SystemChannelFlags { bitfield: 4 },
+    maximumMembers: 250000,
+    maximumPresences: null,
+    approximateMemberCount: null,
+    approximatePresenceCount: null,
+    vanityURLUses: null,
+    rulesChannelId: null,
+    publicUpdatesChannelId: null,
+    preferredLocale: 'en-US',
+    ownerId: '679465390841135126',
+    emojis: GuildEmojiManager { guild: [Circular *1] },
+    stickers: GuildStickerManager { guild: [Circular *1] }
+  },
+  requiresColons: true,
+  managed: false,
+  available: true,
+  _roles: [],
+  author: null
+}
+GuildEmoji {
+  animated: false,
+  name: 'yin_yang_bw',
+  id: '882146353164206102',
+  deleted: false,
+  guild: <ref *1> Guild {
+    id: '827888294100074516',
+    name: 'Gay+ Men Meditating',
+    icon: '551372728aa98b6ccebf16af2856a4a7',
+    features: [],
+    commands: GuildApplicationCommandManager {
+      permissions: [ApplicationCommandPermissionsManager],
+      guild: [Circular *1]
+    },
+    members: GuildMemberManager { guild: [Circular *1] },
+    channels: GuildChannelManager { guild: [Circular *1] },
+    bans: GuildBanManager { guild: [Circular *1] },
+    roles: RoleManager { guild: [Circular *1] },
+    presences: PresenceManager {},
+    voiceStates: VoiceStateManager { guild: [Circular *1] },
+    stageInstances: StageInstanceManager { guild: [Circular *1] },
+    invites: GuildInviteManager { guild: [Circular *1] },
+    deleted: false,
+    available: true,
+    shardId: 0,
+    splash: null,
+    banner: null,
+    description: null,
+    verificationLevel: 'MEDIUM',
+    vanityURLCode: null,
+    nsfwLevel: 'DEFAULT',
+    discoverySplash: null,
+    memberCount: 155,
+    large: true,
+    applicationId: null,
+    afkTimeout: 300,
+    afkChannelId: null,
+    systemChannelId: '827889605994872863',
+    premiumTier: 'NONE',
+    premiumSubscriptionCount: 0,
+    explicitContentFilter: 'MEMBERS_WITHOUT_ROLES',
+    mfaLevel: 'NONE',
+    joinedTimestamp: 1631170526608,
+    defaultMessageNotifications: 'ONLY_MENTIONS',
+    systemChannelFlags: SystemChannelFlags { bitfield: 4 },
+    maximumMembers: 250000,
+    maximumPresences: null,
+    approximateMemberCount: null,
+    approximatePresenceCount: null,
+    vanityURLUses: null,
+    rulesChannelId: null,
+    publicUpdatesChannelId: null,
+    preferredLocale: 'en-US',
+    ownerId: '679465390841135126',
+    emojis: GuildEmojiManager { guild: [Circular *1] },
+    stickers: GuildStickerManager { guild: [Circular *1] }
+  },
+  requiresColons: true,
+  managed: false,
+  available: true,
+  _roles: [],
+  author: null
+}
+GuildEmoji {
+  animated: false,
+  name: 'spiritual_development',
+  id: '882147096256466984',
+  deleted: false,
+  guild: <ref *1> Guild {
+    id: '827888294100074516',
+    name: 'Gay+ Men Meditating',
+    icon: '551372728aa98b6ccebf16af2856a4a7',
+    features: [],
+    commands: GuildApplicationCommandManager {
+      permissions: [ApplicationCommandPermissionsManager],
+      guild: [Circular *1]
+    },
+    members: GuildMemberManager { guild: [Circular *1] },
+    channels: GuildChannelManager { guild: [Circular *1] },
+    bans: GuildBanManager { guild: [Circular *1] },
+    roles: RoleManager { guild: [Circular *1] },
+    presences: PresenceManager {},
+    voiceStates: VoiceStateManager { guild: [Circular *1] },
+    stageInstances: StageInstanceManager { guild: [Circular *1] },
+    invites: GuildInviteManager { guild: [Circular *1] },
+    deleted: false,
+    available: true,
+    shardId: 0,
+    splash: null,
+    banner: null,
+    description: null,
+    verificationLevel: 'MEDIUM',
+    vanityURLCode: null,
+    nsfwLevel: 'DEFAULT',
+    discoverySplash: null,
+    memberCount: 155,
+    large: true,
+    applicationId: null,
+    afkTimeout: 300,
+    afkChannelId: null,
+    systemChannelId: '827889605994872863',
+    premiumTier: 'NONE',
+    premiumSubscriptionCount: 0,
+    explicitContentFilter: 'MEMBERS_WITHOUT_ROLES',
+    mfaLevel: 'NONE',
+    joinedTimestamp: 1631170526608,
+    defaultMessageNotifications: 'ONLY_MENTIONS',
+    systemChannelFlags: SystemChannelFlags { bitfield: 4 },
+    maximumMembers: 250000,
+    maximumPresences: null,
+    approximateMemberCount: null,
+    approximatePresenceCount: null,
+    vanityURLUses: null,
+    rulesChannelId: null,
+    publicUpdatesChannelId: null,
+    preferredLocale: 'en-US',
+    ownerId: '679465390841135126',
+    emojis: GuildEmojiManager { guild: [Circular *1] },
+    stickers: GuildStickerManager { guild: [Circular *1] }
+  },
+  requiresColons: true,
+  managed: false,
+  available: true,
+  _roles: [],
+  author: null
+}
+GuildEmoji {
+  animated: false,
+  name: 'sensitive_thinker',
+  id: '882147912782602240',
+  deleted: false,
+  guild: <ref *1> Guild {
+    id: '827888294100074516',
+    name: 'Gay+ Men Meditating',
+    icon: '551372728aa98b6ccebf16af2856a4a7',
+    features: [],
+    commands: GuildApplicationCommandManager {
+      permissions: [ApplicationCommandPermissionsManager],
+      guild: [Circular *1]
+    },
+    members: GuildMemberManager { guild: [Circular *1] },
+    channels: GuildChannelManager { guild: [Circular *1] },
+    bans: GuildBanManager { guild: [Circular *1] },
+    roles: RoleManager { guild: [Circular *1] },
+    presences: PresenceManager {},
+    voiceStates: VoiceStateManager { guild: [Circular *1] },
+    stageInstances: StageInstanceManager { guild: [Circular *1] },
+    invites: GuildInviteManager { guild: [Circular *1] },
+    deleted: false,
+    available: true,
+    shardId: 0,
+    splash: null,
+    banner: null,
+    description: null,
+    verificationLevel: 'MEDIUM',
+    vanityURLCode: null,
+    nsfwLevel: 'DEFAULT',
+    discoverySplash: null,
+    memberCount: 155,
+    large: true,
+    applicationId: null,
+    afkTimeout: 300,
+    afkChannelId: null,
+    systemChannelId: '827889605994872863',
+    premiumTier: 'NONE',
+    premiumSubscriptionCount: 0,
+    explicitContentFilter: 'MEMBERS_WITHOUT_ROLES',
+    mfaLevel: 'NONE',
+    joinedTimestamp: 1631170526608,
+    defaultMessageNotifications: 'ONLY_MENTIONS',
+    systemChannelFlags: SystemChannelFlags { bitfield: 4 },
+    maximumMembers: 250000,
+    maximumPresences: null,
+    approximateMemberCount: null,
+    approximatePresenceCount: null,
+    vanityURLUses: null,
+    rulesChannelId: null,
+    publicUpdatesChannelId: null,
+    preferredLocale: 'en-US',
+    ownerId: '679465390841135126',
+    emojis: GuildEmojiManager { guild: [Circular *1] },
+    stickers: GuildStickerManager { guild: [Circular *1] }
+  },
+  requiresColons: true,
+  managed: false,
+  available: true,
+  _roles: [],
+  author: null
+}
+GuildEmoji {
+  animated: false,
+  name: 'ise_grand_shrine_shinto',
+  id: '882214725293846529',
+  deleted: false,
+  guild: <ref *1> Guild {
+    id: '827888294100074516',
+    name: 'Gay+ Men Meditating',
+    icon: '551372728aa98b6ccebf16af2856a4a7',
+    features: [],
+    commands: GuildApplicationCommandManager {
+      permissions: [ApplicationCommandPermissionsManager],
+      guild: [Circular *1]
+    },
+    members: GuildMemberManager { guild: [Circular *1] },
+    channels: GuildChannelManager { guild: [Circular *1] },
+    bans: GuildBanManager { guild: [Circular *1] },
+    roles: RoleManager { guild: [Circular *1] },
+    presences: PresenceManager {},
+    voiceStates: VoiceStateManager { guild: [Circular *1] },
+    stageInstances: StageInstanceManager { guild: [Circular *1] },
+    invites: GuildInviteManager { guild: [Circular *1] },
+    deleted: false,
+    available: true,
+    shardId: 0,
+    splash: null,
+    banner: null,
+    description: null,
+    verificationLevel: 'MEDIUM',
+    vanityURLCode: null,
+    nsfwLevel: 'DEFAULT',
+    discoverySplash: null,
+    memberCount: 155,
+    large: true,
+    applicationId: null,
+    afkTimeout: 300,
+    afkChannelId: null,
+    systemChannelId: '827889605994872863',
+    premiumTier: 'NONE',
+    premiumSubscriptionCount: 0,
+    explicitContentFilter: 'MEMBERS_WITHOUT_ROLES',
+    mfaLevel: 'NONE',
+    joinedTimestamp: 1631170526608,
+    defaultMessageNotifications: 'ONLY_MENTIONS',
+    systemChannelFlags: SystemChannelFlags { bitfield: 4 },
+    maximumMembers: 250000,
+    maximumPresences: null,
+    approximateMemberCount: null,
+    approximatePresenceCount: null,
+    vanityURLUses: null,
+    rulesChannelId: null,
+    publicUpdatesChannelId: null,
+    preferredLocale: 'en-US',
+    ownerId: '679465390841135126',
+    emojis: GuildEmojiManager { guild: [Circular *1] },
+    stickers: GuildStickerManager { guild: [Circular *1] }
+  },
+  requiresColons: true,
+  managed: false,
+  available: true,
+  _roles: [],
+  author: null
+}
+GuildEmoji {
+  animated: false,
+  name: 'wheel_of_dharma_rb',
+  id: '882215431438475274',
+  deleted: false,
+  guild: <ref *1> Guild {
+    id: '827888294100074516',
+    name: 'Gay+ Men Meditating',
+    icon: '551372728aa98b6ccebf16af2856a4a7',
+    features: [],
+    commands: GuildApplicationCommandManager {
+      permissions: [ApplicationCommandPermissionsManager],
+      guild: [Circular *1]
+    },
+    members: GuildMemberManager { guild: [Circular *1] },
+    channels: GuildChannelManager { guild: [Circular *1] },
+    bans: GuildBanManager { guild: [Circular *1] },
+    roles: RoleManager { guild: [Circular *1] },
+    presences: PresenceManager {},
+    voiceStates: VoiceStateManager { guild: [Circular *1] },
+    stageInstances: StageInstanceManager { guild: [Circular *1] },
+    invites: GuildInviteManager { guild: [Circular *1] },
+    deleted: false,
+    available: true,
+    shardId: 0,
+    splash: null,
+    banner: null,
+    description: null,
+    verificationLevel: 'MEDIUM',
+    vanityURLCode: null,
+    nsfwLevel: 'DEFAULT',
+    discoverySplash: null,
+    memberCount: 155,
+    large: true,
+    applicationId: null,
+    afkTimeout: 300,
+    afkChannelId: null,
+    systemChannelId: '827889605994872863',
+    premiumTier: 'NONE',
+    premiumSubscriptionCount: 0,
+    explicitContentFilter: 'MEMBERS_WITHOUT_ROLES',
+    mfaLevel: 'NONE',
+    joinedTimestamp: 1631170526608,
+    defaultMessageNotifications: 'ONLY_MENTIONS',
+    systemChannelFlags: SystemChannelFlags { bitfield: 4 },
+    maximumMembers: 250000,
+    maximumPresences: null,
+    approximateMemberCount: null,
+    approximatePresenceCount: null,
+    vanityURLUses: null,
+    rulesChannelId: null,
+    publicUpdatesChannelId: null,
+    preferredLocale: 'en-US',
+    ownerId: '679465390841135126',
+    emojis: GuildEmojiManager { guild: [Circular *1] },
+    stickers: GuildStickerManager { guild: [Circular *1] }
+  },
+  requiresColons: true,
+  managed: false,
+  available: true,
+  _roles: [],
+  author: null
+}
+GuildEmoji {
+  animated: false,
+  name: 'endless_knot',
+  id: '882216960241328158',
+  deleted: false,
+  guild: <ref *1> Guild {
+    id: '827888294100074516',
+    name: 'Gay+ Men Meditating',
+    icon: '551372728aa98b6ccebf16af2856a4a7',
+    features: [],
+    commands: GuildApplicationCommandManager {
+      permissions: [ApplicationCommandPermissionsManager],
+      guild: [Circular *1]
+    },
+    members: GuildMemberManager { guild: [Circular *1] },
+    channels: GuildChannelManager { guild: [Circular *1] },
+    bans: GuildBanManager { guild: [Circular *1] },
+    roles: RoleManager { guild: [Circular *1] },
+    presences: PresenceManager {},
+    voiceStates: VoiceStateManager { guild: [Circular *1] },
+    stageInstances: StageInstanceManager { guild: [Circular *1] },
+    invites: GuildInviteManager { guild: [Circular *1] },
+    deleted: false,
+    available: true,
+    shardId: 0,
+    splash: null,
+    banner: null,
+    description: null,
+    verificationLevel: 'MEDIUM',
+    vanityURLCode: null,
+    nsfwLevel: 'DEFAULT',
+    discoverySplash: null,
+    memberCount: 155,
+    large: true,
+    applicationId: null,
+    afkTimeout: 300,
+    afkChannelId: null,
+    systemChannelId: '827889605994872863',
+    premiumTier: 'NONE',
+    premiumSubscriptionCount: 0,
+    explicitContentFilter: 'MEMBERS_WITHOUT_ROLES',
+    mfaLevel: 'NONE',
+    joinedTimestamp: 1631170526608,
+    defaultMessageNotifications: 'ONLY_MENTIONS',
+    systemChannelFlags: SystemChannelFlags { bitfield: 4 },
+    maximumMembers: 250000,
+    maximumPresences: null,
+    approximateMemberCount: null,
+    approximatePresenceCount: null,
+    vanityURLUses: null,
+    rulesChannelId: null,
+    publicUpdatesChannelId: null,
+    preferredLocale: 'en-US',
+    ownerId: '679465390841135126',
+    emojis: GuildEmojiManager { guild: [Circular *1] },
+    stickers: GuildStickerManager { guild: [Circular *1] }
+  },
+  requiresColons: true,
+  managed: false,
+  available: true,
+  _roles: [],
+  author: null
+}
+GuildEmoji {
+  animated: false,
+  name: 'bi_pride_octopus',
+  id: '882218690752446484',
+  deleted: false,
+  guild: <ref *1> Guild {
+    id: '827888294100074516',
+    name: 'Gay+ Men Meditating',
+    icon: '551372728aa98b6ccebf16af2856a4a7',
+    features: [],
+    commands: GuildApplicationCommandManager {
+      permissions: [ApplicationCommandPermissionsManager],
+      guild: [Circular *1]
+    },
+    members: GuildMemberManager { guild: [Circular *1] },
+    channels: GuildChannelManager { guild: [Circular *1] },
+    bans: GuildBanManager { guild: [Circular *1] },
+    roles: RoleManager { guild: [Circular *1] },
+    presences: PresenceManager {},
+    voiceStates: VoiceStateManager { guild: [Circular *1] },
+    stageInstances: StageInstanceManager { guild: [Circular *1] },
+    invites: GuildInviteManager { guild: [Circular *1] },
+    deleted: false,
+    available: true,
+    shardId: 0,
+    splash: null,
+    banner: null,
+    description: null,
+    verificationLevel: 'MEDIUM',
+    vanityURLCode: null,
+    nsfwLevel: 'DEFAULT',
+    discoverySplash: null,
+    memberCount: 155,
+    large: true,
+    applicationId: null,
+    afkTimeout: 300,
+    afkChannelId: null,
+    systemChannelId: '827889605994872863',
+    premiumTier: 'NONE',
+    premiumSubscriptionCount: 0,
+    explicitContentFilter: 'MEMBERS_WITHOUT_ROLES',
+    mfaLevel: 'NONE',
+    joinedTimestamp: 1631170526608,
+    defaultMessageNotifications: 'ONLY_MENTIONS',
+    systemChannelFlags: SystemChannelFlags { bitfield: 4 },
+    maximumMembers: 250000,
+    maximumPresences: null,
+    approximateMemberCount: null,
+    approximatePresenceCount: null,
+    vanityURLUses: null,
+    rulesChannelId: null,
+    publicUpdatesChannelId: null,
+    preferredLocale: 'en-US',
+    ownerId: '679465390841135126',
+    emojis: GuildEmojiManager { guild: [Circular *1] },
+    stickers: GuildStickerManager { guild: [Circular *1] }
+  },
+  requiresColons: true,
+  managed: false,
+  available: true,
+  _roles: [],
+  author: null
+}
+GuildEmoji {
+  animated: false,
+  name: 'lgbt',
+  id: '882220891600220170',
+  deleted: false,
+  guild: <ref *1> Guild {
+    id: '827888294100074516',
+    name: 'Gay+ Men Meditating',
+    icon: '551372728aa98b6ccebf16af2856a4a7',
+    features: [],
+    commands: GuildApplicationCommandManager {
+      permissions: [ApplicationCommandPermissionsManager],
+      guild: [Circular *1]
+    },
+    members: GuildMemberManager { guild: [Circular *1] },
+    channels: GuildChannelManager { guild: [Circular *1] },
+    bans: GuildBanManager { guild: [Circular *1] },
+    roles: RoleManager { guild: [Circular *1] },
+    presences: PresenceManager {},
+    voiceStates: VoiceStateManager { guild: [Circular *1] },
+    stageInstances: StageInstanceManager { guild: [Circular *1] },
+    invites: GuildInviteManager { guild: [Circular *1] },
+    deleted: false,
+    available: true,
+    shardId: 0,
+    splash: null,
+    banner: null,
+    description: null,
+    verificationLevel: 'MEDIUM',
+    vanityURLCode: null,
+    nsfwLevel: 'DEFAULT',
+    discoverySplash: null,
+    memberCount: 155,
+    large: true,
+    applicationId: null,
+    afkTimeout: 300,
+    afkChannelId: null,
+    systemChannelId: '827889605994872863',
+    premiumTier: 'NONE',
+    premiumSubscriptionCount: 0,
+    explicitContentFilter: 'MEMBERS_WITHOUT_ROLES',
+    mfaLevel: 'NONE',
+    joinedTimestamp: 1631170526608,
+    defaultMessageNotifications: 'ONLY_MENTIONS',
+    systemChannelFlags: SystemChannelFlags { bitfield: 4 },
+    maximumMembers: 250000,
+    maximumPresences: null,
+    approximateMemberCount: null,
+    approximatePresenceCount: null,
+    vanityURLUses: null,
+    rulesChannelId: null,
+    publicUpdatesChannelId: null,
+    preferredLocale: 'en-US',
+    ownerId: '679465390841135126',
+    emojis: GuildEmojiManager { guild: [Circular *1] },
+    stickers: GuildStickerManager { guild: [Circular *1] }
+  },
+  requiresColons: true,
+  managed: false,
+  available: true,
+  _roles: [],
+  author: null
+}
+GuildEmoji {
+  animated: false,
+  name: 'soft_serve',
+  id: '882221651205423144',
+  deleted: false,
+  guild: <ref *1> Guild {
+    id: '827888294100074516',
+    name: 'Gay+ Men Meditating',
+    icon: '551372728aa98b6ccebf16af2856a4a7',
+    features: [],
+    commands: GuildApplicationCommandManager {
+      permissions: [ApplicationCommandPermissionsManager],
+      guild: [Circular *1]
+    },
+    members: GuildMemberManager { guild: [Circular *1] },
+    channels: GuildChannelManager { guild: [Circular *1] },
+    bans: GuildBanManager { guild: [Circular *1] },
+    roles: RoleManager { guild: [Circular *1] },
+    presences: PresenceManager {},
+    voiceStates: VoiceStateManager { guild: [Circular *1] },
+    stageInstances: StageInstanceManager { guild: [Circular *1] },
+    invites: GuildInviteManager { guild: [Circular *1] },
+    deleted: false,
+    available: true,
+    shardId: 0,
+    splash: null,
+    banner: null,
+    description: null,
+    verificationLevel: 'MEDIUM',
+    vanityURLCode: null,
+    nsfwLevel: 'DEFAULT',
+    discoverySplash: null,
+    memberCount: 155,
+    large: true,
+    applicationId: null,
+    afkTimeout: 300,
+    afkChannelId: null,
+    systemChannelId: '827889605994872863',
+    premiumTier: 'NONE',
+    premiumSubscriptionCount: 0,
+    explicitContentFilter: 'MEMBERS_WITHOUT_ROLES',
+    mfaLevel: 'NONE',
+    joinedTimestamp: 1631170526608,
+    defaultMessageNotifications: 'ONLY_MENTIONS',
+    systemChannelFlags: SystemChannelFlags { bitfield: 4 },
+    maximumMembers: 250000,
+    maximumPresences: null,
+    approximateMemberCount: null,
+    approximatePresenceCount: null,
+    vanityURLUses: null,
+    rulesChannelId: null,
+    publicUpdatesChannelId: null,
+    preferredLocale: 'en-US',
+    ownerId: '679465390841135126',
+    emojis: GuildEmojiManager { guild: [Circular *1] },
+    stickers: GuildStickerManager { guild: [Circular *1] }
+  },
+  requiresColons: true,
+  managed: false,
+  available: true,
+  _roles: [],
+  author: null
+}
+GuildEmoji {
+  animated: false,
+  name: 'zen_enso',
+  id: '883309901303123978',
+  deleted: false,
+  guild: <ref *1> Guild {
+    id: '827888294100074516',
+    name: 'Gay+ Men Meditating',
+    icon: '551372728aa98b6ccebf16af2856a4a7',
+    features: [],
+    commands: GuildApplicationCommandManager {
+      permissions: [ApplicationCommandPermissionsManager],
+      guild: [Circular *1]
+    },
+    members: GuildMemberManager { guild: [Circular *1] },
+    channels: GuildChannelManager { guild: [Circular *1] },
+    bans: GuildBanManager { guild: [Circular *1] },
+    roles: RoleManager { guild: [Circular *1] },
+    presences: PresenceManager {},
+    voiceStates: VoiceStateManager { guild: [Circular *1] },
+    stageInstances: StageInstanceManager { guild: [Circular *1] },
+    invites: GuildInviteManager { guild: [Circular *1] },
+    deleted: false,
+    available: true,
+    shardId: 0,
+    splash: null,
+    banner: null,
+    description: null,
+    verificationLevel: 'MEDIUM',
+    vanityURLCode: null,
+    nsfwLevel: 'DEFAULT',
+    discoverySplash: null,
+    memberCount: 155,
+    large: true,
+    applicationId: null,
+    afkTimeout: 300,
+    afkChannelId: null,
+    systemChannelId: '827889605994872863',
+    premiumTier: 'NONE',
+    premiumSubscriptionCount: 0,
+    explicitContentFilter: 'MEMBERS_WITHOUT_ROLES',
+    mfaLevel: 'NONE',
+    joinedTimestamp: 1631170526608,
+    defaultMessageNotifications: 'ONLY_MENTIONS',
+    systemChannelFlags: SystemChannelFlags { bitfield: 4 },
+    maximumMembers: 250000,
+    maximumPresences: null,
+    approximateMemberCount: null,
+    approximatePresenceCount: null,
+    vanityURLUses: null,
+    rulesChannelId: null,
+    publicUpdatesChannelId: null,
+    preferredLocale: 'en-US',
+    ownerId: '679465390841135126',
+    emojis: GuildEmojiManager { guild: [Circular *1] },
+    stickers: GuildStickerManager { guild: [Circular *1] }
+  },
+  requiresColons: true,
+  managed: false,
+  available: true,
+  _roles: [],
+  author: null
+}
+GuildEmoji {
+  animated: false,
+  name: 'daruma',
+  id: '883310254157361202',
+  deleted: false,
+  guild: <ref *1> Guild {
+    id: '827888294100074516',
+    name: 'Gay+ Men Meditating',
+    icon: '551372728aa98b6ccebf16af2856a4a7',
+    features: [],
+    commands: GuildApplicationCommandManager {
+      permissions: [ApplicationCommandPermissionsManager],
+      guild: [Circular *1]
+    },
+    members: GuildMemberManager { guild: [Circular *1] },
+    channels: GuildChannelManager { guild: [Circular *1] },
+    bans: GuildBanManager { guild: [Circular *1] },
+    roles: RoleManager { guild: [Circular *1] },
+    presences: PresenceManager {},
+    voiceStates: VoiceStateManager { guild: [Circular *1] },
+    stageInstances: StageInstanceManager { guild: [Circular *1] },
+    invites: GuildInviteManager { guild: [Circular *1] },
+    deleted: false,
+    available: true,
+    shardId: 0,
+    splash: null,
+    banner: null,
+    description: null,
+    verificationLevel: 'MEDIUM',
+    vanityURLCode: null,
+    nsfwLevel: 'DEFAULT',
+    discoverySplash: null,
+    memberCount: 155,
+    large: true,
+    applicationId: null,
+    afkTimeout: 300,
+    afkChannelId: null,
+    systemChannelId: '827889605994872863',
+    premiumTier: 'NONE',
+    premiumSubscriptionCount: 0,
+    explicitContentFilter: 'MEMBERS_WITHOUT_ROLES',
+    mfaLevel: 'NONE',
+    joinedTimestamp: 1631170526608,
+    defaultMessageNotifications: 'ONLY_MENTIONS',
+    systemChannelFlags: SystemChannelFlags { bitfield: 4 },
+    maximumMembers: 250000,
+    maximumPresences: null,
+    approximateMemberCount: null,
+    approximatePresenceCount: null,
+    vanityURLUses: null,
+    rulesChannelId: null,
+    publicUpdatesChannelId: null,
+    preferredLocale: 'en-US',
+    ownerId: '679465390841135126',
+    emojis: GuildEmojiManager { guild: [Circular *1] },
+    stickers: GuildStickerManager { guild: [Circular *1] }
+  },
+  requiresColons: true,
+  managed: false,
+  available: true,
+  _roles: [],
+  author: null
+}
+GuildEmoji {
+  animated: false,
+  name: 'yoga_day',
+  id: '883310963372220436',
+  deleted: false,
+  guild: <ref *1> Guild {
+    id: '827888294100074516',
+    name: 'Gay+ Men Meditating',
+    icon: '551372728aa98b6ccebf16af2856a4a7',
+    features: [],
+    commands: GuildApplicationCommandManager {
+      permissions: [ApplicationCommandPermissionsManager],
+      guild: [Circular *1]
+    },
+    members: GuildMemberManager { guild: [Circular *1] },
+    channels: GuildChannelManager { guild: [Circular *1] },
+    bans: GuildBanManager { guild: [Circular *1] },
+    roles: RoleManager { guild: [Circular *1] },
+    presences: PresenceManager {},
+    voiceStates: VoiceStateManager { guild: [Circular *1] },
+    stageInstances: StageInstanceManager { guild: [Circular *1] },
+    invites: GuildInviteManager { guild: [Circular *1] },
+    deleted: false,
+    available: true,
+    shardId: 0,
+    splash: null,
+    banner: null,
+    description: null,
+    verificationLevel: 'MEDIUM',
+    vanityURLCode: null,
+    nsfwLevel: 'DEFAULT',
+    discoverySplash: null,
+    memberCount: 155,
+    large: true,
+    applicationId: null,
+    afkTimeout: 300,
+    afkChannelId: null,
+    systemChannelId: '827889605994872863',
+    premiumTier: 'NONE',
+    premiumSubscriptionCount: 0,
+    explicitContentFilter: 'MEMBERS_WITHOUT_ROLES',
+    mfaLevel: 'NONE',
+    joinedTimestamp: 1631170526608,
+    defaultMessageNotifications: 'ONLY_MENTIONS',
+    systemChannelFlags: SystemChannelFlags { bitfield: 4 },
+    maximumMembers: 250000,
+    maximumPresences: null,
+    approximateMemberCount: null,
+    approximatePresenceCount: null,
+    vanityURLUses: null,
+    rulesChannelId: null,
+    publicUpdatesChannelId: null,
+    preferredLocale: 'en-US',
+    ownerId: '679465390841135126',
+    emojis: GuildEmojiManager { guild: [Circular *1] },
+    stickers: GuildStickerManager { guild: [Circular *1] }
+  },
+  requiresColons: true,
+  managed: false,
+  available: true,
+  _roles: [],
+  author: null
+}
+GuildEmoji {
+  animated: false,
+  name: 'rainbow_zen_ensho',
+  id: '883311450137956393',
+  deleted: false,
+  guild: <ref *1> Guild {
+    id: '827888294100074516',
+    name: 'Gay+ Men Meditating',
+    icon: '551372728aa98b6ccebf16af2856a4a7',
+    features: [],
+    commands: GuildApplicationCommandManager {
+      permissions: [ApplicationCommandPermissionsManager],
+      guild: [Circular *1]
+    },
+    members: GuildMemberManager { guild: [Circular *1] },
+    channels: GuildChannelManager { guild: [Circular *1] },
+    bans: GuildBanManager { guild: [Circular *1] },
+    roles: RoleManager { guild: [Circular *1] },
+    presences: PresenceManager {},
+    voiceStates: VoiceStateManager { guild: [Circular *1] },
+    stageInstances: StageInstanceManager { guild: [Circular *1] },
+    invites: GuildInviteManager { guild: [Circular *1] },
+    deleted: false,
+    available: true,
+    shardId: 0,
+    splash: null,
+    banner: null,
+    description: null,
+    verificationLevel: 'MEDIUM',
+    vanityURLCode: null,
+    nsfwLevel: 'DEFAULT',
+    discoverySplash: null,
+    memberCount: 155,
+    large: true,
+    applicationId: null,
+    afkTimeout: 300,
+    afkChannelId: null,
+    systemChannelId: '827889605994872863',
+    premiumTier: 'NONE',
+    premiumSubscriptionCount: 0,
+    explicitContentFilter: 'MEMBERS_WITHOUT_ROLES',
+    mfaLevel: 'NONE',
+    joinedTimestamp: 1631170526608,
+    defaultMessageNotifications: 'ONLY_MENTIONS',
+    systemChannelFlags: SystemChannelFlags { bitfield: 4 },
+    maximumMembers: 250000,
+    maximumPresences: null,
+    approximateMemberCount: null,
+    approximatePresenceCount: null,
+    vanityURLUses: null,
+    rulesChannelId: null,
+    publicUpdatesChannelId: null,
+    preferredLocale: 'en-US',
+    ownerId: '679465390841135126',
+    emojis: GuildEmojiManager { guild: [Circular *1] },
+    stickers: GuildStickerManager { guild: [Circular *1] }
+  },
+  requiresColons: true,
+  managed: false,
+  available: true,
+  _roles: [],
+  author: null
+}
+GuildEmoji {
+  animated: false,
+  name: 'yoga_dawn',
+  id: '883312028645724220',
+  deleted: false,
+  guild: <ref *1> Guild {
+    id: '827888294100074516',
+    name: 'Gay+ Men Meditating',
+    icon: '551372728aa98b6ccebf16af2856a4a7',
+    features: [],
+    commands: GuildApplicationCommandManager {
+      permissions: [ApplicationCommandPermissionsManager],
+      guild: [Circular *1]
+    },
+    members: GuildMemberManager { guild: [Circular *1] },
+    channels: GuildChannelManager { guild: [Circular *1] },
+    bans: GuildBanManager { guild: [Circular *1] },
+    roles: RoleManager { guild: [Circular *1] },
+    presences: PresenceManager {},
+    voiceStates: VoiceStateManager { guild: [Circular *1] },
+    stageInstances: StageInstanceManager { guild: [Circular *1] },
+    invites: GuildInviteManager { guild: [Circular *1] },
+    deleted: false,
+    available: true,
+    shardId: 0,
+    splash: null,
+    banner: null,
+    description: null,
+    verificationLevel: 'MEDIUM',
+    vanityURLCode: null,
+    nsfwLevel: 'DEFAULT',
+    discoverySplash: null,
+    memberCount: 155,
+    large: true,
+    applicationId: null,
+    afkTimeout: 300,
+    afkChannelId: null,
+    systemChannelId: '827889605994872863',
+    premiumTier: 'NONE',
+    premiumSubscriptionCount: 0,
+    explicitContentFilter: 'MEMBERS_WITHOUT_ROLES',
+    mfaLevel: 'NONE',
+    joinedTimestamp: 1631170526608,
+    defaultMessageNotifications: 'ONLY_MENTIONS',
+    systemChannelFlags: SystemChannelFlags { bitfield: 4 },
+    maximumMembers: 250000,
+    maximumPresences: null,
+    approximateMemberCount: null,
+    approximatePresenceCount: null,
+    vanityURLUses: null,
+    rulesChannelId: null,
+    publicUpdatesChannelId: null,
+    preferredLocale: 'en-US',
+    ownerId: '679465390841135126',
+    emojis: GuildEmojiManager { guild: [Circular *1] },
+    stickers: GuildStickerManager { guild: [Circular *1] }
+  },
+  requiresColons: true,
+  managed: false,
+  available: true,
+  _roles: [],
+  author: null
+}
+GuildEmoji {
+  animated: false,
+  name: 'yogi_chakras',
+  id: '883312607036080128',
+  deleted: false,
+  guild: <ref *1> Guild {
+    id: '827888294100074516',
+    name: 'Gay+ Men Meditating',
+    icon: '551372728aa98b6ccebf16af2856a4a7',
+    features: [],
+    commands: GuildApplicationCommandManager {
+      permissions: [ApplicationCommandPermissionsManager],
+      guild: [Circular *1]
+    },
+    members: GuildMemberManager { guild: [Circular *1] },
+    channels: GuildChannelManager { guild: [Circular *1] },
+    bans: GuildBanManager { guild: [Circular *1] },
+    roles: RoleManager { guild: [Circular *1] },
+    presences: PresenceManager {},
+    voiceStates: VoiceStateManager { guild: [Circular *1] },
+    stageInstances: StageInstanceManager { guild: [Circular *1] },
+    invites: GuildInviteManager { guild: [Circular *1] },
+    deleted: false,
+    available: true,
+    shardId: 0,
+    splash: null,
+    banner: null,
+    description: null,
+    verificationLevel: 'MEDIUM',
+    vanityURLCode: null,
+    nsfwLevel: 'DEFAULT',
+    discoverySplash: null,
+    memberCount: 155,
+    large: true,
+    applicationId: null,
+    afkTimeout: 300,
+    afkChannelId: null,
+    systemChannelId: '827889605994872863',
+    premiumTier: 'NONE',
+    premiumSubscriptionCount: 0,
+    explicitContentFilter: 'MEMBERS_WITHOUT_ROLES',
+    mfaLevel: 'NONE',
+    joinedTimestamp: 1631170526608,
+    defaultMessageNotifications: 'ONLY_MENTIONS',
+    systemChannelFlags: SystemChannelFlags { bitfield: 4 },
+    maximumMembers: 250000,
+    maximumPresences: null,
+    approximateMemberCount: null,
+    approximatePresenceCount: null,
+    vanityURLUses: null,
+    rulesChannelId: null,
+    publicUpdatesChannelId: null,
+    preferredLocale: 'en-US',
+    ownerId: '679465390841135126',
+    emojis: GuildEmojiManager { guild: [Circular *1] },
+    stickers: GuildStickerManager { guild: [Circular *1] }
+  },
+  requiresColons: true,
+  managed: false,
+  available: true,
+  _roles: [],
+  author: null
+}
+GuildEmoji {
+  animated: false,
+  name: 'chorten',
+  id: '883313568353767474',
+  deleted: false,
+  guild: <ref *1> Guild {
+    id: '827888294100074516',
+    name: 'Gay+ Men Meditating',
+    icon: '551372728aa98b6ccebf16af2856a4a7',
+    features: [],
+    commands: GuildApplicationCommandManager {
+      permissions: [ApplicationCommandPermissionsManager],
+      guild: [Circular *1]
+    },
+    members: GuildMemberManager { guild: [Circular *1] },
+    channels: GuildChannelManager { guild: [Circular *1] },
+    bans: GuildBanManager { guild: [Circular *1] },
+    roles: RoleManager { guild: [Circular *1] },
+    presences: PresenceManager {},
+    voiceStates: VoiceStateManager { guild: [Circular *1] },
+    stageInstances: StageInstanceManager { guild: [Circular *1] },
+    invites: GuildInviteManager { guild: [Circular *1] },
+    deleted: false,
+    available: true,
+    shardId: 0,
+    splash: null,
+    banner: null,
+    description: null,
+    verificationLevel: 'MEDIUM',
+    vanityURLCode: null,
+    nsfwLevel: 'DEFAULT',
+    discoverySplash: null,
+    memberCount: 155,
+    large: true,
+    applicationId: null,
+    afkTimeout: 300,
+    afkChannelId: null,
+    systemChannelId: '827889605994872863',
+    premiumTier: 'NONE',
+    premiumSubscriptionCount: 0,
+    explicitContentFilter: 'MEMBERS_WITHOUT_ROLES',
+    mfaLevel: 'NONE',
+    joinedTimestamp: 1631170526608,
+    defaultMessageNotifications: 'ONLY_MENTIONS',
+    systemChannelFlags: SystemChannelFlags { bitfield: 4 },
+    maximumMembers: 250000,
+    maximumPresences: null,
+    approximateMemberCount: null,
+    approximatePresenceCount: null,
+    vanityURLUses: null,
+    rulesChannelId: null,
+    publicUpdatesChannelId: null,
+    preferredLocale: 'en-US',
+    ownerId: '679465390841135126',
+    emojis: GuildEmojiManager { guild: [Circular *1] },
+    stickers: GuildStickerManager { guild: [Circular *1] }
+  },
+  requiresColons: true,
+  managed: false,
+  available: true,
+  _roles: [],
+  author: null
+}
+GuildEmoji {
+  animated: false,
+  name: 'bhaisajyaguru',
+  id: '883314819057479680',
+  deleted: false,
+  guild: <ref *1> Guild {
+    id: '827888294100074516',
+    name: 'Gay+ Men Meditating',
+    icon: '551372728aa98b6ccebf16af2856a4a7',
+    features: [],
+    commands: GuildApplicationCommandManager {
+      permissions: [ApplicationCommandPermissionsManager],
+      guild: [Circular *1]
+    },
+    members: GuildMemberManager { guild: [Circular *1] },
+    channels: GuildChannelManager { guild: [Circular *1] },
+    bans: GuildBanManager { guild: [Circular *1] },
+    roles: RoleManager { guild: [Circular *1] },
+    presences: PresenceManager {},
+    voiceStates: VoiceStateManager { guild: [Circular *1] },
+    stageInstances: StageInstanceManager { guild: [Circular *1] },
+    invites: GuildInviteManager { guild: [Circular *1] },
+    deleted: false,
+    available: true,
+    shardId: 0,
+    splash: null,
+    banner: null,
+    description: null,
+    verificationLevel: 'MEDIUM',
+    vanityURLCode: null,
+    nsfwLevel: 'DEFAULT',
+    discoverySplash: null,
+    memberCount: 155,
+    large: true,
+    applicationId: null,
+    afkTimeout: 300,
+    afkChannelId: null,
+    systemChannelId: '827889605994872863',
+    premiumTier: 'NONE',
+    premiumSubscriptionCount: 0,
+    explicitContentFilter: 'MEMBERS_WITHOUT_ROLES',
+    mfaLevel: 'NONE',
+    joinedTimestamp: 1631170526608,
+    defaultMessageNotifications: 'ONLY_MENTIONS',
+    systemChannelFlags: SystemChannelFlags { bitfield: 4 },
+    maximumMembers: 250000,
+    maximumPresences: null,
+    approximateMemberCount: null,
+    approximatePresenceCount: null,
+    vanityURLUses: null,
+    rulesChannelId: null,
+    publicUpdatesChannelId: null,
+    preferredLocale: 'en-US',
+    ownerId: '679465390841135126',
+    emojis: GuildEmojiManager { guild: [Circular *1] },
+    stickers: GuildStickerManager { guild: [Circular *1] }
+  },
+  requiresColons: true,
+  managed: false,
+  available: true,
+  _roles: [],
+  author: null
+}
+GuildEmoji {
+  animated: false,
+  name: 'om',
+  id: '883316584058355722',
+  deleted: false,
+  guild: <ref *1> Guild {
+    id: '827888294100074516',
+    name: 'Gay+ Men Meditating',
+    icon: '551372728aa98b6ccebf16af2856a4a7',
+    features: [],
+    commands: GuildApplicationCommandManager {
+      permissions: [ApplicationCommandPermissionsManager],
+      guild: [Circular *1]
+    },
+    members: GuildMemberManager { guild: [Circular *1] },
+    channels: GuildChannelManager { guild: [Circular *1] },
+    bans: GuildBanManager { guild: [Circular *1] },
+    roles: RoleManager { guild: [Circular *1] },
+    presences: PresenceManager {},
+    voiceStates: VoiceStateManager { guild: [Circular *1] },
+    stageInstances: StageInstanceManager { guild: [Circular *1] },
+    invites: GuildInviteManager { guild: [Circular *1] },
+    deleted: false,
+    available: true,
+    shardId: 0,
+    splash: null,
+    banner: null,
+    description: null,
+    verificationLevel: 'MEDIUM',
+    vanityURLCode: null,
+    nsfwLevel: 'DEFAULT',
+    discoverySplash: null,
+    memberCount: 155,
+    large: true,
+    applicationId: null,
+    afkTimeout: 300,
+    afkChannelId: null,
+    systemChannelId: '827889605994872863',
+    premiumTier: 'NONE',
+    premiumSubscriptionCount: 0,
+    explicitContentFilter: 'MEMBERS_WITHOUT_ROLES',
+    mfaLevel: 'NONE',
+    joinedTimestamp: 1631170526608,
+    defaultMessageNotifications: 'ONLY_MENTIONS',
+    systemChannelFlags: SystemChannelFlags { bitfield: 4 },
+    maximumMembers: 250000,
+    maximumPresences: null,
+    approximateMemberCount: null,
+    approximatePresenceCount: null,
+    vanityURLUses: null,
+    rulesChannelId: null,
+    publicUpdatesChannelId: null,
+    preferredLocale: 'en-US',
+    ownerId: '679465390841135126',
+    emojis: GuildEmojiManager { guild: [Circular *1] },
+    stickers: GuildStickerManager { guild: [Circular *1] }
+  },
+  requiresColons: true,
+  managed: false,
+  available: true,
+  _roles: [],
+  author: null
+}
+GuildEmoji {
+  animated: false,
+  name: 'ganesha',
+  id: '883317228836126741',
+  deleted: false,
+  guild: <ref *1> Guild {
+    id: '827888294100074516',
+    name: 'Gay+ Men Meditating',
+    icon: '551372728aa98b6ccebf16af2856a4a7',
+    features: [],
+    commands: GuildApplicationCommandManager {
+      permissions: [ApplicationCommandPermissionsManager],
+      guild: [Circular *1]
+    },
+    members: GuildMemberManager { guild: [Circular *1] },
+    channels: GuildChannelManager { guild: [Circular *1] },
+    bans: GuildBanManager { guild: [Circular *1] },
+    roles: RoleManager { guild: [Circular *1] },
+    presences: PresenceManager {},
+    voiceStates: VoiceStateManager { guild: [Circular *1] },
+    stageInstances: StageInstanceManager { guild: [Circular *1] },
+    invites: GuildInviteManager { guild: [Circular *1] },
+    deleted: false,
+    available: true,
+    shardId: 0,
+    splash: null,
+    banner: null,
+    description: null,
+    verificationLevel: 'MEDIUM',
+    vanityURLCode: null,
+    nsfwLevel: 'DEFAULT',
+    discoverySplash: null,
+    memberCount: 155,
+    large: true,
+    applicationId: null,
+    afkTimeout: 300,
+    afkChannelId: null,
+    systemChannelId: '827889605994872863',
+    premiumTier: 'NONE',
+    premiumSubscriptionCount: 0,
+    explicitContentFilter: 'MEMBERS_WITHOUT_ROLES',
+    mfaLevel: 'NONE',
+    joinedTimestamp: 1631170526608,
+    defaultMessageNotifications: 'ONLY_MENTIONS',
+    systemChannelFlags: SystemChannelFlags { bitfield: 4 },
+    maximumMembers: 250000,
+    maximumPresences: null,
+    approximateMemberCount: null,
+    approximatePresenceCount: null,
+    vanityURLUses: null,
+    rulesChannelId: null,
+    publicUpdatesChannelId: null,
+    preferredLocale: 'en-US',
+    ownerId: '679465390841135126',
+    emojis: GuildEmojiManager { guild: [Circular *1] },
+    stickers: GuildStickerManager { guild: [Circular *1] }
+  },
+  requiresColons: true,
+  managed: false,
+  available: true,
+  _roles: [],
+  author: null
+}
+GuildEmoji {
+  animated: false,
+  name: 'fingerguns',
+  id: '893459644222144573',
+  deleted: false,
+  guild: <ref *1> Guild {
+    id: '827888294100074516',
+    name: 'Gay+ Men Meditating',
+    icon: '551372728aa98b6ccebf16af2856a4a7',
+    features: [],
+    commands: GuildApplicationCommandManager {
+      permissions: [ApplicationCommandPermissionsManager],
+      guild: [Circular *1]
+    },
+    members: GuildMemberManager { guild: [Circular *1] },
+    channels: GuildChannelManager { guild: [Circular *1] },
+    bans: GuildBanManager { guild: [Circular *1] },
+    roles: RoleManager { guild: [Circular *1] },
+    presences: PresenceManager {},
+    voiceStates: VoiceStateManager { guild: [Circular *1] },
+    stageInstances: StageInstanceManager { guild: [Circular *1] },
+    invites: GuildInviteManager { guild: [Circular *1] },
+    deleted: false,
+    available: true,
+    shardId: 0,
+    splash: null,
+    banner: null,
+    description: null,
+    verificationLevel: 'MEDIUM',
+    vanityURLCode: null,
+    nsfwLevel: 'DEFAULT',
+    discoverySplash: null,
+    memberCount: 155,
+    large: true,
+    applicationId: null,
+    afkTimeout: 300,
+    afkChannelId: null,
+    systemChannelId: '827889605994872863',
+    premiumTier: 'NONE',
+    premiumSubscriptionCount: 0,
+    explicitContentFilter: 'MEMBERS_WITHOUT_ROLES',
+    mfaLevel: 'NONE',
+    joinedTimestamp: 1631170526608,
+    defaultMessageNotifications: 'ONLY_MENTIONS',
+    systemChannelFlags: SystemChannelFlags { bitfield: 4 },
+    maximumMembers: 250000,
+    maximumPresences: null,
+    approximateMemberCount: null,
+    approximatePresenceCount: null,
+    vanityURLUses: null,
+    rulesChannelId: null,
+    publicUpdatesChannelId: null,
+    preferredLocale: 'en-US',
+    ownerId: '679465390841135126',
+    emojis: GuildEmojiManager { guild: [Circular *1] },
+    stickers: GuildStickerManager { guild: [Circular *1] }
+  },
+  requiresColons: true,
+  managed: false,
+  available: true,
+  _roles: [],
+  author: null
+}
+GUILD_TEXT : test_landing-zone
+Jalendu: <:bisexualflag:834050052950327306> 834050052950327306 :bisexualflag:
+<:prideflag:834050054646005800> 834050054646005800 :prideflag:
+<:philadelphiaprideflag:834050054808535080> 834050054808535080 :philadelphiaprideflag:
+<:bi_curious_flag:834316271897542687> 834316271897542687 :bi_curious_flag:
+<:bi_flag:834316993582596096> 834316993582596096 :bi_flag:
+<:gay_flag:834317028507910204> 834317028507910204 :gay_flag:
+<:chakras:880720851396341800> 880720851396341800 :chakras:
+<:auras:880724214162817025> 880724214162817025 :auras:
+<:lotus_meditator:880724332488323104> 880724332488323104 :lotus_meditator:
+<:peace_dove:880724430760837150> 880724430760837150 :peace_dove:
+<:yoga:880724849889259570> 880724849889259570 :yoga:
+<:rainbow_om:880762346518216734> 880762346518216734 :rainbow_om:
+<:buddhist_meditator:880764277324132352> 880764277324132352 :buddhist_meditator:
+<:skeleton_yogi:880764856813363220> 880764856813363220 :skeleton_yogi:
+<:moon_rainbow:880765855506509824> 880765855506509824 :moon_rainbow:
+<:heart_rainbow:880767130474262568> 880767130474262568 :heart_rainbow:
+<:heart_rainbow_flag:880767689017155635> 880767689017155635 :heart_rainbow_flag:
+<:india_heart:880769545223163945> 880769545223163945 :india_heart:
+<:logo:880770120757153814> 880770120757153814 :logo:
+<:grey_cat:880772302353080381> 880772302353080381 :grey_cat:
+<:flag_tibet:881085064014876692> 881085064014876692 :flag_tibet:
+<:flag_buddhism:881085979107155990> 881085979107155990 :flag_buddhism:
+<:manekineko:881087236479807498> 881087236479807498 :manekineko:
+<:memes:881684109271904266> 881684109271904266 :memes:
+<:buddha:881891808706166835> 881891808706166835 :buddha:
+<:jaganath:881894545070100510> 881894545070100510 :jaganath:
+<:rainbow_star:882077352799133696> 882077352799133696 :rainbow_star:
+<:mirrorball:882139765217050624> 882139765217050624 :mirrorball:
+<:sauna:882140417120944138> 882140417120944138 :sauna:
+GUILD_TEXT : test_landing-zone
+Jalendu: <:yin_yang_bw:882146353164206102> 882146353164206102 :yin_yang_bw:
+<:spiritual_development:882147096256466984> 882147096256466984 :spiritual_development:
+<:sensitive_thinker:882147912782602240> 882147912782602240 :sensitive_thinker:
+<:ise_grand_shrine_shinto:882214725293846529> 882214725293846529 :ise_grand_shrine_shinto:
+<:wheel_of_dharma_rb:882215431438475274> 882215431438475274 :wheel_of_dharma_rb:
+<:endless_knot:882216960241328158> 882216960241328158 :endless_knot:
+<:bi_pride_octopus:882218690752446484> 882218690752446484 :bi_pride_octopus:
+<:lgbt:882220891600220170> 882220891600220170 :lgbt:
+<:soft_serve:882221651205423144> 882221651205423144 :soft_serve:
+<:zen_enso:883309901303123978> 883309901303123978 :zen_enso:
+<:daruma:883310254157361202> 883310254157361202 :daruma:
+<:yoga_day:883310963372220436> 883310963372220436 :yoga_day:
+<:rainbow_zen_ensho:883311450137956393> 883311450137956393 :rainbow_zen_ensho:
+<:yoga_dawn:883312028645724220> 883312028645724220 :yoga_dawn:
+<:yogi_chakras:883312607036080128> 883312607036080128 :yogi_chakras:
+<:chorten:883313568353767474> 883313568353767474 :chorten:
+<:bhaisajyaguru:883314819057479680> 883314819057479680 :bhaisajyaguru:
+<:om:883316584058355722> 883316584058355722 :om:
+<:ganesha:883317228836126741> 883317228836126741 :ganesha:
+<:fingerguns:893459644222144573> 893459644222144573 :fingerguns:
+Time to bump DISBOARD (!d bump) :scream:
+GUILD_TEXT : bot-commands
+Jalendu: Time to bump DISBOARD (!d bump) :scream:
+Please bump DISBOARD (!d bump). I've been waiting for the bump for 13 minutes :pleading_face:
+GUILD_TEXT : bot-commands
+Thoron: !d bump
+disboard bump by Thoron
+GUILD_TEXT : bot-commands
+DISBOARD: 
+MessageEmbed {
+  type: 'rich',
+  title: 'DISBOARD: The Public Server List',
+  description: '<@392939068536782848> Bump done! :thumbsup:\n' +
+    'Check it out [on DISBOARD](https://disboard.org/server/827888294100074516).',
+  url: 'https://disboard.org/',
+  color: 2406327,
+  timestamp: null,
+  fields: [],
+  thumbnail: null,
+  image: {
+    url: 'https://disboard.org/images/bot-command-image-bump.png',
+    proxyURL: 'https://images-ext-1.discordapp.net/external/tAuRcs-FCy2M8OaTS9Ims62J1vrFiviahjBDtpZrrBs/https/disboard.org/images/bot-command-image-bump.png',
+    height: 200,
+    width: 800
+  },
+  video: null,
+  author: null,
+  provider: null,
+  footer: null
+}
+Bump done! :thumbsup: success
+successfully bumped
+GUILD_TEXT : bot-commands
+Jalendu: Thanks Thoron :rainbow:
+:purple_heart::purple_heart:
+DM : undefined
+marq_andrew: /qo add Do you think a person should be exempted from vaccination requirements on the basis of their religious beliefs?
+DM : undefined
+Jalendu: 
+MessageEmbed {
+  type: 'rich',
+  title: '#45',
+  description: null,
+  url: null,
+  color: 2844857,
+  timestamp: null,
+  fields: [
+    {
+      value: '```Do you think a person should be exempted from vaccination requirements on the basis of their religious beliefs?```',
+      name: '​',
+      inline: false
+    }
+  ],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: null,
+  provider: null,
+  footer: null
+}
+DM : undefined
+Jalendu: Thanks for adding a question. Enter /qo help for instructions on how to edit your question.
+DM : undefined
+marq_andrew: /qo find tile
+DM : undefined
+Jalendu: No questions found including "tile".
+DM : undefined
+marq_andrew: /qo find Tuke
+DM : undefined
+Jalendu: 
+MessageEmbed {
+  type: 'rich',
+  title: '#23',
+  description: null,
+  url: null,
+  color: 11839231,
+  timestamp: null,
+  fields: [
+    {
+      value: '```Henry Scott Tuke (1858-1929) was an English painter. He had no known relationships with women other than his sister. He was friends with Oscar Wilde and other "Uranians" and wrote poetry that idealised the love of Ancient Greece. Since the 1970\'s he has become " something of a cult figure in gay cultural circles" and Elton John has a large collection of his works (-for some reason-). There is however no direct evidence that he was gay and a small number of Tuke curators push back at any suggestion that he was or that his art is homoerotic.\n' +
+        'What do you feel about “gay erasure” of historical figures? Is it important to oppose it or do gay people make too much fuss about it?```',
+      name: '​',
+      inline: false
+    }
+  ],
+  thumbnail: null,
+  image: {
+    url: 'https://cdn.discordapp.com/attachments/886468028320055326/896621411068690432/398A160B-8B44-4D21-B25A-8B78167815E6_4_5005_c.jpeg',
+    proxyURL: 'https://media.discordapp.net/attachments/886468028320055326/896621411068690432/398A160B-8B44-4D21-B25A-8B78167815E6_4_5005_c.jpeg',
+    height: 0,
+    width: 0
+  },
+  video: null,
+  author: null,
+  provider: null,
+  footer: null
+}
+Please wait another 114 minutes to bump DISBOARD :drool:
+qotd countdown days 3.286508715277778
+GUILD_TEXT : system-messages
+angel_thekinghound: 
+role <@&851071523543973928> added to <@876241262888513657>
+GUILD_TEXT : system-messages
+Jalendu: 
+MessageEmbed {
+  type: 'rich',
+  title: 'angel_thekinghound',
+  description: null,
+  url: null,
+  color: 65535,
+  timestamp: null,
+  fields: [],
+  thumbnail: null,
+  image: {
+    url: 'https://cdn.discordapp.com/avatars/876241262888513657/54c8b84caac290a8db44fdcf27645795.png?size=2048',
+    proxyURL: 'https://images-ext-1.discordapp.net/external/e9fvM-SjjbX2NpDltfZrpQyDlP-QpVeGBrH5hICveNc/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/876241262888513657/54c8b84caac290a8db44fdcf27645795.png',
+    height: 0,
+    width: 0
+  },
+  video: null,
+  author: null,
+  provider: null,
+  footer: null
+}
+GUILD_TEXT : system-messages
+Carl-bot Logging: 
+MessageEmbed {
+  type: 'rich',
+  title: 'Member joined',
+  description: '<@876241262888513657> 156th to join\n' +
+    'created 2 months, 3 days and 23 hours ago',
+  url: null,
+  color: 5496236,
+  timestamp: 1634595349756,
+  fields: [],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: {
+    name: 'angel_thekinghound#8543',
+    url: undefined,
+    iconURL: 'https://cdn.discordapp.com/avatars/876241262888513657/54c8b84caac290a8db44fdcf27645795.webp?size=1024',
+    proxyIconURL: 'https://images-ext-1.discordapp.net/external/k2sILo1AZUqo_R4LUTfI_HhGvOuERJYT2e7E9g5rBhw/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/876241262888513657/54c8b84caac290a8db44fdcf27645795.webp'
+  },
+  provider: null,
+  footer: {
+    text: 'ID: 876241262888513657',
+    iconURL: undefined,
+    proxyIconURL: undefined
+  }
+}
+member undefined!
+cleanup: no messages found
+GUILD_TEXT : system-messages
+Carl-bot Logging: 
+MessageEmbed {
+  type: 'rich',
+  title: 'Member left',
+  description: '<@876241262888513657> joined 19 seconds ago\n' +
+    '**Roles:** <@&851071523543973928>',
+  url: null,
+  color: 16774575,
+  timestamp: 1634595367913,
+  fields: [],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: {
+    name: 'angel_thekinghound#8543',
+    url: undefined,
+    iconURL: 'https://cdn.discordapp.com/avatars/876241262888513657/54c8b84caac290a8db44fdcf27645795.webp?size=1024',
+    proxyIconURL: 'https://images-ext-1.discordapp.net/external/k2sILo1AZUqo_R4LUTfI_HhGvOuERJYT2e7E9g5rBhw/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/876241262888513657/54c8b84caac290a8db44fdcf27645795.webp'
+  },
+  provider: null,
+  footer: {
+    text: 'ID: 876241262888513657',
+    iconURL: undefined,
+    proxyIconURL: undefined
+  }
+}
+member undefined!
+GUILD_TEXT : chat-general
+marq_andrew: LGBTQ+ Is Not a Sin: Sign the Petition
+
+https://www.lgbtqnotasin.com/
+Please wait another 104 minutes to bump DISBOARD :drool:
+Please wait another 94 minutes to bump DISBOARD :drool:
+Please wait another 84 minutes to bump DISBOARD :drool:
+qotd countdown days 3.2656753819444444

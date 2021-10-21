@@ -96,6 +96,8 @@ Most of these commands can be issued in a direct message session with Jalendu. T
 
 **/bumbots** replies with the current state of the bumpbot reminder system (either waiting for the bump after the reminder has been sent or waiting for the next allowed bump time). This is the same function that Jalendu runs every ten minutes to send the reminder so if you execute this command after the wait time has expired but before Jalendu's ten minute check, this will actually trigger the reminder.
 
+**/bbdump** writes the in memory bumpbots data to json files for trouble shooting. (The bumpbots data is stored in a database so that it can be restored when the program restarts but it is more convenient to see it in json.)
+
 **/agelocks** lists the data used to maiintain age locks. Since this is sensitive data, it is a moderator only command.
 
 **/cleanup** runs the landing zone cleanup code in case for some reason it doesn't run when it should.

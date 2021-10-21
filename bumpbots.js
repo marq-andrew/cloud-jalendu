@@ -114,7 +114,6 @@ module.exports.bumper = function(bot, message, action) {
           .then(() => { })
           .catch(err => { console.log(err) });
 
-        // fs.writeFileSync('./data/bumpers.json', JSON.stringify(bumpers, null, 2), 'utf-8');
       }
 
       result.name = bumpbot[lastbumper].name;
@@ -126,9 +125,6 @@ module.exports.bumper = function(bot, message, action) {
 }
 
 module.exports.bumpbot = function(message) {
-
-  // var fileContent = fs.readFileSync('./data/bumpbots.json');
-  // bumpbots = JSON.parse(fileContent);
 
   if (this.bumpbots[message.author.id]) {
     const bumpbot = this.bumpbots[message.author.id];
@@ -195,16 +191,27 @@ module.exports.bumpbot = function(message) {
       bumpbot.unknown.push(response);
       rewrite = true;
     }
+    else if (result === 'failure') {
+      failtime = message.createdAt;
+      failmins = (failtime - bumpbot.bumptime) / 1000 / 60;
+      console.log(failmins);
+      if (failmins > bumpbot.delay_minutes) {
+        bumpbot.badfails = (bumpbot.badfails || 0) + 1;
+        //bumpbot.delay_minutes = bumpbot.delay_minutes + 10;
+        rewrite = true;
+      }
+    }
     else if (result === "success") {
       bumpbot.bumptime = message.createdAt;
       bumpbot.nextbumptime = new Date(bumpbot.bumptime.getTime() + bumpbot.delay_minutes * 60000);
       bumpbot.reminder_sent = false;
+      bumpbot.delay_minutes = 120;
       rewrite = true;
     }
 
     if (rewrite) {
       this.bumpbots[message.author.id] = bumpbot;
-      // fs.writeFileSync('./data/bumpbots.json', JSON.stringify(bumpbots, null, 2), 'utf-8');
+
       db.set('bumpbots', JSON.stringify(this.bumpbots))
         .then(() => { })
         .catch(err => { console.log(err) });
@@ -221,9 +228,6 @@ module.exports.bumpbot = function(message) {
 
 
 module.exports.bumpremind = function(client, output) {
-
-  // var fileContent = fs.readFileSync('./data/bumpbots.json');
-  // bumpbots = JSON.parse(fileContent);
 
   for (const [id, bumpbot] of Object.entries(this.bumpbots)) {
     const currenttime = new Date();
@@ -243,7 +247,7 @@ module.exports.bumpremind = function(client, output) {
         bumpbot.remindertime = new Date(currenttime.getTime() + 60 * 60000);
 
         this.bumpbots[id] = bumpbot;
-        // fs.writeFileSync('./data/bumpbots.json', JSON.stringify(bumpbots, null, 2), 'utf-8');
+
         db.set('bumpbots', JSON.stringify(this.bumpbots))
           .then(() => { })
           .catch(err => { console.log(err) });
@@ -271,13 +275,7 @@ module.exports.data = function(message, source = 'data') {
 
 module.exports.init = function(client) {
 
-  // dbsync('bumpers');
-  // dbsync('bumpbots');
-db.delete("bumpbots.bumpers")
-.then(() => {})
-.catch(err => { console.log(err) });
-
-  db.list().then(keys => {console.log(keys)});
+  db.list().then(keys => { console.log(keys) });
 
   const botcom = client.channels.cache.get('834013095805452318');
 
@@ -319,9 +317,6 @@ db.delete("bumpbots.bumpers")
 
 module.exports.bumperlist = function(message) {
 
-  // var fileContent = fs.readFileSync('./data/bumpers.json');
-  // bumpbots = JSON.parse(fileContent);
-
   const players = new Object();
 
   for (const [bumpbotid, bumpbot] of Object.entries(this.bumpers)) {
@@ -343,26 +338,15 @@ module.exports.bumperlist = function(message) {
   for (const [name, bumpers] of Object.entries(players)) {
     reply = reply + `\n\n__${name}__`;
     for (i = 0; i < bumpers.length; i++) {
-      reply = reply + `\n${(bumpers[i].name).padEnd(30,' ')}`;
-      reply = reply + `${String(bumpers[i].bumps).padStart(5,' ')}`;
+      reply = reply + `\n${(bumpers[i].name).padEnd(30, ' ')}`;
+      reply = reply + `${String(bumpers[i].bumps).padStart(5, ' ')}`;
       reply = reply + `   ${bumpers[i].hearts}`;
     }
   }
   message.channel.send(reply);
 }
 
-module.exports.fix = function() {
-  console.log(this.bumpers['disboard']['679465390841135126'].name);
-  console.log(this.bumpers['disboard']['679465390841135126'].lasttime);
-
-  this.bumpers['disboard']['679465390841135126'].bumps = this.bumpers['disboard']['679465390841135126'].bumps - 2;
-
-  console.log(this.bumpers['disboard']['523463175216300042'].name);
-  console.log(this.bumpers['disboard']['523463175216300042'].lasttime);
-  this.bumpers['disboard']['523463175216300042'].bumps = this.bumpers['disboard']['523463175216300042'].bumps + 2;
-  this.bumpers['disboard']['523463175216300042'].lasttime = new Date();
-
-  db.set('bumpers', JSON.stringify(this.bumpers))
-    .then(() => { })
-    .catch(err => { console.log(err) });
+module.exports.dump = function() {
+  fs.writeFileSync('./data/bumpers.json', JSON.stringify(this.bumpers, null, 2), 'utf-8');
+  fs.writeFileSync('./data/bumpbots.json', JSON.stringify(this.bumpbots, null, 2), 'utf-8');
 }

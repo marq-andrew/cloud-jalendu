@@ -1,0 +1,1680 @@
+
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+RESTART 20211020-042511
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+
+Ready!
+[ 'bumpbots', 'bumpers', 'qotd_activity', 'qotds', 'qotd_scores' ]
+Setting application command permissions on 888779192592896130 avatar
+Setting application command permissions on 888779192592896131 joke
+Setting application command permissions on 888779192592896132 define
+Setting application command permissions on 888779192592896133 moderate
+Setting application command permissions on 889643708650254346 readme
+qotd countdown days 2.025264733796296
+DISBOARD in sync (0 difference)
+
+__Newcomers reminder and exclusion.__
+
+moonman5 --> waiting : 2.0 days.
+TwinkieBoy --> reminded : 4.3 days.
+Hendrick --> reminded : 5.7 days.
+
+* Indicates that the member wrote a message in #landing-zone.
++ Indicates that the member is muted.
+# Indicates that the member was previously a verified member.
+cleanup: no messages found
+Please wait another 78 minutes to bump DISBOARD :drool:
+Please wait another 68 minutes to bump DISBOARD :drool:
+GUILD_TEXT : nsfw-off-topic
+marq_andrew: Yes please. At least in this "off-topic" channel.
+Please wait another 58 minutes to bump DISBOARD :drool:
+qotd countdown days 2.004431400462963
+GUILD_TEXT : qotw
+marq_andrew: If you want to add your own question or topic for weekly discussion here, please direct message <@!882824571143721040> with the message "/qo add" followed by your question. For example ```/qo add Are glow-in-the-dark condoms usefull?``` (This isn't a good example BTW). You can add an image to your question if you want to. Please keep images SFW but the questions themselves can be anything (so far). Questions are asked anonymously (by <@882824571143721040>) and in random order.
+Please wait another 48 minutes to bump DISBOARD :drool:
+GUILD_TEXT : qotw
+marq_andrew: /channels
+/home/runner/jalendu/node_modules/discord.js/src/rest/RequestHandler.js:298
+      throw new DiscordAPIError(data, res.status, request);
+            ^
+
+DiscordAPIError: You can only bulk delete messages that are under 14 days old.
+    at RequestHandler.execute (/home/runner/jalendu/node_modules/discord.js/src/rest/RequestHandler.js:298:13)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async RequestHandler.push (/home/runner/jalendu/node_modules/discord.js/src/rest/RequestHandler.js:50:14)
+    at async TextChannel.bulkDelete (/home/runner/jalendu/node_modules/discord.js/src/structures/interfaces/TextBasedChannel.js:312:7) {
+  method: 'post',
+  path: '/channels/887168812632391740/messages/bulk-delete',
+  code: 50034,
+  httpStatus: 400,
+  requestData: {
+    json: {
+      messages: [
+        '893214564919955516',
+        '893214563472916510',
+        '893214562072019035'
+      ]
+    },
+    files: []
+  }
+}
+
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+RESTART 20211020-050649
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+
+Ready!
+[ 'bumpbots', 'bumpers', 'qotd_activity', 'qotds', 'qotd_scores' ]
+Setting application command permissions on 888779192592896130 avatar
+Setting application command permissions on 888779192592896131 joke
+Setting application command permissions on 888779192592896132 define
+Setting application command permissions on 888779192592896133 moderate
+Setting application command permissions on 889643708650254346 readme
+qotd countdown days 1.996342013888889
+
+__Newcomers reminder and exclusion.__
+
+moonman5 --> reminded : 2.0 days.
+TwinkieBoy --> reminded : 4.3 days.
+Hendrick --> reminded : 5.7 days.
+
+* Indicates that the member wrote a message in #landing-zone.
++ Indicates that the member is muted.
+# Indicates that the member was previously a verified member.
+DISBOARD in sync (0 difference)
+GUILD_TEXT : system-messages
+Jalendu: <@899515786123698217> has been reminded of the entry requirements (2 days after joining).
+cleanup: no messages found
+DM : undefined
+Jalendu: __Welcome to Gay+ Men Meditating.__
+
+To get full access, you must send a message mentioning @moderator in the #landing-zone channel or to a moderator directly. Please include:
+
+**1. Something about yourself** e.g. your age, your country or anything you want to tell us.
+**2. Your experience with meditation if any** (none is fine as long as your are interested).
+**3. You reasons for wanting to join this group.**
+
+We have strong entry requirements to keep the community safe and comfortable to express themselves and to exclude people who join casually or simply to troll. After 7 days from the time you joined, if you have not satisfied the entry requirements, you will be removed.
+role <@&877784942107578438> added to <@899515786123698217>
+GUILD_TEXT : system-messages
+Carl-bot Logging: 
+MessageEmbed {
+  type: 'rich',
+  title: 'Role added',
+  description: '<@&877784942107578438>',
+  url: null,
+  color: 4359924,
+  timestamp: 1634706432461,
+  fields: [],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: {
+    name: 'moonman5#2789',
+    url: undefined,
+    iconURL: 'https://cdn.discordapp.com/avatars/899515786123698217/5445ffd7ffb201a98393cbdf684ea4b1.webp?size=1024',
+    proxyIconURL: 'https://images-ext-2.discordapp.net/external/N8ov8hyBL3Vhuhhs2pngS1H8viiGxbP1KinLL4Ufmz4/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/899515786123698217/5445ffd7ffb201a98393cbdf684ea4b1.webp'
+  },
+  provider: null,
+  footer: {
+    text: 'ID: 899515786123698217',
+    iconURL: undefined,
+    proxyIconURL: undefined
+  }
+}
+member undefined!
+GUILD_TEXT : qotw
+marq_andrew: /channels
+/home/runner/jalendu/node_modules/discord.js/src/rest/RequestHandler.js:298
+      throw new DiscordAPIError(data, res.status, request);
+            ^
+
+DiscordAPIError: You can only bulk delete messages that are under 14 days old.
+    at RequestHandler.execute (/home/runner/jalendu/node_modules/discord.js/src/rest/RequestHandler.js:298:13)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async RequestHandler.push (/home/runner/jalendu/node_modules/discord.js/src/rest/RequestHandler.js:50:14)
+    at async TextChannel.bulkDelete (/home/runner/jalendu/node_modules/discord.js/src/structures/interfaces/TextBasedChannel.js:312:7) {
+  method: 'post',
+  path: '/channels/887168976742912001/messages/bulk-delete',
+  code: 50034,
+  httpStatus: 400,
+  requestData: {
+    json: {
+      messages: [
+        '900248363876900885',
+        '893214562948620309',
+        '893214561883267123'
+      ]
+    },
+    files: []
+  }
+}
+
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+RESTART 20211020-050910
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+
+Ready!
+Setting application command permissions on 888779192592896130 avatar
+Setting application command permissions on 888779192592896131 joke
+Setting application command permissions on 888779192592896132 define
+Setting application command permissions on 888779192592896133 moderate
+Setting application command permissions on 889643708650254346 readme
+qotd countdown days 1.9947158796296296
+[ 'bumpbots', 'bumpers', 'qotd_activity', 'qotds', 'qotd_scores' ]
+
+__Newcomers reminder and exclusion.__
+
+moonman5 --> reminded : 2.0 days.
+TwinkieBoy --> reminded : 4.3 days.
+Hendrick --> reminded : 5.7 days.
+
+* Indicates that the member wrote a message in #landing-zone.
++ Indicates that the member is muted.
+# Indicates that the member was previously a verified member.
+cleanup: no messages found
+DISBOARD in sync (0 difference)
+GUILD_TEXT : qotw
+marq_andrew: /channels
+GUILD_TEXT : channels-directory
+Jalendu: **Channels Directory**
+
+**ADMIN**
+
+​**<#828722989750026250>** : Welcome and overview of the server.
+
+​**<#887168812632391740>** : A directory of server channels accessible by verified members.
+
+​**<#827891914216177685>** : This channel lists the rules of etiquette for this server. Please add any suggested changes to #suggestions.
+
+​**<#828724253938942014>** : #roles allows you to set roles for yourself that are visible in your profile for others to see on this server. In addition, the age band role gives you access to the nsfw channels if you choose the 18+ age band and memes gives you access to the #memes-off-topic channel.
+
+Only add more reactions to the survey questions. Emojis added by users to the roles questions get deleted by the bot after a while.
+
+​**<#829717421182156800>** : #suggestions is where you can make suggestions for changes to the server and to discuss other people’s suggestions. Vote on a suggestion with :thumbsup: and :thumbsdown:.
+
+​**<#834013095805452318>** : #bot-commands is just a place to type commands to the bots that won’t clutter up the main chat channels.
+Please type 
+
+-ft set
+
+to set your time zone if you haven't already.
+
+​**<#856721735600439306>** : #feeds is a channel where interesting and relevant feeds from other discords or elsewhere may be posted.
+
+​**<#880224417475600414>** : #server-announcements is a read only channel for announcements about changes to the server.
+
+​**TEXT AND PICTURE CHANNELS**
+
+​**<#833559519611060244>** : #member-introductions is a channel where you can introduce yourself if you want to. There is no obligation to do anything here.
+
+​**<#879581907619307521>** : In this channel please write a short one line bio to serve as a directory of members.
+
+​**<#881620652417769473>** : This channel is to post photos of yourself. (Safe for work only here please).
+
+​
+/home/runner/jalendu/node_modules/discord.js/src/rest/RequestHandler.js:298
+      throw new DiscordAPIError(data, res.status, request);
+            ^
+
+DiscordAPIError: You can only bulk delete messages that are under 14 days old.
+    at RequestHandler.execute (/home/runner/jalendu/node_modules/discord.js/src/rest/RequestHandler.js:298:13)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async RequestHandler.push (/home/runner/jalendu/node_modules/discord.js/src/rest/RequestHandler.js:50:14)
+    at async TextChannel.bulkDelete (/home/runner/jalendu/node_modules/discord.js/src/structures/interfaces/TextBasedChannel.js:312:7) {
+  method: 'post',
+  path: '/channels/887168976742912001/messages/bulk-delete',
+  code: 50034,
+  httpStatus: 400,
+  requestData: {
+    json: {
+      messages: [
+        '900249139256901642',
+        '900248363876900885',
+        '893214562948620309',
+        '893214561883267123'
+      ]
+    },
+    files: []
+  }
+}
+
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+RESTART 20211020-051139
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+
+Ready!
+[ 'bumpbots', 'bumpers', 'qotd_activity', 'qotds', 'qotd_scores' ]
+Setting application command permissions on 888779192592896130 avatar
+Setting application command permissions on 888779192592896131 joke
+Setting application command permissions on 888779192592896132 define
+Setting application command permissions on 888779192592896133 moderate
+Setting application command permissions on 889643708650254346 readme
+qotd countdown days 1.9929893287037037
+
+__Newcomers reminder and exclusion.__
+
+moonman5 --> reminded : 2.0 days.
+TwinkieBoy --> reminded : 4.3 days.
+Hendrick --> reminded : 5.7 days.
+
+* Indicates that the member wrote a message in #landing-zone.
++ Indicates that the member is muted.
+# Indicates that the member was previously a verified member.
+DISBOARD in sync (0 difference)
+cleanup: no messages found
+GUILD_TEXT : qotw
+marq_andrew: /channels
+GUILD_TEXT : nsfw-channels-directory
+Jalendu: **Channels Directory**
+
+**ADMIN**
+
+​**<#887168976742912001>** : A directory of nsfw channels accessible by Age 18+ members.
+
+​**🔞 NSFW TEXT AND PICTURE CHANNELS**
+
+​**<#827891462535905290>** : This channel is to be used for sharing imagery and videos of ourselves and to learn how to love and appreciate our bodies and sexuality without judgment from others. It can also be used for relevant images and topics that might be considered nsfw such as nude yoga and meditation, masturbation as meditation, tantric sex etc..
+
+​**<#879584240499556353>** : This channel can be used for talk, images and movies that are not related to the theme of this server (meditation and yoga for gay men). You can post images from the internet including porn here but there are Discord servers for this purpose. See links in the promotions channel.
+
+​**<#876889471608553532>** : This is a place to share and discuss our trauma or pain and to support one another.
+
+​**🔞 NSFW VIDEO CHANNELS**
+
+​**<#827991599304015922>** : nsfw-nude-meditation-room is where you can meditate online and nude. Be nude, honest and exposed in this room. You can hide your genitals behind your mudra or slightly off camera if you want to. Microphone off. Bow when entering and leaving. No sexual acts.
+
+​**<#878067707889713193>** : nsfw-nude-yoga-room is where you can practice yoga online and be nude. Microphone off unless you are leading a session. Bow when entering and leaving. No sexual acts.
+
+​
+GUILD_TEXT : channels-directory
+Jalendu: **Channels Directory**
+
+**ADMIN**
+
+​**<#828722989750026250>** : Welcome and overview of the server.
+
+​**<#887168812632391740>** : A directory of server channels accessible by verified members.
+
+​**<#827891914216177685>** : This channel lists the rules of etiquette for this server. Please add any suggested changes to #suggestions.
+
+​**<#828724253938942014>** : #roles allows you to set roles for yourself that are visible in your profile for others to see on this server. In addition, the age band role gives you access to the nsfw channels if you choose the 18+ age band and memes gives you access to the #memes-off-topic channel.
+
+Only add more reactions to the survey questions. Emojis added by users to the roles questions get deleted by the bot after a while.
+
+​**<#829717421182156800>** : #suggestions is where you can make suggestions for changes to the server and to discuss other people’s suggestions. Vote on a suggestion with :thumbsup: and :thumbsdown:.
+
+​**<#834013095805452318>** : #bot-commands is just a place to type commands to the bots that won’t clutter up the main chat channels.
+Please type 
+
+-ft set
+
+to set your time zone if you haven't already.
+
+​**<#856721735600439306>** : #feeds is a channel where interesting and relevant feeds from other discords or elsewhere may be posted.
+
+​**<#880224417475600414>** : #server-announcements is a read only channel for announcements about changes to the server.
+
+​**TEXT AND PICTURE CHANNELS**
+
+​**<#833559519611060244>** : #member-introductions is a channel where you can introduce yourself if you want to. There is no obligation to do anything here.
+
+​**<#879581907619307521>** : In this channel please write a short one line bio to serve as a directory of members.
+
+​**<#881620652417769473>** : This channel is to post photos of yourself. (Safe for work only here please).
+
+​
+GUILD_TEXT : nsfw-channels-directory
+Jalendu: **<#835771866064093184>** : There aren’t any rules here. Yes, this is a place where you can masturbate or otherwise behave sexually online either alone or with others,where you can observe, be observed or both. There are many servers on Discord where you can jerk-off with other guys on camera, (and you can also do it privately in direct messages), so what is different about this one?
+This is a group focussed on meditation and yoga and by extension, mindfulness, self-awareness, self-realisation, embodiment and self-acceptance. Hopefully we can bring some of those aims to our sexual or otherwise behaviour in this channel. If there are any rules they are to accept others but more importantly accept ourselves.
+
+​
+GUILD_TEXT : channels-directory
+Jalendu: **<#827888294100074519>** : #general is where you can chat about anything. It doesn’t have to be about meditation but please keep it safe for work and suitable for ages 14+.
+
+​**<#900243601303420988>** : Question of the Week discussion.
+
+​**<#893213385951420436>** : This is a place to post and talk about photos. Mostly these would be photos that you have taken yourself of your travels, garden, pets, house... anything. It doesn't have to be related to meditation or yoga (but all of life is sacred). Please keep it suitable for ages 14+.
+
+​**<#827891337125822524>** : #meditation-and-yoga is for chat, images, links etc. somehow related to meditation or yoga practice. Also sfw and suitable for 14+.
+
+​**<#834018953834922005>** : A channel for anyone to announce when and where they will be sitting online so that others may join them if they can.
+
+​**<#876984373705052190>** : The #apollo-events channel is managed by the Apollo bot and contains events listings. To add an event, type :
+
+!event
+
+as a message in any other channel, though preferably in #bot-commands and then follow the prompts in direct messages from Apollo.
+
+​**<#859691760980066334>** : Here you can promote anything including anything you are selling or doing. Members can mute this channel if they are not interested.
+
+​**<#861357967966339112>** : Post links from youtube or elsewhere for guided meditations that you think are appropriate for this group. These may be used with the Rythm bot to be used in a group meditation.
+
+​**<#876586095020761128>** : This is a place to share and discuss our trauma or pain and to support one another.
+
+​**VIDEO CHANNELS**
+
+​**<#827888294100074520>** : hangout-room is a voice and/or video room for anything sfw and not necessarily related to meditation.
+
+​
+GUILD_TEXT : channels-directory
+Jalendu: **<#827890804701003827>** : Open-meditation-room is for unscheduled, random meditation alone or with whoever wants to join. Microphone off please. Bow (or just nod) with palms together when you enter or leave the room, not when others do. Better not to sit directly facing the camera. People will be facing a wall in some forms of meditation. It’s okay to have your back to the camera.
+
+​**<#878067342888808448>** : open-yoga-room is where you can practice yoga online. Microphone off unless you are leading a session. Bow when entering and leaving.
+
+​**<#827993501920657479>** : scheduled-meditation-room is for if we have a specific meditation meeting or class. Etiquette set by the event organiser.
+
+​
+GUILD_TEXT : qotw
+marq_andrew: 
+GUILD_TEXT : chat-general
+RGfinpsy: good morning Yogis 😄
+Please wait another 31 minutes to bump DISBOARD :drool:
+Please wait another 21 minutes to bump DISBOARD :drool:
+Please wait another 11 minutes to bump DISBOARD :drool:
+qotd countdown days 1.9721560069444444
+GUILD_TEXT : server-announcements
+marq_andrew: 🙇‍♂️  Please remember that this server is not a sexual, hookup or porn server and is open to anyone aged 14+. Nudity or sexual images are allowed only in the channels prefixed “nsfw” and members must state that they are 18+ before they have access to them. In addition, moderators can lock members out of the nsfw channels if necessary. 
+I reject any suggestion that young teenagers <18 should be treated differently or excluded from this server on the basis that it is for gay+ men where they wouldn’t be on any other non-sexually focussed server.
+It is a fact however that some young teenagers have joined this group because they are sexually attracted to older men and contact members via direct message for sexual role playing etc.. Direct messages are facilitated by accepting a friend request or by being mutual members of at least one server (on which you have not blocked direct messages) but they do not go ”through” the servers.
+If you become aware of a young teenager who has been untruthful about their age and is accessing or especially showing images or video of themselves in the nsfw channels, please contact a moderator. However, YOU are the moderators of your direct messages. You can block direct messages from an individual or block direct messages from all members of a server (ineffective if you are friends or mutual members of another server).
+Please DO NOT contact the server moderators about incidents that occur in direct messages.
+(Some gratuitous advice about online safety; Never assume a person you are chatting to sexually online is 18+. That they might have lied about their age often isn’t a defence.)
+GUILD_TEXT : server-announcements
+marq_andrew: 🙇‍♂️  The <@&897259252031291464> discussion will be moved to a new channel <#900243601303420988> to keep it seperate from the other topics being discussed in <#827888294100074519>
+GUILD_TEXT : chat-general
+[O]Scorch: Does anyone of you help me to find research or internship in field of biotech
+GUILD_TEXT : chat-general
+[O]Scorch: @everyone
+GUILD_TEXT : qotw
+marq_andrew: /qo start
+qotd countdown days -9.259259259259259e-8
+GUILD_TEXT : qotw
+Jalendu: 
+MessageEmbed {
+  type: 'rich',
+  title: null,
+  description: 'Question of the Week <@&897259252031291464>',
+  url: null,
+  color: 12476889,
+  timestamp: null,
+  fields: [
+    {
+      value: '```How would you describe meditation to someone who doesn’t know anything about it?```',
+      name: '​',
+      inline: false
+    }
+  ],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: null,
+  provider: null,
+  footer: null
+}
+Please wait another 1 minutes to bump DISBOARD :drool:
+GUILD_TEXT : memes-off-topic
+Dawa: 
+Time to bump DISBOARD (!d bump) :scream:
+GUILD_TEXT : bot-commands
+Jalendu: Time to bump DISBOARD (!d bump) :scream:
+Please bump DISBOARD (!d bump). I've been waiting for the bump for 19 minutes :pleading_face:
+qotd countdown days 6.986079097222222
+GUILD_TEXT : bot-commands
+marq_andrew: !d bump
+disboard bump by marq_andrew
+GUILD_TEXT : bot-commands
+DISBOARD: 
+MessageEmbed {
+  type: 'rich',
+  title: 'DISBOARD: The Public Server List',
+  description: '<@679465390841135126> Bump done! :thumbsup:\n' +
+    'Check it out [on DISBOARD](https://disboard.org/server/827888294100074516).',
+  url: 'https://disboard.org/',
+  color: 2406327,
+  timestamp: null,
+  fields: [],
+  thumbnail: null,
+  image: {
+    url: 'https://disboard.org/images/bot-command-image-bump.png',
+    proxyURL: 'https://images-ext-1.discordapp.net/external/tAuRcs-FCy2M8OaTS9Ims62J1vrFiviahjBDtpZrrBs/https/disboard.org/images/bot-command-image-bump.png',
+    height: 200,
+    width: 800
+  },
+  video: null,
+  author: null,
+  provider: null,
+  footer: null
+}
+Bump done! :thumbsup: success
+successfully bumped
+GUILD_TEXT : bot-commands
+Jalendu: Thanks marq_andrew :thumbsup:
+:green_heart::green_heart::green_heart::blue_heart::blue_heart::blue_heart::purple_heart::purple_heart::purple_heart:
+Please wait another 115 minutes to bump DISBOARD :drool:
+Please wait another 105 minutes to bump DISBOARD :drool:
+Please wait another 95 minutes to bump DISBOARD :drool:
+qotd countdown days 6.9652457638888885
+Please wait another 85 minutes to bump DISBOARD :drool:
+Please wait another 75 minutes to bump DISBOARD :drool:
+Please wait another 65 minutes to bump DISBOARD :drool:
+qotd countdown days 6.944412418981481
+
+__Newcomers reminder and exclusion.__
+
+moonman5 --> reminded : 2.1 days.
+TwinkieBoy --> reminded : 4.4 days.
+Hendrick --> reminded : 5.8 days.
+
+* Indicates that the member wrote a message in #landing-zone.
++ Indicates that the member is muted.
+# Indicates that the member was previously a verified member.
+cleanup: no messages found
+Please wait another 55 minutes to bump DISBOARD :drool:
+Please wait another 45 minutes to bump DISBOARD :drool:
+qotd countdown days 6.923579039351852
+Please wait another 35 minutes to bump DISBOARD :drool:
+Please wait another 25 minutes to bump DISBOARD :drool:
+Please wait another 15 minutes to bump DISBOARD :drool:
+qotd countdown days 6.902745706018519
+Please wait another 5 minutes to bump DISBOARD :drool:
+Time to bump DISBOARD (!d bump) :scream:
+GUILD_TEXT : bot-commands
+Jalendu: Time to bump DISBOARD (!d bump) :scream:
+Please bump DISBOARD (!d bump). I've been waiting for the bump for 15 minutes :pleading_face:
+qotd countdown days 6.881912314814815
+Please bump DISBOARD (!d bump). I've been waiting for the bump for 25 minutes :pleading_face:
+Please bump DISBOARD (!d bump). I've been waiting for the bump for 35 minutes :pleading_face:
+Please bump DISBOARD (!d bump). I've been waiting for the bump for 45 minutes :pleading_face:
+qotd countdown days 6.861078981481482
+
+__Newcomers reminder and exclusion.__
+
+moonman5 --> reminded : 2.2 days.
+TwinkieBoy --> reminded : 4.5 days.
+Hendrick --> reminded : 5.9 days.
+
+* Indicates that the member wrote a message in #landing-zone.
++ Indicates that the member is muted.
+# Indicates that the member was previously a verified member.
+Please bump DISBOARD (!d bump). I've been waiting for the bump for 55 minutes :pleading_face:
+cleanup: no messages found
+GUILD_TEXT : bot-commands
+marq_andrew: !d bump
+disboard bump by marq_andrew
+GUILD_TEXT : bot-commands
+DISBOARD: 
+MessageEmbed {
+  type: 'rich',
+  title: 'DISBOARD: The Public Server List',
+  description: '<@679465390841135126> Bump done! :thumbsup:\n' +
+    'Check it out [on DISBOARD](https://disboard.org/server/827888294100074516).',
+  url: 'https://disboard.org/',
+  color: 2406327,
+  timestamp: null,
+  fields: [],
+  thumbnail: null,
+  image: {
+    url: 'https://disboard.org/images/bot-command-image-bump.png',
+    proxyURL: 'https://images-ext-1.discordapp.net/external/tAuRcs-FCy2M8OaTS9Ims62J1vrFiviahjBDtpZrrBs/https/disboard.org/images/bot-command-image-bump.png',
+    height: 200,
+    width: 800
+  },
+  video: null,
+  author: null,
+  provider: null,
+  footer: null
+}
+Bump done! :thumbsup: success
+successfully bumped
+GUILD_TEXT : bot-commands
+Jalendu: Thanks marq_andrew :rose:
+:green_heart::green_heart::green_heart::blue_heart::blue_heart::blue_heart::purple_heart::purple_heart::purple_heart::purple_heart:
+Please wait another 116 minutes to bump DISBOARD :drool:
+Please wait another 106 minutes to bump DISBOARD :drool:
+qotd countdown days 6.8402454629629625
+Please wait another 96 minutes to bump DISBOARD :drool:
+Please wait another 86 minutes to bump DISBOARD :drool:
+Please wait another 76 minutes to bump DISBOARD :drool:
+qotd countdown days 6.819412106481481
+Please wait another 66 minutes to bump DISBOARD :drool:
+Please wait another 56 minutes to bump DISBOARD :drool:
+Please wait another 46 minutes to bump DISBOARD :drool:
+qotd countdown days 6.79857869212963
+Please wait another 36 minutes to bump DISBOARD :drool:
+Please wait another 26 minutes to bump DISBOARD :drool:
+Please wait another 16 minutes to bump DISBOARD :drool:
+qotd countdown days 6.777745347222222
+
+__Newcomers reminder and exclusion.__
+
+moonman5 --> reminded : 2.3 days.
+TwinkieBoy --> reminded : 4.6 days.
+Hendrick --> reminded : 6.0 days.
+
+* Indicates that the member wrote a message in #landing-zone.
++ Indicates that the member is muted.
+# Indicates that the member was previously a verified member.
+cleanup: no messages found
+Please wait another 6 minutes to bump DISBOARD :drool:
+GUILD_TEXT : apollo-events
+Apollo: 
+MessageEmbed {
+  type: 'rich',
+  title: 'Silent Meditation in the Open Room',
+  description: null,
+  url: null,
+  color: 15844367,
+  timestamp: null,
+  fields: [
+    {
+      value: '<t:1634812800:F> - <t:1634815200:t>\n' +
+        '<:countdown:878391707727716413> <t:1634812800:R>',
+      name: 'Time',
+      inline: false
+    },
+    {
+      value: '[Add to Google Calendar](http://www.google.com/calendar/event?action=TEMPLATE&text=Silent+Meditation+in+the+Open+Room&details=&location=&dates=20211021T104000Z/20211021T112000Z)',
+      name: 'Links',
+      inline: false
+    },
+    {
+      value: '-',
+      name: '<:accepted:713124484436983971> Accepted',
+      inline: true
+    },
+    {
+      value: '-',
+      name: '<:declined:713124484688642068> Declined',
+      inline: true
+    },
+    {
+      value: '-',
+      name: '<:tentative:713214962641666109> Tentative',
+      inline: true
+    }
+  ],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: null,
+  provider: null,
+  footer: {
+    text: 'Created by marq_andrew • Repeats daily',
+    iconURL: undefined,
+    proxyIconURL: undefined
+  }
+}
+Time to bump DISBOARD (!d bump) :scream:
+GUILD_TEXT : bot-commands
+Jalendu: Time to bump DISBOARD (!d bump) :scream:
+Please bump DISBOARD (!d bump). I've been waiting for the bump for 14 minutes :pleading_face:
+GUILD_TEXT : bot-commands
+RGfinpsy: !d bump
+disboard bump by RGfinpsy
+GUILD_TEXT : bot-commands
+DISBOARD: 
+MessageEmbed {
+  type: 'rich',
+  title: 'DISBOARD: The Public Server List',
+  description: '<@523463175216300042> Bump done! :thumbsup:\n' +
+    'Check it out [on DISBOARD](https://disboard.org/server/827888294100074516).',
+  url: 'https://disboard.org/',
+  color: 2406327,
+  timestamp: null,
+  fields: [],
+  thumbnail: null,
+  image: {
+    url: 'https://disboard.org/images/bot-command-image-bump.png',
+    proxyURL: 'https://images-ext-1.discordapp.net/external/tAuRcs-FCy2M8OaTS9Ims62J1vrFiviahjBDtpZrrBs/https/disboard.org/images/bot-command-image-bump.png',
+    height: 200,
+    width: 800
+  },
+  video: null,
+  author: null,
+  provider: null,
+  footer: null
+}
+Bump done! :thumbsup: success
+successfully bumped
+GUILD_TEXT : bot-commands
+Jalendu: Thanks RGfinpsy :medal:
+:green_heart::green_heart::green_heart::green_heart::blue_heart::purple_heart:
+qotd countdown days 6.756911643518518
+Please wait another 110 minutes to bump DISBOARD :drool:
+Please wait another 100 minutes to bump DISBOARD :drool:
+Please wait another 90 minutes to bump DISBOARD :drool:
+qotd countdown days 6.736078310185185
+Please wait another 80 minutes to bump DISBOARD :drool:
+GUILD_TEXT : video-channel-logging
+Jalendu: ```Voice session in nsfw-nude-meditation-room has ended.
+Member          Joined    Duration  Camera  %
+davidlynn#6918  12:00:10  18:09     18:09   100.00%```
+Please wait another 70 minutes to bump DISBOARD :drool:
+Please wait another 60 minutes to bump DISBOARD :drool:
+qotd countdown days 6.715244722222222
+Please wait another 50 minutes to bump DISBOARD :drool:
+Please wait another 40 minutes to bump DISBOARD :drool:
+Please wait another 30 minutes to bump DISBOARD :drool:
+GUILD_TEXT : system-messages
+rendy.: 
+GUILD_TEXT : system-messages
+Jalendu: 
+MessageEmbed {
+  type: 'rich',
+  title: 'rendy.',
+  description: null,
+  url: null,
+  color: 65535,
+  timestamp: null,
+  fields: [],
+  thumbnail: null,
+  image: {
+    url: 'https://cdn.discordapp.com/avatars/234164645303156747/6ef863c0522c999747a7019c84dbb284.png?size=2048',
+    proxyURL: 'https://images-ext-1.discordapp.net/external/Ofh3-poFi4uoPmg29T0brmK7msjAncya-7C3PXNHsWc/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/234164645303156747/6ef863c0522c999747a7019c84dbb284.png',
+    height: 0,
+    width: 0
+  },
+  video: null,
+  author: null,
+  provider: null,
+  footer: null
+}
+role <@&851071523543973928> added to <@234164645303156747>
+GUILD_TEXT : system-messages
+Carl-bot Logging: 
+MessageEmbed {
+  type: 'rich',
+  title: 'Member joined',
+  description: '<@234164645303156747> 153rd to join\n' +
+    'created 5 years, 12 days and 9 hours ago',
+  url: null,
+  color: 5496236,
+  timestamp: 1634735290576,
+  fields: [],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: {
+    name: 'rendy.#0638',
+    url: undefined,
+    iconURL: 'https://cdn.discordapp.com/avatars/234164645303156747/6ef863c0522c999747a7019c84dbb284.webp?size=1024',
+    proxyIconURL: 'https://images-ext-1.discordapp.net/external/wxX-BHXzzo4X9zEd_ZUbpIAc5RZMQdm9niswuX-IEZI/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/234164645303156747/6ef863c0522c999747a7019c84dbb284.webp'
+  },
+  provider: null,
+  footer: {
+    text: 'ID: 234164645303156747',
+    iconURL: undefined,
+    proxyIconURL: undefined
+  }
+}
+member undefined!
+cleanup: no messages found
+GUILD_TEXT : system-messages
+Carl-bot Logging: 
+MessageEmbed {
+  type: 'rich',
+  title: 'Member left',
+  description: '<@234164645303156747> joined 15 seconds ago\n' +
+    '**Roles:** <@&851071523543973928>',
+  url: null,
+  color: 16774575,
+  timestamp: 1634735304595,
+  fields: [],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: {
+    name: 'rendy.#0638',
+    url: undefined,
+    iconURL: 'https://cdn.discordapp.com/avatars/234164645303156747/6ef863c0522c999747a7019c84dbb284.webp?size=1024',
+    proxyIconURL: 'https://images-ext-1.discordapp.net/external/wxX-BHXzzo4X9zEd_ZUbpIAc5RZMQdm9niswuX-IEZI/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/234164645303156747/6ef863c0522c999747a7019c84dbb284.webp'
+  },
+  provider: null,
+  footer: {
+    text: 'ID: 234164645303156747',
+    iconURL: undefined,
+    proxyIconURL: undefined
+  }
+}
+member undefined!
+
+__Newcomers reminder and exclusion.__
+
+moonman5 --> reminded : 2.4 days.
+TwinkieBoy --> reminded : 4.6 days.
+Hendrick --> reminded : 6.1 days.
+
+* Indicates that the member wrote a message in #landing-zone.
++ Indicates that the member is muted.
+# Indicates that the member was previously a verified member.
+qotd countdown days 6.694411342592592
+cleanup: no messages found
+Please wait another 20 minutes to bump DISBOARD :drool:
+GUILD_TEXT : bot-commands
+Thoron: !d bump
+disboard bump by Thoron
+GUILD_TEXT : bot-commands
+DISBOARD: 
+MessageEmbed {
+  type: 'rich',
+  title: 'DISBOARD: The Public Server List',
+  description: '<@392939068536782848> Please wait another 12 minutes until the server can be bumped',
+  url: 'https://disboard.org/',
+  color: 15420513,
+  timestamp: null,
+  fields: [],
+  thumbnail: {
+    url: 'https://disboard.org/images/bot-command-image-thumbnail-error.png',
+    proxyURL: 'https://images-ext-1.discordapp.net/external/-N8TZVFTnkSYClu_Kbvb8KXNn2TvUgyUwLyBYkC7VGg/https/disboard.org/images/bot-command-image-thumbnail-error.png',
+    height: 300,
+    width: 300
+  },
+  image: null,
+  video: null,
+  author: null,
+  provider: null,
+  footer: null
+}
+Please wait another failure
+108.9521
+Please wait another 10 minutes to bump DISBOARD :drool:
+GUILD_TEXT : nsfw-self-expression
+JCinNYC2021: Good morning beautiful
+GUILD_TEXT : apollo-events
+Apollo: 
+MessageEmbed {
+  type: 'rich',
+  title: 'Nightly meditation in the nsfw-nude-meditation-room',
+  description: null,
+  url: null,
+  color: 15844367,
+  timestamp: null,
+  fields: [
+    {
+      value: '<t:1634814000:F> - <t:1634815800:t>\n' +
+        '<:countdown:878391707727716413> <t:1634814000:R>',
+      name: 'Time',
+      inline: false
+    },
+    {
+      value: '[Add to Google Calendar](http://www.google.com/calendar/event?action=TEMPLATE&text=Nightly+meditation+in+the+nsfw-nude-meditation-room&details=&location=&dates=20211021T110000Z/20211021T113000Z)',
+      name: 'Links',
+      inline: false
+    },
+    {
+      value: '-',
+      name: '<:accepted:713124484436983971> Accepted',
+      inline: true
+    },
+    {
+      value: '-',
+      name: '<:declined:713124484688642068> Declined',
+      inline: true
+    },
+    {
+      value: '-',
+      name: '<:tentative:713214962641666109> Tentative',
+      inline: true
+    }
+  ],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: null,
+  provider: null,
+  footer: {
+    text: 'Created by marq_andrew • Repeats daily',
+    iconURL: undefined,
+    proxyIconURL: undefined
+  }
+}
+Please wait another 0 minutes to bump DISBOARD :drool:
+GUILD_TEXT : nsfw-off-topic
+Johnd: <@679465390841135126> thanks will do.
+GUILD_TEXT : nsfw-self-expression
+JCinNYC2021: 
+GUILD_TEXT : nsfw-self-expression
+JCinNYC2021: Been practicing some photography
+qotd countdown days 6.673577916666667
+Time to bump DISBOARD (!d bump) :scream:
+GUILD_TEXT : bot-commands
+Jalendu: Time to bump DISBOARD (!d bump) :scream:
+Please bump DISBOARD (!d bump). I've been waiting for the bump for 20 minutes :pleading_face:
+Please bump DISBOARD (!d bump). I've been waiting for the bump for 30 minutes :pleading_face:
+qotd countdown days 6.652744583333333
+Please bump DISBOARD (!d bump). I've been waiting for the bump for 40 minutes :pleading_face:
+Please bump DISBOARD (!d bump). I've been waiting for the bump for 50 minutes :pleading_face:
+GUILD_TEXT : nsfw-self-expression
+Johnd: <@877611903554297947> beautiful
+GUILD_TEXT : nsfw-off-topic
+Johnd: 
+Please bump DISBOARD (!d bump). I've been waiting for the bump for 60 minutes :pleading_face:
+GUILD_TEXT : video-channel-logging
+Jalendu: ```Voice session in nsfw-nude-meditation-room has ended.
+Member       Joined    Duration  Camera  %
+Egidio#1878  14:07:51  30:45     30:45   100.00%```
+qotd countdown days 6.631911076388889
+Please bump DISBOARD (!d bump). I've been waiting for the bump for 70 minutes :pleading_face:
+GUILD_TEXT : nsfw-self-expression
+Egidio: <@877611903554297947> , sexy and cuddly
+Please bump DISBOARD (!d bump). I've been waiting for the bump for 80 minutes :pleading_face:
+Please bump DISBOARD (!d bump). I've been waiting for the bump for 90 minutes :pleading_face:
+GUILD_TEXT : bot-commands
+RGfinpsy: !d bump
+disboard bump by RGfinpsy
+GUILD_TEXT : bot-commands
+DISBOARD: 
+MessageEmbed {
+  type: 'rich',
+  title: 'DISBOARD: The Public Server List',
+  description: '<@523463175216300042> Bump done! :thumbsup:\n' +
+    'Check it out [on DISBOARD](https://disboard.org/server/827888294100074516).',
+  url: 'https://disboard.org/',
+  color: 2406327,
+  timestamp: null,
+  fields: [],
+  thumbnail: null,
+  image: {
+    url: 'https://disboard.org/images/bot-command-image-bump.png',
+    proxyURL: 'https://images-ext-1.discordapp.net/external/tAuRcs-FCy2M8OaTS9Ims62J1vrFiviahjBDtpZrrBs/https/disboard.org/images/bot-command-image-bump.png',
+    height: 200,
+    width: 800
+  },
+  video: null,
+  author: null,
+  provider: null,
+  footer: null
+}
+Bump done! :thumbsup: success
+successfully bumped
+GUILD_TEXT : bot-commands
+Jalendu: Thanks RGfinpsy :medal:
+:green_heart::green_heart::green_heart::green_heart::blue_heart::purple_heart::purple_heart:
+
+__Newcomers reminder and exclusion.__
+
+moonman5 --> reminded : 2.4 days.
+TwinkieBoy --> reminded : 4.7 days.
+Hendrick --> reminded : 6.2 days.
+
+* Indicates that the member wrote a message in #landing-zone.
++ Indicates that the member is muted.
+# Indicates that the member was previously a verified member.
+qotd countdown days 6.611077743055556
+cleanup: no messages found
+Please wait another 120 minutes to bump DISBOARD :drool:
+GUILD_TEXT : system-messages
+Daaw: 
+role <@&851071523543973928> added to <@535096693646163989>
+GUILD_TEXT : system-messages
+Jalendu: 
+MessageEmbed {
+  type: 'rich',
+  title: 'Daaw',
+  description: null,
+  url: null,
+  color: 65535,
+  timestamp: null,
+  fields: [],
+  thumbnail: null,
+  image: {
+    url: 'https://cdn.discordapp.com/avatars/535096693646163989/011167b997d49de97f59ee6a2351faea.png?size=2048',
+    proxyURL: 'https://images-ext-1.discordapp.net/external/_8D1gVyW4ohh2RLuLy5lOINiEWOJboaxBSqHTyzuUZs/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/535096693646163989/011167b997d49de97f59ee6a2351faea.png',
+    height: 0,
+    width: 0
+  },
+  video: null,
+  author: null,
+  provider: null,
+  footer: null
+}
+GUILD_TEXT : system-messages
+Carl-bot Logging: 
+MessageEmbed {
+  type: 'rich',
+  title: 'Member joined',
+  description: '<@535096693646163989> 153rd to join\n' +
+    'created 2 years, 9 months and 4 days ago',
+  url: null,
+  color: 5496236,
+  timestamp: 1634743283928,
+  fields: [],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: {
+    name: 'Daaw#2822',
+    url: undefined,
+    iconURL: 'https://cdn.discordapp.com/avatars/535096693646163989/011167b997d49de97f59ee6a2351faea.webp?size=1024',
+    proxyIconURL: 'https://images-ext-1.discordapp.net/external/7hMAg0VkD-Ay7D0z3FrSo9jP-J8se-eDHjxQpPHJ-XE/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/535096693646163989/011167b997d49de97f59ee6a2351faea.webp'
+  },
+  provider: null,
+  footer: {
+    text: 'ID: 535096693646163989',
+    iconURL: undefined,
+    proxyIconURL: undefined
+  }
+}
+member undefined!
+Please wait another 110 minutes to bump DISBOARD :drool:
+GUILD_TEXT : landing-zone
+Daaw: 1. I don't know, I'm 24, from Germany, bi, looking for like-minded people who are into spirituality
+2. I meditate every day for about 20 minutes, it helps to relax after a workday
+3. To communicate with like-minded people
+role <@&879317175167492156> added to <@535096693646163989>
+GUILD_TEXT : landing-zone-log
+Jalendu: **<@535096693646163989> wrote:**
+GUILD_TEXT : landing-zone-log
+Jalendu: 1. I don't know, I'm 24, from Germany, bi, looking for like-minded people who are into spirituality
+2. I meditate every day for about 20 minutes, it helps to relax after a workday
+3. To communicate with like-minded people
+GUILD_TEXT : landing-zone-log
+Jalendu: **Jalendu automod classified this as type "none" by rule "none"**
+GUILD_TEXT : system-messages
+Carl-bot Logging: 
+MessageEmbed {
+  type: 'rich',
+  title: 'Role added',
+  description: '<@&879317175167492156>',
+  url: null,
+  color: 4359924,
+  timestamp: 1634743360595,
+  fields: [],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: {
+    name: 'Daaw#2822',
+    url: undefined,
+    iconURL: 'https://cdn.discordapp.com/avatars/535096693646163989/011167b997d49de97f59ee6a2351faea.webp?size=1024',
+    proxyIconURL: 'https://images-ext-1.discordapp.net/external/7hMAg0VkD-Ay7D0z3FrSo9jP-J8se-eDHjxQpPHJ-XE/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/535096693646163989/011167b997d49de97f59ee6a2351faea.webp'
+  },
+  provider: null,
+  footer: {
+    text: 'ID: 535096693646163989',
+    iconURL: undefined,
+    proxyIconURL: undefined
+  }
+}
+member undefined!
+Please wait another 100 minutes to bump DISBOARD :drool:
+role <@&836590097318019092> added to <@535096693646163989>
+GUILD_TEXT : system-messages
+Jalendu: Member <@535096693646163989> has been verified by <@523463175216300042>.
+GUILD_TEXT : member-introductions
+Jalendu: 
+MessageEmbed {
+  type: 'rich',
+  title: null,
+  description: null,
+  url: null,
+  color: 65535,
+  timestamp: null,
+  fields: [
+    {
+      value: 'Please welcome <@535096693646163989>.',
+      name: '​',
+      inline: true
+    }
+  ],
+  thumbnail: {
+    url: 'https://cdn.discordapp.com/avatars/535096693646163989/011167b997d49de97f59ee6a2351faea.png',
+    proxyURL: 'https://images-ext-1.discordapp.net/external/zRdpuegda-UfVAniUr6s_gRcC_dajp6jTYJwVyzbsjk/https/cdn.discordapp.com/avatars/535096693646163989/011167b997d49de97f59ee6a2351faea.png',
+    height: 0,
+    width: 0
+  },
+  image: null,
+  video: null,
+  author: null,
+  provider: null,
+  footer: null
+}
+GUILD_TEXT : landing-zone
+Jalendu: Member <@535096693646163989> has been verified. :partying_face:
+__Landing zone message cleanup__
+Message by <@535096693646163989> "1. I don't know, I'm 24, from Germany, bi, looking"
+- is from a verified member - delete.
+role <@&851071523543973928> removed from <@535096693646163989>
+DM : undefined
+Jalendu: __Welcome to Gay+ Men Meditating.__
+
+You have been verified but please go to #roles to set your age band.
+NSFW channels are not visible to you unless you choose the 18+ age role.
+Roles are set by clicking on the appropriate emoji with the number beside it under each question.
+
+Please also look at the following channels:
+
+1. Welcome: for an overview.
+2. Channels-directory: for a guide to the channels.
+3. Etiquette: to review the rules.
+4. Member Introductions: to introduce yourself to the community (optional).
+5. Sitting times: to read what times other members sit online so that you can join them.
+6.Apollo-events also lists scheduled events.
+
+To protect your privacy, the message your wrote to request admission will have been deleted. You can introduce yourself to the group in member-introductions if you wish.
+GUILD_TEXT : system-messages
+Carl-bot Logging: 
+MessageEmbed {
+  type: 'rich',
+  title: 'Role added',
+  description: '<@&836590097318019092>',
+  url: null,
+  color: 4359924,
+  timestamp: 1634744165127,
+  fields: [],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: {
+    name: 'Daaw#2822',
+    url: undefined,
+    iconURL: 'https://cdn.discordapp.com/avatars/535096693646163989/011167b997d49de97f59ee6a2351faea.webp?size=1024',
+    proxyIconURL: 'https://images-ext-1.discordapp.net/external/7hMAg0VkD-Ay7D0z3FrSo9jP-J8se-eDHjxQpPHJ-XE/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/535096693646163989/011167b997d49de97f59ee6a2351faea.webp'
+  },
+  provider: null,
+  footer: {
+    text: 'ID: 535096693646163989',
+    iconURL: undefined,
+    proxyIconURL: undefined
+  }
+}
+member undefined!
+GUILD_TEXT : member-introductions
+RGfinpsy: Welcome <@535096693646163989>
+qotd countdown days 6.590244363425926
+Please wait another 90 minutes to bump DISBOARD :drool:
+Please wait another 80 minutes to bump DISBOARD :drool:
+Please wait another 70 minutes to bump DISBOARD :drool:
+qotd countdown days 6.569411018518519
+Please wait another 60 minutes to bump DISBOARD :drool:
+GUILD_TEXT : nsfw-self-expression
+JCinNYC2021: Thank you so much
+GUILD_TEXT : nsfw-self-expression
+JCinNYC2021: Come do me
+Please wait another 50 minutes to bump DISBOARD :drool:
+Please wait another 40 minutes to bump DISBOARD :drool:
+qotd countdown days 6.548577592592593
+Please wait another 30 minutes to bump DISBOARD :drool:
+Please wait another 20 minutes to bump DISBOARD :drool:
+Please wait another 10 minutes to bump DISBOARD :drool:
+GUILD_TEXT : member-introductions
+marq_andrew: Hi <@!535096693646163989>
+
+__Newcomers reminder and exclusion.__
+
+moonman5 --> reminded : 2.5 days.
+TwinkieBoy --> reminded : 4.8 days.
+Hendrick --> reminded : 6.2 days.
+
+* Indicates that the member wrote a message in #landing-zone.
++ Indicates that the member is muted.
+# Indicates that the member was previously a verified member.
+qotd countdown days 6.5277442476851855
+cleanup: no messages found
+Time to bump DISBOARD (!d bump) :scream:
+GUILD_TEXT : bot-commands
+Jalendu: Time to bump DISBOARD (!d bump) :scream:
+role <@&888303776451149844> added to <@535096693646163989>
+GUILD_TEXT : system-messages
+Carl-bot Logging: 
+MessageEmbed {
+  type: 'rich',
+  title: 'Role added',
+  description: '<@&888303776451149844>',
+  url: null,
+  color: 4359924,
+  timestamp: 1634749922050,
+  fields: [],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: {
+    name: 'Daaw#2822',
+    url: undefined,
+    iconURL: 'https://cdn.discordapp.com/avatars/535096693646163989/011167b997d49de97f59ee6a2351faea.webp?size=1024',
+    proxyIconURL: 'https://images-ext-1.discordapp.net/external/7hMAg0VkD-Ay7D0z3FrSo9jP-J8se-eDHjxQpPHJ-XE/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/535096693646163989/011167b997d49de97f59ee6a2351faea.webp'
+  },
+  provider: null,
+  footer: {
+    text: 'ID: 535096693646163989',
+    iconURL: undefined,
+    proxyIconURL: undefined
+  }
+}
+member undefined!
+Please bump DISBOARD (!d bump). I've been waiting for the bump for 10 minutes :pleading_face:
+Please bump DISBOARD (!d bump). I've been waiting for the bump for 20 minutes :pleading_face:
+GUILD_TEXT : bot-commands
+RGfinpsy: !d bump
+disboard bump by RGfinpsy
+GUILD_TEXT : bot-commands
+DISBOARD: 
+MessageEmbed {
+  type: 'rich',
+  title: 'DISBOARD: The Public Server List',
+  description: '<@523463175216300042> Bump done! :thumbsup:\n' +
+    'Check it out [on DISBOARD](https://disboard.org/server/827888294100074516).',
+  url: 'https://disboard.org/',
+  color: 2406327,
+  timestamp: null,
+  fields: [],
+  thumbnail: null,
+  image: {
+    url: 'https://disboard.org/images/bot-command-image-bump.png',
+    proxyURL: 'https://images-ext-1.discordapp.net/external/tAuRcs-FCy2M8OaTS9Ims62J1vrFiviahjBDtpZrrBs/https/disboard.org/images/bot-command-image-bump.png',
+    height: 200,
+    width: 800
+  },
+  video: null,
+  author: null,
+  provider: null,
+  footer: null
+}
+Bump done! :thumbsup: success
+successfully bumped
+GUILD_TEXT : bot-commands
+Jalendu: Thanks RGfinpsy :heart:
+:green_heart::green_heart::green_heart::green_heart::blue_heart::purple_heart::purple_heart::purple_heart:
+qotd countdown days 6.506910648148148
+Please wait another 118 minutes to bump DISBOARD :drool:
+Please wait another 108 minutes to bump DISBOARD :drool:
+GUILD_TEXT : nsfw-off-topic
+Dawa: Gorgeous <3
+GUILD_TEXT : nsfw-self-expression
+Dawa: Beautiful, excellent work
+GUILD_TEXT : video-channel-logging
+Jalendu: ```Voice session in open-meditation-room has ended.
+Member            Joined    Duration  Camera  %
+marq_andrew#2607  17:14:52  40:43     40:37   99.78%
+Bryan_21#9933     17:26:58  25:58     25:54   99.70%```
+Please wait another 98 minutes to bump DISBOARD :drool:
+GUILD_TEXT : nsfw-off-topic
+RGfinpsy: Your turn now 😄
+GUILD_TEXT : nsfw-off-topic
+Dawa: Quite tempted actually
+DM : undefined
+marq_andrew: /qo status
+DM : undefined
+Jalendu: ```status of questions system
+--------------------------
+
+total questions     :    38
+approved            :    35
+submitted           :     2
+rejected            :     1
+
+asked               :     2 5.7%
+
+current UTC time    : Wed, 20 Oct 2021 18:06:56 GMT
+start time          : Wed, 20 Oct 2021 05:51:37 GMT
+last time asked     : Wed, 20 Oct 2021 05:51:37 GMT
+next question       : Wed, 27 Oct 2021 05:51:37 GMT
+days to go          : 6.489364467592592```
+DM : undefined
+marq_andrew: /qo review
+DM : undefined
+Jalendu: 
+MessageEmbed {
+  type: 'rich',
+  title: '#44',
+  description: null,
+  url: null,
+  color: 1626319,
+  timestamp: null,
+  fields: [
+    {
+      value: '```Can you have wealth, status, fame and still be happy?```',
+      name: '​',
+      inline: false
+    }
+  ],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: null,
+  provider: null,
+  footer: null
+}
+DM : undefined
+Jalendu: 
+MessageEmbed {
+  type: 'rich',
+  title: '#45',
+  description: null,
+  url: null,
+  color: 16760939,
+  timestamp: null,
+  fields: [
+    {
+      value: '```Do you think a person should be exempted from vaccination requirements on the basis of their religious beliefs?```',
+      name: '​',
+      inline: false
+    }
+  ],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: null,
+  provider: null,
+  footer: null
+}
+DM : undefined
+marq_andrew: /qo approve all
+DM : undefined
+Jalendu: 2 questions approved.
+DM : undefined
+marq_andrew: /qo finf stealth
+DM : undefined
+Jalendu: qotd unknown command finf
+DM : undefined
+marq_andrew: /qo find stealth
+DM : undefined
+Jalendu: 
+MessageEmbed {
+  type: 'rich',
+  title: '#40',
+  description: null,
+  url: null,
+  color: 9949712,
+  timestamp: null,
+  fields: [
+    {
+      value: '```Have you heard of "stealthing"? That is when two people agree to have sex using a condom but then the guy wearing the condom takes it off without his partner knowing. It is summarised as "non-consensual condom removal." Do you think it should be treated in the same way as rape?```',
+      name: '​',
+      inline: false
+    }
+  ],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: null,
+  provider: null,
+  footer: null
+}
+DM : undefined
+marq_andrew: /qo approve 40
+DM : undefined
+Jalendu: Question 40 approved.
+DM : undefined
+marq_andrew: /qo status
+DM : undefined
+Jalendu: ```status of questions system
+--------------------------
+
+total questions     :    38
+approved            :    38
+
+asked               :     2 5.3%
+
+current UTC time    : Wed, 20 Oct 2021 18:08:15 GMT
+start time          : Wed, 20 Oct 2021 05:51:37 GMT
+last time asked     : Wed, 20 Oct 2021 05:51:37 GMT
+next question       : Wed, 27 Oct 2021 05:51:37 GMT
+days to go          : 6.4884462962962965```
+GUILD_TEXT : qotw
+RGfinpsy: Ig almost everything have some idea about meditation. Most people understand meditation as a task where you sit with eyes close and try to stay calm and focus. 
+
+But still if someone totally clueless ask me to explain him what is meditation ill say that in meditation your main goal is to be with yourself in a place where you can stay calm, undisturbed, and try to clear your mind. You give your mind and body a chance to do absolutely nothing and stay calm and relaxed.
+qotd countdown days 6.486077314814815
+Please wait another 88 minutes to bump DISBOARD :drool:
+GUILD_TEXT : qotw
+marq_andrew: I would say “living in reality”. I practice a kind of meditation called Shikantaza which means “just sitting”. It means sitting in awareness of everything that is or happens, not conceptualising or engaging mentally, without expectation or goal, but also with the unthought awareness that this is reality and this is what the Buddha did.
+GUILD_TEXT : qotw
+RGfinpsy: Very good 👌
+
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+RESTART 20211020-183358
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+
+Ready!
+[ 'bumpbots', 'bumpers', 'qotd_activity', 'qotds', 'qotd_scores' ]
+Setting application command permissions on 888779192592896130 avatar
+Setting application command permissions on 888779192592896131 joke
+Setting application command permissions on 888779192592896132 define
+Setting application command permissions on 888779192592896133 moderate
+Setting application command permissions on 889643708650254346 readme
+qotd countdown days 6.470578090277778
+DISBOARD in sync (0 difference)
+
+__Newcomers reminder and exclusion.__
+
+moonman5 --> reminded : 2.6 days.
+TwinkieBoy --> reminded : 4.9 days.
+Hendrick --> reminded : 6.3 days.
+
+* Indicates that the member wrote a message in #landing-zone.
++ Indicates that the member is muted.
+# Indicates that the member was previously a verified member.
+cleanup: no messages found
+Please wait another 55 minutes to bump DISBOARD :drool:
+Please wait another 45 minutes to bump DISBOARD :drool:
+GUILD_TEXT : apollo-events
+Apollo: 
+MessageEmbed {
+  type: 'rich',
+  title: 'Open meditation (Sydney 4:15 am)',
+  description: 'Early morning (Sydney time) silent meditation in the open meditation room. Everyone is welcome to join. Please make sure your microphone is off.',
+  url: null,
+  color: 15844367,
+  timestamp: null,
+  fields: [
+    {
+      value: '<t:1634836500:F> - <t:1634838900:t>\n' +
+        '<:countdown:878391707727716413> <t:1634836500:R>',
+      name: 'Time',
+      inline: false
+    },
+    {
+      value: '[Add to Google Calendar](http://www.google.com/calendar/event?action=TEMPLATE&text=Open+meditation+%28Sydney+4%3A15+am%29&details=&location=&dates=20211021T171500Z/20211021T175500Z)',
+      name: 'Links',
+      inline: false
+    },
+    {
+      value: '-',
+      name: '<:accepted:713124484436983971> Accepted',
+      inline: true
+    },
+    {
+      value: '-',
+      name: '<:declined:713124484688642068> Declined',
+      inline: true
+    },
+    {
+      value: '-',
+      name: '<:tentative:713214962641666109> Tentative',
+      inline: true
+    }
+  ],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: null,
+  provider: null,
+  footer: {
+    text: 'Created by marq_andrew • Repeats daily',
+    iconURL: undefined,
+    proxyIconURL: undefined
+  }
+}
+GUILD_TEXT : selfies
+Darxie: 
+Please wait another 35 minutes to bump DISBOARD :drool:
+qotd countdown days 6.4497447337962965
+Please wait another 25 minutes to bump DISBOARD :drool:
+GUILD_TEXT : system-messages
+smsm: 
+role <@&851071523543973928> added to <@900451194747629638>
+GUILD_TEXT : system-messages
+Jalendu: 
+MessageEmbed {
+  type: 'rich',
+  title: 'smsm',
+  description: null,
+  url: null,
+  color: 65535,
+  timestamp: null,
+  fields: [],
+  thumbnail: null,
+  image: {
+    url: 'https://cdn.discordapp.com/embed/avatars/4.png',
+    proxyURL: 'https://images-ext-2.discordapp.net/external/6tVaUxectogf8lZc5X8fWTGd2tbzlG6I5AtVbWYYLNI/https/cdn.discordapp.com/embed/avatars/4.png',
+    height: 256,
+    width: 256
+  },
+  video: null,
+  author: null,
+  provider: null,
+  footer: null
+}
+GUILD_TEXT : system-messages
+Carl-bot Logging: 
+MessageEmbed {
+  type: 'rich',
+  title: 'Member joined',
+  description: '<@900451194747629638> 154th to join\n' +
+    ':warning: **NEW ACCOUNT** created 47 minutes and 58 seconds ago:warning:',
+  url: null,
+  color: 5496236,
+  timestamp: 1634757571535,
+  fields: [],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: {
+    name: 'smsm#9889',
+    url: undefined,
+    iconURL: 'https://cdn.discordapp.com/embed/avatars/4.png',
+    proxyIconURL: 'https://images-ext-2.discordapp.net/external/6tVaUxectogf8lZc5X8fWTGd2tbzlG6I5AtVbWYYLNI/https/cdn.discordapp.com/embed/avatars/4.png'
+  },
+  provider: null,
+  footer: {
+    text: 'ID: 900451194747629638',
+    iconURL: undefined,
+    proxyIconURL: undefined
+  }
+}
+member undefined!
+Please wait another 15 minutes to bump DISBOARD :drool:
+Please wait another 5 minutes to bump DISBOARD :drool:
+qotd countdown days 6.428911400462963
+Time to bump DISBOARD (!d bump) :scream:
+GUILD_TEXT : bot-commands
+Jalendu: Time to bump DISBOARD (!d bump) :scream:
+Please bump DISBOARD (!d bump). I've been waiting for the bump for 15 minutes :pleading_face:
+Please bump DISBOARD (!d bump). I've been waiting for the bump for 25 minutes :pleading_face:
+qotd countdown days 6.408078055555555
+GUILD_TEXT : bot-commands
+marq_andrew: !d bump
+disboard bump by marq_andrew
+GUILD_TEXT : bot-commands
+DISBOARD: 
+MessageEmbed {
+  type: 'rich',
+  title: 'DISBOARD: The Public Server List',
+  description: '<@679465390841135126> Bump done! :thumbsup:\n' +
+    'Check it out [on DISBOARD](https://disboard.org/server/827888294100074516).',
+  url: 'https://disboard.org/',
+  color: 2406327,
+  timestamp: null,
+  fields: [],
+  thumbnail: null,
+  image: {
+    url: 'https://disboard.org/images/bot-command-image-bump.png',
+    proxyURL: 'https://images-ext-1.discordapp.net/external/tAuRcs-FCy2M8OaTS9Ims62J1vrFiviahjBDtpZrrBs/https/disboard.org/images/bot-command-image-bump.png',
+    height: 200,
+    width: 800
+  },
+  video: null,
+  author: null,
+  provider: null,
+  footer: null
+}
+Bump done! :thumbsup: success
+successfully bumped
+GUILD_TEXT : bot-commands
+Jalendu: Thanks marq_andrew :medal:
+:green_heart::green_heart::green_heart::blue_heart::blue_heart::blue_heart::blue_heart:
+GUILD_TEXT : system-messages
+Jalendu: No results found for **smsm**.
+Please wait another 117 minutes to bump DISBOARD :drool:
+Please wait another 107 minutes to bump DISBOARD :drool:
+GUILD_TEXT : video-channel-logging
+Jalendu: ```Voice session in nsfw-nude-meditation-room has ended.
+Member        Joined    Duration  Camera  %
+JohnBee#5659  19:57:11  31:35     31:32   99.88%```
+Please wait another 97 minutes to bump DISBOARD :drool:
+qotd countdown days 6.387244722222222
+
+__Newcomers reminder and exclusion.__
+
+smsm --> waiting : 0.1 days.
+moonman5 --> reminded : 2.7 days.
+TwinkieBoy --> reminded : 4.9 days.
+Hendrick --> reminded : 6.4 days.
+
+* Indicates that the member wrote a message in #landing-zone.
++ Indicates that the member is muted.
+# Indicates that the member was previously a verified member.
+cleanup: no messages found
+Please wait another 87 minutes to bump DISBOARD :drool:
+Please wait another 77 minutes to bump DISBOARD :drool:
+cleanup: no messages found
+GUILD_TEXT : system-messages
+Carl-bot Logging: 
+MessageEmbed {
+  type: 'rich',
+  title: 'Member left',
+  description: '<@900451194747629638> joined 1 hour, 43 minutes and 23 seconds ago\n' +
+    '**Roles:** <@&851071523543973928>',
+  url: null,
+  color: 16774575,
+  timestamp: 1634763774349,
+  fields: [],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: {
+    name: 'smsm#9889',
+    url: undefined,
+    iconURL: 'https://cdn.discordapp.com/embed/avatars/4.png',
+    proxyIconURL: 'https://images-ext-2.discordapp.net/external/6tVaUxectogf8lZc5X8fWTGd2tbzlG6I5AtVbWYYLNI/https/cdn.discordapp.com/embed/avatars/4.png'
+  },
+  provider: null,
+  footer: {
+    text: 'ID: 900451194747629638',
+    iconURL: undefined,
+    proxyIconURL: undefined
+  }
+}
+member undefined!
+Please wait another 67 minutes to bump DISBOARD :drool:
+qotd countdown days 6.3664113888888885
+Please wait another 57 minutes to bump DISBOARD :drool:
+DM : undefined
+marq_andrew: /data add profane retard
+GUILD_TEXT : landing-zone-log
+Jalendu: <@679465390841135126> added retard to profane
+DM : undefined
+Jalendu: 5: retard
+DM : undefined
+marq_andrew: /data save
+DM : undefined
+Jalendu: data backed-up to data_bu_2021-10-20.json.
+data saved to data.json
+GUILD_TEXT : landing-zone-log
+Jalendu: <@679465390841135126> saved changes permanently
+Please wait another 47 minutes to bump DISBOARD :drool:
+GUILD_TEXT : system-messages
+llk: 
+GUILD_TEXT : system-messages
+Jalendu: 
+MessageEmbed {
+  type: 'rich',
+  title: 'llk',
+  description: null,
+  url: null,
+  color: 65535,
+  timestamp: null,
+  fields: [],
+  thumbnail: null,
+  image: {
+    url: 'https://cdn.discordapp.com/avatars/896040620798382120/2bbb2cc38b54222a95662038adce3345.png?size=2048',
+    proxyURL: 'https://images-ext-2.discordapp.net/external/JzYickRo9MUO6FdKm5RfpnXp4rdEZhhH6NZsACnxiBw/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/896040620798382120/2bbb2cc38b54222a95662038adce3345.png',
+    height: 0,
+    width: 0
+  },
+  video: null,
+  author: null,
+  provider: null,
+  footer: null
+}
+role <@&851071523543973928> added to <@896040620798382120>
+GUILD_TEXT : system-messages
+Carl-bot Logging: 
+MessageEmbed {
+  type: 'rich',
+  title: 'Member joined',
+  description: '<@896040620798382120> 154th to join\n' +
+    'created 12 days, 7 hours and 2 minutes ago',
+  url: null,
+  color: 5496236,
+  timestamp: 1634765297445,
+  fields: [],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: {
+    name: 'llk#4723',
+    url: undefined,
+    iconURL: 'https://cdn.discordapp.com/avatars/896040620798382120/2bbb2cc38b54222a95662038adce3345.webp?size=1024',
+    proxyIconURL: 'https://images-ext-1.discordapp.net/external/8SvdW4CGDtK8hRoZyxaJQoAvNdqxOvRzLfkl6IjyPAs/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/896040620798382120/2bbb2cc38b54222a95662038adce3345.webp'
+  },
+  provider: null,
+  footer: {
+    text: 'ID: 896040620798382120',
+    iconURL: undefined,
+    proxyIconURL: undefined
+  }
+}
+member undefined!
+qotd countdown days 6.345578043981481
+Please wait another 37 minutes to bump DISBOARD :drool:
+cleanup: no messages found
+GUILD_TEXT : system-messages
+Carl-bot Logging: 
+MessageEmbed {
+  type: 'rich',
+  title: 'Member left',
+  description: '<@896040620798382120> joined 12 minutes and 17 seconds ago\n' +
+    '**Roles:** <@&851071523543973928>',
+  url: null,
+  color: 16774575,
+  timestamp: 1634766033450,
+  fields: [],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: {
+    name: 'llk#4723',
+    url: undefined,
+    iconURL: 'https://cdn.discordapp.com/avatars/896040620798382120/2bbb2cc38b54222a95662038adce3345.webp?size=1024',
+    proxyIconURL: 'https://images-ext-1.discordapp.net/external/8SvdW4CGDtK8hRoZyxaJQoAvNdqxOvRzLfkl6IjyPAs/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/896040620798382120/2bbb2cc38b54222a95662038adce3345.webp'
+  },
+  provider: null,
+  footer: {
+    text: 'ID: 896040620798382120',
+    iconURL: undefined,
+    proxyIconURL: undefined
+  }
+}
+member undefined!
+Please wait another 27 minutes to bump DISBOARD :drool:
+Please wait another 17 minutes to bump DISBOARD :drool:
+GUILD_TEXT : nsfw-off-topic
+Johnd: <@679465390841135126> done
+qotd countdown days 6.324744629629629
+Please wait another 7 minutes to bump DISBOARD :drool:
+Time to bump DISBOARD (!d bump) :scream:
+GUILD_TEXT : bot-commands
+Jalendu: Time to bump DISBOARD (!d bump) :scream:

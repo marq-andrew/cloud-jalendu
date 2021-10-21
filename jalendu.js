@@ -1,6 +1,6 @@
 
 
-const { Client, Intents, MessageEmbed, MessageActionRow, MessageSelectMenu } = require('discord.js');
+const { Client, Intents, MessageEmbed } = require('discord.js');
 
 const fs = require('fs');
 
@@ -12,15 +12,19 @@ const querystring = require('querystring');
 
 var fetch = require('node-fetch');
 
-var jalenduDb = require('./jalenduDb.js');
+//var jalenduDb = require('./jalenduDb.js');
 
-const jalendu = jalenduDb.setup();
+//const jalendu = jalenduDb.setup();
 
 var jautomod = require('./jautomod.js');
 
 jautomod.setup();
 
 var bumpbots = require('./bumpbots.js');
+
+var qotd = require('./qotd.js');
+
+qotd.qotd('init');
 
 // var bla = require('./bla.js');
 // console.log(bla.bar());
@@ -50,6 +54,17 @@ const client = new Client({ intents: intents, partials: ['MESSAGE', 'CHANNEL', '
 client.login(token);
 
 const trim = (str, max) => ((str.length > max) ? `${str.slice(0, max - 3)}...` : str);
+
+
+function ts() {
+  var m = new Date();
+  return m.getUTCFullYear() +
+    ("0" + (m.getUTCMonth() + 1)).slice(-2) +
+    ("0" + m.getUTCDate()).slice(-2) + "-" +
+    ("0" + m.getUTCHours()).slice(-2) +
+    ("0" + m.getUTCMinutes()).slice(-2) +
+    ("0" + m.getUTCSeconds()).slice(-2);
+}
 
 function reactions_fix(reaction) {
   if (reaction.message.id === '834032215662526465') {
@@ -326,10 +341,6 @@ async function channels(roleId, outputChannelId) {
 }
 
 
-// let bumptime = 0;
-// let nextbumptime = 0;
-// let currenttime = 0;
-
 client.once('ready', async () => {
   console.log('Ready!');
 
@@ -382,12 +393,21 @@ client.once('ready', async () => {
   });
 
 
+  newcomers();
+
   checkminutes = 120;
   checkthe_interval = checkminutes * 60 * 1000;
 
-  newcomers();
-
   setInterval(newcomers, checkthe_interval);
+
+
+  qotd.ask(client);
+
+  checkminutes = 30;
+  checkthe_interval = checkminutes * 60 * 1000;
+
+  setInterval(function() { qotd.ask(client); }, checkthe_interval);
+
 
   //remove any extraeneous emojis from the reaction role questions
 
@@ -470,7 +490,7 @@ client.on('interactionCreate', async interaction => {
 
             mods.send(`Member ${username} has been verified by ${interaction.user}.`);
 
-            jautomod.welcomeDM(member, client);
+            jautomod.welcomeDM(member.user, client);
 
             jautomod.message_cleanup(client);
           }
@@ -722,18 +742,20 @@ client.on('messageCreate', async (message) => {
     message.delete();
   }
 
-  let member, moderator, dm, channel_name, admin;
+  let member, moderator, dm, channel_name, admin, channelid;
 
   if (message.channel.type === 'DM') {
     const guild = client.guilds.cache.get('827888294100074516');
     member = await guild.members.fetch(message.author.id);
     dm = true;
     channel_name = 'dm';
+    channelid = '0';
   }
   else {
     member = message.member;
     dm = false;
     channel_name = message.channel.name;
+    channelid = message.channel.id;
   }
 
   if (!member) {
@@ -857,8 +879,11 @@ client.on('messageCreate', async (message) => {
     else if (moderator && message.content.startsWith('/datacheck')) {
       jautomod.datacheck(message);
     }
+    else if (message.content.startsWith('/qo')) {
+      qotd.qotd(message, moderator, admin);
+    }
     else if (message.content.startsWith('/maint')) {
-console.log(message);
+      qotd.ask(client, true, true);
     }
     else if (message.content.startsWith('/bumpers')) {
       lastbump = bumpbots.bumper('disboard', message, 'list');
@@ -879,6 +904,9 @@ console.log(message);
       else {
         bumpbots.bumpremind(message.client, message.channel);
       }
+    }
+    else if (admin && message.content.startsWith('/bbdump')) {
+      bumpbots.dump();
     }
     else if (moderator && message.content.startsWith('/cleanup')) {
       if (dm) {
@@ -929,20 +957,19 @@ console.log(message);
       jautomod.data(message);
     }
     else if (message.content.startsWith('/chatbot') || message.content.startsWith('/cb')) {
-      jalenduDb.commands(jalendu, message);
+      //jalenduDb.commands(jalendu, message);
     }
   }
   else if (dm) {
-    jalenduDb.message(jalendu, message);
+    //jalenduDb.message(jalendu, message);
   }
   else if (message.mentions) {
     if (message.mentions.members.first()) {
       if (message.mentions.members.first().user.username === 'Jalendu') {
-        jalenduDb.message(jalendu, message);
+        //jalenduDb.message(jalendu, message);
       }
     }
   }
-
 
   if (channel_name === 'landing-zone') {
     jautomod.automod(message);
@@ -951,13 +978,16 @@ console.log(message);
     jautomod.automod(message, true);
   }
 
+  if (channelid === qotd.qotds.channelid) {
+    qotd.replies(message, 'reply');
+  }
 });
 
 
 client.on('guildMemberAdd', async (member) => {
   const mods = client.channels.cache.get('827889605994872863');
 
-  mods.send(`New member ${member.user} ID ${member.user.id}`);
+  //mods.send(`New member ${member.user} ID ${member.user.id}`);
 
   if (member.roles.cache.some(rolen => rolen.name === 'member')) {
     mods.send(`New member ${member.user} was previously a verified member.`);
@@ -979,7 +1009,7 @@ client.on('guildMemberAdd', async (member) => {
 client.on("guildMemberRemove", member => {
   const mods = client.channels.cache.get('827889605994872863');
 
-  mods.send(`Member ${member.user} ID ${member.user.id} has left the server.`);
+  //mods.send(`Member ${member.user} ID ${member.user.id} has left the server.`);
 
   jautomod.message_cleanup(client);
 });
@@ -1225,3 +1255,10 @@ client.on("guildMemberUpdate", (oldMember, newMember) => {
     }
   }
 });
+
+
+process.on('SIGTERM', () => {
+  qotd.qotd('tojson');
+  fs.appendFileSync('./logs/restarts.log', 'SIGTERM ' + ts() + '\n');
+  console.log('bye bye');
+})

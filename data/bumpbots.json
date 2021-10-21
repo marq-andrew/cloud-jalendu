@@ -3,7 +3,7 @@
     "name": "DISBOARD",
     "bump_command": "!d bump",
     "bump_channel": "834013095805452318",
-    "delay_minutes": 120,
+    "delay_minutes": 140,
     "response": {
       "type": "embed",
       "embed_index": 0,
@@ -19,9 +19,10 @@
       "minutes until the server can be bumped"
     ],
     "unknown": [],
-    "bumptime": "2021-10-02T01:12:24.643Z",
-    "nextbumptime": "2021-10-02T03:12:24.643Z",
+    "bumptime": "2021-10-15T21:40:13.472Z",
+    "nextbumptime": "2021-10-16T00:00:13.472Z",
     "reminder_sent": false,
-    "remindertime": "2021-10-01T23:44:06.487Z"
+    "remindertime": "2021-10-15T20:30:20.938Z",
+    "badfails": 2
   }
 }
