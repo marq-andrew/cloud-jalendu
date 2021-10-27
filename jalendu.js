@@ -36,12 +36,12 @@ const intents = new Intents();
 intents.add(Intents.FLAGS.GUILDS);
 intents.add(Intents.FLAGS.GUILD_MEMBERS);
 intents.add(Intents.FLAGS.GUILD_BANS);
-//intents.add(Intents.FLAGS.GUILD_EMOJIS_AND_STICKERS);
-//intents.add(Intents.FLAGS.GUILD_INTEGRATIONS);
-//intents.add(Intents.FLAGS.GUILD_WEBHOOKS);
-//intents.add(Intents.FLAGS.GUILD_INVITES);
+intents.add(Intents.FLAGS.GUILD_EMOJIS_AND_STICKERS);
+intents.add(Intents.FLAGS.GUILD_INTEGRATIONS);
+intents.add(Intents.FLAGS.GUILD_WEBHOOKS);
+intents.add(Intents.FLAGS.GUILD_INVITES);
 intents.add(Intents.FLAGS.GUILD_VOICE_STATES);
-//intents.add(Intents.FLAGS.GUILD_PRESENCES);
+intents.add(Intents.FLAGS.GUILD_PRESENCES);
 intents.add(Intents.FLAGS.GUILD_MESSAGES);
 intents.add(Intents.FLAGS.GUILD_MESSAGE_REACTIONS);
 //intents.add(Intents.FLAGS.GUILD_MESSAGE_TYPING);
@@ -49,7 +49,9 @@ intents.add(Intents.FLAGS.DIRECT_MESSAGES);
 intents.add(Intents.FLAGS.DIRECT_MESSAGE_REACTIONS);
 //intents.add(Intents.FLAGS.DIRECT_MESSAGE_TYPING);
 
+
 const client = new Client({ intents: intents, partials: ['MESSAGE', 'CHANNEL', 'REACTION'] });
+
 
 client.login(token);
 
@@ -121,115 +123,119 @@ async function newcomers() {
 
   const init = new Date('2021-08-17T12:00:00+06:00');
 
-  await guild.members.fetch().then(members => {
+  let members = guild.roles.resolve('851071523543973928').members;
 
-    const mods = client.channels.cache.get('827889605994872863');
 
-    const newcomer = guild.roles.cache.find(rolen => rolen.name === 'newcomer');
-    const newcomer_muted = guild.roles.cache.find(rolen => rolen.name === 'newcomer-muted');
-    const newcomer_reminded = guild.roles.cache.find(rolen => rolen.name === 'newcomer-reminded');
-    const newcomer_kicked = guild.roles.cache.find(rolen => rolen.name === 'newcomer-kicked');
-    const member_role = guild.roles.cache.find(rolen => rolen.name === 'member');
+  //await guild.members.fetch().then(members => {
 
-    for (const member of members) {
+  const mods = client.channels.cache.get('827889605994872863');
 
-      if (member[1].user.username === 'marq_andrew' || true) {
+  const newcomer = guild.roles.cache.find(rolen => rolen.name === 'newcomer');
+  const newcomer_muted = guild.roles.cache.find(rolen => rolen.name === 'newcomer-muted');
+  const newcomer_reminded = guild.roles.cache.find(rolen => rolen.name === 'newcomer-reminded');
+  const newcomer_kicked = guild.roles.cache.find(rolen => rolen.name === 'newcomer-kicked');
+  const member_role = guild.roles.cache.find(rolen => rolen.name === 'member');
 
-        if (!member[1].roles.cache.some(rolen => rolen.name === 'verified')) {
+  for (const member of members) {
 
-          if (!member[1].roles.cache.some(rolen => rolen.name === 'newcomer')) {
-            member[1].roles.add(newcomer).catch(err => console.log(err));
+    if (member[1].user.username === 'marq_andrew' || true) {
+
+      //if (!member[1].roles.cache.some(rolen => rolen.name === 'verified')) {
+
+        if (!member[1].roles.cache.some(rolen => rolen.name === 'newcomer')) {
+          member[1].roles.add(newcomer).catch(err => console.log(err));
+        }
+
+        let spoke = '';
+
+        if (member[1].roles.cache.some(rolen => rolen.name === 'newcomer-spoke')) {
+          spoke = ' *';
+        }
+
+        let muted = '';
+
+        if (member[1].roles.cache.some(rolen => rolen.name === 'newcomer-muted')) {
+          muted = ' +';
+        }
+
+        let exmember = '';
+
+        if (member[1].roles.cache.some(rolen => rolen.name === 'member')) {
+          exmember = ' #';
+        }
+
+        let joined = member[1].joinedTimestamp;
+
+        if (joined < init) {
+          joined = init;
+        }
+
+        currenttime = new Date();
+        const joinelapsed = new Date(currenttime - joined) / (24 * 60 * 60 * 1000);
+
+        if (joinelapsed > 7) {
+          newcomer_report = newcomer_report + '\n' + `${member[1].user.username}` + ' --> kicked : ' + joinelapsed.toFixed(1) + ' days.' + spoke + muted + exmember;
+          if (!member[1].roles.cache.some(rolen => rolen.name === 'newcomer-kicked')) {
+            member[1].roles.add(newcomer_kicked).catch(err => console.log(err));
+            mods.send(`${member[1].user} has been removed (7 days after joining).`);
           }
+          member[1].kick('Entry requirements unsatisfied after 7 days').catch(err => console.log(err));
+        }
+        else if (joinelapsed > 2) {
+          newcomer_report = newcomer_report + '\n' + `${member[1].user.username}` + ' --> reminded : ' + joinelapsed.toFixed(1) + ' days.' + spoke + muted + exmember;
+          if (!member[1].roles.cache.some(rolen => rolen.name === 'newcomer-reminded')) {
+            member[1].roles.add(newcomer_reminded).catch(err => console.log(err));
 
-          let spoke = '';
+            var fileContent = fs.readFileSync('./data/messages.json');
+            messages = JSON.parse(fileContent);
 
-          if (member[1].roles.cache.some(rolen => rolen.name === 'newcomer-spoke')) {
-            spoke = ' *';
-          }
-
-          let muted = '';
-
-          if (member[1].roles.cache.some(rolen => rolen.name === 'newcomer-muted')) {
-            muted = ' +';
-          }
-
-          let exmember = '';
-
-          if (member[1].roles.cache.some(rolen => rolen.name === 'member')) {
-            exmember = ' #';
-          }
-
-          let joined = member[1].joinedTimestamp;
-
-          if (joined < init) {
-            joined = init;
-          }
-
-          currenttime = new Date();
-          const joinelapsed = new Date(currenttime - joined) / (24 * 60 * 60 * 1000);
-
-          if (joinelapsed > 7) {
-            newcomer_report = newcomer_report + '\n' + `${member[1].user.username}` + ' --> kicked : ' + joinelapsed.toFixed(1) + ' days.' + spoke + muted + exmember;
-            if (!member[1].roles.cache.some(rolen => rolen.name === 'newcomer-kicked')) {
-              member[1].roles.add(newcomer_kicked).catch(err => console.log(err));
-              mods.send(`${member[1].user} has been removed (7 days after joining).`);
-            }
-            member[1].kick('Entry requirements unsatisfied after 7 days').catch(err => console.log(err));
-          }
-          else if (joinelapsed > 2) {
-            newcomer_report = newcomer_report + '\n' + `${member[1].user.username}` + ' --> reminded : ' + joinelapsed.toFixed(1) + ' days.' + spoke + muted + exmember;
-            if (!member[1].roles.cache.some(rolen => rolen.name === 'newcomer-reminded')) {
-              member[1].roles.add(newcomer_reminded).catch(err => console.log(err));
-
-              var fileContent = fs.readFileSync('./data/messages.json');
-              messages = JSON.parse(fileContent);
-
-              member[1].send(messages.reminder.content).catch(err => console.log(err));
-              mods.send(`${member[1].user} has been reminded of the entry requirements (2 days after joining).`);
-            }
-          }
-          else {
-            newcomer_report = newcomer_report + '\n' + `${member[1].user.username}` + ' --> waiting : ' + joinelapsed.toFixed(1) + ' days.' + spoke + muted + exmember;
-            if (member[1].roles.cache.some(rolen => rolen.name === 'newcomer-reminded')) {
-              member[1].roles.remove(newcomer_reminded).catch(err => console.log(err));
-            }
-            if (member[1].roles.cache.some(rolen => rolen.name === 'newcomer-kicked')) {
-              member[1].roles.remove(newcomer_kicked).catch(err => console.log(err));
-            }
+            member[1].send(messages.reminder.content).catch(err => console.log(err));
+            mods.send(`${member[1].user} has been reminded of the entry requirements (2 days after joining).`);
           }
         }
         else {
-          if (member[1].roles.cache.some(rolen => rolen.name === 'newcomer')) {
-            member[1].roles.remove(newcomer).catch(err => console.log(err));
-          }
-          if (member[1].roles.cache.some(rolen => rolen.name === 'newcomer-muted')) {
-            member[1].roles.remove(newcomer_muted).catch(err => console.log(err));
-          }
+          newcomer_report = newcomer_report + '\n' + `${member[1].user.username}` + ' --> waiting : ' + joinelapsed.toFixed(1) + ' days.' + spoke + muted + exmember;
           if (member[1].roles.cache.some(rolen => rolen.name === 'newcomer-reminded')) {
             member[1].roles.remove(newcomer_reminded).catch(err => console.log(err));
           }
           if (member[1].roles.cache.some(rolen => rolen.name === 'newcomer-kicked')) {
             member[1].roles.remove(newcomer_kicked).catch(err => console.log(err));
           }
-          if (member[1].roles.cache.some(rolen => rolen.name === 'newcomer-spoke')) {
-            member[1].roles.remove(newcomer_kicked).catch(err => console.log(err));
-          }
-          if (!member[1].roles.cache.some(rolen => rolen.name === 'member')) {
-            member[1].roles.add(member_role).catch(err => console.log(err));
-          }
+        }
+      }
+      else {
+        if (member[1].roles.cache.some(rolen => rolen.name === 'newcomer')) {
+          member[1].roles.remove(newcomer).catch(err => console.log(err));
+        }
+        if (member[1].roles.cache.some(rolen => rolen.name === 'newcomer-muted')) {
+          member[1].roles.remove(newcomer_muted).catch(err => console.log(err));
+        }
+        if (member[1].roles.cache.some(rolen => rolen.name === 'newcomer-reminded')) {
+          member[1].roles.remove(newcomer_reminded).catch(err => console.log(err));
+        }
+        if (member[1].roles.cache.some(rolen => rolen.name === 'newcomer-kicked')) {
+          member[1].roles.remove(newcomer_kicked).catch(err => console.log(err));
+        }
+        if (member[1].roles.cache.some(rolen => rolen.name === 'newcomer-spoke')) {
+          member[1].roles.remove(newcomer_kicked).catch(err => console.log(err));
+        }
+        if (!member[1].roles.cache.some(rolen => rolen.name === 'member')) {
+          member[1].roles.add(member_role).catch(err => console.log(err));
         }
       }
     }
-  })
-    .catch(err => console.log(err));
+ // }
+//}
+//)
+//  .catch(err => console.log(err));
 
-  newcomer_report = newcomer_report + '\n\n* Indicates that the member wrote a message in #landing-zone.';
-  newcomer_report = newcomer_report + '\n+ Indicates that the member is muted.';
-  newcomer_report = newcomer_report + '\n# Indicates that the member was previously a verified member.';
+newcomer_report = newcomer_report + '\n\n* Indicates that the member wrote a message in #landing-zone.';
+newcomer_report = newcomer_report + '\n+ Indicates that the member is muted.';
+newcomer_report = newcomer_report + '\n# Indicates that the member was previously a verified member.';
 
-  console.log(newcomer_report);
+console.log(newcomer_report);
 
-  jautomod.message_cleanup(client);
+jautomod.message_cleanup(client);
 
 }
 
@@ -340,6 +346,9 @@ async function channels(roleId, outputChannelId) {
   output.send(content);
 }
 
+client.on('rateLimit', (info) => {
+  console.log(`Rate limit hit ${info.timeDifference ? info.timeDifference : info.timeout ? info.timeout : 'Unknown timeout '}`)
+})
 
 client.once('ready', async () => {
   console.log('Ready!');
@@ -957,16 +966,16 @@ client.on('messageCreate', async (message) => {
       jautomod.data(message);
     }
     else if (message.content.startsWith('/chatbot') || message.content.startsWith('/cb')) {
-      //jalenduDb.commands(jalendu, message);
+      jalenduDb.commands(jalendu, message);
     }
   }
   else if (dm) {
-    //jalenduDb.message(jalendu, message);
+    jalenduDb.message(jalendu, message);
   }
   else if (message.mentions) {
     if (message.mentions.members.first()) {
       if (message.mentions.members.first().user.username === 'Jalendu') {
-        //jalenduDb.message(jalendu, message);
+        jalenduDb.message(jalendu, message);
       }
     }
   }
@@ -979,7 +988,7 @@ client.on('messageCreate', async (message) => {
   }
 
   if (channelid === qotd.qotds.channelid) {
-    qotd.replies(message, 'reply');
+    //qotd.replies(message, 'reply');
   }
 });
 

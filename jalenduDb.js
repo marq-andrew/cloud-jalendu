@@ -3,7 +3,7 @@ const table = require('text-table');
 
 module.exports.setup = function() {
 
-  const arpquuxb = process.env['arpquuxb']
+  const arpquuxb = process.env['arpquuxb'];
 
   const jalendu = new pg.Client({
     user: 'arpquuxb',
@@ -44,9 +44,10 @@ module.exports.setup = function() {
   return jalendu;
 }
 
+
 module.exports.message = function(jalendu, message) {
 
-  var msglc = message.content.toLowerCase().replace(/<[@#!&](.*?)>/g, '');
+  var msglc = message.content.trim().toLowerCase().replace(/<[@#!&](.*?)>/g, '');
 
   if (msglc == '' || message.author.bot) {
     return;
@@ -270,6 +271,18 @@ module.exports.commands = function(jalendu, message) {
       }
     });
   }
+  else if (args[1] === 'intents') {
+    sql = `insert into intents (intent,expression) values ('${args[2]}','${args.slice(3).join(' ')}')`;
+    jalendu.query(sql, function(error, results) {
+      if (error) {
+        message.reply(error);
+      }
+      else {
+        //console.log(results);
+        message.reply(tabulate(results));
+      }
+    });
+  }
   else if (args[1] === 'sql') {
     sql = args.slice(2).join(' ');
     jalendu.query(sql, function(error, results) {
@@ -283,7 +296,7 @@ module.exports.commands = function(jalendu, message) {
         }
         else {
           console.log(results);
-          message.reply(`${results.rowCount} rows affected`);
+          //message.reply(`${results.rowCount} rows affected`);
         }
       }
     });

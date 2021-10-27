@@ -1,0 +1,1239 @@
+
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+RESTART 20211025-024354
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+
+Ready!
+bumpbots init
+[ 'bumpbots', 'bumpers', 'qotd_activity', 'qotds', 'qotd_scores' ]
+Setting application command permissions on 888779192592896130 avatar
+Setting application command permissions on 888779192592896131 joke
+Setting application command permissions on 888779192592896132 define
+Setting application command permissions on 888779192592896133 moderate
+Setting application command permissions on 889643708650254346 readme
+[]
+0
+qotd countdown days 2.1303500231481483
+DISBOARD in sync (0 difference)
+Please wait another 94 minutes to bump DISBOARD :drool:
+
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+RESTART 20211025-053131
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+
+Ready!
+bumpbots init
+[ 'bumpbots', 'bumpers', 'qotd_activity', 'qotds', 'qotd_scores' ]
+Setting application command permissions on 888779192592896130 avatar
+Setting application command permissions on 888779192592896131 joke
+Setting application command permissions on 888779192592896132 define
+Setting application command permissions on 888779192592896133 moderate
+Setting application command permissions on 889643708650254346 readme
+[]
+0
+qotd countdown days 2.0139550462962963
+DISBOARD in sync (0 difference)
+Please wait another 60 minutes to bump DISBOARD :drool:
+GUILD_TEXT : video-channel-logging
+Jalendu: ```Voice session in nsfw-other-room has ended.
+Member       Joined    Duration  Camera  %
+nonmas#2648  05:42:41  1:17      1:16    98.64%```
+Please wait another 50 minutes to bump DISBOARD :drool:
+
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+RESTART 20211025-055800
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+
+Ready!
+bumpbots init
+Setting application command permissions on 888779192592896130 avatar
+Setting application command permissions on 888779192592896131 joke
+Setting application command permissions on 888779192592896132 define
+Setting application command permissions on 888779192592896133 moderate
+Setting application command permissions on 889643708650254346 readme
+qotd countdown days 1.9955544675925927
+/home/runner/jalendu/jalendu.js:128
+ await guild.members.cache.filter(member => member.roles.cache.find(role => role == Role)).fetch().then(members => {
+                                                                                           ^
+
+TypeError: guild.members.cache.filter(...).fetch is not a function
+    at newcomers (/home/runner/jalendu/jalendu.js:128:92)
+    at Client.<anonymous> (/home/runner/jalendu/jalendu.js:417:3)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+RESTART 20211025-055902
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+
+Ready!
+bumpbots init
+[ 'bumpbots', 'bumpers', 'qotd_activity', 'qotds', 'qotd_scores' ]
+Setting application command permissions on 888779192592896130 avatar
+Setting application command permissions on 888779192592896131 joke
+Setting application command permissions on 888779192592896132 define
+Setting application command permissions on 888779192592896133 moderate
+Setting application command permissions on 889643708650254346 readme
+Role {
+  guild: <ref *1> Guild {
+    id: '827888294100074516',
+    name: 'Gay+ Men Meditating',
+    icon: '551372728aa98b6ccebf16af2856a4a7',
+    features: [],
+    commands: GuildApplicationCommandManager {
+      permissions: [ApplicationCommandPermissionsManager],
+      guild: [Circular *1]
+    },
+    members: GuildMemberManager { guild: [Circular *1] },
+    channels: GuildChannelManager { guild: [Circular *1] },
+    bans: GuildBanManager { guild: [Circular *1] },
+    roles: RoleManager { guild: [Circular *1] },
+    presences: PresenceManager {},
+    voiceStates: VoiceStateManager { guild: [Circular *1] },
+    stageInstances: StageInstanceManager { guild: [Circular *1] },
+    invites: GuildInviteManager { guild: [Circular *1] },
+    deleted: false,
+    available: true,
+    shardId: 0,
+    splash: null,
+    banner: null,
+    description: null,
+    verificationLevel: 'MEDIUM',
+    vanityURLCode: null,
+    nsfwLevel: 'DEFAULT',
+    discoverySplash: null,
+    memberCount: 154,
+    large: true,
+    applicationId: null,
+    afkTimeout: 300,
+    afkChannelId: null,
+    systemChannelId: '827889605994872863',
+    premiumTier: 'NONE',
+    premiumSubscriptionCount: 0,
+    explicitContentFilter: 'MEMBERS_WITHOUT_ROLES',
+    mfaLevel: 'NONE',
+    joinedTimestamp: 1631170526608,
+    defaultMessageNotifications: 'ONLY_MENTIONS',
+    systemChannelFlags: SystemChannelFlags { bitfield: 4 },
+    maximumMembers: 250000,
+    maximumPresences: null,
+    approximateMemberCount: null,
+    approximatePresenceCount: null,
+    vanityURLUses: null,
+    rulesChannelId: null,
+    publicUpdatesChannelId: null,
+    preferredLocale: 'en-US',
+    ownerId: '679465390841135126',
+    emojis: GuildEmojiManager { guild: [Circular *1] },
+    stickers: GuildStickerManager { guild: [Circular *1] }
+  },
+  id: '851071523543973928',
+  name: 'newcomer',
+  color: 15844367,
+  hoist: true,
+  rawPosition: 19,
+  permissions: Permissions { bitfield: 4330686976n },
+  managed: false,
+  mentionable: false,
+  deleted: false,
+  tags: null
+}
+qotd countdown days 1.9948453356481481
+DISBOARD in sync (0 difference)
+
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+RESTART 20211025-060002
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+
+Ready!
+bumpbots init
+[ 'bumpbots', 'bumpers', 'qotd_activity', 'qotds', 'qotd_scores' ]
+Setting application command permissions on 888779192592896130 avatar
+Setting application command permissions on 888779192592896131 joke
+Setting application command permissions on 888779192592896132 define
+Setting application command permissions on 888779192592896133 moderate
+Setting application command permissions on 889643708650254346 readme
+Collection(0) [Map] {}
+qotd countdown days 1.9941428125
+DISBOARD in sync (0 difference)
+
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+RESTART 20211025-060225
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+
+Ready!
+bumpbots init
+Setting application command permissions on 888779192592896130 avatar
+Setting application command permissions on 888779192592896131 joke
+Setting application command permissions on 888779192592896132 define
+Setting application command permissions on 888779192592896133 moderate
+Setting application command permissions on 889643708650254346 readme
+qotd countdown days 1.9924974421296295
+/home/runner/jalendu/jalendu.js:126
+ await guild.roles.cache.find(role => role.name == "newcomer").members.fetch().then(members=>{
+                                                                       ^
+
+TypeError: guild.roles.cache.find(...).members.fetch is not a function
+    at newcomers (/home/runner/jalendu/jalendu.js:126:72)
+    at Client.<anonymous> (/home/runner/jalendu/jalendu.js:414:3)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+RESTART 20211025-060332
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+
+Ready!
+bumpbots init
+[ 'bumpbots', 'bumpers', 'qotd_activity', 'qotds', 'qotd_scores' ]
+Setting application command permissions on 888779192592896130 avatar
+Setting application command permissions on 888779192592896131 joke
+Setting application command permissions on 888779192592896132 define
+Setting application command permissions on 888779192592896133 moderate
+Setting application command permissions on 889643708650254346 readme
+qotd countdown days 1.9917169675925925
+/home/runner/jalendu/jalendu.js:126
+ await guild.roles.cache.find(role => role.name == "newcomer").members.then(members=>{
+                                                                       ^
+
+TypeError: guild.roles.cache.find(...).members.then is not a function
+    at newcomers (/home/runner/jalendu/jalendu.js:126:72)
+    at Client.<anonymous> (/home/runner/jalendu/jalendu.js:414:3)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+RESTART 20211025-060428
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+
+Ready!
+bumpbots init
+Setting application command permissions on 888779192592896130 avatar
+Setting application command permissions on 888779192592896131 joke
+Setting application command permissions on 888779192592896132 define
+Setting application command permissions on 888779192592896133 moderate
+Setting application command permissions on 889643708650254346 readme
+qotd countdown days 1.9910661458333334
+/home/runner/jalendu/jalendu.js:128
+console.log(Members);
+            ^
+
+ReferenceError: Members is not defined
+    at newcomers (/home/runner/jalendu/jalendu.js:128:13)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+RESTART 20211025-060446
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+
+Ready!
+bumpbots init
+[ 'bumpbots', 'bumpers', 'qotd_activity', 'qotds', 'qotd_scores' ]
+Setting application command permissions on 888779192592896130 avatar
+Setting application command permissions on 888779192592896131 joke
+Setting application command permissions on 888779192592896132 define
+Setting application command permissions on 888779192592896133 moderate
+Setting application command permissions on 889643708650254346 readme
+Collection(0) [Map] {}
+qotd countdown days 1.9908665972222221
+DISBOARD in sync (0 difference)
+Rate limit hit 2956
+
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+RESTART 20211025-060534
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+
+Ready!
+bumpbots init
+Setting application command permissions on 888779192592896130 avatar
+Setting application command permissions on 888779192592896131 joke
+Setting application command permissions on 888779192592896132 define
+Setting application command permissions on 888779192592896133 moderate
+Setting application command permissions on 889643708650254346 readme
+0
+qotd countdown days 1.9903012962962963
+[ 'bumpbots', 'bumpers', 'qotd_activity', 'qotds', 'qotd_scores' ]
+DISBOARD in sync (0 difference)
+
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+RESTART 20211025-060714
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+
+Ready!
+bumpbots init
+[ 'bumpbots', 'bumpers', 'qotd_activity', 'qotds', 'qotd_scores' ]
+Setting application command permissions on 888779192592896130 avatar
+Setting application command permissions on 888779192592896131 joke
+Setting application command permissions on 888779192592896132 define
+Setting application command permissions on 888779192592896133 moderate
+Setting application command permissions on 889643708650254346 readme
+1
+qotd countdown days 1.9891457175925926
+DISBOARD in sync (0 difference)
+
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+RESTART 20211025-061011
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+
+Ready!
+bumpbots init
+[ 'bumpbots', 'bumpers', 'qotd_activity', 'qotds', 'qotd_scores' ]
+Setting application command permissions on 888779192592896130 avatar
+Setting application command permissions on 888779192592896131 joke
+Setting application command permissions on 888779192592896132 define
+Setting application command permissions on 888779192592896133 moderate
+Setting application command permissions on 889643708650254346 readme
+qotd countdown days 1.9870939930555556
+/home/runner/jalendu/jalendu.js:128
+  await Role.members.fetch().then(members => {});
+                     ^
+
+TypeError: Role.members.fetch is not a function
+    at newcomers (/home/runner/jalendu/jalendu.js:128:22)
+    at Client.<anonymous> (/home/runner/jalendu/jalendu.js:413:3)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+RESTART 20211025-061043
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+
+Ready!
+bumpbots init
+[ 'bumpbots', 'bumpers', 'qotd_activity', 'qotds', 'qotd_scores' ]
+DISBOARD in sync (0 difference)
+Setting application command permissions on 888779192592896130 avatar
+Setting application command permissions on 888779192592896131 joke
+Setting application command permissions on 888779192592896132 define
+Setting application command permissions on 888779192592896133 moderate
+Setting application command permissions on 889643708650254346 readme
+qotd countdown days 1.986734201388889
+
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+RESTART 20211025-061825
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+
+Ready!
+bumpbots init
+Setting application command permissions on 888779192592896130 avatar
+Setting application command permissions on 888779192592896131 joke
+Setting application command permissions on 888779192592896132 define
+Setting application command permissions on 888779192592896133 moderate
+Setting application command permissions on 889643708650254346 readme
+5
+qotd countdown days 1.9813764467592592
+[ 'bumpbots', 'bumpers', 'qotd_activity', 'qotds', 'qotd_scores' ]
+DISBOARD in sync (0 difference)
+
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+RESTART 20211025-061936
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+
+Ready!
+bumpbots init
+Setting application command permissions on 888779192592896130 avatar
+Setting application command permissions on 888779192592896131 joke
+Setting application command permissions on 888779192592896132 define
+Setting application command permissions on 888779192592896133 moderate
+Setting application command permissions on 889643708650254346 readme
+Collection(5) [Map] {
+  '901914707806535701' => GuildMember {
+    guild: Guild {
+      id: '827888294100074516',
+      name: 'Gay+ Men Meditating',
+      icon: '551372728aa98b6ccebf16af2856a4a7',
+      features: [],
+      commands: [GuildApplicationCommandManager],
+      members: [GuildMemberManager],
+      channels: [GuildChannelManager],
+      bans: [GuildBanManager],
+      roles: [RoleManager],
+      presences: PresenceManager {},
+      voiceStates: [VoiceStateManager],
+      stageInstances: [StageInstanceManager],
+      invites: [GuildInviteManager],
+      deleted: false,
+      available: true,
+      shardId: 0,
+      splash: null,
+      banner: null,
+      description: null,
+      verificationLevel: 'MEDIUM',
+      vanityURLCode: null,
+      nsfwLevel: 'DEFAULT',
+      discoverySplash: null,
+      memberCount: 154,
+      large: true,
+      applicationId: null,
+      afkTimeout: 300,
+      afkChannelId: null,
+      systemChannelId: '827889605994872863',
+      premiumTier: 'NONE',
+      premiumSubscriptionCount: 0,
+      explicitContentFilter: 'MEMBERS_WITHOUT_ROLES',
+      mfaLevel: 'NONE',
+      joinedTimestamp: 1631170526608,
+      defaultMessageNotifications: 'ONLY_MENTIONS',
+      systemChannelFlags: [SystemChannelFlags],
+      maximumMembers: 250000,
+      maximumPresences: null,
+      approximateMemberCount: null,
+      approximatePresenceCount: null,
+      vanityURLUses: null,
+      rulesChannelId: null,
+      publicUpdatesChannelId: null,
+      preferredLocale: 'en-US',
+      ownerId: '679465390841135126',
+      emojis: [GuildEmojiManager],
+      stickers: [GuildStickerManager]
+    },
+    joinedTimestamp: 1635103921451,
+    premiumSinceTimestamp: null,
+    deleted: false,
+    nickname: null,
+    pending: false,
+    _roles: [ '851071523543973928' ],
+    user: User {
+      id: '901914707806535701',
+      bot: false,
+      system: false,
+      flags: null,
+      username: 'Gay-6965',
+      discriminator: '8724',
+      avatar: null
+    }
+  },
+  '806898195233767445' => GuildMember {
+    guild: Guild {
+      id: '827888294100074516',
+      name: 'Gay+ Men Meditating',
+      icon: '551372728aa98b6ccebf16af2856a4a7',
+      features: [],
+      commands: [GuildApplicationCommandManager],
+      members: [GuildMemberManager],
+      channels: [GuildChannelManager],
+      bans: [GuildBanManager],
+      roles: [RoleManager],
+      presences: PresenceManager {},
+      voiceStates: [VoiceStateManager],
+      stageInstances: [StageInstanceManager],
+      invites: [GuildInviteManager],
+      deleted: false,
+      available: true,
+      shardId: 0,
+      splash: null,
+      banner: null,
+      description: null,
+      verificationLevel: 'MEDIUM',
+      vanityURLCode: null,
+      nsfwLevel: 'DEFAULT',
+      discoverySplash: null,
+      memberCount: 154,
+      large: true,
+      applicationId: null,
+      afkTimeout: 300,
+      afkChannelId: null,
+      systemChannelId: '827889605994872863',
+      premiumTier: 'NONE',
+      premiumSubscriptionCount: 0,
+      explicitContentFilter: 'MEMBERS_WITHOUT_ROLES',
+      mfaLevel: 'NONE',
+      joinedTimestamp: 1631170526608,
+      defaultMessageNotifications: 'ONLY_MENTIONS',
+      systemChannelFlags: [SystemChannelFlags],
+      maximumMembers: 250000,
+      maximumPresences: null,
+      approximateMemberCount: null,
+      approximatePresenceCount: null,
+      vanityURLUses: null,
+      rulesChannelId: null,
+      publicUpdatesChannelId: null,
+      preferredLocale: 'en-US',
+      ownerId: '679465390841135126',
+      emojis: [GuildEmojiManager],
+      stickers: [GuildStickerManager]
+    },
+    joinedTimestamp: 1634846300880,
+    premiumSinceTimestamp: null,
+    deleted: false,
+    nickname: null,
+    pending: false,
+    _roles: [
+      '851071523543973928',
+      '879317175167492156',
+      '877784942107578438'
+    ],
+    user: User {
+      id: '806898195233767445',
+      bot: false,
+      system: false,
+      flags: null,
+      username: 'Dan1990',
+      discriminator: '9446',
+      avatar: '0c7e34b0f868a65416123a0e0301def9'
+    }
+  },
+  '899515786123698217' => GuildMember {
+    guild: Guild {
+      id: '827888294100074516',
+      name: 'Gay+ Men Meditating',
+      icon: '551372728aa98b6ccebf16af2856a4a7',
+      features: [],
+      commands: [GuildApplicationCommandManager],
+      members: [GuildMemberManager],
+      channels: [GuildChannelManager],
+      bans: [GuildBanManager],
+      roles: [RoleManager],
+      presences: PresenceManager {},
+      voiceStates: [VoiceStateManager],
+      stageInstances: [StageInstanceManager],
+      invites: [GuildInviteManager],
+      deleted: false,
+      available: true,
+      shardId: 0,
+      splash: null,
+      banner: null,
+      description: null,
+      verificationLevel: 'MEDIUM',
+      vanityURLCode: null,
+      nsfwLevel: 'DEFAULT',
+      discoverySplash: null,
+      memberCount: 154,
+      large: true,
+      applicationId: null,
+      afkTimeout: 300,
+      afkChannelId: null,
+      systemChannelId: '827889605994872863',
+      premiumTier: 'NONE',
+      premiumSubscriptionCount: 0,
+      explicitContentFilter: 'MEMBERS_WITHOUT_ROLES',
+      mfaLevel: 'NONE',
+      joinedTimestamp: 1631170526608,
+      defaultMessageNotifications: 'ONLY_MENTIONS',
+      systemChannelFlags: [SystemChannelFlags],
+      maximumMembers: 250000,
+      maximumPresences: null,
+      approximateMemberCount: null,
+      approximatePresenceCount: null,
+      vanityURLUses: null,
+      rulesChannelId: null,
+      publicUpdatesChannelId: null,
+      preferredLocale: 'en-US',
+      ownerId: '679465390841135126',
+      emojis: [GuildEmojiManager],
+      stickers: [GuildStickerManager]
+    },
+    joinedTimestamp: 1634532091095,
+    premiumSinceTimestamp: null,
+    deleted: false,
+    nickname: null,
+    pending: false,
+    _roles: [ '851071523543973928', '877784942107578438' ],
+    user: User {
+      id: '899515786123698217',
+      bot: false,
+      system: false,
+      flags: null,
+      username: 'moonman5',
+      discriminator: '2789',
+      avatar: '5445ffd7ffb201a98393cbdf684ea4b1'
+    }
+  },
+  '864965847365320745' => GuildMember {
+    guild: Guild {
+      id: '827888294100074516',
+      name: 'Gay+ Men Meditating',
+      icon: '551372728aa98b6ccebf16af2856a4a7',
+      features: [],
+      commands: [GuildApplicationCommandManager],
+      members: [GuildMemberManager],
+      channels: [GuildChannelManager],
+      bans: [GuildBanManager],
+      roles: [RoleManager],
+      presences: PresenceManager {},
+      voiceStates: [VoiceStateManager],
+      stageInstances: [StageInstanceManager],
+      invites: [GuildInviteManager],
+      deleted: false,
+      available: true,
+      shardId: 0,
+      splash: null,
+      banner: null,
+      description: null,
+      verificationLevel: 'MEDIUM',
+      vanityURLCode: null,
+      nsfwLevel: 'DEFAULT',
+      discoverySplash: null,
+      memberCount: 154,
+      large: true,
+      applicationId: null,
+      afkTimeout: 300,
+      afkChannelId: null,
+      systemChannelId: '827889605994872863',
+      premiumTier: 'NONE',
+      premiumSubscriptionCount: 0,
+      explicitContentFilter: 'MEMBERS_WITHOUT_ROLES',
+      mfaLevel: 'NONE',
+      joinedTimestamp: 1631170526608,
+      defaultMessageNotifications: 'ONLY_MENTIONS',
+      systemChannelFlags: [SystemChannelFlags],
+      maximumMembers: 250000,
+      maximumPresences: null,
+      approximateMemberCount: null,
+      approximatePresenceCount: null,
+      vanityURLUses: null,
+      rulesChannelId: null,
+      publicUpdatesChannelId: null,
+      preferredLocale: 'en-US',
+      ownerId: '679465390841135126',
+      emojis: [GuildEmojiManager],
+      stickers: [GuildStickerManager]
+    },
+    joinedTimestamp: 1634769521551,
+    premiumSinceTimestamp: null,
+    deleted: false,
+    nickname: null,
+    pending: false,
+    _roles: [ '851071523543973928', '877784942107578438' ],
+    user: User {
+      id: '864965847365320745',
+      bot: false,
+      system: false,
+      flags: null,
+      username: 'Ghostdog',
+      discriminator: '5515',
+      avatar: '94d44f34c628207a962fa88cd8dcc2d9'
+    }
+  },
+  '819115215567192085' => GuildMember {
+    guild: Guild {
+      id: '827888294100074516',
+      name: 'Gay+ Men Meditating',
+      icon: '551372728aa98b6ccebf16af2856a4a7',
+      features: [],
+      commands: [GuildApplicationCommandManager],
+      members: [GuildMemberManager],
+      channels: [GuildChannelManager],
+      bans: [GuildBanManager],
+      roles: [RoleManager],
+      presences: PresenceManager {},
+      voiceStates: [VoiceStateManager],
+      stageInstances: [StageInstanceManager],
+      invites: [GuildInviteManager],
+      deleted: false,
+      available: true,
+      shardId: 0,
+      splash: null,
+      banner: null,
+      description: null,
+      verificationLevel: 'MEDIUM',
+      vanityURLCode: null,
+      nsfwLevel: 'DEFAULT',
+      discoverySplash: null,
+      memberCount: 154,
+      large: true,
+      applicationId: null,
+      afkTimeout: 300,
+      afkChannelId: null,
+      systemChannelId: '827889605994872863',
+      premiumTier: 'NONE',
+      premiumSubscriptionCount: 0,
+      explicitContentFilter: 'MEMBERS_WITHOUT_ROLES',
+      mfaLevel: 'NONE',
+      joinedTimestamp: 1631170526608,
+      defaultMessageNotifications: 'ONLY_MENTIONS',
+      systemChannelFlags: [SystemChannelFlags],
+      maximumMembers: 250000,
+      maximumPresences: null,
+      approximateMemberCount: null,
+      approximatePresenceCount: null,
+      vanityURLUses: null,
+      rulesChannelId: null,
+      publicUpdatesChannelId: null,
+      preferredLocale: 'en-US',
+      ownerId: '679465390841135126',
+      emojis: [GuildEmojiManager],
+      stickers: [GuildStickerManager]
+    },
+    joinedTimestamp: 1635096474823,
+    premiumSinceTimestamp: null,
+    deleted: false,
+    nickname: null,
+    pending: false,
+    _roles: [ '851071523543973928', '879317175167492156' ],
+    user: User {
+      id: '819115215567192085',
+      bot: false,
+      system: false,
+      flags: null,
+      username: 'Dawson',
+      discriminator: '8157',
+      avatar: null
+    }
+  }
+}
+qotd countdown days 1.9805554050925926
+[ 'bumpbots', 'bumpers', 'qotd_activity', 'qotds', 'qotd_scores' ]
+DISBOARD in sync (0 difference)
+
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+RESTART 20211025-062311
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+
+Ready!
+bumpbots init
+[ 'bumpbots', 'bumpers', 'qotd_activity', 'qotds', 'qotd_scores' ]
+Setting application command permissions on 888779192592896130 avatar
+Setting application command permissions on 888779192592896131 joke
+Setting application command permissions on 888779192592896132 define
+Setting application command permissions on 888779192592896133 moderate
+Setting application command permissions on 889643708650254346 readme
+
+__Newcomers reminder and exclusion.__
+
+Gay-6965 --> waiting : 0.5 days.
+Dan1990 --> reminded : 3.4 days. *
+moonman5 --> kicked : 7.1 days.
+Ghostdog --> reminded : 4.3 days.
+Dawson --> waiting : 0.5 days. *
+
+* Indicates that the member wrote a message in #landing-zone.
++ Indicates that the member is muted.
+# Indicates that the member was previously a verified member.
+qotd countdown days 1.9780733796296297
+DISBOARD in sync (0 difference)
+__Landing zone message cleanup__
+Message by <@523463175216300042> "Hi <@819115215567192085> 
+
+Can you answer the 3 qu"
+Message by <@819115215567192085> "Hey"
+- is from a moderator - check mentions:
+- is from an unverified newcomer - wait.
+GUILD_TEXT : system-messages
+Jalendu: <@899515786123698217> has been removed (7 days after joining).
+role <@&877790440106123315> added to <@899515786123698217>
+__Landing zone message cleanup__
+Message by <@523463175216300042> "Hi <@819115215567192085> 
+
+Can you answer the 3 qu"
+Message by <@819115215567192085> "Hey"
+- is from a moderator - check mentions:
+- is from an unverified newcomer - wait.
+GUILD_TEXT : system-messages
+Carl-bot Logging: 
+MessageEmbed {
+  type: 'rich',
+  title: 'Role added',
+  description: '<@&877790440106123315>',
+  url: null,
+  color: 4359924,
+  timestamp: 1635142992299,
+  fields: [],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: {
+    name: 'moonman5#2789',
+    url: undefined,
+    iconURL: 'https://cdn.discordapp.com/avatars/899515786123698217/5445ffd7ffb201a98393cbdf684ea4b1.webp?size=1024',
+    proxyIconURL: 'https://images-ext-2.discordapp.net/external/N8ov8hyBL3Vhuhhs2pngS1H8viiGxbP1KinLL4Ufmz4/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/899515786123698217/5445ffd7ffb201a98393cbdf684ea4b1.webp'
+  },
+  provider: null,
+  footer: {
+    text: 'ID: 899515786123698217',
+    iconURL: undefined,
+    proxyIconURL: undefined
+  }
+}
+member undefined!
+
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+RESTART 20211025-062527
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+
+Ready!
+bumpbots init
+[ 'bumpbots', 'bumpers', 'qotd_activity', 'qotds', 'qotd_scores' ]
+Setting application command permissions on 888779192592896130 avatar
+Setting application command permissions on 888779192592896131 joke
+Setting application command permissions on 888779192592896132 define
+Setting application command permissions on 888779192592896133 moderate
+Setting application command permissions on 889643708650254346 readme
+
+__Newcomers reminder and exclusion.__
+
+Gay-6965 --> waiting : 0.5 days.
+Dan1990 --> reminded : 3.4 days. *
+Ghostdog --> reminded : 4.3 days.
+Dawson --> waiting : 0.5 days. *
+
+* Indicates that the member wrote a message in #landing-zone.
++ Indicates that the member is muted.
+# Indicates that the member was previously a verified member.
+qotd countdown days 1.9764999768518519
+DISBOARD in sync (0 difference)
+__Landing zone message cleanup__
+Message by <@523463175216300042> "Hi <@819115215567192085> 
+
+Can you answer the 3 qu"
+Message by <@819115215567192085> "Hey"
+- is from a moderator - check mentions:
+- is from an unverified newcomer - wait.
+Please wait another 6 minutes to bump DISBOARD :drool:
+Time to bump DISBOARD (!d bump) :scream:
+GUILD_TEXT : bot-commands
+Jalendu: Time to bump DISBOARD (!d bump) :scream:
+Please bump DISBOARD (!d bump). I've been waiting for the bump for 14 minutes :pleading_face:
+qotd countdown days 1.9556666550925925
+Please bump DISBOARD (!d bump). I've been waiting for the bump for 24 minutes :pleading_face:
+Please bump DISBOARD (!d bump). I've been waiting for the bump for 34 minutes :pleading_face:
+Please bump DISBOARD (!d bump). I've been waiting for the bump for 44 minutes :pleading_face:
+qotd countdown days 1.9348333333333334
+GUILD_TEXT : system-messages
+ˋˏ✄ mohannad･ﾟ★: 
+role <@&851071523543973928> added to <@537260689874616341>
+GUILD_TEXT : system-messages
+Jalendu: 
+MessageEmbed {
+  type: 'rich',
+  title: 'ˋˏ✄ mohannad･ﾟ★',
+  description: null,
+  url: null,
+  color: 65535,
+  timestamp: null,
+  fields: [],
+  thumbnail: null,
+  image: {
+    url: 'https://cdn.discordapp.com/avatars/537260689874616341/7fb78c2d11d5d5581b7a598781a621dc.png?size=2048',
+    proxyURL: 'https://images-ext-2.discordapp.net/external/BJvN7q7bjNcoDSm3SXpX6kdvGhzLQGEa0HIo_CABhVg/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/537260689874616341/7fb78c2d11d5d5581b7a598781a621dc.png',
+    height: 0,
+    width: 0
+  },
+  video: null,
+  author: null,
+  provider: null,
+  footer: null
+}
+GUILD_TEXT : system-messages
+Carl-bot Logging: 
+MessageEmbed {
+  type: 'rich',
+  title: 'Member joined',
+  description: '<@537260689874616341> 154th to join\n' +
+    'created 2 years, 9 months and 2 days ago',
+  url: null,
+  color: 5496236,
+  timestamp: 1635146757332,
+  fields: [],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: {
+    name: 'ˋˏ✄ mohannad･ﾟ★#4038',
+    url: undefined,
+    iconURL: 'https://cdn.discordapp.com/avatars/537260689874616341/7fb78c2d11d5d5581b7a598781a621dc.webp?size=1024',
+    proxyIconURL: 'https://images-ext-2.discordapp.net/external/ERGUBCWnoV86d7AjL92zilnO3bgP851JoMPqQNsy3-8/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/537260689874616341/7fb78c2d11d5d5581b7a598781a621dc.webp'
+  },
+  provider: null,
+  footer: {
+    text: 'ID: 537260689874616341',
+    iconURL: undefined,
+    proxyIconURL: undefined
+  }
+}
+member undefined!
+__Landing zone message cleanup__
+Message by <@523463175216300042> "Hi <@819115215567192085> 
+
+Can you answer the 3 qu"
+Message by <@819115215567192085> "Hey"
+- is from a moderator - check mentions:
+- is from an unverified newcomer - wait.
+GUILD_TEXT : system-messages
+Carl-bot Logging: 
+MessageEmbed {
+  type: 'rich',
+  title: 'Member left',
+  description: '<@537260689874616341> joined 15 seconds ago\n' +
+    '**Roles:** <@&851071523543973928>',
+  url: null,
+  color: 16774575,
+  timestamp: 1635146771755,
+  fields: [],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: {
+    name: 'ˋˏ✄ mohannad･ﾟ★#4038',
+    url: undefined,
+    iconURL: 'https://cdn.discordapp.com/avatars/537260689874616341/7fb78c2d11d5d5581b7a598781a621dc.webp?size=1024',
+    proxyIconURL: 'https://images-ext-2.discordapp.net/external/ERGUBCWnoV86d7AjL92zilnO3bgP851JoMPqQNsy3-8/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/537260689874616341/7fb78c2d11d5d5581b7a598781a621dc.webp'
+  },
+  provider: null,
+  footer: {
+    text: 'ID: 537260689874616341',
+    iconURL: undefined,
+    proxyIconURL: undefined
+  }
+}
+member undefined!
+Please bump DISBOARD (!d bump). I've been waiting for the bump for 54 minutes :pleading_face:
+GUILD_TEXT : bot-commands
+marq_andrew: !d bump
+disboard bump by marq_andrew
+GUILD_TEXT : bot-commands
+DISBOARD: 
+MessageEmbed {
+  type: 'rich',
+  title: 'DISBOARD: The Public Server List',
+  description: '<@679465390841135126> Bump done! :thumbsup:\n' +
+    'Check it out [on DISBOARD](https://disboard.org/server/827888294100074516).',
+  url: 'https://disboard.org/',
+  color: 2406327,
+  timestamp: null,
+  fields: [],
+  thumbnail: null,
+  image: {
+    url: 'https://disboard.org/images/bot-command-image-bump.png',
+    proxyURL: 'https://images-ext-1.discordapp.net/external/tAuRcs-FCy2M8OaTS9Ims62J1vrFiviahjBDtpZrrBs/https/disboard.org/images/bot-command-image-bump.png',
+    height: 200,
+    width: 800
+  },
+  video: null,
+  author: null,
+  provider: null,
+  footer: null
+}
+Bump done! :thumbsup: success
+successfully bumped
+GUILD_TEXT : bot-commands
+Jalendu: Thanks marq_andrew :thumbsup:
+:green_heart::green_heart::green_heart::green_heart::blue_heart::blue_heart::blue_heart::purple_heart::purple_heart::purple_heart:
+
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+RESTART 20211025-073741
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+
+Ready!
+bumpbots init
+[ 'bumpbots', 'bumpers', 'qotd_activity', 'qotds', 'qotd_scores' ]
+DISBOARD in sync (0 difference)
+Setting application command permissions on 888779192592896130 avatar
+Setting application command permissions on 888779192592896131 joke
+Setting application command permissions on 888779192592896132 define
+Setting application command permissions on 888779192592896133 moderate
+Setting application command permissions on 889643708650254346 readme
+
+__Newcomers reminder and exclusion.__
+
+Gay-6965 --> waiting : 0.5 days.
+Dan1990 --> reminded : 3.5 days. *
+Ghostdog --> reminded : 4.4 days.
+Dawson --> waiting : 0.6 days. *
+
+* Indicates that the member wrote a message in #landing-zone.
++ Indicates that the member is muted.
+# Indicates that the member was previously a verified member.
+qotd countdown days 1.9263304976851852
+__Landing zone message cleanup__
+Message by <@523463175216300042> "Hi <@819115215567192085> 
+
+Can you answer the 3 qu"
+Message by <@819115215567192085> "Hey"
+- is from a moderator - check mentions:
+- is from an unverified newcomer - wait.
+Please wait another 108 minutes to bump DISBOARD :drool:
+
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+RESTART 20211025-080951
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+
+Ready!
+bumpbots init
+[ 'bumpbots', 'bumpers', 'qotd_activity', 'qotds', 'qotd_scores' ]
+Setting application command permissions on 888779192592896130 avatar
+Setting application command permissions on 888779192592896131 joke
+Setting application command permissions on 888779192592896132 define
+Setting application command permissions on 888779192592896133 moderate
+Setting application command permissions on 889643708650254346 readme
+
+__Newcomers reminder and exclusion.__
+
+Gay-6965 --> waiting : 0.5 days.
+Dan1990 --> reminded : 3.5 days. *
+Ghostdog --> reminded : 4.4 days.
+Dawson --> waiting : 0.6 days. *
+
+* Indicates that the member wrote a message in #landing-zone.
++ Indicates that the member is muted.
+# Indicates that the member was previously a verified member.
+qotd countdown days 1.9039989930555556
+__Landing zone message cleanup__
+Message by <@523463175216300042> "Hi <@819115215567192085> 
+
+Can you answer the 3 qu"
+Message by <@819115215567192085> "Hey"
+- is from a moderator - check mentions:
+- is from an unverified newcomer - wait.
+DISBOARD in sync (0 difference)
+Please wait another 76 minutes to bump DISBOARD :drool:
+Please wait another 66 minutes to bump DISBOARD :drool:
+Please wait another 56 minutes to bump DISBOARD :drool:
+qotd countdown days 1.8831656828703704
+Please wait another 46 minutes to bump DISBOARD :drool:
+
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+RESTART 20211025-085625
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+
+Ready!
+bumpbots init
+[ 'bumpbots', 'bumpers', 'qotd_activity', 'qotds', 'qotd_scores' ]
+Setting application command permissions on 888779192592896130 avatar
+Setting application command permissions on 888779192592896131 joke
+Setting application command permissions on 888779192592896132 define
+Setting application command permissions on 888779192592896133 moderate
+Setting application command permissions on 889643708650254346 readme
+
+__Newcomers reminder and exclusion.__
+
+Gay-6965 --> waiting : 0.6 days.
+Dan1990 --> reminded : 3.5 days. *
+Ghostdog --> reminded : 4.4 days.
+Dawson --> waiting : 0.6 days. *
+
+* Indicates that the member wrote a message in #landing-zone.
++ Indicates that the member is muted.
+# Indicates that the member was previously a verified member.
+qotd countdown days 1.8716569444444444
+__Landing zone message cleanup__
+Message by <@523463175216300042> "Hi <@819115215567192085> 
+
+Can you answer the 3 qu"
+Message by <@819115215567192085> "Hey"
+- is from a moderator - check mentions:
+- is from an unverified newcomer - wait.
+DISBOARD in sync (0 difference)
+
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+RESTART 20211025-135808
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+
+Ready!
+bumpbots init
+[ 'bumpbots', 'bumpers', 'qotd_activity', 'qotds', 'qotd_scores' ]
+Setting application command permissions on 888779192592896130 avatar
+Setting application command permissions on 888779192592896131 joke
+Setting application command permissions on 888779192592896132 define
+Setting application command permissions on 888779192592896133 moderate
+Setting application command permissions on 889643708650254346 readme
+
+__Newcomers reminder and exclusion.__
+
+Gay-6965 --> waiting : 0.8 days.
+Dan1990 --> reminded : 3.7 days. *
+Ghostdog --> reminded : 4.6 days.
+Dawson --> waiting : 0.9 days. *
+
+* Indicates that the member wrote a message in #landing-zone.
++ Indicates that the member is muted.
+# Indicates that the member was previously a verified member.
+qotd countdown days 1.6621370717592592
+DISBOARD in sync (0 difference)
+__Landing zone message cleanup__
+Message by <@523463175216300042> "Hi <@819115215567192085> 
+
+Can you answer the 3 qu"
+Message by <@819115215567192085> "Hey"
+- is from a moderator - check mentions:
+- is from an unverified newcomer - wait.
+Please wait another 74 minutes to bump DISBOARD :drool:
+GUILD_TEXT : selfies
+Egidio: Not recently, <@!858750791657062430> .  Have you been there? I enjoy going there in cooler weather on weekdays. Maybe I'll spend some time there in the coming weeks.
+Please wait another 64 minutes to bump DISBOARD :drool:
+Please wait another 54 minutes to bump DISBOARD :drool:
+qotd countdown days 1.641303761574074
+Please wait another 44 minutes to bump DISBOARD :drool:
+Please wait another 34 minutes to bump DISBOARD :drool:
+Please wait another 24 minutes to bump DISBOARD :drool:
+qotd countdown days 1.6204704398148149
+Please wait another 14 minutes to bump DISBOARD :drool:
+Please wait another 4 minutes to bump DISBOARD :drool:
+GUILD_TEXT : video-channel-logging
+Jalendu: ```Voice session in nsfw-nude-meditation-room has ended.
+Member          Joined    Duration  Camera  %
+Carlos RH#6066  15:10:26  10:04     10:04   100.00%```
+Time to bump DISBOARD (!d bump) :scream:
+qotd countdown days 1.5996370949074075
+GUILD_TEXT : bot-commands
+Jalendu: Time to bump DISBOARD (!d bump) :scream:
+GUILD_TEXT : bot-commands
+RGfinpsy: !d bump
+disboard bump by RGfinpsy
+GUILD_TEXT : bot-commands
+DISBOARD: 
+MessageEmbed {
+  type: 'rich',
+  title: 'DISBOARD: The Public Server List',
+  description: '<@523463175216300042> Bump done! :thumbsup:\n' +
+    'Check it out [on DISBOARD](https://disboard.org/server/827888294100074516).',
+  url: 'https://disboard.org/',
+  color: 2406327,
+  timestamp: null,
+  fields: [],
+  thumbnail: null,
+  image: {
+    url: 'https://disboard.org/images/bot-command-image-bump.png',
+    proxyURL: 'https://images-ext-1.discordapp.net/external/tAuRcs-FCy2M8OaTS9Ims62J1vrFiviahjBDtpZrrBs/https/disboard.org/images/bot-command-image-bump.png',
+    height: 200,
+    width: 800
+  },
+  video: null,
+  author: null,
+  provider: null,
+  footer: null
+}
+Bump done! :thumbsup: success
+successfully bumped
+GUILD_TEXT : bot-commands
+Jalendu: Thanks RGfinpsy :kissing_heart:
+:green_heart::green_heart::green_heart::green_heart::blue_heart::blue_heart::blue_heart::blue_heart:
+Please wait another 112 minutes to bump DISBOARD :drool:
+Please wait another 102 minutes to bump DISBOARD :drool:
+Please wait another 92 minutes to bump DISBOARD :drool:
+
+__Newcomers reminder and exclusion.__
+
+Gay-6965 --> waiting : 0.9 days.
+Dan1990 --> reminded : 3.8 days. *
+Ghostdog --> reminded : 4.7 days.
+Dawson --> waiting : 0.9 days. *
+
+* Indicates that the member wrote a message in #landing-zone.
++ Indicates that the member is muted.
+# Indicates that the member was previously a verified member.
+qotd countdown days 1.5788037152777779
+__Landing zone message cleanup__
+Message by <@523463175216300042> "Hi <@819115215567192085> 
+
+Can you answer the 3 qu"
+Message by <@819115215567192085> "Hey"
+- is from a moderator - check mentions:
+- is from an unverified newcomer - wait.
+Please wait another 82 minutes to bump DISBOARD :drool:
+Please wait another 72 minutes to bump DISBOARD :drool:
+GUILD_TEXT : bot-commands
+marq_andrew: !d bump
+disboard bump by marq_andrew
+GUILD_TEXT : bot-commands
+DISBOARD: 
+MessageEmbed {
+  type: 'rich',
+  title: 'DISBOARD: The Public Server List',
+  description: '<@679465390841135126> Please wait another 68 minutes until the server can be bumped',
+  url: 'https://disboard.org/',
+  color: 15420513,
+  timestamp: null,
+  fields: [],
+  thumbnail: {
+    url: 'https://disboard.org/images/bot-command-image-thumbnail-error.png',
+    proxyURL: 'https://images-ext-1.discordapp.net/external/-N8TZVFTnkSYClu_Kbvb8KXNn2TvUgyUwLyBYkC7VGg/https/disboard.org/images/bot-command-image-thumbnail-error.png',
+    height: 300,
+    width: 300
+  },
+  image: null,
+  video: null,
+  author: null,
+  provider: null,
+  footer: null
+}
+Please wait another failure
+52.276666666666664
+Please wait another 62 minutes to bump DISBOARD :drool:
+qotd countdown days 1.5579703935185185
+Please wait another 52 minutes to bump DISBOARD :drool:
+Please wait another 42 minutes to bump DISBOARD :drool:
+qotd countdown days 1.5371370486111111
+Please wait another 32 minutes to bump DISBOARD :drool:
+Please wait another 22 minutes to bump DISBOARD :drool:
+Please wait another 12 minutes to bump DISBOARD :drool:

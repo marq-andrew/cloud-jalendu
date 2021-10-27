@@ -1,6 +1,6 @@
 #!/bin/bash
 
-find ./logs -mindepth 1 -mtime +7 -delete
+log_delete.sh
 
 LOG=jalendu-$(date +%Y%m%d).log
 

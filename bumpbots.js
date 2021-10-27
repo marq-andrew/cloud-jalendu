@@ -275,6 +275,8 @@ module.exports.data = function(message, source = 'data') {
 
 module.exports.init = function(client) {
 
+  console.log('bumpbots init');
+
   db.list().then(keys => { console.log(keys) });
 
   const botcom = client.channels.cache.get('834013095805452318');

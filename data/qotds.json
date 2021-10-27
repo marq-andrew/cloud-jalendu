@@ -1,10 +1,10 @@
 {
   "active": true,
-  "channelid": "827888294100074519",
-  "lastasktime": "2021-10-15T05:01:34.731Z",
+  "channelid": "900243601303420988",
+  "lastasktime": "2021-10-20T05:51:37.686Z",
   "intervaldays": 7,
   "maxasked": 1,
-  "nextid": 44,
+  "nextid": 46,
   "questions": [
     {
       "id": 10,
@@ -22,13 +22,14 @@
     {
       "id": 38,
       "question": "How would you describe meditation to someone who doesn’t know anything about it?",
-      "asked": 0,
+      "asked": 1,
       "replies": 0,
       "addedby": "marq_andrew",
       "status": "approved",
       "reviewedby": "marq_andrew",
-      "askedtime": null,
-      "random": 0.0034743058225517043
+      "askedtime": "2021-10-20T05:51:37.686Z",
+      "random": 0.0034743058225517043,
+      "messageid": "900259948632625153"
     },
     {
       "id": 31,
@@ -41,6 +42,17 @@
       "askedtime": "2021-10-12T10:37:14.686Z",
       "random": 0.07693976863749818,
       "messageid": "897432723323490365"
+    },
+    {
+      "id": 44,
+      "question": "Can you have wealth, status, fame and still be happy?",
+      "asked": 0,
+      "replies": 0,
+      "addedby": "marq_andrew",
+      "status": "approved",
+      "reviewedby": "marq_andrew",
+      "askedtime": null,
+      "random": 0.11050363362566595
     },
     {
       "id": 23,
@@ -135,6 +147,17 @@
       "reviewedby": "marq_andrew",
       "askedtime": null,
       "random": 0.3418445106110324
+    },
+    {
+      "id": 45,
+      "question": "Do you think a person should be exempted from vaccination requirements on the basis of their religious beliefs?",
+      "asked": 0,
+      "replies": 0,
+      "addedby": "marq_andrew",
+      "status": "approved",
+      "reviewedby": "marq_andrew",
+      "askedtime": null,
+      "random": 0.3431346917617435
     },
     {
       "id": 35,
@@ -420,5 +443,5 @@
       "random": 0.9783730354534246
     }
   ],
-  "starttime": "2021-10-14T22:52:24.900Z"
+  "starttime": "2021-10-20T05:51:37.678Z"
 }

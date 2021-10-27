@@ -1,0 +1,1017 @@
+
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+RESTART 20211026-023421
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+
+Ready!
+bumpbots init
+[ 'bumpbots', 'bumpers', 'qotd_activity', 'qotds', 'qotd_scores' ]
+Setting application command permissions on 888779192592896130 avatar
+Setting application command permissions on 888779192592896131 joke
+Setting application command permissions on 888779192592896132 define
+Setting application command permissions on 888779192592896133 moderate
+Setting application command permissions on 889643708650254346 readme
+
+__Newcomers reminder and exclusion.__
+
+Gay-6965 --> waiting : 1.3 days.
+Dan1990 --> reminded : 4.3 days. *
+Ghostdog --> reminded : 5.2 days.
+Dawson --> waiting : 1.4 days. *
+
+* Indicates that the member wrote a message in #landing-zone.
++ Indicates that the member is muted.
+# Indicates that the member was previously a verified member.
+qotd countdown days 1.1369811805555556
+DISBOARD in sync (0 difference)
+__Landing zone message cleanup__
+Message by <@523463175216300042> "Hi <@819115215567192085> 
+
+Can you answer the 3 qu"
+Message by <@819115215567192085> "Hey"
+- is from a moderator - check mentions:
+- is from an unverified newcomer - wait.
+Please wait another 71 minutes to bump DISBOARD :drool:
+Please wait another 61 minutes to bump DISBOARD :drool:
+Please wait another 51 minutes to bump DISBOARD :drool:
+qotd countdown days 1.1161479513888888
+Please wait another 41 minutes to bump DISBOARD :drool:
+Please wait another 31 minutes to bump DISBOARD :drool:
+Please wait another 21 minutes to bump DISBOARD :drool:
+qotd countdown days 1.0953146180555555
+Please wait another 11 minutes to bump DISBOARD :drool:
+Please wait another 1 minutes to bump DISBOARD :drool:
+Time to bump DISBOARD (!d bump) :scream:
+qotd countdown days 1.0744812847222223
+GUILD_TEXT : bot-commands
+Jalendu: Time to bump DISBOARD (!d bump) :scream:
+GUILD_TEXT : bot-commands
+marq_andrew: !d bump
+disboard bump by marq_andrew
+GUILD_TEXT : bot-commands
+DISBOARD: 
+MessageEmbed {
+  type: 'rich',
+  title: 'DISBOARD: The Public Server List',
+  description: '<@679465390841135126> Bump done! :thumbsup:\n' +
+    'Check it out [on DISBOARD](https://disboard.org/server/827888294100074516).',
+  url: 'https://disboard.org/',
+  color: 2406327,
+  timestamp: null,
+  fields: [],
+  thumbnail: null,
+  image: {
+    url: 'https://disboard.org/images/bot-command-image-bump.png',
+    proxyURL: 'https://images-ext-1.discordapp.net/external/tAuRcs-FCy2M8OaTS9Ims62J1vrFiviahjBDtpZrrBs/https/disboard.org/images/bot-command-image-bump.png',
+    height: 200,
+    width: 800
+  },
+  video: null,
+  author: null,
+  provider: null,
+  footer: null
+}
+Bump done! :thumbsup: success
+successfully bumped
+GUILD_TEXT : bot-commands
+Jalendu: Thanks marq_andrew :kissing_heart:
+:green_heart::green_heart::green_heart::green_heart::blue_heart::blue_heart::blue_heart::blue_heart:
+GUILD_TEXT : system-messages
+chime go ting: 
+role <@&851071523543973928> added to <@698922956524355684>
+GUILD_TEXT : system-messages
+Jalendu: 
+MessageEmbed {
+  type: 'rich',
+  title: 'chime go ting',
+  description: null,
+  url: null,
+  color: 65535,
+  timestamp: null,
+  fields: [],
+  thumbnail: null,
+  image: {
+    url: 'https://cdn.discordapp.com/avatars/698922956524355684/6b03257ffc06de0be73621b7a6edc4c1.png?size=2048',
+    proxyURL: 'https://images-ext-2.discordapp.net/external/uLPYLAk2JvDnPHC0uwoQAhggF6WFhGubtM7v2tme0FY/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/698922956524355684/6b03257ffc06de0be73621b7a6edc4c1.png',
+    height: 0,
+    width: 0
+  },
+  video: null,
+  author: null,
+  provider: null,
+  footer: null
+}
+GUILD_TEXT : system-messages
+Carl-bot Logging: 
+MessageEmbed {
+  type: 'rich',
+  title: 'Member joined',
+  description: '<@698922956524355684> 154th to join\n' +
+    'created 1 year, 6 months and 13 days ago',
+  url: null,
+  color: 5496236,
+  timestamp: 1635221151474,
+  fields: [],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: {
+    name: 'chime go ting#2814',
+    url: undefined,
+    iconURL: 'https://cdn.discordapp.com/avatars/698922956524355684/6b03257ffc06de0be73621b7a6edc4c1.webp?size=1024',
+    proxyIconURL: 'https://images-ext-2.discordapp.net/external/_xNT6vjkifs2G-a_T4hWCVhklaRBqeGxnmH5mr0p7UQ/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/698922956524355684/6b03257ffc06de0be73621b7a6edc4c1.webp'
+  },
+  provider: null,
+  footer: {
+    text: 'ID: 698922956524355684',
+    iconURL: undefined,
+    proxyIconURL: undefined
+  }
+}
+member undefined!
+__Landing zone message cleanup__
+Message by <@523463175216300042> "Hi <@819115215567192085> 
+
+Can you answer the 3 qu"
+Message by <@819115215567192085> "Hey"
+- is from a moderator - check mentions:
+- is from an unverified newcomer - wait.
+GUILD_TEXT : system-messages
+Carl-bot Logging: 
+MessageEmbed {
+  type: 'rich',
+  title: 'Member left',
+  description: '<@698922956524355684> joined 52 seconds ago\n' +
+    '**Roles:** <@&851071523543973928>',
+  url: null,
+  color: 16774575,
+  timestamp: 1635221202792,
+  fields: [],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: {
+    name: 'chime go ting#2814',
+    url: undefined,
+    iconURL: 'https://cdn.discordapp.com/avatars/698922956524355684/6b03257ffc06de0be73621b7a6edc4c1.webp?size=1024',
+    proxyIconURL: 'https://images-ext-2.discordapp.net/external/_xNT6vjkifs2G-a_T4hWCVhklaRBqeGxnmH5mr0p7UQ/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/698922956524355684/6b03257ffc06de0be73621b7a6edc4c1.webp'
+  },
+  provider: null,
+  footer: {
+    text: 'ID: 698922956524355684',
+    iconURL: undefined,
+    proxyIconURL: undefined
+  }
+}
+member undefined!
+GUILD_TEXT : system-messages
+remyboi: 
+role <@&851071523543973928> added to <@876909368690499634>
+GUILD_TEXT : system-messages
+Jalendu: 
+MessageEmbed {
+  type: 'rich',
+  title: 'remyboi',
+  description: null,
+  url: null,
+  color: 65535,
+  timestamp: null,
+  fields: [],
+  thumbnail: null,
+  image: {
+    url: 'https://cdn.discordapp.com/avatars/876909368690499634/79ee349b6511e2000af8a32fb8a6974e.png?size=2048',
+    proxyURL: 'https://images-ext-2.discordapp.net/external/ig79k7p75EG5TzPIxqC3wc2SnfEMQHfXWpskngSaFOw/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/876909368690499634/79ee349b6511e2000af8a32fb8a6974e.png',
+    height: 0,
+    width: 0
+  },
+  video: null,
+  author: null,
+  provider: null,
+  footer: null
+}
+GUILD_TEXT : system-messages
+Carl-bot Logging: 
+MessageEmbed {
+  type: 'rich',
+  title: 'Member joined',
+  description: '<@876909368690499634> 154th to join\n' +
+    'created 2 months, 9 days and 8 hours ago',
+  url: null,
+  color: 5496236,
+  timestamp: 1635221398976,
+  fields: [],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: {
+    name: 'remyboi#7992',
+    url: undefined,
+    iconURL: 'https://cdn.discordapp.com/avatars/876909368690499634/79ee349b6511e2000af8a32fb8a6974e.webp?size=1024',
+    proxyIconURL: 'https://images-ext-1.discordapp.net/external/o5Cy9ZRas9FAKoWdum9skCkmMCWvwKMCfhSaMoLqCZM/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/876909368690499634/79ee349b6511e2000af8a32fb8a6974e.webp'
+  },
+  provider: null,
+  footer: {
+    text: 'ID: 876909368690499634',
+    iconURL: undefined,
+    proxyIconURL: undefined
+  }
+}
+member undefined!
+Please wait another 110 minutes to bump DISBOARD :drool:
+Please wait another 100 minutes to bump DISBOARD :drool:
+Please wait another 90 minutes to bump DISBOARD :drool:
+
+__Newcomers reminder and exclusion.__
+
+Gay-6965 --> waiting : 1.4 days.
+Dan1990 --> reminded : 4.4 days. *
+Ghostdog --> reminded : 5.2 days.
+Dawson --> waiting : 1.5 days. *
+remyboi --> waiting : 0.0 days.
+
+* Indicates that the member wrote a message in #landing-zone.
++ Indicates that the member is muted.
+# Indicates that the member was previously a verified member.
+qotd countdown days 1.0536478819444444
+Please wait another 80 minutes to bump DISBOARD :drool:
+Please wait another 70 minutes to bump DISBOARD :drool:
+Please wait another 60 minutes to bump DISBOARD :drool:
+qotd countdown days 1.032814537037037
+Please wait another 50 minutes to bump DISBOARD :drool:
+__Landing zone message cleanup__
+Message by <@523463175216300042> "Hi <@819115215567192085> 
+
+Can you answer the 3 qu"
+Message by <@819115215567192085> "Hey"
+- is from a moderator - check mentions:
+- is from an unverified newcomer - wait.
+GUILD_TEXT : video-channel-logging
+Jalendu: ```Voice session in nsfw-nude-meditation-room has ended.
+Member            Joined    Duration  Camera  %
+nonmas#2648       04:41:37  25:22     25:12   99.31%
+marq_andrew#2607  05:01:40  13:13     13:06   99.12%```
+Please wait another 40 minutes to bump DISBOARD :drool:
+
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+RESTART 20211026-195824
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+
+Ready!
+bumpbots init
+[ 'bumpbots', 'bumpers', 'qotd_activity', 'qotds', 'qotd_scores' ]
+Setting application command permissions on 888779192592896130 avatar
+Setting application command permissions on 888779192592896131 joke
+Setting application command permissions on 888779192592896132 define
+Setting application command permissions on 888779192592896133 moderate
+Setting application command permissions on 889643708650254346 readme
+
+__Newcomers reminder and exclusion.__
+
+remyboi --> waiting : 0.7 days.
+Dhantu --> waiting : 0.0 days.
+Gay-6965 --> reminded : 2.0 days.
+Dan1990 --> reminded : 5.0 days. *
+Ghostdog --> reminded : 5.9 days.
+Dawson --> reminded : 2.1 days. *
+
+* Indicates that the member wrote a message in #landing-zone.
++ Indicates that the member is muted.
+# Indicates that the member was previously a verified member.
+qotd countdown days 0.4119421990740741
+role <@&877784942107578438> added to <@901914707806535701>
+__Landing zone message cleanup__
+Message by <@756874939876769802> "1 - My name Dhruv, I was a moderator of this serve"
+Message by <@523463175216300042> "Hi <@819115215567192085> 
+
+Can you answer the 3 qu"
+Message by <@819115215567192085> "Hey"
+- is from an unverified newcomer - wait.
+- is from a moderator - check mentions:
+- is from an unverified newcomer - wait.
+DISBOARD in sync (0 difference)
+GUILD_TEXT : system-messages
+Jalendu: <@901914707806535701> has been reminded of the entry requirements (2 days after joining).
+DM : undefined
+Jalendu: __Welcome to Gay+ Men Meditating.__
+
+To get full access, you must send a message mentioning @moderator in the #landing-zone channel or to a moderator directly. Please include:
+
+**1. Something about yourself** e.g. your age, your country or anything you want to tell us.
+**2. Your experience with meditation if any** (none is fine as long as your are interested).
+**3. You reasons for wanting to join this group.**
+
+We have strong entry requirements to keep the community safe and comfortable to express themselves and to exclude people who join casually or simply to troll. After 7 days from the time you joined, if you have not satisfied the entry requirements, you will be removed.
+/home/runner/jalendu/jalendu.js:973
+    jalenduDb.message(jalendu, message);
+    ^
+
+ReferenceError: jalenduDb is not defined
+    at Client.<anonymous> (/home/runner/jalendu/jalendu.js:973:5)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+RESTART 20211026-195957
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+
+Ready!
+bumpbots init
+[ 'bumpbots', 'bumpers', 'qotd_activity', 'qotds', 'qotd_scores' ]
+Setting application command permissions on 888779192592896130 avatar
+Setting application command permissions on 888779192592896131 joke
+Setting application command permissions on 888779192592896132 define
+Setting application command permissions on 888779192592896133 moderate
+Setting application command permissions on 889643708650254346 readme
+
+__Newcomers reminder and exclusion.__
+
+remyboi --> waiting : 0.7 days.
+Dhantu --> waiting : 0.0 days.
+Gay-6965 --> reminded : 2.0 days.
+Dan1990 --> reminded : 5.0 days. *
+Ghostdog --> reminded : 5.9 days.
+Dawson --> reminded : 2.1 days. *
+
+* Indicates that the member wrote a message in #landing-zone.
++ Indicates that the member is muted.
+# Indicates that the member was previously a verified member.
+qotd countdown days 0.41086645833333335
+DISBOARD in sync (0 difference)
+__Landing zone message cleanup__
+Message by <@756874939876769802> "1 - My name is Dhruv, I was a moderator of this se"
+Message by <@523463175216300042> "Hi <@819115215567192085> 
+
+Can you answer the 3 qu"
+Message by <@819115215567192085> "Hey"
+- is from an unverified newcomer - wait.
+- is from a moderator - check mentions:
+- is from an unverified newcomer - wait.
+role <@&836590097318019092> added to <@756874939876769802>
+__Landing zone message cleanup__
+Message by <@756874939876769802> "1 - My name is Dhruv, I was a moderator of this se"
+Message by <@523463175216300042> "Hi <@819115215567192085> 
+
+Can you answer the 3 qu"
+Message by <@819115215567192085> "Hey"
+- is from a verified member - delete.
+- is from a moderator - check mentions:
+- is from an unverified newcomer - wait.
+GUILD_TEXT : system-messages
+Jalendu: Member <@756874939876769802> has been verified by <@679465390841135126>.
+GUILD_TEXT : member-introductions
+Jalendu: 
+MessageEmbed {
+  type: 'rich',
+  title: null,
+  description: null,
+  url: null,
+  color: 65535,
+  timestamp: null,
+  fields: [
+    {
+      value: 'Please welcome <@756874939876769802>.',
+      name: '​',
+      inline: true
+    }
+  ],
+  thumbnail: {
+    url: 'https://cdn.discordapp.com/avatars/756874939876769802/97e67b76e12810fa53adfb9826d169bf.png',
+    proxyURL: 'https://images-ext-1.discordapp.net/external/qWR2DaJ262Vf_AV8kIeQ9FBnfoIFsblyDRmL5kjI_Ak/https/cdn.discordapp.com/avatars/756874939876769802/97e67b76e12810fa53adfb9826d169bf.png',
+    height: 0,
+    width: 0
+  },
+  image: null,
+  video: null,
+  author: null,
+  provider: null,
+  footer: null
+}
+role <@&851071523543973928> removed from <@756874939876769802>
+GUILD_TEXT : landing-zone
+Jalendu: Member <@756874939876769802> has been verified. :partying_face:
+DM : undefined
+Jalendu: __Welcome to Gay+ Men Meditating.__
+
+You have been verified but please go to #roles to set your age band.
+NSFW channels are not visible to you unless you choose the 18+ age role.
+Roles are set by clicking on the appropriate emoji with the number beside it under each question.
+
+Please also look at the following channels:
+
+1. Welcome: for an overview.
+2. Channels-directory: for a guide to the channels.
+3. Etiquette: to review the rules.
+4. Member Introductions: to introduce yourself to the community (optional).
+5. Sitting times: to read what times other members sit online so that you can join them.
+6.Apollo-events also lists scheduled events.
+
+To protect your privacy, the message your wrote to request admission will have been deleted. You can introduce yourself to the group in member-introductions if you wish.
+/home/runner/jalendu/jalendu.js:973
+    jalenduDb.message(jalendu, message);
+    ^
+
+ReferenceError: jalenduDb is not defined
+    at Client.<anonymous> (/home/runner/jalendu/jalendu.js:973:5)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+RESTART 20211026-205832
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+
+Ready!
+bumpbots init
+[ 'bumpbots', 'bumpers', 'qotd_activity', 'qotds', 'qotd_scores' ]
+Setting application command permissions on 888779192592896130 avatar
+Setting application command permissions on 888779192592896131 joke
+Setting application command permissions on 888779192592896132 define
+Setting application command permissions on 888779192592896133 moderate
+Setting application command permissions on 889643708650254346 readme
+
+__Newcomers reminder and exclusion.__
+
+remyboi --> waiting : 0.7 days.
+Gay-6965 --> reminded : 2.1 days.
+Dan1990 --> reminded : 5.0 days. *
+Ghostdog --> reminded : 5.9 days.
+Dawson --> reminded : 2.1 days. *
+
+* Indicates that the member wrote a message in #landing-zone.
++ Indicates that the member is muted.
+# Indicates that the member was previously a verified member.
+qotd countdown days 0.3701598842592593
+__Landing zone message cleanup__
+Message by <@523463175216300042> "Hi <@819115215567192085> 
+
+Can you answer the 3 qu"
+Message by <@819115215567192085> "Hey"
+- is from a moderator - check mentions:
+- is from an unverified newcomer - wait.
+DISBOARD in sync (0 difference)
+
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+RESTART 20211026-215654
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+
+Ready!
+bumpbots init
+[ 'bumpbots', 'bumpers', 'qotd_activity', 'qotds', 'qotd_scores' ]
+Setting application command permissions on 888779192592896130 avatar
+Setting application command permissions on 888779192592896131 joke
+Setting application command permissions on 888779192592896132 define
+Setting application command permissions on 888779192592896133 moderate
+Setting application command permissions on 889643708650254346 readme
+
+__Newcomers reminder and exclusion.__
+
+remyboi --> waiting : 0.7 days.
+Gay-6965 --> reminded : 2.1 days.
+Dan1990 --> reminded : 5.1 days. *
+Ghostdog --> reminded : 6.0 days.
+Dawson --> reminded : 2.2 days. *
+
+* Indicates that the member wrote a message in #landing-zone.
++ Indicates that the member is muted.
+# Indicates that the member was previously a verified member.
+qotd countdown days 0.329636875
+DISBOARD in sync (0 difference)
+__Landing zone message cleanup__
+Message by <@523463175216300042> "Hi <@819115215567192085> 
+
+Can you answer the 3 qu"
+Message by <@819115215567192085> "Hey"
+- is from a moderator - check mentions:
+- is from an unverified newcomer - wait.
+Please wait another 108 minutes to bump DISBOARD :drool:
+Please wait another 98 minutes to bump DISBOARD :drool:
+Please wait another 88 minutes to bump DISBOARD :drool:
+qotd countdown days 0.3088035763888889
+Please wait another 78 minutes to bump DISBOARD :drool:
+Please wait another 68 minutes to bump DISBOARD :drool:
+Please wait another 58 minutes to bump DISBOARD :drool:
+qotd countdown days 0.2879702430555556
+Please wait another 48 minutes to bump DISBOARD :drool:
+Please wait another 38 minutes to bump DISBOARD :drool:
+Please wait another 28 minutes to bump DISBOARD :drool:
+qotd countdown days 0.2671368518518519
+Please wait another 18 minutes to bump DISBOARD :drool:
+Please wait another 8 minutes to bump DISBOARD :drool:
+Time to bump DISBOARD (!d bump) :scream:
+
+__Newcomers reminder and exclusion.__
+
+remyboi --> waiting : 0.8 days.
+Gay-6965 --> reminded : 2.2 days.
+Dan1990 --> reminded : 5.2 days. *
+Ghostdog --> reminded : 6.1 days.
+Dawson --> reminded : 2.3 days. *
+
+* Indicates that the member wrote a message in #landing-zone.
++ Indicates that the member is muted.
+# Indicates that the member was previously a verified member.
+qotd countdown days 0.24630342592592594
+GUILD_TEXT : bot-commands
+Jalendu: Time to bump DISBOARD (!d bump) :scream:
+__Landing zone message cleanup__
+Message by <@523463175216300042> "Hi <@819115215567192085> 
+
+Can you answer the 3 qu"
+Message by <@819115215567192085> "Hey"
+- is from a moderator - check mentions:
+- is from an unverified newcomer - wait.
+Please bump DISBOARD (!d bump). I've been waiting for the bump for 12 minutes :pleading_face:
+Please bump DISBOARD (!d bump). I've been waiting for the bump for 22 minutes :pleading_face:
+Please bump DISBOARD (!d bump). I've been waiting for the bump for 32 minutes :pleading_face:
+qotd countdown days 0.2254700810185185
+Please bump DISBOARD (!d bump). I've been waiting for the bump for 42 minutes :pleading_face:
+Please bump DISBOARD (!d bump). I've been waiting for the bump for 52 minutes :pleading_face:
+Please bump DISBOARD (!d bump). I've been waiting for the bump for 62 minutes :pleading_face:
+qotd countdown days 0.2046367476851852
+Please bump DISBOARD (!d bump). I've been waiting for the bump for 72 minutes :pleading_face:
+Please bump DISBOARD (!d bump). I've been waiting for the bump for 82 minutes :pleading_face:
+Please bump DISBOARD (!d bump). I've been waiting for the bump for 92 minutes :pleading_face:
+qotd countdown days 0.18380341435185185
+Please bump DISBOARD (!d bump). I've been waiting for the bump for 102 minutes :pleading_face:
+Please bump DISBOARD (!d bump). I've been waiting for the bump for 112 minutes :pleading_face:
+
+__Newcomers reminder and exclusion.__
+
+remyboi --> waiting : 0.9 days.
+Gay-6965 --> reminded : 2.3 days.
+Dan1990 --> reminded : 5.2 days. *
+Ghostdog --> reminded : 6.1 days.
+Dawson --> reminded : 2.4 days. *
+
+* Indicates that the member wrote a message in #landing-zone.
++ Indicates that the member is muted.
+# Indicates that the member was previously a verified member.
+Please bump DISBOARD (!d bump). I've been waiting for the bump for 122 minutes :pleading_face:
+qotd countdown days 0.1629699537037037
+__Landing zone message cleanup__
+Message by <@523463175216300042> "Hi <@819115215567192085> 
+
+Can you answer the 3 qu"
+Message by <@819115215567192085> "Hey"
+- is from a moderator - check mentions:
+- is from an unverified newcomer - wait.
+Please bump DISBOARD (!d bump). I've been waiting for the bump for 132 minutes :pleading_face:
+Please bump DISBOARD (!d bump). I've been waiting for the bump for 142 minutes :pleading_face:
+qotd countdown days 0.1421365625
+Please bump DISBOARD (!d bump). I've been waiting for the bump for 152 minutes :pleading_face:
+Please bump DISBOARD (!d bump). I've been waiting for the bump for 162 minutes :pleading_face:
+Please bump DISBOARD (!d bump). I've been waiting for the bump for 172 minutes :pleading_face:
+GUILD_TEXT : bot-commands
+RGfinpsy: !d bump
+disboard bump by RGfinpsy
+GUILD_TEXT : bot-commands
+DISBOARD: 
+MessageEmbed {
+  type: 'rich',
+  title: 'DISBOARD: The Public Server List',
+  description: '<@523463175216300042> Bump done! :thumbsup:\n' +
+    'Check it out [on DISBOARD](https://disboard.org/server/827888294100074516).',
+  url: 'https://disboard.org/',
+  color: 2406327,
+  timestamp: null,
+  fields: [],
+  thumbnail: null,
+  image: {
+    url: 'https://disboard.org/images/bot-command-image-bump.png',
+    proxyURL: 'https://images-ext-1.discordapp.net/external/tAuRcs-FCy2M8OaTS9Ims62J1vrFiviahjBDtpZrrBs/https/disboard.org/images/bot-command-image-bump.png',
+    height: 200,
+    width: 800
+  },
+  video: null,
+  author: null,
+  provider: null,
+  footer: null
+}
+Bump done! :thumbsup: success
+successfully bumped
+GUILD_TEXT : bot-commands
+Jalendu: Thanks RGfinpsy :medal:
+:yellow_heart::purple_heart:
+GUILD_TEXT : member-introductions
+RGfinpsy: Welcome back <@756874939876769802> 💞
+qotd countdown days 0.12130321759259259
+Please wait another 117 minutes to bump DISBOARD :drool:
+GUILD_TEXT : system-messages
+ekenlapan: 
+role <@&851071523543973928> added to <@882319666553434162>
+GUILD_TEXT : system-messages
+Jalendu: 
+MessageEmbed {
+  type: 'rich',
+  title: 'ekenlapan',
+  description: null,
+  url: null,
+  color: 65535,
+  timestamp: null,
+  fields: [],
+  thumbnail: null,
+  image: {
+    url: 'https://cdn.discordapp.com/avatars/882319666553434162/523985b80f4d7f197d848af2351c663d.png?size=2048',
+    proxyURL: 'https://images-ext-1.discordapp.net/external/HStjxysA0LcCxEBV5Kd1OYG3VnCZYIb-Iv4Fx73r8Mg/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/882319666553434162/523985b80f4d7f197d848af2351c663d.png',
+    height: 0,
+    width: 0
+  },
+  video: null,
+  author: null,
+  provider: null,
+  footer: null
+}
+GUILD_TEXT : system-messages
+Carl-bot Logging: 
+MessageEmbed {
+  type: 'rich',
+  title: 'Member joined',
+  description: '<@882319666553434162> 155th to join\n' +
+    'created 1 month, 26 days and 9 hours ago',
+  url: null,
+  color: 5496236,
+  timestamp: 1635303685904,
+  fields: [],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: {
+    name: 'ekenlapan#6483',
+    url: undefined,
+    iconURL: 'https://cdn.discordapp.com/avatars/882319666553434162/523985b80f4d7f197d848af2351c663d.webp?size=1024',
+    proxyIconURL: 'https://images-ext-1.discordapp.net/external/jyNU47xPEtlor_DwD2aUia6O2jlIppkdzfMv9WWOlpk/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/882319666553434162/523985b80f4d7f197d848af2351c663d.webp'
+  },
+  provider: null,
+  footer: {
+    text: 'ID: 882319666553434162',
+    iconURL: undefined,
+    proxyIconURL: undefined
+  }
+}
+member undefined!
+GUILD_TEXT : landing-zone
+ekenlapan: Hi
+GUILD_TEXT : landing-zone-log
+Jalendu: **<@882319666553434162> wrote:**
+role <@&879317175167492156> added to <@882319666553434162>
+GUILD_TEXT : landing-zone-log
+Jalendu: Hi
+GUILD_TEXT : landing-zone-log
+Jalendu: **Jalendu automod classified this as type "none" by rule "none"**
+GUILD_TEXT : system-messages
+Carl-bot Logging: 
+MessageEmbed {
+  type: 'rich',
+  title: 'Role added',
+  description: '<@&879317175167492156>',
+  url: null,
+  color: 4359924,
+  timestamp: 1635303736054,
+  fields: [],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: {
+    name: 'ekenlapan#6483',
+    url: undefined,
+    iconURL: 'https://cdn.discordapp.com/avatars/882319666553434162/523985b80f4d7f197d848af2351c663d.webp?size=1024',
+    proxyIconURL: 'https://images-ext-1.discordapp.net/external/jyNU47xPEtlor_DwD2aUia6O2jlIppkdzfMv9WWOlpk/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/882319666553434162/523985b80f4d7f197d848af2351c663d.webp'
+  },
+  provider: null,
+  footer: {
+    text: 'ID: 882319666553434162',
+    iconURL: undefined,
+    proxyIconURL: undefined
+  }
+}
+member undefined!
+Please wait another 107 minutes to bump DISBOARD :drool:
+GUILD_TEXT : landing-zone
+RGfinpsy: Hii <@882319666553434162> 
+
+Can you answer the above questions to verify and enter the server?
+GUILD_TEXT : landing-zone
+ekenlapan: No#
+GUILD_TEXT : landing-zone-log
+Jalendu: **<@882319666553434162> wrote:**
+GUILD_TEXT : landing-zone-log
+Jalendu: No#
+GUILD_TEXT : landing-zone-log
+Jalendu: **Jalendu automod classified this as type "none" by rule "none"**
+GUILD_TEXT : landing-zone
+ekenlapan: Why would i do this?
+GUILD_TEXT : landing-zone-log
+Jalendu: **<@882319666553434162> wrote:**
+GUILD_TEXT : landing-zone-log
+Jalendu: Why would i do this?
+GUILD_TEXT : landing-zone-log
+Jalendu: **Jalendu automod classified this as type "none" by rule "none"**
+GUILD_TEXT : system-messages
+Cameron J Bell: 
+role <@&851071523543973928> added to <@357769603532980224>
+GUILD_TEXT : system-messages
+Jalendu: 
+MessageEmbed {
+  type: 'rich',
+  title: 'Cameron J Bell',
+  description: null,
+  url: null,
+  color: 65535,
+  timestamp: null,
+  fields: [],
+  thumbnail: null,
+  image: {
+    url: 'https://cdn.discordapp.com/avatars/357769603532980224/1626cf5ca8e2ab5095651db43ba6a1c8.png?size=2048',
+    proxyURL: 'https://images-ext-1.discordapp.net/external/gchKkByqBCd-hqjio_kTfjd524i3mlcR85awJ4DmXJ0/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/357769603532980224/1626cf5ca8e2ab5095651db43ba6a1c8.png',
+    height: 0,
+    width: 0
+  },
+  video: null,
+  author: null,
+  provider: null,
+  footer: null
+}
+GUILD_TEXT : system-messages
+Carl-bot Logging: 
+MessageEmbed {
+  type: 'rich',
+  title: 'Member joined',
+  description: '<@357769603532980224> 156th to join\n' +
+    'created 4 years, 1 month and 12 days ago',
+  url: null,
+  color: 5496236,
+  timestamp: 1635304361679,
+  fields: [],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: {
+    name: 'Cameron J Bell#8657',
+    url: undefined,
+    iconURL: 'https://cdn.discordapp.com/avatars/357769603532980224/1626cf5ca8e2ab5095651db43ba6a1c8.webp?size=1024',
+    proxyIconURL: 'https://images-ext-1.discordapp.net/external/Ct8T4Gvye2m9nFPRefMRWOPxtA-HdHI060GQzOd996M/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/357769603532980224/1626cf5ca8e2ab5095651db43ba6a1c8.webp'
+  },
+  provider: null,
+  footer: {
+    text: 'ID: 357769603532980224',
+    iconURL: undefined,
+    proxyIconURL: undefined
+  }
+}
+member undefined!
+GUILD_TEXT : landing-zone
+RGfinpsy: Why did you joined the server?
+__Landing zone message cleanup__
+Message by <@523463175216300042> "Why did you joined the server?"
+Message by <@882319666553434162> "Why would i do this?"
+Message by <@882319666553434162> "No#"
+Message by <@523463175216300042> "Hii <@882319666553434162> 
+
+Can you answer the abo"
+Message by <@882319666553434162> "Hi"
+Message by <@523463175216300042> "Hi <@819115215567192085> 
+
+Can you answer the 3 qu"
+Message by <@819115215567192085> "Hey"
+- is from a moderator - check mentions:
+- is from an unverified newcomer - wait.
+- is from an unverified newcomer - wait.
+- is from a moderator - check mentions:
+- is from an unverified newcomer - wait.
+- is from a moderator - check mentions:
+- is from an unverified newcomer - wait.
+GUILD_TEXT : system-messages
+Carl-bot Logging: 
+MessageEmbed {
+  type: 'rich',
+  title: 'Member left',
+  description: '<@357769603532980224> joined 11 seconds ago\n' +
+    '**Roles:** <@&851071523543973928>',
+  url: null,
+  color: 16774575,
+  timestamp: 1635304372479,
+  fields: [],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: {
+    name: 'Cameron J Bell#8657',
+    url: undefined,
+    iconURL: 'https://cdn.discordapp.com/avatars/357769603532980224/1626cf5ca8e2ab5095651db43ba6a1c8.webp?size=1024',
+    proxyIconURL: 'https://images-ext-1.discordapp.net/external/Ct8T4Gvye2m9nFPRefMRWOPxtA-HdHI060GQzOd996M/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/357769603532980224/1626cf5ca8e2ab5095651db43ba6a1c8.webp'
+  },
+  provider: null,
+  footer: {
+    text: 'ID: 357769603532980224',
+    iconURL: undefined,
+    proxyIconURL: undefined
+  }
+}
+member undefined!
+GUILD_TEXT : landing-zone
+ekenlapan: Okay  im quit
+GUILD_TEXT : landing-zone-log
+Jalendu: **<@882319666553434162> wrote:**
+GUILD_TEXT : landing-zone-log
+Jalendu: Okay  im quit
+GUILD_TEXT : landing-zone-log
+Jalendu: **Jalendu automod classified this as type "none" by rule "none"**
+GUILD_TEXT : landing-zone
+RGfinpsy: Ok take care
+__Landing zone message cleanup__
+Message by <@523463175216300042> "Ok take care"
+Message by <@882319666553434162> "Okay  im quit"
+Message by <@523463175216300042> "Why did you joined the server?"
+Message by <@882319666553434162> "Why would i do this?"
+Message by <@882319666553434162> "No#"
+Message by <@523463175216300042> "Hii <@882319666553434162> 
+
+Can you answer the abo"
+Message by <@882319666553434162> "Hi"
+Message by <@523463175216300042> "Hi <@819115215567192085> 
+
+Can you answer the 3 qu"
+Message by <@819115215567192085> "Hey"
+- is from a moderator - check mentions:
+- is from a moderator - check mentions:
+- is from a moderator - check mentions:
+- is from a moderator - check mentions:
+- is from an unverified newcomer - wait.
+Rate limit hit 1294
+Rate limit hit 1170
+Rate limit hit 3835
+GUILD_TEXT : system-messages
+Carl-bot Logging: 
+MessageEmbed {
+  type: 'rich',
+  title: 'Member left',
+  description: '<@882319666553434162> joined 13 minutes and 3 seconds ago\n' +
+    '**Roles:** <@&851071523543973928> <@&879317175167492156>',
+  url: null,
+  color: 16774575,
+  timestamp: 1635304468761,
+  fields: [],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: {
+    name: 'ekenlapan#6483',
+    url: undefined,
+    iconURL: 'https://cdn.discordapp.com/avatars/882319666553434162/523985b80f4d7f197d848af2351c663d.webp?size=1024',
+    proxyIconURL: 'https://images-ext-1.discordapp.net/external/jyNU47xPEtlor_DwD2aUia6O2jlIppkdzfMv9WWOlpk/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/882319666553434162/523985b80f4d7f197d848af2351c663d.webp'
+  },
+  provider: null,
+  footer: {
+    text: 'ID: 882319666553434162',
+    iconURL: undefined,
+    proxyIconURL: undefined
+  }
+}
+member undefined!
+Please wait another 97 minutes to bump DISBOARD :drool:
+qotd countdown days 0.1004696875
+Please wait another 87 minutes to bump DISBOARD :drool:
+Please wait another 77 minutes to bump DISBOARD :drool:
+Please wait another 67 minutes to bump DISBOARD :drool:
+GUILD_TEXT : system-messages
+dsr !: 
+role <@&851071523543973928> added to <@887503000334110721>
+GUILD_TEXT : system-messages
+Jalendu: 
+MessageEmbed {
+  type: 'rich',
+  title: 'dsr !',
+  description: null,
+  url: null,
+  color: 65535,
+  timestamp: null,
+  fields: [],
+  thumbnail: null,
+  image: {
+    url: 'https://cdn.discordapp.com/avatars/887503000334110721/6228756524d5a17b6e84a71bf1b021da.png?size=2048',
+    proxyURL: 'https://images-ext-1.discordapp.net/external/3IW8A1tOCrWOVAuv3VuTpRzmlyd9RlZdOBnH35BAELE/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/887503000334110721/6228756524d5a17b6e84a71bf1b021da.png',
+    height: 0,
+    width: 0
+  },
+  video: null,
+  author: null,
+  provider: null,
+  footer: null
+}
+GUILD_TEXT : system-messages
+Carl-bot Logging: 
+MessageEmbed {
+  type: 'rich',
+  title: 'Member joined',
+  description: '<@887503000334110721> 155th to join\n' +
+    'created 1 month, 12 days and 2 hours ago',
+  url: null,
+  color: 5496236,
+  timestamp: 1635306509495,
+  fields: [],
+  thumbnail: null,
+  image: null,
+  video: null,
+  author: {
+    name: 'dsr !#1403',
+    url: undefined,
+    iconURL: 'https://cdn.discordapp.com/avatars/887503000334110721/6228756524d5a17b6e84a71bf1b021da.webp?size=1024',
+    proxyIconURL: 'https://images-ext-1.discordapp.net/external/PLGFtaCyROGIwH_h2Nj7k7NPlBqsSOTTqmZlGCqDN3I/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/887503000334110721/6228756524d5a17b6e84a71bf1b021da.webp'
+  },
+  provider: null,
+  footer: {
+    text: 'ID: 887503000334110721',
+    iconURL: undefined,
+    proxyIconURL: undefined
+  }
+}
+member undefined!
+GUILD_TEXT : landing-zone
+dsr !: 1. im a music producer who constantly has stress over my upcoming success.. im always worrying about people not taking my beats because im gay.
+
+2. my experience with meditation is very new. i just got it recommended from my therapist and some friends.
+
+3. i want to learn more about meditation how i can get rid of stress faster.
+role <@&879317175167492156> added to <@887503000334110721>
+GUILD_TEXT : landing-zone-log
+Jalendu: **<@887503000334110721> wrote:**
+GUILD_TEXT : member-introductions
+Jalendu: 
+MessageEmbed {
+  type: 'rich',
+  title: null,
+  description: null,
+  url: null,
+  color: 65535,
+  timestamp: null,
+  fields: [
+    {
+      value: 'Please welcome <@887503000334110721>.',
+      name: '​',
+      inline: true
+    }
+  ],
+  thumbnail: {
+    url: 'https://cdn.discordapp.com/avatars/887503000334110721/d5d7d504c633b9109a82141fa7852e9c.png',
+    proxyURL: 'https://images-ext-2.discordapp.net/external/KxoQ-ctzhT9Kr4tKjvQ1vyNT72k7iDECsOUShDh2USA/https/cdn.discordapp.com/avatars/887503000334110721/d5d7d504c633b9109a82141fa7852e9c.png',
+    height: 0,
+    width: 0
+  },
+  image: null,
+  video: null,
+  author: null,
+  provider: null,
+  footer: null
+}
+GUILD_TEXT : system-messages
+Jalendu: <@887503000334110721> has been verified by rule "want to learn".
+role <@&836590097318019092> added to <@887503000334110721>
+GUILD_TEXT : landing-zone-log
+Jalendu: 1. im a music producer who constantly has stress over my upcoming success.. im always worrying about people not taking my beats because im gay.
+
+2. my experience with meditation is very new. i just got it recommended from my therapist and some friends.
+
+3. i want to learn more about meditation how i can get rid of stress faster.
+role <@&851071523543973928> removed from <@887503000334110721>
+DM : undefined
+Jalendu: __Welcome to Gay+ Men Meditating.__
+
+You have been verified but please go to #roles to set your age band.
+NSFW channels are not visible to you unless you choose the 18+ age role.
+Roles are set by clicking on the appropriate emoji with the number beside it under each question.
+
+Please also look at the following channels:
+
+1. Welcome: for an overview.
+2. Channels-directory: for a guide to the channels.
+3. Etiquette: to review the rules.
+4. Member Introductions: to introduce yourself to the community (optional).
+5. Sitting times: to read what times other members sit online so that you can join them.
+6.Apollo-events also lists scheduled events.
+
+To protect your privacy, the message your wrote to request admission will have been deleted. You can introduce yourself to the group in member-introductions if you wish.
+/home/runner/jalendu/jalendu.js:973
+    jalenduDb.message(jalendu, message);
+    ^
+
+ReferenceError: jalenduDb is not defined
+    at Client.<anonymous> (/home/runner/jalendu/jalendu.js:973:5)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
