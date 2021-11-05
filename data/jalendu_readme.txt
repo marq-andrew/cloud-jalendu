@@ -128,6 +128,8 @@ The commands are:
 
 **/mods** Rewrites the content for the moderator guidance channel which for convenience of editing is in a text file.
 
+**/qo help** Replies with a list of all the question-of-the-week commands.
+
 __4. Functions.__
 
 **Automoderation** Automoderation only applies to the messages of unverified newcomers in the #landing-zone channel. All messages by unverified newcomers as well as any auto-moderation action are logged into the #landing-zone-log channel. The messages are scanned and compared to a set of lists of key words and phrases that trigger an auto-moderation command. Messages that trigger an auto-moderation command are immediately deleted and then the command activates. The commands are:

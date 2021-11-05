@@ -1,6 +1,6 @@
 #!/bin/bash
 
-log_delete.sh
+./log_delete.sh
 
 LOG=jalendu-$(date +%Y%m%d).log
 

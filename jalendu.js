@@ -12,9 +12,9 @@ const querystring = require('querystring');
 
 var fetch = require('node-fetch');
 
-//var jalenduDb = require('./jalenduDb.js');
+var jalenduDb = require('./jalenduDb.js');
 
-//const jalendu = jalenduDb.setup();
+const jalendu = jalenduDb.setup();
 
 var jautomod = require('./jautomod.js');
 
@@ -28,6 +28,10 @@ qotd.qotd('init');
 
 // var bla = require('./bla.js');
 // console.log(bla.bar());
+
+var vcmon = require('./vcmon.js');
+
+vcmon.init();
 
 const token = process.env['TOKEN'];
 
@@ -54,6 +58,8 @@ const client = new Client({ intents: intents, partials: ['MESSAGE', 'CHANNEL', '
 
 
 client.login(token);
+
+var client_ready = false;
 
 const trim = (str, max) => ((str.length > max) ? `${str.slice(0, max - 3)}...` : str);
 
@@ -142,100 +148,100 @@ async function newcomers() {
 
       //if (!member[1].roles.cache.some(rolen => rolen.name === 'verified')) {
 
-        if (!member[1].roles.cache.some(rolen => rolen.name === 'newcomer')) {
-          member[1].roles.add(newcomer).catch(err => console.log(err));
+      if (!member[1].roles.cache.some(rolen => rolen.name === 'newcomer')) {
+        member[1].roles.add(newcomer).catch(err => console.log(err));
+      }
+
+      let spoke = '';
+
+      if (member[1].roles.cache.some(rolen => rolen.name === 'newcomer-spoke')) {
+        spoke = ' *';
+      }
+
+      let muted = '';
+
+      if (member[1].roles.cache.some(rolen => rolen.name === 'newcomer-muted')) {
+        muted = ' +';
+      }
+
+      let exmember = '';
+
+      if (member[1].roles.cache.some(rolen => rolen.name === 'member')) {
+        exmember = ' #';
+      }
+
+      let joined = member[1].joinedTimestamp;
+
+      if (joined < init) {
+        joined = init;
+      }
+
+      currenttime = new Date();
+      const joinelapsed = new Date(currenttime - joined) / (24 * 60 * 60 * 1000);
+
+      if (joinelapsed > 7) {
+        newcomer_report = newcomer_report + '\n' + `${member[1].user.username}` + ' --> kicked : ' + joinelapsed.toFixed(1) + ' days.' + spoke + muted + exmember;
+        if (!member[1].roles.cache.some(rolen => rolen.name === 'newcomer-kicked')) {
+          member[1].roles.add(newcomer_kicked).catch(err => console.log(err));
+          mods.send(`${member[1].user} has been removed (7 days after joining).`);
         }
+        member[1].kick('Entry requirements unsatisfied after 7 days').catch(err => console.log(err));
+      }
+      else if (joinelapsed > 2) {
+        newcomer_report = newcomer_report + '\n' + `${member[1].user.username}` + ' --> reminded : ' + joinelapsed.toFixed(1) + ' days.' + spoke + muted + exmember;
+        if (!member[1].roles.cache.some(rolen => rolen.name === 'newcomer-reminded')) {
+          member[1].roles.add(newcomer_reminded).catch(err => console.log(err));
 
-        let spoke = '';
+          var fileContent = fs.readFileSync('./data/messages.json');
+          messages = JSON.parse(fileContent);
 
-        if (member[1].roles.cache.some(rolen => rolen.name === 'newcomer-spoke')) {
-          spoke = ' *';
-        }
-
-        let muted = '';
-
-        if (member[1].roles.cache.some(rolen => rolen.name === 'newcomer-muted')) {
-          muted = ' +';
-        }
-
-        let exmember = '';
-
-        if (member[1].roles.cache.some(rolen => rolen.name === 'member')) {
-          exmember = ' #';
-        }
-
-        let joined = member[1].joinedTimestamp;
-
-        if (joined < init) {
-          joined = init;
-        }
-
-        currenttime = new Date();
-        const joinelapsed = new Date(currenttime - joined) / (24 * 60 * 60 * 1000);
-
-        if (joinelapsed > 7) {
-          newcomer_report = newcomer_report + '\n' + `${member[1].user.username}` + ' --> kicked : ' + joinelapsed.toFixed(1) + ' days.' + spoke + muted + exmember;
-          if (!member[1].roles.cache.some(rolen => rolen.name === 'newcomer-kicked')) {
-            member[1].roles.add(newcomer_kicked).catch(err => console.log(err));
-            mods.send(`${member[1].user} has been removed (7 days after joining).`);
-          }
-          member[1].kick('Entry requirements unsatisfied after 7 days').catch(err => console.log(err));
-        }
-        else if (joinelapsed > 2) {
-          newcomer_report = newcomer_report + '\n' + `${member[1].user.username}` + ' --> reminded : ' + joinelapsed.toFixed(1) + ' days.' + spoke + muted + exmember;
-          if (!member[1].roles.cache.some(rolen => rolen.name === 'newcomer-reminded')) {
-            member[1].roles.add(newcomer_reminded).catch(err => console.log(err));
-
-            var fileContent = fs.readFileSync('./data/messages.json');
-            messages = JSON.parse(fileContent);
-
-            member[1].send(messages.reminder.content).catch(err => console.log(err));
-            mods.send(`${member[1].user} has been reminded of the entry requirements (2 days after joining).`);
-          }
-        }
-        else {
-          newcomer_report = newcomer_report + '\n' + `${member[1].user.username}` + ' --> waiting : ' + joinelapsed.toFixed(1) + ' days.' + spoke + muted + exmember;
-          if (member[1].roles.cache.some(rolen => rolen.name === 'newcomer-reminded')) {
-            member[1].roles.remove(newcomer_reminded).catch(err => console.log(err));
-          }
-          if (member[1].roles.cache.some(rolen => rolen.name === 'newcomer-kicked')) {
-            member[1].roles.remove(newcomer_kicked).catch(err => console.log(err));
-          }
+          member[1].send(messages.reminder.content).catch(err => console.log(err));
+          mods.send(`${member[1].user} has been reminded of the entry requirements (2 days after joining).`);
         }
       }
       else {
-        if (member[1].roles.cache.some(rolen => rolen.name === 'newcomer')) {
-          member[1].roles.remove(newcomer).catch(err => console.log(err));
-        }
-        if (member[1].roles.cache.some(rolen => rolen.name === 'newcomer-muted')) {
-          member[1].roles.remove(newcomer_muted).catch(err => console.log(err));
-        }
+        newcomer_report = newcomer_report + '\n' + `${member[1].user.username}` + ' --> waiting : ' + joinelapsed.toFixed(1) + ' days.' + spoke + muted + exmember;
         if (member[1].roles.cache.some(rolen => rolen.name === 'newcomer-reminded')) {
           member[1].roles.remove(newcomer_reminded).catch(err => console.log(err));
         }
         if (member[1].roles.cache.some(rolen => rolen.name === 'newcomer-kicked')) {
           member[1].roles.remove(newcomer_kicked).catch(err => console.log(err));
         }
-        if (member[1].roles.cache.some(rolen => rolen.name === 'newcomer-spoke')) {
-          member[1].roles.remove(newcomer_kicked).catch(err => console.log(err));
-        }
-        if (!member[1].roles.cache.some(rolen => rolen.name === 'member')) {
-          member[1].roles.add(member_role).catch(err => console.log(err));
-        }
       }
     }
- // }
-//}
-//)
-//  .catch(err => console.log(err));
+    else {
+      if (member[1].roles.cache.some(rolen => rolen.name === 'newcomer')) {
+        member[1].roles.remove(newcomer).catch(err => console.log(err));
+      }
+      if (member[1].roles.cache.some(rolen => rolen.name === 'newcomer-muted')) {
+        member[1].roles.remove(newcomer_muted).catch(err => console.log(err));
+      }
+      if (member[1].roles.cache.some(rolen => rolen.name === 'newcomer-reminded')) {
+        member[1].roles.remove(newcomer_reminded).catch(err => console.log(err));
+      }
+      if (member[1].roles.cache.some(rolen => rolen.name === 'newcomer-kicked')) {
+        member[1].roles.remove(newcomer_kicked).catch(err => console.log(err));
+      }
+      if (member[1].roles.cache.some(rolen => rolen.name === 'newcomer-spoke')) {
+        member[1].roles.remove(newcomer_kicked).catch(err => console.log(err));
+      }
+      if (!member[1].roles.cache.some(rolen => rolen.name === 'member')) {
+        member[1].roles.add(member_role).catch(err => console.log(err));
+      }
+    }
+  }
+  // }
+  //}
+  //)
+  //  .catch(err => console.log(err));
 
-newcomer_report = newcomer_report + '\n\n* Indicates that the member wrote a message in #landing-zone.';
-newcomer_report = newcomer_report + '\n+ Indicates that the member is muted.';
-newcomer_report = newcomer_report + '\n# Indicates that the member was previously a verified member.';
+  newcomer_report = newcomer_report + '\n\n* Indicates that the member wrote a message in #landing-zone.';
+  newcomer_report = newcomer_report + '\n+ Indicates that the member is muted.';
+  newcomer_report = newcomer_report + '\n# Indicates that the member was previously a verified member.';
 
-console.log(newcomer_report);
+  console.log(newcomer_report);
 
-jautomod.message_cleanup(client);
+  jautomod.message_cleanup(client);
 
 }
 
@@ -352,6 +358,8 @@ client.on('rateLimit', (info) => {
 
 client.once('ready', async () => {
   console.log('Ready!');
+
+  client_ready = true;
 
   client.user.setUsername('Jalendu');
 
@@ -934,6 +942,9 @@ client.on('messageCreate', async (message) => {
         message.reply(bumpbots.hearts(number));
       }
     }
+    else if (message.content.startsWith('/vcmon')) {
+      vcmon.commands(message);
+    }
     else if (message.content.startsWith('/mods')) {
       var guideraw = fs.readFileSync('./data/mods.txt').toString();
 
@@ -1024,163 +1035,8 @@ client.on("guildMemberRemove", member => {
 });
 
 
-const sessions = new Array();
-
 client.on('voiceStateUpdate', (oldmember, newmember) => {
-
-  //console.log(newmember);
-
-  const logs = client.channels.cache.get('880223898413695046');
-
-  const guild = client.guilds.cache.get('827888294100074516');
-
-  if (oldmember.channelId) {
-
-    const oldchannel = guild.channels.cache.get(oldmember.channelId);
-
-    if (newmember.channelId != oldmember.channelId) {
-      //console.log('session ended');
-      const index = sessions.findIndex(session => (session.channelId === oldmember.channelId && session.userId === oldmember.id));
-
-      if (index != -1) {
-        sessions[index].end = new Date();
-        sessions[index].session_duration = sessions[index].end - sessions[index].start;
-
-        if (sessions[index].camera_on && !sessions[index].camera_off) {
-          sessions[index].camera_off = new Date();
-          sessions[index].camera_duration = sessions[index].camera_duration + (sessions[index].camera_off - sessions[index].camera_on);
-        }
-
-        if (sessions[index].streaming_on && !sessions[index].streaming_off) {
-          sessions[index].streaming_off = new Date();
-          sessions[index].streaming_duration = sessions[index].streaming_duration + (sessions[index].streaming_off - sessions[index].streaming_on);
-        }
-      }
-    }
-
-    if (oldchannel.members.size === 0) {
-      let init = true;
-      let title = '';
-      const rows = new Array();
-
-      for (let index = sessions.length - 1; index >= 0; index--) {
-        if (sessions[index].channelId === oldmember.channelId) {
-
-          if (init) {
-            title = 'Voice session in ' + sessions[index].channel + ' has ended.\n';
-
-            const cols = new Array();
-            cols[0] = 'Member';
-            cols[1] = 'Joined';
-            cols[2] = 'Duration';
-            cols[3] = 'Camera';
-            cols[4] = '%';
-
-            rows.push(cols);
-            init = false;
-          }
-
-          const cols = new Array();
-          cols[0] = sessions[index].username;
-          cols[1] = sessions[index].start.toLocaleTimeString('en-US', { hour12: false });
-          cols[2] = format(sessions[index].session_duration);
-          cols[3] = format(sessions[index].camera_duration);
-          cols[4] = (sessions[index].camera_duration / sessions[index].session_duration)
-            .toLocaleString(undefined, { style: 'percent', minimumFractionDigits: 2 });
-
-          rows.push(cols);
-          sessions.splice(index, 1);
-        }
-      }
-
-      if (!init) {
-        //console.log(rows);
-        const tab = table(rows);
-        logs.send('```' + title + tab + '```');
-      }
-    }
-  }
-
-  if (newmember.channelId) {
-
-    const newchannel = guild.channels.cache.get(newmember.channelId);
-
-    const user = client.users.cache.get(newmember.id);
-
-    let username = 'Unknown';
-
-    if (user) {
-      username = user.tag;
-    }
-
-    if (newmember.channelId != oldmember.channelId) {
-
-      //console.log('session started');
-
-      const session = new Object();
-      session.channelId = newmember.channelId;
-      session.channel = newchannel.name;
-      session.userId = newmember.id;
-      session.username = username;
-      session.start = new Date();
-      session.end = null;
-
-      if (newmember.selfVideo) {
-        session.camera_on = session.start;
-      }
-      else {
-        session.camera_on = null;
-      }
-
-      session.camera_off = null;
-
-      if (newmember.streaming) {
-        session.streaming_on = session.start;
-      }
-      else {
-        session.streaming_on = null;
-      }
-
-      session.streaming_off = null;
-
-      session.session_duration = 0;
-      session.camera_duration = 0;
-      session.streaming_duration = 0;
-
-      sessions.unshift(session);
-    }
-    else {
-      const index = sessions.findIndex(session => (session.channelId === newmember.channelId && session.userId === newmember.id));
-
-      if (index != -1) {
-
-        if (newmember.selfVideo && !oldmember.selfVideo) {
-          sessions[index].camera_on = new Date();
-        }
-        else if (oldmember.selfVideo && !newmember.selfVideo) {
-          sessions[index].camera_off = new Date();
-          sessions[index].camera_duration = sessions[index].camera_duration + (sessions[index].camera_off - sessions[index].camera_on);
-        }
-
-        if (newmember.streaming && !oldmember.streaming) {
-          sessions[index].streaming_on = new Date();
-        }
-        else if (oldmember.streaming && !newmember.streaming) {
-          sessions[index].streaming_off = new Date();
-          sessions[index].streaming_duration = sessions[index].streaming_duration + (sessions[index].streaming_off - sessions[index].streaming_on);
-        }
-      }
-    }
-  }
-
-  // fs.writeFile('./sessions.txt', JSON.stringify(sessions, null, 4), { flag: 'a+' }, err => {
-  // 	if (err) {
-  // 		console.error(err);
-  // 		return;
-  // 	}
-  // });
-
-  //console.log(sessions);
+  vcmon.update(client, oldmember, newmember);
 });
 
 
@@ -1271,3 +1127,35 @@ process.on('SIGTERM', () => {
   fs.appendFileSync('./logs/restarts.log', 'SIGTERM ' + ts() + '\n');
   console.log('bye bye');
 })
+
+
+var http = require('http');
+var url = require('url');
+var os = require('os');
+
+console.log(os.hostname());
+
+http.createServer(async function(req, res) {
+  res.writeHead(200, { 'Content-Type': 'text/html' });
+  var query = url.parse(req.url, true).query;
+
+  if (client_ready) {
+    if (query.function) {
+      if (query.function === 'vcmon') {
+        let calendar = await vcmon.calendar();
+        res.write(calendar);
+      }
+      else {
+        res.write(`Unknown function ${query.function}`);
+      }
+    }
+    else {
+      res.write('Function parameter expected.');
+    }
+  }
+  else {
+    res.write('Jalendu not ready - please wait.');
+  }
+  res.end();
+}).listen(8080);
+

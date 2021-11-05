@@ -1,0 +1,26 @@
+h1 {
+    font: normal 24px Arial, sans-serif;
+    color: #BC002D;
+}
+.j-table {
+    table-layout: fixed;
+    border: solid 1px #EEEEEE;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font: normal 13px Arial, sans-serif;
+}
+.j-table thead th {
+    background-color: #EFEFEF;
+    border: solid 1px #EEEEEE;
+    color: #BC002D;
+    padding: 5px;
+    text-align: center;
+    text-shadow: 1px 1px 1px #fff;
+}
+.j-table tbody td {
+    border: solid 1px #EEEEEE;
+    color: #333;
+    padding: 6px;
+    text-align: center;
+    text-shadow: 1px 1px 1px #fff;
+}
