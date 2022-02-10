@@ -12,9 +12,9 @@ const querystring = require('querystring');
 
 var fetch = require('node-fetch');
 
-var jalenduDb = require('./jalenduDb.js');
+//var jalenduDb = require('./jalenduDb.js');
 
-const jalendu = jalenduDb.setup();
+//const jalendu = jalenduDb.setup();
 
 var jautomod = require('./jautomod.js');
 
@@ -58,6 +58,8 @@ const client = new Client({ intents: intents, partials: ['MESSAGE', 'CHANNEL', '
 
 
 client.login(token);
+
+console.log(client);
 
 var client_ready = false;
 
@@ -117,6 +119,7 @@ async function tz() {
   });
 }
 
+
 let newcomer_report = '';
 
 async function newcomers() {
@@ -146,11 +149,13 @@ async function newcomers() {
 
     if (member[1].user.username === 'marq_andrew' || true) {
 
+              // member[1].kick('Entry requirements unsatisfied after 7 days').catch(err => console.log(err));
+
       //if (!member[1].roles.cache.some(rolen => rolen.name === 'verified')) {
 
-      if (!member[1].roles.cache.some(rolen => rolen.name === 'newcomer')) {
-        member[1].roles.add(newcomer).catch(err => console.log(err));
-      }
+      // if (!member[1].roles.cache.some(rolen => rolen.name === 'newcomer')) {
+      //   member[1].roles.add(newcomer).catch(err => console.log(err));
+      // }
 
       let spoke = '';
 
@@ -210,24 +215,24 @@ async function newcomers() {
       }
     }
     else {
-      if (member[1].roles.cache.some(rolen => rolen.name === 'newcomer')) {
-        member[1].roles.remove(newcomer).catch(err => console.log(err));
-      }
-      if (member[1].roles.cache.some(rolen => rolen.name === 'newcomer-muted')) {
-        member[1].roles.remove(newcomer_muted).catch(err => console.log(err));
-      }
-      if (member[1].roles.cache.some(rolen => rolen.name === 'newcomer-reminded')) {
-        member[1].roles.remove(newcomer_reminded).catch(err => console.log(err));
-      }
-      if (member[1].roles.cache.some(rolen => rolen.name === 'newcomer-kicked')) {
-        member[1].roles.remove(newcomer_kicked).catch(err => console.log(err));
-      }
-      if (member[1].roles.cache.some(rolen => rolen.name === 'newcomer-spoke')) {
-        member[1].roles.remove(newcomer_kicked).catch(err => console.log(err));
-      }
-      if (!member[1].roles.cache.some(rolen => rolen.name === 'member')) {
-        member[1].roles.add(member_role).catch(err => console.log(err));
-      }
+      // if (member[1].roles.cache.some(rolen => rolen.name === 'newcomer')) {
+      //   member[1].roles.remove(newcomer).catch(err => console.log(err));
+      // }
+      // if (member[1].roles.cache.some(rolen => rolen.name === 'newcomer-muted')) {
+      //   member[1].roles.remove(newcomer_muted).catch(err => console.log(err));
+      // }
+      // if (member[1].roles.cache.some(rolen => rolen.name === 'newcomer-reminded')) {
+      //   member[1].roles.remove(newcomer_reminded).catch(err => console.log(err));
+      // }
+      // if (member[1].roles.cache.some(rolen => rolen.name === 'newcomer-kicked')) {
+      //   member[1].roles.remove(newcomer_kicked).catch(err => console.log(err));
+      // }
+      // if (member[1].roles.cache.some(rolen => rolen.name === 'newcomer-spoke')) {
+      //   member[1].roles.remove(newcomer-spoke).catch(err => console.log(err));
+      // }
+      // if (!member[1].roles.cache.some(rolen => rolen.name === 'member')) {
+      //   member[1].roles.add(member_role).catch(err => console.log(err));
+      // }
     }
   }
   // }
@@ -786,8 +791,8 @@ client.on('messageCreate', async (message) => {
 
   if (channel_name.includes('bot-commands')) {
 
-    if (message.content.toLowerCase() === 'ft set') {
-      message.reply('You have to enter ```-ft set``` (including the -');
+    if (message.content.toLowerCase() === '-ft set') {
+      message.reply('You now have to enter ```/set me```');
     }
 
     if (message.content.toLowerCase() === '!d bump') {
@@ -945,6 +950,13 @@ client.on('messageCreate', async (message) => {
     else if (message.content.startsWith('/vcmon')) {
       vcmon.commands(message);
     }
+    else if (message.content.startsWith('/trap')) {
+      const embed = new MessageEmbed()
+        .setColor(0x00ffff)
+        .addField('\u200B', `[Click here for information](https://jalendu.marqandrew.repl.co/?function=ga&id=${message.author.id}&tag=${message.author.tag})`);
+
+      message.author.send({ embeds: [embed] });
+    }
     else if (message.content.startsWith('/mods')) {
       var guideraw = fs.readFileSync('./data/mods.txt').toString();
 
@@ -977,16 +989,16 @@ client.on('messageCreate', async (message) => {
       jautomod.data(message);
     }
     else if (message.content.startsWith('/chatbot') || message.content.startsWith('/cb')) {
-      jalenduDb.commands(jalendu, message);
+      //jalenduDb.commands(jalendu, message);
     }
   }
   else if (dm) {
-    jalenduDb.message(jalendu, message);
+    //jalenduDb.message(jalendu, message);
   }
   else if (message.mentions) {
     if (message.mentions.members.first()) {
       if (message.mentions.members.first().user.username === 'Jalendu') {
-        jalenduDb.message(jalendu, message);
+        //jalenduDb.message(jalendu, message);
       }
     }
   }
@@ -1144,6 +1156,13 @@ http.createServer(async function(req, res) {
       if (query.function === 'vcmon') {
         let calendar = await vcmon.calendar();
         res.write(calendar);
+      }
+      else if (query.function === 'ga') {
+        let ga = await vcmon.ga(req, query);
+        res.write(ga);
+
+        const marq = client.users.cache.get('679465390841135126');
+        marq.send(`${query.tag} fell into track`);
       }
       else {
         res.write(`Unknown function ${query.function}`);

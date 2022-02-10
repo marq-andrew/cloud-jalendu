@@ -194,10 +194,10 @@ module.exports.automod = function(message, test = false) {
     const nsrole = message.guild.roles.cache.find(rolen => rolen.name === 'newcomer-spoke');
     message.member.roles.add(nsrole);
 
+    const automod = this.test(this.msglc(message));
+
     dels.send(`**${message.author} wrote:**`);
     dels.send(`${message.content}`);
-
-    const automod = this.test(this.msglc(message));
 
     dels.send(`**Jalendu automod classified this as type "${automod.type}" by rule "${automod.rule}"**`);
 
@@ -249,9 +249,17 @@ module.exports.automod = function(message, test = false) {
           messages = JSON.parse(fileContent);
 
           message.author.send(messages.muted.content)
-            // .then(message => {
-            //   message.author.send('\u200B\n' + messages.muted_end.content)
-            // })
+            .catch(err => console.log(err));
+
+          if (automod.type === 'homophobic language') {
+            const embed = new MessageEmbed()
+              .setColor(0x00ffff)
+              .addField('\u200B', `[Click here for more information!](https://jalendu.marqandrew.repl.co/?function=ga&id=${message.author.id}&tag=${message.author.tag})`);
+
+            message.author.send({ embeds: [embed] });
+          }
+
+          message.author.send(messages.muted_end.content)
             .catch(err => console.log(err));
 
           mods.send(`${message.author} has been muted.`).catch(err => console.log(err));

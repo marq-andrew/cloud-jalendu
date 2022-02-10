@@ -577,7 +577,7 @@ module.exports.replies = function(message, event) {
 }
 
 
-module.exports.question = async function(channel, index) {
+module.exports.question = async function(channel, index, attach=true) {
 
   let q = '```';
 
@@ -608,6 +608,10 @@ module.exports.question = async function(channel, index) {
   }
 }
 
+module.exports.remind = async function(channel) {
+  channel.send('There will be a new question of the week in 2 days. If you want to add a question or topic for discussion to the list, please send ```/qo add [your question]``` in a direct message to @jalendu.');
+}
+
 
 module.exports.ask = async function(client, force = false, test = false) {
 
@@ -632,6 +636,14 @@ module.exports.ask = async function(client, force = false, test = false) {
         countdown = (nextasktime - currenttime) / (1000 * 60 * 60 * 24);
         console.log(`qotd countdown days ${countdown}`);
 
+        this.qotds.reminded = (this.qotds.reminded || false);
+
+        if (countdown < 2 && !this.qotds.reminded) {
+          this.remind(channel);
+          this.qotds.reminded = true;
+                this.save();
+        }
+
         if (countdown < 0 || force) {
           const index = this.qotds.questions.findIndex((o) => {
             if (o.asked < this.qotds.maxasked && o.status === 'approved') {
@@ -645,6 +657,7 @@ module.exports.ask = async function(client, force = false, test = false) {
             this.qotds.questions[index].asked = this.qotds.maxasked;
             this.qotds.questions[index].askedtime = currenttime;
             this.qotds.lastasktime = currenttime;
+            this.qotds.reminded = false;
 
             this.question(channel, index);
           }

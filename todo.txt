@@ -1,5 +1,13 @@
 
-qotd function = medium
+Rewrite vc monitor and generate timetable - high - done.
+
+Why doesn't sessions properly delete? - high.
+
+Newcomers function failing apparently hitting rate limits - bug - high - fixed.
+
+Fix to newcomers function now invalidates the code that fixes other roles - high. 
+
+qotd function = medium - done.
 
 Learn about callbacks - high
 

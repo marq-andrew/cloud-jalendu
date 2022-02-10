@@ -17,7 +17,7 @@
     "discord-api-types": "^0.22.0",
     "discord.js": "^13.1.0",
     "format-duration": "^1.4.0",
-    "node-fetch": "^2.6.6",
+    "node-fetch": "^2.6.7",
     "node-rest-client": "^3.1.0",
     "pg": "^8.7.1",
     "text-table": "^0.2.0"

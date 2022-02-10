@@ -1,7 +1,7 @@
 {
   "active": true,
   "channelid": "900243601303420988",
-  "lastasktime": "2021-11-03T06:05:02.134Z",
+  "lastasktime": "2021-12-29T18:07:59.266Z",
   "intervaldays": 7,
   "maxasked": 1,
   "nextid": 46,
@@ -34,96 +34,100 @@
     {
       "id": 15,
       "question": "It has been said that the term \"bisexual\" is insensitive because it implies that \"there are only two genders\". With more and more people exploring their gender identities and concluding that they don't fit into either male or female, it is said that the term \"pansexual\" is preferred for people sexually attracted to \"all\" (previously \"both\") genders. What are your thoughts?",
-      "asked": 0,
+      "asked": 1,
       "replies": 0,
       "addedby": "marq_andrew",
       "status": "approved",
       "reviewedby": "marq_andrew",
-      "askedtime": null,
-      "random": 0.030682366440888842
+      "askedtime": "2021-11-10T06:26:07.075Z",
+      "random": 0.030682366440888842,
+      "messageid": "907878773590994984"
     },
     {
       "id": 7,
       "question": "Can meditation give you magical, paranormal or supernatural abilities?",
-      "asked": 0,
+      "asked": 1,
       "replies": 0,
       "addedby": "marq_andrew",
       "reviewedby": "marq_andrew",
-      "askedtime": "2021-10-12T10:42:15.851Z",
+      "askedtime": "2021-11-17T06:30:27.255Z",
       "random": 0.05647821889686977,
       "status": "approved",
-      "messageid": "897433986597548092"
+      "messageid": "910416579752239184"
     },
     {
       "id": 23,
       "question": "Henry Scott Tuke (1858-1929) was an English painter. He had no known relationships with women other than his sister. He was friends with Oscar Wilde and other \"Uranians\" and wrote poetry that idealised the love of Ancient Greece. Since the 1970's he has become \" something of a cult figure in gay cultural circles\" and Elton John has a large collection of his works (-for some reason-). There is however no direct evidence that he was gay and a small number of Tuke curators push back at any suggestion that he was or that his art is homoerotic.\nWhat do you feel about “gay erasure” of historical figures? Is it important to oppose it or do gay people make too much fuss about it?",
-      "asked": 0,
+      "asked": 1,
       "replies": 0,
       "addedby": "marq_andrew",
       "status": "approved",
       "reviewedby": "marq_andrew",
-      "askedtime": "2021-10-12T09:35:28.420Z",
+      "askedtime": "2021-11-24T17:01:30.527Z",
       "random": 0.060268831003708556,
       "attachment": "https://cdn.discordapp.com/attachments/886468028320055326/896621411068690432/398A160B-8B44-4D21-B25A-8B78167815E6_4_5005_c.jpeg",
-      "messageid": "897417179740397608",
+      "messageid": "913112104909799475",
       "bump": 3
     },
     {
       "id": 12,
       "question": "How does being gay+ (gay, bisexual, pansexual or bi-curious) influence your meditation or yoga practice? Did it influence your decision to start?",
-      "asked": 0,
+      "asked": 1,
       "replies": 0,
       "addedby": "marq_andrew",
       "reviewedby": "marq_andrew",
-      "askedtime": "2021-10-13T10:46:53.778Z",
+      "askedtime": "2021-12-01T17:22:51.340Z",
       "random": 0.13251550712457938,
       "status": "approved",
-      "messageid": "897797539871481897"
+      "messageid": "915654192188755998"
     },
     {
       "id": 33,
       "question": "What kind of teachers/rolemodels did you meet on your meditation journey and would you recommend them?",
-      "asked": 0,
+      "asked": 1,
       "replies": 0,
       "addedby": "marq_andrew",
       "status": "approved",
       "reviewedby": "marq_andrew",
-      "askedtime": null,
-      "random": 0.1624415771839094
+      "askedtime": "2021-12-08T17:29:27.826Z",
+      "random": 0.1624415771839094,
+      "messageid": "918192570272743515"
     },
     {
       "id": 40,
       "question": "Have you heard of \"stealthing\"? That is when two people agree to have sex using a condom but then the guy wearing the condom takes it off without his partner knowing. It is summarised as \"non-consensual condom removal.\" Do you think it should be treated in the same way as rape?",
-      "asked": 0,
+      "asked": 1,
       "replies": 0,
       "addedby": "marq_andrew",
       "status": "approved",
       "reviewedby": "marq_andrew",
-      "askedtime": null,
-      "random": 0.18698452002132582
+      "askedtime": "2021-12-15T17:31:28.347Z",
+      "random": 0.18698452002132582,
+      "messageid": "920729790816874598"
     },
     {
       "id": 35,
       "question": "In many places there has been a decline in the number of venues like pubs, clubs and gyms exclusively for gay and lesbian people, often replaced by venues that are explicitly gay friendly but open to everyone. On the other hand, more and more groups exclusively for lgbt people are appearing on Discord. Is it good or bad?",
-      "asked": 0,
+      "asked": 1,
       "replies": 0,
       "addedby": "marq_andrew",
       "status": "approved",
       "reviewedby": "marq_andrew",
-      "askedtime": "2021-10-12T10:38:29.657Z",
+      "askedtime": "2021-12-22T17:40:30.041Z",
       "random": 0.2590618321666891,
-      "messageid": "897433037799850024"
+      "messageid": "923268777569824869"
     },
     {
       "id": 39,
       "question": "I’ve heard of Tantric sex but I don’t know much about it. Is it mindful masturbation or sex? Edging? Sex without ejaculating? Having multiple orgasms? What exactly is it about?",
-      "asked": 0,
+      "asked": 1,
       "replies": 0,
       "addedby": "marq_andrew",
       "status": "approved",
       "reviewedby": "marq_andrew",
-      "askedtime": null,
-      "random": 0.261594716274149
+      "askedtime": "2021-12-29T18:07:59.266Z",
+      "random": 0.261594716274149,
+      "messageid": "925812410223325224"
     },
     {
       "id": 41,
@@ -446,5 +450,6 @@
       "status": "approved"
     }
   ],
-  "starttime": "2021-10-20T05:51:37.678Z"
+  "starttime": "2021-10-20T05:51:37.678Z",
+  "reminded": false
 }

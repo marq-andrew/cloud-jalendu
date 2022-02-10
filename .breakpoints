@@ -8,14 +8,6 @@
         "index": 7737
       }
     ],
-    "jalendu.js": [
-      {
-        "id": "7ce7904d-0cd6-465d-9ffc-65a42c9417e8",
-        "line": 21,
-        "version": 24387,
-        "index": 397
-      }
-    ],
     "jalendu_readme.txt": [
       {
         "id": "5200d53b-8792-42c0-b6e1-4381666d79e6",
@@ -34,8 +26,16 @@
       {
         "id": "5cfed59b-2280-42cb-a5e0-a81dc197807b",
         "line": 17,
-        "version": 8382,
+        "version": 8496,
         "index": 283
+      }
+    ],
+    "logs/jalendu-20211124.log": [
+      {
+        "id": "bdfb4f04-7de4-43ce-b5c3-ff4c95949e67",
+        "line": 3358,
+        "version": 1,
+        "index": 121019
       }
     ]
   }

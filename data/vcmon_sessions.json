@@ -1,18 +1,1 @@
-{
-  "827991599304015922": {
-    "cd326897430639463865170159c6e808": {
-      "username": "nonmas",
-      "start": "2021-11-05T04:16:55.449Z",
-      "end": null,
-      "selfVideo": true,
-      "selfVideo_on": "2021-11-05T04:16:56.832Z",
-      "selfVideo_off": null,
-      "streaming": false,
-      "streaming_on": null,
-      "streaming_off": null,
-      "duration": 0,
-      "selfVideo_duration": 0,
-      "streaming_duration": 0
-    }
-  }
-}
+{}

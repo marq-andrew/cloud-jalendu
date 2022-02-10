@@ -1,3 +1,11 @@
+function localstringx(isostring) {
+  let ftime = new Date(isostring);
+
+  let ttime = new Date(Number(ftime) + 30 * 60 * 1000);
+
+  return ftime.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) + ' - '+ttime.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+}
+
 
 function localstring(hours, mins) {
   if (hours === 0) {
@@ -58,7 +66,9 @@ function calcLocal() {
   for (var i = 0; i < iso.length; i++) {
     let tlocal = new Date(iso[i].innerHTML);
 
-    let hhmmss = localstring(tlocal.getHours(), tlocal.getMinutes());
+    let hhmmss=localstringx(iso[i].innerHTML);
+
+    //let hhmmss = localstring(tlocal.getHours(), tlocal.getMinutes());
 
     local[i].innerHTML = hhmmss;
   }
@@ -86,7 +96,13 @@ function formatCells(table) {
 
       var h = 51 * (cells[c].cellIndex - 2);
       var s = 100;
-      var l = Math.round(100 - 50 * number / max[cells[c].cellIndex]);
+      if(number===0|| max[cells[c].cellIndex]===0){
+        var l = 100; 
+      }
+      else{
+        var l = Math.round(85 - 45 * number / max[cells[c].cellIndex]);
+      }
+
 
       cells[c].style.backgroundColor = `hsl(${h},${s}%,${l}%)`;
       if (l < 60) {
@@ -121,7 +137,7 @@ function rowtime() {
   ts.style.textAlign = 'left';
   ts.style.fontSize = 'small'
 
-  var htime = 'Current UTC: ' + time.getUTCHours().toString().padStart(2, '0') + ':' + time.getUTCMinutes().toString().padStart(2, '0') + ':' + time.getUTCSeconds().toString().padStart(2, '0') + ' = Current Local: ' + time.getHours().toString().padStart(2, '0') + ':' + time.getMinutes().toString().padStart(2, '0') + ':' + time.getSeconds().toString().padStart(2, '0') + ' = ' + ((time.getHours() > 12) ? time.getHours() - 12 : time.getHours()).toString().padStart(2, '0') + ':' + time.getMinutes().toString().padStart(2, '0') + ':' + time.getSeconds().toString().padStart(2, '0') + ((time.getHours() > 12) ? ' PM' : ' AM');
+  var htime = 'Current UTC: ' + time.getUTCHours().toString().padStart(2, '0') + ':' + time.getUTCMinutes().toString().padStart(2, '0') + ':' + time.getUTCSeconds().toString().padStart(2, '0') + ' = Current Local: ' + time.getHours().toString().padStart(2, '0') + ':' + time.getMinutes().toString().padStart(2, '0') + ':' + time.getSeconds().toString().padStart(2, '0') + ' = ' + time.toLocaleTimeString();
 
   ts.innerHTML = htime;
 }
