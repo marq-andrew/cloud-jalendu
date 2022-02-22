@@ -293,10 +293,6 @@ module.exports.log = async function(client, member) {
 
 module.exports.session_start = async function(client, member) {
 
-  // const guild = await client.guilds.cache.get('827888294100074516');
-
-  // const newchannel = await guild.channels.cache.get(member.channelId);
-
   let vc;
 
   if (!this.vcmon_sessions[member.channelId]) {
@@ -350,6 +346,12 @@ module.exports.session_start = async function(client, member) {
     vc[member.sessionId] = session;
 
     this.vcmon_sessions[member.channelId] = vc;
+
+    //new code for sitting-times
+
+      //if (member.roles.cache.some(rolen => rolen.name === 'vc_room_msg')) {
+        //console.log(session.username);
+      //}
 
     //console.log(this.vcmon_sessions);
   }

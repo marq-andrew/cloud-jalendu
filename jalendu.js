@@ -59,7 +59,7 @@ const client = new Client({ intents: intents, partials: ['MESSAGE', 'CHANNEL', '
 
 client.login(token);
 
-console.log(client);
+//console.log(client);
 
 var client_ready = false;
 

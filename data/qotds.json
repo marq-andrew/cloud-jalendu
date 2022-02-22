@@ -1,10 +1,10 @@
 {
   "active": true,
   "channelid": "900243601303420988",
-  "lastasktime": "2021-12-29T18:07:59.266Z",
+  "lastasktime": "2022-02-16T19:39:25.550Z",
   "intervaldays": 7,
   "maxasked": 1,
-  "nextid": 46,
+  "nextid": 51,
   "questions": [
     {
       "id": 10,
@@ -130,15 +130,27 @@
       "messageid": "925812410223325224"
     },
     {
-      "id": 41,
-      "question": "Has any book or movie profoundly affected your life?",
+      "id": 50,
+      "question": "Do you have a regular meditation or yoga practice (same times every day)? What motivates you to practice?",
       "asked": 0,
       "replies": 0,
       "addedby": "marq_andrew",
       "status": "approved",
       "reviewedby": "marq_andrew",
       "askedtime": null,
-      "random": 0.3130640458428806
+      "random": 0.28084228961534197
+    },
+    {
+      "id": 41,
+      "question": "Has any book or movie profoundly affected your life?",
+      "asked": 1,
+      "replies": 0,
+      "addedby": "marq_andrew",
+      "status": "approved",
+      "reviewedby": "marq_andrew",
+      "askedtime": "2022-01-05T18:21:32.209Z",
+      "random": 0.3130640458428806,
+      "messageid": "928352535046148116"
     },
     {
       "id": 31,
@@ -155,70 +167,74 @@
     {
       "id": 26,
       "question": "“The customer rang and said that they’re coming in this afternoon to pick up their order. I thanked them for their patience.”\nUsing the pronouns they, their and them for a single person is common and correct English usage, usually when you don’t know their gender. Why is it then that when a person says that they’d prefer others to refer to them using those pronouns (they/their/them), some people object on the grounds that it doesn’t seem to be correct grammar to refer to a single person using them?\nIf you speak another language, what pronouns do you use for a person when you don’t know their gender?",
-      "asked": 0,
+      "asked": 1,
       "replies": 0,
       "addedby": "marq_andrew",
       "status": "approved",
       "reviewedby": "marq_andrew",
-      "askedtime": null,
-      "random": 0.3392316727585898
+      "askedtime": "2022-01-12T18:36:54.704Z",
+      "random": 0.3392316727585898,
+      "messageid": "930893119354994788"
     },
     {
       "id": 28,
       "question": "“I can meditate for a long time even though I am very tired as long as my mind is clear of thoughts. As soon as I start thinking about something, I fall asleep.”\nDo you experience this? How do you explain it? Isn’t it the opposite of what you might expect?",
-      "asked": 0,
+      "asked": 1,
       "replies": 0,
       "addedby": "marq_andrew",
       "status": "approved",
       "reviewedby": "marq_andrew",
-      "askedtime": null,
-      "random": 0.3429249741473148
+      "askedtime": "2022-01-19T18:54:15.229Z",
+      "random": 0.3429249741473148,
+      "messageid": "933434198646194267"
     },
     {
       "id": 2,
       "question": "Do you perform any ritual before or after you practice meditation or yoga?",
-      "asked": 0,
+      "asked": 1,
       "replies": 0,
       "addedby": "marq_andrew",
       "reviewedby": "marq_andrew",
-      "askedtime": "2021-10-12T09:34:34.050Z",
+      "askedtime": "2022-01-26T19:05:52.432Z",
       "random": 0.345902826432257,
       "status": "approved",
-      "messageid": "897416950236479528"
+      "messageid": "935973838074818600"
     },
     {
       "id": 43,
       "question": "Do you believe in Karma? That is, your intentional actions rebound to you either in this life or a future life?",
-      "asked": 0,
+      "asked": 1,
       "replies": 0,
       "addedby": "marq_andrew",
       "status": "approved",
       "reviewedby": "marq_andrew",
-      "askedtime": null,
-      "random": 0.36398234484992087
+      "askedtime": "2022-02-02T19:07:57.535Z",
+      "random": 0.36398234484992087,
+      "messageid": "938511077786935316"
     },
     {
       "id": 30,
       "question": "Do you believe in God, gods or any supernatural beings? How does your belief or lack of it affect your life?",
-      "asked": 0,
+      "asked": 1,
       "replies": 0,
       "addedby": "marq_andrew",
       "status": "approved",
       "reviewedby": "marq_andrew",
-      "askedtime": "2021-10-12T10:38:24.701Z",
+      "askedtime": "2022-02-09T19:34:06.721Z",
       "random": 0.3743670967186208,
-      "messageid": "897433017205809172"
+      "messageid": "941054374371803146"
     },
     {
       "id": 44,
       "question": "Can you have wealth, status, fame and still be happy?",
-      "asked": 0,
+      "asked": 1,
       "replies": 0,
       "addedby": "marq_andrew",
       "status": "approved",
       "reviewedby": "marq_andrew",
-      "askedtime": null,
-      "random": 0.38072338105297354
+      "askedtime": "2022-02-16T19:39:25.550Z",
+      "random": 0.38072338105297354,
+      "messageid": "943592426843549787"
     },
     {
       "id": 29,
@@ -242,6 +258,17 @@
       "reviewedby": "marq_andrew",
       "askedtime": null,
       "random": 0.4198603856168768
+    },
+    {
+      "id": 46,
+      "question": "Have you ever decided not to buy something because of the country in which it was manufactured? Do you consider issues of ethical manufacture when deciding on a purchase?",
+      "asked": 0,
+      "replies": 0,
+      "addedby": "marq_andrew",
+      "status": "approved",
+      "reviewedby": "marq_andrew",
+      "askedtime": null,
+      "random": 0.5175226875069514
     },
     {
       "id": 21,
@@ -268,6 +295,17 @@
       "bump": 1
     },
     {
+      "id": 47,
+      "question": "Would you prefer homophobia to be classified as a hate crime or a mental illness?",
+      "asked": 0,
+      "replies": 0,
+      "addedby": "marq_andrew",
+      "status": "approved",
+      "reviewedby": "marq_andrew",
+      "askedtime": null,
+      "random": 0.5672164454827886
+    },
+    {
       "id": 16,
       "question": "You often hear the phrase “body and soul” but gay poet Walt Whitman in his poem “I Sing the Body Electric” defined the soul as the body. What do you think about terms like ”body” versus “soul” and “spirit”? How does the body and the individual aspects of our embodiment; our race, gender, sexuality, age, personality, health, intelligence, ability etc. relate to spirituality? Is spirituality even an appropriate word?",
       "asked": 0,
@@ -289,6 +327,17 @@
       "reviewedby": "marq_andrew",
       "askedtime": null,
       "random": 0.6189715839185417
+    },
+    {
+      "id": 49,
+      "question": "There are many gay trans-men, that is, men who were born biologically female, now identify as male and are sexually attracted to men. Some use various medical interventions to make their bodies more male, such as hormone therapy or surgery, however many such men are anatomically female down below. Sorry for the slightly nsfw question, but as a cis-gender gay or bi man (with a penis), how do you feel about having vaginal sex with a trans-man?",
+      "asked": 0,
+      "replies": 0,
+      "addedby": "marq_andrew",
+      "status": "approved",
+      "reviewedby": "marq_andrew",
+      "askedtime": null,
+      "random": 0.6679572403414267
     },
     {
       "id": 42,
@@ -371,6 +420,17 @@
       "random": 0.9259575406676199
     },
     {
+      "id": 48,
+      "question": "What is masculinity? Is it just a social construct or is it something more real?",
+      "asked": 0,
+      "replies": 0,
+      "addedby": "marq_andrew",
+      "status": "approved",
+      "reviewedby": "marq_andrew",
+      "askedtime": null,
+      "random": 0.9342185907874796
+    },
+    {
       "id": 11,
       "question": "How do you feel about nude yoga or meditation? Do you or would you practice nude alone, with others or online on camera?",
       "asked": 0,
@@ -451,5 +511,5 @@
     }
   ],
   "starttime": "2021-10-20T05:51:37.678Z",
-  "reminded": false
+  "reminded": true
 }

@@ -2,7 +2,7 @@
 
 *+*+*+*+*+*+*+*+*+*+*+*+*+*+*
 
-RESTART 20220208-033952
+RESTART 20220220-045112
 
 *+*+*+*+*+*+*+*+*+*+*+*+*+*+*
 
@@ -58,7 +58,7 @@ RESTART 20220208-033952
       _idleTimeout: 60000,
       _idlePrev: [TimersList],
       _idleNext: [TimersList],
-      _idleStart: 690,
+      _idleStart: 1182,
       _onTimeout: [Function (anonymous)],
       _timerArgs: undefined,
       _repeat: 60000,
@@ -150,7 +150,7 @@ RESTART 20220208-033952
   readyAt: null,
   [Symbol(kCapture)]: false
 }
-5f288b62f25f
+c3726f76496e
 Ready!
 bumpbots init
 [
@@ -170,792 +170,577 @@ Setting application command permissions on 889643708650254346 readme
 
 __Newcomers reminder and exclusion.__
 
-mal_maleficent --> reminded : 2.2 days.
-avia_idk --> reminded : 2.4 days.
-GC --> waiting : 1.3 days.
-EUPHORIA --> reminded : 5.3 days.
-noobdead --> reminded : 5.4 days. *
+AndyC --> waiting : 1.0 days.
+sasaugesnail --> reminded : 6.4 days.
+jakester --> reminded : 3.0 days.
+izaaaa --> reminded : 4.8 days.
+saban saulic --> reminded : 6.3 days.
+Bjxrx20x --> reminded : 5.3 days.
 
 * Indicates that the member wrote a message in #landing-zone.
 + Indicates that the member is muted.
 # Indicates that the member was previously a verified member.
-qotd countdown days 1.6444860300925925
-DISBOARD in sync (0 difference)
-cleanup: no messages found
-
-
-*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
-
-RESTART 20220208-041938
-
-*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
-
-
-<ref *1> Client {
-  _events: [Object: null prototype] { shardDisconnect: [Function (anonymous)] },
-  _eventsCount: 1,
-  _maxListeners: undefined,
-  options: {
-    _tokenType: 'Bot',
-    intents: 14335,
-    partials: [ 'MESSAGE', 'CHANNEL', 'REACTION' ],
-    shardCount: 1,
-    makeCache: [Function (anonymous)],
-    messageCacheLifetime: 0,
-    messageSweepInterval: 0,
-    invalidRequestWarningInterval: 0,
-    restWsBridgeTimeout: 5000,
-    restRequestTimeout: 15000,
-    restGlobalRateLimit: 0,
-    retryLimit: 1,
-    restTimeOffset: 500,
-    restSweepInterval: 60,
-    failIfNotExists: true,
-    userAgentSuffix: [],
-    presence: { status: 'online', user: [Object] },
-    ws: {
-      large_threshold: 50,
-      compress: false,
-      properties: [Object],
-      version: 9,
-      presence: [Object]
-    },
-    http: {
-      version: 9,
-      api: 'https://discord.com/api',
-      cdn: 'https://cdn.discordapp.com',
-      invite: 'https://discord.gg',
-      template: 'https://discord.new'
-    },
-    shards: [ 0 ]
-  },
-  rest: RESTManager {
-    client: [Circular *1],
-    handlers: Collection(1) [Map] { '/gateway/bot' => [RequestHandler] },
-    tokenPrefix: 'Bot',
-    versioned: true,
-    globalLimit: Infinity,
-    globalRemaining: Infinity,
-    globalReset: null,
-    globalDelay: null,
-    sweepInterval: Timeout {
-      _idleTimeout: 60000,
-      _idlePrev: [TimersList],
-      _idleNext: [TimersList],
-      _idleStart: 885,
-      _onTimeout: [Function (anonymous)],
-      _timerArgs: undefined,
-      _repeat: 60000,
-      _destroyed: false,
-      [Symbol(refed)]: false,
-      [Symbol(kHasPrimitive)]: false,
-      [Symbol(asyncId)]: 28,
-      [Symbol(triggerId)]: 1
-    }
-  },
-  _cleanups: Set(1) { [Function: bound ] },
-  _finalizers: FinalizationRegistry {},
-  ws: WebSocketManager {
-    _events: [Object: null prototype] {},
-    _eventsCount: 0,
-    _maxListeners: undefined,
-    gateway: null,
-    totalShards: 1,
-    shards: Collection(0) [Map] {},
-    status: 3,
-    destroyed: false,
-    reconnecting: false,
-    [Symbol(kCapture)]: false
-  },
-  actions: ActionsManager {
-    client: [Circular *1],
-    ChannelCreate: ChannelCreateAction { client: [Circular *1] },
-    ChannelDelete: ChannelDeleteAction { client: [Circular *1], deleted: Map(0) {} },
-    ChannelUpdate: ChannelUpdateAction { client: [Circular *1] },
-    GuildBanAdd: GuildBanAdd { client: [Circular *1] },
-    GuildBanRemove: GuildBanRemove { client: [Circular *1] },
-    GuildChannelsPositionUpdate: GuildChannelsPositionUpdate { client: [Circular *1] },
-    GuildDelete: GuildDeleteAction { client: [Circular *1], deleted: Map(0) {} },
-    GuildEmojiCreate: GuildEmojiCreateAction { client: [Circular *1] },
-    GuildEmojiDelete: GuildEmojiDeleteAction { client: [Circular *1] },
-    GuildEmojiUpdate: GuildEmojiUpdateAction { client: [Circular *1] },
-    GuildEmojisUpdate: GuildEmojisUpdateAction { client: [Circular *1] },
-    GuildIntegrationsUpdate: GuildIntegrationsUpdate { client: [Circular *1] },
-    GuildMemberRemove: GuildMemberRemoveAction { client: [Circular *1] },
-    GuildMemberUpdate: GuildMemberUpdateAction { client: [Circular *1] },
-    GuildRoleCreate: GuildRoleCreate { client: [Circular *1] },
-    GuildRoleDelete: GuildRoleDeleteAction { client: [Circular *1] },
-    GuildRoleUpdate: GuildRoleUpdateAction { client: [Circular *1] },
-    GuildRolesPositionUpdate: GuildRolesPositionUpdate { client: [Circular *1] },
-    GuildStickerCreate: GuildStickerCreateAction { client: [Circular *1] },
-    GuildStickerDelete: GuildStickerDeleteAction { client: [Circular *1] },
-    GuildStickerUpdate: GuildStickerUpdateAction { client: [Circular *1] },
-    GuildStickersUpdate: GuildStickersUpdateAction { client: [Circular *1] },
-    GuildUpdate: GuildUpdateAction { client: [Circular *1] },
-    InteractionCreate: InteractionCreateAction { client: [Circular *1] },
-    InviteCreate: InviteCreateAction { client: [Circular *1] },
-    InviteDelete: InviteDeleteAction { client: [Circular *1] },
-    MessageCreate: MessageCreateAction { client: [Circular *1] },
-    MessageDelete: MessageDeleteAction { client: [Circular *1] },
-    MessageDeleteBulk: MessageDeleteBulkAction { client: [Circular *1] },
-    MessageReactionAdd: MessageReactionAdd { client: [Circular *1] },
-    MessageReactionRemove: MessageReactionRemove { client: [Circular *1] },
-    MessageReactionRemoveAll: MessageReactionRemoveAll { client: [Circular *1] },
-    MessageReactionRemoveEmoji: MessageReactionRemoveEmoji { client: [Circular *1] },
-    MessageUpdate: MessageUpdateAction { client: [Circular *1] },
-    PresenceUpdate: PresenceUpdateAction { client: [Circular *1] },
-    StageInstanceCreate: StageInstanceCreateAction { client: [Circular *1] },
-    StageInstanceDelete: StageInstanceDeleteAction { client: [Circular *1] },
-    StageInstanceUpdate: StageInstanceUpdateAction { client: [Circular *1] },
-    ThreadCreate: ThreadCreateAction { client: [Circular *1] },
-    ThreadDelete: ThreadDeleteAction { client: [Circular *1] },
-    ThreadListSync: ThreadListSyncAction { client: [Circular *1] },
-    ThreadMemberUpdate: ThreadMemberUpdateAction { client: [Circular *1] },
-    ThreadMembersUpdate: ThreadMembersUpdateAction { client: [Circular *1] },
-    TypingStart: TypingStart { client: [Circular *1] },
-    UserUpdate: UserUpdateAction { client: [Circular *1] },
-    VoiceStateUpdate: VoiceStateUpdate { client: [Circular *1] },
-    WebhooksUpdate: WebhooksUpdate { client: [Circular *1] }
-  },
-  voice: ClientVoiceManager { adapters: Map(0) {} },
-  shard: null,
-  users: UserManager {},
-  guilds: GuildManager {},
-  channels: ChannelManager {},
-  presence: ClientPresence {
-    userId: null,
-    guild: null,
-    status: 'online',
-    activities: [],
-    clientStatus: null
-  },
-  user: null,
-  application: null,
-  readyAt: null,
-  [Symbol(kCapture)]: false
-}
-0a10b99a4483
-Ready!
-bumpbots init
-[
-  'bumpbots',
-  'bumpers',
-  'qotd_activity',
-  'qotds',
-  'qotd_scores',
-  'vcmon_sessions',
-  'vcmon_usage'
-]
-Setting application command permissions on 888779192592896130 avatar
-Setting application command permissions on 888779192592896131 joke
-Setting application command permissions on 888779192592896132 define
-Setting application command permissions on 888779192592896133 moderate
-Setting application command permissions on 889643708650254346 readme
-
-__Newcomers reminder and exclusion.__
-
-mal_maleficent --> reminded : 2.3 days.
-avia_idk --> reminded : 2.5 days.
-GC --> waiting : 1.3 days.
-EUPHORIA --> reminded : 5.3 days.
-noobdead --> reminded : 5.4 days. *
-
-* Indicates that the member wrote a message in #landing-zone.
-+ Indicates that the member is muted.
-# Indicates that the member was previously a verified member.
-qotd countdown days 1.61687125
-DISBOARD in sync (0 difference)
-cleanup: no messages found
-Please wait another 66 minutes to bump DISBOARD :drool:
-Please wait another 56 minutes to bump DISBOARD :drool:
-Please wait another 46 minutes to bump DISBOARD :drool:
-qotd countdown days 1.5960379282407406
-Please wait another 36 minutes to bump DISBOARD :drool:
-GUILD_TEXT : nsfw-support-and-healing
-Cuddlemonster: I like trimmed too..but wish someone would help me shave it 😊
-Please wait another 26 minutes to bump DISBOARD :drool:
-GUILD_TEXT : chat-general
-marq_andrew: ❤️  I would also say that spiritual awakening is never complete. It is our lives. It is all of this.
-GUILD_TEXT : nsfw-support-and-healing
-marq_andrew: I volunteer 👋 🤣
-
-
-*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
-
-RESTART 20220208-120916
-
-*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
-
-
-<ref *1> Client {
-  _events: [Object: null prototype] { shardDisconnect: [Function (anonymous)] },
-  _eventsCount: 1,
-  _maxListeners: undefined,
-  options: {
-    _tokenType: 'Bot',
-    intents: 14335,
-    partials: [ 'MESSAGE', 'CHANNEL', 'REACTION' ],
-    shardCount: 1,
-    makeCache: [Function (anonymous)],
-    messageCacheLifetime: 0,
-    messageSweepInterval: 0,
-    invalidRequestWarningInterval: 0,
-    restWsBridgeTimeout: 5000,
-    restRequestTimeout: 15000,
-    restGlobalRateLimit: 0,
-    retryLimit: 1,
-    restTimeOffset: 500,
-    restSweepInterval: 60,
-    failIfNotExists: true,
-    userAgentSuffix: [],
-    presence: { status: 'online', user: [Object] },
-    ws: {
-      large_threshold: 50,
-      compress: false,
-      properties: [Object],
-      version: 9,
-      presence: [Object]
-    },
-    http: {
-      version: 9,
-      api: 'https://discord.com/api',
-      cdn: 'https://cdn.discordapp.com',
-      invite: 'https://discord.gg',
-      template: 'https://discord.new'
-    },
-    shards: [ 0 ]
-  },
-  rest: RESTManager {
-    client: [Circular *1],
-    handlers: Collection(1) [Map] { '/gateway/bot' => [RequestHandler] },
-    tokenPrefix: 'Bot',
-    versioned: true,
-    globalLimit: Infinity,
-    globalRemaining: Infinity,
-    globalReset: null,
-    globalDelay: null,
-    sweepInterval: Timeout {
-      _idleTimeout: 60000,
-      _idlePrev: [TimersList],
-      _idleNext: [TimersList],
-      _idleStart: 492,
-      _onTimeout: [Function (anonymous)],
-      _timerArgs: undefined,
-      _repeat: 60000,
-      _destroyed: false,
-      [Symbol(refed)]: false,
-      [Symbol(kHasPrimitive)]: false,
-      [Symbol(asyncId)]: 28,
-      [Symbol(triggerId)]: 1
-    }
-  },
-  _cleanups: Set(1) { [Function: bound ] },
-  _finalizers: FinalizationRegistry {},
-  ws: WebSocketManager {
-    _events: [Object: null prototype] {},
-    _eventsCount: 0,
-    _maxListeners: undefined,
-    gateway: null,
-    totalShards: 1,
-    shards: Collection(0) [Map] {},
-    status: 3,
-    destroyed: false,
-    reconnecting: false,
-    [Symbol(kCapture)]: false
-  },
-  actions: ActionsManager {
-    client: [Circular *1],
-    ChannelCreate: ChannelCreateAction { client: [Circular *1] },
-    ChannelDelete: ChannelDeleteAction { client: [Circular *1], deleted: Map(0) {} },
-    ChannelUpdate: ChannelUpdateAction { client: [Circular *1] },
-    GuildBanAdd: GuildBanAdd { client: [Circular *1] },
-    GuildBanRemove: GuildBanRemove { client: [Circular *1] },
-    GuildChannelsPositionUpdate: GuildChannelsPositionUpdate { client: [Circular *1] },
-    GuildDelete: GuildDeleteAction { client: [Circular *1], deleted: Map(0) {} },
-    GuildEmojiCreate: GuildEmojiCreateAction { client: [Circular *1] },
-    GuildEmojiDelete: GuildEmojiDeleteAction { client: [Circular *1] },
-    GuildEmojiUpdate: GuildEmojiUpdateAction { client: [Circular *1] },
-    GuildEmojisUpdate: GuildEmojisUpdateAction { client: [Circular *1] },
-    GuildIntegrationsUpdate: GuildIntegrationsUpdate { client: [Circular *1] },
-    GuildMemberRemove: GuildMemberRemoveAction { client: [Circular *1] },
-    GuildMemberUpdate: GuildMemberUpdateAction { client: [Circular *1] },
-    GuildRoleCreate: GuildRoleCreate { client: [Circular *1] },
-    GuildRoleDelete: GuildRoleDeleteAction { client: [Circular *1] },
-    GuildRoleUpdate: GuildRoleUpdateAction { client: [Circular *1] },
-    GuildRolesPositionUpdate: GuildRolesPositionUpdate { client: [Circular *1] },
-    GuildStickerCreate: GuildStickerCreateAction { client: [Circular *1] },
-    GuildStickerDelete: GuildStickerDeleteAction { client: [Circular *1] },
-    GuildStickerUpdate: GuildStickerUpdateAction { client: [Circular *1] },
-    GuildStickersUpdate: GuildStickersUpdateAction { client: [Circular *1] },
-    GuildUpdate: GuildUpdateAction { client: [Circular *1] },
-    InteractionCreate: InteractionCreateAction { client: [Circular *1] },
-    InviteCreate: InviteCreateAction { client: [Circular *1] },
-    InviteDelete: InviteDeleteAction { client: [Circular *1] },
-    MessageCreate: MessageCreateAction { client: [Circular *1] },
-    MessageDelete: MessageDeleteAction { client: [Circular *1] },
-    MessageDeleteBulk: MessageDeleteBulkAction { client: [Circular *1] },
-    MessageReactionAdd: MessageReactionAdd { client: [Circular *1] },
-    MessageReactionRemove: MessageReactionRemove { client: [Circular *1] },
-    MessageReactionRemoveAll: MessageReactionRemoveAll { client: [Circular *1] },
-    MessageReactionRemoveEmoji: MessageReactionRemoveEmoji { client: [Circular *1] },
-    MessageUpdate: MessageUpdateAction { client: [Circular *1] },
-    PresenceUpdate: PresenceUpdateAction { client: [Circular *1] },
-    StageInstanceCreate: StageInstanceCreateAction { client: [Circular *1] },
-    StageInstanceDelete: StageInstanceDeleteAction { client: [Circular *1] },
-    StageInstanceUpdate: StageInstanceUpdateAction { client: [Circular *1] },
-    ThreadCreate: ThreadCreateAction { client: [Circular *1] },
-    ThreadDelete: ThreadDeleteAction { client: [Circular *1] },
-    ThreadListSync: ThreadListSyncAction { client: [Circular *1] },
-    ThreadMemberUpdate: ThreadMemberUpdateAction { client: [Circular *1] },
-    ThreadMembersUpdate: ThreadMembersUpdateAction { client: [Circular *1] },
-    TypingStart: TypingStart { client: [Circular *1] },
-    UserUpdate: UserUpdateAction { client: [Circular *1] },
-    VoiceStateUpdate: VoiceStateUpdate { client: [Circular *1] },
-    WebhooksUpdate: WebhooksUpdate { client: [Circular *1] }
-  },
-  voice: ClientVoiceManager { adapters: Map(0) {} },
-  shard: null,
-  users: UserManager {},
-  guilds: GuildManager {},
-  channels: ChannelManager {},
-  presence: ClientPresence {
-    userId: null,
-    guild: null,
-    status: 'online',
-    activities: [],
-    clientStatus: null
-  },
-  user: null,
-  application: null,
-  readyAt: null,
-  [Symbol(kCapture)]: false
-}
-9d5cbe44b21d
-Ready!
-bumpbots init
-[
-  'bumpbots',
-  'bumpers',
-  'qotd_activity',
-  'qotds',
-  'qotd_scores',
-  'vcmon_sessions',
-  'vcmon_usage'
-]
-Setting application command permissions on 888779192592896130 avatar
-Setting application command permissions on 888779192592896131 joke
-Setting application command permissions on 888779192592896132 define
-Setting application command permissions on 888779192592896133 moderate
-Setting application command permissions on 889643708650254346 readme
-
-__Newcomers reminder and exclusion.__
-
-mal_maleficent --> reminded : 2.6 days.
-avia_idk --> reminded : 2.8 days.
-GC --> waiting : 1.7 days.
-EUPHORIA --> reminded : 5.6 days.
-noobdead --> reminded : 5.7 days. *
-
-* Indicates that the member wrote a message in #landing-zone.
-+ Indicates that the member is muted.
-# Indicates that the member was previously a verified member.
-qotd countdown days 1.2907341898148148
-cleanup: no messages found
-DISBOARD in sync (0 difference)
-GUILD_TEXT : photos-general
-Johnd: <@679465390841135126>  longboat key Florida
-GUILD_TEXT : nsfw-support-and-healing
-Johnd: <@876470289444241441> me too
-GUILD_TEXT : nsfw-support-and-healing
-Johnd: I like to trim but love to see a man shaved as well.
-Please wait another 21 minutes to bump DISBOARD :drool:
-Please wait another 11 minutes to bump DISBOARD :drool:
-Please wait another 1 minutes to bump DISBOARD :drool:
-qotd countdown days 1.2699008564814815
-Time to bump DISBOARD (!d bump) :scream:
-GUILD_TEXT : bot-commands
-Jalendu: Time to bump DISBOARD (!d bump) :scream:
-
-
-*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
-
-RESTART 20220208-185346
-
-*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
-
-
-<ref *1> Client {
-  _events: [Object: null prototype] { shardDisconnect: [Function (anonymous)] },
-  _eventsCount: 1,
-  _maxListeners: undefined,
-  options: {
-    _tokenType: 'Bot',
-    intents: 14335,
-    partials: [ 'MESSAGE', 'CHANNEL', 'REACTION' ],
-    shardCount: 1,
-    makeCache: [Function (anonymous)],
-    messageCacheLifetime: 0,
-    messageSweepInterval: 0,
-    invalidRequestWarningInterval: 0,
-    restWsBridgeTimeout: 5000,
-    restRequestTimeout: 15000,
-    restGlobalRateLimit: 0,
-    retryLimit: 1,
-    restTimeOffset: 500,
-    restSweepInterval: 60,
-    failIfNotExists: true,
-    userAgentSuffix: [],
-    presence: { status: 'online', user: [Object] },
-    ws: {
-      large_threshold: 50,
-      compress: false,
-      properties: [Object],
-      version: 9,
-      presence: [Object]
-    },
-    http: {
-      version: 9,
-      api: 'https://discord.com/api',
-      cdn: 'https://cdn.discordapp.com',
-      invite: 'https://discord.gg',
-      template: 'https://discord.new'
-    },
-    shards: [ 0 ]
-  },
-  rest: RESTManager {
-    client: [Circular *1],
-    handlers: Collection(1) [Map] { '/gateway/bot' => [RequestHandler] },
-    tokenPrefix: 'Bot',
-    versioned: true,
-    globalLimit: Infinity,
-    globalRemaining: Infinity,
-    globalReset: null,
-    globalDelay: null,
-    sweepInterval: Timeout {
-      _idleTimeout: 60000,
-      _idlePrev: [TimersList],
-      _idleNext: [TimersList],
-      _idleStart: 450,
-      _onTimeout: [Function (anonymous)],
-      _timerArgs: undefined,
-      _repeat: 60000,
-      _destroyed: false,
-      [Symbol(refed)]: false,
-      [Symbol(kHasPrimitive)]: false,
-      [Symbol(asyncId)]: 28,
-      [Symbol(triggerId)]: 1
-    }
-  },
-  _cleanups: Set(1) { [Function: bound ] },
-  _finalizers: FinalizationRegistry {},
-  ws: WebSocketManager {
-    _events: [Object: null prototype] {},
-    _eventsCount: 0,
-    _maxListeners: undefined,
-    gateway: null,
-    totalShards: 1,
-    shards: Collection(0) [Map] {},
-    status: 3,
-    destroyed: false,
-    reconnecting: false,
-    [Symbol(kCapture)]: false
-  },
-  actions: ActionsManager {
-    client: [Circular *1],
-    ChannelCreate: ChannelCreateAction { client: [Circular *1] },
-    ChannelDelete: ChannelDeleteAction { client: [Circular *1], deleted: Map(0) {} },
-    ChannelUpdate: ChannelUpdateAction { client: [Circular *1] },
-    GuildBanAdd: GuildBanAdd { client: [Circular *1] },
-    GuildBanRemove: GuildBanRemove { client: [Circular *1] },
-    GuildChannelsPositionUpdate: GuildChannelsPositionUpdate { client: [Circular *1] },
-    GuildDelete: GuildDeleteAction { client: [Circular *1], deleted: Map(0) {} },
-    GuildEmojiCreate: GuildEmojiCreateAction { client: [Circular *1] },
-    GuildEmojiDelete: GuildEmojiDeleteAction { client: [Circular *1] },
-    GuildEmojiUpdate: GuildEmojiUpdateAction { client: [Circular *1] },
-    GuildEmojisUpdate: GuildEmojisUpdateAction { client: [Circular *1] },
-    GuildIntegrationsUpdate: GuildIntegrationsUpdate { client: [Circular *1] },
-    GuildMemberRemove: GuildMemberRemoveAction { client: [Circular *1] },
-    GuildMemberUpdate: GuildMemberUpdateAction { client: [Circular *1] },
-    GuildRoleCreate: GuildRoleCreate { client: [Circular *1] },
-    GuildRoleDelete: GuildRoleDeleteAction { client: [Circular *1] },
-    GuildRoleUpdate: GuildRoleUpdateAction { client: [Circular *1] },
-    GuildRolesPositionUpdate: GuildRolesPositionUpdate { client: [Circular *1] },
-    GuildStickerCreate: GuildStickerCreateAction { client: [Circular *1] },
-    GuildStickerDelete: GuildStickerDeleteAction { client: [Circular *1] },
-    GuildStickerUpdate: GuildStickerUpdateAction { client: [Circular *1] },
-    GuildStickersUpdate: GuildStickersUpdateAction { client: [Circular *1] },
-    GuildUpdate: GuildUpdateAction { client: [Circular *1] },
-    InteractionCreate: InteractionCreateAction { client: [Circular *1] },
-    InviteCreate: InviteCreateAction { client: [Circular *1] },
-    InviteDelete: InviteDeleteAction { client: [Circular *1] },
-    MessageCreate: MessageCreateAction { client: [Circular *1] },
-    MessageDelete: MessageDeleteAction { client: [Circular *1] },
-    MessageDeleteBulk: MessageDeleteBulkAction { client: [Circular *1] },
-    MessageReactionAdd: MessageReactionAdd { client: [Circular *1] },
-    MessageReactionRemove: MessageReactionRemove { client: [Circular *1] },
-    MessageReactionRemoveAll: MessageReactionRemoveAll { client: [Circular *1] },
-    MessageReactionRemoveEmoji: MessageReactionRemoveEmoji { client: [Circular *1] },
-    MessageUpdate: MessageUpdateAction { client: [Circular *1] },
-    PresenceUpdate: PresenceUpdateAction { client: [Circular *1] },
-    StageInstanceCreate: StageInstanceCreateAction { client: [Circular *1] },
-    StageInstanceDelete: StageInstanceDeleteAction { client: [Circular *1] },
-    StageInstanceUpdate: StageInstanceUpdateAction { client: [Circular *1] },
-    ThreadCreate: ThreadCreateAction { client: [Circular *1] },
-    ThreadDelete: ThreadDeleteAction { client: [Circular *1] },
-    ThreadListSync: ThreadListSyncAction { client: [Circular *1] },
-    ThreadMemberUpdate: ThreadMemberUpdateAction { client: [Circular *1] },
-    ThreadMembersUpdate: ThreadMembersUpdateAction { client: [Circular *1] },
-    TypingStart: TypingStart { client: [Circular *1] },
-    UserUpdate: UserUpdateAction { client: [Circular *1] },
-    VoiceStateUpdate: VoiceStateUpdate { client: [Circular *1] },
-    WebhooksUpdate: WebhooksUpdate { client: [Circular *1] }
-  },
-  voice: ClientVoiceManager { adapters: Map(0) {} },
-  shard: null,
-  users: UserManager {},
-  guilds: GuildManager {},
-  channels: ChannelManager {},
-  presence: ClientPresence {
-    userId: null,
-    guild: null,
-    status: 'online',
-    activities: [],
-    clientStatus: null
-  },
-  user: null,
-  application: null,
-  readyAt: null,
-  [Symbol(kCapture)]: false
-}
-39e5b6dc732a
-Ready!
-bumpbots init
-[
-  'bumpbots',
-  'bumpers',
-  'qotd_activity',
-  'qotds',
-  'qotd_scores',
-  'vcmon_sessions',
-  'vcmon_usage'
-]
-Setting application command permissions on 888779192592896130 avatar
-Setting application command permissions on 888779192592896131 joke
-Setting application command permissions on 888779192592896132 define
-Setting application command permissions on 888779192592896133 moderate
-Setting application command permissions on 889643708650254346 readme
-
-__Newcomers reminder and exclusion.__
-
-mal_maleficent --> reminded : 2.9 days.
-avia_idk --> reminded : 3.1 days.
-GC --> waiting : 2.0 days.
-NO NAME --> reminded : 5.9 days.
-Marcos0109 --> waiting : 0.0 days.
-noobdead --> reminded : 6.0 days. *
-
-* Indicates that the member wrote a message in #landing-zone.
-+ Indicates that the member is muted.
-# Indicates that the member was previously a verified member.
-qotd countdown days 1.009841550925926
-DISBOARD in sync (0 difference)
-cleanup: no messages found
-Please wait another 11 minutes to bump DISBOARD :drool:
-Please wait another 1 minutes to bump DISBOARD :drool:
-Time to bump DISBOARD (!d bump) :scream:
-qotd countdown days 0.9890082407407408
-GUILD_TEXT : bot-commands
-Jalendu: Time to bump DISBOARD (!d bump) :scream:
-
-
-*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
-
-RESTART 20220208-222120
-
-*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
-
-
-<ref *1> Client {
-  _events: [Object: null prototype] { shardDisconnect: [Function (anonymous)] },
-  _eventsCount: 1,
-  _maxListeners: undefined,
-  options: {
-    _tokenType: 'Bot',
-    intents: 14335,
-    partials: [ 'MESSAGE', 'CHANNEL', 'REACTION' ],
-    shardCount: 1,
-    makeCache: [Function (anonymous)],
-    messageCacheLifetime: 0,
-    messageSweepInterval: 0,
-    invalidRequestWarningInterval: 0,
-    restWsBridgeTimeout: 5000,
-    restRequestTimeout: 15000,
-    restGlobalRateLimit: 0,
-    retryLimit: 1,
-    restTimeOffset: 500,
-    restSweepInterval: 60,
-    failIfNotExists: true,
-    userAgentSuffix: [],
-    presence: { status: 'online', user: [Object] },
-    ws: {
-      large_threshold: 50,
-      compress: false,
-      properties: [Object],
-      version: 9,
-      presence: [Object]
-    },
-    http: {
-      version: 9,
-      api: 'https://discord.com/api',
-      cdn: 'https://cdn.discordapp.com',
-      invite: 'https://discord.gg',
-      template: 'https://discord.new'
-    },
-    shards: [ 0 ]
-  },
-  rest: RESTManager {
-    client: [Circular *1],
-    handlers: Collection(1) [Map] { '/gateway/bot' => [RequestHandler] },
-    tokenPrefix: 'Bot',
-    versioned: true,
-    globalLimit: Infinity,
-    globalRemaining: Infinity,
-    globalReset: null,
-    globalDelay: null,
-    sweepInterval: Timeout {
-      _idleTimeout: 60000,
-      _idlePrev: [TimersList],
-      _idleNext: [TimersList],
-      _idleStart: 1285,
-      _onTimeout: [Function (anonymous)],
-      _timerArgs: undefined,
-      _repeat: 60000,
-      _destroyed: false,
-      [Symbol(refed)]: false,
-      [Symbol(kHasPrimitive)]: false,
-      [Symbol(asyncId)]: 28,
-      [Symbol(triggerId)]: 1
-    }
-  },
-  _cleanups: Set(1) { [Function: bound ] },
-  _finalizers: FinalizationRegistry {},
-  ws: WebSocketManager {
-    _events: [Object: null prototype] {},
-    _eventsCount: 0,
-    _maxListeners: undefined,
-    gateway: null,
-    totalShards: 1,
-    shards: Collection(0) [Map] {},
-    status: 3,
-    destroyed: false,
-    reconnecting: false,
-    [Symbol(kCapture)]: false
-  },
-  actions: ActionsManager {
-    client: [Circular *1],
-    ChannelCreate: ChannelCreateAction { client: [Circular *1] },
-    ChannelDelete: ChannelDeleteAction { client: [Circular *1], deleted: Map(0) {} },
-    ChannelUpdate: ChannelUpdateAction { client: [Circular *1] },
-    GuildBanAdd: GuildBanAdd { client: [Circular *1] },
-    GuildBanRemove: GuildBanRemove { client: [Circular *1] },
-    GuildChannelsPositionUpdate: GuildChannelsPositionUpdate { client: [Circular *1] },
-    GuildDelete: GuildDeleteAction { client: [Circular *1], deleted: Map(0) {} },
-    GuildEmojiCreate: GuildEmojiCreateAction { client: [Circular *1] },
-    GuildEmojiDelete: GuildEmojiDeleteAction { client: [Circular *1] },
-    GuildEmojiUpdate: GuildEmojiUpdateAction { client: [Circular *1] },
-    GuildEmojisUpdate: GuildEmojisUpdateAction { client: [Circular *1] },
-    GuildIntegrationsUpdate: GuildIntegrationsUpdate { client: [Circular *1] },
-    GuildMemberRemove: GuildMemberRemoveAction { client: [Circular *1] },
-    GuildMemberUpdate: GuildMemberUpdateAction { client: [Circular *1] },
-    GuildRoleCreate: GuildRoleCreate { client: [Circular *1] },
-    GuildRoleDelete: GuildRoleDeleteAction { client: [Circular *1] },
-    GuildRoleUpdate: GuildRoleUpdateAction { client: [Circular *1] },
-    GuildRolesPositionUpdate: GuildRolesPositionUpdate { client: [Circular *1] },
-    GuildStickerCreate: GuildStickerCreateAction { client: [Circular *1] },
-    GuildStickerDelete: GuildStickerDeleteAction { client: [Circular *1] },
-    GuildStickerUpdate: GuildStickerUpdateAction { client: [Circular *1] },
-    GuildStickersUpdate: GuildStickersUpdateAction { client: [Circular *1] },
-    GuildUpdate: GuildUpdateAction { client: [Circular *1] },
-    InteractionCreate: InteractionCreateAction { client: [Circular *1] },
-    InviteCreate: InviteCreateAction { client: [Circular *1] },
-    InviteDelete: InviteDeleteAction { client: [Circular *1] },
-    MessageCreate: MessageCreateAction { client: [Circular *1] },
-    MessageDelete: MessageDeleteAction { client: [Circular *1] },
-    MessageDeleteBulk: MessageDeleteBulkAction { client: [Circular *1] },
-    MessageReactionAdd: MessageReactionAdd { client: [Circular *1] },
-    MessageReactionRemove: MessageReactionRemove { client: [Circular *1] },
-    MessageReactionRemoveAll: MessageReactionRemoveAll { client: [Circular *1] },
-    MessageReactionRemoveEmoji: MessageReactionRemoveEmoji { client: [Circular *1] },
-    MessageUpdate: MessageUpdateAction { client: [Circular *1] },
-    PresenceUpdate: PresenceUpdateAction { client: [Circular *1] },
-    StageInstanceCreate: StageInstanceCreateAction { client: [Circular *1] },
-    StageInstanceDelete: StageInstanceDeleteAction { client: [Circular *1] },
-    StageInstanceUpdate: StageInstanceUpdateAction { client: [Circular *1] },
-    ThreadCreate: ThreadCreateAction { client: [Circular *1] },
-    ThreadDelete: ThreadDeleteAction { client: [Circular *1] },
-    ThreadListSync: ThreadListSyncAction { client: [Circular *1] },
-    ThreadMemberUpdate: ThreadMemberUpdateAction { client: [Circular *1] },
-    ThreadMembersUpdate: ThreadMembersUpdateAction { client: [Circular *1] },
-    TypingStart: TypingStart { client: [Circular *1] },
-    UserUpdate: UserUpdateAction { client: [Circular *1] },
-    VoiceStateUpdate: VoiceStateUpdate { client: [Circular *1] },
-    WebhooksUpdate: WebhooksUpdate { client: [Circular *1] }
-  },
-  voice: ClientVoiceManager { adapters: Map(0) {} },
-  shard: null,
-  users: UserManager {},
-  guilds: GuildManager {},
-  channels: ChannelManager {},
-  presence: ClientPresence {
-    userId: null,
-    guild: null,
-    status: 'online',
-    activities: [],
-    clientStatus: null
-  },
-  user: null,
-  application: null,
-  readyAt: null,
-  [Symbol(kCapture)]: false
-}
-8ef65e2f7496
-Ready!
-bumpbots init
-Setting application command permissions on 888779192592896130 avatar
-Setting application command permissions on 888779192592896131 joke
-Setting application command permissions on 888779192592896132 define
-Setting application command permissions on 888779192592896133 moderate
-Setting application command permissions on 889643708650254346 readme
-
-__Newcomers reminder and exclusion.__
-
-mal_maleficent --> reminded : 3.0 days.
-avia_idk --> reminded : 3.2 days.
-GC --> reminded : 2.1 days.
-NO NAME --> reminded : 6.1 days.
-Marcos0109 --> waiting : 0.1 days.
-noobdead --> reminded : 6.2 days. *
-
-* Indicates that the member wrote a message in #landing-zone.
-+ Indicates that the member is muted.
-# Indicates that the member was previously a verified member.
-qotd countdown days 0.8656797222222222
-[
-  'bumpbots',
-  'bumpers',
-  'qotd_activity',
-  'qotds',
-  'qotd_scores',
-  'vcmon_sessions',
-  'vcmon_usage'
-]
+qotd countdown days 3.6167914930555556
 DISBOARD in sync (0 difference)
 cleanup: no messages found
 Time to bump DISBOARD (!d bump) :scream:
 GUILD_TEXT : bot-commands
 Jalendu: Time to bump DISBOARD (!d bump) :scream:
-Please bump DISBOARD (!d bump). I've been waiting for the bump for 27 minutes :pleading_face:
-GUILD_TEXT : photos-general
-Johnd: <@876470289444241441> no just walking.
-Please bump DISBOARD (!d bump). I've been waiting for the bump for 37 minutes :pleading_face:
-qotd countdown days 0.8448464236111111
+
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+RESTART 20220220-120433
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+
+<ref *1> Client {
+  _events: [Object: null prototype] { shardDisconnect: [Function (anonymous)] },
+  _eventsCount: 1,
+  _maxListeners: undefined,
+  options: {
+    _tokenType: 'Bot',
+    intents: 14335,
+    partials: [ 'MESSAGE', 'CHANNEL', 'REACTION' ],
+    shardCount: 1,
+    makeCache: [Function (anonymous)],
+    messageCacheLifetime: 0,
+    messageSweepInterval: 0,
+    invalidRequestWarningInterval: 0,
+    restWsBridgeTimeout: 5000,
+    restRequestTimeout: 15000,
+    restGlobalRateLimit: 0,
+    retryLimit: 1,
+    restTimeOffset: 500,
+    restSweepInterval: 60,
+    failIfNotExists: true,
+    userAgentSuffix: [],
+    presence: { status: 'online', user: [Object] },
+    ws: {
+      large_threshold: 50,
+      compress: false,
+      properties: [Object],
+      version: 9,
+      presence: [Object]
+    },
+    http: {
+      version: 9,
+      api: 'https://discord.com/api',
+      cdn: 'https://cdn.discordapp.com',
+      invite: 'https://discord.gg',
+      template: 'https://discord.new'
+    },
+    shards: [ 0 ]
+  },
+  rest: RESTManager {
+    client: [Circular *1],
+    handlers: Collection(1) [Map] { '/gateway/bot' => [RequestHandler] },
+    tokenPrefix: 'Bot',
+    versioned: true,
+    globalLimit: Infinity,
+    globalRemaining: Infinity,
+    globalReset: null,
+    globalDelay: null,
+    sweepInterval: Timeout {
+      _idleTimeout: 60000,
+      _idlePrev: [TimersList],
+      _idleNext: [TimersList],
+      _idleStart: 1747,
+      _onTimeout: [Function (anonymous)],
+      _timerArgs: undefined,
+      _repeat: 60000,
+      _destroyed: false,
+      [Symbol(refed)]: false,
+      [Symbol(kHasPrimitive)]: false,
+      [Symbol(asyncId)]: 28,
+      [Symbol(triggerId)]: 1
+    }
+  },
+  _cleanups: Set(1) { [Function: bound ] },
+  _finalizers: FinalizationRegistry {},
+  ws: WebSocketManager {
+    _events: [Object: null prototype] {},
+    _eventsCount: 0,
+    _maxListeners: undefined,
+    gateway: null,
+    totalShards: 1,
+    shards: Collection(0) [Map] {},
+    status: 3,
+    destroyed: false,
+    reconnecting: false,
+    [Symbol(kCapture)]: false
+  },
+  actions: ActionsManager {
+    client: [Circular *1],
+    ChannelCreate: ChannelCreateAction { client: [Circular *1] },
+    ChannelDelete: ChannelDeleteAction { client: [Circular *1], deleted: Map(0) {} },
+    ChannelUpdate: ChannelUpdateAction { client: [Circular *1] },
+    GuildBanAdd: GuildBanAdd { client: [Circular *1] },
+    GuildBanRemove: GuildBanRemove { client: [Circular *1] },
+    GuildChannelsPositionUpdate: GuildChannelsPositionUpdate { client: [Circular *1] },
+    GuildDelete: GuildDeleteAction { client: [Circular *1], deleted: Map(0) {} },
+    GuildEmojiCreate: GuildEmojiCreateAction { client: [Circular *1] },
+    GuildEmojiDelete: GuildEmojiDeleteAction { client: [Circular *1] },
+    GuildEmojiUpdate: GuildEmojiUpdateAction { client: [Circular *1] },
+    GuildEmojisUpdate: GuildEmojisUpdateAction { client: [Circular *1] },
+    GuildIntegrationsUpdate: GuildIntegrationsUpdate { client: [Circular *1] },
+    GuildMemberRemove: GuildMemberRemoveAction { client: [Circular *1] },
+    GuildMemberUpdate: GuildMemberUpdateAction { client: [Circular *1] },
+    GuildRoleCreate: GuildRoleCreate { client: [Circular *1] },
+    GuildRoleDelete: GuildRoleDeleteAction { client: [Circular *1] },
+    GuildRoleUpdate: GuildRoleUpdateAction { client: [Circular *1] },
+    GuildRolesPositionUpdate: GuildRolesPositionUpdate { client: [Circular *1] },
+    GuildStickerCreate: GuildStickerCreateAction { client: [Circular *1] },
+    GuildStickerDelete: GuildStickerDeleteAction { client: [Circular *1] },
+    GuildStickerUpdate: GuildStickerUpdateAction { client: [Circular *1] },
+    GuildStickersUpdate: GuildStickersUpdateAction { client: [Circular *1] },
+    GuildUpdate: GuildUpdateAction { client: [Circular *1] },
+    InteractionCreate: InteractionCreateAction { client: [Circular *1] },
+    InviteCreate: InviteCreateAction { client: [Circular *1] },
+    InviteDelete: InviteDeleteAction { client: [Circular *1] },
+    MessageCreate: MessageCreateAction { client: [Circular *1] },
+    MessageDelete: MessageDeleteAction { client: [Circular *1] },
+    MessageDeleteBulk: MessageDeleteBulkAction { client: [Circular *1] },
+    MessageReactionAdd: MessageReactionAdd { client: [Circular *1] },
+    MessageReactionRemove: MessageReactionRemove { client: [Circular *1] },
+    MessageReactionRemoveAll: MessageReactionRemoveAll { client: [Circular *1] },
+    MessageReactionRemoveEmoji: MessageReactionRemoveEmoji { client: [Circular *1] },
+    MessageUpdate: MessageUpdateAction { client: [Circular *1] },
+    PresenceUpdate: PresenceUpdateAction { client: [Circular *1] },
+    StageInstanceCreate: StageInstanceCreateAction { client: [Circular *1] },
+    StageInstanceDelete: StageInstanceDeleteAction { client: [Circular *1] },
+    StageInstanceUpdate: StageInstanceUpdateAction { client: [Circular *1] },
+    ThreadCreate: ThreadCreateAction { client: [Circular *1] },
+    ThreadDelete: ThreadDeleteAction { client: [Circular *1] },
+    ThreadListSync: ThreadListSyncAction { client: [Circular *1] },
+    ThreadMemberUpdate: ThreadMemberUpdateAction { client: [Circular *1] },
+    ThreadMembersUpdate: ThreadMembersUpdateAction { client: [Circular *1] },
+    TypingStart: TypingStart { client: [Circular *1] },
+    UserUpdate: UserUpdateAction { client: [Circular *1] },
+    VoiceStateUpdate: VoiceStateUpdate { client: [Circular *1] },
+    WebhooksUpdate: WebhooksUpdate { client: [Circular *1] }
+  },
+  voice: ClientVoiceManager { adapters: Map(0) {} },
+  shard: null,
+  users: UserManager {},
+  guilds: GuildManager {},
+  channels: ChannelManager {},
+  presence: ClientPresence {
+    userId: null,
+    guild: null,
+    status: 'online',
+    activities: [],
+    clientStatus: null
+  },
+  user: null,
+  application: null,
+  readyAt: null,
+  [Symbol(kCapture)]: false
+}
+ffc5b659901e
+Ready!
+bumpbots init
+[
+  'bumpbots',
+  'bumpers',
+  'qotd_activity',
+  'qotds',
+  'qotd_scores',
+  'vcmon_sessions',
+  'vcmon_usage'
+]
+Setting application command permissions on 888779192592896130 avatar
+Setting application command permissions on 888779192592896131 joke
+Setting application command permissions on 888779192592896132 define
+Setting application command permissions on 888779192592896133 moderate
+Setting application command permissions on 889643708650254346 readme
+
+__Newcomers reminder and exclusion.__
+
+AndyC --> waiting : 1.3 days.
+sasaugesnail --> reminded : 6.7 days.
+jakester --> reminded : 3.3 days.
+izaaaa --> reminded : 5.1 days.
+saban saulic --> reminded : 6.6 days.
+Bjxrx20x --> reminded : 5.6 days.
+
+* Indicates that the member wrote a message in #landing-zone.
++ Indicates that the member is muted.
+# Indicates that the member was previously a verified member.
+qotd countdown days 3.3158505092592594
+DISBOARD in sync (0 difference)
+cleanup: no messages found
+
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+RESTART 20220220-131036
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+
+<ref *1> Client {
+  _events: [Object: null prototype] { shardDisconnect: [Function (anonymous)] },
+  _eventsCount: 1,
+  _maxListeners: undefined,
+  options: {
+    _tokenType: 'Bot',
+    intents: 14335,
+    partials: [ 'MESSAGE', 'CHANNEL', 'REACTION' ],
+    shardCount: 1,
+    makeCache: [Function (anonymous)],
+    messageCacheLifetime: 0,
+    messageSweepInterval: 0,
+    invalidRequestWarningInterval: 0,
+    restWsBridgeTimeout: 5000,
+    restRequestTimeout: 15000,
+    restGlobalRateLimit: 0,
+    retryLimit: 1,
+    restTimeOffset: 500,
+    restSweepInterval: 60,
+    failIfNotExists: true,
+    userAgentSuffix: [],
+    presence: { status: 'online', user: [Object] },
+    ws: {
+      large_threshold: 50,
+      compress: false,
+      properties: [Object],
+      version: 9,
+      presence: [Object]
+    },
+    http: {
+      version: 9,
+      api: 'https://discord.com/api',
+      cdn: 'https://cdn.discordapp.com',
+      invite: 'https://discord.gg',
+      template: 'https://discord.new'
+    },
+    shards: [ 0 ]
+  },
+  rest: RESTManager {
+    client: [Circular *1],
+    handlers: Collection(1) [Map] { '/gateway/bot' => [RequestHandler] },
+    tokenPrefix: 'Bot',
+    versioned: true,
+    globalLimit: Infinity,
+    globalRemaining: Infinity,
+    globalReset: null,
+    globalDelay: null,
+    sweepInterval: Timeout {
+      _idleTimeout: 60000,
+      _idlePrev: [TimersList],
+      _idleNext: [TimersList],
+      _idleStart: 471,
+      _onTimeout: [Function (anonymous)],
+      _timerArgs: undefined,
+      _repeat: 60000,
+      _destroyed: false,
+      [Symbol(refed)]: false,
+      [Symbol(kHasPrimitive)]: false,
+      [Symbol(asyncId)]: 28,
+      [Symbol(triggerId)]: 1
+    }
+  },
+  _cleanups: Set(1) { [Function: bound ] },
+  _finalizers: FinalizationRegistry {},
+  ws: WebSocketManager {
+    _events: [Object: null prototype] {},
+    _eventsCount: 0,
+    _maxListeners: undefined,
+    gateway: null,
+    totalShards: 1,
+    shards: Collection(0) [Map] {},
+    status: 3,
+    destroyed: false,
+    reconnecting: false,
+    [Symbol(kCapture)]: false
+  },
+  actions: ActionsManager {
+    client: [Circular *1],
+    ChannelCreate: ChannelCreateAction { client: [Circular *1] },
+    ChannelDelete: ChannelDeleteAction { client: [Circular *1], deleted: Map(0) {} },
+    ChannelUpdate: ChannelUpdateAction { client: [Circular *1] },
+    GuildBanAdd: GuildBanAdd { client: [Circular *1] },
+    GuildBanRemove: GuildBanRemove { client: [Circular *1] },
+    GuildChannelsPositionUpdate: GuildChannelsPositionUpdate { client: [Circular *1] },
+    GuildDelete: GuildDeleteAction { client: [Circular *1], deleted: Map(0) {} },
+    GuildEmojiCreate: GuildEmojiCreateAction { client: [Circular *1] },
+    GuildEmojiDelete: GuildEmojiDeleteAction { client: [Circular *1] },
+    GuildEmojiUpdate: GuildEmojiUpdateAction { client: [Circular *1] },
+    GuildEmojisUpdate: GuildEmojisUpdateAction { client: [Circular *1] },
+    GuildIntegrationsUpdate: GuildIntegrationsUpdate { client: [Circular *1] },
+    GuildMemberRemove: GuildMemberRemoveAction { client: [Circular *1] },
+    GuildMemberUpdate: GuildMemberUpdateAction { client: [Circular *1] },
+    GuildRoleCreate: GuildRoleCreate { client: [Circular *1] },
+    GuildRoleDelete: GuildRoleDeleteAction { client: [Circular *1] },
+    GuildRoleUpdate: GuildRoleUpdateAction { client: [Circular *1] },
+    GuildRolesPositionUpdate: GuildRolesPositionUpdate { client: [Circular *1] },
+    GuildStickerCreate: GuildStickerCreateAction { client: [Circular *1] },
+    GuildStickerDelete: GuildStickerDeleteAction { client: [Circular *1] },
+    GuildStickerUpdate: GuildStickerUpdateAction { client: [Circular *1] },
+    GuildStickersUpdate: GuildStickersUpdateAction { client: [Circular *1] },
+    GuildUpdate: GuildUpdateAction { client: [Circular *1] },
+    InteractionCreate: InteractionCreateAction { client: [Circular *1] },
+    InviteCreate: InviteCreateAction { client: [Circular *1] },
+    InviteDelete: InviteDeleteAction { client: [Circular *1] },
+    MessageCreate: MessageCreateAction { client: [Circular *1] },
+    MessageDelete: MessageDeleteAction { client: [Circular *1] },
+    MessageDeleteBulk: MessageDeleteBulkAction { client: [Circular *1] },
+    MessageReactionAdd: MessageReactionAdd { client: [Circular *1] },
+    MessageReactionRemove: MessageReactionRemove { client: [Circular *1] },
+    MessageReactionRemoveAll: MessageReactionRemoveAll { client: [Circular *1] },
+    MessageReactionRemoveEmoji: MessageReactionRemoveEmoji { client: [Circular *1] },
+    MessageUpdate: MessageUpdateAction { client: [Circular *1] },
+    PresenceUpdate: PresenceUpdateAction { client: [Circular *1] },
+    StageInstanceCreate: StageInstanceCreateAction { client: [Circular *1] },
+    StageInstanceDelete: StageInstanceDeleteAction { client: [Circular *1] },
+    StageInstanceUpdate: StageInstanceUpdateAction { client: [Circular *1] },
+    ThreadCreate: ThreadCreateAction { client: [Circular *1] },
+    ThreadDelete: ThreadDeleteAction { client: [Circular *1] },
+    ThreadListSync: ThreadListSyncAction { client: [Circular *1] },
+    ThreadMemberUpdate: ThreadMemberUpdateAction { client: [Circular *1] },
+    ThreadMembersUpdate: ThreadMembersUpdateAction { client: [Circular *1] },
+    TypingStart: TypingStart { client: [Circular *1] },
+    UserUpdate: UserUpdateAction { client: [Circular *1] },
+    VoiceStateUpdate: VoiceStateUpdate { client: [Circular *1] },
+    WebhooksUpdate: WebhooksUpdate { client: [Circular *1] }
+  },
+  voice: ClientVoiceManager { adapters: Map(0) {} },
+  shard: null,
+  users: UserManager {},
+  guilds: GuildManager {},
+  channels: ChannelManager {},
+  presence: ClientPresence {
+    userId: null,
+    guild: null,
+    status: 'online',
+    activities: [],
+    clientStatus: null
+  },
+  user: null,
+  application: null,
+  readyAt: null,
+  [Symbol(kCapture)]: false
+}
+b3f43f2c8f43
+Ready!
+bumpbots init
+[
+  'bumpbots',
+  'bumpers',
+  'qotd_activity',
+  'qotds',
+  'qotd_scores',
+  'vcmon_sessions',
+  'vcmon_usage'
+]
+Setting application command permissions on 888779192592896130 avatar
+Setting application command permissions on 888779192592896131 joke
+Setting application command permissions on 888779192592896132 define
+Setting application command permissions on 888779192592896133 moderate
+Setting application command permissions on 889643708650254346 readme
+
+__Newcomers reminder and exclusion.__
+
+AndyC --> waiting : 1.4 days.
+sasaugesnail --> reminded : 6.7 days.
+jakester --> reminded : 3.3 days.
+izaaaa --> reminded : 5.1 days.
+saban saulic --> reminded : 6.7 days.
+Bjxrx20x --> reminded : 5.6 days.
+
+* Indicates that the member wrote a message in #landing-zone.
++ Indicates that the member is muted.
+# Indicates that the member was previously a verified member.
+qotd countdown days 3.2699935416666666
+DISBOARD in sync (0 difference)
+cleanup: no messages found
+
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+RESTART 20220220-131404
+
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+
+
+<ref *1> Client {
+  _events: [Object: null prototype] { shardDisconnect: [Function (anonymous)] },
+  _eventsCount: 1,
+  _maxListeners: undefined,
+  options: {
+    _tokenType: 'Bot',
+    intents: 14335,
+    partials: [ 'MESSAGE', 'CHANNEL', 'REACTION' ],
+    shardCount: 1,
+    makeCache: [Function (anonymous)],
+    messageCacheLifetime: 0,
+    messageSweepInterval: 0,
+    invalidRequestWarningInterval: 0,
+    restWsBridgeTimeout: 5000,
+    restRequestTimeout: 15000,
+    restGlobalRateLimit: 0,
+    retryLimit: 1,
+    restTimeOffset: 500,
+    restSweepInterval: 60,
+    failIfNotExists: true,
+    userAgentSuffix: [],
+    presence: { status: 'online', user: [Object] },
+    ws: {
+      large_threshold: 50,
+      compress: false,
+      properties: [Object],
+      version: 9,
+      presence: [Object]
+    },
+    http: {
+      version: 9,
+      api: 'https://discord.com/api',
+      cdn: 'https://cdn.discordapp.com',
+      invite: 'https://discord.gg',
+      template: 'https://discord.new'
+    },
+    shards: [ 0 ]
+  },
+  rest: RESTManager {
+    client: [Circular *1],
+    handlers: Collection(1) [Map] { '/gateway/bot' => [RequestHandler] },
+    tokenPrefix: 'Bot',
+    versioned: true,
+    globalLimit: Infinity,
+    globalRemaining: Infinity,
+    globalReset: null,
+    globalDelay: null,
+    sweepInterval: Timeout {
+      _idleTimeout: 60000,
+      _idlePrev: [TimersList],
+      _idleNext: [TimersList],
+      _idleStart: 722,
+      _onTimeout: [Function (anonymous)],
+      _timerArgs: undefined,
+      _repeat: 60000,
+      _destroyed: false,
+      [Symbol(refed)]: false,
+      [Symbol(kHasPrimitive)]: false,
+      [Symbol(asyncId)]: 28,
+      [Symbol(triggerId)]: 1
+    }
+  },
+  _cleanups: Set(1) { [Function: bound ] },
+  _finalizers: FinalizationRegistry {},
+  ws: WebSocketManager {
+    _events: [Object: null prototype] {},
+    _eventsCount: 0,
+    _maxListeners: undefined,
+    gateway: null,
+    totalShards: 1,
+    shards: Collection(0) [Map] {},
+    status: 3,
+    destroyed: false,
+    reconnecting: false,
+    [Symbol(kCapture)]: false
+  },
+  actions: ActionsManager {
+    client: [Circular *1],
+    ChannelCreate: ChannelCreateAction { client: [Circular *1] },
+    ChannelDelete: ChannelDeleteAction { client: [Circular *1], deleted: Map(0) {} },
+    ChannelUpdate: ChannelUpdateAction { client: [Circular *1] },
+    GuildBanAdd: GuildBanAdd { client: [Circular *1] },
+    GuildBanRemove: GuildBanRemove { client: [Circular *1] },
+    GuildChannelsPositionUpdate: GuildChannelsPositionUpdate { client: [Circular *1] },
+    GuildDelete: GuildDeleteAction { client: [Circular *1], deleted: Map(0) {} },
+    GuildEmojiCreate: GuildEmojiCreateAction { client: [Circular *1] },
+    GuildEmojiDelete: GuildEmojiDeleteAction { client: [Circular *1] },
+    GuildEmojiUpdate: GuildEmojiUpdateAction { client: [Circular *1] },
+    GuildEmojisUpdate: GuildEmojisUpdateAction { client: [Circular *1] },
+    GuildIntegrationsUpdate: GuildIntegrationsUpdate { client: [Circular *1] },
+    GuildMemberRemove: GuildMemberRemoveAction { client: [Circular *1] },
+    GuildMemberUpdate: GuildMemberUpdateAction { client: [Circular *1] },
+    GuildRoleCreate: GuildRoleCreate { client: [Circular *1] },
+    GuildRoleDelete: GuildRoleDeleteAction { client: [Circular *1] },
+    GuildRoleUpdate: GuildRoleUpdateAction { client: [Circular *1] },
+    GuildRolesPositionUpdate: GuildRolesPositionUpdate { client: [Circular *1] },
+    GuildStickerCreate: GuildStickerCreateAction { client: [Circular *1] },
+    GuildStickerDelete: GuildStickerDeleteAction { client: [Circular *1] },
+    GuildStickerUpdate: GuildStickerUpdateAction { client: [Circular *1] },
+    GuildStickersUpdate: GuildStickersUpdateAction { client: [Circular *1] },
+    GuildUpdate: GuildUpdateAction { client: [Circular *1] },
+    InteractionCreate: InteractionCreateAction { client: [Circular *1] },
+    InviteCreate: InviteCreateAction { client: [Circular *1] },
+    InviteDelete: InviteDeleteAction { client: [Circular *1] },
+    MessageCreate: MessageCreateAction { client: [Circular *1] },
+    MessageDelete: MessageDeleteAction { client: [Circular *1] },
+    MessageDeleteBulk: MessageDeleteBulkAction { client: [Circular *1] },
+    MessageReactionAdd: MessageReactionAdd { client: [Circular *1] },
+    MessageReactionRemove: MessageReactionRemove { client: [Circular *1] },
+    MessageReactionRemoveAll: MessageReactionRemoveAll { client: [Circular *1] },
+    MessageReactionRemoveEmoji: MessageReactionRemoveEmoji { client: [Circular *1] },
+    MessageUpdate: MessageUpdateAction { client: [Circular *1] },
+    PresenceUpdate: PresenceUpdateAction { client: [Circular *1] },
+    StageInstanceCreate: StageInstanceCreateAction { client: [Circular *1] },
+    StageInstanceDelete: StageInstanceDeleteAction { client: [Circular *1] },
+    StageInstanceUpdate: StageInstanceUpdateAction { client: [Circular *1] },
+    ThreadCreate: ThreadCreateAction { client: [Circular *1] },
+    ThreadDelete: ThreadDeleteAction { client: [Circular *1] },
+    ThreadListSync: ThreadListSyncAction { client: [Circular *1] },
+    ThreadMemberUpdate: ThreadMemberUpdateAction { client: [Circular *1] },
+    ThreadMembersUpdate: ThreadMembersUpdateAction { client: [Circular *1] },
+    TypingStart: TypingStart { client: [Circular *1] },
+    UserUpdate: UserUpdateAction { client: [Circular *1] },
+    VoiceStateUpdate: VoiceStateUpdate { client: [Circular *1] },
+    WebhooksUpdate: WebhooksUpdate { client: [Circular *1] }
+  },
+  voice: ClientVoiceManager { adapters: Map(0) {} },
+  shard: null,
+  users: UserManager {},
+  guilds: GuildManager {},
+  channels: ChannelManager {},
+  presence: ClientPresence {
+    userId: null,
+    guild: null,
+    status: 'online',
+    activities: [],
+    clientStatus: null
+  },
+  user: null,
+  application: null,
+  readyAt: null,
+  [Symbol(kCapture)]: false
+}
+b4333ddc2aaf
+Ready!
+bumpbots init
+[
+  'bumpbots',
+  'bumpers',
+  'qotd_activity',
+  'qotds',
+  'qotd_scores',
+  'vcmon_sessions',
+  'vcmon_usage'
+]
+Setting application command permissions on 888779192592896130 avatar
+Setting application command permissions on 888779192592896131 joke
+Setting application command permissions on 888779192592896132 define
+Setting application command permissions on 888779192592896133 moderate
+Setting application command permissions on 889643708650254346 readme
+
+__Newcomers reminder and exclusion.__
+
+AndyC --> waiting : 1.4 days.
+sasaugesnail --> reminded : 6.7 days.
+jakester --> reminded : 3.3 days.
+izaaaa --> reminded : 5.1 days.
+saban saulic --> reminded : 6.7 days.
+Bjxrx20x --> reminded : 5.6 days.
+
+* Indicates that the member wrote a message in #landing-zone.
++ Indicates that the member is muted.
+# Indicates that the member was previously a verified member.
+qotd countdown days 3.267588310185185
+DISBOARD in sync (0 difference)
+cleanup: no messages found
+Please bump DISBOARD (!d bump). I've been waiting for the bump for 45 minutes :pleading_face:
+GUILD_TEXT : bot-commands
+RGfinpsy: !d bump
