@@ -1,7 +1,7 @@
 {
   "302050872383242240": {
     "name": "DISBOARD",
-    "bump_command": "!d bump",
+    "bump_command": "/bump",
     "bump_channel": "834013095805452318",
     "delay_minutes": 140,
     "response": {

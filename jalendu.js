@@ -57,7 +57,9 @@ intents.add(Intents.FLAGS.DIRECT_MESSAGE_REACTIONS);
 const client = new Client({ intents: intents, partials: ['MESSAGE', 'CHANNEL', 'REACTION'] });
 
 
-client.login(token);
+client.login(token).catch(console.error);
+
+//client.on('debug', console.log);
 
 //console.log(client);
 
@@ -795,7 +797,7 @@ client.on('messageCreate', async (message) => {
       message.reply('You now have to enter ```/set me```');
     }
 
-    if (message.content.toLowerCase() === '!d bump') {
+    if (message.content.toLowerCase() === '/bump') {
       console.log('disboard bump by ' + bumpbots.bumper('disboard', message, 'bump').name);
     }
 
